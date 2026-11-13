@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this repository together with the accompanying paper."
+type: software
+title: "A Tight Broad-line Width–Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses: data and code"
+authors:
+  - family-names: Wang
+    given-names: Haoyu
+    orcid: "https://orcid.org/0009-0005-9117-0842"
+    affiliation: "Independent Researcher"
+  - family-names: Zhao
+    given-names: Xinmiao
+    orcid: "https://orcid.org/0000-0002-5651-4356"
+    affiliation: "Department of Astronomy, School of Physics, Peking University, Beijing 100871, People's Republic of China"
+doi: 10.5281/zenodo.24182569
+license:
+  - MIT
+  - CC-BY-4.0

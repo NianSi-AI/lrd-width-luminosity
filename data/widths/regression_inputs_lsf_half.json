@@ -1,0 +1,1553 @@
+[
+  {
+    "source_id": "Skyfire-299",
+    "file_id": "7d9465a45c199a6b",
+    "cls": "LRD",
+    "x": -0.6328256009491753,
+    "y": 3.337080910830998,
+    "cov": [
+      [
+        0.0012114731282397778,
+        0.00010222556064334977
+      ],
+      [
+        0.00010222556064336484,
+        0.0002784830856476868
+      ]
+    ],
+    "width_kms": 2173.105999652179,
+    "luminosity_erg_s": 2.329026333875365e+42,
+    "flux_erg_s_cm2": 6.508756080554707e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.0384713062514761,
+    "old_FWHM_kms": 1988.8846895914367,
+    "absorption": true,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "Skyfire-1090",
+    "file_id": "16bc1f805862de56",
+    "cls": "LRD",
+    "x": -0.7591695865890031,
+    "y": 3.0505026507785487,
+    "cov": [
+      [
+        0.0011780561948366926,
+        0.0003606083845876858
+      ],
+      [
+        0.0003606083845876544,
+        0.0025937319592053403
+      ]
+    ],
+    "width_kms": 1123.3178259845774,
+    "luminosity_erg_s": 1.741126852268442e+42,
+    "flux_erg_s_cm2": 3.8355024532846445e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.035307336811295276,
+    "old_FWHM_kms": 1218.4563835633219,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "Skyfire-1867",
+    "file_id": "42f7c64715200787",
+    "cls": "LRD",
+    "x": -0.9900694151922096,
+    "y": 2.974498125310172,
+    "cov": [
+      [
+        0.0017367554661434986,
+        -0.0007400655397850564
+      ],
+      [
+        -0.0007400655397850367,
+        0.0031328383294815416
+      ]
+    ],
+    "width_kms": 942.9705409934983,
+    "luminosity_erg_s": 1.023129447943154e+42,
+    "flux_erg_s_cm2": 3.0809148506610285e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.11757089857050218,
+    "old_FWHM_kms": 1236.1438823320132,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "Skyfire-2086",
+    "file_id": "d880a784e77deb49",
+    "cls": "LRD",
+    "x": -0.6172054846430157,
+    "y": 3.29504447220257,
+    "cov": [
+      [
+        0.0012457816026333229,
+        2.5163976443647475e-05
+      ],
+      [
+        2.5163976443628084e-05,
+        0.0006630081720865502
+      ]
+    ],
+    "width_kms": 1972.6247245777245,
+    "luminosity_erg_s": 2.414318239441216e+42,
+    "flux_erg_s_cm2": 7.162601001328202e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.018495920953415013,
+    "old_FWHM_kms": 1890.3775510753287,
+    "absorption": true,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "Skyfire-3519",
+    "file_id": "28fbec94a24aa68f",
+    "cls": "LRD",
+    "x": -0.7877925248914721,
+    "y": 3.289907239620939,
+    "cov": [
+      [
+        0.000983680421418681,
+        0.0004019253280054309
+      ],
+      [
+        0.00040192532800541214,
+        0.0009781308851298351
+      ]
+    ],
+    "width_kms": 1949.4281795238905,
+    "luminosity_erg_s": 1.6300745807068092e+42,
+    "flux_erg_s_cm2": 5.7520101302427116e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.003625570934984612,
+    "old_FWHM_kms": 1965.7704871556696,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "Skyfire-7761",
+    "file_id": "42783bfcbaa29892",
+    "cls": "LRD",
+    "x": -0.6910695107329303,
+    "y": 3.288826372112154,
+    "cov": [
+      [
+        0.000428001622759516,
+        -9.362532395464107e-05
+      ],
+      [
+        -9.362532395463886e-05,
+        0.00018460569389638484
+      ]
+    ],
+    "width_kms": 1944.582495753282,
+    "luminosity_erg_s": 2.036716066294594e+42,
+    "flux_erg_s_cm2": 1.3785058640241801e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": false
+    },
+    "quality_pass": false,
+    "delta_logwidth_dex": 0.026611319522125587,
+    "old_FWHM_kms": 1829.0056732809628,
+    "absorption": true,
+    "bound_parameters": [
+      "F_NII6585",
+      "W_abs"
+    ]
+  },
+  {
+    "source_id": "Skyfire-17484",
+    "file_id": "cc540c2896b6a333",
+    "cls": "non-LRD",
+    "x": -1.2587259129960557,
+    "y": 3.165578609507351,
+    "cov": [
+      [
+        0.0028293680580899925,
+        0.0008683384799074434
+      ],
+      [
+        0.0008683384799075398,
+        0.004046572029675919
+      ]
+    ],
+    "width_kms": 1464.126527906605,
+    "luminosity_erg_s": 5.511554256227109e+41,
+    "flux_erg_s_cm2": 1.995069596989079e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.006879900473537592,
+    "old_FWHM_kms": 1441.1152337129663,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "Skyfire-20952",
+    "file_id": "7510458fdcefe88f",
+    "cls": "LRD",
+    "x": -0.708963856851625,
+    "y": 3.1421112358286805,
+    "cov": [
+      [
+        0.0005947356809020649,
+        0.00030526959468177094
+      ],
+      [
+        0.0003052695946817795,
+        0.0008510727404435228
+      ]
+    ],
+    "width_kms": 1387.1110640793993,
+    "luminosity_erg_s": 1.954502107900167e+42,
+    "flux_erg_s_cm2": 6.325341012447959e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.06277497261634934,
+    "old_FWHM_kms": 1602.8253717967298,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "Skyfire-25941",
+    "file_id": "fdce8ce1816f4209",
+    "cls": "LRD",
+    "x": -0.9830600846887592,
+    "y": 3.165727413508379,
+    "cov": [
+      [
+        0.00424139223403551,
+        0.002664126509999829
+      ],
+      [
+        0.002664126509999833,
+        0.004929005168094846
+      ]
+    ],
+    "width_kms": 1464.6282732042462,
+    "luminosity_erg_s": 1.0397763027130953e+42,
+    "flux_erg_s_cm2": 2.5506558011450432e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.0006653196208601386,
+    "old_FWHM_kms": 1462.3862463184955,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "Skyfire-44039",
+    "file_id": "a13890484aaacf71",
+    "cls": "LRD",
+    "x": -1.0955986558099298,
+    "y": 3.1896608686732573,
+    "cov": [
+      [
+        0.004780874284734017,
+        0.002398903054709318
+      ],
+      [
+        0.0023989030547093204,
+        0.006085409876341151
+      ]
+    ],
+    "width_kms": 1547.607653035754,
+    "luminosity_erg_s": 8.024192598822329e+41,
+    "flux_erg_s_cm2": 1.994883042869788e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": false,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": false,
+    "delta_logwidth_dex": -0.05265741641782418,
+    "old_FWHM_kms": 1747.1020974163746,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "Skyfire-83652",
+    "file_id": "b00fbb92c385ed3d",
+    "cls": "LRD",
+    "x": -1.1327435031013593,
+    "y": 3.0852755140140573,
+    "cov": [
+      [
+        0.0029300894416225045,
+        0.001436020394753494
+      ],
+      [
+        0.0014360203947533978,
+        0.005295171910355487
+      ]
+    ],
+    "width_kms": 1216.9577870921894,
+    "luminosity_erg_s": 7.366420342015192e+41,
+    "flux_erg_s_cm2": 2.0215963693076257e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.04551847998941705,
+    "old_FWHM_kms": 1351.431364614139,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -1.0031122043931333,
+    "y": 3.466537954270832,
+    "cov": [
+      [
+        0.005288548162467472,
+        0.002164673608766955
+      ],
+      [
+        0.0021646736087669754,
+        0.00487365104888757
+      ]
+    ],
+    "width_kms": 2927.7767271999614,
+    "luminosity_erg_s": 9.92859499939173e+41,
+    "flux_erg_s_cm2": 3.861763711849244e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.0019495288120854326,
+    "old_FWHM_kms": 2914.663520672641,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-UDS-153207",
+    "file_id": "016858dca2b480cc",
+    "cls": "non-LRD",
+    "x": -0.10253298090199792,
+    "y": 3.1485432559706314,
+    "cov": [
+      [
+        0.002606687468097664,
+        -2.0014815678701373e-05
+      ],
+      [
+        -2.0014815678709108e-05,
+        0.0004059688871101033
+      ]
+    ],
+    "width_kms": 1407.8074397793239,
+    "luminosity_erg_s": 7.897088755777425e+42,
+    "flux_erg_s_cm2": 6.319516635583342e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.013079808529351755,
+    "old_FWHM_kms": 1366.040097572326,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-150323",
+    "file_id": "f70cf1aa63572ae0",
+    "cls": "non-LRD",
+    "x": -0.8495696859960589,
+    "y": 3.2715150890642657,
+    "cov": [
+      [
+        0.003852797206574504,
+        -0.0003621988255605647
+      ],
+      [
+        -0.00036219882556058527,
+        0.001653324688124804
+      ]
+    ],
+    "width_kms": 1868.5945983067827,
+    "luminosity_erg_s": 1.4139378293217025e+42,
+    "flux_erg_s_cm2": 1.1159146132033711e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.007265005016632742,
+    "old_FWHM_kms": 1837.5961997694944,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-58237",
+    "file_id": "23a7887b802c32f0",
+    "cls": "non-LRD",
+    "x": -0.42724213551146306,
+    "y": 3.3482115135838924,
+    "cov": [
+      [
+        0.004939804100421641,
+        -0.0014805347296004607
+      ],
+      [
+        -0.0014805347296004683,
+        0.0009508790301901137
+      ]
+    ],
+    "width_kms": 2229.520723971614,
+    "luminosity_erg_s": 3.73902065680354e+42,
+    "flux_erg_s_cm2": 2.887872390973801e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.004830782733274752,
+    "old_FWHM_kms": 2204.858538748088,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-EGS-15825",
+    "file_id": "05f70d6b842e89b3",
+    "cls": "non-LRD",
+    "x": -0.247220724895179,
+    "y": 3.558663545778945,
+    "cov": [
+      [
+        0.0008047700832960454,
+        0.00034344489544504113
+      ],
+      [
+        0.00034344489544503923,
+        0.00046610313681763274
+      ]
+    ],
+    "width_kms": 3619.624722006551,
+    "luminosity_erg_s": 5.659515779165796e+42,
+    "flux_erg_s_cm2": 4.3287734089596865e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.0008565012834678143,
+    "old_FWHM_kms": 3612.4932517977845,
+    "absorption": false,
+    "bound_parameters": [
+      "W_narrow"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-8895",
+    "file_id": "0db83f1a7fc8d254",
+    "cls": "non-LRD",
+    "x": -0.25733172521526626,
+    "y": 3.139937597901208,
+    "cov": [
+      [
+        0.0043214165789726006,
+        0.0003128418209045198
+      ],
+      [
+        0.00031284182090451413,
+        0.0013507250214290915
+      ]
+    ],
+    "width_kms": 1380.1859367616278,
+    "luminosity_erg_s": 5.529276076514501e+42,
+    "flux_erg_s_cm2": 3.475632685005921e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.011155671899498287,
+    "old_FWHM_kms": 1345.1847215400658,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-UDS-30969",
+    "file_id": "de2786132501b97c",
+    "cls": "non-LRD",
+    "x": -0.34096989970787206,
+    "y": 3.1103593676607075,
+    "cov": [
+      [
+        0.015537396391946064,
+        -0.002420680272598791
+      ],
+      [
+        -0.0024206802725986213,
+        0.0009128146387928464
+      ]
+    ],
+    "width_kms": 1289.3159866624726,
+    "luminosity_erg_s": 4.5606852427391644e+42,
+    "flux_erg_s_cm2": 2.836330251555167e-17,
+    "quality_checks": {
+      "broadSNR": false,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": false,
+    "delta_logwidth_dex": 0.02240037755896651,
+    "old_FWHM_kms": 1224.500565710552,
+    "absorption": true,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-UDS-119957",
+    "file_id": "c168c15be2ca5364",
+    "cls": "LRD",
+    "x": -0.7636551381555705,
+    "y": 3.2292003727497605,
+    "cov": [
+      [
+        0.000553504530273527,
+        0.0001731786465091276
+      ],
+      [
+        0.00017317864650913224,
+        0.0005445858016526499
+      ]
+    ],
+    "width_kms": 1695.1197064317496,
+    "luminosity_erg_s": 1.7232364086173068e+42,
+    "flux_erg_s_cm2": 9.828594654139391e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.028772936908626257,
+    "old_FWHM_kms": 1811.2287769056759,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-UDS-35974",
+    "file_id": "b8082c4c21073aa7",
+    "cls": "non-LRD",
+    "x": -0.8931655413933086,
+    "y": 3.0847984601956657,
+    "cov": [
+      [
+        0.0024921318638062386,
+        -0.0003156858353977649
+      ],
+      [
+        -0.0003156858353977629,
+        0.002179854186800695
+      ]
+    ],
+    "width_kms": 1215.6217452057576,
+    "luminosity_erg_s": 1.2788937312935494e+42,
+    "flux_erg_s_cm2": 6.463564752210927e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.012383801229161051,
+    "old_FWHM_kms": 1181.4481292782882,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "CEERS-1244",
+    "file_id": "73037207fdadda22",
+    "cls": "non-LRD",
+    "x": -0.14557690118402178,
+    "y": 3.3785869971264297,
+    "cov": [
+      [
+        0.00025268089655628323,
+        7.716987015165844e-05
+      ],
+      [
+        7.716987015167404e-05,
+        0.0002267002223388759
+      ]
+    ],
+    "width_kms": 2391.0408565819116,
+    "luminosity_erg_s": 7.151927425964832e+42,
+    "flux_erg_s_cm2": 3.406985085537185e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.05072460901333642,
+    "old_FWHM_kms": 2127.464824114839,
+    "absorption": true,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-29489",
+    "file_id": "7fa2a8a8027e5c29",
+    "cls": "LRD",
+    "x": -0.3970781652271427,
+    "y": 3.2505597014078553,
+    "cov": [
+      [
+        8.459229562397856e-05,
+        1.6315940240861906e-05
+      ],
+      [
+        1.631594024086179e-05,
+        6.893198939070263e-05
+      ]
+    ],
+    "width_kms": 1780.5726630307893,
+    "luminosity_erg_s": 4.0079457529128964e+42,
+    "flux_erg_s_cm2": 1.8455802609281144e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.002148573119699737,
+    "old_FWHM_kms": 1771.7854392911006,
+    "absorption": true,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-42232",
+    "file_id": "57956d39bc802bdf",
+    "cls": "LRD",
+    "x": -0.2549839441362778,
+    "y": 3.2173853486072272,
+    "cov": [
+      [
+        0.00020879293712991554,
+        0.00012160242728270575
+      ],
+      [
+        0.00012160242728271445,
+        0.00023242773231323298
+      ]
+    ],
+    "width_kms": 1649.6254516400995,
+    "luminosity_erg_s": 5.559248094265108e+42,
+    "flux_erg_s_cm2": 2.088719101059174e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.010747583082196588,
+    "old_FWHM_kms": 1690.9584320321142,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-46985",
+    "file_id": "cacddf9cd815a6f5",
+    "cls": "non-LRD",
+    "x": -0.5124301341042994,
+    "y": 3.091365218748177,
+    "cov": [
+      [
+        0.001634779664762077,
+        -3.7886998370046125e-06
+      ],
+      [
+        -3.7886998370293094e-06,
+        0.0002897121730443735
+      ]
+    ],
+    "width_kms": 1234.1422454848503,
+    "luminosity_erg_s": 3.0730516939989155e+42,
+    "flux_erg_s_cm2": 1.1497045209011437e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.008705588658152408,
+    "old_FWHM_kms": 1259.130683825194,
+    "absorption": true,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-EGS-50052",
+    "file_id": "a065cb393cb77701",
+    "cls": "non-LRD",
+    "x": -0.21307764635572113,
+    "y": 3.2541128329618627,
+    "cov": [
+      [
+        0.0016133693088723766,
+        0.00010336346847036662
+      ],
+      [
+        0.00010336346847039269,
+        0.00029264802323140856
+      ]
+    ],
+    "width_kms": 1795.1999726595193,
+    "luminosity_erg_s": 6.12240921012633e+42,
+    "flux_erg_s_cm2": 2.017101677353588e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.052622846927226075,
+    "old_FWHM_kms": 1590.3400133279495,
+    "absorption": true,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-13872",
+    "file_id": "90ec48ded782b9dd",
+    "cls": "non-LRD",
+    "x": -1.0197877228230254,
+    "y": 3.1237900824965057,
+    "cov": [
+      [
+        0.004721464593564849,
+        0.0018482778708104328
+      ],
+      [
+        0.0018482778708104844,
+        0.007427639441665028
+      ]
+    ],
+    "width_kms": 1329.8114943498338,
+    "luminosity_erg_s": 9.554594873772154e+41,
+    "flux_erg_s_cm2": 3.11719915057881e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": false,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": false,
+    "delta_logwidth_dex": -0.05997904218217043,
+    "old_FWHM_kms": 1526.754204547923,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-42046",
+    "file_id": "ba90f715dd7e754f",
+    "cls": "LRD",
+    "x": 0.5522186985976703,
+    "y": 3.5015386246248448,
+    "cov": [
+      [
+        3.709367785886303e-05,
+        -1.4776151383800264e-05
+      ],
+      [
+        -1.477615138379179e-05,
+        4.242148758629853e-05
+      ]
+    ],
+    "width_kms": 3173.500891301454,
+    "luminosity_erg_s": 3.566306774859474e+43,
+    "flux_erg_s_cm2": 1.1563095149222767e-16,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.0015985742598805253,
+    "old_FWHM_kms": 3185.2036071824227,
+    "absorption": true,
+    "bound_parameters": [
+      "W_narrow"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-970351",
+    "file_id": "1183cac89b0eac7a",
+    "cls": "LRD",
+    "x": -0.6822465022753406,
+    "y": 3.2881345222322276,
+    "cov": [
+      [
+        0.002316244170890434,
+        0.0013138463637795135
+      ],
+      [
+        0.0013138463637795488,
+        0.0024307680095862036
+      ]
+    ],
+    "width_kms": 1941.4871579505407,
+    "luminosity_erg_s": 2.0785166018709024e+42,
+    "flux_erg_s_cm2": 6.721332661312955e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.03975048522919389,
+    "old_FWHM_kms": 2127.57563169611,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-EGS-926125",
+    "file_id": "56fe48bcdfa81af2",
+    "cls": "LRD",
+    "x": -0.46945209577327773,
+    "y": 3.214772207867169,
+    "cov": [
+      [
+        0.00040594376919827894,
+        0.0001477090570525237
+      ],
+      [
+        0.00014770905705251816,
+        0.0004133717440045004
+      ]
+    ],
+    "width_kms": 1639.7294918285427,
+    "luminosity_erg_s": 3.3927191037653887e+42,
+    "flux_erg_s_cm2": 1.0961389231585406e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.017539218235165688,
+    "old_FWHM_kms": 1707.3062340130928,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-60935",
+    "file_id": "04d7c1df88c268a8",
+    "cls": "LRD",
+    "x": -0.27654293000115615,
+    "y": 3.3184703826851525,
+    "cov": [
+      [
+        0.00042025889388976745,
+        1.9771050385394398e-05
+      ],
+      [
+        1.9771050385396482e-05,
+        0.0002918604200821095
+      ]
+    ],
+    "width_kms": 2081.950418880834,
+    "luminosity_erg_s": 5.2900170281686e+42,
+    "flux_erg_s_cm2": 1.706863354658439e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.003079961227852479,
+    "old_FWHM_kms": 2067.2377232600147,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-29813",
+    "file_id": "9f904ae341694838",
+    "cls": "LRD",
+    "x": -0.4415700658242798,
+    "y": 3.2699951581818523,
+    "cov": [
+      [
+        0.0009564414708732061,
+        0.00042621941587996434
+      ],
+      [
+        0.0004262194158799627,
+        0.0009529307494648563
+      ]
+    ],
+    "width_kms": 1862.0663769309142,
+    "luminosity_erg_s": 3.6176782110895396e+42,
+    "flux_erg_s_cm2": 1.0920445225882115e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.03618884178897197,
+    "old_FWHM_kms": 2023.8764641148732,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-172350",
+    "file_id": "8b40abf4c094773e",
+    "cls": "LRD",
+    "x": -0.13698212722494674,
+    "y": 3.2647632184634223,
+    "cov": [
+      [
+        0.0002620857869579294,
+        3.498845577485207e-05
+      ],
+      [
+        3.498845577485405e-05,
+        0.00019133786695607033
+      ]
+    ],
+    "width_kms": 1839.7686683735922,
+    "luminosity_erg_s": 7.294875306642431e+42,
+    "flux_erg_s_cm2": 2.0753552618031408e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.003625256041206004,
+    "old_FWHM_kms": 1824.4751917011793,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "CEERS-746",
+    "file_id": "eeb99969088636d9",
+    "cls": "LRD",
+    "x": -0.7238063635990173,
+    "y": 3.2383146475845894,
+    "cov": [
+      [
+        0.00010124736755284388,
+        3.633737775904561e-05
+      ],
+      [
+        3.633737775904196e-05,
+        0.00010190969646216244
+      ]
+    ],
+    "width_kms": 1731.0700701800004,
+    "luminosity_erg_s": 1.8888333247088674e+42,
+    "flux_erg_s_cm2": 5.2783628144545324e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.011468542103775015,
+    "old_FWHM_kms": 1777.3918714968324,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "CEERS-672",
+    "file_id": "939b41bf1c95f312",
+    "cls": "LRD",
+    "x": -1.1483923565524279,
+    "y": 2.97691406915087,
+    "cov": [
+      [
+        0.003647049011371972,
+        0.0018438183812422386
+      ],
+      [
+        0.0018438183812422124,
+        0.005162464666259223
+      ]
+    ],
+    "width_kms": 948.2308248549901,
+    "luminosity_erg_s": 7.105712690923764e+41,
+    "flux_erg_s_cm2": 1.950770814441105e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.0016880055582313425,
+    "old_FWHM_kms": 944.552416835365,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-UDS-19521",
+    "file_id": "23796358226ea487",
+    "cls": "non-LRD",
+    "x": -0.8495992414662652,
+    "y": 3.063368994008846,
+    "cov": [
+      [
+        0.004155497193140384,
+        0.0015362397991937166
+      ],
+      [
+        0.0015362397991938524,
+        0.0059818507152285495
+      ]
+    ],
+    "width_kms": 1157.0949389281525,
+    "luminosity_erg_s": 1.413841608491864e+42,
+    "flux_erg_s_cm2": 3.8767157188548855e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.06027814239435125,
+    "old_FWHM_kms": 1329.373864848553,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-EGS-37124",
+    "file_id": "6f048da439a805e4",
+    "cls": "LRD",
+    "x": -0.4401528778277708,
+    "y": 3.236950689171661,
+    "cov": [
+      [
+        0.0008711047293934971,
+        8.66090543217934e-05
+      ],
+      [
+        8.660905432180546e-05,
+        0.000591808725056898
+      ]
+    ],
+    "width_kms": 1725.64194737568,
+    "luminosity_erg_s": 3.629502686290624e+42,
+    "flux_erg_s_cm2": 9.899052684709882e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.0005402148743947066,
+    "old_FWHM_kms": 1723.4967718353942,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-174752",
+    "file_id": "3577d97032b2ca52",
+    "cls": "non-LRD",
+    "x": -0.5994990089687278,
+    "y": 3.192373214776731,
+    "cov": [
+      [
+        0.0021365749239813012,
+        0.0011419917906702744
+      ],
+      [
+        0.0011419917906702857,
+        0.002762092911876673
+      ]
+    ],
+    "width_kms": 1557.3033390371188,
+    "luminosity_erg_s": 2.5147857515637718e+42,
+    "flux_erg_s_cm2": 5.952633317404573e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.04696456274968108,
+    "old_FWHM_kms": 1735.1530082832696,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-49140",
+    "file_id": "fddf811a57d7fb5f",
+    "cls": "LRD",
+    "x": 0.5305586473106416,
+    "y": 3.3761808870441734,
+    "cov": [
+      [
+        5.770757254231791e-05,
+        2.734630223005049e-05
+      ],
+      [
+        2.7346302230048177e-05,
+        5.955400720671784e-05
+      ]
+    ],
+    "width_kms": 2377.8304653650503,
+    "luminosity_erg_s": 3.3928030300375043e+43,
+    "flux_erg_s_cm2": 6.346360083387129e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -1.9673741302739245e-05,
+    "old_FWHM_kms": 2377.938184626979,
+    "absorption": true,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-144195",
+    "file_id": "0e78910436f891b8",
+    "cls": "LRD",
+    "x": -0.6608540759891497,
+    "y": 3.2384029084690766,
+    "cov": [
+      [
+        0.0010864334216444823,
+        6.290480726648041e-05
+      ],
+      [
+        6.290480726649121e-05,
+        0.0007855307145739076
+      ]
+    ],
+    "width_kms": 1731.421908179586,
+    "luminosity_erg_s": 2.1834634376719806e+42,
+    "flux_erg_s_cm2": 2.055548179302513e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.007848980025261465,
+    "old_FWHM_kms": 1700.4110887925212,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-23438",
+    "file_id": "bf49538bb7ed0566",
+    "cls": "LRD",
+    "x": -0.7906353800957078,
+    "y": 3.2592358012294427,
+    "cov": [
+      [
+        0.002392610865688358,
+        0.0006581211496878792
+      ],
+      [
+        0.0006581211496879003,
+        0.002035763926261337
+      ]
+    ],
+    "width_kms": 1816.501669004895,
+    "luminosity_erg_s": 1.6194390968722478e+42,
+    "flux_erg_s_cm2": 1.21958622271887e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.00013882924268182606,
+    "old_FWHM_kms": 1815.9210877206106,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  },
+  {
+    "source_id": "RUBIES-UDS-149298",
+    "file_id": "c8ba85bdae73bb1d",
+    "cls": "LRD",
+    "x": -0.6331552914394436,
+    "y": 3.0602373720568634,
+    "cov": [
+      [
+        0.0015250277037816707,
+        0.0008817878759018018
+      ],
+      [
+        0.0008817878759018251,
+        0.002714265465775107
+      ]
+    ],
+    "width_kms": 1148.7813386163825,
+    "luminosity_erg_s": 2.3272589468059345e+42,
+    "flux_erg_s_cm2": 7.984476411656295e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.1719026502615928,
+    "old_FWHM_kms": 1706.6325413450827,
+    "absorption": false,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-EGS-948917",
+    "file_id": "30ac8bc724c2552b",
+    "cls": "LRD",
+    "x": -0.22910195126948452,
+    "y": 3.238947370085552,
+    "cov": [
+      [
+        0.001986189905549145,
+        0.000127942425633669
+      ],
+      [
+        0.0001279424256334323,
+        0.001482311934094119
+      ]
+    ],
+    "width_kms": 1733.5938996961609,
+    "luminosity_erg_s": 5.900625458599149e+42,
+    "flux_erg_s_cm2": 1.0867551788417223e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": 0.02812390782393459,
+    "old_FWHM_kms": 1624.8881155742574,
+    "absorption": true,
+    "bound_parameters": []
+  },
+  {
+    "source_id": "RUBIES-EGS-55604",
+    "file_id": "e20c53ece0b031b4",
+    "cls": "LRD",
+    "x": 0.5488658703651765,
+    "y": 3.458112082622959,
+    "cov": [
+      [
+        0.00016259964135063764,
+        -5.8151126895062945e-05
+      ],
+      [
+        -5.815112689506714e-05,
+        0.00011793576488295881
+      ]
+    ],
+    "width_kms": 2871.521568049208,
+    "luminosity_erg_s": 3.5388802769216053e+43,
+    "flux_erg_s_cm2": 5.991492097090824e-17,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.03967006220148983,
+    "old_FWHM_kms": 3146.169704835825,
+    "absorption": true,
+    "bound_parameters": [
+      "W_narrow"
+    ]
+  },
+  {
+    "source_id": "RUBIES-EGS-42803",
+    "file_id": "e7f48c2a828419df",
+    "cls": "LRD",
+    "x": -0.26182785459348423,
+    "y": 3.263063788351902,
+    "cov": [
+      [
+        0.003547656247583491,
+        0.002317959720593586
+      ],
+      [
+        0.0023179597205935957,
+        0.0034688299136094794
+      ]
+    ],
+    "width_kms": 1832.5835690125803,
+    "luminosity_erg_s": 5.4723283175711165e+42,
+    "flux_erg_s_cm2": 8.764997876942286e-18,
+    "quality_checks": {
+      "broadSNR": true,
+      "deltaBIC": true,
+      "widthLSF": true,
+      "widthBoundary": true,
+      "chi2": true,
+      "converged": true,
+      "absBoundary": true
+    },
+    "quality_pass": true,
+    "delta_logwidth_dex": -0.023652000670381756,
+    "old_FWHM_kms": 1935.1551453222514,
+    "absorption": false,
+    "bound_parameters": [
+      "F_NII6585"
+    ]
+  }
+]

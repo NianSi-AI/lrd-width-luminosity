@@ -1,0 +1,11 @@
+{
+  "kappa_cm2_g": 0.3977263840614549,
+  "sigmaSB_cgs": 5.6703744191844314e-05,
+  "c_cm_s": 29979245800.0,
+  "coefficient_cgs": 1.678735666638888e-07,
+  "vK_at_L45_T5000_kms": 1492.6305354409499,
+  "vK_using_rounded_kappa0398_kms": 1493.1438748928517,
+  "LEdd_per_Msun_erg_s": 1.2570651866472894e+38,
+  "Lsun_erg_s": 3.828e+33,
+  "definition": "lambda=1; pure fully ionized H kappa=sigma_T/m_p; not Curtis kappa=.34"
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lrdwidth"
+version = "1.0.0"
+description = "Analysis code for the broad-line width-luminosity relation of little red dots"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "matplotlib", "astropy"]
+
+[tool.setuptools]
+packages = ["lrdwidth"]
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+line_length = 100

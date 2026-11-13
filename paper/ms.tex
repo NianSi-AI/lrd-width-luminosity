@@ -1,0 +1,405 @@
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\documentclass[twocolumn,linenumbers]{aastex701}
+\usepackage{amsmath}
+
+\input{numbers}
+
+\newcommand{\Ha}{H$\alpha$}
+\newcommand{\Hb}{H$\beta$}
+\newcommand{\kms}{\ensuremath{{\rm km\,s^{-1}}}}
+\newcommand{\ergs}{\ensuremath{{\rm erg\,s^{-1}}}}
+\newcommand{\sigint}{\sigma_{\rm int}}
+\newcommand{\LHa}{L_{\rm H\alpha}}
+\newcommand{\Lbol}{L_{\rm bol}}
+\newcommand{\Lph}{L_{\rm ph}}
+\newcommand{\Rph}{R_{\rm ph}}
+\newcommand{\Teff}{T_{\rm eff}}
+\newcommand{\vK}{v_{\rm K}}
+\newcommand{\Mvir}{M_{\rm vir}}
+\providecommand{\Msun}{M_\odot}
+\newcommand{\BX}{BX26}
+
+\shorttitle{Broad-line widths of little red dots}
+\shortauthors{Wang \& Zhao}
+
+\begin{document}
+
+\title{A Tight Broad-line Width--Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses}
+
+\author[orcid=0009-0005-9117-0842,gname=Haoyu,sname=Wang]{Haoyu Wang}
+\affiliation{Independent Researcher}
+\email[show]{pkuwanghaoyu@pku.edu.cn}
+\correspondingauthor{Haoyu Wang}
+
+\author[orcid=0000-0002-5651-4356,gname=Xinmiao,sname=Zhao]{Xinmiao Zhao}
+\affiliation{Department of Astronomy, School of Physics, Peking University, Beijing 100871, People's Republic of China}
+\email{zhaoxinmiao@pku.edu.cn}
+
+\begin{abstract}
+Black hole masses inferred for little red dots (LRDs) range from $10^{4}$ to $10^{8}\,\Msun$, depending on whether the width of their broad Balmer lines is read as orbital motion.
+We refit public JWST/NIRSpec grating spectra of \NLRD{} LRDs and \NOther{} other broad-line sources with one procedure and measure how much the widths of broad \Ha{} scatter at fixed line luminosity.
+For LRDs the intrinsic scatter of the Gaussian FWHM is \Fsig{}~dex (95\% interval \Fsiglo{}--\Fsighi{}), against \FsigoTwo{}~dex for the other JWST sources and \SsgTwo{}~dex for SDSS quasars of the same luminosity fitted in the same way.
+Five of six definitions of width give \sigFiveLo{}--\sigFiveHi{}~dex and the sixth \DsigTgTwo{}~dex, and the widths that \citeauthor{BaccusXu2026} measured independently for \NXLRD{} LRDs give \Xsig{}~dex.
+The photosphere of a source radiating at its Eddington luminosity defines a Keplerian speed, $\vK\propto\Lph^{1/4}\Teff$, with no free parameter.
+For LRDs with published photospheric parameters the median Gaussian FWHM is \ratLo{}--\ratHi{} times $\vK$, the ratio scatters by \sqLo{}--\sqHi{}~dex, and a quarter of the line flux of the median source lies beyond the photospheric escape speed.
+Orbital motion outside the photosphere therefore requires a sub-Eddington luminosity, at most \lamRingHi{} of the Eddington value for the Gaussian width; an Eddington-limited envelope requires the line to be broadened \ratLo{}--3 times, uniformly to about \uniPct{}\%.
+In either case the single-epoch virial mass of an LRD is fixed by its luminosity to within \sigMvir{}~dex.
+\end{abstract}
+
+\keywords{\uat{Active galactic nuclei}{16} --- \uat{Supermassive black holes}{1663} --- \uat{High-redshift galaxies}{734}}
+
+\section{Introduction} \label{sec:intro}
+
+JWST has uncovered a population of compact red sources with broad Balmer lines at $z>3$, the little red dots \citep[LRDs;][]{Matthee2024,Kocevski2025,Greene2024}.
+Their optical continua resemble a photosphere near 5000~K \citep{deGraaff2026,InayoshiHo}.
+Single-epoch virial estimates, which read the line width as an orbital speed, typically give black holes of $10^{7}$--$10^{8}\,\Msun$ \citep{Matthee2024,Sun2026}.
+Models in which the photosphere belongs to an envelope radiating near its Eddington limit place $10^{6}$--$10^{7}\,\Msun$ at the center \citep{BegelmanDexter2025,Kido2025}, and estimates that combine the photospheric radius with the velocity of Balmer absorption troughs, or with an assumed super-Eddington luminosity, reach $10^{4}$--$10^{5}\,\Msun$ \citep{Sun2026,Naidu2026}.
+The estimates span four orders of magnitude.
+
+They differ in what the width of the broad lines is taken to mean.
+In one reading it is the orbital speed of gas bound to the black hole: the dynamical mass of A2744-QSO1 agrees with its virial mass \citep{Juodzbalis2025}, and a stratified virial broad-line region reproduces the exponential wings of the profiles \citep{Madau2026b,Scholtz2026}.
+In the other the wings are made by electron scattering in dense ionized gas, and their width reflects the electron temperature and optical depth \citep{Rusakov2026,Chang2025,Sneppen2026}.
+Several authors have compared the line widths of individual LRDs with the gravitational speed at the photosphere and found them of the same order \citep{Lin2025,Inayoshi2025,Burke2025,TakasaoInayoshi2026}.
+\citet{LiuFengHo2026} model the widths of 18 sources as an outflow broadened by electron scattering, with parameters set by the photosphere, and match 15 of them within a factor of 1.5.
+
+Both readings have been argued from the profiles of single objects or stacks.
+We take the population instead and ask how much the widths scatter at fixed luminosity.
+The same question constrained quasar models: \citet{Fine2008} found the \ion{Mg}{2} widths of luminous quasars too uniform for the known scatter of the radius--luminosity relation, and \citet{Croom2011} showed that shuffling the widths leaves the distribution of virial masses almost unchanged.
+Any picture that ties the width to the luminosity contains quantities that vary from source to source, and their combined scatter cannot exceed the observed one.
+\citet{BaccusXu2026} plot width against luminosity for their sample of JWST broad-line sources; we found no measurement of the scatter of LRDs about such a relation.
+We measure it under six definitions of width (Sections~\ref{sec:data} and \ref{sec:results}) and test whether the fits and the selection could have produced it (Section~\ref{sec:tests}).
+Section~\ref{sec:physics} draws two constraints from the result.
+The scatter bounds the variation of whatever sets the width.
+The ratio of the widths to the Keplerian speed at the photosphere of an Eddington-limited source, which follows from published photospheric luminosities and temperatures without a free parameter, fixes the scale of the velocities.
+Together they state what orbital motion and an Eddington-limited envelope must each supply; they do not choose between the two, and in either case the virial masses restate the luminosities.
+We adopt the Planck 2018 cosmology \citep{Planck2020}.
+Intervals are 95\% and logarithms are base 10.
+
+\section{Data and Measurements} \label{sec:data}
+
+\subsection{Spectra and Line Fits} \label{sec:fit}
+
+We use the public medium- and high-resolution NIRSpec grating spectra of the DAWN JWST Archive \citep[DJA;][]{DJAHeintz2023,DJAdeGraaff2024}, reduced with \texttt{msaexp} \citep{msaexp}.
+The parent list merges published catalogs of broad-line sources and LRDs, among them those of \citet{Taylor2025}, \citet{Kocevski2026}, \citet{Hviding2025}, and \citet{deGraaff2026}, matched within \matchRadius{}: \NSources{} objects with \NSpectra{} grating spectra, \NSpecHa{} of which cover \Ha{}.
+
+Around \Ha{} each spectrum is fitted with a linear continuum, narrow \Ha{} and [\ion{N}{2}] with one shared width, and a broad component.
+The model is convolved with a Gaussian line-spread function (LSF) that follows the nominal resolution curve of the grating \citep{Jakobsen2022} and is integrated over the pixels, so fitted widths are intrinsic.
+A multiplicative absorption component is added when it lowers the Bayesian information criterion (BIC) by more than \cutBIC{}; this happens for \NAbsLRD{} LRDs and \NAbsOther{} other sources in the final sample.
+Luminosities are those of the broad component before absorption, without dust correction.
+
+\subsection{Six Measures of Width} \label{sec:widths}
+
+The broad component is fitted in turn as a Gaussian, a Lorentzian, an exponential, and a sum of two Gaussians, and is also recovered without a parametric form as a non-negative piecewise-linear profile.
+From these we take six widths: the FWHM of each of the four parametric profiles (for two Gaussians, of their sum) and, from the nonparametric profile, its FWHM and the interquartile width $W_{50}=v_{75}-v_{25}$ of the flux within $\pm5000$~\kms{}.
+Each width is paired with the luminosity and the covariance of its own fit.
+
+A single Gaussian is not the preferred profile of most LRDs.
+Among the four parametric forms the lowest BIC belongs to the Lorentzian or the exponential in \NBICwing{} of the \NLRD{} LRDs, and the Gaussian is worse than the best form by $\Delta{\rm BIC}>6$ in \NBICsix{}, including all \NBIChiSN{} with a broad-line S/N above 20.
+Among the \NOther{} other sources the corresponding number is \NBICsixOth{}.
+We nevertheless adopt the FWHM of the single Gaussian as the primary width, for two reasons established below: it and $W_{50}$ are the two measures whose scatter is recovered without bias whatever the true profile (Section~\ref{sec:tests}), and the result does not depend on the choice (Section~\ref{sec:definitions}).
+We use it as a summary of width that is defined for every source, not as a statement about line shape.
+
+\subsection{The Sample} \label{sec:sample}
+
+A fit is kept if the broad component has ${\rm S/N}\geq\cutSN{}$, if the BIC prefers it over a model without a broad component by at least \cutBIC{}, if its width exceeds the instrumental FWHM and is not at a parameter bound, if the reduced $\chi^2$ is below \cutChi{}, and if the optimizer converged.
+These rules were fixed, on the single-Gaussian fits, before the analysis reported here; their history is recorded in the data release, which also holds the measurements, covariances, and scripts behind every figure and table, at\dataset[doi:10.5281/zenodo.24182569]{https://doi.org/10.5281/zenodo.24182569}.
+When an object has several spectra we keep the one that passes the rules with the highest S/N.
+Labels of LRD and non-LRD are taken from \citet{Taylor2025}, \citet{Kocevski2026}, and \citet{Hviding2025}; sources with conflicting or missing labels are dropped.
+
+This leaves \NLRD{} LRDs and \NOther{} other broad-line sources in the EGS and UDS fields (Table~\ref{tab:sample}).
+The LRDs lie at $z=\zLRDmin{}$--$\zLRDmax{}$, with $\log(\LHa/\ergs)=\LLRDmin{}$--$\LLRDmax{}$, FWHM of \WLRDmin{}--\WLRDmax{}~\kms{} (median \WLRDmed{}), and a median broad-line S/N of \SNLRDmed{}; the other sources lie at $z=\zOthmin{}$--$\zOthmax{}$ with a median S/N of \SNOthmed{}.
+None has a reported lensing magnification.
+Membership is the same for all six widths.
+
+\input{tables/Table1_stub}
+
+\subsection{Comparison Data} \label{sec:bx}
+
+\emph{An independent table of JWST widths.}
+\citet[][hereafter \BX{}]{BaccusXu2026} published widths for \NX{} NIRSpec broad-line records, \NXLRD{} with a literature LRD label, from single-Gaussian fits after sideband continuum subtraction. Their nominal selection is ${\rm FWHM}>\XWcut{}$~\kms{}, with exceptions for broad-line sources identified earlier.
+Their luminosity is a bolometric one derived from the dust-corrected broad \Ha{} flux through a 5100~\AA{} conversion and a bolometric correction that is constant within each class, so it remains a line luminosity in origin and its scatter can be compared with ours, though its slope cannot.
+As comparison sources we take their \NXCtrl{} records without an LRD label at $z>\XzCut{}$ within the luminosity range of the LRDs.
+The table shares \NXOvRec{} records with our sample.
+Where \Ha{} is unavailable \BX{} substitute 3.1 times the \Hb{} flux without flagging the record; in all \NXHbCand{} records whose \Ha{} falls outside the nominal range of the grating, the extracted spectrum does cover \Ha{}, and we remove none.
+
+\emph{Quasars.}
+From the SDSS DR7 catalog of \citet{Shen2011} we select quasars with a broad \Ha{} FWHM above 1000~\kms{}, a line-luminosity S/N above 5, and $\LHa$ within the range of our LRDs: \NSDSS{} objects.
+Their FWHM is that of a multi-Gaussian model, which is not the same measure as ours.
+We retrieved SDSS Legacy spectra for a random \NSsgDraw{} of them from the DR17 archive (reduction directory 26) and refitted these spectra with the procedure of Section~\ref{sec:fit}; \NSsg{} pass the rules of Section~\ref{sec:sample}.
+
+\subsection{Statistical Model} \label{sec:model}
+
+For each class we fit
+\begin{equation} \label{eq:model}
+\log {\rm FWHM} = a + b\,\log\!\left(\frac{L}{L_0}\right) + \varepsilon, \qquad \varepsilon\sim\mathcal{N}(0,\sigint^2),
+\end{equation}
+with $L_0=10^{43}$~\ergs{} for $\LHa$ and $10^{45}$~\ergs{} for $\Lbol$.
+With $x$ and $y$ the logarithms of luminosity and width and $C$ the measurement covariance of a source, the variance of its residual is
+\begin{equation} \label{eq:var}
+V_i=\sigint^2 + C_{yy,i} + b^2 C_{xx,i} - 2b\,C_{xy,i} .
+\end{equation}
+Priors are uniform in $a$, $b\in(-1,1)$, and $\sigint\in(0,0.6)$~dex.
+The posterior is evaluated on a grid with $a$ integrated analytically, and we quote medians and 95\% equal-tailed intervals; the difference between two classes is the convolution of their marginal posteriors.
+The likelihood is conditional on the sample as selected.
+A hierarchical model with a Gaussian prior on the true luminosities returns the same slope and scatter for the LRDs (\hierB{} and \hierSig{}~dex).
+
+\section{Results} \label{sec:results}
+
+\subsection{The Relation} \label{sec:relation}
+
+The \NLRD{} LRDs follow
+\begin{equation}
+\log\frac{\rm FWHM}{\kms} = \Fa{} + \Fb{}\,\log\frac{\LHa}{10^{43}\,\ergs}
+\end{equation}
+with a slope interval of \Fblo{}--\Fbhi{} and an intrinsic scatter $\sigint=\Fsig{}$~dex (\Fsiglo{}--\Fsighi{}; Figure~\ref{fig:relation}a and Table~\ref{tab:fits}).
+The \BX{} table gives $\sigint=\Xsig{}$~dex (\Xsiglo{}--\Xsighi{}) for its \NXLRD{} LRDs, with a slope of \Xb{} (\Xblo{}--\Xbhi{}) against $\Lbol$ (Figure~\ref{fig:relation}b).
+Two groups with different fitting procedures find the same scatter; Section~\ref{sec:tests} repeats the comparison without the sources they share.
+
+\begin{figure*}
+\includegraphics[width=\textwidth]{figures/Figure1.pdf}
+\caption{Width of broad \Ha{} against luminosity.
+(a) Our sample: \NLRD{} LRDs (circles) and \NOther{} other broad-line sources (triangles), fitted with one procedure; the width is the FWHM of a single Gaussian and error bars are $1\sigma$.
+The diamond is A2744-QSO1 after correction for magnification; it is not part of the sample (Section~\ref{sec:relation}).
+(b) The table of \citet{BaccusXu2026}, whose luminosity is a bolometric one derived from broad \Ha{}; the comparison sources have $z>\XzCut{}$. Open symbols are records also in our sample, and points are displaced horizontally by up to 0.03~dex because the tabulated luminosities are rounded.
+Lines are posterior-median relations and bands show $\pm\sigint$.
+All figures in this paper were generated from the stated data using Matplotlib code written with assistance from Claude (Anthropic), and their contents were verified by the authors.
+\label{fig:relation}}
+\end{figure*}
+
+The slope of our sample rests on its \NBright{} most luminous LRDs, which sit at $\LHa\approx10^{\LBright{}}$~\ergs{} while the rest lie below $10^{\LRestMax{}}$~\ergs{}.
+Without them the slope is \FbNoTop{} (\FbNoToplo{}--\FbNoTophi{}) and the scatter \FsigNoTop{}~dex (\FsigNoToplo{}--\FsigNoTophi{}).
+In the \BX{} table the LRDs populate $\Lbol=10^{\XLmin{}}$--$10^{\XLmax{}}$~\ergs{} continuously and the slope does not hang on a few sources.
+
+A2744-QSO1 has a dynamical mass \citep{Juodzbalis2025} but is not in the sample, because the only grating spectrum that covers its \Ha{} gives the broad component an S/N of \QSOsn{}; that fit places it $\QSOresCor{}\pm\QSOresErr{}$~dex above the relation for a magnification of $\QSOmu{}\pm\QSOmuErr{}$ \citep{Furtak2025}.
+
+\input{tables/Table2_fits}
+
+\subsection{Six Definitions of Width} \label{sec:definitions}
+
+Table~\ref{tab:fits} and Figure~\ref{fig:forest} give the scatter for every measure.
+Five of the six give $\sigint=\sigFiveLo{}$--$\sigFiveHi{}$~dex for the LRDs: \Fsig{} for the Gaussian FWHM, \DsigWf{} for $W_{50}$, \DsigEx{} for the exponential FWHM, \DsigLo{} for the Lorentzian FWHM, and \DsigNp{} for the nonparametric FWHM.
+In each of the five the LRDs scatter less than the other sources, and the 95\% interval of the difference excludes zero.
+The sixth, the FWHM of two summed Gaussians, gives \DsigTg{}~dex (\DsigTglo{}--\DsigTghi{}); that decomposition is identifiable in only \NCoreWing{} of the \NFrozen{} sources, and its difference from the other sources (\DdsigTg{}~dex; \DdsigTglo{} to \DdsigTghi{}) includes zero.
+
+\begin{figure}
+\centering\includegraphics[width=0.92\columnwidth]{figures/Figure2.pdf}
+\caption{Intrinsic scatter of the width--luminosity relation for each measure of width.
+Symbols are posterior medians; thick and thin bars are 68\% and 95\% intervals.
+The red strip marks \sigFiveLo{}--\sigFiveHi{}~dex and the vertical line, with its 95\% interval, the SDSS quasars of the same \Ha{} luminosity refitted with a single Gaussian.
+\label{fig:forest}}
+\end{figure}
+
+\subsection{Other Broad-line Sources and Quasars} \label{sec:others}
+
+The other sources of our sample scatter by \Fsigo{}~dex (\Fsigolo{}--\Fsigohi{}) and the comparison sources of the \BX{} table by \Xsigo{}~dex (\Xsigolo{}--\Xsigohi{}); the differences from the LRDs are \Fdsig{}~dex (\Fdsiglo{} to \Fdsighi{}) and \Xdsig{}~dex (\Xdsiglo{} to \Xdsighi{}).
+The SDSS quasars scatter by \Ssig{}~dex (\Ssiglo{}--\Ssighi{}) in the multi-Gaussian FWHM of the catalog.
+Refitted with our single Gaussian, the \NSsg{} that pass our rules scatter by \Ssg{}~dex (\Ssglo{}--\Ssghi{}); the catalog FWHM of the same \NSsg{} scatters by \SsgCat{}~dex.
+In the same measure and under the same rules, the widths of LRDs are \sdssRatSame{} times more uniform than those of quasars of the same \Ha{} luminosity.
+
+\section{Is the Scatter Measured or Made?} \label{sec:tests}
+
+\emph{Fitting and quality cuts.}
+We build simulated spectra from the noise, sampling, and LSF of the \NLRD{} LRD spectra, inject lines that follow a relation with $\simInj{}$~dex of scatter, and pass \NReal{} simulated samples through the fits and the quality rules.
+The single-Gaussian FWHM returns a median scatter of \recGG{}~dex when the injected lines are Gaussian and \recEG{}~dex when they are exponential; $W_{50}$ returns \recGW{} and \recEW{}~dex.
+Lorentzian and exponential fits to Gaussian lines return \recGL{} and \recGE{}~dex, so these two measures inflate the scatter when the profile is mismatched.
+When the injected widths are independent of luminosity and scatter by $\simNull{}$~dex, \nullHits{} of \nullDen{} samples comes out as tight as the observed LRDs, although the cuts remove the faintest broad lines and lower the recovered scatter to \nullEG{}~dex for exponential profiles.
+A parent scatter of $\simA{}$~dex with exponential profiles reaches the observed residual in \hitEA{} of \NReal{} samples: the selection could disguise a parent scatter of $\simA{}$~dex, but not one of $\simNull{}$~dex.
+The observed scatter does not shrink toward the detection limit: it is \sigSNten{}~dex (\sigSNtenlo{}--\sigSNtenhi{}) for the \NSNten{} LRDs with ${\rm S/N}\geq10$ and \sigSNtwenty{}~dex (\sigSNtwentylo{}--\sigSNtwentyhi{}) for the \NSNtwenty{} with ${\rm S/N}\geq20$.
+At the lowest luminosity of the sample the relation lies \floorDex{}~dex, or \floorSig{} times the scatter, above the 1000~\kms{} at which \citet{Hviding2025} cut their broad-line catalog and \BX{} set their nominal threshold.
+
+\emph{Instrumental width.}
+Compact sources underfill the shutter and their LSF is narrower than the nominal curve.
+Halving the LSF width gives $\sigint=\FsigLsf{}$~dex (\FsigLsflo{}--\FsigLsfhi{}) for the LRDs and a difference from the other sources of \FdsigLsf{}~dex (\FdsigLsflo{} to \FdsigLsfhi{}).
+
+\emph{Membership.}
+The limit on the reduced $\chi^2$ and the rule on absorption parameters remove \NIncRules{} LRDs that pass every other rule; with them $\sigint=\sigIncA{}$~dex, and a limit of $\chi^2<3$ gives \sigChiThree{}~dex.
+With the labels of \citet{Taylor2025} alone, which rest on photometry and share one parent sample, \NTay{} LRDs scatter by \FsigTay{}~dex (\FsigTaylo{}--\FsigTayhi{}) and \NTay{} other sources by \FsigoTay{}~dex.
+The sample leaves out sources whose labels conflict or are missing.
+Counting as an LRD every source that one of the three catalogs or the sample of \citet{deGraaff2026} calls one gives \NIncB{} LRDs and $\sigint=\sigIncB{}$~dex (\sigIncBlo{}--\sigIncBhi{}) under the rules of Section~\ref{sec:sample}, and \NIncC{} LRDs and \sigIncC{}~dex (\sigIncClo{}--\sigIncChi{}) with $\chi^2<3$ and absorption parameters allowed at their bounds.
+The two remaining sources, with $\chi^2$ of \chiHiA{} and \chiHiB{}, raise it to \sigIncD{}~dex (\sigIncDlo{}--\sigIncDhi{}).
+
+\emph{Independence.}
+Removing from the \BX{} table every record shared with our sample leaves \NXNoOv{} LRDs with $\sigint=\XsigNoOv{}$~dex (\XsigNoOvlo{}--\XsigNoOvhi{}), still \XdsigNoOv{}~dex (\XdsigNoOvlo{} to \XdsigNoOvhi{}) tighter than the comparison sources.
+Pairs matched in grating, redshift, and luminosity (\NXPairs{} pairs) differ in residual scatter by \XdMatch{}~dex (\XdMatchlo{} to \XdMatchhi{}).
+Shuffling the labels of that table reproduces the observed difference in \NPermHits{} of $\NPermTrials{}$ trials.
+
+\emph{The comparison within our sample.}
+Our own comparison rests on \NOther{} sources, and without the two widest of them (\WOutA{} and \WOutB{}~\kms{}) the interval of the difference becomes \FdsigDroplo{} to \FdsigDrophi{}~dex.
+The statement that LRDs are tighter than other broad-line sources draws its weight from the \BX{} table and from SDSS; the value of $\sigint$ for the LRDs does not depend on the comparison.
+
+\section{Physical Constraints from the Widths} \label{sec:physics}
+
+The measurement gives two numbers that any account of the widths has to meet: their scatter at fixed luminosity, and their size relative to the one speed the photosphere defines.
+
+\subsection{The Scatter Budget of an Orbital Reading} \label{sec:budget}
+
+Suppose the line width is an orbital speed, ${\rm FWHM}=k\,(GM/R)^{1/2}$, where $M$ is the mass enclosed within the emitting radius $R$ and $k$ depends on the velocity field and the viewing angle.
+At fixed luminosity
+\begin{equation} \label{eq:budget}
+\sigint^{2} = \sigma_{k}^{2} + \tfrac{1}{4}\,\sigma_{M/R}^{2},
+\end{equation}
+if orientation is independent of $M/R$ (Figure~\ref{fig:budget}).
+The scatter of $\log(M/R)$ at fixed \Ha{} luminosity is therefore at most \sigLamMax{}~dex (\sigLamMaxUp{}~dex at the upper limit of $\sigint$).
+If the photospheric luminosity is a fraction $\lambda$ of the Eddington luminosity and the radius has scatter $\sigma_r$ at fixed $\LHa$, then $\sigma_{M/R}^{2}=\sigma_\lambda^{2}+\sigma_r^{2}$ provided that $\Lph/\LHa$ is fixed and the two residuals are uncorrelated at fixed $\LHa$.
+In local active nuclei the \Hb{} radius scatters by \RLlo{}--\RLhi{}~dex at fixed 5100~\AA{} luminosity \citep{Bentz2013}; the same scatter at fixed \Ha{} luminosity would alone contribute \RLtermLo{}--\RLtermHi{}~dex to the widths, more than is observed.
+
+Orientation takes its share first.
+A thin disk viewed at inclinations below $45^\circ$ has $\sigma_k=\oriThin{}$~dex, \oriThinRatio{} times the whole budget.
+With an isotropic velocity component, ${\rm FWHM}^{2}\propto\sin^{2}i+(H/R)^{2}$ \citep{Decarli2011}, the orientation term is \oriHalf{}, \oriSeven{}, and \oriOne{}~dex for $H/R=0.5$, 0.7, and 1 over inclinations below $60^\circ$.
+Only a nearly isotropic velocity field leaves room for anything else, and then $\sigma_{M/R}\leq\sigLamIso{}$~dex.
+A correlation between orientation and $M/R$ would change the budget, but a thin disk fits within it only if the two terms cancel with a correlation coefficient of $-\rhoThin{}$.
+
+\begin{figure}
+\includegraphics[width=\columnwidth]{figures/Figure3.pdf}
+\caption{What the observed scatter allows if the widths are orbital speeds (Equation~\ref{eq:budget}).
+The region under the solid curve is allowed for $\sigint=\Fsig{}$~dex and that under the dashed curve for its 95\% upper limit.
+Horizontal lines give the orientation scatter of a thin disk and of velocity fields with an isotropic component $H/R$.
+\label{fig:budget}}
+\end{figure}
+
+\subsection{The Photospheric Velocity Scale} \label{sec:photosphere}
+
+The photosphere supplies a radius, $\Rph=(\Lph/4\pi\sigma_{\rm SB}\Teff^{4})^{1/2}$, and with it a speed.
+If the photospheric luminosity is a fraction $\lambda$ of the Eddington luminosity of the enclosed mass, the Keplerian speed at radius $R$ is $\vK\,(\lambda R/\Rph)^{-1/2}$, with
+\begin{equation} \label{eq:vk}
+\vK = \vKnorm{}~\kms\left(\frac{\Lph}{10^{45}\,\ergs}\right)^{1/4}\frac{\Teff}{5000~{\rm K}}
+\end{equation}
+for the electron-scattering opacity of ionized hydrogen, \kappaES{}~cm$^{2}$~g$^{-1}$, by which we define the Eddington luminosity; with \kappaSolar{}~cm$^{2}$~g$^{-1}$ it is \vKdrop{}\% lower.
+Equation~(\ref{eq:vk}) is the speed at the photosphere of an Eddington-limited source. The continuum fixes it, and nothing in it is fitted to the lines.
+We write the widths as
+\begin{equation} \label{eq:ratio}
+{\rm FWHM} = k\,\vK\left(\frac{\lambda R}{\Rph}\right)^{-1/2}.
+\end{equation}
+
+Photospheric luminosities and temperatures come from the atmosphere models that \citet{Curtis2026} fit together with a stellar host and from the blackbody fits of \citet{deGraaff2026}; Appendix~\ref{app:scaling} gives the selection.
+The atmosphere fits provide \NPA{} LRDs with a width in the \BX{} table and \NPB{} with a width from our fits, largely the same objects measured twice.
+The blackbody fits provide \NPE{} LRDs with a width from our fits, and \NPC{} when the \BX{} table supplies the width for \NPCbx{} more.
+Together the samples span $\Lph=10^{\LphMin{}}$--$10^{\LphMax{}}$~\ergs{} and $\Teff=\TminP{}$--\TmaxP{}~K.
+
+The median of ${\rm FWHM}/\vK$ is \ratPA{} and \ratPB{} for the atmosphere fits with the two sets of widths, and \ratPE{} for the \NPE{} blackbody sources (\ratPC{} for the \NPC{}; Figure~\ref{fig:photo}).
+The ratio scatters intrinsically by \sqPA{}~dex (\sqPAlo{}--\sqPAhi{}) and \sqPB{}~dex (\sqPBlo{}--\sqPBhi{}) in the atmosphere samples; \NPE{} sources constrain the scatter only to \sqPElo{}--\sqPEhi{}~dex.
+
+These are Gaussian widths, and the ratio depends on the measure.
+For the \NPB{} atmosphere-fit sources with our widths its median is \ratNpB{} for the nonparametric FWHM, \ratTgB{} for two Gaussians, \ratLoB{} for the Lorentzian, and \ratExB{} for the exponential, because a profile with stronger wings has a narrower core; the \NPE{} blackbody sources give \ratNpE{}, \ratTgE{}, \ratLoE{}, and \ratExE{}.
+The scatter of the ratio is \sqMeasLo{}--\sqMeasHi{}~dex in each measure except the two-Gaussian one (\sqTgB{}~dex).
+Where the flux lies does not depend on the measure.
+Integrating the nonparametric profile of each source, the median fraction of the line flux at line-of-sight speeds above $\vK$ is \fKepNpLo{}--\fKepNpHi{}\% in the three samples, and above the escape speed $\sqrt{2}\,\vK$ it is \fEscNpLo{}--\fEscNpHi{}\% (\fEscBicLo{}--\fEscBicHi{}\% for the best-fitting parametric profiles); a Gaussian of the median width gives \fEscLo{}--\fEscHi{}\% and an exponential \fEscEx{}\%.
+
+\begin{figure}
+\includegraphics[width=\columnwidth]{figures/Figure4.pdf}
+\caption{FWHM of broad \Ha{} against the Keplerian speed at the photosphere of an Eddington-limited source (Equation~\ref{eq:vk}), for photospheric parameters from atmosphere fits \citep[circles;][]{Curtis2026} and blackbody fits \citep[squares;][]{deGraaff2026}.
+Widths are from \citet{BaccusXu2026} for the circles and the open squares and from this work for the filled squares.
+Lines mark one, two, and three times $\vK$.
+\label{fig:photo}}
+\end{figure}
+
+\emph{Do the widths follow the photospheric scaling?}
+The ratio measures a scale; whether the widths vary as $\Lph^{1/4}\Teff$ is a separate question.
+The present samples do not establish that they do, and where they discriminate they lean against it (Appendix~\ref{app:scaling}).
+With free exponents for $\Lph$ and $\Teff$, the prediction $(0.25,1)$ lies on the \hpdPA{}\% and \hpdPB{}\% contours of the two atmosphere samples and on the \hpdPC{}\% contour of the \NPC{} blackbody sources.
+At fixed line luminosity the exponent of $\Lph$ is \bpJA{} (\bpJAlo{} to \bpJAhi{}) and \bpJB{} (\bpJBlo{} to \bpJBhi{}) in the atmosphere samples, values that the photospheric scaling returns in \simPctJA{}\% and \simPctJB{}\% of simulations; these two samples share most of their sources, and the \NPE{} blackbody sources give \bpJE{} (\bpJElo{} to \bpJEhi{}).
+On the same sources the line luminosity predicts the width to \slJA{} and \slJB{}~dex, and the photospheric scaling to \soJA{} and \soJB{}~dex.
+
+\subsection{Two Readings} \label{sec:readings}
+
+Each picture has to account for a Gaussian width of \ratLo{}--\ratHi{} times $\vK$, equivalently for about a quarter of the line flux beyond the escape speed of an Eddington-limited photosphere.
+
+\emph{Orbital motion.}
+Gas bound to the mass within the photosphere of an Eddington-limited source moves no faster than $\sqrt{2}\,\vK$.
+If the profile traces the motion of bound gas, the flux beyond that speed requires $\lambda<1$, whatever the velocity field and the measure of width.
+How far below unity depends on both.
+By Equation~(\ref{eq:ratio}), $\lambda R/\Rph=(k\,\vK/{\rm FWHM})^{2}$, and we evaluate it for the Gaussian width.
+A ring of gas on circular orbits seen edge-on has $k=\kRing{}$, the largest value circular motion allows, and gives $\lambda R/\Rph=\lamRingLo{}$--\lamRingHi{}; an isotropic velocity distribution ($k=\kIso{}$) gives \lamIsoLo{}--\lamIsoHi{}, and the virial factor of \citet{ReinesVolonteri2015} ($k=\kVir{}$) gives \lamVirLo{}--\lamVirHi{}.
+The line is emitted outside the photosphere, $R\geq\Rph$, so these are upper limits on $\lambda$: orbital widths require a photosphere that radiates at no more than \lamRingHi{} of the Eddington luminosity of the mass it encloses, and at \lamVirLo{}--\lamVirHi{} for the usual virial factor.
+With the exponential width in place of the Gaussian these values are \lamExpFac{} times larger.
+Equivalently the enclosed mass is $(\mEddLo{}$--$\mEddHi{})\,R/\Rph$ times the mass whose Eddington luminosity equals $\Lph$, which is $8\times10^{5}\,\Msun$ at $\Lph=10^{44}$~\ergs{}.
+The scatter of the ratio limits that of $\lambda R/\Rph$ to \sigLamRLo{}--\sigLamRHi{}~dex among the atmosphere-fit sources, and by Section~\ref{sec:budget} this reading also needs a nearly isotropic velocity field and an $M/R$ fixed by the line luminosity to \sigLamMax{}~dex.
+
+\emph{An Eddington-limited envelope.}
+If instead $\lambda\approx1$, the flux beyond the escape speed belongs to an outflow or was moved there by scattering after emission; gravity at $R\geq\Rph$ supplies at most 40\% of the Gaussian width for $k\approx1$, and the line must be broadened \ratLo{}--3 times.
+\citet{Inayoshi2025} reach such a factor from the model side: an intrinsic FWHM near 1000~\kms{}, which electron scattering at $\tau_e\simeq2$--3 and $10^{4}$~K raises to 2000--3000~\kms{}.
+The measurement fixes the factor over a population and adds that it is uniform to \sqLo{}--\sqHi{}~dex across the atmosphere-fit sources.
+If electron scattering supplies the broadening, with wings of $e$-folding width $W\simeq(\rusA{}\,\tau_e+\rusB{})(T_e/10^{4}~{\rm K})^{1/2}$~\kms{} \citep{Rusakov2026}, then $D\equiv\partial\log W/\partial\log\tau_e$ is \DHalf{}, \DOne{}, and \DTwo{} at $\tau_e=0.5$, 1, and 2.
+If the FWHM scatters as $W$ does, the optical depth can scatter by at most \sigTauHalf{}, \sigTauOne{}, and \sigTauTwo{}~dex at fixed luminosity, or the electron temperature by \sigTeMax{}~dex, and the observed slope requires $\tau_e\propto L^{\tauSlopeLo{}\text{--}\tauSlopeHi{}}$ near $\tau_e=1$.
+In the radiative-transfer models of \citet{Sneppen2026} cooling keeps the scattering gas near or below $10^{4}$~K, and the line widths depend only weakly on the temperature of the input blackbody over the range they explore; very low metallicities weaken the cooling.
+If the electron temperature is the same across LRDs of a given line luminosity, the scatter of the widths is driven by that of the optical depth, and the optical-depth limits above apply.
+
+In this picture the emitting and the scattering gas belong to one system \citep{Rusakov2026,Sneppen2026}; if the same electrons do both, recombination in a shell whose thickness scales with its radius $R$ gives $\LHa\propto R\,\tau_e^{2}$, as derived for dense ionized winds \citep{Roming2012,Patton2019}.
+The optical depth then rises as $\LHa^{1/2}$ at fixed radius, and as $\LHa^{1/4}$ if the shell grows with a photosphere of fixed temperature, $R\propto\Lph^{1/2}$, and $\Lph\propto\LHa$. The widths rise as $L^{\tauPhLo{}}$ to $L^{\tauFixHi{}}$, a range that contains the measured slopes of \Fb{} and \Xb{}.
+The same scaling budgets the size of the shell. Write $\LHa=K R\,\tau_e^{2}$, with $K$ collecting the geometry, the clumping, and the line emissivity; at fixed line luminosity and fixed $K$, $\tau_e\propto R^{-1/2}$.
+If the electron temperature is fixed as well and the FWHM scatters as $W$ does, assigning all of the median $\sigint$ to the optical depth gives, to first order, $\sigma_{\log R}\simeq2\,\sigint/D$: \sigRHalf{}, \sigROne{}, \sigRTwo{}, and \sigRThree{}~dex at $\tau_e=0.5$, 1, 2, and 3.
+At fixed line luminosity, variations of $K$ that are uncorrelated with $R$ tighten this budget, whereas sufficiently strong anticorrelations can loosen it.
+It applies to $\log R$, whereas the \sigLamMax{}~dex of Section~\ref{sec:budget} applies to $\log(M/R)$.
+
+\subsection{Virial Masses} \label{sec:mvir}
+
+Neither reading alters what the relation does to virial masses.
+Single-epoch masses scale as $\Mvir\propto\LHa^{\virL{}}\,{\rm FWHM}^{\virW{}}$ \citep{Reines2013}, so at fixed luminosity they scatter by $\virW{}\,\sigint=\sigMvir{}$~dex.
+The masses tabulated by \BX{} show it directly: their residuals about a line in luminosity have a standard deviation of \XresM{}~dex for LRDs, measurement error included, against \XresMo{}~dex for the comparison sources.
+The virial mass of an LRD restates its luminosity, and so do the mass functions and Eddington ratios built from it.
+This is a property of the estimator. The mass itself depends on the reading: $(\mEddLo{}$--$\mEddHi{})\,R/\Rph$ times the Eddington mass of the photosphere if the widths are orbital, and that mass itself if the envelope is Eddington-limited.
+
+\section{Summary} \label{sec:summary}
+
+\begin{enumerate}
+\item The width of broad \Ha{} in \NLRD{} LRDs follows the line luminosity with an intrinsic scatter of \Fsig{}~dex (\Fsiglo{}--\Fsighi{}). Five of six definitions of width give \sigFiveLo{}--\sigFiveHi{}~dex and the sixth \DsigTg{}~dex. An independent table of \NXLRD{} LRDs gives \Xsig{}~dex; halving the instrumental width gives \FsigLsf{}~dex, and admitting every source that any catalog calls an LRD gives \sigIncB{}~dex.
+\item Other JWST broad-line sources scatter by \sigTwoLo{}--\sigTwoHi{}~dex, and SDSS quasars of the same luminosity, fitted in the same way, by \SsgTwo{}~dex. Simulated samples with $\simNull{}$~dex of scatter never come out of our fits and cuts as tight as the LRDs.
+\item The median Gaussian FWHM is \ratLo{}--\ratHi{} times the Keplerian speed at the photosphere of an Eddington-limited source (\ratExLo{}--\ratWingHi{} times for profiles with stronger wings), the ratio scatters by \sqLo{}--\sqHi{}~dex, and in the median source a quarter of the line flux lies beyond the escape speed. The present samples do not establish that the widths follow the photospheric scaling $\Lph^{1/4}\Teff$, and where they discriminate they lean toward the line luminosity alone.
+\item Orbital motion requires a sub-Eddington photosphere, with $\lambda R/\Rph\leq\lamRingHi{}$ for the Gaussian width (\lamVirHi{} for the usual virial factor), $M/R$ fixed by the line luminosity to \sigLamMax{}~dex, and a nearly isotropic velocity field. An Eddington-limited envelope requires the line to be broadened \ratLo{}--3 times, uniformly to about \uniPct{}\%; electron scattering does so if $\tau_e\propto L^{\tauSlopeLo{}\text{--}\tauSlopeHi{}}$.
+\item Under either reading the single-epoch virial mass of an LRD is a function of its luminosity to \sigMvir{}~dex.
+\end{enumerate}
+
+\begin{acknowledgments}
+Some of the data products presented herein were retrieved from the Dawn JWST Archive (DJA). DJA is an initiative of the Cosmic Dawn Center (DAWN), which is funded by the Danish National Research Foundation under grant DNRF140.
+This work is based on observations made with the NASA/ESA/CSA James Webb Space Telescope. The reduced spectra used here were retrieved from the DAWN JWST Archive; the underlying JWST observations are archived in the Mikulski Archive for Space Telescopes at the Space Telescope Science Institute, which is operated by the Association of Universities for Research in Astronomy, Inc., under NASA contract NAS5-03127 for JWST. These observations are associated with programs \#1345 (PI S. Finkelstein), \#3567 (PI F. Valentino), \#4106 (PI E. Nelson), \#4233 (PI A. de Graaff), \#5718 (PI D. D. Kocevski), \#8047 (PI B. Wang), \#8410 (PI R. Simons), and \#9214 (PI C. Mason). We acknowledge the teams of programs \#1345, \#4233, \#8410, and \#9214 for developing their observing programs with zero-exclusive-access periods.
+
+Funding for the SDSS and SDSS-II has been provided by the Alfred P. Sloan Foundation, the Participating Institutions, the National Science Foundation, the U.S. Department of Energy, the National Aeronautics and Space Administration, the Japanese Monbukagakusho, the Max Planck Society, and the Higher Education Funding Council for England. The SDSS Web Site is http://www.sdss.org/. The SDSS is managed by the Astrophysical Research Consortium for the Participating Institutions.
+
+The Participating Institutions are the American Museum of Natural History, Astrophysical Institute Potsdam, University of Basel, University of Cambridge, Case Western Reserve University, University of Chicago, Drexel University, Fermilab, the Institute for Advanced Study, the Japan Participation Group, Johns Hopkins University, the Joint Institute for Nuclear Astrophysics, the Kavli Institute for Particle Astrophysics and Cosmology, the Korean Scientist Group, the Chinese Academy of Sciences (LAMOST), Los Alamos National Laboratory, the Max-Planck-Institute for Astronomy (MPIA), the Max-Planck-Institute for Astrophysics (MPA), New Mexico State University, Ohio State University, University of Pittsburgh, University of Portsmouth, Princeton University, the United States Naval Observatory, and the University of Washington.
+
+AI disclosure: the AI tools Claude (Anthropic), Codex, and ChatGPT (OpenAI) were used throughout this work. Under the authors' direction they wrote and ran the analysis and plotting code, searched the literature and checked statements against the cited sources, and drafted most of the manuscript text from the authors' decisions on content and argument. The authors read, edited, and verified the text, numbers, figures, and references. The AI tools are not authors, and responsibility for the content lies entirely with the authors.
+\end{acknowledgments}
+
+\begin{contribution}
+H.W. conceived the project, posed the question, designed and directed the analysis, interpreted the results, and led the writing of the manuscript.
+X.Z. discussed the feasibility of the main ideas, wrote code for independent checks of part of the results, and reviewed the physical arguments.
+Both authors read and approved the manuscript.
+\end{contribution}
+
+\facilities{JWST (NIRSpec), Sloan}
+
+\software{\texttt{msaexp} \citep{msaexp}, NumPy \citep{harris2020array}, SciPy \citep{2020SciPy-NMeth}, Matplotlib \citep{Hunter:2007}, Astropy \citep{astropy:2013,astropy:2018,astropy:2022}}
+
+\appendix
+\section{The Dependence of the Widths on Photospheric Parameters} \label{app:scaling}
+
+\emph{Samples.}
+The atmosphere fits of \citet{Curtis2026} match \NPAall{} LRDs of the \BX{} table and \NPBall{} of our sample.
+For \NPdrop{} of them the posterior of $\log\Lph$ is \sxDropMin{}--\sxDropMax{}~dex wide, against at most \sxKeepMax{}~dex for the rest; a luminosity that uncertain carries no information, and a likelihood of the form of Equation~(\ref{eq:var}) then penalizes any nonzero exponent, so we exclude them, which leaves \NPA{} and \NPB{} sources.
+In a hierarchical model with a Gaussian prior on the true luminosities, which lacks this defect, including them changes the exponent of $\Lph$ by less than \hierDb{}.
+Blackbody parameters are published for \NdGbb{} of the \NdGall{} sources of \citet{deGraaff2026}, all at $z<4.5$; \NdGfit{} of these have a grating spectrum on which \Ha{} can be fitted, and \NPE{} pass the rules of Section~\ref{sec:sample}.
+The \BX{} table supplies a width for \NPCbx{} more.
+
+\emph{Exponents.}
+Fitting $\log{\rm FWHM}=a+b\log\Lph+c\log\Teff$ with errors on all three quantities gives $b=\bPA{}$ (\bPAlo{}--\bPAhi{}) and $c=\cPA{}$ (\cPAlo{} to \cPAhi{}) with the \BX{} widths, and $b=\bPB{}$ (\bPBlo{}--\bPBhi{}) and $c=\cPB{}$ (\cPBlo{} to \cPBhi{}) with ours.
+The prediction $(b,c)=(0.25,1)$ lies on the \hpdPA{}\% and \hpdPB{}\% contours of the joint posteriors (Figure~\ref{fig:exponents}), and on the \hpdPC{}\% contour for the \NPC{} blackbody sources, which give $b=\bPC{}$ (\bPClo{}--\bPChi{}) and $c=\cPC{}$ (\cPClo{} to \cPChi{}).
+Because $\Lph$ correlates with $\LHa$, a width that knew only the line luminosity would yield $b\approx\lineB{}$ and $c=\lineCLo{}$--\lineCHi{} in the same regression of the atmosphere samples, which is where they sit.
+
+\begin{figure}[!htbp]
+\centering\includegraphics[width=0.46\textwidth]{figures/Figure5.pdf}
+\caption{Joint posterior of the exponents of $\Lph$ and $\Teff$ in a fit to the widths (68\% solid, 95\% dashed), for the atmosphere fits with the \BX{} widths (A) and with ours (B) and for the \NPC{} blackbody sources (C).
+The star is the photospheric scaling; the crosses are what a dependence on line luminosity alone produces in the two atmosphere samples through the correlation of $\Lph$ with $\LHa$.
+\label{fig:exponents}}
+\end{figure}
+
+\emph{Width at fixed line luminosity.}
+A width set at the photosphere would keep following $\Lph$ at fixed line luminosity, so we regress the width on both luminosities.
+Simulated samples that obey Equation~(\ref{eq:ratio}) at fixed $\lambda R/\Rph$ return a median exponent for $\Lph$ of \simMedJA{} and \simMedJB{} in the two atmosphere samples and \simMedJE{} in the blackbody sample; widths that follow the line luminosity alone return zero.
+The \NPE{} blackbody sources give \bpJE{} (\bpJElo{} to \bpJEhi{}), which contains both; a sample of this size separates the two cases in \powLo{}--\powHi{}\% of simulations at the median estimate of its scatter and in \powTen{}\% at 0.10~dex.
+The atmosphere samples give \bpJA{} (\bpJAlo{} to \bpJAhi{}) for the \NJA{} sources that have a \BX{} width and an \Ha{} luminosity from our fits, and \bpJB{} (\bpJBlo{} to \bpJBhi{}) for the \NJB{} with our widths, values that the photospheric scaling returns in \simPctJA{}\% and \simPctJB{}\% of simulations.
+The two samples share most of their sources, and the covariance between $\Lph$ and $\Teff$, which is not published, is set to zero.
+
+\bibliography{refs,refs_ads}
+\bibliographystyle{aasjournalv7}
+
+\end{document}

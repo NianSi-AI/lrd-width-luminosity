@@ -1,0 +1,246 @@
+{
+  "sample_N": 300,
+  "downloaded_N": 300,
+  "download_failure_N": 0,
+  "fit_completed_N": 300,
+  "fit_failure_N": 0,
+  "no_replacement": true,
+  "failed_over30": false,
+  "QC_pass_N": 224,
+  "QC_excluded_N": 76,
+  "QC_failures_nonexclusive": {
+    "SNR_ge5": 28,
+    "chi2_lt2": 34,
+    "abs_not_bound": 18,
+    "width_not_bound": 4,
+    "deltaBIC_ge6": 1
+  },
+  "luminosity_bounds_log10_ergs": [
+    41.8246971687956,
+    43.550515131731146
+  ],
+  "QC_LRD_luminosity_N": 224,
+  "regressions": {
+    "single_gaussian_QC": {
+      "N": 224,
+      "quantiles": [
+        0.025,
+        0.16,
+        0.5,
+        0.84,
+        0.975
+      ],
+      "slope": [
+        0.04575628576645956,
+        0.07067128004125336,
+        0.09616873026445198,
+        0.12167345650867514,
+        0.14660716761801118
+      ],
+      "sigma_dex": [
+        0.11228189649308826,
+        0.11747658519127749,
+        0.12324047074754382,
+        0.12947057875128123,
+        0.1360155457440834
+      ],
+      "grid": [
+        1601,
+        2401
+      ],
+      "edge_probability": {
+        "slope": 5.251889730575578e-93,
+        "scatter_top": 1.3855840497745785e-107
+      },
+      "refinement_max_quantile_difference": {
+        "sigma_dex": 3.1509912888361136e-06,
+        "slope": 1.7911685163768398e-05
+      },
+      "sigma_over_LRD_0p054": [
+        2.0792943795016345,
+        2.1754923183569908,
+        2.28223093976933,
+        2.3976033102089116,
+        2.518806402668211
+      ]
+    },
+    "single_gaussian_QC_LRD_luminosity": {
+      "N": 224,
+      "quantiles": [
+        0.025,
+        0.16,
+        0.5,
+        0.84,
+        0.975
+      ],
+      "slope": [
+        0.04575628576645956,
+        0.07067128004125336,
+        0.09616873026445198,
+        0.12167345650867514,
+        0.14660716761801118
+      ],
+      "sigma_dex": [
+        0.11228189649308826,
+        0.11747658519127749,
+        0.12324047074754382,
+        0.12947057875128123,
+        0.1360155457440834
+      ],
+      "grid": [
+        1601,
+        2401
+      ],
+      "edge_probability": {
+        "slope": 5.251889730575578e-93,
+        "scatter_top": 1.3855840497745785e-107
+      },
+      "refinement_max_quantile_difference": {
+        "sigma_dex": 3.1509912888361136e-06,
+        "slope": 1.7911685163768398e-05
+      },
+      "sigma_over_LRD_0p054": [
+        2.0792943795016345,
+        2.1754923183569908,
+        2.28223093976933,
+        2.3976033102089116,
+        2.518806402668211
+      ]
+    },
+    "Shen_catalog_same_QC": {
+      "N": 224,
+      "quantiles": [
+        0.025,
+        0.16,
+        0.5,
+        0.84,
+        0.975
+      ],
+      "slope": [
+        0.005719474343384965,
+        0.04637213172027201,
+        0.08792923896533313,
+        0.12946829802332335,
+        0.17003359478518626
+      ],
+      "sigma_dex": [
+        0.16835633446952436,
+        0.17633760505794213,
+        0.18519527602700545,
+        0.19476833657779954,
+        0.2048185571297249
+      ],
+      "grid": [
+        801,
+        1201
+      ],
+      "edge_probability": {
+        "slope": 1.7166234452599884e-57,
+        "scatter_top": 1.0162698803448028e-69
+      },
+      "sigma_over_LRD_0p054": [
+        3.1177098975837847,
+        3.2655112047767063,
+        3.429542148648249,
+        3.6068210477370286,
+        3.7929362431430538
+      ]
+    },
+    "Shen_catalog_same_QC_and_refit_Lrange": {
+      "N": 224,
+      "quantiles": [
+        0.025,
+        0.16,
+        0.5,
+        0.84,
+        0.975
+      ],
+      "slope": [
+        0.005719474343384965,
+        0.04637213172027201,
+        0.08792923896533313,
+        0.12946829802332335,
+        0.17003359478518626
+      ],
+      "sigma_dex": [
+        0.16835633446952436,
+        0.17633760505794213,
+        0.18519527602700545,
+        0.19476833657779954,
+        0.2048185571297249
+      ],
+      "grid": [
+        801,
+        1201
+      ],
+      "edge_probability": {
+        "slope": 1.7166234452599884e-57,
+        "scatter_top": 1.0162698803448028e-69
+      },
+      "sigma_over_LRD_0p054": [
+        3.1177098975837847,
+        3.2655112047767063,
+        3.429542148648249,
+        3.6068210477370286,
+        3.7929362431430538
+      ]
+    }
+  },
+  "width_comparison": {
+    "all_fitted": {
+      "N": 300,
+      "Shen_over_single_p16_p50_p84": [
+        0.716627317775978,
+        0.959832626931997,
+        1.114667356376936
+      ],
+      "log10_Shen_over_single_p16_p50_p84": [
+        -0.14470747376167928,
+        -0.017804532697404125,
+        0.04714195564575209
+      ],
+      "nonparametric_available_N": 285
+    },
+    "QC_pass": {
+      "N": 224,
+      "Shen_over_single_p16_p50_p84": [
+        0.716015419894367,
+        0.9522033473582905,
+        1.076435363851848
+      ],
+      "log10_Shen_over_single_p16_p50_p84": [
+        -0.14507897447888377,
+        -0.021270297066796826,
+        0.03198533963350707
+      ],
+      "nonparametric_available_N": 224
+    },
+    "QC_LRD_luminosity": {
+      "N": 224,
+      "Shen_over_single_p16_p50_p84": [
+        0.716015419894367,
+        0.9522033473582905,
+        1.076435363851848
+      ],
+      "log10_Shen_over_single_p16_p50_p84": [
+        -0.14507897447888377,
+        -0.021270297066796826,
+        0.03198533963350707
+      ],
+      "nonparametric_available_N": 224
+    }
+  },
+  "covariance_QA": {
+    "jacobian_rank_deficient_QC_N": 0,
+    "covariance_rank_deficient_QC_N": 29,
+    "FW_eigenvalues_all_positive_QC": true
+  },
+  "definitions": {
+    "sigma": "vertical intrinsic dispersion in log10 width dex; posterior median with95%CI",
+    "prior": "a uniform[2,4.5],b[-1,1],sigma[0,.6],flat latent x",
+    "errors": "same frozen local covariance, including F/W cross term; LSF/extraction/model uncertainty excluded",
+    "NP": "point estimates from fixed algorithm, bootstrap0; not used for main Gaussian regression",
+    "cosmology": "Refit Planck18; Shen published cosmology retained",
+    "failure": "download/fit execution failures separate from statistical quality rejections"
+  }
+}

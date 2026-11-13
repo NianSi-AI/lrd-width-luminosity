@@ -1,0 +1,241 @@
+{
+ "candidate": {
+  "dg_row_index": 63,
+  "spectrum_path": "jades-gdn198-v4_g395m-f290lp_1181_53501.spec.fits",
+  "file": "jades-gdn198-v4_g395m-f290lp_1181_53501.spec.fits",
+  "file_id": "74dcaaae9500b6ef",
+  "grating": "G395M",
+  "ra_deg": 189.2950564,
+  "dec_deg": 62.1935722,
+  "match_sep_arcsec": 0.0,
+  "z_fit": 3.43598,
+  "z_origin": "deGraaff preferred table row",
+  "dg_zspec": 3.43598,
+  "dz_over_1pz": 0.0,
+  "existing_working_path": "74dcaaae9500b6ef.json",
+  "existing_t2_row_index": 1116,
+  "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn198-v4/jades-gdn198-v4_g395m-f290lp_1181_53501.spec.fits",
+  "current_version": 4,
+  "selection_order": 1116,
+  "existing_quality_pass": true
+ },
+ "fit_origin": "existing_T2_fit_reused",
+ "working_path": "74dcaaae9500b6ef.json",
+ "status": "fitted",
+ "input_sha256": "50e3f26b5fd59177189bb06970248d299b167b297329d622228c10cfa49008c2",
+ "fit_z": 3.43598,
+ "quality_tests": {
+  "broad_SNR_ge5": true,
+  "delta_BIC_null_ge6": true,
+  "width_gt_LSF": true,
+  "broad_width_not_at_bound": true,
+  "reduced_chi2_below_threshold": true,
+  "optimizer_converged": true,
+  "adopted_absorption_parameters_not_at_bounds": true
+ },
+ "quality_failures": [],
+ "quality_pass": true,
+ "old_classification": null,
+ "old_classification_disagreement": false,
+ "old_redshift_conflict": false,
+ "widths": {
+  "single_gaussian": {
+   "width_kms": 2029.8641766002775,
+   "flux_erg_s_cm2": 3.1513626460150733e-17,
+   "luminosity_apparent_Planck18_erg_s": 3.5309536085026305e+42,
+   "cov_log_luminosity_width": [
+    [
+     0.000490993363125458,
+     -7.682646654952467e-05
+    ],
+    [
+     -7.682646654953089e-05,
+     0.0002881646861659105
+    ]
+   ],
+   "measurement_origin": "old_model_new_delta_covariance",
+   "absorption": false,
+   "bound_parameters": [
+    "W_narrow",
+    "F_NII6585"
+   ],
+   "converged": true,
+   "BIC": 111.62443877962458,
+   "broad_SNR": 19.599568063373304,
+   "covariance_scope": "conditional parameter covariance; delta method"
+  },
+  "double_gaussian": {
+   "width_kms": 1858.608412436462,
+   "flux_erg_s_cm2": 3.438721936885746e-17,
+   "luminosity_apparent_Planck18_erg_s": 3.8529261768833586e+42,
+   "cov_log_luminosity_width": [
+    [
+     0.0011473953285046237,
+     0.00025862226233236223
+    ],
+    [
+     0.00025862226233217944,
+     0.0018224264081545493
+    ]
+   ],
+   "measurement_origin": "old_model_new_delta_covariance",
+   "absorption": false,
+   "bound_parameters": [
+    "W_narrow"
+   ],
+   "converged": true,
+   "BIC": 117.00409449425682,
+   "broad_SNR": 12.821173363801236,
+   "covariance_scope": "conditional parameter covariance; delta method"
+  },
+  "lorentzian": {
+   "width_kms": 1008.2915095972868,
+   "flux_erg_s_cm2": 5.795776396022354e-17,
+   "luminosity_apparent_Planck18_erg_s": 6.493894825302697e+42,
+   "cov_log_luminosity_width": [
+    [
+     0.008913105468929535,
+     -0.0126346770255565
+    ],
+    [
+     -0.01263467702555631,
+     0.019916132403001708
+    ]
+   ],
+   "measurement_origin": "old_model_new_delta_covariance",
+   "absorption": true,
+   "bound_parameters": [
+    "F_narrow",
+    "W_narrow",
+    "F_NII6585"
+   ],
+   "converged": true,
+   "BIC": 100.43005397045835,
+   "broad_SNR": 4.6001266472423685,
+   "covariance_scope": "conditional parameter covariance; delta method"
+  },
+  "exponential": {
+   "width_kms": 877.2174799036583,
+   "flux_erg_s_cm2": 4.412237853376381e-17,
+   "luminosity_apparent_Planck18_erg_s": 4.9437049682782574e+42,
+   "cov_log_luminosity_width": [
+    [
+     0.002296342798972266,
+     -0.0017588372104122966
+    ],
+    [
+     -0.001758837210412266,
+     0.0021082231331117332
+    ]
+   ],
+   "measurement_origin": "old_model_new_delta_covariance",
+   "absorption": true,
+   "bound_parameters": [
+    "F_narrow",
+    "W_narrow",
+    "F_NII6585"
+   ],
+   "converged": true,
+   "BIC": 101.14599388588476,
+   "broad_SNR": 9.062874189847422,
+   "covariance_scope": "conditional parameter covariance; delta method"
+  },
+  "nonparametric_W50": {
+   "width_kms": 1252.6170444688694,
+   "flux_erg_s_cm2": 3.113209313043244e-17,
+   "luminosity_apparent_Planck18_erg_s": 3.48820459359518e+42,
+   "cov_log_luminosity_width": [
+    [
+     0.00014809658134254543,
+     3.6837842834511005e-05
+    ],
+    [
+     3.6837842834511005e-05,
+     0.00011347574465320835
+    ]
+   ],
+   "measurement_origin": "conditional_200_pixel_bootstrap",
+   "bootstrap": {
+    "N_usable": 200,
+    "N_requested": 200,
+    "cov_log_flux_width": [
+     [
+      0.00014809658134254543,
+      3.6837842834511005e-05
+     ],
+     [
+      3.6837842834511005e-05,
+      0.00011347574465320835
+     ]
+    ],
+    "flux_p16_p50_p84": [
+     2.999631994375374e-17,
+     3.0907203828171707e-17,
+     3.1796779586446666e-17
+    ],
+    "width_p16_p50_p84": [
+     1300.0325360304867,
+     1333.7601838192088,
+     1363.996335966887
+    ]
+   },
+   "covariance_scope": "fixed alpha and nuisance/absorption subtraction; Gaussian independent pixel errors"
+  },
+  "nonparametric_FWHM": {
+   "width_kms": 2188.633034454235,
+   "flux_erg_s_cm2": 3.113209313043244e-17,
+   "luminosity_apparent_Planck18_erg_s": 3.48820459359518e+42,
+   "cov_log_luminosity_width": [
+    [
+     0.00014809658134254543,
+     4.536745660314675e-06
+    ],
+    [
+     4.536745660314675e-06,
+     0.0001156319351868436
+    ]
+   ],
+   "measurement_origin": "conditional_200_pixel_bootstrap",
+   "bootstrap": {
+    "N_usable": 200,
+    "N_requested": 200,
+    "cov_log_flux_width": [
+     [
+      0.00014809658134254543,
+      4.536745660314675e-06
+     ],
+     [
+      4.536745660314675e-06,
+      0.0001156319351868436
+     ]
+    ],
+    "flux_p16_p50_p84": [
+     2.999631994375374e-17,
+     3.0907203828171707e-17,
+     3.1796779586446666e-17
+    ],
+    "width_p16_p50_p84": [
+     2281.667010506084,
+     2338.955006759108,
+     2397.9577142385456
+    ]
+   },
+   "covariance_scope": "fixed alpha and nuisance/absorption subtraction; Gaussian independent pixel errors"
+  }
+ },
+ "measurement_issues": [],
+ "broad_SNR": 19.599568063373304,
+ "absorption_adopted": false,
+ "main_bounds": [
+  "W_narrow",
+  "F_NII6585"
+ ],
+ "delta_BIC_null": 119.64969639332615,
+ "reduced_chi2": 1.5674370285232007,
+ "LSF_FWHM_kms": 407.46409669890244,
+ "total_fluxes": {
+  "emitted_broad_plus_narrow_erg_s_cm2": 5.266232019998012e-17,
+  "transmitted_broad_plus_narrow_full_model_erg_s_cm2": 5.266232019998012e-17
+ },
+ "elapsed_s": 0.17816679179668427
+}

@@ -1,0 +1,322 @@
+{
+  "single_gaussian": {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -1.0030179990156753,
+    "y": 3.4645884254587465,
+    "cov": [
+      [
+        0.005280292048190707,
+        0.002180221484364711
+      ],
+      [
+        0.0021802214843645897,
+        0.004947595142496935
+      ]
+    ],
+    "width_kms": 2914.6635206726414,
+    "luminosity_erg_s": 9.930748903089603e+41,
+    "flux_erg_s_cm2": 3.862601480651353e-18,
+    "kind": "single_gaussian",
+    "absorption": false,
+    "bound_parameters": [],
+    "converged": true,
+    "BIC": 91.3007215791815,
+    "broad_SNR": 5.976615812151093,
+    "width_definition": "single_component",
+    "covariance_scope": "own fitted conditional parameter covariance, delta-method log transform",
+    "jacobian_rank": 9,
+    "n_params": 9
+  },
+  "lorentzian": {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -0.7602622671272457,
+    "y": 3.435137373761762,
+    "cov": [
+      [
+        0.010612316946912321,
+        0.00965261563031791
+      ],
+      [
+        0.009652615630317826,
+        0.014397662868197238
+      ]
+    ],
+    "width_kms": 2723.5626749566495,
+    "luminosity_erg_s": 1.7367517008871756e+42,
+    "flux_erg_s_cm2": 6.755159914760793e-18,
+    "kind": "lorentzian",
+    "absorption": false,
+    "bound_parameters": [],
+    "converged": true,
+    "BIC": 90.41940684354581,
+    "broad_SNR": 4.215792289833369,
+    "width_definition": "single_component",
+    "covariance_scope": "own fitted conditional parameter covariance, delta-method log transform",
+    "jacobian_rank": 9,
+    "n_params": 9
+  },
+  "exponential": {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -0.8487750778341763,
+    "y": 3.3119576188826163,
+    "cov": [
+      [
+        0.01748166708241505,
+        0.018778089776488868
+      ],
+      [
+        0.018778089776489034,
+        0.02640480731828308
+      ]
+    ],
+    "width_kms": 2050.962023614698,
+    "luminosity_erg_s": 1.4165272128975554e+42,
+    "flux_erg_s_cm2": 5.509634936211884e-18,
+    "kind": "exponential",
+    "absorption": false,
+    "bound_parameters": [],
+    "converged": true,
+    "BIC": 90.6932974004326,
+    "broad_SNR": 3.284678657448767,
+    "width_definition": "single_component",
+    "covariance_scope": "own fitted conditional parameter covariance, delta-method log transform",
+    "jacobian_rank": 9,
+    "n_params": 9
+  },
+  "double_gaussian": {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -0.9246735499753385,
+    "y": 3.430002179061146,
+    "cov": [
+      [
+        0.05003382954781224,
+        0.02529912264470715
+      ],
+      [
+        0.02529912264470572,
+        0.024580269613638586
+      ]
+    ],
+    "width_kms": 2691.548308665918,
+    "luminosity_erg_s": 1.1893959354044145e+42,
+    "flux_erg_s_cm2": 4.6261994397466634e-18,
+    "kind": "double_gaussian",
+    "absorption": false,
+    "bound_parameters": [
+      "v_broad2"
+    ],
+    "converged": true,
+    "BIC": 100.30256604797484,
+    "broad_SNR": 1.9415672552171621,
+    "width_definition": "composite",
+    "covariance_scope": "own fitted conditional parameter covariance, delta-method log transform",
+    "jacobian_rank": 12,
+    "n_params": 12
+  },
+  "nonparametric_W50": {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -0.9936161966304482,
+    "y": 3.2750912971210426,
+    "cov": [
+      [
+        0.001595870078588202,
+        0.0006341878840683291
+      ],
+      [
+        0.0006341878840683291,
+        0.0016311765985138392
+      ]
+    ],
+    "width_kms": 1884.045110676474,
+    "luminosity_erg_s": 1.01480781574808e+42,
+    "flux_erg_s_cm2": 3.94713249719323e-18,
+    "kind": "nonparametric_W50",
+    "bound_parameters": [],
+    "converged": true,
+    "old_Nbootstrap": 80,
+    "old_conditional_noise_intervals": {
+      "FWHM_kms": {
+        "N": 79,
+        "p16_p50_p84": [
+          3243.915952080959,
+          3469.645012028018,
+          3820.8633490960356
+        ]
+      },
+      "W50_kms": {
+        "N": 80,
+        "p16_p50_p84": [
+          1903.685545771319,
+          2048.9967194602123,
+          2227.2309548503918
+        ]
+      },
+      "W20_kms": {
+        "N": 80,
+        "p16_p50_p84": [
+          712.6591272946364,
+          766.1637731012827,
+          833.6971166763674
+        ]
+      },
+      "FW20peak_kms": {
+        "N": 62,
+        "p16_p50_p84": [
+          4875.95389112092,
+          5310.960819394513,
+          5815.616054058228
+        ]
+      },
+      "sigma_kms": {
+        "N": 80,
+        "p16_p50_p84": [
+          1415.7660926786778,
+          1563.3418139597925,
+          1768.9289129289755
+        ]
+      },
+      "flux_window_erg_s_cm2": {
+        "N": 80,
+        "p16_p50_p84": [
+          3.668956211610347e-18,
+          4.138045502149566e-18,
+          4.4959675066080516e-18
+        ]
+      }
+    },
+    "bootstrap": {
+      "N_usable": 200,
+      "N_requested": 200,
+      "cov_log_flux_width": [
+        [
+          0.001595870078588202,
+          0.0006341878840683291
+        ],
+        [
+          0.0006341878840683291,
+          0.0016311765985138392
+        ]
+      ],
+      "flux_p16_p50_p84": [
+        3.711939472061859e-18,
+        4.101732202308655e-18,
+        4.4531149578644725e-18
+      ],
+      "width_p16_p50_p84": [
+        1911.426753098707,
+        2063.5197429583095,
+        2269.5616956618687
+      ]
+    },
+    "covariance_scope": "200 independent Gaussian pixel-noise draws; fixed selected alpha and fixed nuisance/absorption subtraction"
+  },
+  "nonparametric_FWHM": {
+    "source_id": "Skyfire-504101",
+    "file_id": "9384b9c2ffb8ab0f",
+    "cls": "non-LRD",
+    "x": -0.9936161966304482,
+    "y": 3.5082884775403396,
+    "cov": [
+      [
+        0.001595870078588202,
+        0.0004661833674753017
+      ],
+      [
+        0.0004661833674753017,
+        0.002055205202926875
+      ]
+    ],
+    "width_kms": 3223.209077930038,
+    "luminosity_erg_s": 1.01480781574808e+42,
+    "flux_erg_s_cm2": 3.94713249719323e-18,
+    "kind": "nonparametric_FWHM",
+    "bound_parameters": [],
+    "converged": true,
+    "old_Nbootstrap": 80,
+    "old_conditional_noise_intervals": {
+      "FWHM_kms": {
+        "N": 79,
+        "p16_p50_p84": [
+          3243.915952080959,
+          3469.645012028018,
+          3820.8633490960356
+        ]
+      },
+      "W50_kms": {
+        "N": 80,
+        "p16_p50_p84": [
+          1903.685545771319,
+          2048.9967194602123,
+          2227.2309548503918
+        ]
+      },
+      "W20_kms": {
+        "N": 80,
+        "p16_p50_p84": [
+          712.6591272946364,
+          766.1637731012827,
+          833.6971166763674
+        ]
+      },
+      "FW20peak_kms": {
+        "N": 62,
+        "p16_p50_p84": [
+          4875.95389112092,
+          5310.960819394513,
+          5815.616054058228
+        ]
+      },
+      "sigma_kms": {
+        "N": 80,
+        "p16_p50_p84": [
+          1415.7660926786778,
+          1563.3418139597925,
+          1768.9289129289755
+        ]
+      },
+      "flux_window_erg_s_cm2": {
+        "N": 80,
+        "p16_p50_p84": [
+          3.668956211610347e-18,
+          4.138045502149566e-18,
+          4.4959675066080516e-18
+        ]
+      }
+    },
+    "bootstrap": {
+      "N_usable": 200,
+      "N_requested": 200,
+      "cov_log_flux_width": [
+        [
+          0.001595870078588202,
+          0.0004661833674753017
+        ],
+        [
+          0.0004661833674753017,
+          0.002055205202926875
+        ]
+      ],
+      "flux_p16_p50_p84": [
+        3.711939472061859e-18,
+        4.101732202308655e-18,
+        4.4531149578644725e-18
+      ],
+      "width_p16_p50_p84": [
+        3201.411689193459,
+        3535.9500752875797,
+        3910.262851849556
+      ]
+    },
+    "covariance_scope": "200 independent Gaussian pixel-noise draws; fixed selected alpha and fixed nuisance/absorption subtraction"
+  }
+}

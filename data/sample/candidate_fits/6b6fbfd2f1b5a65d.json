@@ -1,0 +1,44 @@
+{
+ "candidate": {
+  "dg_row_index": 13,
+  "spectrum_path": "egs-bwang-m2-v4_g395h-f290lp_8047_42803.spec.fits",
+  "file": "egs-bwang-m2-v4_g395h-f290lp_8047_42803.spec.fits",
+  "file_id": "6b6fbfd2f1b5a65d",
+  "grating": "G395H",
+  "ra_deg": 214.92952394337,
+  "dec_deg": 52.88791877402,
+  "match_sep_arcsec": 0.038510228120027426,
+  "z_fit": 7.15,
+  "z_origin": "Hviding2025 literature",
+  "dg_zspec": 7.152932,
+  "dz_over_1pz": 0.00035962522439773696,
+  "existing_working_path": "6b6fbfd2f1b5a65d.json",
+  "existing_t2_row_index": 1032,
+  "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m2-v4/egs-bwang-m2-v4_g395h-f290lp_8047_42803.spec.fits",
+  "current_version": 4,
+  "selection_order": 1032,
+  "existing_quality_pass": false
+ },
+ "fit_origin": "existing_T2_fit_reused",
+ "working_path": "6b6fbfd2f1b5a65d.json",
+ "status": "not_covered_or_insufficient_valid_pixels",
+ "input_sha256": "6dccfdcdc2d9962ac3c50536bbb6431555c1ccc11c92aa79b9c20e25e3a8e590",
+ "fit_z": 7.15,
+ "quality_tests": {},
+ "quality_failures": [
+  "not_fitted:not_covered_or_insufficient_valid_pixels"
+ ],
+ "quality_pass": false,
+ "old_classification": "LRD",
+ "old_classification_disagreement": false,
+ "old_redshift_conflict": false,
+ "coverage_or_error": {
+  "status": "not_covered_or_insufficient_valid_pixels",
+  "line": "Halpha",
+  "z": 7.15,
+  "center_um": 5.3502280550000005,
+  "Nvalid": 0,
+  "center_valid": false
+ },
+ "elapsed_s": 0.0003259163349866867
+}

@@ -1,0 +1,3795 @@
+{
+  "scope": "F6-F7 fixed-design calibration; simulated statistics are actual posterior medians",
+  "N_per_hypothesis_scenario_sample": 2000,
+  "sample_order": [
+    "main_E",
+    "Curtis_A_own",
+    "Curtis_B_own"
+  ],
+  "scenarios": [
+    "measured",
+    "0.05",
+    "0.075",
+    "0.10"
+  ],
+  "methods": [
+    "hierarchical",
+    "flat"
+  ],
+  "generating_parameter_source": "../F/generating_baselines.json",
+  "observed_statistic_source": "../F/observed_thresholds.json",
+  "observed_thresholds_sha256": "773cd405e285784c6496d7e378315d796ad0ec9daeb3ba53801be5cf78fa2f4c",
+  "data_sha256": "a2bdb4f199ecdb56e097e8e353a5ad3296425256a8613ec8bd2b573d792fe7b9",
+  "baseline_sha256": "cc05ff22bfb3a342e451e98d78a2c4e7e2fdf2d7e892e0ef120f00ca2e3800ba",
+  "results": {
+    "main_E": {
+      "N_sources": 5,
+      "source_ids": [
+        "deGraaff-row-63",
+        "deGraaff-row-73",
+        "deGraaff-row-147",
+        "deGraaff-row-149",
+        "deGraaff-row-159"
+      ],
+      "scenarios": {
+        "measured": {
+          "sigma_ph": 0.07093606405758625,
+          "sigma_line": 0.02643785709865152,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.055063687637891906,
+                    0.1787520665987891,
+                    0.40141441829909735,
+                    0.5781153958135147,
+                    0.6918693617716164
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.31816364752700416,
+                    -0.1682933128858094,
+                    -0.010151873433348668,
+                    0.15405080345909622,
+                    0.311753844357368
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.031785277643934975,
+              "complete": true,
+              "p_ph": {
+                "count": 63,
+                "denominator": 2000,
+                "fraction": 0.0315,
+                "binomial_95_interval": [
+                  0.02428856620389671,
+                  0.04012397165962541
+                ],
+                "comparison": "le",
+                "threshold": -0.031785277643934975
+              },
+              "p_line": {
+                "count": 1112,
+                "denominator": 2000,
+                "fraction": 0.556,
+                "binomial_95_interval": [
+                  0.5339060452683989,
+                  0.5779295379992972
+                ],
+                "comparison": "ge",
+                "threshold": -0.031785277643934975
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.2606433919866787,
+                "correct_Hph_count": 1495,
+                "denominator": 2000,
+                "fraction": 0.7475,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.7278556666117495,
+                  0.7664161263747811
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.32660288056767534,
+                    -0.18125607352433218,
+                    -0.013719109531369754,
+                    0.14703430345498095,
+                    0.3035920170740591
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.6757200384531131,
+                    -0.2975711771408747,
+                    0.08392971709019986,
+                    0.4615562517577463,
+                    0.8506597559648277
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.17552827673379406,
+                "observed_c_99_interval": [
+                  -2.8851523582599565,
+                  2.879307722816439
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1212,
+                  "denominator": 2000,
+                  "fraction": 0.606,
+                  "binomial_95_interval": [
+                    0.5841923700890757,
+                    0.6274963350304692
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.17552827673379406
+                },
+                "c_upper_tail": {
+                  "count": 788,
+                  "denominator": 2000,
+                  "fraction": 0.394,
+                  "binomial_95_interval": [
+                    0.3725036649695308,
+                    0.4158076299109244
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.17552827673379406
+                },
+                "c_equal_tail_two_sided_fraction": 0.788
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.05380588238535106,
+                    0.17746546149173867,
+                    0.3943108600794316,
+                    0.567710595947171,
+                    0.6803801911987001
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.2957080575923093,
+                    -0.15805545146322877,
+                    -0.005229618219799487,
+                    0.15040448128621645,
+                    0.30083396354245173
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.017215447531276365,
+              "complete": true,
+              "p_ph": {
+                "count": 71,
+                "denominator": 2000,
+                "fraction": 0.0355,
+                "binomial_95_interval": [
+                  0.027827825049078096,
+                  0.044569525372785294
+                ],
+                "comparison": "le",
+                "threshold": -0.017215447531276365
+              },
+              "p_line": {
+                "count": 1059,
+                "denominator": 2000,
+                "fraction": 0.5295,
+                "binomial_95_interval": [
+                  0.5073453760368896,
+                  0.5515680174219106
+                ],
+                "comparison": "ge",
+                "threshold": -0.017215447531276365
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.24888343767619994,
+                "correct_Hph_count": 1508,
+                "denominator": 2000,
+                "fraction": 0.754,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.7345109590360623,
+                  0.7727415990943438
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.32581682748703217,
+                    -0.1766282304014006,
+                    -0.011850303058585948,
+                    0.14685662815580602,
+                    0.29827640602597105
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.4954049929537339,
+                    -0.21373346298484297,
+                    0.05470687726005164,
+                    0.3324952267645531,
+                    0.6646644406544892
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.13064050430048926,
+                "observed_c_99_interval": [
+                  -2.669440160862764,
+                  2.596914209911368
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1204,
+                  "denominator": 2000,
+                  "fraction": 0.602,
+                  "binomial_95_interval": [
+                    0.5801610157657606,
+                    0.6235394441629516
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.13064050430048926
+                },
+                "c_upper_tail": {
+                  "count": 796,
+                  "denominator": 2000,
+                  "fraction": 0.398,
+                  "binomial_95_interval": [
+                    0.37646055583704846,
+                    0.4198389842342393
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.13064050430048926
+                },
+                "c_equal_tail_two_sided_fraction": 0.796
+              }
+            }
+          }
+        },
+        "0.05": {
+          "sigma_ph": 0.05,
+          "sigma_line": 0.05,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.05406600861490842,
+                    0.25911398359558413,
+                    0.4344710485489939,
+                    0.5795599195998759,
+                    0.689013592128637
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.4229279038216302,
+                    -0.20876642683090502,
+                    0.003990618501779096,
+                    0.22034287046914366,
+                    0.4160780519858881
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.031785277643934975,
+              "complete": true,
+              "p_ph": {
+                "count": 18,
+                "denominator": 2000,
+                "fraction": 0.009,
+                "binomial_95_interval": [
+                  0.0053424430233954285,
+                  0.014186714471514504
+                ],
+                "comparison": "le",
+                "threshold": -0.031785277643934975
+              },
+              "p_line": {
+                "count": 1132,
+                "denominator": 2000,
+                "fraction": 0.566,
+                "binomial_95_interval": [
+                  0.5439451669229671,
+                  0.5878610490987091
+                ],
+                "comparison": "ge",
+                "threshold": -0.031785277643934975
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.3612379223478193,
+                "correct_Hph_count": 1330,
+                "denominator": 2000,
+                "fraction": 0.665,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.6438341317695653,
+                  0.6856810483997947
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.39828154752907247,
+                    -0.229205997739485,
+                    -0.002892228630113907,
+                    0.22377920671441806,
+                    0.42130416383221564
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.9682451962888659,
+                    -0.4886015151803036,
+                    0.0649273335073742,
+                    0.6137907824048515,
+                    1.1096758073577406
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.17552827673379406,
+                "observed_c_99_interval": [
+                  -2.8851523582599565,
+                  2.879307722816439
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1168,
+                  "denominator": 2000,
+                  "fraction": 0.584,
+                  "binomial_95_interval": [
+                    0.5620382857272758,
+                    0.6057150598362397
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.17552827673379406
+                },
+                "c_upper_tail": {
+                  "count": 832,
+                  "denominator": 2000,
+                  "fraction": 0.416,
+                  "binomial_95_interval": [
+                    0.3942849401637603,
+                    0.43796171427272423
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.17552827673379406
+                },
+                "c_equal_tail_two_sided_fraction": 0.832
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.05465065973561071,
+                    0.25560079530552443,
+                    0.4276916120039276,
+                    0.5648958624549063,
+                    0.6756980645203534
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.3963413169866622,
+                    -0.1962630250171899,
+                    0.0053129157249251595,
+                    0.21509536303053498,
+                    0.405815237245913
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.017215447531276365,
+              "complete": true,
+              "p_ph": {
+                "count": 19,
+                "denominator": 2000,
+                "fraction": 0.0095,
+                "binomial_95_interval": [
+                  0.005729035522963453,
+                  0.01479583217228858
+                ],
+                "comparison": "le",
+                "threshold": -0.017215447531276365
+              },
+              "p_line": {
+                "count": 1092,
+                "denominator": 2000,
+                "fraction": 0.546,
+                "binomial_95_interval": [
+                  0.5238758445473009,
+                  0.5679891029693129
+                ],
+                "comparison": "ge",
+                "threshold": -0.017215447531276365
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.34739400888125554,
+                "correct_Hph_count": 1353,
+                "denominator": 2000,
+                "fraction": 0.6765,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.6555001039881753,
+                  0.6969812136267586
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.4121999285536816,
+                    -0.21754198791783094,
+                    -0.002156113365924101,
+                    0.22154829537736484,
+                    0.4240970334849114
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.7910096446120423,
+                    -0.3700979016966073,
+                    0.04325871850496016,
+                    0.46209374397792896,
+                    0.9207407789394302
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.13064050430048926,
+                "observed_c_99_interval": [
+                  -2.669440160862764,
+                  2.596914209911368
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1162,
+                  "denominator": 2000,
+                  "fraction": 0.581,
+                  "binomial_95_interval": [
+                    0.5590207243235956,
+                    0.6027414339367735
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.13064050430048926
+                },
+                "c_upper_tail": {
+                  "count": 838,
+                  "denominator": 2000,
+                  "fraction": 0.419,
+                  "binomial_95_interval": [
+                    0.3972585660632265,
+                    0.44097927567640444
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.13064050430048926
+                },
+                "c_equal_tail_two_sided_fraction": 0.838
+              }
+            }
+          }
+        },
+        "0.075": {
+          "sigma_ph": 0.075,
+          "sigma_line": 0.075,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.11153827183021822,
+                    0.154878819231006,
+                    0.38901653817942994,
+                    0.5800753033250846,
+                    0.7002455510041559
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5591884342257185,
+                    -0.28702471602903884,
+                    -0.020348050601615347,
+                    0.2692678670305333,
+                    0.5570692432477978
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.031785277643934975,
+              "complete": true,
+              "p_ph": {
+                "count": 76,
+                "denominator": 2000,
+                "fraction": 0.038,
+                "binomial_95_interval": [
+                  0.03005427544310909,
+                  0.047333864305013046
+                ],
+                "comparison": "le",
+                "threshold": -0.031785277643934975
+              },
+              "p_line": {
+                "count": 1042,
+                "denominator": 2000,
+                "fraction": 0.521,
+                "binomial_95_interval": [
+                  0.4988390401808132,
+                  0.5430993084869746
+                ],
+                "comparison": "ge",
+                "threshold": -0.031785277643934975
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.46547753460098584,
+                "correct_Hph_count": 706,
+                "denominator": 2000,
+                "fraction": 0.353,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.33203368836049973,
+                  0.3743981588769481
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.4935340510635231,
+                    -0.2851020126968435,
+                    -0.012198585070296423,
+                    0.26854594227270423,
+                    0.5092192769510269
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.1811696487775882,
+                    -0.6516724963856603,
+                    0.042703071165377145,
+                    0.7467987638940732,
+                    1.2194215255268472
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.17552827673379406,
+                "observed_c_99_interval": [
+                  -2.8851523582599565,
+                  2.879307722816439
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1156,
+                  "denominator": 2000,
+                  "fraction": 0.578,
+                  "binomial_95_interval": [
+                    0.5560039826521356,
+                    0.5997669879013204
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.17552827673379406
+                },
+                "c_upper_tail": {
+                  "count": 844,
+                  "denominator": 2000,
+                  "fraction": 0.422,
+                  "binomial_95_interval": [
+                    0.40023301209867956,
+                    0.4439960173478644
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.17552827673379406
+                },
+                "c_equal_tail_two_sided_fraction": 0.844
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.10374904277956501,
+                    0.1538838577750417,
+                    0.38175059441209724,
+                    0.5704799951769267,
+                    0.6892230218340083
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5356495438525444,
+                    -0.2763034692979295,
+                    -0.013579967934440447,
+                    0.2580225159416825,
+                    0.5338481331739268
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.017215447531276365,
+              "complete": true,
+              "p_ph": {
+                "count": 87,
+                "denominator": 2000,
+                "fraction": 0.0435,
+                "binomial_95_interval": [
+                  0.03498586284676861,
+                  0.053382598893372525
+                ],
+                "comparison": "le",
+                "threshold": -0.017215447531276365
+              },
+              "p_line": {
+                "count": 1014,
+                "denominator": 2000,
+                "fraction": 0.507,
+                "binomial_95_interval": [
+                  0.48484242402183786,
+                  0.5291370257715107
+                ],
+                "comparison": "ge",
+                "threshold": -0.017215447531276365
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.4448583811847156,
+                "correct_Hph_count": 764,
+                "denominator": 2000,
+                "fraction": 0.382,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.360642032511684,
+                  0.4037045328982381
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5177463544686796,
+                    -0.29904004974669207,
+                    -0.01715506693583457,
+                    0.27359302210571035,
+                    0.5168569393788853
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.0104663410917842,
+                    -0.5225299991303057,
+                    0.048937116529761786,
+                    0.5847731696921079,
+                    1.0789382367327396
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.13064050430048926,
+                "observed_c_99_interval": [
+                  -2.669440160862764,
+                  2.596914209911368
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1125,
+                  "denominator": 2000,
+                  "fraction": 0.5625,
+                  "binomial_95_interval": [
+                    0.5404304556907942,
+                    0.5843860392436965
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.13064050430048926
+                },
+                "c_upper_tail": {
+                  "count": 875,
+                  "denominator": 2000,
+                  "fraction": 0.4375,
+                  "binomial_95_interval": [
+                    0.4156139607563035,
+                    0.4595695443092058
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.13064050430048926
+                },
+                "c_equal_tail_two_sided_fraction": 0.875
+              }
+            }
+          }
+        },
+        "0.10": {
+          "sigma_ph": 0.1,
+          "sigma_line": 0.1,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.22168464963082551,
+                    0.08338673846184061,
+                    0.3505521644754479,
+                    0.5549177214116559,
+                    0.7050255563147797
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.6164283289052906,
+                    -0.33963023804045867,
+                    -0.02728617063013695,
+                    0.29862083777152937,
+                    0.6020719798692743
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.031785277643934975,
+              "complete": true,
+              "p_ph": {
+                "count": 164,
+                "denominator": 2000,
+                "fraction": 0.082,
+                "binomial_95_interval": [
+                  0.0703452001669976,
+                  0.09489669671628181
+                ],
+                "comparison": "le",
+                "threshold": -0.031785277643934975
+              },
+              "p_line": {
+                "count": 1015,
+                "denominator": 2000,
+                "fraction": 0.5075,
+                "binomial_95_interval": [
+                  0.4853420074581531,
+                  0.5296359744585936
+                ],
+                "comparison": "ge",
+                "threshold": -0.031785277643934975
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.5280726795314262,
+                "correct_Hph_count": 394,
+                "denominator": 2000,
+                "fraction": 0.197,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.17977300478123276,
+                  0.21511988350098024
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5456234817553293,
+                    -0.3277074128564125,
+                    -0.011802420683992093,
+                    0.2921147710122266,
+                    0.5183625834879979
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.382377068799869,
+                    -0.7724763555774271,
+                    0.07189130521815827,
+                    0.8554694137772899,
+                    1.3878750503488588
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.17552827673379406,
+                "observed_c_99_interval": [
+                  -2.8851523582599565,
+                  2.879307722816439
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1097,
+                  "denominator": 2000,
+                  "fraction": 0.5485,
+                  "binomial_95_interval": [
+                    0.5263825615761402,
+                    0.5704750451282954
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.17552827673379406
+                },
+                "c_upper_tail": {
+                  "count": 903,
+                  "denominator": 2000,
+                  "fraction": 0.4515,
+                  "binomial_95_interval": [
+                    0.4295249548717046,
+                    0.47361743842385984
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.17552827673379406
+                },
+                "c_equal_tail_two_sided_fraction": 0.903
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.21403662502469217,
+                    0.08670641506296055,
+                    0.35331887750738644,
+                    0.5526922635278118,
+                    0.7012353575632735
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.6103516241899606,
+                    -0.3251353690178535,
+                    -0.019818337778497924,
+                    0.2926212547234002,
+                    0.5879817396817865
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.017215447531276365,
+              "complete": true,
+              "p_ph": {
+                "count": 182,
+                "denominator": 2000,
+                "fraction": 0.091,
+                "binomial_95_interval": [
+                  0.07875178191174413,
+                  0.10446191055210696
+                ],
+                "comparison": "le",
+                "threshold": -0.017215447531276365
+              },
+              "p_line": {
+                "count": 993,
+                "denominator": 2000,
+                "fraction": 0.4965,
+                "binomial_95_interval": [
+                  0.47435622798103466,
+                  0.5186540471111767
+                ],
+                "comparison": "ge",
+                "threshold": -0.017215447531276365
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.5115607059017051,
+                "correct_Hph_count": 426,
+                "denominator": 2000,
+                "fraction": 0.213,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.1952373785834631,
+                  0.2316079168486624
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5596129841288966,
+                    -0.3451107064395353,
+                    -0.016004291462169827,
+                    0.3121789139721845,
+                    0.5415689142874278
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.2199068129878265,
+                    -0.6794703723306204,
+                    0.054339019405600444,
+                    0.733651054475246,
+                    1.3184466343916168
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.13064050430048926,
+                "observed_c_99_interval": [
+                  -2.669440160862764,
+                  2.596914209911368
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1085,
+                  "denominator": 2000,
+                  "fraction": 0.5425,
+                  "binomial_95_interval": [
+                    0.5203673713992696,
+                    0.5645078530005858
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.13064050430048926
+                },
+                "c_upper_tail": {
+                  "count": 915,
+                  "denominator": 2000,
+                  "fraction": 0.4575,
+                  "binomial_95_interval": [
+                    0.43549214699941424,
+                    0.47963262860073047
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.13064050430048926
+                },
+                "c_equal_tail_two_sided_fraction": 0.915
+              }
+            }
+          }
+        }
+      }
+    },
+    "Curtis_A_own": {
+      "N_sources": 13,
+      "source_ids": [
+        "CEERS6126",
+        "EGS42046",
+        "EGS49140",
+        "EGS55604",
+        "RUBIES-EGS29489",
+        "RUBIES-EGS42232",
+        "RUBIES-EGS926125",
+        "RUBIES-EGS948917",
+        "RUBIES-UDS119957",
+        "RUBIES-UDS29813",
+        "Sok-1180_13329",
+        "Sok-1181_53501",
+        "UDS31092"
+      ],
+      "scenarios": {
+        "measured": {
+          "sigma_ph": 0.03937416167377087,
+          "sigma_line": 0.031010484957262486,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.019687897829933056,
+                    0.06303119614327644,
+                    0.16002432239000797,
+                    0.2584987304105333,
+                    0.3480437675187477
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.1633567593628456,
+                    -0.08134945587009003,
+                    0.0004645784446983861,
+                    0.07158750043624547,
+                    0.1505862770845914
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.0023927159379074255,
+              "complete": true,
+              "p_ph": {
+                "count": 81,
+                "denominator": 2000,
+                "fraction": 0.0405,
+                "binomial_95_interval": [
+                  0.03229055657320062,
+                  0.050088548950005814
+                ],
+                "comparison": "le",
+                "threshold": -0.0023927159379074255
+              },
+              "p_line": {
+                "count": 1035,
+                "denominator": 2000,
+                "fraction": 0.5175,
+                "binomial_95_interval": [
+                  0.4953382753145852,
+                  0.539610348779427
+                ],
+                "comparison": "ge",
+                "threshold": -0.0023927159379074255
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.12661214476959487,
+                "correct_Hph_count": 1269,
+                "denominator": 2000,
+                "fraction": 0.6345,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.6129597040187609,
+                  0.6556452167122377
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.09583385282081658,
+                    0.13818023387324876,
+                    0.17850100839636301,
+                    0.21763897953388459,
+                    0.25548843475067035
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.23003948849532638,
+                    0.6770153260261026,
+                    1.2252177309051535,
+                    1.7629447245154566,
+                    2.1881259867012433
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 1.736128265458185,
+                "observed_c_99_interval": [
+                  -0.3725481577011027,
+                  2.9780678072050724
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1647,
+                  "denominator": 2000,
+                  "fraction": 0.8235,
+                  "binomial_95_interval": [
+                    0.8060710515155849,
+                    0.8399748937299352
+                  ],
+                  "comparison": "le",
+                  "threshold": 1.736128265458185
+                },
+                "c_upper_tail": {
+                  "count": 353,
+                  "denominator": 2000,
+                  "fraction": 0.1765,
+                  "binomial_95_interval": [
+                    0.16002510627006483,
+                    0.19392894848441516
+                  ],
+                  "comparison": "ge",
+                  "threshold": 1.736128265458185
+                },
+                "c_equal_tail_two_sided_fraction": 0.353
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.020891186970353477,
+                    0.056215578730175,
+                    0.14575626729369812,
+                    0.23799822299996884,
+                    0.31487696714259616
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.14462394880886323,
+                    -0.0704589205868062,
+                    0.0017325521251480651,
+                    0.06835631973440301,
+                    0.14116806129539278
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.008821598341983636,
+              "complete": true,
+              "p_ph": {
+                "count": 69,
+                "denominator": 2000,
+                "fraction": 0.0345,
+                "binomial_95_interval": [
+                  0.026940219567643687,
+                  0.04346087145229037
+                ],
+                "comparison": "le",
+                "threshold": -0.008821598341983636
+              },
+              "p_line": {
+                "count": 1130,
+                "denominator": 2000,
+                "fraction": 0.565,
+                "binomial_95_interval": [
+                  0.5429408515195673,
+                  0.5868683013779181
+                ],
+                "comparison": "ge",
+                "threshold": -0.008821598341983636
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.11642981140766306,
+                "correct_Hph_count": 1238,
+                "denominator": 2000,
+                "fraction": 0.619,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.5973046750714087,
+                  0.6403458198674352
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.12350066331284305,
+                    0.16052645923737668,
+                    0.1967149394217324,
+                    0.22970252021191376,
+                    0.2618306907107349
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.05172895358207417,
+                    0.36123199438245635,
+                    0.7049383934119674,
+                    1.09326419431193,
+                    1.5335224758502572
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.9701541706138824,
+                "observed_c_99_interval": [
+                  -0.16555439369868727,
+                  2.4289638175967876
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1511,
+                  "denominator": 2000,
+                  "fraction": 0.7555,
+                  "binomial_95_interval": [
+                    0.7360476110409397,
+                    0.7742005066458157
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.9701541706138824
+                },
+                "c_upper_tail": {
+                  "count": 489,
+                  "denominator": 2000,
+                  "fraction": 0.2445,
+                  "binomial_95_interval": [
+                    0.22579949335418398,
+                    0.26395238895906026
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.9701541706138824
+                },
+                "c_equal_tail_two_sided_fraction": 0.489
+              }
+            }
+          }
+        },
+        "0.05": {
+          "sigma_ph": 0.05,
+          "sigma_line": 0.05,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.04727254096658953,
+                    0.05425302897533307,
+                    0.16220273503886956,
+                    0.27542077988997266,
+                    0.37729480554582484
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.20299124433249535,
+                    -0.10048671157897597,
+                    -0.001838263398639278,
+                    0.0991513778704112,
+                    0.20365554877302797
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.0023927159379074255,
+              "complete": true,
+              "p_ph": {
+                "count": 131,
+                "denominator": 2000,
+                "fraction": 0.0655,
+                "binomial_95_interval": [
+                  0.05505053790353323,
+                  0.07724405539806714
+                ],
+                "comparison": "le",
+                "threshold": -0.0023927159379074255
+              },
+              "p_line": {
+                "count": 1006,
+                "denominator": 2000,
+                "fraction": 0.503,
+                "binomial_95_interval": [
+                  0.48084654456496706,
+                  0.5251446482139808
+                ],
+                "comparison": "ge",
+                "threshold": -0.0023927159379074255
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.1674225820098307,
+                "correct_Hph_count": 955,
+                "denominator": 2000,
+                "fraction": 0.4775,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.45540575218851875,
+                  0.4996603029374808
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.08475266116863776,
+                    0.127979381267613,
+                    0.17939078996829066,
+                    0.22929363033179617,
+                    0.2819035325556281
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.1398962925925437,
+                    0.5104217537712591,
+                    1.191475945460446,
+                    1.8051740977662813,
+                    2.273641644025746
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 1.736128265458185,
+                "observed_c_99_interval": [
+                  -0.3725481577011027,
+                  2.9780678072050724
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1604,
+                  "denominator": 2000,
+                  "fraction": 0.802,
+                  "binomial_95_interval": [
+                    0.783848352775403,
+                    0.8192617369217517
+                  ],
+                  "comparison": "le",
+                  "threshold": 1.736128265458185
+                },
+                "c_upper_tail": {
+                  "count": 396,
+                  "denominator": 2000,
+                  "fraction": 0.198,
+                  "binomial_95_interval": [
+                    0.18073826307824828,
+                    0.21615164722459704
+                  ],
+                  "comparison": "ge",
+                  "threshold": 1.736128265458185
+                },
+                "c_equal_tail_two_sided_fraction": 0.396
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.03976343024004444,
+                    0.04999560259032236,
+                    0.148384282986804,
+                    0.24899738870612964,
+                    0.3480263139291132
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.1751051428008936,
+                    -0.08639564941341452,
+                    0.0010772341631114996,
+                    0.0924279829341669,
+                    0.1833921010194683
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.008821598341983636,
+              "complete": true,
+              "p_ph": {
+                "count": 127,
+                "denominator": 2000,
+                "fraction": 0.0635,
+                "binomial_95_interval": [
+                  0.053208842231459184,
+                  0.07509225526514264
+                ],
+                "comparison": "le",
+                "threshold": -0.008821598341983636
+              },
+              "p_line": {
+                "count": 1084,
+                "denominator": 2000,
+                "fraction": 0.542,
+                "binomial_95_interval": [
+                  0.5198662494836529,
+                  0.5640104430194002
+                ],
+                "comparison": "ge",
+                "threshold": -0.008821598341983636
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.15363044257998135,
+                "correct_Hph_count": 953,
+                "denominator": 2000,
+                "fraction": 0.4765,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.45440923573572684,
+                  0.498659755267342
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.10386400780082673,
+                    0.14972614294198847,
+                    0.19323504644881234,
+                    0.23854054551785198,
+                    0.2863190215822108
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.12845429546990025,
+                    0.26887546323226785,
+                    0.7089339535908326,
+                    1.188964218571343,
+                    1.7117364373470432
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.9701541706138824,
+                "observed_c_99_interval": [
+                  -0.16555439369868727,
+                  2.4289638175967876
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1437,
+                  "denominator": 2000,
+                  "fraction": 0.7185,
+                  "binomial_95_interval": [
+                    0.6982295633683201,
+                    0.7381279233578736
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.9701541706138824
+                },
+                "c_upper_tail": {
+                  "count": 563,
+                  "denominator": 2000,
+                  "fraction": 0.2815,
+                  "binomial_95_interval": [
+                    0.2618720766421264,
+                    0.3017704366316799
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.9701541706138824
+                },
+                "c_equal_tail_two_sided_fraction": 0.563
+              }
+            }
+          }
+        },
+        "0.075": {
+          "sigma_ph": 0.075,
+          "sigma_line": 0.075,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.12305912991209338,
+                    0.022616310736749173,
+                    0.1613305107726245,
+                    0.2979622150751683,
+                    0.4502167251567202
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.2747045936997057,
+                    -0.13652551313314434,
+                    0.0016870003287735307,
+                    0.1333672763031396,
+                    0.26855912860881254
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.0023927159379074255,
+              "complete": true,
+              "p_ph": {
+                "count": 251,
+                "denominator": 2000,
+                "fraction": 0.1255,
+                "binomial_95_interval": [
+                  0.11128801564398817,
+                  0.14081962653349916
+                ],
+                "comparison": "le",
+                "threshold": -0.0023927159379074255
+              },
+              "p_line": {
+                "count": 1024,
+                "denominator": 2000,
+                "fraction": 0.512,
+                "binomial_95_interval": [
+                  0.48983924367974224,
+                  0.5341255272960217
+                ],
+                "comparison": "ge",
+                "threshold": -0.0023927159379074255
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.2208872301787357,
+                "correct_Hph_count": 660,
+                "denominator": 2000,
+                "fraction": 0.33,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.3094041230378606,
+                  0.3510954176887345
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.05016749066211484,
+                    0.11500846438472913,
+                    0.18283997726384185,
+                    0.2464167062069008,
+                    0.31963345877699323
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5479128373666299,
+                    0.2873880849300338,
+                    1.0762328101180163,
+                    1.8083268095732528,
+                    2.315438079971544
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 1.736128265458185,
+                "observed_c_99_interval": [
+                  -0.3725481577011027,
+                  2.9780678072050724
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1629,
+                  "denominator": 2000,
+                  "fraction": 0.8145,
+                  "binomial_95_interval": [
+                    0.7967581352698505,
+                    0.831314692792312
+                  ],
+                  "comparison": "le",
+                  "threshold": 1.736128265458185
+                },
+                "c_upper_tail": {
+                  "count": 371,
+                  "denominator": 2000,
+                  "fraction": 0.1855,
+                  "binomial_95_interval": [
+                    0.16868530720768807,
+                    0.20324186473014946
+                  ],
+                  "comparison": "ge",
+                  "threshold": 1.736128265458185
+                },
+                "c_equal_tail_two_sided_fraction": 0.371
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.11171955910297753,
+                    0.018999630157621294,
+                    0.14603187882375718,
+                    0.27296443011159477,
+                    0.4049090581829297
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.24599059522636804,
+                    -0.11783820899493241,
+                    0.004233356711443811,
+                    0.1188912076044025,
+                    0.23696640634562377
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.008821598341983636,
+              "complete": true,
+              "p_ph": {
+                "count": 237,
+                "denominator": 2000,
+                "fraction": 0.1185,
+                "binomial_95_interval": [
+                  0.10465244638268566,
+                  0.13347651670707592
+                ],
+                "comparison": "le",
+                "threshold": -0.008821598341983636
+              },
+              "p_line": {
+                "count": 1086,
+                "denominator": 2000,
+                "fraction": 0.543,
+                "binomial_95_interval": [
+                  0.5208685154368797,
+                  0.565005240854171
+                ],
+                "comparison": "ge",
+                "threshold": -0.008821598341983636
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.19762181254968217,
+                "correct_Hph_count": 660,
+                "denominator": 2000,
+                "fraction": 0.33,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.3094041230378606,
+                  0.3510954176887345
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.07228163434258417,
+                    0.1281261465653819,
+                    0.1925964302212717,
+                    0.25228879560500517,
+                    0.31612313838006223
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.34941625929279335,
+                    0.1596980296304939,
+                    0.6803615728210086,
+                    1.3024546426127355,
+                    1.9007772074403033
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.9701541706138824,
+                "observed_c_99_interval": [
+                  -0.16555439369868727,
+                  2.4289638175967876
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1354,
+                  "denominator": 2000,
+                  "fraction": 0.677,
+                  "binomial_95_interval": [
+                    0.6560076378322294,
+                    0.6974722071287387
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.9701541706138824
+                },
+                "c_upper_tail": {
+                  "count": 646,
+                  "denominator": 2000,
+                  "fraction": 0.323,
+                  "binomial_95_interval": [
+                    0.3025277928712613,
+                    0.3439923621677706
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.9701541706138824
+                },
+                "c_equal_tail_two_sided_fraction": 0.646
+              }
+            }
+          }
+        },
+        "0.10": {
+          "sigma_ph": 0.1,
+          "sigma_line": 0.1,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.19700235183245954,
+                    -0.009792167420482238,
+                    0.16293946452515948,
+                    0.34945989873569316,
+                    0.5077661255660773
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.3304869416202594,
+                    -0.17755614312234538,
+                    -0.006667999909390142,
+                    0.1692063713896475,
+                    0.32115374265363
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.0023927159379074255,
+              "complete": true,
+              "p_ph": {
+                "count": 351,
+                "denominator": 2000,
+                "fraction": 0.1755,
+                "binomial_95_interval": [
+                  0.15906383297137322,
+                  0.1928932118752299
+                ],
+                "comparison": "le",
+                "threshold": -0.0023927159379074255
+              },
+              "p_line": {
+                "count": 978,
+                "denominator": 2000,
+                "fraction": 0.489,
+                "binomial_95_interval": [
+                  0.4668719978126097,
+                  0.5111602954377307
+                ],
+                "comparison": "ge",
+                "threshold": -0.0023927159379074255
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.27436703457998635,
+                "correct_Hph_count": 556,
+                "denominator": 2000,
+                "fraction": 0.278,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.2584524080850592,
+                  0.2982004379654406
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.03140089296079321,
+                    0.10159746757522704,
+                    0.1860754891527302,
+                    0.2688649622266516,
+                    0.3459774373606871
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.9932469607896837,
+                    0.06882649063988827,
+                    0.9607143299955179,
+                    1.7146620836501796,
+                    2.261223366491083
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 1.736128265458185,
+                "observed_c_99_interval": [
+                  -0.3725481577011027,
+                  2.9780678072050724
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1699,
+                  "denominator": 2000,
+                  "fraction": 0.8495,
+                  "binomial_95_interval": [
+                    0.8330684644468898,
+                    0.864899497894665
+                  ],
+                  "comparison": "le",
+                  "threshold": 1.736128265458185
+                },
+                "c_upper_tail": {
+                  "count": 301,
+                  "denominator": 2000,
+                  "fraction": 0.1505,
+                  "binomial_95_interval": [
+                    0.13510050210533495,
+                    0.1669315355531102
+                  ],
+                  "comparison": "ge",
+                  "threshold": 1.736128265458185
+                },
+                "c_equal_tail_two_sided_fraction": 0.301
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.17814738502053265,
+                    -0.008694296141799356,
+                    0.14771548306393525,
+                    0.30975141792261074,
+                    0.4596977188503219
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.2921919596092713,
+                    -0.15617625209702932,
+                    -0.004115425954283358,
+                    0.15071770494489756,
+                    0.28842117757102087
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.008821598341983636,
+              "complete": true,
+              "p_ph": {
+                "count": 320,
+                "denominator": 2000,
+                "fraction": 0.16,
+                "binomial_95_interval": [
+                  0.14419042002455162,
+                  0.17681306124993731
+                ],
+                "comparison": "le",
+                "threshold": -0.008821598341983636
+              },
+              "p_line": {
+                "count": 1017,
+                "denominator": 2000,
+                "fraction": 0.5085,
+                "binomial_95_interval": [
+                  0.48634124000928197,
+                  0.5306338061512759
+                ],
+                "comparison": "ge",
+                "threshold": -0.008821598341983636
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.24439301907776975,
+                "correct_Hph_count": 553,
+                "denominator": 2000,
+                "fraction": 0.2765,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.2569872914488409,
+                  0.2966699836747267
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.04021509454724334,
+                    0.11179902471233791,
+                    0.19178574718908842,
+                    0.2694631805937196,
+                    0.3425469668929019
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.7120935023646056,
+                    -0.001000715089183099,
+                    0.6615223707122424,
+                    1.3356369123744087,
+                    2.021715355019194
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.9701541706138824,
+                "observed_c_99_interval": [
+                  -0.16555439369868727,
+                  2.4289638175967876
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1350,
+                  "denominator": 2000,
+                  "fraction": 0.675,
+                  "binomial_95_interval": [
+                    0.6539776625369245,
+                    0.6955080728494214
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.9701541706138824
+                },
+                "c_upper_tail": {
+                  "count": 650,
+                  "denominator": 2000,
+                  "fraction": 0.325,
+                  "binomial_95_interval": [
+                    0.30449192715057855,
+                    0.3460223374630755
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.9701541706138824
+                },
+                "c_equal_tail_two_sided_fraction": 0.65
+              }
+            }
+          }
+        }
+      }
+    },
+    "Curtis_B_own": {
+      "N_sources": 15,
+      "source_ids": [
+        "CEERS6126",
+        "EGS42046",
+        "EGS49140",
+        "EGS55604",
+        "RUBIES-EGS29489",
+        "RUBIES-EGS42232",
+        "RUBIES-EGS42803",
+        "RUBIES-EGS926125",
+        "RUBIES-EGS948917",
+        "RUBIES-UDS119957",
+        "RUBIES-UDS144195",
+        "RUBIES-UDS149298",
+        "RUBIES-UDS23438",
+        "RUBIES-UDS29813",
+        "RUBIES-UDS970351"
+      ],
+      "scenarios": {
+        "measured": {
+          "sigma_ph": 0.07903092795283992,
+          "sigma_line": 0.05745643744674955,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.03039055538914501,
+                    0.1037255654126027,
+                    0.2413895370850366,
+                    0.37762799957303506,
+                    0.5222329760859501
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.20544481048629964,
+                    -0.10086693954981188,
+                    -0.0013755957919246897,
+                    0.10317920755468352,
+                    0.20027863706564378
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05674194967990352,
+              "complete": true,
+              "p_ph": {
+                "count": 27,
+                "denominator": 2000,
+                "fraction": 0.0135,
+                "binomial_95_interval": [
+                  0.008914927994426227,
+                  0.019581403564719605
+                ],
+                "comparison": "le",
+                "threshold": -0.05674194967990352
+              },
+              "p_line": {
+                "count": 1429,
+                "denominator": 2000,
+                "fraction": 0.7145,
+                "binomial_95_interval": [
+                  0.6941513666582195,
+                  0.7342179260818744
+                ],
+                "comparison": "ge",
+                "threshold": -0.05674194967990352
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.16958741213355316,
+                "correct_Hph_count": 1404,
+                "denominator": 2000,
+                "fraction": 0.702,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.6814191328492308,
+                  0.7219870351791182
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.08464557550140793,
+                    0.12667458008813995,
+                    0.17294109311404732,
+                    0.2240694124858,
+                    0.2695659649373169
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.1162741160565628,
+                    -0.37330932456539745,
+                    0.22572813667729413,
+                    0.8222503561665523,
+                    1.4702475604924479
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.6941283305781185,
+                "observed_c_99_interval": [
+                  -2.226535694708862,
+                  2.8393440272833574
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1556,
+                  "denominator": 2000,
+                  "fraction": 0.778,
+                  "binomial_95_interval": [
+                    0.7591357027079096,
+                    0.7960457262042815
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.6941283305781185
+                },
+                "c_upper_tail": {
+                  "count": 444,
+                  "denominator": 2000,
+                  "fraction": 0.222,
+                  "binomial_95_interval": [
+                    0.20395427379571843,
+                    0.24086429729209036
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.6941283305781185
+                },
+                "c_equal_tail_two_sided_fraction": 0.444
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.026746711007698425,
+                    0.08605741268432406,
+                    0.20440379303535938,
+                    0.32422619624170057,
+                    0.4503724380686367
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.17203972169232512,
+                    -0.08863743348074314,
+                    -0.0017441597138935152,
+                    0.08488810219567533,
+                    0.16617193469933658
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05336351729774293,
+              "complete": true,
+              "p_ph": {
+                "count": 30,
+                "denominator": 2000,
+                "fraction": 0.015,
+                "binomial_95_interval": [
+                  0.010142718291276458,
+                  0.02134466751107879
+                ],
+                "comparison": "le",
+                "threshold": -0.05336351729774293
+              },
+              "p_line": {
+                "count": 1452,
+                "denominator": 2000,
+                "fraction": 0.726,
+                "binomial_95_interval": [
+                  0.7058813850148707,
+                  0.7454539570611841
+                ],
+                "comparison": "ge",
+                "threshold": -0.05336351729774293
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.14099922627578323,
+                "correct_Hph_count": 1392,
+                "denominator": 2000,
+                "fraction": 0.696,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.6753140437211786,
+                  0.7161098151919023
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.08785655260858635,
+                    0.1249276751118877,
+                    0.16780398649353895,
+                    0.21476292912871917,
+                    0.2589606304174443
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.6362379394483353,
+                    -0.1952047982140327,
+                    0.20947253192020926,
+                    0.6193264265795623,
+                    1.0555049694054939
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.571783148984558,
+                "observed_c_99_interval": [
+                  -1.0906909795352482,
+                  2.166515965387113
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1621,
+                  "denominator": 2000,
+                  "fraction": 0.8105,
+                  "binomial_95_interval": [
+                    0.7926239476973138,
+                    0.8274608131032399
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.571783148984558
+                },
+                "c_upper_tail": {
+                  "count": 379,
+                  "denominator": 2000,
+                  "fraction": 0.1895,
+                  "binomial_95_interval": [
+                    0.17253918689676007,
+                    0.20737605230268616
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.571783148984558
+                },
+                "c_equal_tail_two_sided_fraction": 0.379
+              }
+            }
+          }
+        },
+        "0.05": {
+          "sigma_ph": 0.05,
+          "sigma_line": 0.05,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.055176062937260545,
+                    0.14275748320053536,
+                    0.23419700019555928,
+                    0.3337421262974577,
+                    0.4308615397046558
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.1820233124109684,
+                    -0.08984195202286753,
+                    0.0008757597145346468,
+                    0.09297995437100844,
+                    0.18668579582250633
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05674194967990352,
+              "complete": true,
+              "p_ph": {
+                "count": 0,
+                "denominator": 2000,
+                "fraction": 0.0,
+                "binomial_95_interval": [
+                  0.0,
+                  0.0018427397934059364
+                ],
+                "comparison": "le",
+                "threshold": -0.05674194967990352
+              },
+              "p_line": {
+                "count": 1462,
+                "denominator": 2000,
+                "fraction": 0.731,
+                "binomial_95_interval": [
+                  0.710986439139893,
+                  0.7503341334239434
+                ],
+                "comparison": "ge",
+                "threshold": -0.05674194967990352
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.1536095593991513,
+                "correct_Hph_count": 1620,
+                "denominator": 2000,
+                "fraction": 0.81,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.7921073798026432,
+                  0.8269788719725606
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.08940842753652445,
+                    0.13037209823110285,
+                    0.17240275005557942,
+                    0.21735857166750427,
+                    0.2580260066849341
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.0240307583258859,
+                    -0.36115897735553304,
+                    0.21513234564731148,
+                    0.7797094626942034,
+                    1.3895214794984285
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.6941283305781185,
+                "observed_c_99_interval": [
+                  -2.226535694708862,
+                  2.8393440272833574
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1598,
+                  "denominator": 2000,
+                  "fraction": 0.799,
+                  "binomial_95_interval": [
+                    0.7807540932664588,
+                    0.8163649274896854
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.6941283305781185
+                },
+                "c_upper_tail": {
+                  "count": 402,
+                  "denominator": 2000,
+                  "fraction": 0.201,
+                  "binomial_95_interval": [
+                    0.1836350725103146,
+                    0.2192459067335411
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.6941283305781185
+                },
+                "c_equal_tail_two_sided_fraction": 0.402
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.04452976168762634,
+                    0.1177619038182608,
+                    0.1996457265731511,
+                    0.2849075674406819,
+                    0.3667170098828239
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.15422384670509376,
+                    -0.07814590943500194,
+                    0.0003177774433489902,
+                    0.07598985787297698,
+                    0.15648022593745176
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05336351729774293,
+              "complete": true,
+              "p_ph": {
+                "count": 0,
+                "denominator": 2000,
+                "fraction": 0.0,
+                "binomial_95_interval": [
+                  0.0,
+                  0.0018427397934059364
+                ],
+                "comparison": "le",
+                "threshold": -0.05336351729774293
+              },
+              "p_line": {
+                "count": 1494,
+                "denominator": 2000,
+                "fraction": 0.747,
+                "binomial_95_interval": [
+                  0.7273439561419259,
+                  0.7659293159874629
+                ],
+                "comparison": "ge",
+                "threshold": -0.05336351729774293
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.13168701272304772,
+                "correct_Hph_count": 1604,
+                "denominator": 2000,
+                "fraction": 0.802,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.783848352775403,
+                  0.8192617369217517
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.09148760380719528,
+                    0.12853412845882134,
+                    0.16766649284397003,
+                    0.21045079706803818,
+                    0.24659274597665584
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.5570477715591938,
+                    -0.1447859891077952,
+                    0.20984987133747002,
+                    0.5907854509089733,
+                    1.0011916867952773
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.571783148984558,
+                "observed_c_99_interval": [
+                  -1.0906909795352482,
+                  2.166515965387113
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1656,
+                  "denominator": 2000,
+                  "fraction": 0.828,
+                  "binomial_95_interval": [
+                    0.8107334370121011,
+                    0.8442990475978656
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.571783148984558
+                },
+                "c_upper_tail": {
+                  "count": 344,
+                  "denominator": 2000,
+                  "fraction": 0.172,
+                  "binomial_95_interval": [
+                    0.15570095240213438,
+                    0.18926656298789885
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.571783148984558
+                },
+                "c_equal_tail_two_sided_fraction": 0.344
+              }
+            }
+          }
+        },
+        "0.075": {
+          "sigma_ph": 0.075,
+          "sigma_line": 0.075,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.021132384963362862,
+                    0.10492754045778628,
+                    0.2398242265930342,
+                    0.37064267745465335,
+                    0.5216708832584839
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.2551944659909103,
+                    -0.1261223196978696,
+                    -0.0014744797399373335,
+                    0.12252428357422981,
+                    0.25460560264775084
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05674194967990352,
+              "complete": true,
+              "p_ph": {
+                "count": 22,
+                "denominator": 2000,
+                "fraction": 0.011,
+                "binomial_95_interval": [
+                  0.006906122788328852,
+                  0.01660701640128506
+                ],
+                "comparison": "le",
+                "threshold": -0.05674194967990352
+              },
+              "p_line": {
+                "count": 1344,
+                "denominator": 2000,
+                "fraction": 0.672,
+                "binomial_95_interval": [
+                  0.6509334971370095,
+                  0.6925610729486711
+                ],
+                "comparison": "ge",
+                "threshold": -0.05674194967990352
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.2138735259329276,
+                "correct_Hph_count": 1159,
+                "denominator": 2000,
+                "fraction": 0.5795,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.5575122511733658,
+                  0.6012543132829598
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.05907333870306793,
+                    0.11330949541978856,
+                    0.17292399375004758,
+                    0.23143283864953315,
+                    0.28276191375139376
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.2572786580111863,
+                    -0.5270735197030951,
+                    0.1770426900436402,
+                    0.8996755274103148,
+                    1.68857837025609
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.6941283305781185,
+                "observed_c_99_interval": [
+                  -2.226535694708862,
+                  2.8393440272833574
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1521,
+                  "denominator": 2000,
+                  "fraction": 0.7605,
+                  "binomial_95_interval": [
+                    0.7411720321186923,
+                    0.7790612794622478
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.6941283305781185
+                },
+                "c_upper_tail": {
+                  "count": 479,
+                  "denominator": 2000,
+                  "fraction": 0.2395,
+                  "binomial_95_interval": [
+                    0.22093872053775215,
+                    0.25882796788130763
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.6941283305781185
+                },
+                "c_equal_tail_two_sided_fraction": 0.479
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.01726001835920047,
+                    0.08917164871803666,
+                    0.201804323356714,
+                    0.31615487220144356,
+                    0.4452526062765478
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.2161646085737872,
+                    -0.10873335236869341,
+                    -0.004653382444729913,
+                    0.10440560457880314,
+                    0.2134709977229683
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05336351729774293,
+              "complete": true,
+              "p_ph": {
+                "count": 23,
+                "denominator": 2000,
+                "fraction": 0.0115,
+                "binomial_95_interval": [
+                  0.007303594042175883,
+                  0.01720594810634058
+                ],
+                "comparison": "le",
+                "threshold": -0.05336351729774293
+              },
+              "p_line": {
+                "count": 1363,
+                "denominator": 2000,
+                "fraction": 0.6815,
+                "binomial_95_interval": [
+                  0.6605766493800689,
+                  0.7018899402362304
+                ],
+                "comparison": "ge",
+                "threshold": -0.05336351729774293
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.17891801356061518,
+                "correct_Hph_count": 1174,
+                "denominator": 2000,
+                "fraction": 0.587,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.5650566693602666,
+                  0.608687863085547
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.0620353935943279,
+                    0.1116324694638123,
+                    0.1680704452537073,
+                    0.22391956234495772,
+                    0.2710405540218641
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.7726136844755639,
+                    -0.29263610362332715,
+                    0.17444890105816402,
+                    0.6965547014880956,
+                    1.2740614805531438
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.571783148984558,
+                "observed_c_99_interval": [
+                  -1.0906909795352482,
+                  2.166515965387113
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1556,
+                  "denominator": 2000,
+                  "fraction": 0.778,
+                  "binomial_95_interval": [
+                    0.7591357027079096,
+                    0.7960457262042815
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.571783148984558
+                },
+                "c_upper_tail": {
+                  "count": 444,
+                  "denominator": 2000,
+                  "fraction": 0.222,
+                  "binomial_95_interval": [
+                    0.20395427379571843,
+                    0.24086429729209036
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.571783148984558
+                },
+                "c_equal_tail_two_sided_fraction": 0.444
+              }
+            }
+          }
+        },
+        "0.10": {
+          "sigma_ph": 0.1,
+          "sigma_line": 0.1,
+          "methods": {
+            "hierarchical": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.07707209834926938,
+                    0.0710802613561947,
+                    0.24103880046044926,
+                    0.4052987146347307,
+                    0.563711154205605
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.33755775831830265,
+                    -0.16560715009192808,
+                    -0.005204531077645867,
+                    0.1608346206650435,
+                    0.33714826062956316
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05674194967990352,
+              "complete": true,
+              "p_ph": {
+                "count": 72,
+                "denominator": 2000,
+                "fraction": 0.036,
+                "binomial_95_interval": [
+                  0.028272282305312462,
+                  0.045123210435492875
+                ],
+                "comparison": "le",
+                "threshold": -0.05674194967990352
+              },
+              "p_line": {
+                "count": 1253,
+                "denominator": 2000,
+                "fraction": 0.6265,
+                "binomial_95_interval": [
+                  0.6048767891704403,
+                  0.6477516560564538
+                ],
+                "comparison": "ge",
+                "threshold": -0.05674194967990352
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.27652541237892153,
+                "correct_Hph_count": 843,
+                "denominator": 2000,
+                "fraction": 0.4215,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.39973721424246605,
+                  0.4434932838922706
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.027240070040755154,
+                    0.09943753253864611,
+                    0.1742751761477362,
+                    0.2508343889729195,
+                    0.32455328547028167
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.5517900311405417,
+                    -0.7382608437026241,
+                    0.20939923318926512,
+                    1.040437434197822,
+                    1.7920912679235377
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.6941283305781185,
+                "observed_c_99_interval": [
+                  -2.226535694708862,
+                  2.8393440272833574
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1422,
+                  "denominator": 2000,
+                  "fraction": 0.711,
+                  "binomial_95_interval": [
+                    0.6905845027488051,
+                    0.7307951178287464
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.6941283305781185
+                },
+                "c_upper_tail": {
+                  "count": 578,
+                  "denominator": 2000,
+                  "fraction": 0.289,
+                  "binomial_95_interval": [
+                    0.2692048821712536,
+                    0.3094154972511948
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.6941283305781185
+                },
+                "c_equal_tail_two_sided_fraction": 0.578
+              }
+            },
+            "flat": {
+              "ph": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.07664028632579595,
+                    0.058175235812767054,
+                    0.20430595055267703,
+                    0.34577308147226454,
+                    0.4858400786146969
+                  ],
+                  "N": 2000
+                }
+              },
+              "line": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "b2_posterior_median_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -0.2861722118677701,
+                    -0.14024445615947928,
+                    -0.005132990406046842,
+                    0.136681139249476,
+                    0.2810639619617643
+                  ],
+                  "N": 2000
+                }
+              },
+              "observed_b2": -0.05336351729774293,
+              "complete": true,
+              "p_ph": {
+                "count": 70,
+                "denominator": 2000,
+                "fraction": 0.035,
+                "binomial_95_interval": [
+                  0.02738380113844246,
+                  0.044015415278486306
+                ],
+                "comparison": "le",
+                "threshold": -0.05336351729774293
+              },
+              "p_line": {
+                "count": 1280,
+                "denominator": 2000,
+                "fraction": 0.64,
+                "binomial_95_interval": [
+                  0.6185203387681812,
+                  0.661068405777502
+                ],
+                "comparison": "ge",
+                "threshold": -0.05336351729774293
+              },
+              "power": {
+                "critical_b2_Hline_p95": 0.23151574571705602,
+                "correct_Hph_count": 840,
+                "denominator": 2000,
+                "fraction": 0.42,
+                "binomial_95_interval_conditional_on_estimated_cut": [
+                  0.3982499570699918,
+                  0.44198494719458364
+                ],
+                "note": "interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty"
+              },
+              "Hline_bc": {
+                "N_planned": 2000,
+                "N_valid": 2000,
+                "failed_replicate_ids": [],
+                "complete": true,
+                "b_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    0.02946728841182341,
+                    0.09929736801570486,
+                    0.1695335014416085,
+                    0.24169345367248424,
+                    0.31002122871101556
+                  ],
+                  "N": 2000
+                },
+                "c_distribution": {
+                  "quantiles": [
+                    0.025,
+                    0.16,
+                    0.5,
+                    0.84,
+                    0.975
+                  ],
+                  "values": [
+                    -1.0951254238715395,
+                    -0.43770773916290906,
+                    0.20984549380155842,
+                    0.8386552701574975,
+                    1.4837828537085516
+                  ],
+                  "N": 2000
+                },
+                "observed_c": 0.571783148984558,
+                "observed_c_99_interval": [
+                  -1.0906909795352482,
+                  2.166515965387113
+                ],
+                "observed_c_99_excludes_1": false,
+                "c_lower_tail": {
+                  "count": 1423,
+                  "denominator": 2000,
+                  "fraction": 0.7115,
+                  "binomial_95_interval": [
+                    0.6910939663446369,
+                    0.7312841789629477
+                  ],
+                  "comparison": "le",
+                  "threshold": 0.571783148984558
+                },
+                "c_upper_tail": {
+                  "count": 577,
+                  "denominator": 2000,
+                  "fraction": 0.2885,
+                  "binomial_95_interval": [
+                    0.26871582103705227,
+                    0.3089060336553631
+                  ],
+                  "comparison": "ge",
+                  "threshold": 0.571783148984558
+                },
+                "c_equal_tail_two_sided_fraction": 0.577
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "numerical_audit": {
+    "all_posteriors_valid": true,
+    "failures": [],
+    "fit_method_counts": {
+      "hierarchical_gaussian_population_MCMC": 299,
+      "exact_posterior_importance_integration": 5570,
+      "flat_latent_predictor_MCMC": 59,
+      "exact_posterior_importance_compiled_target": 129883,
+      "hierarchical_gaussian_population_compiled_MCMC": 6831,
+      "flat_latent_predictor_compiled_MCMC": 1358
+    },
+    "number_of_attempts_distribution": {
+      "4": 7737,
+      "1": 108508,
+      "3": 8487,
+      "2": 18458,
+      "5": 807,
+      "6": 3
+    },
+    "replicate_algorithm_counts": {
+      "v2_original_target": 1977,
+      "v3_compiled_same_target": 46023
+    },
+    "importance_ESS_min_p16_median_p84": [
+      400.0135042756611,
+      1194.3450596372004,
+      1822.1942639373012,
+      3247.2305088624857
+    ],
+    "importance_max_weight_max": 0.019999424188686738,
+    "replicate_seconds_p16_p50_p84": [
+      0.018410820178687573,
+      0.046137187629938126,
+      0.3818996966630215
+    ]
+  },
+  "scientific_limits": [
+    "Fixed observed predictor medians used as simulation truths; no targeting/classification/selection simulator.",
+    "Gaussianized published percentile errors; missing Lph-T and cross-study covariances remain zero assumptions.",
+    "Main E has N=5, below the preregistered N>=20 gate regardless of simulated tails.",
+    "Curtis A own-Halpha is13-source matched subset; the full18-source BX-Lbol diagnostic is not used as a proxy for own Halpha.",
+    "A and B overlap and are not independent evidence."
+  ]
+}
