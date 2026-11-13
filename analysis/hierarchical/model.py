@@ -1,9 +1,9 @@
-"""Independent Gaussian-population errors-in-variables regression for Task11a.
+"""Gaussian-population errors-in-variables regression.
 
 Kelly (2007)-type hierarchy with one Gaussian predictor population, not the
 flat latent-X likelihood. Log quantities are base10; their errors are dex.
 All dimensions include actual source covariance, not a fitted noise inflation.
-No import of Claude's lrdstats; scipy/numpy only.
+Independent NumPy/SciPy implementation.
 """
 import json
 from pathlib import Path

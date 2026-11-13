@@ -189,7 +189,7 @@
     "drop_bounds_or_nonconverged": {
       "LRD": {
         "N": 3,
-        "status": "未完成：N<4"
+        "status": "Incomplete: N<4"
       },
       "non-LRD": {
         "N": 6,
@@ -1276,7 +1276,7 @@
     "drop_bounds_or_nonconverged": {
       "LRD": {
         "N": 3,
-        "status": "未完成：N<4"
+        "status": "Incomplete: N<4"
       },
       "non-LRD": {
         "N": 4,
@@ -1818,11 +1818,11 @@
     "drop_bounds_or_nonconverged": {
       "LRD": {
         "N": 3,
-        "status": "未完成：N<4"
+        "status": "Incomplete: N<4"
       },
       "non-LRD": {
         "N": 0,
-        "status": "未完成：N<4"
+        "status": "Incomplete: N<4"
       }
     },
     "excluded": [
@@ -2363,7 +2363,7 @@
     "drop_bounds_or_nonconverged": {
       "LRD": {
         "N": 3,
-        "status": "未完成：N<4"
+        "status": "Incomplete: N<4"
       },
       "non-LRD": {
         "N": 6,
@@ -2888,7 +2888,7 @@
     "drop_bounds_or_nonconverged": {
       "LRD": {
         "N": 3,
-        "status": "未完成：N<4"
+        "status": "Incomplete: N<4"
       },
       "non-LRD": {
         "N": 6,

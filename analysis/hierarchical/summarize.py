@@ -49,7 +49,7 @@ def main():
                 if complete:
                     out['p_ph']=tail(arr['ph'],out['observed_b2'],'le');out['p_line']=tail(arr['line'],out['observed_b2'],'ge');cut=float(np.quantile(arr['line'],.95));k=int(np.sum(arr['ph']>cut));out['power']={'critical_b2_Hline_p95':cut,'correct_Hph_count':k,'denominator':planned,'fraction':k/planned,'binomial_95_interval_conditional_on_estimated_cut':interval(k,planned),'note':'interval conditions on the Monte Carlo-estimated Hline cutoff; does not include cutoff estimation uncertainty'}
                 else:
-                    out['status']='未完成：固定2000个重复中存在未解决失败，不删除失败形成科学p值'
+                    out['status']='Incomplete: unresolved failures among the planned 2000 replicates; failed runs are retained and scientific p-values are not reported'
                     for hyp,side in [('ph','le'),('line','ge')]:
                         known=int(np.sum(arr[hyp]<=out['observed_b2'] if side=='le' else arr[hyp]>=out['observed_b2']));missing=len(badids[hyp]);out['p_'+hyp+'_failure_bounds']={'known_tail_count':known,'unknown_count':missing,'planned_denominator':planned,'possible_fraction_bounds':[known/planned,(known+missing)/planned]}
                 bc=[];bc_bad=[]
