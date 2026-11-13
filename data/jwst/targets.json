@@ -1,0 +1,1838 @@
+[
+  {
+    "file_id": "cc46bb18749b75d9",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_299.spec.fits",
+    "source_id": "Skyfire-299",
+    "z_fit": 5.6229,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_299.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_299.spec.fits",
+    "sha256": "34f9a05cdcde5ccaea4d2333b2161bd3cd45f215f8a490c7081351c65cb865c5"
+  },
+  {
+    "file_id": "7d9465a45c199a6b",
+    "file": "egs-nelson08-v4_g395m-f290lp_4106_88836.spec.fits",
+    "source_id": "Skyfire-299",
+    "z_fit": 5.6229,
+    "input_path": "spectra/egs-nelson08-v4_g395m-f290lp_4106_88836.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelson08-v4/egs-nelson08-v4_g395m-f290lp_4106_88836.spec.fits",
+    "sha256": "77e049a6e42c20e43180e13857721f2ebf64609a03f3feff4813e22466ad22be"
+  },
+  {
+    "file_id": "16bc1f805862de56",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_1090.spec.fits",
+    "source_id": "Skyfire-1090",
+    "z_fit": 6.229,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_1090.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_1090.spec.fits",
+    "sha256": "101ea310c6f04cd5e862abc411f1e5e76f46a459a3cd1ee47897b9082fc8b209"
+  },
+  {
+    "file_id": "42f7c64715200787",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_1867.spec.fits",
+    "source_id": "Skyfire-1867",
+    "z_fit": 5.4457,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_1867.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_1867.spec.fits",
+    "sha256": "c90d64f34a8ab31c14dd88ffec0d93d9aa691c76f24680fcc9519ebc63c3646a"
+  },
+  {
+    "file_id": "cbe1382b6f44a44a",
+    "file": "egs-bwang-m3-v4_g395h-f290lp_8047_72884.spec.fits",
+    "source_id": "Skyfire-1867",
+    "z_fit": 5.4457,
+    "input_path": "spectra/egs-bwang-m3-v4_g395h-f290lp_8047_72884.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m3-v4/egs-bwang-m3-v4_g395h-f290lp_8047_72884.spec.fits",
+    "sha256": "9eb1f4704fcf9e8eb0df950a9f2710f29efc025c53d854fc0bf0ed593e1f77da"
+  },
+  {
+    "file_id": "d880a784e77deb49",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_2086.spec.fits",
+    "source_id": "Skyfire-2086",
+    "z_fit": 5.4806,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_2086.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_2086.spec.fits",
+    "sha256": "8c15973cd906970a3a7960bc40a13f6f091a3b6573c4894f915eca656658014f"
+  },
+  {
+    "file_id": "28fbec94a24aa68f",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_3519.spec.fits",
+    "source_id": "Skyfire-3519",
+    "z_fit": 5.0885,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_3519.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_3519.spec.fits",
+    "sha256": "0198f400542100918c7eb30c3b3582e1848ab7a5bc69e924eb167d0fd99395db"
+  },
+  {
+    "file_id": "42783bfcbaa29892",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_7761.spec.fits",
+    "source_id": "Skyfire-7761",
+    "z_fit": 3.8597,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_7761.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_7761.spec.fits",
+    "sha256": "eb869ad235548a4cdb37bdb8686bf2126c4a3f9fb81fb9dec9e262407d58db5d"
+  },
+  {
+    "file_id": "5062b015fd7500c3",
+    "file": "egs-bwang-m3-v4_g395h-f290lp_8047_7761.spec.fits",
+    "source_id": "Skyfire-7761",
+    "z_fit": 3.8597,
+    "input_path": "spectra/egs-bwang-m3-v4_g395h-f290lp_8047_7761.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m3-v4/egs-bwang-m3-v4_g395h-f290lp_8047_7761.spec.fits",
+    "sha256": "5486719010ded019ed91507750a9421492260383e39d1c7f23eb59a52018aee3"
+  },
+  {
+    "file_id": "b70f6177b466ebea",
+    "file": "egs-nelson08-v4_g395m-f290lp_4106_68456.spec.fits",
+    "source_id": "Skyfire-7761",
+    "z_fit": 3.8597,
+    "input_path": "spectra/egs-nelson08-v4_g395m-f290lp_4106_68456.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelson08-v4/egs-nelson08-v4_g395m-f290lp_4106_68456.spec.fits",
+    "sha256": "a5ca6dfed31e6510aff5fb2ebf20f710d14e9abda8b32b28ec112368e7990752"
+  },
+  {
+    "file_id": "976b35f895dd6af6",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_9382.spec.fits",
+    "source_id": "Skyfire-9382",
+    "z_fit": 5.073,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_9382.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_9382.spec.fits",
+    "sha256": "fd3e334d0198cf9233fe8819ab85560fcdf3049d9e44505dd71fb414143d1d49"
+  },
+  {
+    "file_id": "79635fa6fb85c576",
+    "file": "egs-hutchison-obs2-v4_g395m-f290lp_5507_21489.spec.fits",
+    "source_id": "Skyfire-9382",
+    "z_fit": 5.073,
+    "input_path": "spectra/egs-hutchison-obs2-v4_g395m-f290lp_5507_21489.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-hutchison-obs2-v4/egs-hutchison-obs2-v4_g395m-f290lp_5507_21489.spec.fits",
+    "sha256": "736d8a9c821ebfde2716e5a5047e37c7a2c7bc34cd981c225755ba762db72eca"
+  },
+  {
+    "file_id": "aecefe7aa3585d5f",
+    "file": "egs-bwang-m1-v4_g395h-f290lp_8047_46928.spec.fits",
+    "source_id": "Skyfire-12630",
+    "z_fit": 5.1033,
+    "input_path": "spectra/egs-bwang-m1-v4_g395h-f290lp_8047_46928.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m1-v4/egs-bwang-m1-v4_g395h-f290lp_8047_46928.spec.fits",
+    "sha256": "c852c6f5d7aa3f952d395ede3368399e2231c7e9e65a1a1867f9ffb5c479b001"
+  },
+  {
+    "file_id": "cc540c2896b6a333",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_17484.spec.fits",
+    "source_id": "Skyfire-17484",
+    "z_fit": 5.0334,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_17484.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_17484.spec.fits",
+    "sha256": "dddf1834d7e95cdacf382be4519de9da6224bc73543bad8faac9836c1308c95e"
+  },
+  {
+    "file_id": "7510458fdcefe88f",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_20952.spec.fits",
+    "source_id": "Skyfire-20952",
+    "z_fit": 5.2802,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_20952.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_20952.spec.fits",
+    "sha256": "d53df574b3276cad3093162e1be4ff0fa27b5a72284e18ad14ef315913634d38"
+  },
+  {
+    "file_id": "e68788cc0ac05e07",
+    "file": "valentino-egs-v4_g235m-f170lp_3567_20910.spec.fits",
+    "source_id": "Skyfire-23082",
+    "z_fit": 3.721,
+    "input_path": "spectra/valentino-egs-v4_g235m-f170lp_3567_20910.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/valentino-egs-v4/valentino-egs-v4_g235m-f170lp_3567_20910.spec.fits",
+    "sha256": "4add79ada01203606bd9d76cb8b9af64bb898f5c081cbca53393eff20d74d307"
+  },
+  {
+    "file_id": "dcb6120e80ef0dd7",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_23289.spec.fits",
+    "source_id": "Skyfire-23289",
+    "z_fit": 5.9343,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_23289.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_23289.spec.fits",
+    "sha256": "250ada69ef60124e9e708bfda3ba4aab48e04f0f1d598e14b20f47b54458a958"
+  },
+  {
+    "file_id": "e3be5db8bc6e9e93",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_24689.spec.fits",
+    "source_id": "Skyfire-24689",
+    "z_fit": 3.6858,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_24689.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_24689.spec.fits",
+    "sha256": "406e82b104e2b18465b6bf7f1b75f191d365ed19917b1489a46ce3cdc25bc3eb"
+  },
+  {
+    "file_id": "fdce8ce1816f4209",
+    "file": "egs-bwang-m1-v4_g395h-f290lp_8047_14115.spec.fits",
+    "source_id": "Skyfire-25941",
+    "z_fit": 5.9469,
+    "input_path": "spectra/egs-bwang-m1-v4_g395h-f290lp_8047_14115.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m1-v4/egs-bwang-m1-v4_g395h-f290lp_8047_14115.spec.fits",
+    "sha256": "15dd4accaefe0dc17f57474ad571f4ac2cbda0eff8985fd98d3ddb5b49d0ee19"
+  },
+  {
+    "file_id": "f91154c621d0d74b",
+    "file": "ceers-v4_g235m-f170lp_1345_1294.spec.fits",
+    "source_id": "Skyfire-26079",
+    "z_fit": 5.0015,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_1294.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_1294.spec.fits",
+    "sha256": "6f39be6565033f748b9aebc7201402231158533564c2ff07d5975e5745a305f4"
+  },
+  {
+    "file_id": "ad8efd0f7c205c0b",
+    "file": "ceers-v4_g395m-f290lp_1345_1294.spec.fits",
+    "source_id": "Skyfire-26079",
+    "z_fit": 5.0015,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_1294.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_1294.spec.fits",
+    "sha256": "4fe646f2eef567a8828ebec116e2efafbfa6006310924a9b3b6bd17d3dce0b41"
+  },
+  {
+    "file_id": "a13890484aaacf71",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_44039.spec.fits",
+    "source_id": "Skyfire-44039",
+    "z_fit": 5.9128,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_44039.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_44039.spec.fits",
+    "sha256": "127bd21dfb4c01603df71c4d18979ab5c76a722eb9ca2aaad4a2fd5c797cde7c"
+  },
+  {
+    "file_id": "e5a0eec49ae224b1",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_57375.spec.fits",
+    "source_id": "Skyfire-83652",
+    "z_fit": 5.6669,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_57375.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_57375.spec.fits",
+    "sha256": "277ef5357afa558fac16d74764e2f650c026e6cbaeda8eb113fb41df71d7a5ec"
+  },
+  {
+    "file_id": "b00fbb92c385ed3d",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_83652.spec.fits",
+    "source_id": "Skyfire-83652",
+    "z_fit": 5.6669,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_83652.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_83652.spec.fits",
+    "sha256": "25d94562be09075d547a5d26f841cd2cd5771d5bd878f3e5e738e366f4e64ffe"
+  },
+  {
+    "file_id": "5ca60264c1fba2fc",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_47179.spec.fits",
+    "source_id": "Skyfire-92141",
+    "z_fit": 6.1365,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_47179.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_47179.spec.fits",
+    "sha256": "7f57a196ca1b77c1fa0ad793d114fee3da5014486d32d12b87d48348846c9253"
+  },
+  {
+    "file_id": "24b84cf3cba269e1",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_47179.spec.fits",
+    "source_id": "Skyfire-92141",
+    "z_fit": 6.1365,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_47179.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_47179.spec.fits",
+    "sha256": "64ffccf8cda8b323eb29d39dd2c18fce824833ec9121c4113cf775a485e4d3b4"
+  },
+  {
+    "file_id": "54c1e145a55d1004",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_92141.spec.fits",
+    "source_id": "Skyfire-92141",
+    "z_fit": 6.1365,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_92141.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_92141.spec.fits",
+    "sha256": "8bd28affc3aeb85b93c1bfa7affc98524c5f4b36d01fdd23e317be0c0785ed7e"
+  },
+  {
+    "file_id": "9384b9c2ffb8ab0f",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_504101.spec.fits",
+    "source_id": "Skyfire-504101",
+    "z_fit": 4.8814,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_504101.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_504101.spec.fits",
+    "sha256": "9f9354dbea908b3b3cee6432a429bf847d701b67be6475bd7bc1354302624a39"
+  },
+  {
+    "file_id": "3f92b511b43d7a6e",
+    "file": "egs-hutchison-obs3-v4_g395m-f290lp_5507_13817.spec.fits",
+    "source_id": "Skyfire-513817",
+    "z_fit": 3.624,
+    "input_path": "spectra/egs-hutchison-obs3-v4_g395m-f290lp_5507_13817.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-hutchison-obs3-v4/egs-hutchison-obs3-v4_g395m-f290lp_5507_13817.spec.fits",
+    "sha256": "0e27c2bc100165fb62e59439d0fdb53a5a4e59eac6d610fdc207780dc8621a48"
+  },
+  {
+    "file_id": "1cb6b4f25522b9cd",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_530722.spec.fits",
+    "source_id": "Skyfire-530722",
+    "z_fit": 4.3569,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_530722.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_530722.spec.fits",
+    "sha256": "1580c2d31dfb7ed02b9f02b7e0129ea4416686c1adeaa164c0af9a3e8eab99a6"
+  },
+  {
+    "file_id": "a436ebf597890729",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_530410.spec.fits",
+    "source_id": "Skyfire-542588",
+    "z_fit": 3.6015,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_530410.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_530410.spec.fits",
+    "sha256": "800fea89da7fe4467698b2afd8abe479e34b3cc91b264514070f984c181e186c"
+  },
+  {
+    "file_id": "458e2e693e629f50",
+    "file": "egs-skyfire-02-v4_g395m-f290lp_5718_547783.spec.fits",
+    "source_id": "Skyfire-547783",
+    "z_fit": 3.6886,
+    "input_path": "spectra/egs-skyfire-02-v4_g395m-f290lp_5718_547783.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-02-v4/egs-skyfire-02-v4_g395m-f290lp_5718_547783.spec.fits",
+    "sha256": "bce716ab54526da9b69e725c4fa9a5b9f39b08d5ab186e37c9f4627881b1ffd3"
+  },
+  {
+    "file_id": "860a15d4f5355606",
+    "file": "egs-skyfire-01-v4_g395m-f290lp_5718_549030.spec.fits",
+    "source_id": "Skyfire-549030",
+    "z_fit": 3.7898,
+    "input_path": "spectra/egs-skyfire-01-v4_g395m-f290lp_5718_549030.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-skyfire-01-v4/egs-skyfire-01-v4_g395m-f290lp_5718_549030.spec.fits",
+    "sha256": "0be050a6ee486b80744138ab3d862e726f68302a6b25673e391f1ed3a3d3db12"
+  },
+  {
+    "file_id": "33dca5d2e8cb67f0",
+    "file": "rubies-uds1-v4_g395m-f290lp_4233_44043.spec.fits",
+    "source_id": "RUBIES-UDS-44043",
+    "z_fit": 3.499,
+    "input_path": "spectra/rubies-uds1-v4_g395m-f290lp_4233_44043.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds1-v4/rubies-uds1-v4_g395m-f290lp_4233_44043.spec.fits",
+    "sha256": "6610a732ed18a116e465a879ea4d6cd3847a3bce435c93515aff15caa7325ee6"
+  },
+  {
+    "file_id": "ddc669006ba5ee21",
+    "file": "papovich-egs-p2b-v4_g395m-f290lp_5943_46155.spec.fits",
+    "source_id": "RUBIES-EGS-50812",
+    "z_fit": 3.519,
+    "input_path": "spectra/papovich-egs-p2b-v4_g395m-f290lp_5943_46155.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/papovich-egs-p2b-v4/papovich-egs-p2b-v4_g395m-f290lp_5943_46155.spec.fits",
+    "sha256": "945d030e989b1e9df7927d161f8293a6be59868ade6937836346df87725f3a55"
+  },
+  {
+    "file_id": "813b168213687c6b",
+    "file": "papovich-egs-p2-v4_g395m-f290lp_5943_46155.spec.fits",
+    "source_id": "RUBIES-EGS-50812",
+    "z_fit": 3.519,
+    "input_path": "spectra/papovich-egs-p2-v4_g395m-f290lp_5943_46155.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/papovich-egs-p2-v4/papovich-egs-p2-v4_g395m-f290lp_5943_46155.spec.fits",
+    "sha256": "a93bc3aedfab55b841c8550ed032d8f700f58090b5de066efa85c066fd6b863c"
+  },
+  {
+    "file_id": "e2e61650afd0f045",
+    "file": "egs-hutchison-obs3-v4_g395m-f290lp_5507_46155.spec.fits",
+    "source_id": "RUBIES-EGS-50812",
+    "z_fit": 3.519,
+    "input_path": "spectra/egs-hutchison-obs3-v4_g395m-f290lp_5507_46155.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-hutchison-obs3-v4/egs-hutchison-obs3-v4_g395m-f290lp_5507_46155.spec.fits",
+    "sha256": "72bd13093b3929a94c2d4a94bee6e44bc2c0ad7a0b3161c2deb1d01dbecdffa9"
+  },
+  {
+    "file_id": "b54307076e51d945",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_50812.spec.fits",
+    "source_id": "RUBIES-EGS-50812",
+    "z_fit": 3.519,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_50812.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_50812.spec.fits",
+    "sha256": "deb92d0c8d928c901eba02e5d476852953755ab8ccf8ab03055fcced21a9d2b6"
+  },
+  {
+    "file_id": "2175b63cd74124ed",
+    "file": "rubies-uds33-v4_g395m-f290lp_4233_21944.spec.fits",
+    "source_id": "RUBIES-UDS-21944",
+    "z_fit": 3.526,
+    "input_path": "spectra/rubies-uds33-v4_g395m-f290lp_4233_21944.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds33-v4/rubies-uds33-v4_g395m-f290lp_4233_21944.spec.fits",
+    "sha256": "8ef0fe962ebac666937b653fd0759085761935e0c48534099702a7ccd38d1719"
+  },
+  {
+    "file_id": "b76a097fd1dfa514",
+    "file": "rubies-uds3-v4_g395m-f290lp_4233_46566.spec.fits",
+    "source_id": "RUBIES-UDS-46566",
+    "z_fit": 3.538,
+    "input_path": "spectra/rubies-uds3-v4_g395m-f290lp_4233_46566.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds3-v4/rubies-uds3-v4_g395m-f290lp_4233_46566.spec.fits",
+    "sha256": "e8d9096c98c93a28012dd7dec6365a86afb17f1cc1f48471cdb588a8ec8367ed"
+  },
+  {
+    "file_id": "612510867d1b897d",
+    "file": "weibel-uds-cy5-v4_g395m-f290lp_7488_143822.spec.fits",
+    "source_id": "RUBIES-UDS-154183",
+    "z_fit": 3.546,
+    "input_path": "spectra/weibel-uds-cy5-v4_g395m-f290lp_7488_143822.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/weibel-uds-cy5-v4/weibel-uds-cy5-v4_g395m-f290lp_7488_143822.spec.fits",
+    "sha256": "3fd0f85aaaf42e3810984efee7a3d5abe785dc36dd0f9ca05ef9454d0cf238a8"
+  },
+  {
+    "file_id": "e71f09820c933102",
+    "file": "rubies-uds31-v4_g395m-f290lp_4233_154183.spec.fits",
+    "source_id": "RUBIES-UDS-154183",
+    "z_fit": 3.546,
+    "input_path": "spectra/rubies-uds31-v4_g395m-f290lp_4233_154183.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds31-v4/rubies-uds31-v4_g395m-f290lp_4233_154183.spec.fits",
+    "sha256": "c7c14ad4146600740a54016c6f99441a0407fe2eb092ea4ea6d20059bea0f38b"
+  },
+  {
+    "file_id": "016858dca2b480cc",
+    "file": "rubies-uds32-v4_g395m-f290lp_4233_153207.spec.fits",
+    "source_id": "RUBIES-UDS-153207",
+    "z_fit": 3.597,
+    "input_path": "spectra/rubies-uds32-v4_g395m-f290lp_4233_153207.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds32-v4/rubies-uds32-v4_g395m-f290lp_4233_153207.spec.fits",
+    "sha256": "1c7c3fc44f62913e2608f9033f49dbb333da412c2dbeb885865bb1bdc5704326"
+  },
+  {
+    "file_id": "b5265c01cf30a6d1",
+    "file": "gto-wide-egs1-v4_g395h-f290lp_1213_3304.spec.fits",
+    "source_id": "RUBIES-EGS-50522",
+    "z_fit": 3.614,
+    "input_path": "spectra/gto-wide-egs1-v4_g395h-f290lp_1213_3304.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/gto-wide-egs1-v4/gto-wide-egs1-v4_g395h-f290lp_1213_3304.spec.fits",
+    "sha256": "e7fcd09bfb59a98752c24e5584661659b2b03793fc68e6b47aa88cc3e7ba5f32"
+  },
+  {
+    "file_id": "35a3be8bd2ae6e71",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_50522.spec.fits",
+    "source_id": "RUBIES-EGS-50522",
+    "z_fit": 3.614,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_50522.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_50522.spec.fits",
+    "sha256": "07bc5638d3f0deb711bddcd7cb2b29ef252804764bedc3d4abe55bb3a142f54c"
+  },
+  {
+    "file_id": "800206094e968765",
+    "file": "rubies-egs52-v4_g395m-f290lp_4233_920.spec.fits",
+    "source_id": "RUBIES-EGS-920",
+    "z_fit": 3.616,
+    "input_path": "spectra/rubies-egs52-v4_g395m-f290lp_4233_920.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs52-v4/rubies-egs52-v4_g395m-f290lp_4233_920.spec.fits",
+    "sha256": "5685559b68891cf76bbd08d8945b551840afd1a2e63b4a2a55dbe799cc97e6c0"
+  },
+  {
+    "file_id": "f70cf1aa63572ae0",
+    "file": "rubies-uds31-v4_g395m-f290lp_4233_150323.spec.fits",
+    "source_id": "RUBIES-UDS-150323",
+    "z_fit": 3.618,
+    "input_path": "spectra/rubies-uds31-v4_g395m-f290lp_4233_150323.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds31-v4/rubies-uds31-v4_g395m-f290lp_4233_150323.spec.fits",
+    "sha256": "e1ee4bb140874a510fe0fa81a33cca9457595bb5909b60652e526cc6a0913c3b"
+  },
+  {
+    "file_id": "23a7887b802c32f0",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_58237.spec.fits",
+    "source_id": "RUBIES-EGS-58237",
+    "z_fit": 3.651,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_58237.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_58237.spec.fits",
+    "sha256": "9e30041953c626c23486513f3e8c099fe7dffd56490feb5bdf7aba9777ee0b4f"
+  },
+  {
+    "file_id": "4d55df753c2ed2bb",
+    "file": "rubies-uds2-v4_g395m-f290lp_4233_61627.spec.fits",
+    "source_id": "RUBIES-UDS-61627",
+    "z_fit": 3.654,
+    "input_path": "spectra/rubies-uds2-v4_g395m-f290lp_4233_61627.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds2-v4/rubies-uds2-v4_g395m-f290lp_4233_61627.spec.fits",
+    "sha256": "d3ea8629ef8645d8012d74111a09b11882a0ee5bf5c6ee1ae82544903466f76d"
+  },
+  {
+    "file_id": "2a840b6c4456b1a1",
+    "file": "rubies-uds41-v4_g395m-f290lp_4233_5496.spec.fits",
+    "source_id": "RUBIES-UDS-5496",
+    "z_fit": 3.655,
+    "input_path": "spectra/rubies-uds41-v4_g395m-f290lp_4233_5496.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds41-v4/rubies-uds41-v4_g395m-f290lp_4233_5496.spec.fits",
+    "sha256": "a9df250e9d5375fb5bf1026aa2a98fc99555dace1c73c4265435c46b7b407bb6"
+  },
+  {
+    "file_id": "05f70d6b842e89b3",
+    "file": "rubies-egs51-v4_g395m-f290lp_4233_15825.spec.fits",
+    "source_id": "RUBIES-EGS-15825",
+    "z_fit": 3.666,
+    "input_path": "spectra/rubies-egs51-v4_g395m-f290lp_4233_15825.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs51-v4/rubies-egs51-v4_g395m-f290lp_4233_15825.spec.fits",
+    "sha256": "4af45f1a8b7048a58880a2d071428ef444ac0cbfaa733467b406d298935fbb0a"
+  },
+  {
+    "file_id": "27c657a4d46212e7",
+    "file": "rubies-uds1-v4_g395m-f290lp_4233_18302.spec.fits",
+    "source_id": "RUBIES-UDS-18302",
+    "z_fit": 3.698,
+    "input_path": "spectra/rubies-uds1-v4_g395m-f290lp_4233_18302.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds1-v4/rubies-uds1-v4_g395m-f290lp_4233_18302.spec.fits",
+    "sha256": "8d5f9bd8d65099dc60396ea67ba0eb2b334e996c96f50b49d997d8b23b8d1064"
+  },
+  {
+    "file_id": "521406329b56d276",
+    "file": "rubies-uds3-v4_g395m-f290lp_4233_46885.spec.fits",
+    "source_id": "RUBIES-UDS-46885",
+    "z_fit": 3.73,
+    "input_path": "spectra/rubies-uds3-v4_g395m-f290lp_4233_46885.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds3-v4/rubies-uds3-v4_g395m-f290lp_4233_46885.spec.fits",
+    "sha256": "63c621282f8d031e69c1791d4e8bb2e1b149187a6af44a96e5e42fe3a6f169cf"
+  },
+  {
+    "file_id": "fe59b9be39bddf3d",
+    "file": "rubies-uds23-v4_g395m-f290lp_4233_146995.spec.fits",
+    "source_id": "RUBIES-UDS-146995",
+    "z_fit": 3.732,
+    "input_path": "spectra/rubies-uds23-v4_g395m-f290lp_4233_146995.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds23-v4/rubies-uds23-v4_g395m-f290lp_4233_146995.spec.fits",
+    "sha256": "a0a7bc75413782fbe75eefca5229ba2f708e1eaea524c1e6b44c86f19dea5773"
+  },
+  {
+    "file_id": "6372f4fa65267c03",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_34978.spec.fits",
+    "source_id": "RUBIES-EGS-34978",
+    "z_fit": 3.772,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_34978.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_34978.spec.fits",
+    "sha256": "d07d28b89c814a960b5df3cf17815111da6c74cc0f89c87b9910fa74da6ab29d"
+  },
+  {
+    "file_id": "5ae19747388ec13b",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_19174.spec.fits",
+    "source_id": "RUBIES-EGS-19174",
+    "z_fit": 3.774,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_19174.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_19174.spec.fits",
+    "sha256": "97c4d84b61d6aeca2287b180c56e4eef0d034b2615352d4b13eb5961ee068484"
+  },
+  {
+    "file_id": "fae3c9b12c7571d7",
+    "file": "egs-simons-04-v4_g395h-f290lp_8410_104385.spec.fits",
+    "source_id": "RUBIES-EGS-19174",
+    "z_fit": 3.774,
+    "input_path": "spectra/egs-simons-04-v4_g395h-f290lp_8410_104385.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-04-v4/egs-simons-04-v4_g395h-f290lp_8410_104385.spec.fits",
+    "sha256": "d53a9a3a7c1e98a7ac3613455d3822416663d051522984ffa5db907387cbd5aa"
+  },
+  {
+    "file_id": "9fa824381825e35b",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_10036.spec.fits",
+    "source_id": "RUBIES-UDS-10036",
+    "z_fit": 3.806,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_10036.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_10036.spec.fits",
+    "sha256": "b92f2c31bff2b22602afa1735b8fc4efc11131db632cb1863a711bd81b7c4a4a"
+  },
+  {
+    "file_id": "502c31885ee47f81",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_37032.spec.fits",
+    "source_id": "RUBIES-EGS-37032",
+    "z_fit": 3.85,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_37032.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_37032.spec.fits",
+    "sha256": "42312830e9b3e14a35a81541693a80a7efeb7445a054db5ab122a57d77a9fadf"
+  },
+  {
+    "file_id": "96b9c9be92d936a9",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_101393.spec.fits",
+    "source_id": "RUBIES-EGS-37032",
+    "z_fit": 3.85,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_101393.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_101393.spec.fits",
+    "sha256": "11c3c1da6bbcee3150c32197151af2116103ec31fa6ffee168e94c59d0dd7edd"
+  },
+  {
+    "file_id": "0b006a075961cd00",
+    "file": "ceers-v4_g235m-f170lp_1345_11728.spec.fits",
+    "source_id": "CEERS-11728",
+    "z_fit": 3.869,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_11728.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_11728.spec.fits",
+    "sha256": "c203a9e3a1075f09c1d4bf6a82aa7026c65468ec699ed69bac97f5144b2ddca1"
+  },
+  {
+    "file_id": "a2d15e9e3cb1d3fa",
+    "file": "ceers-v4_g395m-f290lp_1345_11728.spec.fits",
+    "source_id": "CEERS-11728",
+    "z_fit": 3.869,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_11728.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_11728.spec.fits",
+    "sha256": "32d98caae843c2680c519685d9bc7180e846c14028c5ed5d6c3dc87c3aac1317"
+  },
+  {
+    "file_id": "61eb93cd46923e42",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_22304.spec.fits",
+    "source_id": "RUBIES-UDS-22304",
+    "z_fit": 3.906,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_22304.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_22304.spec.fits",
+    "sha256": "ead3cc9248a71e1c06e8e2a288bc9fb834cb651df3c745516b3bb8f484a6e3c7"
+  },
+  {
+    "file_id": "e708fc9971d4717a",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_16053.spec.fits",
+    "source_id": "RUBIES-UDS-16053",
+    "z_fit": 3.952,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_16053.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_16053.spec.fits",
+    "sha256": "6595b7da556b49ab63aa66ff5a943f83ead4430eecc9f4510f86bfe0a9b6874c"
+  },
+  {
+    "file_id": "206e939abe402d29",
+    "file": "rubies-uds23-v4_g395m-f290lp_4233_147412.spec.fits",
+    "source_id": "RUBIES-UDS-147411",
+    "z_fit": 3.966,
+    "input_path": "spectra/rubies-uds23-v4_g395m-f290lp_4233_147412.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds23-v4/rubies-uds23-v4_g395m-f290lp_4233_147412.spec.fits",
+    "sha256": "9cf9994b3ee9d9f4251201dfd51792ccc9b534b5e2f34b089c16f2fd03065f93"
+  },
+  {
+    "file_id": "aebf3cbbc120603b",
+    "file": "rubies-uds41-v4_g395m-f290lp_4233_11721.spec.fits",
+    "source_id": "RUBIES-UDS-11721",
+    "z_fit": 3.978,
+    "input_path": "spectra/rubies-uds41-v4_g395m-f290lp_4233_11721.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds41-v4/rubies-uds41-v4_g395m-f290lp_4233_11721.spec.fits",
+    "sha256": "706ef428160a2ebcd84bd63935a1ecc324b56d5e63b402b10737294f213534d0"
+  },
+  {
+    "file_id": "0db83f1a7fc8d254",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_8895.spec.fits",
+    "source_id": "RUBIES-UDS-8895",
+    "z_fit": 3.982,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_8895.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_8895.spec.fits",
+    "sha256": "3f68745ef8a59ecfc7ccd35c63af93a5a1ec62accbac57c0ca7efb6ff7e532f2"
+  },
+  {
+    "file_id": "de2786132501b97c",
+    "file": "rubies-uds43-v4_g395m-f290lp_4233_30969.spec.fits",
+    "source_id": "RUBIES-UDS-30969",
+    "z_fit": 4.0,
+    "input_path": "spectra/rubies-uds43-v4_g395m-f290lp_4233_30969.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds43-v4/rubies-uds43-v4_g395m-f290lp_4233_30969.spec.fits",
+    "sha256": "dd7e6332af9a5fa922d56620dbafdf841683ad4de3c710d9584271d0f5d52154"
+  },
+  {
+    "file_id": "a8dd48084aa94ea1",
+    "file": "rubies-uds23-v4_g395m-f290lp_4233_155916.spec.fits",
+    "source_id": "RUBIES-UDS-155916",
+    "z_fit": 4.098,
+    "input_path": "spectra/rubies-uds23-v4_g395m-f290lp_4233_155916.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds23-v4/rubies-uds23-v4_g395m-f290lp_4233_155916.spec.fits",
+    "sha256": "0a9b094b29bad987d0fc9801e36c1b90cae1a6ffee863c17878e7390810aa01e"
+  },
+  {
+    "file_id": "237866738229981b",
+    "file": "rubies-uds1-v4_g395m-f290lp_4233_31747.spec.fits",
+    "source_id": "RUBIES-UDS-31747",
+    "z_fit": 4.13,
+    "input_path": "spectra/rubies-uds1-v4_g395m-f290lp_4233_31747.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds1-v4/rubies-uds1-v4_g395m-f290lp_4233_31747.spec.fits",
+    "sha256": "7247472a580337f28ee86756f29df66263bcc810cf4ce4e276e656e3d51442f5"
+  },
+  {
+    "file_id": "c168c15be2ca5364",
+    "file": "rubies-uds22-v4_g395m-f290lp_4233_119957.spec.fits",
+    "source_id": "RUBIES-UDS-119957",
+    "z_fit": 4.149,
+    "input_path": "spectra/rubies-uds22-v4_g395m-f290lp_4233_119957.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds22-v4/rubies-uds22-v4_g395m-f290lp_4233_119957.spec.fits",
+    "sha256": "6e3bbe3e07dde690742e7cf82eefa21b0b3332056db7174a3104b8e9506b875c"
+  },
+  {
+    "file_id": "79f5de8a79f03a06",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_28812.spec.fits",
+    "source_id": "RUBIES-EGS-28812",
+    "z_fit": 4.222,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_28812.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_28812.spec.fits",
+    "sha256": "8513b878bb366785a4da095f524cbb938326e0dc7c144f930b15116b5e19510e"
+  },
+  {
+    "file_id": "7482bdb4fdf66821",
+    "file": "egs-bwang-m1-v4_g395h-f290lp_8047_28812.spec.fits",
+    "source_id": "RUBIES-EGS-28812",
+    "z_fit": 4.222,
+    "input_path": "spectra/egs-bwang-m1-v4_g395h-f290lp_8047_28812.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m1-v4/egs-bwang-m1-v4_g395h-f290lp_8047_28812.spec.fits",
+    "sha256": "d945ae3fdfb438b070df429a454ac2c77c58a267700786109740a574c5d96954"
+  },
+  {
+    "file_id": "7710baae84c38739",
+    "file": "rubies-uds22-v4_g395m-f290lp_4233_143683.spec.fits",
+    "source_id": "RUBIES-UDS-143683",
+    "z_fit": 4.226,
+    "input_path": "spectra/rubies-uds22-v4_g395m-f290lp_4233_143683.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds22-v4/rubies-uds22-v4_g395m-f290lp_4233_143683.spec.fits",
+    "sha256": "56adbb7063e175ccab1adbc76d9385219c8bbf1e5e588f882c5d1350c74e3ce2"
+  },
+  {
+    "file_id": "b8082c4c21073aa7",
+    "file": "rubies-uds43-v4_g395m-f290lp_4233_35974.spec.fits",
+    "source_id": "RUBIES-UDS-35974",
+    "z_fit": 4.367,
+    "input_path": "spectra/rubies-uds43-v4_g395m-f290lp_4233_35974.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds43-v4/rubies-uds43-v4_g395m-f290lp_4233_35974.spec.fits",
+    "sha256": "05687f63ec91d9b08c045650f77a985048095cc135538e81bbf9aa49362fc3c0"
+  },
+  {
+    "file_id": "5a8fdb90a026539b",
+    "file": "rubies-uds2-v4_g395m-f290lp_4233_63139.spec.fits",
+    "source_id": "RUBIES-UDS-63139",
+    "z_fit": 4.435,
+    "input_path": "spectra/rubies-uds2-v4_g395m-f290lp_4233_63139.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds2-v4/rubies-uds2-v4_g395m-f290lp_4233_63139.spec.fits",
+    "sha256": "99f784b89529f82641f10e7fe86e55a4699533e3c18ac588fe9e80210bc59440"
+  },
+  {
+    "file_id": "f315031f7292ba48",
+    "file": "rubies-uds3-v4_g395m-f290lp_4233_48507.spec.fits",
+    "source_id": "RUBIES-UDS-48507",
+    "z_fit": 4.468,
+    "input_path": "spectra/rubies-uds3-v4_g395m-f290lp_4233_48507.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds3-v4/rubies-uds3-v4_g395m-f290lp_4233_48507.spec.fits",
+    "sha256": "b55a45749c257a3643165556e81d62be65c5b3fff714851f06a1e4421b24cbe8"
+  },
+  {
+    "file_id": "73037207fdadda22",
+    "file": "ceers-v4_g235m-f170lp_1345_1244.spec.fits",
+    "source_id": "CEERS-1244",
+    "z_fit": 4.478,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_1244.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_1244.spec.fits",
+    "sha256": "12bebc3c989c504bc61c82c810a3f44bd446f0467df9152a772f5b958cbe666e"
+  },
+  {
+    "file_id": "f4fa12bef7c720fb",
+    "file": "ceers-v4_g395m-f290lp_1345_1244.spec.fits",
+    "source_id": "CEERS-1244",
+    "z_fit": 4.478,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_1244.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_1244.spec.fits",
+    "sha256": "19d3c9f56f62db083b00c75db1ee5b423ee3d19b97548c0772cbb9e78d25da6e"
+  },
+  {
+    "file_id": "6360145de0a3d70f",
+    "file": "rubies-egs52-v4_g395m-f290lp_4233_29489.spec.fits",
+    "source_id": "RUBIES-EGS-29489",
+    "z_fit": 4.543,
+    "input_path": "spectra/rubies-egs52-v4_g395m-f290lp_4233_29489.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs52-v4/rubies-egs52-v4_g395m-f290lp_4233_29489.spec.fits",
+    "sha256": "894971d9987e18531353c41093869b2f5f3cbae3c0869830e19dc7a2a585a8ae"
+  },
+  {
+    "file_id": "7fa2a8a8027e5c29",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_102364.spec.fits",
+    "source_id": "RUBIES-EGS-29489",
+    "z_fit": 4.543,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_102364.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_102364.spec.fits",
+    "sha256": "7bb2754f2846020dd91bf2bc9df7ba0da6c02cea06be7f280b5b1bdf65ad7a4c"
+  },
+  {
+    "file_id": "cad9d8b36f7a2b31",
+    "file": "rubies-uds1-v4_g395m-f290lp_4233_19484.spec.fits",
+    "source_id": "RUBIES-UDS-19484",
+    "z_fit": 4.656,
+    "input_path": "spectra/rubies-uds1-v4_g395m-f290lp_4233_19484.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds1-v4/rubies-uds1-v4_g395m-f290lp_4233_19484.spec.fits",
+    "sha256": "f0c0dd80b5a6bf4f0d201c0f53c331cf7d8787820466ef0f608653290b38fe06"
+  },
+  {
+    "file_id": "6c1df46adad6a4d2",
+    "file": "rubies-uds21-v4_g395m-f290lp_4233_182791.spec.fits",
+    "source_id": "RUBIES-UDS-182791",
+    "z_fit": 4.718,
+    "input_path": "spectra/rubies-uds21-v4_g395m-f290lp_4233_182791.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds21-v4/rubies-uds21-v4_g395m-f290lp_4233_182791.spec.fits",
+    "sha256": "f5f8635718e665da725391bc2ab7050230816e26c0d10fe0a2d62050a6bb5b4e"
+  },
+  {
+    "file_id": "d95dd35aee7c8338",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_45599.spec.fits",
+    "source_id": "RUBIES-EGS-45599",
+    "z_fit": 4.862,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_45599.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_45599.spec.fits",
+    "sha256": "e463f5f136711af1735357caa25357f3e2f9fd5fa49b47f23989dca472f838d8"
+  },
+  {
+    "file_id": "f7218e34e619a682",
+    "file": "rubies-egs51-v4_g395m-f290lp_4233_6411.spec.fits",
+    "source_id": "RUBIES-EGS-6411",
+    "z_fit": 4.88,
+    "input_path": "spectra/rubies-egs51-v4_g395m-f290lp_4233_6411.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs51-v4/rubies-egs51-v4_g395m-f290lp_4233_6411.spec.fits",
+    "sha256": "daaa72904e50d6dd101a2d653654c3ed8323b8b31367bd483fd82da05bd4e8be"
+  },
+  {
+    "file_id": "57956d39bc802bdf",
+    "file": "valentino-egs-v4_g235m-f170lp_3567_42232.spec.fits",
+    "source_id": "RUBIES-EGS-42232",
+    "z_fit": 4.954,
+    "input_path": "spectra/valentino-egs-v4_g235m-f170lp_3567_42232.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/valentino-egs-v4/valentino-egs-v4_g235m-f170lp_3567_42232.spec.fits",
+    "sha256": "746549372d1dfa50d504946b4a0bbb985b5b39d08412eabbea238aebba170f7f"
+  },
+  {
+    "file_id": "48be028a0da33d2d",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_42232.spec.fits",
+    "source_id": "RUBIES-EGS-42232",
+    "z_fit": 4.954,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_42232.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_42232.spec.fits",
+    "sha256": "f7b1f486a8ae885f50ccfd07c5194b177bdb725943280aed9c8209e4d0797137"
+  },
+  {
+    "file_id": "d0ea84d0ad1662d0",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_42232.spec.fits",
+    "source_id": "RUBIES-EGS-42232",
+    "z_fit": 4.954,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_42232.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_42232.spec.fits",
+    "sha256": "28782eb77b47d627d871fe5699f1c00b5ba75c59c67ad16c1403ffa829132103"
+  },
+  {
+    "file_id": "6ec88dacc6c989bf",
+    "file": "egs-nelsonx-v4_g395m-f290lp_4106_51623.spec.fits",
+    "source_id": "RUBIES-EGS-42232",
+    "z_fit": 4.954,
+    "input_path": "spectra/egs-nelsonx-v4_g395m-f290lp_4106_51623.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelsonx-v4/egs-nelsonx-v4_g395m-f290lp_4106_51623.spec.fits",
+    "sha256": "a401c9675b8d7a242b90a0d4a5a320b4ba0ecb3697fc98cd5a53828ab05b203e"
+  },
+  {
+    "file_id": "13d48867c7939662",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_100424.spec.fits",
+    "source_id": "RUBIES-EGS-42232",
+    "z_fit": 4.954,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_100424.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_100424.spec.fits",
+    "sha256": "67195e4aa73745965fabad603f2058fc7ab6a234cadf781d16bdc60ca861fd1e"
+  },
+  {
+    "file_id": "dc0d47cbd95b6e4b",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_46985.spec.fits",
+    "source_id": "RUBIES-EGS-46985",
+    "z_fit": 4.963,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_46985.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_46985.spec.fits",
+    "sha256": "c86b01cb89f76eb693330741137f9f9635d63769e0a258660e9eae4715d472b0"
+  },
+  {
+    "file_id": "cacddf9cd815a6f5",
+    "file": "egs-simons-04-v4_g395h-f290lp_8410_148165.spec.fits",
+    "source_id": "RUBIES-EGS-46985",
+    "z_fit": 4.963,
+    "input_path": "spectra/egs-simons-04-v4_g395h-f290lp_8410_148165.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-04-v4/egs-simons-04-v4_g395h-f290lp_8410_148165.spec.fits",
+    "sha256": "69c2b02e6110394f3b29071683692d92cd821e300da1f4d1bc76e427365a9696"
+  },
+  {
+    "file_id": "c49db78de344abb3",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_17146.spec.fits",
+    "source_id": "RUBIES-EGS-17146",
+    "z_fit": 5.0,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_17146.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_17146.spec.fits",
+    "sha256": "54961a9809a2f75942e14e549413dfe84e17136875fcf6990edc90a6cb1f5d7c"
+  },
+  {
+    "file_id": "eb3516ae9492cdca",
+    "file": "ceers-v4_g395m-f290lp_1345_2782.spec.fits",
+    "source_id": "RUBIES-EGS-50052",
+    "z_fit": 5.24,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_2782.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_2782.spec.fits",
+    "sha256": "eff0c28abf7e20645101b1d9837ffd500ffabf57cdbba7074e1ae15f98be52c5"
+  },
+  {
+    "file_id": "67020923e971d7b0",
+    "file": "ceers-v4_g235m-f170lp_1345_2782.spec.fits",
+    "source_id": "RUBIES-EGS-50052",
+    "z_fit": 5.24,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_2782.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_2782.spec.fits",
+    "sha256": "c2c62f9d32a75d2c23e60f0ba4d055af9dbe901056257accdcde292f2d2eca55"
+  },
+  {
+    "file_id": "739dacc6a872f581",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_50052.spec.fits",
+    "source_id": "RUBIES-EGS-50052",
+    "z_fit": 5.24,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_50052.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_50052.spec.fits",
+    "sha256": "748e1dbb0553a8dcd2c268acde94f1b59d862358d06f721b370f01c776c32e23"
+  },
+  {
+    "file_id": "a065cb393cb77701",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_169045.spec.fits",
+    "source_id": "RUBIES-EGS-50052",
+    "z_fit": 5.24,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_169045.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_169045.spec.fits",
+    "sha256": "1f9b2b3c07e8a2bb93ccb5c8c5bd0e483f91654ccbdef01af3f9124bad5a45d7"
+  },
+  {
+    "file_id": "90ec48ded782b9dd",
+    "file": "rubies-egs51-v4_g395m-f290lp_4233_13872.spec.fits",
+    "source_id": "RUBIES-EGS-13872",
+    "z_fit": 5.262,
+    "input_path": "spectra/rubies-egs51-v4_g395m-f290lp_4233_13872.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs51-v4/rubies-egs51-v4_g395m-f290lp_4233_13872.spec.fits",
+    "sha256": "538ecffca562d5d2123abdd97828edb38ebdd69945dc1f43c1136003a618652b"
+  },
+  {
+    "file_id": "ba90f715dd7e754f",
+    "file": "egs-simons-04-v4_g395h-f290lp_8410_20504.spec.fits",
+    "source_id": "RUBIES-EGS-42046",
+    "z_fit": 5.276,
+    "input_path": "spectra/egs-simons-04-v4_g395h-f290lp_8410_20504.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-04-v4/egs-simons-04-v4_g395h-f290lp_8410_20504.spec.fits",
+    "sha256": "3d3a5783b89dd0cf786750bb4666c1ac338986b180d93e21ab436c8ad268f2af"
+  },
+  {
+    "file_id": "047e837cdcfa5f8e",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_20504.spec.fits",
+    "source_id": "RUBIES-EGS-42046",
+    "z_fit": 5.276,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_20504.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_20504.spec.fits",
+    "sha256": "6207cc1e60a6f66c72892a491b95ee89e4da68dbc94f535715c21eb2965bfc94"
+  },
+  {
+    "file_id": "ec799f94788a5de5",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_42046.spec.fits",
+    "source_id": "RUBIES-EGS-42046",
+    "z_fit": 5.276,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_42046.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_42046.spec.fits",
+    "sha256": "bab951f291bc8e48ccf3340b198f51f3516169f0a3264db8c78e568735a5e8ce"
+  },
+  {
+    "file_id": "1183cac89b0eac7a",
+    "file": "rubies-uds21-v4_g395m-f290lp_4233_970351.spec.fits",
+    "source_id": "RUBIES-UDS-970351",
+    "z_fit": 5.282,
+    "input_path": "spectra/rubies-uds21-v4_g395m-f290lp_4233_970351.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds21-v4/rubies-uds21-v4_g395m-f290lp_4233_970351.spec.fits",
+    "sha256": "791f38d67176b5a1a0dc93a1410f5308969d1bb413cefe738ff309c033a60b06"
+  },
+  {
+    "file_id": "56fe48bcdfa81af2",
+    "file": "rubies-egs51-v4_g395m-f290lp_4233_926125.spec.fits",
+    "source_id": "RUBIES-EGS-926125",
+    "z_fit": 5.284,
+    "input_path": "spectra/rubies-egs51-v4_g395m-f290lp_4233_926125.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs51-v4/rubies-egs51-v4_g395m-f290lp_4233_926125.spec.fits",
+    "sha256": "e4dc6e33ccf6d27d30be43435cee86edbce58155e7da76b194f6c461410c8a5f"
+  },
+  {
+    "file_id": "e5504c53abdfc011",
+    "file": "egs-simons-02-v4_g395h-f290lp_8410_33842.spec.fits",
+    "source_id": "RUBIES-EGS-60935",
+    "z_fit": 5.287,
+    "input_path": "spectra/egs-simons-02-v4_g395h-f290lp_8410_33842.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-02-v4/egs-simons-02-v4_g395h-f290lp_8410_33842.spec.fits",
+    "sha256": "f547dbd14b211a5c6b9400cbd1874b80e638d0450c5e4a2de217b93ca6abddce"
+  },
+  {
+    "file_id": "04d7c1df88c268a8",
+    "file": "rubies-egs61-v4_g395m-f290lp_4233_60935.spec.fits",
+    "source_id": "RUBIES-EGS-60935",
+    "z_fit": 5.287,
+    "input_path": "spectra/rubies-egs61-v4_g395m-f290lp_4233_60935.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs61-v4/rubies-egs61-v4_g395m-f290lp_4233_60935.spec.fits",
+    "sha256": "49c054b68778b6760dca107ab22667ceab2e459581249b117eeee836c828bd72"
+  },
+  {
+    "file_id": "9f904ae341694838",
+    "file": "rubies-uds33-v4_g395m-f290lp_4233_29813.spec.fits",
+    "source_id": "RUBIES-UDS-29813",
+    "z_fit": 5.44,
+    "input_path": "spectra/rubies-uds33-v4_g395m-f290lp_4233_29813.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds33-v4/rubies-uds33-v4_g395m-f290lp_4233_29813.spec.fits",
+    "sha256": "07173f4798361561d9cb654e1f637a5debc89fae32f8e6392e4832a238e9f29d"
+  },
+  {
+    "file_id": "8b40abf4c094773e",
+    "file": "rubies-uds23-v4_g395m-f290lp_4233_172350.spec.fits",
+    "source_id": "RUBIES-UDS-172350",
+    "z_fit": 5.58,
+    "input_path": "spectra/rubies-uds23-v4_g395m-f290lp_4233_172350.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds23-v4/rubies-uds23-v4_g395m-f290lp_4233_172350.spec.fits",
+    "sha256": "30388acb46d542c846a28dc08bdde6b9d0adc9dbafd2447bc00280df87feef59"
+  },
+  {
+    "file_id": "9b8be0ff30f477c9",
+    "file": "ceers-v4_g235m-f170lp_1345_746.spec.fits",
+    "source_id": "CEERS-746",
+    "z_fit": 5.623,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_746.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_746.spec.fits",
+    "sha256": "79a3e1364414e362c339dfd63bd66950f65519c82a243af0f03a246e9635190e"
+  },
+  {
+    "file_id": "3ee00aa1435d5589",
+    "file": "ceers-v4_g395m-f290lp_1345_746.spec.fits",
+    "source_id": "CEERS-746",
+    "z_fit": 5.623,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_746.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_746.spec.fits",
+    "sha256": "dcfeff3a6190f8831dca30438bfeb1fb83d9049bcc6882ce06f7bc2e05d3f2fe"
+  },
+  {
+    "file_id": "9b78c6e861026c0a",
+    "file": "egs-bwang-m3-v4_g395h-f290lp_8047_71543.spec.fits",
+    "source_id": "CEERS-746",
+    "z_fit": 5.623,
+    "input_path": "spectra/egs-bwang-m3-v4_g395h-f290lp_8047_71543.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m3-v4/egs-bwang-m3-v4_g395h-f290lp_8047_71543.spec.fits",
+    "sha256": "94561fc8b359132d796c51ca3a17219d09411af474ccd5630824607d11719897"
+  },
+  {
+    "file_id": "eeb99969088636d9",
+    "file": "egs-nelson08-v4_g395m-f290lp_4106_83161.spec.fits",
+    "source_id": "CEERS-746",
+    "z_fit": 5.623,
+    "input_path": "spectra/egs-nelson08-v4_g395m-f290lp_4106_83161.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelson08-v4/egs-nelson08-v4_g395m-f290lp_4106_83161.spec.fits",
+    "sha256": "2ed5b1151320a1f41cb8958fdcb55d99fa7333e2d8ec702ca8620e140d59e91d"
+  },
+  {
+    "file_id": "997ca7c3e3b7a010",
+    "file": "ceers-v4_g235m-f170lp_1345_672.spec.fits",
+    "source_id": "CEERS-672",
+    "z_fit": 5.666,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_672.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_672.spec.fits",
+    "sha256": "4b9f3a7b33b3e1f169346aa929a30601107e8d50664d599cdc114aa6f2ab584d"
+  },
+  {
+    "file_id": "0a2b15b68dd24581",
+    "file": "ceers-v4_g395m-f290lp_1345_672.spec.fits",
+    "source_id": "CEERS-672",
+    "z_fit": 5.666,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_672.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_672.spec.fits",
+    "sha256": "950410561fb0956b045abc0de20ef8ac9ccce0ad27fb3bbeef608394fb69f1c0"
+  },
+  {
+    "file_id": "939b41bf1c95f312",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_161695.spec.fits",
+    "source_id": "CEERS-672",
+    "z_fit": 5.666,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_161695.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_161695.spec.fits",
+    "sha256": "cabd699e99d1ddd8057519da0f7a59554a3a6b7cc534d79f4c29c3798940c6a1"
+  },
+  {
+    "file_id": "68605368f311d5b5",
+    "file": "egs-simons-03-v4_g395h-f290lp_8410_161695.spec.fits",
+    "source_id": "CEERS-672",
+    "z_fit": 5.666,
+    "input_path": "spectra/egs-simons-03-v4_g395h-f290lp_8410_161695.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-03-v4/egs-simons-03-v4_g395h-f290lp_8410_161695.spec.fits",
+    "sha256": "a7db57d2e25c028e3930f4ced3c26f6bbe83bde1b109b5858dd451986edaee90"
+  },
+  {
+    "file_id": "23796358226ea487",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_19521.spec.fits",
+    "source_id": "RUBIES-UDS-19521",
+    "z_fit": 5.669,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_19521.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_19521.spec.fits",
+    "sha256": "23554689b49ba9798c2bc0e53b9afdcf0f06caa08d13cabb25767162550f2eba"
+  },
+  {
+    "file_id": "608f67cba8ed7640",
+    "file": "rubies-uds41-v4_g395m-f290lp_4233_19521.spec.fits",
+    "source_id": "RUBIES-UDS-19521",
+    "z_fit": 5.669,
+    "input_path": "spectra/rubies-uds41-v4_g395m-f290lp_4233_19521.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds41-v4/rubies-uds41-v4_g395m-f290lp_4233_19521.spec.fits",
+    "sha256": "00b3f8c6645c4a1988a2b4da3d00c84cb23d0f30d576f19680d6f4504f171439"
+  },
+  {
+    "file_id": "3259054dcea566dc",
+    "file": "rubies-uds3-v4_g395m-f290lp_4233_47509.spec.fits",
+    "source_id": "RUBIES-UDS-47509",
+    "z_fit": 5.673,
+    "input_path": "spectra/rubies-uds3-v4_g395m-f290lp_4233_47509.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds3-v4/rubies-uds3-v4_g395m-f290lp_4233_47509.spec.fits",
+    "sha256": "866b2a320951e92c0c8fd8f68fdb852180903d444380d4b137805e8a4ef28894"
+  },
+  {
+    "file_id": "330b455a1322646d",
+    "file": "egs-spurs-v4_g235m-f170lp_9214_45.spec.fits",
+    "source_id": "RUBIES-EGS-37124",
+    "z_fit": 5.682,
+    "input_path": "spectra/egs-spurs-v4_g235m-f170lp_9214_45.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-spurs-v4/egs-spurs-v4_g235m-f170lp_9214_45.spec.fits",
+    "sha256": "1c5847cdd73e5e71761857b8eef7417e5d43435a2f81722e35a7ee5f5ed7b573"
+  },
+  {
+    "file_id": "8ef65bde51b17065",
+    "file": "egs-spurs-v4_g395m-f290lp_9214_45.spec.fits",
+    "source_id": "RUBIES-EGS-37124",
+    "z_fit": 5.682,
+    "input_path": "spectra/egs-spurs-v4_g395m-f290lp_9214_45.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-spurs-v4/egs-spurs-v4_g395m-f290lp_9214_45.spec.fits",
+    "sha256": "e599bc6db264cb970295551114bb69c571801e4cf14e8327858e1199ad948060"
+  },
+  {
+    "file_id": "a6521eee1eba12f9",
+    "file": "rubies-egs52-v4_g395m-f290lp_4233_37124.spec.fits",
+    "source_id": "RUBIES-EGS-37124",
+    "z_fit": 5.682,
+    "input_path": "spectra/rubies-egs52-v4_g395m-f290lp_4233_37124.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs52-v4/rubies-egs52-v4_g395m-f290lp_4233_37124.spec.fits",
+    "sha256": "99b4b43e07beaf8ae653818cfa892e4767f41031f52977e5ff9bf650af588883"
+  },
+  {
+    "file_id": "164359eb04b525fe",
+    "file": "egs-simons-02-v4_g395h-f290lp_8410_101208.spec.fits",
+    "source_id": "RUBIES-EGS-37124",
+    "z_fit": 5.682,
+    "input_path": "spectra/egs-simons-02-v4_g395h-f290lp_8410_101208.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-02-v4/egs-simons-02-v4_g395h-f290lp_8410_101208.spec.fits",
+    "sha256": "62ed4656ae184effde105b737516430fdb55d6509fa2c661d3f89966d1d55b51"
+  },
+  {
+    "file_id": "6f048da439a805e4",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_101208.spec.fits",
+    "source_id": "RUBIES-EGS-37124",
+    "z_fit": 5.682,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_101208.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_101208.spec.fits",
+    "sha256": "58a5be2e41e7d329fd013eee76d7ddd090d2445860503baeddc2f43f416c7b15"
+  },
+  {
+    "file_id": "4f6d8a934762ffa4",
+    "file": "rubies-uds22-v4_g395m-f290lp_4233_139709.spec.fits",
+    "source_id": "RUBIES-UDS-139709",
+    "z_fit": 5.685,
+    "input_path": "spectra/rubies-uds22-v4_g395m-f290lp_4233_139709.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds22-v4/rubies-uds22-v4_g395m-f290lp_4233_139709.spec.fits",
+    "sha256": "357a127e6052d1350c833524f437155b9f639c67ef6af3a5cee6fbb1c6314ff6"
+  },
+  {
+    "file_id": "fe9e58d2c80d4c64",
+    "file": "ceers-v4_g235m-f170lp_1345_397.spec.fits",
+    "source_id": "CEERS-397",
+    "z_fit": 6.0,
+    "input_path": "spectra/ceers-v4_g235m-f170lp_1345_397.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g235m-f170lp_1345_397.spec.fits",
+    "sha256": "c64e89f02b4d2da4db893beae94ff3234b14832aee6a9a3f73673ffc1c972f2a"
+  },
+  {
+    "file_id": "455f0cc017bf477b",
+    "file": "ceers-v4_g395m-f290lp_1345_397.spec.fits",
+    "source_id": "CEERS-397",
+    "z_fit": 6.0,
+    "input_path": "spectra/ceers-v4_g395m-f290lp_1345_397.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/ceers-v4/ceers-v4_g395m-f290lp_1345_397.spec.fits",
+    "sha256": "053ce99588a9c498550e0ebbb3f461920061cf32cd8e471c98259682d7d0ace0"
+  },
+  {
+    "file_id": "106d46012febbd02",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_32492.spec.fits",
+    "source_id": "CEERS-397",
+    "z_fit": 6.0,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_32492.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_32492.spec.fits",
+    "sha256": "81de3eb2396eef56a4742358210df1e470207736aeb5fe03de491c5f06acbda6"
+  },
+  {
+    "file_id": "7d49fd56f00a90e5",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_69412.spec.fits",
+    "source_id": "CEERS-397",
+    "z_fit": 6.0,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_69412.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_69412.spec.fits",
+    "sha256": "c62f245e47b9c5a359cb5f909123ed9925fbb2677b9a1d0684d538b4cc059d60"
+  },
+  {
+    "file_id": "ad368787b872c308",
+    "file": "egs-nelson08-v4_g395m-f290lp_4106_80715.spec.fits",
+    "source_id": "CEERS-397",
+    "z_fit": 6.0,
+    "input_path": "spectra/egs-nelson08-v4_g395m-f290lp_4106_80715.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelson08-v4/egs-nelson08-v4_g395m-f290lp_4106_80715.spec.fits",
+    "sha256": "112fe23f6a93659d6aa39bed5e1ca98dd8beaf1a318d6c8546bfe2d6886bbe8e"
+  },
+  {
+    "file_id": "3577d97032b2ca52",
+    "file": "rubies-uds21-v4_g395m-f290lp_4233_174752.spec.fits",
+    "source_id": "RUBIES-UDS-174752",
+    "z_fit": 6.039,
+    "input_path": "spectra/rubies-uds21-v4_g395m-f290lp_4233_174752.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds21-v4/rubies-uds21-v4_g395m-f290lp_4233_174752.spec.fits",
+    "sha256": "11ba700148ee2e3c7005c354ade2edc0f69c7e3d423d3a21f7016e876edd86ee"
+  },
+  {
+    "file_id": "fddf811a57d7fb5f",
+    "file": "egs-simons-03-v4_g395h-f290lp_8410_35829.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-simons-03-v4_g395h-f290lp_8410_35829.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-03-v4/egs-simons-03-v4_g395h-f290lp_8410_35829.spec.fits",
+    "sha256": "9bb28e701bae136de35fd12d6cda07ac56429fae981dadb4a155b1344558930b"
+  },
+  {
+    "file_id": "ac464ac02831ecc5",
+    "file": "egs-simons-02-v4_g395h-f290lp_8410_35829.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-simons-02-v4_g395h-f290lp_8410_35829.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-02-v4/egs-simons-02-v4_g395h-f290lp_8410_35829.spec.fits",
+    "sha256": "53239c1cf324b5c9788ee9c191c2d4911e256be9d3b6f5156d8a4b521b6891d1"
+  },
+  {
+    "file_id": "ccf02ac692b295fe",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_35829.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_35829.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_35829.spec.fits",
+    "sha256": "a82fa3dab1edd326a9fd6265996246d0ed4c219da57cc03f03f003e35a224dfb"
+  },
+  {
+    "file_id": "6b664e1d73225684",
+    "file": "egs-hutchison-obs3-v4_g395m-f290lp_5507_46403.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-hutchison-obs3-v4_g395m-f290lp_5507_46403.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-hutchison-obs3-v4/egs-hutchison-obs3-v4_g395m-f290lp_5507_46403.spec.fits",
+    "sha256": "2b81298bd4bc72f0b7438010f2164ce30f6f8d7fe27544e3f010c637dd1700ed"
+  },
+  {
+    "file_id": "1cb5b59581f55816",
+    "file": "papovich-egs-p2b-v4_g395m-f290lp_5943_46403.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/papovich-egs-p2b-v4_g395m-f290lp_5943_46403.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/papovich-egs-p2b-v4/papovich-egs-p2b-v4_g395m-f290lp_5943_46403.spec.fits",
+    "sha256": "65c75fbf7f876c33343f9f789020b13b3bb9e5b24e1ea96bf5dca8c048888402"
+  },
+  {
+    "file_id": "e22127b7ca2753d2",
+    "file": "papovich-egs-p2-v4_g395m-f290lp_5943_46403.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/papovich-egs-p2-v4_g395m-f290lp_5943_46403.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/papovich-egs-p2-v4/papovich-egs-p2-v4_g395m-f290lp_5943_46403.spec.fits",
+    "sha256": "2279059489366c515615c239943864d4b76ff8c603270830c324491046c8047b"
+  },
+  {
+    "file_id": "a7976472da603eee",
+    "file": "egs-bwang-m3-v4_g395h-f290lp_8047_49140.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-bwang-m3-v4_g395h-f290lp_8047_49140.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m3-v4/egs-bwang-m3-v4_g395h-f290lp_8047_49140.spec.fits",
+    "sha256": "ef52fcba0c4f949dd64bedca396a25355289ee732a08854a59c4a9bf6b1dc176"
+  },
+  {
+    "file_id": "023a79bb6e83655c",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_49140.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_49140.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_49140.spec.fits",
+    "sha256": "907f7977a7a8bedd9019adbf05139d6c137dd61ad995a6f620788ff3ae09e2ff"
+  },
+  {
+    "file_id": "c55704c787588044",
+    "file": "egs-bwang-m1-v4_g395h-f290lp_8047_49140.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-bwang-m1-v4_g395h-f290lp_8047_49140.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m1-v4/egs-bwang-m1-v4_g395h-f290lp_8047_49140.spec.fits",
+    "sha256": "3cbc5815ec3bbfc25c90b6d54177ad74c36750d9ba8f33897fd5d310490c4968"
+  },
+  {
+    "file_id": "81c9bc86e15d7a5d",
+    "file": "egs-bwang-m2-v4_g395h-f290lp_8047_49140.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-bwang-m2-v4_g395h-f290lp_8047_49140.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m2-v4/egs-bwang-m2-v4_g395h-f290lp_8047_49140.spec.fits",
+    "sha256": "67ae7a91cc3f446c87f1f074d4c97f4558c263fb2e680119abd2a69b6e1145be"
+  },
+  {
+    "file_id": "ed6ea96b3ce5e11f",
+    "file": "egs-nelson08-v4_g395m-f290lp_4106_57146.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-nelson08-v4_g395m-f290lp_4106_57146.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelson08-v4/egs-nelson08-v4_g395m-f290lp_4106_57146.spec.fits",
+    "sha256": "b01132fadab334500688c58ef41c0fe2dd1ce9c87ee6777835693e53542ea743"
+  },
+  {
+    "file_id": "cf8f5ede836f90dc",
+    "file": "egs-nelsonx-v4_g395m-f290lp_4106_57146.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-nelsonx-v4_g395m-f290lp_4106_57146.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelsonx-v4/egs-nelsonx-v4_g395m-f290lp_4106_57146.spec.fits",
+    "sha256": "d0464557bae7d258f21223d264b043f3ca0db1ae52c10256f5dbdf529159c04b"
+  },
+  {
+    "file_id": "e9b0d25e6b8dee2b",
+    "file": "egs-mason-v4_g395m-f290lp_4287_62859.spec.fits",
+    "source_id": "RUBIES-EGS-49140",
+    "z_fit": 6.685,
+    "input_path": "spectra/egs-mason-v4_g395m-f290lp_4287_62859.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-mason-v4/egs-mason-v4_g395m-f290lp_4287_62859.spec.fits",
+    "sha256": "ae994c421fca88e1ec3043c153c7fc95af0650d75f3e301a77e0cac6c8b2175d"
+  },
+  {
+    "file_id": "d08e520adf67f1ee",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_807469.spec.fits",
+    "source_id": "RUBIES-UDS-807469",
+    "z_fit": 6.778,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_807469.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_807469.spec.fits",
+    "sha256": "46f7d16c2401d959056610a1d7d8e7799e7f71c1037abd8ceeb3a60e91a2dcda"
+  },
+  {
+    "file_id": "f11cd90b6fea1530",
+    "file": "rubies-uds2-v4_g395m-f290lp_4233_40579.spec.fits",
+    "source_id": "RUBIES-UDS-40579",
+    "z_fit": 3.11,
+    "input_path": "spectra/rubies-uds2-v4_g395m-f290lp_4233_40579.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds2-v4/rubies-uds2-v4_g395m-f290lp_4233_40579.spec.fits",
+    "sha256": "b5a4ccf03db62e8a2a5255787a075f4ddfaa125cf9ba9e2af55f181bb998028e"
+  },
+  {
+    "file_id": "ccf81514a8bef72d",
+    "file": "rubies-uds1-v4_g395m-f290lp_4233_40579.spec.fits",
+    "source_id": "RUBIES-UDS-40579",
+    "z_fit": 3.11,
+    "input_path": "spectra/rubies-uds1-v4_g395m-f290lp_4233_40579.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds1-v4/rubies-uds1-v4_g395m-f290lp_4233_40579.spec.fits",
+    "sha256": "d9c60d0161253326abd57508b20456b955acfcc30ebb110decc90c0d079a9532"
+  },
+  {
+    "file_id": "0e78910436f891b8",
+    "file": "rubies-uds23-v4_g395m-f290lp_4233_144195.spec.fits",
+    "source_id": "RUBIES-UDS-144195",
+    "z_fit": 3.36,
+    "input_path": "spectra/rubies-uds23-v4_g395m-f290lp_4233_144195.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds23-v4/rubies-uds23-v4_g395m-f290lp_4233_144195.spec.fits",
+    "sha256": "15ca6682b065fad13f5cc1f3e2b1ed382e7062c227bd86d7158cc77a9ec11a64"
+  },
+  {
+    "file_id": "bf49538bb7ed0566",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_23438.spec.fits",
+    "source_id": "RUBIES-UDS-23438",
+    "z_fit": 3.69,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_23438.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_23438.spec.fits",
+    "sha256": "85e3b4c9c97178eaa8661ef75381a0f2ca43fb82a961d44da8859cfad7cd6f18"
+  },
+  {
+    "file_id": "9f3c126d97c8fa1a",
+    "file": "rubies-uds23-v4_g395m-f290lp_4233_167741.spec.fits",
+    "source_id": "RUBIES-UDS-167741",
+    "z_fit": 4.12,
+    "input_path": "spectra/rubies-uds23-v4_g395m-f290lp_4233_167741.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds23-v4/rubies-uds23-v4_g395m-f290lp_4233_167741.spec.fits",
+    "sha256": "5acfcdf980f42604cae8c73a6fcdedbf88a2aba302197465ef276375e10b0b68"
+  },
+  {
+    "file_id": "c5181afecbeace0b",
+    "file": "rubies-egs61-v4_g395m-f290lp_4233_61496.spec.fits",
+    "source_id": "RUBIES-EGS-61496",
+    "z_fit": 5.08,
+    "input_path": "spectra/rubies-egs61-v4_g395m-f290lp_4233_61496.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs61-v4/rubies-egs61-v4_g395m-f290lp_4233_61496.spec.fits",
+    "sha256": "bbaa3ed6a1f87e927efdcd3389cafde70d8431dd006d6ab94bdb05b11795e071"
+  },
+  {
+    "file_id": "27e392c4c289fb94",
+    "file": "egs-simons-01-v4_g395h-f290lp_8410_36603.spec.fits",
+    "source_id": "RUBIES-EGS-952625",
+    "z_fit": 5.11,
+    "input_path": "spectra/egs-simons-01-v4_g395h-f290lp_8410_36603.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-simons-01-v4/egs-simons-01-v4_g395h-f290lp_8410_36603.spec.fits",
+    "sha256": "40be64af3ff752dc54fd500f1b0b788e9d71197c6119483b75cfb2728bb090fe"
+  },
+  {
+    "file_id": "9ca1ed2da8b5a9c7",
+    "file": "rubies-egs61-v4_g395m-f290lp_4233_952625.spec.fits",
+    "source_id": "RUBIES-EGS-952625",
+    "z_fit": 5.11,
+    "input_path": "spectra/rubies-egs61-v4_g395m-f290lp_4233_952625.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs61-v4/rubies-egs61-v4_g395m-f290lp_4233_952625.spec.fits",
+    "sha256": "7082215d86cb7b3d358a959acfd25be60636f550e072c9a8b6d5600d8f795098"
+  },
+  {
+    "file_id": "304a3fc05f7f0517",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_830237.spec.fits",
+    "source_id": "RUBIES-UDS-830237",
+    "z_fit": 5.12,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_830237.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_830237.spec.fits",
+    "sha256": "7e84bd23422cc990d948cca58e086138ba5a63317e027365b3a8d30b7ac7743c"
+  },
+  {
+    "file_id": "4036adc0483342f5",
+    "file": "rubies-uds41-v4_g395m-f290lp_4233_830237.spec.fits",
+    "source_id": "RUBIES-UDS-830237",
+    "z_fit": 5.12,
+    "input_path": "spectra/rubies-uds41-v4_g395m-f290lp_4233_830237.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds41-v4/rubies-uds41-v4_g395m-f290lp_4233_830237.spec.fits",
+    "sha256": "ae2fc4a82879d1b6ba4ced6816918ffddf3a80320a18e78d8df3b3e999b2d7d4"
+  },
+  {
+    "file_id": "c8ba85bdae73bb1d",
+    "file": "rubies-uds31-v4_g395m-f290lp_4233_149298.spec.fits",
+    "source_id": "RUBIES-UDS-149298",
+    "z_fit": 5.15,
+    "input_path": "spectra/rubies-uds31-v4_g395m-f290lp_4233_149298.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds31-v4/rubies-uds31-v4_g395m-f290lp_4233_149298.spec.fits",
+    "sha256": "102111f41fed3d8a71b4f8c682bd0061c8f116d6dd7e57b5948516a923d5454d"
+  },
+  {
+    "file_id": "bccfee42b9fb4867",
+    "file": "rubies-uds33-v4_g395m-f290lp_4233_53692.spec.fits",
+    "source_id": "RUBIES-UDS-53692",
+    "z_fit": 5.28,
+    "input_path": "spectra/rubies-uds33-v4_g395m-f290lp_4233_53692.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds33-v4/rubies-uds33-v4_g395m-f290lp_4233_53692.spec.fits",
+    "sha256": "e947cb042933979e822ae87d515b01a830815c0f293f975fdb7eced439dc4634"
+  },
+  {
+    "file_id": "8f34744bf34e1cf6",
+    "file": "rubies-uds3-v4_g395m-f290lp_4233_50716.spec.fits",
+    "source_id": "RUBIES-UDS-50716",
+    "z_fit": 6.17,
+    "input_path": "spectra/rubies-uds3-v4_g395m-f290lp_4233_50716.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds3-v4/rubies-uds3-v4_g395m-f290lp_4233_50716.spec.fits",
+    "sha256": "9f08c20e6131d7e2531316c61de3f35c90602de97763a01f5640860b6e4515ed"
+  },
+  {
+    "file_id": "1b6b8c7fe5925cb5",
+    "file": "rubies-uds42-v4_g395m-f290lp_4233_36171.spec.fits",
+    "source_id": "RUBIES-UDS-36171",
+    "z_fit": 6.47,
+    "input_path": "spectra/rubies-uds42-v4_g395m-f290lp_4233_36171.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds42-v4/rubies-uds42-v4_g395m-f290lp_4233_36171.spec.fits",
+    "sha256": "2ffc086f3af36766a611f1047fb4e0acf4feacd539d2621a4ee73efe6ca547bf"
+  },
+  {
+    "file_id": "e2e8cf3fab5057eb",
+    "file": "rubies-uds21-v4_g395m-f290lp_4233_967770.spec.fits",
+    "source_id": "RUBIES-UDS-967770",
+    "z_fit": 6.59,
+    "input_path": "spectra/rubies-uds21-v4_g395m-f290lp_4233_967770.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds21-v4/rubies-uds21-v4_g395m-f290lp_4233_967770.spec.fits",
+    "sha256": "6868807df4b51850add578cbe8f0cd013df2c89d370ae8c5c555fb934bbe639c"
+  },
+  {
+    "file_id": "6fe7443b1f7b9bf5",
+    "file": "rubies-egs53-v4_g395m-f290lp_4233_53254.spec.fits",
+    "source_id": "RUBIES-EGS-53254",
+    "z_fit": 6.62,
+    "input_path": "spectra/rubies-egs53-v4_g395m-f290lp_4233_53254.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs53-v4/rubies-egs53-v4_g395m-f290lp_4233_53254.spec.fits",
+    "sha256": "5017fbc1ddae34342d1357390af5368d8c35064e9eb4a5f7ed3c557af3de8c28"
+  },
+  {
+    "file_id": "51ed8d566f22a556",
+    "file": "rubies-uds1-v4_g395m-f290lp_4233_33938.spec.fits",
+    "source_id": "RUBIES-UDS-33938",
+    "z_fit": 6.63,
+    "input_path": "spectra/rubies-uds1-v4_g395m-f290lp_4233_33938.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds1-v4/rubies-uds1-v4_g395m-f290lp_4233_33938.spec.fits",
+    "sha256": "cadf1eab4786521ea5d871563914922cc00b71be780484f69bc23a89925f03f5"
+  },
+  {
+    "file_id": "c98778a1c0708309",
+    "file": "rubies-uds2-v4_g395m-f290lp_4233_33938.spec.fits",
+    "source_id": "RUBIES-UDS-33938",
+    "z_fit": 6.63,
+    "input_path": "spectra/rubies-uds2-v4_g395m-f290lp_4233_33938.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds2-v4/rubies-uds2-v4_g395m-f290lp_4233_33938.spec.fits",
+    "sha256": "2ab7aeeef4b1d428449832273f1d372df9f2c07f190da7f7bde3a1697584d193"
+  },
+  {
+    "file_id": "d5d8bd31841e390c",
+    "file": "valentino-egs-v4_g235m-f170lp_3567_41318.spec.fits",
+    "source_id": "RUBIES-EGS-948917",
+    "z_fit": 6.73,
+    "input_path": "spectra/valentino-egs-v4_g235m-f170lp_3567_41318.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/valentino-egs-v4/valentino-egs-v4_g235m-f170lp_3567_41318.spec.fits",
+    "sha256": "d8be21ce49aa7cd269da8fc286df9753fb18303d708450c7577d614d1aab37ae"
+  },
+  {
+    "file_id": "30ac8bc724c2552b",
+    "file": "egs-nelsonx-v4_g395m-f290lp_4106_47962.spec.fits",
+    "source_id": "RUBIES-EGS-948917",
+    "z_fit": 6.73,
+    "input_path": "spectra/egs-nelsonx-v4_g395m-f290lp_4106_47962.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelsonx-v4/egs-nelsonx-v4_g395m-f290lp_4106_47962.spec.fits",
+    "sha256": "1976689b56e5681af5f1696cc716eb660346c9d450cac6b7eb62f0d4deb3047e"
+  },
+  {
+    "file_id": "aa6391a08b775a99",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_948917.spec.fits",
+    "source_id": "RUBIES-EGS-948917",
+    "z_fit": 6.73,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_948917.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_948917.spec.fits",
+    "sha256": "f249bc531d6683ea42bb3e5e9e0b5e4b6fdcee26f065cceaae8b20e3e06be8d6"
+  },
+  {
+    "file_id": "8e46bb59eb346d05",
+    "file": "rubies-egs51-v4_g395m-f290lp_4233_927271.spec.fits",
+    "source_id": "RUBIES-EGS-927271",
+    "z_fit": 6.78,
+    "input_path": "spectra/rubies-egs51-v4_g395m-f290lp_4233_927271.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs51-v4/rubies-egs51-v4_g395m-f290lp_4233_927271.spec.fits",
+    "sha256": "35b89e7dda23f62f83132eb18a5f5a012a145f7973ed325836981fd439cf22dd"
+  },
+  {
+    "file_id": "8078d03d4a4683cd",
+    "file": "egs-spurs-v4_g235m-f170lp_9214_2.spec.fits",
+    "source_id": "RUBIES-EGS-55604",
+    "z_fit": 6.98,
+    "input_path": "spectra/egs-spurs-v4_g235m-f170lp_9214_2.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-spurs-v4/egs-spurs-v4_g235m-f170lp_9214_2.spec.fits",
+    "sha256": "49c1f6abcd412fcbda0d485ce7063e479c15087f7b1d0dc9240b2106f7eb38c1"
+  },
+  {
+    "file_id": "e20c53ece0b031b4",
+    "file": "egs-spurs-v4_g395m-f290lp_9214_2.spec.fits",
+    "source_id": "RUBIES-EGS-55604",
+    "z_fit": 6.98,
+    "input_path": "spectra/egs-spurs-v4_g395m-f290lp_9214_2.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-spurs-v4/egs-spurs-v4_g395m-f290lp_9214_2.spec.fits",
+    "sha256": "6eca83cb265ec7425de83916ec96d5a950e2059d1d177e1a54672eb15fe0b6b3"
+  },
+  {
+    "file_id": "bebd13fc32701c4a",
+    "file": "egs-mason-v4_g395m-f290lp_4287_127193.spec.fits",
+    "source_id": "RUBIES-EGS-55604",
+    "z_fit": 6.98,
+    "input_path": "spectra/egs-mason-v4_g395m-f290lp_4287_127193.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-mason-v4/egs-mason-v4_g395m-f290lp_4287_127193.spec.fits",
+    "sha256": "3594e6189ba79eca1e6038aa9ca4310a4c2b8c628b45ef5b7ec8a3325ddca9c6"
+  },
+  {
+    "file_id": "493ce491cc8f3ed5",
+    "file": "rubies-egs61-v4_g395m-f290lp_4233_55604.spec.fits",
+    "source_id": "RUBIES-EGS-55604",
+    "z_fit": 6.98,
+    "input_path": "spectra/rubies-egs61-v4_g395m-f290lp_4233_55604.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs61-v4/rubies-egs61-v4_g395m-f290lp_4233_55604.spec.fits",
+    "sha256": "ee0e593bceb95eb72bf366b3747ae9319eeadded5447c51237730da9896298e5"
+  },
+  {
+    "file_id": "59c727b95ebab2ca",
+    "file": "rubies-uds43-v4_g395m-f290lp_4233_848745.spec.fits",
+    "source_id": "RUBIES-UDS-848745",
+    "z_fit": 7.11,
+    "input_path": "spectra/rubies-uds43-v4_g395m-f290lp_4233_848745.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds43-v4/rubies-uds43-v4_g395m-f290lp_4233_848745.spec.fits",
+    "sha256": "d797f10c23e28870881a994337116747f5b953f9193a5a4c0b4216da9e93d795"
+  },
+  {
+    "file_id": "e7f48c2a828419df",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_42803.spec.fits",
+    "source_id": "RUBIES-EGS-42803",
+    "z_fit": 7.15,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_42803.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_42803.spec.fits",
+    "sha256": "353307d45a3ad403b04773896a82a05580b45e6328f9270108a3cec3bcd33655"
+  },
+  {
+    "file_id": "6b6fbfd2f1b5a65d",
+    "file": "egs-bwang-m2-v4_g395h-f290lp_8047_42803.spec.fits",
+    "source_id": "RUBIES-EGS-42803",
+    "z_fit": 7.15,
+    "input_path": "spectra/egs-bwang-m2-v4_g395h-f290lp_8047_42803.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-bwang-m2-v4/egs-bwang-m2-v4_g395h-f290lp_8047_42803.spec.fits",
+    "sha256": "6dccfdcdc2d9962ac3c50536bbb6431555c1ccc11c92aa79b9c20e25e3a8e590"
+  },
+  {
+    "file_id": "b415afaaac55f7b8",
+    "file": "papovich-egs-p2-v4_g395m-f290lp_5943_45290.spec.fits",
+    "source_id": "RUBIES-EGS-966323",
+    "z_fit": 8.35,
+    "input_path": "spectra/papovich-egs-p2-v4_g395m-f290lp_5943_45290.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/papovich-egs-p2-v4/papovich-egs-p2-v4_g395m-f290lp_5943_45290.spec.fits",
+    "sha256": "a3e4dcffe2745aeb44ceaf35188ea41132e8641921b87c9636cd5d24b13b20de"
+  },
+  {
+    "file_id": "419cbca64970170a",
+    "file": "papovich-egs-p2b-v4_g395m-f290lp_5943_45290.spec.fits",
+    "source_id": "RUBIES-EGS-966323",
+    "z_fit": 8.35,
+    "input_path": "spectra/papovich-egs-p2b-v4_g395m-f290lp_5943_45290.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/papovich-egs-p2b-v4/papovich-egs-p2b-v4_g395m-f290lp_5943_45290.spec.fits",
+    "sha256": "39e05f20f8c4e60b094ee51925c093af31bcf2af57320c313244b53c6957ddd9"
+  },
+  {
+    "file_id": "9ce06bae5f2ca1d4",
+    "file": "egs-mason-v4_g395m-f290lp_4287_64770.spec.fits",
+    "source_id": "RUBIES-EGS-966323",
+    "z_fit": 8.35,
+    "input_path": "spectra/egs-mason-v4_g395m-f290lp_4287_64770.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-mason-v4/egs-mason-v4_g395m-f290lp_4287_64770.spec.fits",
+    "sha256": "7823ba838ceca3120418871e6f648bc65d4f687507ca53729efe6721c82db9ab"
+  },
+  {
+    "file_id": "e32361c1e5a8f802",
+    "file": "egs-nelson08-v4_g395m-f290lp_4106_65402.spec.fits",
+    "source_id": "RUBIES-EGS-966323",
+    "z_fit": 8.35,
+    "input_path": "spectra/egs-nelson08-v4_g395m-f290lp_4106_65402.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelson08-v4/egs-nelson08-v4_g395m-f290lp_4106_65402.spec.fits",
+    "sha256": "616a44c42b6140fde66a7ce02145afd24357212a33dc0e4503d86c253c11c582"
+  },
+  {
+    "file_id": "b0e1e703ef5ee044",
+    "file": "egs-nelsonx-v4_g395m-f290lp_4106_65402.spec.fits",
+    "source_id": "RUBIES-EGS-966323",
+    "z_fit": 8.35,
+    "input_path": "spectra/egs-nelsonx-v4_g395m-f290lp_4106_65402.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/egs-nelsonx-v4/egs-nelsonx-v4_g395m-f290lp_4106_65402.spec.fits",
+    "sha256": "53cc42d34b73af79a2703c6093d72431a2b956c55b2ad1b4d812c7f3d8525f4d"
+  },
+  {
+    "file_id": "679e6bdf3331d833",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_966323.spec.fits",
+    "source_id": "RUBIES-EGS-966323",
+    "z_fit": 8.35,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_966323.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_966323.spec.fits",
+    "sha256": "948e8fc6717ae8540d0bff85a1f8669b7b6439b50211f907b8f704ef17f1a383"
+  },
+  {
+    "file_id": "083690d816638c9d",
+    "file": "gto-wide-egs1-v4_g395h-f290lp_1213_2974.spec.fits",
+    "source_id": "deGraaff-2974",
+    "z_fit": 2.3187494,
+    "input_path": "spectra/gto-wide-egs1-v4_g395h-f290lp_1213_2974.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/gto-wide-egs1-v4/gto-wide-egs1-v4_g395h-f290lp_1213_2974.spec.fits",
+    "sha256": "ae14b0a5803eff25a310b110bb0d762280fb9dd81423c50a68feaaf0674f456f"
+  },
+  {
+    "file_id": "3ef0057ed1966c51",
+    "file": "gto-wide-uds13-v4_g395h-f290lp_1215_4273.spec.fits",
+    "source_id": "deGraaff-4273",
+    "z_fit": 4.053912,
+    "input_path": "spectra/gto-wide-uds13-v4_g395h-f290lp_1215_4273.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/gto-wide-uds13-v4/gto-wide-uds13-v4_g395h-f290lp_1215_4273.spec.fits",
+    "sha256": "41f71d5483b3f75433eeaa98e3ccca8ccbf872d386a77bfc6032748eda383f2e"
+  },
+  {
+    "file_id": "a8652a95d7701025",
+    "file": "jades-gdn-v4_g235m-f170lp_1181_53501.spec.fits",
+    "source_id": "deGraaff-53501",
+    "z_fit": 3.43598,
+    "input_path": "spectra/jades-gdn-v4_g235m-f170lp_1181_53501.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn-v4/jades-gdn-v4_g235m-f170lp_1181_53501.spec.fits",
+    "sha256": "486f33f5a3d2a61293cee30541053c0c3cb2f8e750435746c18fb6a2def2918e"
+  },
+  {
+    "file_id": "e45ccd7dd4eee57e",
+    "file": "jades-gdn-v4_g395h-f290lp_1181_53501.spec.fits",
+    "source_id": "deGraaff-53501",
+    "z_fit": 3.43598,
+    "input_path": "spectra/jades-gdn-v4_g395h-f290lp_1181_53501.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn-v4/jades-gdn-v4_g395h-f290lp_1181_53501.spec.fits",
+    "sha256": "37bc98171fcb0b044822449d1b966ec50a8e41a01bacb40c8c1a8c2f759f8ce2"
+  },
+  {
+    "file_id": "27cf6a827b27ff1f",
+    "file": "jades-gdn-v4_g395m-f290lp_1181_53501.spec.fits",
+    "source_id": "deGraaff-53501",
+    "z_fit": 3.43598,
+    "input_path": "spectra/jades-gdn-v4_g395m-f290lp_1181_53501.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn-v4/jades-gdn-v4_g395m-f290lp_1181_53501.spec.fits",
+    "sha256": "a6cf237e4bfd14472d9e8f7b87ce6a13e43afa8a80210d0d129d46cc1b59bde1"
+  },
+  {
+    "file_id": "81f87b5953d547cf",
+    "file": "jades-gdn198-v4_g235m-f170lp_1181_53501.spec.fits",
+    "source_id": "deGraaff-53501",
+    "z_fit": 3.43598,
+    "input_path": "spectra/jades-gdn198-v4_g235m-f170lp_1181_53501.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn198-v4/jades-gdn198-v4_g235m-f170lp_1181_53501.spec.fits",
+    "sha256": "445f7a418f64f19f58724628cc1637d13b9290ede2c62fb8649fbde6924df573"
+  },
+  {
+    "file_id": "62f259ff3ef419f1",
+    "file": "jades-gdn198-v4_g395h-f290lp_1181_53501.spec.fits",
+    "source_id": "deGraaff-53501",
+    "z_fit": 3.43598,
+    "input_path": "spectra/jades-gdn198-v4_g395h-f290lp_1181_53501.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn198-v4/jades-gdn198-v4_g395h-f290lp_1181_53501.spec.fits",
+    "sha256": "ed6c459cd81f87da1a27e421f59bedb1a08dbe0331c10cbc6acf58dddb492219"
+  },
+  {
+    "file_id": "74dcaaae9500b6ef",
+    "file": "jades-gdn198-v4_g395m-f290lp_1181_53501.spec.fits",
+    "source_id": "deGraaff-53501",
+    "z_fit": 3.43598,
+    "input_path": "spectra/jades-gdn198-v4_g395m-f290lp_1181_53501.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn198-v4/jades-gdn198-v4_g395m-f290lp_1181_53501.spec.fits",
+    "sha256": "50e3f26b5fd59177189bb06970248d299b167b297329d622228c10cfa49008c2"
+  },
+  {
+    "file_id": "74e62839d1f7e2f0",
+    "file": "jades-gdn09-v4_g235m-f170lp_1181_73488.spec.fits",
+    "source_id": "deGraaff-73488",
+    "z_fit": 4.130943,
+    "input_path": "spectra/jades-gdn09-v4_g235m-f170lp_1181_73488.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn09-v4/jades-gdn09-v4_g235m-f170lp_1181_73488.spec.fits",
+    "sha256": "3c2c1b7a603ff212e5e39c33e77e6dbe078738945d932028805a04ce0807698e"
+  },
+  {
+    "file_id": "db3e17f7cc2a0d03",
+    "file": "jades-gdn09-v4_g395h-f290lp_1181_73488.spec.fits",
+    "source_id": "deGraaff-73488",
+    "z_fit": 4.130943,
+    "input_path": "spectra/jades-gdn09-v4_g395h-f290lp_1181_73488.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn09-v4/jades-gdn09-v4_g395h-f290lp_1181_73488.spec.fits",
+    "sha256": "e479e1f52d516593a0719d650842ce42cb89728c2ec443d2e2cfa419dec5689c"
+  },
+  {
+    "file_id": "04d03f4a2029e74e",
+    "file": "jades-gdn09-v4_g395m-f290lp_1181_73488.spec.fits",
+    "source_id": "deGraaff-73488",
+    "z_fit": 4.130943,
+    "input_path": "spectra/jades-gdn09-v4_g395m-f290lp_1181_73488.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn09-v4/jades-gdn09-v4_g395m-f290lp_1181_73488.spec.fits",
+    "sha256": "723f5d0ed19746e007bda4c922b9b906a4bed51c95c0bc4546f7355b7d1d312f"
+  },
+  {
+    "file_id": "1966e436c6da2509",
+    "file": "jades-gdn2-v4_g235m-f170lp_1181_28074.spec.fits",
+    "source_id": "deGraaff-28074",
+    "z_fit": 2.2734878,
+    "input_path": "spectra/jades-gdn2-v4_g235m-f170lp_1181_28074.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn2-v4/jades-gdn2-v4_g235m-f170lp_1181_28074.spec.fits",
+    "sha256": "c88cd5da277a1c877e83e44bc4ba257fcd3f09c61702663956abd0fb2221cc17"
+  },
+  {
+    "file_id": "0fb50f527000bd6e",
+    "file": "jades-gdn2-v4_g395m-f290lp_1181_28074.spec.fits",
+    "source_id": "deGraaff-28074",
+    "z_fit": 2.2734878,
+    "input_path": "spectra/jades-gdn2-v4_g395m-f290lp_1181_28074.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn2-v4/jades-gdn2-v4_g395m-f290lp_1181_28074.spec.fits",
+    "sha256": "07b533d0f087b2d71ec09d5a299a7e1189b0d33a3e3c6a8ad09687151e393d08"
+  },
+  {
+    "file_id": "352a88ab627db754",
+    "file": "jades-gds-wide-v4_g235m-f170lp_1180_12402.spec.fits",
+    "source_id": "deGraaff-12402",
+    "z_fit": 3.1927059,
+    "input_path": "spectra/jades-gds-wide-v4_g235m-f170lp_1180_12402.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds-wide-v4/jades-gds-wide-v4_g235m-f170lp_1180_12402.spec.fits",
+    "sha256": "d0633d4cdf03a8124e0784e8bf55f1b3146c05a09b5729afe90a568f8f48669a"
+  },
+  {
+    "file_id": "d0790c5ccfcff2da",
+    "file": "jades-gds-wide-v4_g395m-f290lp_1180_12402.spec.fits",
+    "source_id": "deGraaff-12402",
+    "z_fit": 3.1927059,
+    "input_path": "spectra/jades-gds-wide-v4_g395m-f290lp_1180_12402.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds-wide-v4/jades-gds-wide-v4_g395m-f290lp_1180_12402.spec.fits",
+    "sha256": "8a8b288492afa08b476290e6ee6c2b1fa31b85e7479662e3881fb742f5f20711"
+  },
+  {
+    "file_id": "17181c80166934ad",
+    "file": "jades-gds-wide-v4_g235m-f170lp_1180_13329.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds-wide-v4_g235m-f170lp_1180_13329.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds-wide-v4/jades-gds-wide-v4_g235m-f170lp_1180_13329.spec.fits",
+    "sha256": "5c3cba1906734eae834d116337edcd7ae1f2c617aa4d896416072cc8a05a2d6c"
+  },
+  {
+    "file_id": "36ee8990ffa1310b",
+    "file": "jades-gds-wide-v4_g395m-f290lp_1180_13329.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds-wide-v4_g395m-f290lp_1180_13329.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds-wide-v4/jades-gds-wide-v4_g395m-f290lp_1180_13329.spec.fits",
+    "sha256": "c242191943448d00f77f5c6d7f63f51462518cbad3840f92f46ce43109803b96"
+  },
+  {
+    "file_id": "f5db9ffedad33824",
+    "file": "jades-gds-wide2-v4_g235m-f170lp_1180_13560.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds-wide2-v4_g235m-f170lp_1180_13560.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds-wide2-v4/jades-gds-wide2-v4_g235m-f170lp_1180_13560.spec.fits",
+    "sha256": "d1174bf27de8cb6e4aef350e81fe9fee385ac6ce93da0a3305a0f4b2ffeedf71"
+  },
+  {
+    "file_id": "a57825e54702cbc8",
+    "file": "jades-gds-wide2-v4_g395m-f290lp_1180_13560.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds-wide2-v4_g395m-f290lp_1180_13560.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds-wide2-v4/jades-gds-wide2-v4_g395m-f290lp_1180_13560.spec.fits",
+    "sha256": "39df08b5ed06b6391e004149024992337ce0d1fab6c169dc401bb71dee45900a"
+  },
+  {
+    "file_id": "5579c7048c50264f",
+    "file": "jades-gds1-v4_g235m-f170lp_1286_10013560.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds1-v4_g235m-f170lp_1286_10013560.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds1-v4/jades-gds1-v4_g235m-f170lp_1286_10013560.spec.fits",
+    "sha256": "d1a0f57eab899a91348d66f37bb63308f1d8834a5c609cbb990cda5085cae952"
+  },
+  {
+    "file_id": "7b3208df423be89b",
+    "file": "jades-gds1-v4_g395h-f290lp_1286_10013560.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds1-v4_g395h-f290lp_1286_10013560.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds1-v4/jades-gds1-v4_g395h-f290lp_1286_10013560.spec.fits",
+    "sha256": "45f8b1164a88e652caa217c539c990b4ed48b925b7050a008a55b3eb206a301f"
+  },
+  {
+    "file_id": "f70473e77e608a65",
+    "file": "jades-gds1-v4_g395m-f290lp_1286_10013560.spec.fits",
+    "source_id": "deGraaff-13329",
+    "z_fit": 3.935016,
+    "input_path": "spectra/jades-gds1-v4_g395m-f290lp_1286_10013560.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gds1-v4/jades-gds1-v4_g395m-f290lp_1286_10013560.spec.fits",
+    "sha256": "0f62cd6df595a71c7209230d4d37ec2404874f4e1b077d684076458237bdc247"
+  },
+  {
+    "file_id": "f552157625009fb5",
+    "file": "rubies-egs63-v4_g395m-f290lp_4233_38434.spec.fits",
+    "source_id": "deGraaff-38434",
+    "z_fit": 2.8590343,
+    "input_path": "spectra/rubies-egs63-v4_g395m-f290lp_4233_38434.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs63-v4/rubies-egs63-v4_g395m-f290lp_4233_38434.spec.fits",
+    "sha256": "874b7011ddd11ab9bc9a6f95da2471b3e6049397727c276aeaa83cef9a137e64"
+  },
+  {
+    "file_id": "d25c64c9247d26b8",
+    "file": "rubies-egs62-v4_g395m-f290lp_4233_38434.spec.fits",
+    "source_id": "deGraaff-38434",
+    "z_fit": 2.8590343,
+    "input_path": "spectra/rubies-egs62-v4_g395m-f290lp_4233_38434.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-egs62-v4/rubies-egs62-v4_g395m-f290lp_4233_38434.spec.fits",
+    "sha256": "fea99be0e0179323140e25fcb17b02100e375af7cba1ff058e6e9c58d12a1522"
+  },
+  {
+    "file_id": "71eed6987ec721fe",
+    "file": "rubies-uds21-v4_g395m-f290lp_4233_175975.spec.fits",
+    "source_id": "deGraaff-175975",
+    "z_fit": 2.9519691,
+    "input_path": "spectra/rubies-uds21-v4_g395m-f290lp_4233_175975.spec.fits",
+    "download_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/rubies-uds21-v4/rubies-uds21-v4_g395m-f290lp_4233_175975.spec.fits",
+    "sha256": "950b91b78bf8d9634ad11e0779d5b9ec3ff362a241e62132ec7be0aeb5abe179"
+  }
+]

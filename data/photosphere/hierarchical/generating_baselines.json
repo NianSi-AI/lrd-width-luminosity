@@ -1,0 +1,41 @@
+{
+  "main_E": {
+    "ph": {
+      "a": 3.5634894380605786,
+      "sigma": 0.07093606405758625
+    },
+    "line": {
+      "a": 3.2633871743649694,
+      "b_line": 0.03056326737270697,
+      "sigma": 0.02643785709865152
+    },
+    "precision_target_pass": true,
+    "same_members": true
+  },
+  "Curtis_A_own": {
+    "ph": {
+      "a": 3.638369250959877,
+      "sigma": 0.03937416167377087
+    },
+    "line": {
+      "a": 3.391849741032596,
+      "b_line": 0.21506679934447495,
+      "sigma": 0.031010484957262486
+    },
+    "precision_target_pass": true,
+    "same_members": true
+  },
+  "Curtis_B_own": {
+    "ph": {
+      "a": 3.5938704290859995,
+      "sigma": 0.07903092795283992
+    },
+    "line": {
+      "a": 3.3477215661961655,
+      "b_line": 0.1684282063827881,
+      "sigma": 0.05745643744674955
+    },
+    "precision_target_pass": true,
+    "same_members": true
+  }
+}

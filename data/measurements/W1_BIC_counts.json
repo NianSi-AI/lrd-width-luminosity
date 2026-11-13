@@ -1,0 +1,114 @@
+[
+  {
+    "cls": "LRD",
+    "SNR_bin": "all",
+    "N": 29,
+    "best_counts": {
+      "single_gaussian": 4,
+      "lorentzian": 16,
+      "exponential": 9,
+      "double_gaussian": 0
+    },
+    "Gaussian_deltaBIC_gt6": 16,
+    "Gaussian_deltaBIC_gt10": 12,
+    "three_single_within6": 12
+  },
+  {
+    "cls": "LRD",
+    "SNR_bin": "<10",
+    "N": 9,
+    "best_counts": {
+      "single_gaussian": 1,
+      "lorentzian": 7,
+      "exponential": 1,
+      "double_gaussian": 0
+    },
+    "Gaussian_deltaBIC_gt6": 1,
+    "Gaussian_deltaBIC_gt10": 0,
+    "three_single_within6": 8
+  },
+  {
+    "cls": "LRD",
+    "SNR_bin": "10-20",
+    "N": 11,
+    "best_counts": {
+      "single_gaussian": 3,
+      "lorentzian": 5,
+      "exponential": 3,
+      "double_gaussian": 0
+    },
+    "Gaussian_deltaBIC_gt6": 6,
+    "Gaussian_deltaBIC_gt10": 3,
+    "three_single_within6": 4
+  },
+  {
+    "cls": "LRD",
+    "SNR_bin": ">20",
+    "N": 9,
+    "best_counts": {
+      "single_gaussian": 0,
+      "lorentzian": 4,
+      "exponential": 5,
+      "double_gaussian": 0
+    },
+    "Gaussian_deltaBIC_gt6": 9,
+    "Gaussian_deltaBIC_gt10": 9,
+    "three_single_within6": 0
+  },
+  {
+    "cls": "non-LRD",
+    "SNR_bin": "all",
+    "N": 15,
+    "best_counts": {
+      "single_gaussian": 5,
+      "lorentzian": 4,
+      "exponential": 4,
+      "double_gaussian": 2
+    },
+    "Gaussian_deltaBIC_gt6": 4,
+    "Gaussian_deltaBIC_gt10": 3,
+    "three_single_within6": 7
+  },
+  {
+    "cls": "non-LRD",
+    "SNR_bin": "<10",
+    "N": 11,
+    "best_counts": {
+      "single_gaussian": 5,
+      "lorentzian": 3,
+      "exponential": 2,
+      "double_gaussian": 1
+    },
+    "Gaussian_deltaBIC_gt6": 0,
+    "Gaussian_deltaBIC_gt10": 0,
+    "three_single_within6": 7
+  },
+  {
+    "cls": "non-LRD",
+    "SNR_bin": "10-20",
+    "N": 3,
+    "best_counts": {
+      "single_gaussian": 0,
+      "lorentzian": 1,
+      "exponential": 2,
+      "double_gaussian": 0
+    },
+    "Gaussian_deltaBIC_gt6": 3,
+    "Gaussian_deltaBIC_gt10": 2,
+    "three_single_within6": 0
+  },
+  {
+    "cls": "non-LRD",
+    "SNR_bin": ">20",
+    "N": 1,
+    "best_counts": {
+      "single_gaussian": 0,
+      "lorentzian": 0,
+      "exponential": 0,
+      "double_gaussian": 1
+    },
+    "Gaussian_deltaBIC_gt6": 1,
+    "Gaussian_deltaBIC_gt10": 1,
+    "three_single_within6": 0
+  }
+]

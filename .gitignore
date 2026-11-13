@@ -19,3 +19,6 @@ paper/ms.pdf
 paper/figures/*.png
 paper/submission_source/
 .ruff_cache/
+
+# Regenerated long-running experiment products
+work/

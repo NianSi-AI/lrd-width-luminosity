@@ -72,16 +72,16 @@ Not included, and needed only to repeat the measurements from the spectra:
 - **Spectra.** The JWST spectra are the public reductions of the DAWN JWST Archive and the SDSS spectra are from DR17;
   `third_party/external_data.tsv` lists the address of every file. `scripts/fetch_calibration.sh` downloads the
   NIRSpec dispersion tables that `lrdwidth.linefit` needs.
-- **Batch drivers for the JWST fits.** `lrdwidth/linefit.py` is the fitting engine and
-  `analysis/sdss/refit_spectra.py` applies it to the SDSS spectra; the scripts that downloaded and batch-fitted the
-  JWST spectra are not part of this repository yet.
 - **Third-party catalogues without a redistribution license**, in particular the SDSS DR7 quasar catalogue of
   Shen et al. (2011) and the table of Kocevski et al. (2026). Results that depend on them
   (`data/results/sdss_catalog_benchmark.json`, the labels in `data/sample/`) are stored;
   `analysis/sdss/catalog_benchmark.py` recomputes the first from the catalogue.
-- **Generators of three stored products**: the injection–recovery runs (`data/widths/injection_recovery_*.json`),
-  the hierarchical simulations (`data/photosphere/simulation_results.json`), and the summary of line-profile
-  measurements (`data/results/measurement_summary.json`). These are provided as results.
+The spectral batch drivers, seeded injection recovery, hierarchical simulations,
+and measurement-summary construction are available under `analysis/jwst/`,
+`analysis/injection/`, `analysis/hierarchical/`, and `scripts/`.
+See [Recomputing measurements and simulations](analysis/REPRODUCING_MEASUREMENTS.md)
+for inputs, commands, validation and limits. `python scripts/check_reproduction.py`
+runs the short validation without downloading spectra or running production simulations.
 
 ## Use of AI tools
 

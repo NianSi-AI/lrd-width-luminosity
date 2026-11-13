@@ -9,6 +9,9 @@ description = "Analysis code for the broad-line width-luminosity relation of lit
 requires-python = ">=3.10"
 dependencies = ["numpy", "scipy", "matplotlib", "astropy"]
 
+[project.optional-dependencies]
+simulations = ["numba>=0.60"]
+
 [tool.setuptools]
 packages = ["lrdwidth"]
 

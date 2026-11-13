@@ -16,3 +16,9 @@ figures:
 
 paper: numbers tables figures
 	cd paper && pdflatex ms && bibtex ms && pdflatex ms && pdflatex ms
+
+.PHONY: check-reproduction measurement-summary
+check-reproduction:
+	python scripts/check_reproduction.py
+measurement-summary:
+	python scripts/make_measurement_summary.py
