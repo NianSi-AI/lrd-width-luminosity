@@ -1,515 +1,547 @@
-"""Compute every number quoted in the manuscript and write paper/numbers.tex.
+"""Compute every number quoted in the manuscript and tables, writing paper/numbers.tex
+and data/results/numbers.json.
 
-Each number is a LaTeX macro. Only the macros that paper/ms.tex uses are written to numbers.tex; all of them are
-written to data/results/numbers.json. Inputs are the stored results in data/ (see data/README.md).
+Inputs are the stored results in data/ (see data/README.md).
 
 Usage: python scripts/make_numbers.py
 """
-
 import csv
 import json
 import math
+import os
 import re
+import statistics
+from collections import Counter
 
-from lrdwidth.paths import DATA, PAPER, PHOTOSPHERE, RESULTS
+from lrdwidth.paths import DATA, PAPER, PHOTOSPHERE, RESULTS, WIDTHS
 
-
-def load(name):
-    return json.load(open(RESULTS / name))
-
-
-r1 = load("width_luminosity.json")
-r2 = load("robustness.json")
-r6 = load("photosphere_constrained.json")
-r11 = load("photosphere_simulations.json")
-sdss_cat = load("sdss_catalog_benchmark.json")
-X = load("measurement_summary.json")["numbers"]
+HERE = str(PAPER)
+r1_raw = json.load(open(RESULTS / "width_luminosity.json"))
+r1 = {("W1_" + k[6:] if k.startswith("width_") else k): v for k, v in r1_raw.items()}
+r1["W6"] = json.load(open(RESULTS / "sdss_catalog_benchmark.json"))
+r2 = json.load(open(RESULTS / "robustness.json"))
+r6 = json.load(open(RESULTS / "photosphere_constrained.json"))
+r11 = json.load(open(RESULTS / "photosphere_simulations.json"))
+rep_cal = json.load(open(RESULTS / "repeat_calibration.json"))
+X = json.load(open(RESULTS / "measurement_summary.json"))["numbers"]
 FS = json.load(open(PHOTOSPHERE / "simulation_results.json"))["results"]
 xv = lambda k: X[k]["value"]
-M = []  # (macro name, value); ("%", title) entries mark sections
 
-
-def add(name, val):
+M = []   # (name, value, status, note)
+def add(name, val, st, note=''):
     assert name.isalpha(), name
     assert name not in [m[0] for m in M], name
-    M.append((name, str(val)))
+    M.append((name, str(val), st, note))
 
+f3 = lambda v: f'{v:.3f}'
+f2 = lambda v: f'{v:.2f}'
+f1 = lambda v: f'{v:.1f}'
+def neg(s): return r'\ensuremath{-}'+s[1:] if s.startswith('-') else s
+def trip(prefix, q, fmt, st, note=''):
+    add(prefix, fmt(q[2]), st, note)
+    add(prefix+'lo', fmt(q[0]), st)
+    add(prefix+'hi', fmt(q[4]), st)
+sec = lambda t: M.append(('%', t, '', ''))
 
-f3 = lambda v: f"{v:.3f}"
-f2 = lambda v: f"{v:.2f}"
+sec('sample (design and counts)')
+for n, v in (('NLRD', 29), ('NOther', 15), ('NFrozen', 44), ('NSources', 115), ('NSpectra', 204), ('NSpecHa', 177),
+             ('NProg', 'eight'), ('NEGS', 30), ('NUDS', 14), ('NAbsLRD', 'five'), ('NAbsOther', 'four'),
+             ('NLabTLRD', 13), ('NLabKLRD', 10), ('NLabHLRD', 'six')):
+    add(n, v, 'V')
+assert r2['N_abs'] == [5, 4]
+for n, v in (('cutSN', 5), ('cutBIC', 6), ('cutChi', 2), ('HvidingCut', 1000)):
+    add(n, v, 'D')
+add('matchRadius', r'0\farcs5', 'D')
+for n, v in (('zLRDmin', '3.36'), ('zLRDmax', '7.15'), ('zLRDmed', '5.45'), ('SNLRDmed', '13.7'),
+             ('SNOthmed', '8.2'), ('zOthmin', '3.60'), ('zOthmax', '6.04')):
+    add(n, v, 'V')
+d = r2['frozen_desc']
+add('LLRDmin', f2(d['LRD']['L'][0]), 'R')
+add('LLRDmed', f2(d['LRD']['L'][1]), 'R')
+add('LLRDmax', f2(d['LRD']['L'][2]), 'R')
+add('WLRDmin', round(d['LRD']['W'][0]), 'R')
+add('WLRDmax', round(d['LRD']['W'][2]), 'R')
+add('WLRDmed', round(d['LRD']['W'][1]), 'R')
 
+sec('line profiles (BIC)')
+b = 'W1_BIC_counts__LRD_all__'
+add('NBICwing', xv(b+'best_counts__lorentzian')+xv(b+'best_counts__exponential'), 'X', 'LRDs whose best of four profiles is Lorentzian or exponential')
+add('NBICsix', xv(b+'Gaussian_deltaBIC_gt6'), 'X', 'LRDs: Gaussian worse than best by Delta BIC > 6')
+add('NBIChiSN', 'nine', 'X', 'LRDs with broad S/N > 20, all nine with Delta BIC > 6 (delivery 10, W1 table)')
+add('NBICsixOth', 'four', 'X', 'other sources: Gaussian worse than best by Delta BIC > 6 (of 15)')
+add('NCoreWing', 'seven', 'V', 'sources where the two-Gaussian decomposition is identifiable')
 
-def neg(s):
-    return "\\ensuremath{-}" + s[1:] if s.startswith("-") else s
+sec('our sample, single-Gaussian FWHM and repeat-spectrum calibration')
+m = r1['W1_single_gaussian']
+fm = r2['frozen_main']
+trip('Fsig', m['LRD']['sigma'], f3, 'R', 'formal-error posterior median and equal-tailed 95% interval; X=0.0535 [0.0372, 0.0792]')
+s_up = rep_cal['posterior_with_floors']['formal_zero_floor']['LRD_p95_onesided']
+add('FsigUp', f3(s_up), 'C', f'one-sided 95% upper limit on LRD sigma_int under formal errors (95th percentile: {s_up:.5f} dex)')
+add('FsigUpTwo', f2(s_up), 'A', 'two-decimal formal-error 95% upper limit')
+trip('Fb', m['LRD']['slope'], f2, 'R', 'X=0.1688 [0.1170, 0.2225]')
+add('Fa', f3(fm['LRD']['a']), 'R')
+add('FWnorm', int(round(10**fm['LRD']['a'], -1)), 'A', '10^Fa')
+trip('Fsigo', m['other']['sigma'], f3, 'R', 'X=0.1535 [0.1032, 0.2520]')
+trip('Fdsig', m['diff'], lambda v: neg(f3(v)), 'R', 'X=-0.0999 [-0.1995, -0.0437]')
+add('Frms', f3(m['LRD']['ols_sd']), 'R')
+add('Frmso', f3(m['other']['ols_sd']), 'R')
+n3 = r2['frozen_noTop3']
+add('NNoTop', n3['LRD']['N'], 'R')
+trip('FbNoTop', n3['LRD']['slope'], f2, 'R')
+trip('FsigNoTop', n3['LRD']['sigma'], f3, 'R')
+add('NBright', 'three', 'D')
+add('LBright', '43.5', 'R')
+add('LRestMax', '42.9', 'R')
+na = r2['frozen_noAbs']
+add('NNoAbs', na['LRD']['N'], 'R', 'LRDs without a fitted Balmer-absorption component')
+trip('FsigNoAbs', na['LRD']['sigma'], f3, 'R')
+trip('FbNoAbs', na['LRD']['slope'], f2, 'R')
+trip('FdsigNoAbs', na['diff'], lambda v: neg(f3(v)), 'R', 'LRDs without Balmer absorption minus 15 other sources')
+nw = r2['frozen_noWide2']
+trip('FsigoDrop', nw['other']['sigma'], f3, 'R')
+trip('FdsigDrop', nw['diff'], lambda v: neg(f3(v)), 'R')
+add('WOutA', nw['dropped'][0][1], 'R')
+add('WOutB', nw['dropped'][1][1], 'R')
+lh = r2['frozen_LSFhalf']
+trip('FsigLsf', lh['LRD']['sigma'], f3, 'R', 'X=0.0684 [0.0482, 0.0992]')
+trip('FsigoLsf', lh['other']['sigma'], f3, 'R')
+trip('FdsigLsf', lh['diff'], lambda v: neg(f3(v)), 'R', 'X=-0.0884 [-0.1908, -0.0286]')
 
+# Repeat-spectrum floor macros
+dup_s = rep_cal['duplicate_spectra']
+fl_s = rep_cal['posterior_with_floors']['same_grating_sy_floor']
+fl_a = rep_cal['posterior_with_floors']['all_pairs_sy_floor']
+add('NPairsBest', dup_s['width_best_vs_rest_14']['N_pairs'], 'C', 'primary-vs-secondary pairs among QC-passing spectra of the 9 multi-spectrum LRDs')
+add('NPairsAll', dup_s['width_all_pairs_22']['N_pairs'], 'C', 'all pairwise combinations among QC-passing spectra of the 9 multi-spectrum LRDs')
+add('NPairsSameG', 'seven', 'C', 'same-grating pairs among the 22 (%d)' % dup_s['width_same_grating_7']['N_pairs'])
+add('NPairsCrossG', dup_s['width_cross_grating_15']['N_pairs'], 'C', 'cross-grating pairs among the 22')
+add('rmsDupBest', f2(dup_s['width_best_vs_rest_14']['norm_diff_rms']), 'C', 'rms of normalized Delta log FWHM across 14 primary-vs-secondary pairs (%.4f)' % dup_s['width_best_vs_rest_14']['norm_diff_rms'])
+add('rmsDupAll', f2(dup_s['width_all_pairs_22']['norm_diff_rms']), 'C', 'rms of normalized Delta log FWHM across all 22 pairs (%.4f)' % dup_s['width_all_pairs_22']['norm_diff_rms'])
+add('rmsDupSameG', f2(dup_s['width_same_grating_7']['norm_diff_rms']), 'C', 'rms of normalized Delta log FWHM across 7 same-grating pairs (%.4f)' % dup_s['width_same_grating_7']['norm_diff_rms'])
+add('flrDupBest', f3(dup_s['width_best_vs_rest_14']['extra_floor_per_spec_dex']), 'C', 'extra per-spectrum width error floor for 14 primary-vs-secondary pairs (%.5f dex)' % dup_s['width_best_vs_rest_14']['extra_floor_per_spec_dex'])
+add('flrDupAll', f3(dup_s['width_all_pairs_22']['extra_floor_per_spec_dex']), 'C', 'extra per-spectrum width error floor for all 22 pairs (%.5f dex)' % dup_s['width_all_pairs_22']['extra_floor_per_spec_dex'])
+add('flrDupSameG', f3(dup_s['width_same_grating_7']['extra_floor_per_spec_dex']), 'C', 'extra per-spectrum width error floor for 7 same-grating pairs (%.5f dex)' % dup_s['width_same_grating_7']['extra_floor_per_spec_dex'])
+trip('FsigFlrSame', fl_s['LRD_sigma_q'], f3, 'C', 'LRD sigma_int with +0.044 dex same-grating floor in C_yy')
+add('FsigFlrSameUp', f3(fl_s['LRD_p95_onesided']), 'C', f"one-sided 95% upper limit with +0.044 dex floor ({fl_s['LRD_p95_onesided']:.5f} dex)")
+trip('FsigoFlrSame', fl_s['other_sigma_q'], f3, 'C')
+trip('FdsigFlrSame', fl_s['diff_q'], lambda v: neg(f3(v)), 'C')
+trip('FsigFlrAll', fl_a['LRD_sigma_q'], f3, 'C', 'LRD sigma_int with +0.060 dex all-pairs floor in C_yy')
+add('FsigFlrAllUp', f3(fl_a['LRD_p95_onesided']), 'C', f"one-sided 95% upper limit with +0.060 dex floor ({fl_a['LRD_p95_onesided']:.5f} dex)")
+trip('FsigoFlrAll', fl_a['other_sigma_q'], f3, 'C')
+trip('FdsigFlrAll', fl_a['diff_q'], lambda v: neg(f3(v)), 'C')
+add('FsigCeilRep', '0.06', 'A', 'conservative two-decimal 95% upper limit once repeat-spectrum variance is included (0.057 same-grating, 0.049 all-pairs)')
+add('FdsigFlrTwo', neg(f2(fl_s['diff_q'][2])), 'A', 'median Delta sigma_int with repeat-spectrum floor (-0.12 dex)')
+add('NSNfif', rep_cal['high_snr_LRDs_ge15']['N'], 'C', 'LRDs with broad-line S/N >= 15')
+add('rmsSNfif', f3(rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof2_dex']), 'C', 'raw residual SD (ddof=2) of the 12 S/N>=15 LRDs (%.5f dex; ddof=1 is %.5f)' % (rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof2_dex'], rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof1_dex']))
 
-def trip(prefix, q, fmt):
-    add(prefix, fmt(q[2]))
-    add(prefix + "lo", fmt(q[0]))
-    add(prefix + "hi", fmt(q[4]))
-
-
-sec = lambda t: M.append(("%", t))
-sec("sample (design and counts)")
-for n, v in (
-    ("NLRD", 29),
-    ("NOther", 15),
-    ("NFrozen", 44),
-    ("NSources", 115),
-    ("NSpectra", 204),
-    ("NSpecHa", 177),
-    ("NProg", "eight"),
-    ("NEGS", 30),
-    ("NUDS", 14),
-    ("NAbsLRD", "five"),
-    ("NAbsOther", "four"),
-    ("NLabTLRD", 13),
-    ("NLabKLRD", 10),
-    ("NLabHLRD", "six"),
-):
-    add(n, v)
-assert r2["N_abs"] == [5, 4]
-for n, v in (("cutSN", 5), ("cutBIC", 6), ("cutChi", 2), ("HvidingCut", 1000)):
-    add(n, v)
-add("matchRadius", "0\\farcs5")
-for n, v in (
-    ("zLRDmin", "3.36"),
-    ("zLRDmax", "7.15"),
-    ("zLRDmed", "5.45"),
-    ("SNLRDmed", "13.7"),
-    ("SNOthmed", "8.2"),
-    ("zOthmin", "3.60"),
-    ("zOthmax", "6.04"),
-):
-    add(n, v)
-d = r2["frozen_desc"]
-add("LLRDmin", f2(d["LRD"]["L"][0]))
-add("LLRDmax", f2(d["LRD"]["L"][2]))
-add("WLRDmin", round(d["LRD"]["W"][0]))
-add("WLRDmax", round(d["LRD"]["W"][2]))
-add("WLRDmed", round(d["LRD"]["W"][1]))
-sec("line profiles (BIC)")
-b = "W1_BIC_counts__LRD_all__"
-add("NBICwing", xv(b + "best_counts__lorentzian") + xv(b + "best_counts__exponential"))
-add("NBICsix", xv(b + "Gaussian_deltaBIC_gt6"))
-add("NBIChiSN", "nine")
-add("NBICsixOth", "four")
-add("NCoreWing", "seven")
-sec("our sample, single-Gaussian FWHM")
-m = r1["width_single_gaussian"]
-fm = r2["frozen_main"]
-trip("Fsig", m["LRD"]["sigma"], f3)
-trip("Fb", m["LRD"]["slope"], f2)
-add("Fa", f3(fm["LRD"]["a"]))
-add("FWnorm", int(round(10 ** fm["LRD"]["a"], -1)))
-trip("Fsigo", m["other"]["sigma"], f3)
-trip("Fdsig", m["diff"], lambda v: neg(f3(v)))
-add("Frms", f3(m["LRD"]["ols_sd"]))
-add("Frmso", f3(m["other"]["ols_sd"]))
-n3 = r2["frozen_noTop3"]
-trip("FbNoTop", n3["LRD"]["slope"], f2)
-trip("FsigNoTop", n3["LRD"]["sigma"], f3)
-add("NBright", "three")
-add("LBright", "43.5")
-add("LRestMax", "42.9")
-nw = r2["frozen_noWide2"]
-trip("FsigoDrop", nw["other"]["sigma"], f3)
-trip("FdsigDrop", nw["diff"], lambda v: neg(f3(v)))
-add("WOutA", nw["dropped"][0][1])
-add("WOutB", nw["dropped"][1][1])
-lh = r2["frozen_LSFhalf"]
-trip("FsigLsf", lh["LRD"]["sigma"], f3)
-trip("FsigoLsf", lh["other"]["sigma"], f3)
-trip("FdsigLsf", lh["diff"], lambda v: neg(f3(v)))
-sec("six width definitions")
-defs = (
-    ("Wf", "nonparametric_W50"),
-    ("Ex", "exponential"),
-    ("Lo", "lorentzian"),
-    ("Np", "nonparametric_FWHM"),
-    ("Tg", "double_gaussian"),
-)
+sec('six width definitions')
+defs = (('Wf', 'nonparametric_W50'), ('Ex', 'exponential'), ('Lo', 'lorentzian'), ('Np', 'nonparametric_FWHM'), ('Tg', 'double_gaussian'))
 for p, k in defs:
-    q = r1["width_" + k]
-    trip("Dsig" + p, q["LRD"]["sigma"], f3)
-    trip("Dsigo" + p, q["other"]["sigma"], f3)
-    trip("Ddsig" + p, q["diff"], lambda v: neg(f3(v)))
-    add("Db" + p, f2(q["LRD"]["slope"][2]))
-five = [
-    r1["width_" + k]["LRD"]["sigma"][2]
-    for k in (
-        "single_gaussian",
-        "nonparametric_W50",
-        "exponential",
-        "lorentzian",
-        "nonparametric_FWHM",
-    )
-]
-add("sigFiveLo", f2(min(five)))
-add("sigFiveHi", f2(max(five)))
-sec("injection-recovery")
-g = lambda sc, inj, meas, what: xv(
-    f"W2_final_summary_s{sc}__{sc}_{inj}_M4_Gaussian_QC_{meas}__sigma_median__{what}"
-)
-add("simInj", "0.05")
-add("simNull", "0.15")
-add("NReal", 100)
-add("recGG", f3(g(3, "single_gaussian", "single_gaussian", "p16_p50_p84__p50")))
-add("recEG", f3(g(3, "exponential", "single_gaussian", "p16_p50_p84__p50")))
-add("recGW", f3(g(3, "single_gaussian", "nonparametric_W50", "p16_p50_p84__p50")))
-add("recEW", f3(g(3, "exponential", "nonparametric_W50", "p16_p50_p84__p50")))
-add("recGL", f2(g(3, "single_gaussian", "lorentzian", "p16_p50_p84__p50")))
-add("recGE", f2(g(3, "single_gaussian", "exponential", "p16_p50_p84__p50")))
-add("nullGG", f3(g(1, "single_gaussian", "single_gaussian", "p16_p50_p84__p50")))
-add("nullEG", f3(g(1, "exponential", "single_gaussian", "p16_p50_p84__p50")))
-hits = sum(
-    (g(1, i, "single_gaussian", "count_le_observed") for i in ("single_gaussian", "exponential"))
-)
-den = sum((g(1, i, "single_gaussian", "denominator") for i in ("single_gaussian", "exponential")))
-add("nullHits", "none" if hits == 0 else int(hits))
-add("nullDen", int(den))
-add("simA", "0.10")
-add("hitEA", 16)
-sec("Baccus & Xu table")
-for n, v in (
-    ("NX", 227),
-    ("NXLRD", 48),
-    ("NXCtrl", 97),
-    ("NXOvRec", 29),
-    ("NXOvSrc", 25),
-    ("NXLabDiff", "six"),
-    ("XWcut", 1000),
-    ("XSNcut", 5),
-    ("XkLRD", "5.4"),
-    ("XkOth", "9.8"),
-    ("XzCut", 3),
-    ("XLmin", "43.7"),
-    ("XLmax", "45.2"),
-    ("NXHbCand", 13),
-):
-    add(n, v)
-bm = r2["bx_main"]
-assert bm["LRD"]["N"] == 48 and bm["other"]["N"] == 97
-trip("Xsig", bm["LRD"]["sigma"], f3)
-trip("Xb", bm["LRD"]["slope"], f2)
-trip("Xsigo", bm["other"]["sigma"], f3)
-trip("Xdsig", bm["diff"], lambda v: neg(f3(v)))
-bn = r2["bx_noOverlap"]
-add("NXNoOv", bn["LRD"]["N"])
-add("NXNoOvCtrl", bn["other"]["N"])
-trip("XsigNoOv", bn["LRD"]["sigma"], f3)
-trip("XsigoNoOv", bn["other"]["sigma"], f3)
-trip("XdsigNoOv", bn["diff"], lambda v: neg(f3(v)))
-for n, v in (
-    ("NXPairs", 36),
-    ("XdMatch", "\\ensuremath{-}0.065"),
-    ("XdMatchlo", "\\ensuremath{-}0.105"),
-    ("XdMatchhi", "\\ensuremath{-}0.024"),
-    ("NPermHits", "eight"),
-    ("NPermTrials", "10^{6}"),
-    ("NXLeave", 87),
-    ("matchDz", "0.5"),
-    ("matchDL", "0.2"),
-):
-    add(n, v)
-add("XresM", f2(r2["bx_Mvir_LRD"]["resid_sd"]))
-add("XresMo", f2(r2["bx_Mvir_ctrl"]["resid_sd"]))
-sec("SDSS DR7 quasars")
-w6 = sdss_cat
-add("NSDSS", w6["N"])
-trip("Ssig", w6["sigma"], f3)
-add("Sb", f2(w6["slope"][2]))
-add("sigRatio", "four")
-add("SsigTwo", f2(w6["sigma"][2]))
-add("FsigoTwo", f2(m["other"]["sigma"][2]))
-add("sigTwoLo", f2(min(bm["other"]["sigma"][2], m["other"]["sigma"][2])))
-add("sigTwoHi", f2(max(bm["other"]["sigma"][2], m["other"]["sigma"][2])))
-sec("QSO1 diagnostic")
-for n, v in (
-    ("QSOsn", "3.4"),
-    ("QSOW", 2107),
-    ("QSOWerr", 302),
-    ("QSOmu", "7.5"),
-    ("QSOmuErr", "1.5"),
-    ("QSOresCor", "0.17"),
-    ("QSOresErr", "0.08"),
-):
-    add(n, v)
-sec("photosphere: sources with sigma(log L_ph) < 0.3 dex")
-add("vKnorm", 1493)
-add("kappaES", "0.398")
-A, B, C = (r6["A"], r6["B"], r6["C"])
-E = r11["main_E"]
-Ao = r11["Curtis_A_own"]
-Bo = r11["Curtis_B_own"]
-cx = {
-    "PA": "X: ratio 2.9927, HPD 0.8310, b 0.2075 [0.0993, 0.3146], sigma 0.0732 [0.0483, 0.1168]",
-    "PB": "X: ratio 2.6126, HPD 0.9042, b 0.1452 [0.0251, 0.2610], sigma 0.0812 [0.0507, 0.1370]",
-    "PC": "X: ratio 2.7475, HPD 0.9846, b 0.4007 [0.2128, 0.5662], sigma 0.1146 [0.0669, 0.2310]",
-}
-for p, r in (("PA", A), ("PB", B), ("PC", C)):
-    add("N" + p, "nine" if r["N"] == 9 else r["N"])
-    add("rat" + p, f2(r["ratio_median"]))
-    trip("b" + p, r["b"], f2)
-    trip("c" + p, r["c"], lambda v: neg(f2(v)))
-    add("hpd" + p, f"{100 * r['hpd']:.0f}")
-    trip("sq" + p, r["sigma_fixed"], f3)
-add("NPdrop", "five")
-assert len(A["dropped"]) == 5 and len(B["dropped"]) == 3
-add("NPAall", 23)
-add("NPBall", 18)
-add("sxCut", "0.3")
-add("sxDropMin", "0.4")
-add("sxDropMax", "2.0")
-add("sxKeepMax", "0.18")
-add("hierDb", "0.01")
-assert E["N"] == 5 and Ao["N"] == 13 and (Bo["N"] == 15)
-add("NPE", "five")
-add("ratPE", f2(E["ratio_p16_50_84"][1]))
-trip("sqPE", E["sigma_fixed_photosphere"], f3)
-add("NPCbx", "four")
-add("NdGall", 146)
-add("NdGbb", 47)
-add("NdGfit", 14)
-add("bPElo", "\\ensuremath{-}0.7")
-add("bPEhi", "0.7")
-rats = [A["ratio_median"], B["ratio_median"], E["ratio_p16_50_84"][1]]
-rl, rh = (min(rats), max(rats))
-add("ratLo", f"{rl:.1f}")
-add("ratHi", f"{rh:.1f}")
-add("sqLo", f2(min(A["sigma_fixed"][2], B["sigma_fixed"][2])))
-add("sqHi", f2(max(A["sigma_fixed"][2], B["sigma_fixed"][2])))
-up = [100 * (10 ** r_["sigma_fixed"][2] - 1) for r_ in (A, B)]
-add("uniPct", f"{5 * round(max(up) / 5):.0f}")
-add("sigLamRLo", f2(2 * min(A["sigma_fixed"][2], B["sigma_fixed"][2])))
-add("sigLamRHi", f2(2 * max(A["sigma_fixed"][2], B["sigma_fixed"][2])))
-add("TminP", int(round(min(A["T_range"][0], C["T_range"][0]), -2)))
-add("TmaxP", int(round(max(A["T_range"][1], C["T_range"][1]), -2)))
-add("LphMin", f"{A['logL_range'][0]:.1f}")
-add("LphMax", f"{A['logL_range'][1]:.1f}")
-hb = [
-    FS[k]["scenarios"]["measured"]["methods"]["flat"]["Hline_bc"][q + "_distribution"]["values"][2]
-    for k in ("Curtis_A_own", "Curtis_B_own")
-    for q in ("b", "c")
-]
-add("lineB", f"{(hb[0] + hb[2]) / 2:.1f}")
-add("lineCLo", f"{min(hb[1], hb[3]):.1f}")
-add("lineCHi", f"{max(hb[1], hb[3]):.1f}")
-cod = lambda k, m: FS[k]["scenarios"]["measured"]["methods"][m]
-for p, r, k in (("JE", E, "main_E"), ("JA", Ao, "Curtis_A_own"), ("JB", Bo, "Curtis_B_own")):
-    f, h = (cod(k, "flat"), cod(k, "hierarchical"))
-    sm = r["sim"]["hierarchical_baseline"]
-    so = r["sim"]["own_flat_baseline"]
-    note = "X flat %.4f, hierarchical %.4f" % (f["observed_b2"], h["observed_b2"])
-    add("N" + p, {5: "five", 13: 13, 15: 15}[r["N"]])
-    trip("bp" + p, r["partial"]["b2"], lambda v: neg(f2(v)))
-    fr = [sm["p_ph"], so["p_ph"], f["p_ph"]["fraction"], h["p_ph"]["fraction"]]
-    add("simPct" + p, f"{100 * sum(fr) / 4:.0f}")
-    add("pow" + p, f"{100 * f['power']['fraction']:.0f}")
-    add("simMed" + p, f"{sm['Hph_p16_50_84'][1]:.1f}" if p == "JE" else f2(sm["Hph_p16_50_84"][1]))
-    trip("sl" + p, r["line_only"]["sigma"], f3)
-    trip("so" + p, r["sigma_fixed_photosphere"], f3)
-p10 = [
-    100 * FS["main_E"]["scenarios"]["0.10"]["methods"][m_]["power"]["fraction"]
-    for m_ in ("flat", "hierarchical")
-]
-add("powTen", f"{5 * round(sum(p10) / 10):.0f}")
-add("powLo", f"{5 * math.floor(min((E['sim'][g]['power'] for g in E['sim'])) * 20):.0f}")
-add("powHi", f"{5 * math.ceil(max((E['sim'][g]['power'] for g in E['sim'])) * 20):.0f}")
-add("kRing", "2")
-add("kIso", "1.36")
-add("kVir", "0.96")
-lam = lambda k, r: (k / r) ** 2
-add("lamVirLo", f2(lam(0.964, rh)))
-add("lamVirHi", f2(lam(0.964, rl)))
-add("lamIsoLo", f2(lam(1.36, rh)))
-add("lamIsoHi", f2(lam(1.36, rl)))
-add("lamRingLo", f2(lam(2, rh)))
-add("lamRingHi", f2(lam(2, rl)))
-add("mEddLo", f"{(rl / 2) ** 2:.1f}")
-add("mEddHi", f"{(rh / 0.964) ** 2:.0f}")
-sec("membership and rules")
-inc = load("membership.json")
-m3 = json.load(open(DATA / "sample" / "rule_variants.json"))["variants"]["chi2_lt3"]["LRD"]
-add("sigChiThree", f3(m3["posterior"]["intrinsic_scatter_dex"][2]))
-cx = {
-    r_["macro"]: float(r_["value"])
-    for r_ in csv.DictReader(open(RESULTS / "membership_full_covariance.tsv"), delimiter="\t")
-    if r_["macro"].startswith("sigInc")
-}
-assert len(cx) == 12
-for p, k in (
-    ("IncA", "rules_relaxed_same_labels"),
-    ("IncB", "any_label_all_rules"),
-    ("IncC", "any_label_chi2lt3"),
-    ("IncD", "any_label_all"),
-):
-    r = inc[k]
-    add("N" + p, r["N"])
-    q = [cx["sig" + p + "lo"], None, cx["sig" + p], None, cx["sig" + p + "hi"]]
-    for i in (0, 2, 4):
-        assert abs(q[i] - r["sigma"][i]) < 0.003, (p, i)
-    trip("sig" + p, q, f3)
-assert inc["rules_relaxed_same_labels"]["N"] == 31
-xd = [
-    e
-    for e in inc["extras"]
-    if e["id"] in set(inc["any_label_all"]["added"]) - set(inc["any_label_chi2lt3"]["added"])
-]
-assert len(xd) == 2
-add("chiHiA", f"{min((e['chi2'] for e in xd)):.1f}")
-add("chiHiB", f"{max((e['chi2'] for e in xd)):.0f}")
-add("NIncRules", "two")
-sec("comparison with SDSS in like measures")
-tg = r1["width_double_gaussian"]["LRD"]["sigma"][2]
-npf = r1["width_nonparametric_FWHM"]["LRD"]["sigma"][2]
-sd = sdss_cat["sigma"][2]
-add("DsigTgTwo", f2(tg))
-add("sdssRatLo", f"{sd / tg:.1f}")
-add("sdssRatNp", f"{sd / npf:.1f}")
-add("sdssRatHi", f"{sd / m['LRD']['sigma'][2]:.1f}")
-sec("ratio to v_K by measure of width")
-wr = load("width_definition_ratios.json")
-for p, k in (("B", "Curtis_B_own"), ("E", "main_E")):
-    for q, mm in (
-        ("Np", "nonparametric_FWHM"),
-        ("Tg", "double_gaussian"),
-        ("Lo", "lorentzian"),
-        ("Ex", "exponential"),
-    ):
-        add("rat" + q + p, f2(wr[k][mm]["ratio_median"]))
-        if p == "B":
-            trip("sq" + q + p, wr[k][mm]["sigma"], f3)
-four = [
-    wr["Curtis_B_own"][mm]["sigma"][2]
-    for mm in ("single_gaussian", "nonparametric_FWHM", "lorentzian", "exponential")
-]
-add("sqMeasLo", f2(min(four)))
-add("sqMeasHi", f2(max(four)))
-add(
-    "ratExLo",
-    f"{min((wr[k]['exponential']['ratio_median'] for k in ('Curtis_B_own', 'main_E'))):.1f}",
-)
-add(
-    "ratWingHi",
-    f"{max((wr[k][mm]['ratio_median'] for k in ('Curtis_B_own', 'main_E') for mm in ('lorentzian', 'exponential'))):.1f}",
-)
-gfr = lambda rat, x: math.erfc(x / (rat / (2 * math.sqrt(2 * math.log(2)))) / math.sqrt(2))
-efr = lambda rat, x: math.exp(-x / (rat / (2 * math.log(2))))
-rats3 = [A["ratio_median"], B["ratio_median"], E["ratio_p16_50_84"][1]]
-rex = wr["Curtis_B_own"]["exponential"]["ratio_median"]
-add("fKepLo", f"{100 * gfr(min(rats3), 1):.0f}")
-add("fKepHi", f"{100 * gfr(max(rats3), 1):.0f}")
-add("fEscLo", f"{100 * gfr(min(rats3), math.sqrt(2)):.0f}")
-add("fEscHi", f"{100 * gfr(max(rats3), math.sqrt(2)):.0f}")
-add("fKepEx", f"{100 * efr(rex, 1):.0f}")
-add("fEscEx", f"{100 * efr(rex, math.sqrt(2)):.0f}")
-add("lamExpFac", f"{(B['ratio_median'] / rex) ** 2:.1f}")
-sec("selection checks added after the adversarial review of 2026-11-13")
-sn = load("snr_threshold.json")
-for p, k in (("SNten", "LRD_SNge10"), ("SNtwenty", "LRD_SNge20")):
-    add("N" + p, {20: 20, 9: "nine"}[sn[k]["N"]])
-    trip("sig" + p, sn[k]["sigma"], f3)
-flo = fm["LRD"]["a"] + m["LRD"]["slope"][2] * (d["LRD"]["L"][0] - 43) - 3
-add("floorDex", f2(flo))
-add("floorSig", f"{flo / m['LRD']['sigma'][2]:.1f}")
-add("NTay", 13)
-tp = load("photometric_labels_grid.json")
-add("FsigTay", f3(tp["medians"]["FsigTay"]["finer_stored"]))
-add("FsigTaylo", f3(tp["LRD_interval"]["upstream_finer"][0]))
-add("FsigTayhi", f3(tp["LRD_interval"]["upstream_finer"][1]))
-add("FsigoTay", f3(tp["medians"]["FsigoTay"]["finer_stored"]))
-add("rhoThin", f"{math.sqrt(1 - (m['LRD']['sigma'][2] / r2['orient']['thin_0_45']) ** 2):.2f}")
-add("kappaSolar", "0.34")
-add("vKdrop", f"{100 * (1 - math.sqrt(0.34 / 0.398)):.0f}")
-rlo = wr["Curtis_B_own"]["lorentzian"]["ratio_median"]
-lfr = lambda rat, x: 1 - 2 / math.pi * math.atan(2 * x / rat)
-add("fKepLor", f"{100 * lfr(rlo, 1):.0f}")
-add("fEscLor", f"{100 * lfr(rlo, math.sqrt(2)):.0f}")
-sec(
-    "SDSS refitted with our single Gaussian; flux fractions by direct integration; hierarchical check"
-)
-add("NSsgDraw", 300)
-add("NSsg", 224)
-add("Ssg", "0.123")
-add("Ssglo", "0.112")
-add("Ssghi", "0.136")
-add("SsgTwo", "0.12")
-add("SsgCat", "0.185")
-add("sdssRatSame", f"{0.12324 / m['LRD']['sigma'][2]:.1f}")
-add("fKepNpLo", "38")
-add("fKepNpHi", "44")
-add("fEscNpLo", "23")
-add("fEscNpHi", "28")
-add("fEscBicLo", "24")
-add("fEscBicHi", "28")
-add("hierSig", "0.054")
-add("hierB", "0.17")
-sec("budget")
-s0 = m["LRD"]["sigma"][2]
-s1 = m["LRD"]["sigma"][4]
-o = r2["orient"]
-add("sigLamMax", f2(2 * s0))
-add("sigLamMaxUp", f2(2 * s1))
-add("oriThin", f2(o["thin_0_45"]))
-add("oriHalf", f3(o["h0.5_0_60"]))
-add("oriSeven", f3(o["h0.7_0_60"]))
-add("oriOne", f3(o["h1_0_60"]))
-add("oriThinRatio", "four")
-add("sigLamIso", f2(2 * math.sqrt(s0**2 - o["h1_0_60"] ** 2)))
-add("RLlo", "0.13")
-add("RLhi", "0.19")
-add("RLtermLo", f3(0.065))
-add("RLtermHi", f3(0.095))
-add("virW", "2.06")
-add("virL", "0.47")
-add("sigMvir", f2(2.06 * s0))
-sec("scattering")
-add("rusA", 428)
-add("rusB", 370)
-D_ = lambda t: 428 * t / (428 * t + 370)
-add("DHalf", f2(D_(0.5)))
-add("DOne", f2(D_(1)))
-add("DTwo", f2(D_(2)))
-add("sigTauHalf", f2(s0 / D_(0.5)))
-add("sigTauOne", f2(s0 / D_(1)))
-add("sigTauTwo", f2(s0 / D_(2)))
-add("sigTeMax", f2(2 * s0))
-add("tauSlopeLo", f"{m['LRD']['slope'][2] / D_(1):.1f}")
-add("tauSlopeHi", f"{bm['LRD']['slope'][2] / D_(1):.1f}")
-C11 = load("shell_radius_budget.json")["rows"]
-for nm_, t_, c_ in zip(("sigRHalf", "sigROne", "sigRTwo", "sigRThree"), (0.5, 1, 2, 3), C11):
-    v_ = 2 * s0 / D_(t_)
-    assert (
-        c_["tau_e"] == t_
-        and abs(v_ - c_["sigma_logR_local"]) < 5e-05
-        and (f2(v_) == c_["rounded_2dec"])
-    ), (nm_, v_, c_)
-    add(nm_, f2(v_))
-add("tauFixLo", f2(0.5 * D_(0.5)))
-add("tauFixHi", f2(0.5 * D_(2)))
-add("tauPhLo", f2(0.25 * D_(0.5)))
-add("tauPhHi", f2(0.25 * D_(2)))
+    q = r1['W1_'+k]
+    trip('Dsig'+p, q['LRD']['sigma'], f3, 'R')
+    trip('Dsigo'+p, q['other']['sigma'], f3, 'R')
+    trip('Ddsig'+p, q['diff'], lambda v: neg(f3(v)), 'R')
+    add('Db'+p, f2(q['LRD']['slope'][2]), 'R')
+five = [r1['W1_'+k]['LRD']['sigma'][2] for k in ('single_gaussian', 'nonparametric_W50', 'exponential', 'lorentzian', 'nonparametric_FWHM')]
+add('sigFiveLo', f2(min(five)), 'A')
+add('sigFiveHi', f2(max(five)), 'A')
 
-# write only the macros that the manuscript uses, grouped under their section titles
-source = re.sub(r"(?<!\\)%.*", "", (PAPER / "ms.tex").read_text(encoding="utf-8"))
-values = {name: value for name, value in M if name != "%"}
-used = {name for name in values if re.search(r"\\%s(?![A-Za-z])" % name, source)}
-lines = [
-    "%% numbers.tex -- generated by scripts/make_numbers.py; do not edit by hand.",
-    "%% Write every macro as \\name{} in running text so that TeX does not swallow the following space.",
-]
-title = None
-for name, value in M:
-    if name == "%":
-        title = value
-    elif name in used:
-        if title:
-            lines += ["", f"%% {title}"]
-            title = None
-        lines.append(f"\\newcommand{{\\{name}}}{{{value}}}")
-(PAPER / "numbers.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-json.dump(values, open(RESULTS / "numbers.json", "w"), indent=1, ensure_ascii=False)
-print(
-    f"{len(values)} numbers computed; {len(used)} used in ms.tex and written to paper/numbers.tex"
-)
+sec('injection-recovery (Codex W2, Stage 2, and v10 Lorentzian/null-slope checks)')
+g = lambda sc, inj, meas, what: xv(f'W2_final_summary_s{sc}__{sc}_{inj}_M4_Gaussian_QC_{meas}__sigma_median__{what}')
+add('simInj', '0.05', 'D')
+add('simNull', '0.15', 'D')
+add('NReal', 100, 'D')
+add('recGG', f3(g(3, 'single_gaussian', 'single_gaussian', 'p16_p50_p84__p50')), 'X')
+add('recEG', f3(g(3, 'exponential', 'single_gaussian', 'p16_p50_p84__p50')), 'X')
+add('recGW', f3(g(3, 'single_gaussian', 'nonparametric_W50', 'p16_p50_p84__p50')), 'X')
+add('recEW', f3(g(3, 'exponential', 'nonparametric_W50', 'p16_p50_p84__p50')), 'X')
+add('recGL', f2(g(3, 'single_gaussian', 'lorentzian', 'p16_p50_p84__p50')), 'X')
+add('recGE', f2(g(3, 'single_gaussian', 'exponential', 'p16_p50_p84__p50')), 'X')
+add('nullGG', f3(g(1, 'single_gaussian', 'single_gaussian', 'p16_p50_p84__p50')), 'X')
+add('nullEG', f3(g(1, 'exponential', 'single_gaussian', 'p16_p50_p84__p50')), 'X')
+hits = sum(g(1, i, 'single_gaussian', 'count_le_observed') for i in ('single_gaussian', 'exponential'))
+den = sum(g(1, i, 'single_gaussian', 'denominator') for i in ('single_gaussian', 'exponential'))
+add('nullHits', 'none' if hits == 0 else int(hits), 'X')
+add('nullDen', int(den), 'X')
+add('simA', '0.10', 'D')
+add('simB', '0.08', 'D')
+st2 = json.load(open(WIDTHS / 'sloped_injection_recovery.json'))
+st2a = st2['null_scenarios']
+st2b = st2['sloped_simulations']
+_w = {0: 'none', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
+add('recEightG', f3(st2b['gauss_rel_s008']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitEightG', _w[st2b['gauss_rel_s008']['bayes_hits_le_obs_Fsig']], 'C')
+add('recEightE', f3(st2b['exp_matched_s008']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitEightE', _w[st2b['exp_matched_s008']['bayes_hits_le_obs_Fsig']], 'C')
+add('recTenG', f3(st2b['gauss_rel_s010']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitTenG', _w[st2b['gauss_rel_s010']['bayes_hits_le_obs_Fsig']], 'C')
+add('recTenE', f3(st2b['exp_matched_s010']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitTenE', _w[st2b['exp_matched_s010']['bayes_hits_le_obs_Fsig']], 'C')
+tot10 = st2b['gauss_rel_s010']['bayes_hits_le_obs_Fsig'] + st2b['exp_matched_s010']['bayes_hits_le_obs_Fsig']
+add('hitTenTot', _w[tot10], 'A')
+add('wideInjShift', f2(st2b['exp_wide_s010']['injected_a0'] - st2b['exp_matched_s010']['injected_a0']), 'A')
+add('recTenWide', f3(st2b['exp_wide_s010']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitTenWide', _w[st2b['exp_wide_s010']['bayes_hits_le_obs_Fsig']], 'C')
+add('wideSurvShift', f2(st2b['exp_wide_s010']['recovered_a_hat_p16_p50_p84'][1] - fm['LRD']['a']), 'A')
+
+sec('Baccus & Xu table')
+anc_chk = json.load(open(RESULTS / 'ancillary_checks.json'))
+assert anc_chk['repeatability_and_bx26']['W4_candidates_total'] == 13 and anc_chk['repeatability_and_bx26']['W4_candidates_LRD'] == 3
+for n, v in (('NX', 227), ('NXLRD', 48), ('NXCtrl', 97), ('NXOvRec', 29), ('NXOvSrc', 25), ('NXLabDiff', 'six'),
+             ('XWcut', 1000), ('XSNcut', 5), ('XkLRD', '5.4'), ('XkOth', '9.8'), ('XzCut', 3),
+             ('XLmin', '43.7'), ('XLmax', '45.2'), ('NXHbCand', 13), ('NXHbLRD', 'three')):
+    add(n, v, 'V' if n not in ('NXHbCand', 'NXHbLRD') else 'C')
+add('NXLRDuniq', rep_cal['bx26_checks']['N_unique_sky_LRD'], 'C', 'unique sky objects (<1 arcsec) among the 48 BX26 LRD records')
+trip('XsigDedup', rep_cal['bx26_checks']['dedup_LRD_sigma_q'], f3, 'C', 'BX26 LRD sigma_int deduplicated to 45 unique sky objects')
+add('XovSD', f3(rep_cal['bx26_checks']['shared_29_width_ratio_sd_dex']), 'C', 'SD of log10 width ratio across the 29 shared records (%.4f dex)' % rep_cal['bx26_checks']['shared_29_width_ratio_sd_dex'])
+add('XovLRDSD', f3(rep_cal['bx26_checks']['shared_16_LRD_width_ratio_sd_dex']), 'C', 'SD of log10 width ratio across the 16 records labeled LRD in both tables')
+bm = r2['bx_main']
+assert bm['LRD']['N'] == 48 and bm['other']['N'] == 97
+trip('Xsig', bm['LRD']['sigma'], f3, 'R', 'X=0.0578 [0.0446, 0.0770]')
+trip('Xb', bm['LRD']['slope'], f2, 'R')
+trip('Xsigo', bm['other']['sigma'], f3, 'R', 'X=0.1436 [0.1213, 0.1716]')
+trip('Xdsig', bm['diff'], lambda v: neg(f3(v)), 'R', 'X=-0.0859 [-0.1172, -0.0570]')
+bn = r2['bx_noOverlap']
+add('NXNoOv', bn['LRD']['N'], 'R')
+add('NXNoOvCtrl', bn['other']['N'], 'R')
+trip('XsigNoOv', bn['LRD']['sigma'], f3, 'R')
+trip('XsigoNoOv', bn['other']['sigma'], f3, 'R')
+trip('XdsigNoOv', bn['diff'], lambda v: neg(f3(v)), 'R')
+for n, v in (('NXPairs', 36), ('XdMatch', r'\ensuremath{-}0.065'), ('XdMatchlo', r'\ensuremath{-}0.105'),
+             ('XdMatchhi', r'\ensuremath{-}0.024'), ('NPermHits', 'eight'), ('NPermTrials', '10^{6}'),
+             ('NXLeave', 87), ('matchDz', '0.5'), ('matchDL', '0.2')):
+    add(n, v, 'V')
+add('XresM', f2(r2['bx_Mvir_LRD']['resid_sd']), 'R', 'residual SD of BX26 log M about log Lbol, LRDs')
+add('XresMo', f2(r2['bx_Mvir_ctrl']['resid_sd']), 'R')
+
+sec('SDSS DR7 quasars')
+w6 = r1['W6']
+add('NSDSS', w6['N'], 'X')
+trip('Ssig', w6['sigma'], f3, 'R', 'X=0.2073 [0.2024, 0.2123]')
+add('Sb', f2(w6['slope'][2]), 'R')
+add('zSDSSmin', f2(r1['W6']['z_range'][0]), 'C')
+add('zSDSSmax', f2(r1['W6']['z_range'][1]), 'C')
+add('SsigTwo', f2(w6['sigma'][2]), 'A')
+add('FsigoTwo', f2(m['other']['sigma'][2]), 'A')
+add('sigTwoLo', f2(min(bm['other']['sigma'][2], m['other']['sigma'][2])), 'A')
+add('sigTwoHi', f2(max(bm['other']['sigma'][2], m['other']['sigma'][2])), 'A')
+add('sdssWoff', f2(rep_cal['sdss_224_offset']['dlogFWHM_SDSS_minus_LRD_dex']), 'C', 'Delta log10 FWHM (SDSS refitted minus LRD) at median LRD L_Ha (%.4f dex)' % rep_cal['sdss_224_offset']['dlogFWHM_SDSS_minus_LRD_dex'])
+add('WsdssMedL', int(round(rep_cal['sdss_224_offset']['SDSS_FWHM_at_LRD_med_kms'], -1)), 'C', 'SDSS refitted single-Gaussian FWHM relation at median LRD L_Ha, km/s')
+add('WlrdMedL', int(round(rep_cal['sdss_224_offset']['LRD_FWHM_at_LRD_med_kms'], -1)), 'C', 'LRD single-Gaussian FWHM relation at median LRD L_Ha, km/s')
+
+sec('QSO1 diagnostic')
+for n, v in (('QSOsn', '3.4'), ('QSOW', 2107), ('QSOWerr', 302), ('QSOmu', '7.5'), ('QSOmuErr', '1.5'),
+             ('QSOresCor', '0.17'), ('QSOresErr', '0.08')):
+    add(n, v, 'V')
+
+sec('photosphere: sources with sigma(log L_ph) < 0.3 dex')
+add('vKnorm', 1493, 'R', 'km/s at 1e45 erg/s, 5000 K, lambda=1, kappa=0.398; X=1492.63')
+add('kappaES', '0.398', 'D')
+A, B, C = r6['A'], r6['B'], r6['C']
+E = r11['main_E']; Ao = r11['Curtis_A_own']; Bo = r11['Curtis_B_own']
+cx = {'PA': 'X: ratio 2.9927, HPD 0.8310, b 0.2075 [0.0993, 0.3146], sigma 0.0732 [0.0483, 0.1168]',
+      'PB': 'X: ratio 2.6126, HPD 0.9042, b 0.1452 [0.0251, 0.2610], sigma 0.0812 [0.0507, 0.1370]',
+      'PC': 'X: ratio 2.7475, HPD 0.9846, b 0.4007 [0.2128, 0.5662], sigma 0.1146 [0.0669, 0.2310]'}
+for p, r in (('PA', A), ('PB', B), ('PC', C)):
+    add('N'+p, 'nine' if r['N'] == 9 else r['N'], 'C')
+    add('rat'+p, f2(r['ratio_median']), 'C', cx[p])
+    trip('b'+p, r['b'], f2, 'C')
+    trip('c'+p, r['c'], lambda v: neg(f2(v)), 'C')
+    add('hpd'+p, f'{100*r["hpd"]:.0f}', 'C')
+    trip('sq'+p, r['sigma_fixed'], f3, 'C')
+add('NPdrop', 'five', 'C')
+assert len(A['dropped']) == 5 and len(B['dropped']) == 3
+add('NPAall', 23, 'X'); add('NPBall', 18, 'X'); add('sxCut', '0.3', 'D')
+add('sxDropMin', '0.4', 'C'); add('sxDropMax', '2.0', 'C'); add('sxKeepMax', '0.18', 'C')
+add('hierDb', '0.01', 'X')
+assert E['N'] == 5 and Ao['N'] == 13 and Bo['N'] == 15
+add('NPE', 'five', 'C')
+add('ratPE', f2(E['ratio_p16_50_84'][1]), 'C')
+trip('sqPE', E['sigma_fixed_photosphere'], f3, 'C')
+add('NPCbx', 'four', 'X')
+add('NdGall', 146, 'X'); add('NdGbb', 47, 'C'); add('NdGfit', 14, 'C')
+rats = [A['ratio_median'], B['ratio_median'], E['ratio_p16_50_84'][1]]
+rl, rh = min(rats), max(rats)
+add('ratLo', f'{rl:.1f}', 'A'); add('ratHi', f'{rh:.1f}', 'A')
+add('sqLo', f2(min(A['sigma_fixed'][2], B['sigma_fixed'][2])), 'A')
+add('sqHi', f2(max(A['sigma_fixed'][2], B['sigma_fixed'][2])), 'A')
+add('sigLamRLo', f2(2*min(A['sigma_fixed'][2], B['sigma_fixed'][2])), 'A')
+add('sigLamRHi', f2(2*max(A['sigma_fixed'][2], B['sigma_fixed'][2])), 'A')
+add('TminP', int(round(min(A['T_range'][0], C['T_range'][0]), -2)), 'C')
+add('TmaxP', int(round(max(A['T_range'][1], C['T_range'][1]), -2)), 'C')
+add('LphMin', f'{A["logL_range"][0]:.1f}', 'C'); add('LphMax', f'{A["logL_range"][1]:.1f}', 'C')
+sds_lph = [rep_cal['photosphere_log_Lph_over_LHa'][k]['sd_dex'] for k in ('Curtis_A_own', 'Curtis_B_own')]
+add('sdLphHaLo', f2(min(sds_lph)), 'C', 'min SD of log10(L_ph / L_Ha) across Curtis_B_own and Curtis_A_own')
+add('sdLphHaHi', f2(max(sds_lph)), 'C', 'max SD of log10(L_ph / L_Ha) across Curtis_B_own and Curtis_A_own')
+
+hb = [FS[k]['scenarios']['measured']['methods']['flat']['Hline_bc'][q+'_distribution']['values'][2] for k in ('Curtis_A_own', 'Curtis_B_own') for q in ('b', 'c')]
+add('lineB', f'{(hb[0]+hb[2])/2:.1f}', 'X')
+add('lineCLo', f'{min(hb[1], hb[3]):.1f}', 'X')
+add('lineCHi', f'{max(hb[1], hb[3]):.1f}', 'X')
+cod = lambda k, m_: FS[k]['scenarios']['measured']['methods'][m_]
+for p, r, k in (('JE', E, 'main_E'), ('JA', Ao, 'Curtis_A_own'), ('JB', Bo, 'Curtis_B_own')):
+    f, h = cod(k, 'flat'), cod(k, 'hierarchical')
+    sm = r['sim']['hierarchical_baseline']; so = r['sim']['own_flat_baseline']
+    add('N'+p, {5: 'five', 13: 13, 15: 15}[r['N']], 'C')
+    trip('bp'+p, r['partial']['b2'], lambda v: neg(f2(v)), 'C')
+    fr = [sm['p_ph'], so['p_ph'], f['p_ph']['fraction'], h['p_ph']['fraction']]
+    add('simPct'+p, f'{100*sum(fr)/4:.0f}', 'C')
+    add('simMed'+p, (f'{sm["Hph_p16_50_84"][1]:.1f}' if p == 'JE' else f2(sm['Hph_p16_50_84'][1])), 'C')
+    trip('sl'+p, r['line_only']['sigma'], f3, 'C')
+    trip('so'+p, r['sigma_fixed_photosphere'], f3, 'C')
+p10 = [100*FS['main_E']['scenarios']['0.10']['methods'][m_]['power']['fraction'] for m_ in ('flat', 'hierarchical')]
+add('powTen', f'{5*round(sum(p10)/10):.0f}', 'X')
+add('powLo', f'{5*math.floor(min(E["sim"][g]["power"] for g in E["sim"])*20):.0f}', 'A')
+add('powHi', f'{5*math.ceil(max(E["sim"][g]["power"] for g in E["sim"])*20):.0f}', 'A')
+
+add('kRing', '2', 'D')
+add('kIso', '1.36', 'A', '2 sqrt(2 ln 2)/sqrt(3); X=1.359556')
+add('kVir', '0.96', 'A', '1/sqrt(1.075); Reines & Volonteri epsilon; X=0.964486')
+lam = lambda k, r: (k/r)**2
+add('lamVirLo', f2(lam(.964486, rh)), 'A'); add('lamVirHi', f2(lam(.964486, rl)), 'A')
+add('lamIsoLo', f2(lam(1.359556, rh)), 'A'); add('lamIsoHi', f2(lam(1.359556, rl)), 'A')
+add('lamRingLo', f2(lam(2, rh)), 'A'); add('lamRingHi', f2(lam(2, rl)), 'A')
+add('mEddLo', f'{(rl/2)**2:.1f}', 'A', '(ratio/k)^2 for k=2')
+add('mEddHi', f'{(rh/.964486)**2:.0f}', 'A', '(ratio/k)^2 for k=0.96')
+add('mEddStdLo', f'{(rl/1.359556)**2:.1f}', 'A', '(ratio/k)^2 min for k=1.36')
+# Symmetric non-gravitational broadening factors (FWHM/v_K)/k across k = 0.96, 1.36, 2
+add('brdVirLo', f1(rl/.964486), 'A', 'min (FWHM/v_K)/k for k=0.96')
+add('brdVirHi', f1(rh/.964486), 'A', 'max (FWHM/v_K)/k for k=0.96')
+add('brdIsoLo', f1(rl/1.359556), 'A', 'min (FWHM/v_K)/k for k=1.36')
+add('brdIsoHi', f1(rh/1.359556), 'A', 'max (FWHM/v_K)/k for k=1.36')
+add('brdRingLo', f2(rl/2.0), 'A', 'min (FWHM/v_K)/k for k=2 (1.25)')
+add('brdRingHi', f1(rh/2.0), 'A', 'max (FWHM/v_K)/k for k=2 (1.5)')
+
+sec('membership and rules')
+inc = json.load(open(RESULTS / 'membership.json'))
+rv_sample = json.load(open(DATA / 'sample' / 'rule_variants.json'))['variants']['chi2_lt3']['LRD']
+add('sigChiThree', f3(rv_sample['posterior']['intrinsic_scatter_dex'][2]), 'X')
+cx = {r_['macro']: float(r_['value']) for r_ in csv.DictReader(open(RESULTS / 'membership_full_covariance.tsv'), delimiter='\t')}
+for p, k in (('IncA', 'rules_relaxed_same_labels'), ('IncB', 'any_label_all_rules'), ('IncC', 'any_label_chi2lt3'), ('IncD', 'any_label_all')):
+    r = inc[k]; add('N'+p, r['N'], 'N')
+    q = [cx['sig'+p+'lo'], None, cx['sig'+p], None, cx['sig'+p+'hi']]
+    qb = [cx['b'+p+'lo'], None, cx['b'+p], None, cx['b'+p+'hi']]
+    trip('sig'+p, q, f3, 'C')
+    trip('b'+p, qb, f2, 'C')
+xd = [e for e in inc['extras'] if e['id'] in set(inc['any_label_all']['added'])-set(inc['any_label_chi2lt3']['added'])]
+add('chiHiA', f'{min(e["chi2"] for e in xd):.1f}', 'N'); add('chiHiB', f'{max(e["chi2"] for e in xd):.0f}', 'N')
+add('NIncRules', 'two', 'N')
+
+sec('comparison with SDSS in like measures')
+tg = r1['W1_double_gaussian']['LRD']['sigma'][2]
+add('DsigTgTwo', f2(tg), 'A')
+
+sec('ratio to v_K by measure of width')
+wr = json.load(open(RESULTS / 'width_definition_ratios.json'))
+for p, k in (('B', 'Curtis_B_own'), ('E', 'main_E')):
+    for q, mm in (('Np', 'nonparametric_FWHM'), ('Tg', 'double_gaussian'), ('Lo', 'lorentzian'), ('Ex', 'exponential')):
+        add('rat'+q+p, f2(wr[k][mm]['ratio_median']), 'C')
+        if p == 'B': trip('sq'+q+p, wr[k][mm]['sigma'], f3, 'N')
+four = [wr['Curtis_B_own'][mm]['sigma'][2] for mm in ('single_gaussian', 'nonparametric_FWHM', 'lorentzian', 'exponential')]
+add('sqMeasLo', f2(min(four)), 'A'); add('sqMeasHi', f2(max(four)), 'A')
+add('ratExLo', f'{min(wr[k]["exponential"]["ratio_median"] for k in ("Curtis_B_own", "main_E")):.1f}', 'A')
+add('ratWingHi', f'{max(wr[k][mm]["ratio_median"] for k in ("Curtis_B_own", "main_E") for mm in ("lorentzian", "exponential")):.1f}', 'A')
+add('ratNpLo', f1(min(wr[k]['nonparametric_FWHM']['ratio_median'] for k in ('Curtis_B_own', 'main_E'))), 'A')
+add('ratNpHi', f1(max(wr[k]['nonparametric_FWHM']['ratio_median'] for k in ('Curtis_B_own', 'main_E'))), 'A')
+gfr = lambda rat, x: math.erfc(x/(rat/(2*math.sqrt(2*math.log(2))))/math.sqrt(2))
+efr = lambda rat, x: math.exp(-x/(rat/(2*math.log(2))))
+rats3 = [A['ratio_median'], B['ratio_median'], E['ratio_p16_50_84'][1]]
+rex = wr['Curtis_B_own']['exponential']['ratio_median']
+add('fKepLo', f'{100*gfr(min(rats3), 1):.0f}', 'A'); add('fKepHi', f'{100*gfr(max(rats3), 1):.0f}', 'A')
+add('fEscLo', f'{100*gfr(min(rats3), math.sqrt(2)):.0f}', 'A'); add('fEscHi', f'{100*gfr(max(rats3), math.sqrt(2)):.0f}', 'A')
+add('fKepEx', f'{100*efr(rex, 1):.0f}', 'A'); add('fEscEx', f'{100*efr(rex, math.sqrt(2)):.0f}', 'A')
+
+sec('selection checks')
+sn = json.load(open(RESULTS / 'snr_threshold.json'))
+for p, k in (('SNten', 'LRD_SNge10'), ('SNtwenty', 'LRD_SNge20')):
+    add('N'+p, {20: 20, 9: 'nine'}[sn[k]['N']], 'N')
+    trip('sig'+p, sn[k]['sigma'], f3, 'N')
+flo = fm['LRD']['a']+m['LRD']['slope'][2]*(d['LRD']['L'][0]-43)-3
+add('floorDex', f2(flo), 'A')
+add('floorSig', f'{flo/m["LRD"]["sigma"][2]:.1f}', 'A')
+add('NTay', 13, 'C')
+tp = json.load(open(RESULTS / 'photometric_labels_grid.json'))
+add('FsigTay', f3(tp['medians']['FsigTay']['finer_stored']), 'C')
+add('FsigTaylo', f3(tp['LRD_interval']['upstream_finer'][0]), 'C')
+add('FsigTayhi', f3(tp['LRD_interval']['upstream_finer'][1]), 'C')
+add('FsigoTay', f3(tp['medians']['FsigoTay']['finer_stored']), 'C')
+add('kappaSolar', '0.34', 'D')
+add('vKdrop', f'{100*(1-math.sqrt(0.34/0.398)):.0f}', 'A')
+
+sec('SDSS refitted with our single Gaussian and flux fractions')
+add('NSsgDraw', 300, 'X'); add('NSsg', 224, 'X')
+add('Ssg', '0.123', 'X'); add('Ssglo', '0.112', 'X'); add('Ssghi', '0.136', 'X'); add('SsgTwo', '0.12', 'A')
+add('SsgCat', '0.185', 'X')
+add('sdssRatSame', f'{0.123240/m["LRD"]["sigma"][2]:.1f}', 'A')
+add('fKepNpLo', '38', 'X'); add('fKepNpHi', '44', 'X')
+add('fEscNpLo', '23', 'X'); add('fEscNpHi', '28', 'X')
+add('fEscBicLo', '24', 'X'); add('fEscBicHi', '28', 'X')
+add('hierSig', '0.054', 'X'); add('hierB', '0.17', 'X')
+
+sec('Section 5 budgets unified on the conservative formal-error 95% upper limit s_up (0.075 dex)')
+s0 = m['LRD']['sigma'][2]
+b0 = m['LRD']['slope'][2]
+s_noTop_up = rep_cal['posterior_with_floors']['noTop3_formal_p95_onesided']
+b_noTop = n3['LRD']['slope'][2]
+o = r2['orient']
+o45_90 = o['thin_45_90']; o60_90 = o['thin_60_90']
+add('sigLamMax', f2(2*s_up), 'A', f'2 * s_up (conservative 95% ceiling: {2*s_up:.4f} dex)')
+add('sigLamMed', f2(2*s0), 'A', '2 * Fsig under formal-error median (%.4f dex)' % (2*s0))
+add('sigLamRep', f2(2*fl_s['LRD_p95_onesided']), 'A', '2 * s_95(same-grating floor) = %.4f dex' % (2*fl_s['LRD_p95_onesided']))
+add('oriThin', f2(o['thin_0_45']), 'R')
+add('oriHalf', f3(o['h0.5_0_60']), 'R')
+add('oriSeven', f3(o['h0.7_0_60']), 'R')
+add('oriOne', f3(o['h1_0_60']), 'R')
+add('oriThinRatio', f1(o['thin_0_45']/s_up), 'A', 'oriThin / s_up = %.2f' % (o['thin_0_45']/s_up))
+add('rhoThin', f'{math.sqrt(1-(s_up/o["thin_0_45"])**2):.2f}', 'A', 'sqrt(1 - (s_up / oriThin)^2)')
+add('sigLamIso', f2(2*math.sqrt(s_up**2-o['h1_0_60']**2)), 'A', '2 sqrt(s_up^2 - oriOne^2)')
+add('oriEdgeWide', f3(o45_90), 'C')
+add('oriEdge', f3(o60_90), 'C')
+add('sigLamEdgeWide', f2(2*math.sqrt(s_up**2-o45_90**2)), 'C', '2 sqrt(s_up^2 - oriEdgeWide^2)')
+add('sigLamEdge', f2(2*math.sqrt(s_up**2-o60_90**2)), 'C', '2 sqrt(s_up^2 - oriEdge^2)')
+add('sigDustMax', f1(s_up/(0.4*b0)), 'C', 'broad-Ha attenuation scatter ceiling s_up / (0.4 Fb) in mag (%.4f)' % (s_up/(0.4*b0)))
+add('sigDustNoTop', f1(s_noTop_up/(0.4*b_noTop)), 'C', 's_95(noTop3) / (0.4 FbNoTop) in mag (%.4f)' % (s_noTop_up/(0.4*b_noTop)))
+add('RLlo', '0.13', 'V'); add('RLhi', '0.19', 'V')
+add('RLtermLo', f3(.065), 'A'); add('RLtermHi', f3(.095), 'A')
+add('virW', '2.06', 'V'); add('virL', '0.47', 'V')
+add('sigMvir', f'{math.ceil(2.06*s_up*100)/100:.2f}', 'A', f'2.06 * s_up ceiling (unrounded: {2.06*s_up:.6f} dex; s_up = {s_up:.6f} dex)')
+add('sigMvirMed', f2(2.06*s0), 'A', '2.06 * Fsig (formal-error median: %.4f dex)' % (2.06*s0))
+add('sigMvirRep', f2(2.06*fl_s['LRD_p95_onesided']), 'A', '2.06 * s_95(same-grating floor) = %.4f dex' % (2.06*fl_s['LRD_p95_onesided']))
+
+sec('scattering (unified on s_up, with tauFixHi corrected to tau_e = 3)')
+add('rusA', 428, 'V'); add('rusB', 370, 'V')
+D_ = lambda t: 428*t/(428*t+370)
+add('DHalf', f2(D_(.5)), 'A'); add('DOne', f2(D_(1)), 'A'); add('DTwo', f2(D_(2)), 'A'); add('DThree', f2(D_(3)), 'A')
+add('sigTauHalf', f2(s_up/D_(.5)), 'A'); add('sigTauOne', f2(s_up/D_(1)), 'A')
+add('sigTauTwo', f2(s_up/D_(2)), 'A'); add('sigTauThree', f2(s_up/D_(3)), 'A')
+add('sigTeMax', f2(2*s_up), 'A', '2 * s_up')
+for nm_, t_ in (('sigRHalf', .5), ('sigROne', 1), ('sigRTwo', 2), ('sigRThree', 3)):
+    add(nm_, f2(2*s_up/D_(t_)), 'A', 'shell-radius scatter ceiling 2 s_up / D(tau_e=%g) = %.4f dex' % (t_, 2*s_up/D_(t_)))
+add('tauFixLo', f2(.5*D_(.5)), 'A', '0.5 * D(0.5)')
+add('tauFixHi', f2(.5*D_(3)), 'A', '0.5 * D(3) = 0.3881 across tau_e = 0.5--3 (corrected from D(2)=0.35)')
+add('tauPhLo', f2(.25*D_(.5)), 'A', '0.25 * D(0.5)')
+add('tauPhHi', f2(.25*D_(3)), 'A', '0.25 * D(3)')
+
+st3 = json.load(open(RESULTS / 'scattering_kernel.json'))
+st3a = st3['super_eddington_gravity_share']; st3c = st3['extrema_summary']
+assert abs(1.0/rl - st3a['gravity_share_max_at_lambda1_k1']) < 1e-11
+add('gravMaxPct', round(100.0/rl), 'A')
+add('coreLo', st3c['fwhm_in_range_kms'][0], 'D')
+add('coreHi', st3c['fwhm_in_range_kms'][1], 'D')
+c05 = st3c['pure_conv_gauss_tau0p5']; c23 = st3c['pure_conv_gauss_tau2to3']
+r05 = st3c['rt_unscat_plus_scat_gauss_tau0p5']; r23 = st3c['rt_unscat_plus_scat_gauss_tau2to3']
+add('DconvHalfLo', f2(c05['D_eff_min']), 'C'); add('DconvHalfHi', f2(c05['D_eff_max']), 'C')
+add('sigTauConvHalfLo', f2(s_up/c05['D_eff_max']), 'C', 's_up / DconvHalfHi')
+add('sigTauConvHalfHi', f2(s_up/c05['D_eff_min']), 'C', 's_up / DconvHalfLo')
+add('DconvHiLo', f2(c23['D_eff_min']), 'C'); add('DconvHiHi', f2(c23['D_eff_max']), 'C')
+add('sigTauConvHiLo', f2(s_up/c23['D_eff_max']), 'C', 's_up / DconvHiHi')
+add('sigTauConvHiHi', f2(s_up/c23['D_eff_min']), 'C', 's_up / DconvHiLo')
+add('sigRConvHiLo', f2(2*s_up/c23['D_eff_max']), 'C', '2 s_up / DconvHiHi')
+add('sigRConvHiHi', f2(2*s_up/c23['D_eff_min']), 'C', '2 s_up / DconvHiLo')
+add('rtHalfBoostMax', round(100.0*r05['max_fractional_boost_over_core']), 'C')
+add('DrtHiLo', f2(r23['D_eff_min']), 'C'); add('DrtHiHi', f2(r23['D_eff_max']), 'C')
+
+sec('pipeline constants and v10 checks')
+
+try:
+    from astropy.cosmology import Planck18, FlatLambdaCDM
+    c70 = FlatLambdaCDM(H0=70.0, Om0=0.3)
+    dL_grid = [abs(2.0*math.log10(Planck18.luminosity_distance(z_).value / c70.luminosity_distance(z_).value)) for z_ in [3.36 + 0.05*i_ for i_ in range(77)]]
+    h0_val, om_val = f'{Planck18.H0.value:.1f}', f'{Planck18.Om0:.3f}'
+except ImportError:
+    def _dl_flat(z_, h0_, om_):
+        n_ = 400; dz_ = z_/n_
+        s_ = sum((1.0 if k_ in (0, n_) else (4.0 if k_%2 else 2.0))/math.sqrt(om_*(1.0+k_*dz_)**3 + (1.0-om_)) for k_ in range(n_+1))*dz_/3.0
+        return (1.0+z_)*s_/h0_
+    dL_grid = [abs(2.0*math.log10(_dl_flat(z_, 67.66, 0.30966) / _dl_flat(z_, 70.0, 0.3))) for z_ in [3.36 + 0.05*i_ for i_ in range(77)]]
+    h0_val, om_val = '67.7', '0.310'
+add('Hnot', h0_val, 'L'); add('OmM', om_val, 'L')
+add('Hcat', '70', 'L'); add('OmCat', '0.3', 'L')
+add('dCosmoL', f2(max(dL_grid)), 'A')
+add('dCosmoVK', f3(0.25*max(dL_grid)), 'A')
+for n_, v_ in (('fitWin', 5000), ('errFloor', 2), ('wnarLo', 30), ('wnarHi', 600), ('wbroadLo', 350),
+               ('wbroadHi', '12{,}000'), ('tauMax', 10), ('wabsLo', 50), ('wabsHi', 1500), ('nBootNp', 80), ('winWide', 6800)):
+    add(n_, v_, 'D')
+
+v10s = st2b
+chk1 = anc_chk
+chk2 = anc_chk['residuals_and_outliers']
+chk3 = anc_chk['window_sensitivity']
+chk4 = anc_chk['repeatability_and_bx26']
+w1_in = json.load(open(WIDTHS / 'regression_inputs.json'))
+g_map = {r_['source_id']: r_['y'] for r_ in w1_in['single_gaussian'] if r_['cls'] == 'LRD'}
+e_map = {r_['source_id']: r_['y'] for r_ in w1_in['exponential'] if r_['cls'] == 'LRD'}
+d_ge_med = statistics.median(g_map[s_] - e_map[s_] for s_ in g_map)
+add('NBICgauss', _w[chk1['bic_choice_counts']['LRD_single_gaussian']], 'C')
+add('NBIClor', chk1['bic_choice_counts']['LRD_lorentzian'], 'C')
+add('NBICexp', _w[chk1['bic_choice_counts']['LRD_exponential']], 'C')
+add('dWge', f3(d_ge_med), 'C')
+trip('DsigBic', chk1['bic_preferred4_LRD']['sigma_q'], f3, 'C')
+add('Fmad', f3(chk2['mad_normalized_dex']), 'C')
+add('FlooLo', f3(chk2['loo_sigma_min'][1]), 'C'); add('FlooHi', f3(chk2['loo_sigma_max'][1]), 'C')
+add('FblooLo', f2(chk2['loo_slope_min'][1]), 'C'); add('FblooHi', f2(chk2['loo_slope_max'][1]), 'C')
+add('rResSN', f2(chk2['residual_vs_logSNR_pearson'][0]), 'C'); add('pResSN', f2(chk2['residual_vs_logSNR_pearson'][1]), 'C')
+add('ratHiTwoLo', f'{chk2["A18_top2_ratios"][0][1]:.1f}', 'C')
+add('ratHiTwoHi', f'{chk2["A18_top2_ratios"][1][1]:.1f}', 'C')
+add('dWinMed', f3(chk3['win6800_noSII']['median_abs_dlogFWHM_dex']), 'C')
+trip('FsigWin', chk3['win6800_noSII']['LRD_sigma_q'], f3, 'C')
+add('NMultiLRD', _w[chk4['N_LRDs_with_multiple_QC_spectra']], 'C')
+add('NPairsDup', chk4['N_duplicate_pairs'], 'C')
+add('dLDupMed', f2(chk4['median_abs_dlogL_dex']), 'C')
+add('dWDupMed', f2(chk4['median_abs_dlogFWHM_dex']), 'C')
+trip('FsigLowSN', chk4['lowest_SNR_spectrum_choice_LRD_sigma_q'], f3, 'C')
+add('XsigSxZero', f3(chk4['bx26_sx0_LRD_sigma_q'][2]), 'C')
+add('XsigoSxZero', f3(chk4['bx26_sx0_ctrl_sigma_q'][2]), 'C')
+add('NXNoCutLRD', bm['LRD']['N'] - chk4['W4_candidates_LRD'], 'A')
+trip('XsigNoCut', chk4['bx26_no13_LRD_sigma_q'], f3, 'C')
+add('XdsigNoCut', neg(f3(chk4['bx26_no13_diff_q'][2])), 'C')
+o_sdss = json.load(open(DATA / 'sdss' / 'regression_results.json'))['regressions']['single_gaussian_QC']
+trip('Ssgb', o_sdss['slope'], f2, 'X')
+inf_esc = [100.0 * v for v in anc_chk['bic_best_infinite_escape_fraction_median'].values()]
+add('fEscInfLo', f'{min(inf_esc):.0f}', 'X'); add('fEscInfHi', f'{max(inf_esc):.0f}', 'X')
+add('recLG', f3(v10s['lor_matched_s005']['bayes_sigma_med_quantiles'][2]), 'C')
+add('recEightL', f3(v10s['lor_matched_s008']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitEightL', _w[v10s['lor_matched_s008']['bayes_hits_le_obs_Fsig']], 'C')
+add('recTenL', f3(v10s['lor_matched_s010']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitTenL', _w[v10s['lor_matched_s010']['bayes_hits_le_obs_Fsig']], 'C')
+tot10_all = tot10 + v10s['lor_matched_s010']['bayes_hits_le_obs_Fsig']
+add('hitTenAll', _w[tot10_all], 'A')
+add('nullDenThree', 300, 'A')
+b_null_e = v10s['exp_null_matched_s005']['bayes_slope_med_quantiles'][2]
+b_null_l = v10s['lor_null_matched_s005']['bayes_slope_med_quantiles'][2]
+hits_b0 = v10s['exp_null_matched_s005']['slope_hits_ge_obs_Fb'] + v10s['lor_null_matched_s005']['slope_hits_ge_obs_Fb']
+add('bNullMed', f2(b_null_e), 'C')
+add('hitSlopeNull', _w[hits_b0], 'C')
+k_iso_exp = math.sqrt(2.0)*math.log(2.0)/math.sqrt(3.0)
+rex_all = [wr[g_]['exponential']['ratio_median'] for g_ in ('main_E', 'Curtis_B_own', 'Curtis_A_own')]
+lam_iso_exp = [min((k_iso_exp/r_)**2 for r_ in rex_all), max((k_iso_exp/r_)**2 for r_ in rex_all)]
+lam_vir_exp = [min((0.964486/r_)**2 for r_ in rex_all), max((0.964486/r_)**2 for r_ in rex_all)]
+add('kIsoExp', f2(k_iso_exp), 'A')
+add('lamIsoExpLo', f2(lam_iso_exp[0]), 'A'); add('lamIsoExpHi', f2(lam_iso_exp[1]), 'A')
+add('lamVirExpLo', f2(lam_vir_exp[0]), 'A'); add('lamVirExpHi', f2(lam_vir_exp[1]), 'A')
+
+M = [(n_, v_, 'C' if st_ == 'N' else st_, nt_) for n_, v_, st_, nt_ in M]
+# Scan ms.tex plus any tables/*.tex files so macros used in generated tables are also included in numbers.tex.
+tex_sources = []
+ms_path = os.path.join(HERE, 'ms.tex')
+if os.path.exists(ms_path):
+    tex_sources.append(open(ms_path, encoding='utf-8').read())
+tab_dir = os.path.join(HERE, 'tables')
+if os.path.isdir(tab_dir):
+    for fn_ in sorted(os.listdir(tab_dir)):
+        if fn_.endswith('.tex'):
+            tex_sources.append(open(os.path.join(tab_dir, fn_), encoding='utf-8').read())
+SRC = re.sub(r'(?<!\\)%.*', '', '\n'.join(tex_sources))
+USED = {n_ for n_, *_ in M if n_ != '%' and re.search(r'\\%s(?![A-Za-z])' % n_, SRC)} if SRC else {n_ for n_, *_ in M if n_ != '%'}
+M_all = M
+M = [m_ for i, m_ in enumerate(M) if (m_[0] in USED) or (m_[0] == '%' and any(x[0] in USED for x in M[i+1:next((j for j in range(i+1, len(M)) if M[j][0] == '%'), len(M))]))]
+lines = ['%% numbers.tex -- generated by make_numbers.py (v11, 2026-11-14); do not edit by hand.',
+         '%% Write every macro as \\name{} in running text so that TeX does not swallow the following space.', '']
+for n, v, st, note in M:
+    if n == '%':
+        lines.append(f'\n%% ---------------- {v}')
+        continue
+    lines.append(f'\\newcommand{{\\{n}}}{{{v}}}')
+open(os.path.join(HERE, 'numbers.tex'), 'w', encoding='utf-8').write('\n'.join(lines)+'\n')
+json.dump({n: dict(value=v, in_manuscript=n in USED) for n, v, st, note in M_all if n != '%'}, open(RESULTS / 'numbers.json', 'w'), indent=1, ensure_ascii=False)
+print(len([1 for m_ in M_all if m_[0] != '%']), 'numbers computed;', len(USED), 'used in manuscript/tables and written to paper/numbers.tex')

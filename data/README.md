@@ -26,3 +26,6 @@ Other files in `results/`:
   injection–recovery medians), keyed by the name of the quantity.
 - `photometric_labels_grid.json`: scatter for the sample defined by photometric labels alone.
 - `shell_radius_budget.json`: the shell-radius scatter budget of Section 5.3 and its checks.
+- `scattering_kernel.json`: broadening and optical-depth sensitivity for Gaussian and top-hat cores convolved with an exponential scattering kernel (`analysis/10_scattering_kernel.py`).
+- `repeat_calibration.json`: empirical per-spectrum error floors from the 9 multi-spectrum LRDs, posterior refits with floors, one-sided 95% upper limits, BX26 sky deduplication, and refitted SDSS width offset (`analysis/11_repeat_calibration.py`).
+- `ancillary_checks.json`: BIC-preferred width regression, MAD and leave-one-out checks, and wide-window sensitivity summary (`analysis/12_ancillary_checks.py`).

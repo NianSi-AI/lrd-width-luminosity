@@ -172,5 +172,7 @@ out["orient"] = {
     "h0.3_0_60": ori(0, 60, 0.3),
     "h0.5_0_90": ori(0, 90, 0.5),
     "h1_0_90": ori(0, 90, 1.0),
+    "thin_45_90": ori(45, 90, 0),
+    "thin_60_90": ori(60, 90, 0),
 }
 json.dump(out, open(RESULTS / "robustness.json", "w"), indent=1, default=str)

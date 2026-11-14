@@ -8,25 +8,30 @@
 \colhead{Width measure or variant} & \colhead{$N$} & \colhead{$b$} & \colhead{$\sigma_{\rm int}$ (dex)} & \colhead{$N$} & \colhead{$\sigma_{\rm int}$ (dex)} & \colhead{$\Delta\sigma_{\rm int}$ (dex)}}
 \startdata
 \cutinhead{This work: six measures of width}
-Single-Gaussian FWHM & 29 & $0.17$ ($0.12$--$0.22$) & $0.054$ ($0.038$--$0.080$) & 15 & $0.154$ ($0.104$--$0.252$) & $-0.099$ ($-0.199$ to $-0.043$) \\
+Single-Gaussian FWHM\tablenotemark{a} & 29 & $0.17$ ($0.12$--$0.22$) & $0.054$ ($0.038$--$0.080$) & 15 & $0.154$ ($0.104$--$0.252$) & $-0.099$ ($-0.199$ to $-0.043$) \\
 Interquartile width $W_{50}$ & 29 & $0.13$ ($0.08$--$0.18$) & $0.051$ ($0.037$--$0.073$) & 15 & $0.147$ ($0.101$--$0.238$) & $-0.095$ ($-0.187$ to $-0.045$) \\
 Exponential FWHM & 29 & $0.14$ ($0.08$--$0.19$) & $0.051$ ($0.029$--$0.085$) & 15 & $0.169$ ($0.102$--$0.296$) & $-0.117$ ($-0.245$ to $-0.042$) \\
 Lorentzian FWHM & 29 & $0.16$ ($0.10$--$0.23$) & $0.062$ ($0.039$--$0.099$) & 15 & $0.271$ ($0.173$--$0.456$) & $-0.207$ ($-0.394$ to $-0.104$) \\
 Nonparametric FWHM & 29 & $0.15$ ($0.08$--$0.22$) & $0.076$ ($0.056$--$0.109$) & 15 & $0.155$ ($0.106$--$0.250$) & $-0.078$ ($-0.175$ to $-0.020$) \\
 Two-Gaussian FWHM & 29 & $0.09$ ($-0.02$ to $0.21$) & $0.118$ ($0.082$--$0.176$) & 15 & $0.214$ ($0.123$--$0.402$) & $-0.095$ ($-0.285$ to $0.013$) \\
-\cutinhead{This work: single-Gaussian FWHM, variants}
+\cutinhead{This work: single-Gaussian FWHM, error-floor and sample variants}
+Repeat floor, same grating ($+0.044$ dex)\tablenotemark{a} & 29 & $0.17$ ($0.12$--$0.22$) & $0.027$ ($0.002$--$0.063$) & 15 & $0.147$ ($0.093$--$0.248$) & $-0.120$ ($-0.224$ to $-0.054$) \\
+Repeat floor, all pairs ($+0.060$ dex)\tablenotemark{a} & 29 & $0.17$ ($0.11$--$0.23$) & $0.018$ ($0.001$--$0.056$) & 15 & $0.140$ ($0.083$--$0.243$) & $-0.121$ ($-0.226$ to $-0.053$) \\
 LSF width $\times0.5$ & 29 & $0.19$ ($0.13$--$0.26$) & $0.069$ ($0.049$--$0.100$) & 15 & $0.157$ ($0.106$--$0.258$) & $-0.088$ ($-0.190$ to $-0.028$) \\
 Three brightest LRDs removed & 26 & $0.09$ ($0.01$--$0.19$) & $0.040$ ($0.020$--$0.069$) & 15 & $0.154$ ($0.104$--$0.252$) & $-0.114$ ($-0.214$ to $-0.056$) \\
+LRDs without Balmer absorption & \NNoAbs{} & $\FbNoAbs{}$ ($\FbNoAbslo{}$--$\FbNoAbshi{}$) & $\FsigNoAbs{}$ ($\FsigNoAbslo{}$--$\FsigNoAbshi{}$) & \NOther{} & $\Fsigo{}$ ($\Fsigolo{}$--$\Fsigohi{}$) & $\FdsigNoAbs{}$ ($\FdsigNoAbslo{}$ to $\FdsigNoAbshi{}$) \\
 Two widest other sources removed & 29 & $0.17$ ($0.12$--$0.22$) & $0.054$ ($0.038$--$0.080$) & 13 & $0.097$ ($0.061$--$0.172$) & $-0.043$ ($-0.119$ to $0.002$) \\
 \cutinhead{Table of \citet{BaccusXu2026}}
-All records & 48 & $0.25$ ($0.20$--$0.31$) & $0.058$ ($0.045$--$0.077$) & 97 & $0.144$ ($0.122$--$0.172$) & $-0.085$ ($-0.117$ to $-0.057$) \\
+All records\tablenotemark{b} & 48 & $0.25$ ($0.20$--$0.31$) & $0.058$ ($0.045$--$0.077$) & 97 & $0.144$ ($0.122$--$0.172$) & $-0.085$ ($-0.117$ to $-0.057$) \\
 Shared records removed & 28 & $0.25$ ($0.17$--$0.34$) & $0.075$ ($0.054$--$0.109$) & 88 & $0.139$ ($0.117$--$0.168$) & $-0.064$ ($-0.100$ to $-0.024$) \\
-Matched pairs\tablenotemark{a} & 36 & \nodata & \nodata & 36 & \nodata & $-0.065$ ($-0.105$ to $-0.024$) \\
+Matched pairs\tablenotemark{c} & 36 & \nodata & \nodata & 36 & \nodata & $-0.065$ ($-0.105$ to $-0.024$) \\
 \cutinhead{SDSS DR7 quasars \citep{Shen2011}}
 Multi-Gaussian FWHM (catalog) & \nodata & \nodata & \nodata & 3755 & $0.208$ ($0.203$--$0.213$) & \nodata \\
-Single-Gaussian FWHM, refitted\tablenotemark{b} & \nodata & \nodata & \nodata & 224 & $0.123$ ($0.112$--$0.136$) & \nodata \\
+Single-Gaussian FWHM, refitted\tablenotemark{d} & \nodata & $0.10$ ($0.05$--$0.15$) & \nodata & 224 & $0.123$ ($0.112$--$0.136$) & \nodata \\
 \enddata
-\tablecomments{Posterior medians, with 95\% intervals in parentheses. $b$ is the slope of $\log{\rm FWHM}$ on $\log L$, and $\Delta\sigma_{\rm int}$ is the scatter of the LRDs minus that of the other sources. Each width measure is regressed on the luminosity and covariance of its own fit. The luminosity is $L_{\rm H\alpha}$ for our sample and for SDSS, and $L_{\rm bol}$ for the table of \citet{BaccusXu2026}.}
-\tablenotetext{a}{Pairs matched in grating, redshift ($|\Delta z|<0.5$), and luminosity ($|\Delta\log L|<0.2$). The entry is the difference of the residual standard deviations, with its bootstrap interval.}
-\tablenotetext{b}{A random 300 of the 3755 quasars, refitted with the procedure of Section~\ref{sec:fit}; 224 pass the rules of Section~\ref{sec:sample}.}
+\tablecomments{Posterior medians, with equal-tailed 95\% intervals in parentheses. $b$ is the slope of $\log{\rm FWHM}$ on $\log L$ (shown in the LRDs column for the refitted SDSS row as well), and $\Delta\sigma_{\rm int}$ is the scatter of the LRDs minus that of the other sources. Each width measure is regressed on the luminosity and covariance of its own fit ($L_{\rm H\alpha}$ for our sample and SDSS; $L_{\rm bol}$ for \citealt{BaccusXu2026}).}
+\tablenotetext{a}{One-sided 95\% upper limits (95th posterior percentiles) on LRD $\sigma_{\rm int}$ are \FsigUp{}~dex under formal errors, \FsigFlrSameUp{}~dex with the $+0.044$~dex same-grating repeat-spectrum floor added in quadrature to $C_{yy}$, and \FsigFlrAllUp{}~dex with the $+0.060$~dex all-pairs floor (Section~\ref{sec:tests}).}
+\tablenotetext{b}{The \NXLRD{} LRD records correspond to \NXLRDuniq{} unique objects on the sky; deduplicating to one record per object gives $\sigma_{\rm int}=\XsigDedup{}$~dex (\XsigDeduplo{}--\XsigDeduphi{}).}
+\tablenotetext{c}{Pairs matched in grating, redshift ($|\Delta z|<0.5$), and luminosity ($|\Delta\log L|<0.2$). The entry is the difference of the residual standard deviations, with its bootstrap interval.}
+\tablenotetext{d}{A random 300 of the 3755 quasars refitted with the procedure of Section~\ref{sec:fit}; 224 pass the rules of Section~\ref{sec:sample}.}
 \end{deluxetable*}

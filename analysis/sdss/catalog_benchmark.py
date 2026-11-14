@@ -45,4 +45,7 @@ out = dict(
     x_range=[float(x.min()), float(x.max())],
     fwhm_min=float(10 ** y.min()),
 )
+if rows and "z" in rows[0]:
+    zs = np.array([float(r["z"]) for r in rows])
+    out["z_range"] = [float(zs.min()), float(zs.max())]
 json.dump(out, open(RESULTS / "sdss_catalog_benchmark.json", "w"), indent=1)

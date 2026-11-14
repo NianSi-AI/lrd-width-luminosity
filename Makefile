@@ -1,9 +1,9 @@
 PY ?= python
 
-.PHONY: analysis numbers tables figures paper
+.PHONY: analysis numbers tables figures paper check-reproduction measurement-summary
 
 analysis:
-	for s in analysis/0[1-7]_*.py analysis/09_*.py; do $(PY) $$s || exit 1; done
+	for s in analysis/0[1-7]_*.py analysis/09_*.py analysis/11_*.py analysis/10_*.py analysis/12_*.py; do $(PY) $$s || exit 1; done
 
 numbers:
 	$(PY) scripts/make_numbers.py
@@ -14,11 +14,11 @@ tables:
 figures:
 	$(PY) scripts/make_figures.py
 
-paper: numbers tables figures
-	cd paper && pdflatex ms && bibtex ms && pdflatex ms && pdflatex ms
+paper: tables numbers figures
+	cd paper && pdflatex -interaction=nonstopmode ms && bibtex ms && pdflatex -interaction=nonstopmode ms && pdflatex -interaction=nonstopmode ms
 
-.PHONY: check-reproduction measurement-summary
 check-reproduction:
-	python scripts/check_reproduction.py
+	$(PY) scripts/check_reproduction.py
+
 measurement-summary:
-	python scripts/make_measurement_summary.py
+	$(PY) scripts/make_measurement_summary.py

@@ -1,0 +1,25 @@
+{
+  "upload_type": "dataset",
+  "title": "A Tight Broad-line Width–Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses: data and code",
+  "creators": [
+    {
+      "name": "Wang, Haoyu",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0005-9117-0842"
+    },
+    {
+      "name": "Zhao, Xinmiao",
+      "affiliation": "Department of Astronomy, School of Physics, Peking University, Beijing 100871, People's Republic of China",
+      "orcid": "0000-0002-5651-4356"
+    }
+  ],
+  "description": "<p>Per-source broad H&alpha; line measurements (six measures of width, with covariances) for 29 little red dots and 15 other broad-line sources refitted from public JWST/NIRSpec grating spectra, repeat-spectrum error-floor calibrations, SDSS DR7 quasars refitted with the same procedure, sample selection records, regression and injection-recovery simulation code, scripts generating every number, table, and figure of the accompanying paper, and its AASTeX v7.0.1 manuscript source.</p><p>Code is released under the MIT license; measurements, tables, figures, and documentation under CC BY 4.0. Third-party material keeps its own terms (see ATTRIBUTION.md).</p>",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "little red dots",
+    "active galactic nuclei",
+    "broad-line region",
+    "black hole masses",
+    "JWST"
+  ]
+}

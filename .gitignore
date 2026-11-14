@@ -11,14 +11,13 @@ data/sdss/selfcheck.json
 
 # LaTeX build products
 paper/*.aux
-paper/*.bbl
 paper/*.blg
 paper/*.log
 paper/*.out
-paper/ms.pdf
 paper/figures/*.png
 paper/submission_source/
 .ruff_cache/
 
 # Regenerated long-running experiment products
 work/
+paper/submission_source_arxiv/

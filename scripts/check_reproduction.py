@@ -15,8 +15,8 @@ sys.path.insert(0,str(ROOT/'analysis/hierarchical'))
 from numba_sampler import selfcheck
 print('PASS hierarchical target:',selfcheck())
 subprocess.run([sys.executable,str(ROOT/'analysis/hierarchical/run_simulations.py'),'--selfcheck-only'],check=True)
-for script in ['make_profile_counts.py','make_measurement_summary.py','make_numbers.py']:
+for script in ['make_profile_counts.py','make_measurement_summary.py','make_tables.py','make_numbers.py']:
  subprocess.run([sys.executable,str(ROOT/'scripts'/script)],cwd=ROOT,check=True)
 for p,expected in json.loads((DATA/'measurements/paper_reference_hashes.json').read_text()).items():
  assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==expected,p
-print('PASS 459 macro values and 332 manuscript definitions unchanged')
+print('PASS 637 macro values and 366 manuscript/table definitions unchanged')
