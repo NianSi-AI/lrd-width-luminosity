@@ -12,6 +12,22 @@ O=Path('.')
 W=Path('work/jwst')
 LINES=['Halpha','Hbeta','Pabeta','Pagamma','HeI10830','OI8446']
 PILOT={}
+# Run settings; analysis/jwst/refit_spectra.py exposes them on the command line. The defaults are the paper's fits.
+LSF_SCALES=[1.,.7,1.3]          # LSF FWHM multipliers; 0.5 gives the halved-LSF variant
+WINDOW_KMS=None                 # fit half-width; None = 5000 km/s (4500 for Hbeta); 6800/8000 for the window variants
+MASK_REST_UM=()                 # contaminating lines removed from the window (vacuum rest um)
+MASK_HALFWIDTH_KMS=0.
+SII_REST_UM=(0.671829,0.673267) # [S II] 6716,6731 vacuum; inside +-8000 km/s of Halpha, outside +-6800
+NBOOT_NP=200                    # nonparametric pixel-noise bootstrap; the stored covariances use 200 draws
+# Quality rule of paper Section 2.3: bounds reject a fit only for the broad-line width and, when the absorption
+# screen is adopted, for its depth or width (same rule as data/sample/selection_audit.json, the SDSS refits and the
+# injection suites). Other parameters at a bound (e.g. W_narrow, F_NII6585) are recorded but do not reject.
+BROAD_WIDTH_PARAMETERS={'W_broad1','W_broad2'}
+ABSORPTION_BOUND_PARAMETERS={'tau_abs','W_abs'}
+REDUCED_CHI2_MAX=2.
+
+def settings():
+ return dict(lsf_FWHM_scales=list(LSF_SCALES),window_halfwidth_kms=WINDOW_KMS,mask_rest_um=list(MASK_REST_UM),mask_halfwidth_kms=MASK_HALFWIDTH_KMS,nonparametric_Nbootstrap=NBOOT_NP)
 
 def native(x):
  if isinstance(x,np.ndarray):return x.tolist()
@@ -32,6 +48,16 @@ def null_model(d,absorption):
   if best is None or np.sum(f.fun**2)<np.sum(best.fun**2):best=f
  x=xx.copy();x[free]=best.x;chi=float(np.sum(best.fun**2));return dict(absorption=absorption,chi2=chi,BIC=chi+len(free)*np.log(len(d['y'])),k=len(free),N=len(d['y']),names=names,params=x.tolist(),success=bool(best.success))
 
+def quality_tests(f,lsf_fwhm_kms):
+ """Section 2.3 tests, in the order of the failure reasons of data/sample/selection_audit.json."""
+ bounds=set(f['bound_parameters'])
+ tests=dict(broad_SNR_ge5=(f['broad_SNR_conditional'] or 0)>=5,delta_BIC_null_ge6=f['delta_BIC_null']>=6,
+  width_gt_LSF=f['FWHM_intrinsic_kms'] is not None and f['FWHM_intrinsic_kms']>lsf_fwhm_kms,
+  broad_width_not_at_bound=not bounds&BROAD_WIDTH_PARAMETERS,optimizer_converged=bool(f['success']) and np.isfinite(f['chi2']),
+  reduced_chi2_below_threshold=f['reduced_chi2']<REDUCED_CHI2_MAX,
+  adopted_absorption_parameters_not_at_bounds=not (f['absorption'] and bounds&ABSORPTION_BOUND_PARAMETERS))
+ return {k:bool(v) for k,v in tests.items()}
+
 def metrics(f,d,null):
  co=c.components(f['params'],d,f['kind'],f['absorption']);p=dict(zip(f['names'],f['params']));m=c.widths(d['grid'],co['intrinsic_broad'])
  f['FWHM_intrinsic_kms']=float(p['W_broad1']) if f['kind']!='double_gaussian' else m['FWHM_kms'] if m else None
@@ -43,19 +69,22 @@ def metrics(f,d,null):
  mask=abs(v)<=5000
  f['broad_transmitted_flux_pm5000_erg_s_cm2']=float(np.trapezoid((b*transmission)[mask],v[mask])/1000*c.FUNIT)
  f['total_target_transmitted_flux_pm5000_erg_s_cm2']=float(np.trapezoid(((n+b)*transmission)[mask],v[mask])/1000*c.FUNIT)
- lsf=c.C/d['R_center']*d['lsf_scale'];conditions=dict(broad_SNR_ge5=(f['broad_SNR_conditional'] or 0)>=5,delta_BIC_null_ge6=f['delta_BIC_null']>=6,broad_FWHM_gt_LSF=f['FWHM_intrinsic_kms'] is not None and f['FWHM_intrinsic_kms']>lsf,all_parameters_away_from_bounds=not f['bound_parameters'],reduced_chi2_lt2=f['reduced_chi2']<2)
- f['quality_conditions']=conditions;f['quality_pass_five_conditions']=all(conditions.values());f['usable_numerical_fit']=f['success'] and np.isfinite(f['chi2']);f['quality_pass']=f['quality_pass_five_conditions'] and f['usable_numerical_fit'];f['LSF_FWHM_kms']=lsf
+ lsf=c.C/d['R_center']*d['lsf_scale'];tests=quality_tests(f,lsf)
+ f['quality_tests']=tests;f['quality_failures']=[k for k,ok in tests.items() if not ok];f['quality_pass']=not f['quality_failures'];f['LSF_FWHM_kms']=lsf
+ # Diagnostic only (the stricter any-parameter-at-bound rule of the first release); never used for selection.
+ f['all_parameters_away_from_bounds']=not f['bound_parameters']
  return f
 
 def fit_line(target,line):
- base=c.load_line(O/target['input_path'],target['z_fit'],line,1.)
+ load=dict(window=WINDOW_KMS,mask_rest_um=MASK_REST_UM,mask_halfwidth_kms=MASK_HALFWIDTH_KMS)
+ base=c.load_line(O/target['input_path'],target['z_fit'],line,1.,**load)
  out=dict(file_id=target['file_id'],file=target['file'],source_id=target['source_id'],line=line,z_fit=target['z_fit'],status=base['status'],cases=[])
  if base['status']!='ready':out['coverage']=base;return out
  out['status']='fitted';out['data']={k:base[k] for k in ['v','lo','hi','y','err','quoted_err','R_center','grating','valid_fraction','center_um','window','Nvalid','wavelength_um']}
  cache=PILOT.get((target['file'],line));cache_ok=cache is not None and np.isclose(cache['literature']['z'],target['z_fit'],rtol=0,atol=1e-12) and np.array_equal(np.array(cache['data']['y']),base['y']) and np.array_equal(np.array(cache['data']['err']),base['err'])
  out['pilot_cache_candidates_reused']=bool(cache_ok)
- for scale in [1.,.7,1.3]:
-  d=base if scale==1 else c.load_line(O/target['input_path'],target['z_fit'],line,scale)
+ for scale in LSF_SCALES:
+  d=base if scale==1 else c.load_line(O/target['input_path'],target['z_fit'],line,scale,**load)
   nulls=[null_model(d,False),null_model(d,True)];null=nulls[1] if nulls[0]['BIC']-nulls[1]['BIC']>6 else nulls[0]
   case=dict(lsf_FWHM_scale=scale,null_candidates=nulls,null=null,all_fits=[],selected_by_model=[],main=None,nonparametric_main=None)
   cached_case=next((q for q in cache['cases'] if q['lsf_FWHM_scale']==scale),None) if cache_ok else None
@@ -71,7 +100,7 @@ def fit_line(target,line):
   # NP numbers remain ancillary; they never replace the prescribed Gaussian main width.
   main=case['main']
   if main['delta_BIC_null']>=6 and (main['broad_SNR_conditional'] or 0)>0:
-   try:case['nonparametric_main']=c.nonparametric(d,main,nboot=80 if scale==1 and main['quality_pass'] else 0,seed=20261111)
+   try:case['nonparametric_main']=c.nonparametric(d,main,nboot=NBOOT_NP if scale==1 and main['quality_pass'] else 0,seed=20261111)
    except Exception as e:case['nonparametric_failure']=dict(error=str(e),traceback=traceback.format_exc())
   out['cases'].append(case)
  return out
@@ -79,7 +108,7 @@ def fit_line(target,line):
 def one_file(target):
  start=time.monotonic();dest=W/(target['file_id']+'.json')
  if dest.exists():return dict(file_id=target['file_id'],status='already_saved',file=target['file'])
- output=dict(target=target,status='completed',lines=[],input_sha256=hashlib.sha256((O/target['input_path']).read_bytes()).hexdigest())
+ output=dict(target=target,status='completed',fit_settings=settings(),lines=[],input_sha256=hashlib.sha256((O/target['input_path']).read_bytes()).hexdigest())
  for line in LINES:
   try:output['lines'].append(fit_line(target,line))
   except Exception as e:

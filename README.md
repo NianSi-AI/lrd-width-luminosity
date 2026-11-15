@@ -35,7 +35,9 @@ This installs `numpy`, `scipy`, `matplotlib`, and `astropy`. Exact package versi
 
 ## Reproducing the paper
 
-Every numerical result, table, and figure in the manuscript is generated automatically from the stored results:
+The statistical analyses run from the stored per-source measurements in `data/` (exceptions are listed below), and
+every table, figure, and macro of the manuscript is written by scripts from the stored results (a few macros are
+entered as constants in `scripts/make_numbers.py`):
 
 ```sh
 python scripts/make_tables.py     # paper/tables/ (Tables 1-3 and Appendix Table B1)
@@ -47,7 +49,11 @@ cd paper && pdflatex ms && bibtex ms && pdflatex ms && pdflatex ms
 or simply `make paper`. No numbers are hand-typed in `paper/ms.tex`.
 
 The stored results in `data/results/` are regenerated from the per-source measurements via `make analysis`
-(which runs all fast scripts; `08_photosphere_simulations.py` runs 2000 simulations per sample separately):
+(which runs all fast scripts; `08_photosphere_simulations.py` runs 2000 simulations per sample separately). Exceptions:
+`narrow_degeneracy_refit.json`, `frozen_fixed_narrow_audit.json`, and `parent49_injection.json` require refitting the
+DJA spectra (`analysis/jwst/`, `analysis/injection/parent49_recovery.py`), `sdss_catalog_benchmark.json` requires the
+Shen et al. (2011) catalogue, and `membership_full_covariance.tsv`, `photometric_labels_grid.json`, and
+`shell_radius_budget.json` are stored without a generating script.
 
 | Script | Result file in `data/results/` | Contents |
 |---|---|---|
@@ -63,7 +69,8 @@ The stored results in `data/results/` are regenerated from the per-source measur
 | `10_scattering_kernel.py` | `scattering_kernel.json` | broadening and optical-depth sensitivity for Gaussian and top-hat cores convolved with an exponential scattering kernel |
 | `11_repeat_calibration.py` | `repeat_calibration.json` | repeat-spectrum error floors from 9 multi-spectrum LRDs (`data/widths/repeat_pairs_22.tsv`), one-sided 95% upper limits, high-S/N scatter, BX26 sky deduplication, and SDSS width offset |
 | `12_ancillary_checks.py` | `ancillary_checks.json` | BIC-preferred width regression, MAD/leave-one-out diagnostics, residual-vs-S/N check, and wide-window summary |
-| `13_parent_and_repeat_checks.py` | `parent_covariance_audit.json`, `repeat_random_effects.json`, `exterior_potential_check.json` | In-band parent-sample regressions (`N = 29..39`), repeat-pair reweightings, 43-spectrum bivariate random-effects models, and exterior-envelope potential bounds |
+| `13_parent_and_repeat_checks.py` | `parent_covariance_audit.json`, `repeat_random_effects.json`, `exterior_potential_check.json` | In-band parent-sample regressions (`N = 29..39`), repeat-pair reweightings, 43-spectrum bivariate random-effects models (additive and multiplicative unmodeled variance, free G395H offset), and exterior-envelope potential bounds |
+| `14_review_checks.py` | `review_checks.json` | Analysis-variant summary with one-sided 95% limits (Figure 2b), [O III]-anchored variant with the absorption rule re-applied, constant-width model, photospheric partial slope without RUBIES-UDS-29813, error-inflation tests, grating and primary-spectrum offsets, SDSS without the chi^2 rule, and shell-slope predictions |
 
 Run `python scripts/check_reproduction.py` for a fast end-to-end verification of posteriors, hierarchical likelihoods,
 and SHA-256 reference hashes of `data/results/numbers.json` and `paper/numbers.tex`.
@@ -72,13 +79,18 @@ and SHA-256 reference hashes of `data/results/numbers.json` and `paper/numbers.t
 
 Included: all per-source broad Hα measurements (six width definitions with full covariances), repeat-spectrum pair
 measurements, sample selection audits, injection–recovery and hierarchical simulation code and summaries, and the full
-manuscript build pipeline.
+manuscript build pipeline. The tabulation of new per-spectrum fit records into `data/linefits/`, `data/sample/`, and
+`data/widths/` is not scripted, except for the selection audit (`analysis/sample/make_selection_audit.py`) and the
+halved-LSF regression inputs (`analysis/jwst/make_lsf_half_inputs.py`).
 
-Not redistributed (needed only to re-fit raw detector spectra from scratch; see
+Not redistributed (needed only to re-fit raw spectra; see
 [`analysis/REPRODUCING_MEASUREMENTS.md`](analysis/REPRODUCING_MEASUREMENTS.md)):
 
 - **Raw 1D FITS spectra** from the public DAWN JWST Archive and SDSS DR17 (`third_party/external_data.tsv` lists every URL
-  and SHA-256 checksum; `scripts/fetch_calibration.sh` downloads the NIRSpec dispersion tables).
+  and SHA-256 checksum; `scripts/fetch_jwst.py` downloads and verifies the DJA spectra, `scripts/fetch_calibration.sh`
+  the NIRSpec dispersion tables at a pinned msaexp commit). The spectral refits and the injection–recovery suites run
+  from these spectra and the repository alone; the SDSS refits also need the download list
+  `data/sdss/download_successes.json`, which is not included.
 - **Third-party catalogues without a redistribution license**, specifically Shen et al. (2011) and Kocevski et al. (2026).
 
 ## Use of AI tools

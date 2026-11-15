@@ -112,7 +112,7 @@
       "median_dlogFWHM_signed_dex": 0.01205317041910181,
       "median_abs_dlogW50_dex": 0.02139767812259663,
       "median_dlogW50_signed_dex": 0.02139767812259663,
-      "B15_nonparam_fesc_pct_median": 73.92305523927861,
+      "B15_nonparam_flux_below_vesc_pct_median": 73.92305523927861,
       "B15_N_valid": 15
     },
     "win8000_maskSII": {
@@ -149,7 +149,7 @@
       "median_dlogFWHM_signed_dex": 0.014759411760142616,
       "median_abs_dlogW50_dex": 0.03943018751981553,
       "median_dlogW50_signed_dex": 0.03943018751981553,
-      "B15_nonparam_fesc_pct_median": 74.31808092977609,
+      "B15_nonparam_flux_below_vesc_pct_median": 74.31808092977609,
       "B15_N_valid": 15
     }
   },

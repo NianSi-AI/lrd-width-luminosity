@@ -179,9 +179,75 @@ add('FsigNarMinUp', f3(reg_w30['sigma_p95_onesided']), 'C', f"one-sided 95% uppe
 n_oiii_30 = sum(1 for x in f44_aud if x['cls'] == 'LRD' and x.get('OIII_W_kms') is not None and x['OIII_W_kms'] <= 30.01)
 assert n_oiii_30 == 21
 add('NOIIIUnres', n_oiii_30, 'C', 'frozen LRDs whose [O III] 5007 fit hits the 30 km/s lower bound')
-loosen_pct = 5 * round(20.0 * (s_oiii_up / s_up - 1.0))
-assert loosen_pct == 30
-add('narCeilLoosenPct', loosen_pct, 'A', f'percentage loosening from formal s_up to [O III]-anchored ceiling (exact: {100*(s_oiii_up/s_up-1):.1f}%, rounded to 5%)')
+
+rc = json.load(open(RESULTS / 'review_checks.json'))
+rcv = {v_['key']: v_ for v_ in rc['variants']}
+s_cons = rc['variant_extremes']['max_p95_onesided']
+assert rc['variant_extremes']['max_p95_key'] == 'oiii_qc'
+add('FsigCons', f2(s_cons), 'C', f'conservative ceiling: largest one-sided 95% limit across fit, narrow-line and sample variants ({s_cons:.5f} dex, [O III] anchoring with QC re-applied)')
+loosen_pct = 5 * round(20.0 * (s_cons / s_up - 1.0))
+assert loosen_pct == 35
+add('narCeilLoosenPct', loosen_pct, 'A', f'percentage loosening from s_up to the conservative ceiling (exact: {100*(s_cons/s_up-1):.1f}%, rounded to 5%)')
+oq = rc['oiii_anchored_qc_consistent']
+add('FsigOIIIqc', f3(oq['sigma_med']), 'C', '[O III]-anchored, absorption-bound rule re-applied (N=27; approximate, see review_checks.json)')
+add('FsigOIIIqcUp', f3(oq['sigma_p95_onesided']), 'C', f"one-sided 95% limit for the same ({oq['sigma_p95_onesided']:.5f} dex)")
+add('NOIIIqc', oq['N'], 'C')
+trip('FsigWinWide', rcv['win8000_maskSII']['sigma_q'], f3, 'C', '+-8000 km/s window with [S II] masked (window_and_wing_checks.json)')
+add('winWider', 8000, 'D')
+nbc = rc['narrow_bound_counts']
+assert nbc['free_narrow_at_30'] == 17 and nbc['free_narrow_at_600'] == 2 and nbc['OIII_measured'] == 23 and nbc['OIII_at_30'] == 21
+add('NNarThirty', nbc['free_narrow_at_30'], 'C', 'LRDs whose free narrow FWHM sits at the 30 km/s lower bound')
+add('NOIIIMeas', nbc['OIII_measured'], 'C', 'LRDs with an [O III] 5007 width measurement')
+add('dWNarRms', f2(nbc['rms_dlogFWHM_OIII_minus_base']), 'C', f"rms Delta log FWHM ([O III]-anchored minus baseline) over 29 LRDs ({nbc['rms_dlogFWHM_OIII_minus_base']:.4f})")
+add('dWNarMax', f2(nbc['max_abs_dlogFWHM']), 'C', f"max |Delta log FWHM| ({nbc['max_abs_source']})")
+ps3 = rc['parent_sn3_added']
+add('NFailSNthreeWeak', _w[ps3['N_dBIC_lt6']], 'C', 'of the 9 added S/N>=3 parent LRDs, number with Delta BIC_null < 6')
+cw = rc['constant_width']['LRD26']
+trip('FsigConst', cw['sigma_q'], f3, 'C', 'b = 0 (constant-width) model for the 26 LRDs below the bright end')
+add('WConstMed', int(round(cw['FWHM_median_kms'], -1)), 'C', 'median FWHM of the 26 LRDs (km/s)')
+add('LConstMin', f'{cw["logL_range"][0]:.1f}', 'C'); add('LConstMax', f'{cw["logL_range"][1]:.1f}', 'C')
+phl = rc['photosphere_leverage']
+for p_, k_ in (('JA', 'Curtis_A_own'), ('JB', 'Curtis_B_own')):
+    assert phl[k_]['RUBIES-UDS-29813_is_most_negative']
+    trip('bp'+p_+'drop', phl[k_]['drop_RUBIES-UDS-29813']['b_ph_q'], lambda v: neg(f2(v)), 'C', 'partial L_ph slope without RUBIES-UDS-29813')
+add('dLphOut', f1(-0.5 * (phl['Curtis_A_own']['RUBIES-UDS-29813_dlogLph_at_fixed_LHa'] + phl['Curtis_B_own']['RUBIES-UDS-29813_dlogLph_at_fixed_LHa'])), 'C', 'RUBIES-UDS-29813 offset in log L_ph at fixed L_Ha (dex, sign dropped)')
+ei = rc['error_inflation_summary']
+add('dsigInflLo', neg(f2(ei['diff_med_min'])), 'C', 'most negative median Delta sigma_int under error inflation/floors (ours and BX26)')
+add('dsigInflHi', neg(f2(ei['diff_med_max'])), 'C', 'least negative median Delta sigma_int under error inflation/floors')
+assert ei['diff_upper95_max'] < 0
+for n_, v_ in (('inflLo', '1.5'), ('inflHi', '2.8'), ('inflFlrLo', '0.044'), ('inflFlrHi', '0.08')):
+    add(n_, v_, 'D')
+rd = rc['repeat_diagnostics']
+assert rd['G395H_minus_G395M_objects'] == 7 and rd['G395H_narrower_objects'] == 7
+add('NGHobj', 'seven', 'C', 'LRDs with both G395H and G395M passing spectra')
+add('dWGH', neg(f2(rd['G395H_minus_G395M_object_median'])), 'C', 'median per-object log FWHM(G395H) - log FWHM(G395M)')
+add('offGH', f3(rd['free_offset_model']['offset_mean_dex']), 'C', 'free G395H offset in the random-effects model (posterior mean)')
+add('offGHerr', f3(rd['free_offset_model']['offset_sd_dex']), 'C')
+add('dWPrim', neg(f3(rd['primary_minus_secondary_mean'])), 'C', 'mean log FWHM(primary) - log FWHM(secondary) over the 14 primary pairs')
+add('NGM', rd['G395M_only']['N'], 'C')
+trip('FsigGM', rd['G395M_only']['sigma_q'], f3, 'C', 'LRDs with G395M primary spectra only')
+add('FsigGMUp', f3(rd['G395M_only']['sigma_p95_onesided']), 'C')
+trip('FsigSwap', rd['swap42232']['sigma_q'], f3, 'C', 'RUBIES-EGS-42232 primary replaced by its highest-S/N G395M spectrum')
+add('FsigSwapUp', f3(rd['swap42232']['sigma_p95_onesided']), 'C')
+add('FsigLowSNUp', f3(rcv['lowest_snr']['sigma_p95_onesided']), 'C', 'one-sided 95% limit choosing the lowest-S/N passing spectrum')
+sc_ = rc['sdss_no_chi2_rule']
+trip('SsgNoChi', sc_['no_chi2']['sigma_q'], f3, 'C', 'refitted SDSS quasars with the reduced chi^2 rule removed')
+add('NSsgChi', sc_['N_added'], 'C')
+add('WSdssSNfail', int(round(sc_['SNR_failed_FWHM_median_kms'], -1)), 'C', 'median single-Gaussian FWHM of SDSS refits failing S/N >= 5 (km/s)')
+add('NSdssCap', _w[sc_['N_SNR_failed_at_12000']], 'C')
+ss_ = rc['shell_slopes_tau2to3']
+add('shellSlopeLo', f2(ss_['core_convolved'][0]), 'C', 'lowest predicted shell slope at tau_e = 2-3 (core-convolved, R ~ L^1/2)')
+add('shellSlopeHi', f2(ss_['pure_wing'][1]), 'C', 'highest predicted pure-wing shell slope at tau_e = 2-3 (fixed R)')
+add('shellPureLo', f2(ss_['pure_wing'][0]), 'C', 'lowest predicted pure-wing shell slope at tau_e = 2-3 (R ~ L^1/2)')
+add('shellConvHi', f2(ss_['core_convolved'][1]), 'C', 'highest predicted core-convolved shell slope at tau_e = 2-3 (fixed R)')
+cp_ = rc['ceers746_skyfire299']
+add('sepPair', f'{cp_["sep_arcsec"]:.0f}', 'C', 'separation of CEERS-746 and Skyfire-299 (arcsec)')
+qe = rc['qso1_eq3_check']
+add('QSOdBICfree', neg(f1(qe['fixed_narrow_dBIC_vs_free_null'])), 'C', 'QSO1 fixed-narrow broad fit vs free-narrow no-broad model, Delta BIC')
+re_mult = t13_4['random_effects_models']['multiplicative_fixed_primary_x']
+add('reMultUp', f3(re_mult['all_43_spectra']['sigma_p95_onesided']), 'C', f"one-sided 95% limit, random effects with unmodeled variance f^2 C_yy ({re_mult['all_43_spectra']['sigma_p95_onesided']:.5f})")
+add('reMultScale', f1(re_mult['all_43_spectra']['f_med']), 'C', 'posterior median error-scale factor f')
+add('reAddFloor', f3(t13_4['random_effects_models']['exact_2dcov_fixed_primary_x']['all_43_spectra']['f_med']), 'C', 'posterior median additive floor f (dex)')
 
 assert t13_1['N_parent_clean_total'] == 50 and t13_1['N_parent_valid_inband'] == 49
 r38 = t13_1['regressions_full_2x2_covariance']['row4_plus_valid_SNge3_38']
@@ -223,7 +289,6 @@ trip('FsigFlrAll', fl_a['LRD_sigma_q'], f3, 'C', 'LRD sigma_int with +0.060 dex 
 add('FsigFlrAllUp', f3(fl_a['LRD_p95_onesided']), 'C', f"one-sided 95% upper limit with +0.060 dex floor ({fl_a['LRD_p95_onesided']:.5f} dex)")
 trip('FsigoFlrAll', fl_a['other_sigma_q'], f3, 'C')
 trip('FdsigFlrAll', fl_a['diff_q'], lambda v: neg(f3(v)), 'C')
-add('FsigCeilRep', '0.06', 'A', 'conservative two-decimal 95% upper limit once repeat-spectrum variance is included (0.056 same-grating, 0.049 all-pairs)')
 add('FdsigFlrTwo', neg(f2(fl_s['diff_q'][2])), 'A', 'median Delta sigma_int with repeat-spectrum floor (-0.12 dex)')
 add('NSNfif', rep_cal['high_snr_LRDs_ge15']['N'], 'C', 'LRDs with broad-line S/N >= 15')
 add('rmsSNfif', f3(rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof2_dex']), 'C', 'raw residual SD (ddof=2) of the 12 S/N>=15 LRDs (%.5f dex; ddof=1 is %.5f)' % (rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof2_dex'], rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof1_dex']))
@@ -372,8 +437,8 @@ sec('QSO1 diagnostic')
 for n, v in (('QSOsn', '3.4'), ('QSOW', 2107), ('QSOWerr', 302), ('QSOmu', '7.5'), ('QSOmuErr', '1.5'),
              ('QSOresCor', '0.17'), ('QSOresErr', '0.08')):
     add(n, v, 'V')
-add('QSOcompNar', 560, 'L', "D'Eugenio et al. (2025) / Juodzbalis et al. (2025) intermediate broad component FWHM (km/s)")
-add('QSOcompBrd', 2000, 'L', "D'Eugenio et al. (2025) / Juodzbalis et al. (2025) broad wing component FWHM (km/s)")
+add('QSOcompNar', 560, 'L', "D'Eugenio et al. (2026) / Juodzbalis et al. (2026) intermediate broad component FWHM (km/s)")
+add('QSOcompBrd', 2000, 'L', "D'Eugenio et al. (2026) / Juodzbalis et al. (2026) broad wing component FWHM (km/s)")
 qso_t2 = [x for x in t13_2['critical_10_plus_QSO1'] if x['source_id'] == 'A2744-QSO1'][0]
 qso_w150 = qso_t2['refit_W150_sensitivity']
 qso_sig_y = qso_w150['FWHM_err_cond_kms'] / (qso_w150['FWHM_kms'] * math.log(10.0))
@@ -464,13 +529,14 @@ add('brdRingHi', f1(rh/2.0), 'A', 'max (FWHM/v_K)/k for k=2 (1.5)')
 
 g_k3 = [e for e in t13_5['opacity_temperature_grid'] if abs(e['kappa_cm2_g'] - 1e-3) < 1e-12][0]['by_temperature']
 g_k4 = [e for e in t13_5['opacity_temperature_grid'] if abs(e['kappa_cm2_g'] - 1e-4) < 1e-12][0]['by_temperature']
-del_k3_lo = g_k3['T_sample_max_6381K']['DeltaM_over_MEdd']
-del_k3_hi = g_k3['T_sample_min_3637K']['DeltaM_over_MEdd']
-del_k4_max = g_k4['T_sample_min_3637K']['DeltaM_over_MEdd']
-dv_k3_lo = g_k3['T_sample_max_6381K']['Delta_vesc_pct_at_lambda1']
-dv_k3_hi = g_k3['T_sample_min_3637K']['Delta_vesc_pct_at_lambda1']
-dv_k4_max = g_k4['T_sample_min_3637K']['Delta_vesc_pct_at_lambda1']
-lam_k4_max = g_k4['T_sample_min_3637K']['relaxed_lambda_ceiling_from_1']
+# exact finite-r_out expressions, including the (1 - R_ph/r_out) factor
+del_k3_lo = g_k3['T_sample_max_6381K']['DeltaM_over_MEdd_finite_rout100']
+del_k3_hi = g_k3['T_sample_min_3637K']['DeltaM_over_MEdd_finite_rout100']
+del_k4_max = g_k4['T_sample_min_3637K']['DeltaM_over_MEdd_finite_rout100']
+dv_k3_lo = g_k3['T_sample_max_6381K']['Delta_vesc_pct_at_lambda1_finite_rout100']
+dv_k3_hi = g_k3['T_sample_min_3637K']['Delta_vesc_pct_at_lambda1_finite_rout100']
+dv_k4_max = g_k4['T_sample_min_3637K']['Delta_vesc_pct_at_lambda1_finite_rout100']
+lam_k4_max = g_k4['T_sample_min_3637K']['relaxed_lambda_ceiling_finite_rout100']
 assert abs(dv_k3_lo - 100.0 * (math.sqrt(1.0 + del_k3_lo) - 1.0)) < 1e-10
 assert abs(dv_k3_hi - 100.0 * (math.sqrt(1.0 + del_k3_hi) - 1.0)) < 1e-10
 assert abs(dv_k4_max - 100.0 * (math.sqrt(1.0 + del_k4_max) - 1.0)) < 1e-10
@@ -540,10 +606,13 @@ add('kappaSolar', '0.34', 'D')
 add('vKdrop', f'{100*(1-math.sqrt(0.34/0.398)):.0f}', 'A')
 
 sec('SDSS refitted with our single Gaussian and flux fractions')
-add('NSsgDraw', 300, 'X'); add('NSsg', 224, 'X')
-add('Ssg', '0.123', 'X'); add('Ssglo', '0.112', 'X'); add('Ssghi', '0.136', 'X'); add('SsgTwo', '0.12', 'A')
+add('NSsgDraw', 300, 'X')
+o_sdss0 = json.load(open(DATA / 'sdss' / 'regression_results.json'))['regressions']['single_gaussian_QC']
+add('NSsg', o_sdss0['N'], 'C', 'refitted SDSS quasars passing QC (data/sdss/regression_results.json)')
+trip('Ssg', o_sdss0['sigma_dex'], f3, 'C', 'refitted SDSS single-Gaussian sigma_int (data/sdss/regression_results.json)')
+add('SsgTwo', f2(o_sdss0['sigma_dex'][2]), 'A')
 add('SsgCat', '0.185', 'X')
-add('sdssRatSame', f'{0.123240/m["LRD"]["sigma"][2]:.1f}', 'A')
+add('sdssRatSame', f'{o_sdss0["sigma_dex"][2]/m["LRD"]["sigma"][2]:.1f}', 'A')
 add('fKepNpLo', '38', 'X'); add('fKepNpHi', '44', 'X')
 add('fEscNpLo', '23', 'X'); add('fEscNpHi', '28', 'X')
 add('fEscBicLo', '24', 'X'); add('fEscBicHi', '28', 'X')
@@ -581,6 +650,9 @@ add('virW', '2.06', 'V'); add('virL', '0.47', 'V')
 add('sigMvir', f'{math.ceil(2.06*s_up*100)/100:.2f}', 'A', f'2.06 * s_up ceiling (unrounded: {2.06*s_up:.6f} dex; s_up = {s_up:.6f} dex)')
 add('sigMvirMed', f2(2.06*s0), 'A', '2.06 * Fsig (formal-error median: %.4f dex)' % (2.06*s0))
 add('sigMvirRep', f2(2.06*fl_s['LRD_p95_onesided']), 'A', '2.06 * s_95(same-grating floor) = %.4f dex' % (2.06*fl_s['LRD_p95_onesided']))
+add('sigMvirCons', f'{math.ceil(2.06*s_cons*100)/100:.2f}', 'A', f'2.06 * conservative ceiling, rounded up (unrounded: {2.06*s_cons:.5f} dex)')
+add('sigLamCons', f2(2*s_cons), 'A', f'2 * conservative ceiling ({2*s_cons:.4f} dex)')
+add('oriThinRatioCons', f1(o['thin_0_45']/s_cons), 'A', 'oriThin / conservative ceiling')
 
 sec('scattering (unified on s_up, across tau_e = 0.5--3)')
 add('rusA', 428, 'V'); add('rusB', 370, 'V')
@@ -633,7 +705,7 @@ add('Hcat', '70', 'L'); add('OmCat', '0.3', 'L')
 add('dCosmoL', f2(max(dL_grid)), 'A')
 add('dCosmoVK', f3(0.25*max(dL_grid)), 'A')
 for n_, v_ in (('fitWin', 5000), ('errFloor', 2), ('wnarLo', 30), ('wnarHi', 600), ('wbroadLo', 350),
-               ('wbroadHi', '12{,}000'), ('tauMax', 10), ('wabsLo', 50), ('wabsHi', 1500), ('nBootNp', 80), ('winWide', 6800)):
+               ('wbroadHi', '12{,}000'), ('tauMax', 10), ('wabsLo', 50), ('wabsHi', 1500), ('nBootNp', 200), ('winWide', 6800)):
     add(n_, v_, 'D')
 
 lor_scen = st2b
@@ -695,7 +767,10 @@ add('kIsoExp', f2(k_iso_exp), 'A')
 add('lamIsoExpLo', f2(lam_iso_exp[0]), 'A'); add('lamIsoExpHi', f2(lam_iso_exp[1]), 'A')
 add('lamVirExpLo', f2(lam_vir_exp[0]), 'A'); add('lamVirExpHi', f2(lam_vir_exp[1]), 'A')
 
-M = [(n_, v_, 'C' if st_ == 'N' else st_, '') for n_, v_, st_, nt_ in M]
+add('ratTightLo', f1(min(Ao['sigma_fixed_photosphere'][2]/Ao['line_only']['sigma'][2], Bo['sigma_fixed_photosphere'][2]/Bo['line_only']['sigma'][2])), 'A', 'ratio of fixed-photosphere to line-only scatter (dex), Samples A and B')
+add('ratTightHi', f1(max(Ao['sigma_fixed_photosphere'][2]/Ao['line_only']['sigma'][2], Bo['sigma_fixed_photosphere'][2]/Bo['line_only']['sigma'][2])), 'A')
+
+M = [(n_, v_, 'C' if st_ == 'N' else st_, nt_) for n_, v_, st_, nt_ in M]
 # Scan ms.tex plus any tables/*.tex files so macros used in generated tables are also included in numbers.tex.
 tex_sources = []
 ms_path = os.path.join(HERE, 'ms.tex')
@@ -712,12 +787,15 @@ USED |= {'dvEscKthreeLo', 'dvEscKthreeHi', 'dvEscKfourMax'}
 M_all = M
 M = [m_ for i, m_ in enumerate(M) if (m_[0] in USED) or (m_[0] == '%' and any(x[0] in USED for x in M[i+1:next((j for j in range(i+1, len(M)) if M[j][0] == '%'), len(M))]))]
 lines = ['%% numbers.tex -- generated by make_numbers.py; do not edit by hand.',
-         '%% Write every macro as \\name{} in running text so that TeX does not swallow the following space.', '']
+         '%% Write every macro as \\name{} in running text so that TeX does not swallow the following space.',
+         '%% Provenance tag after each macro: R/C read from stored results in data/; A arithmetic on other values;',
+         '%% D design choice of the analysis; L literature value; V/X entered by hand in make_numbers.py (see note).', '']
 for n, v, st, note in M:
     if n == '%':
         lines.append(f'\n%% ---------------- {v}')
         continue
-    lines.append(f'\\newcommand{{\\{n}}}{{{v}}}')
+    tag = f'  % [{st}]' + (f' {note}' if note else '')
+    lines.append(f'\\newcommand{{\\{n}}}{{{v}}}{tag}')
 open(os.path.join(HERE, 'numbers.tex'), 'w', encoding='utf-8').write('\n'.join(lines)+'\n')
 json.dump({n: dict(value=v, in_manuscript=n in USED) for n, v, st, note in M_all if n != '%'}, open(RESULTS / 'numbers.json', 'w'), indent=1, ensure_ascii=False)
 print(len([1 for m_ in M_all if m_[0] != '%']), 'numbers computed;', len(USED), 'used in manuscript/tables and written to paper/numbers.tex')

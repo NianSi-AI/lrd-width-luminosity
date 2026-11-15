@@ -2,16 +2,24 @@
 QC-failing clean-label LRDs and A2744-QSO1, anchored to [O III] lambda5007 where
 detected in-band (or fixed to 150 km s^-1 and 30 km s^-1).
 
-Requires external DJA spectra fetched via `python scripts/fetch_jwst.py --download`
-(with `LRDWIDTH_SPECTRA` pointing to the spectrum directory, default `work/jwst_spectra`).
+Requires external DJA spectra fetched via `python scripts/fetch_jwst.py --download --qso1`
+(with `LRDWIDTH_SPECTRA` pointing to the spectrum directory, default `work/jwst_spectra`) and the
+dispersion tables of `scripts/fetch_calibration.sh`. All other inputs are in the repository:
+  data/jwst/targets.json                      spectrum paths and SHA-256
+  data/linefits/uniform_linefits.tsv          released LSF x1 Halpha main fits (width, S/N, BIC, Delta BIC_null)
+                                              and physical_source_group of every spectrum
+  data/widths/parent_and_repeat_covariances.json["failed_clean_lrd_21"]
+                                              audit of the 21 QC-failing clean-label LRDs (identical to
+                                              data/results/parent_covariance_audit.json["failed_21_audit"])
+  data/qso1/qso1_fit.json                     released A2744-QSO1 fit
 Writes data/results/narrow_degeneracy_refit.json, data/results/narrow_refit_11sources.tsv,
 and data/jwst/failed_templates_20valid.json.
 """
 import collections
 import csv
+import hashlib
 import json
 import math
-import sys
 from pathlib import Path
 
 import numpy as np
@@ -22,9 +30,59 @@ from scipy.optimize import least_squares
 import os
 from lrdwidth import fit_batch as tfit
 from lrdwidth import linefit as core
-from lrdwidth.paths import DATA, RESULTS, ROOT
+from lrdwidth.paths import DATA, RESULTS, ROOT, WIDTHS
 
 SPECTRA_DIR = Path(os.environ.get("LRDWIDTH_SPECTRA", str(ROOT / "work" / "jwst_spectra")))
+FETCH_HINT = ("download them with `python scripts/fetch_jwst.py --download --qso1 --out work/jwst_spectra` "
+              "or point LRDWIDTH_SPECTRA to an existing copy")
+
+
+def load_targets():
+    """data/jwst/targets.json keyed by file_id, with physical_source_group from data/linefits/uniform_linefits.tsv."""
+    with (DATA / "linefits" / "uniform_linefits.tsv").open() as fp:
+        groups = {r["file_id"]: r["physical_source_group"] for r in csv.DictReader(fp, delimiter="\t") if r["line"] == "Halpha"}
+    targets = {t["file_id"]: dict(t, physical_source_group=groups[t["file_id"]])
+               for t in json.loads((DATA / "jwst" / "targets.json").read_text())}
+    assert len(targets) == 204
+    return targets
+
+
+def stored_halpha_fits():
+    """Released single-Gaussian Halpha main fits (LSF x1) from data/linefits/uniform_linefits.tsv, keyed by file_id.
+    The null-model BIC is recovered exactly as BIC + Delta BIC_null."""
+    out = {}
+    with (DATA / "linefits" / "uniform_linefits.tsv").open() as fp:
+        for r in csv.DictReader(fp, delimiter="\t"):
+            if r["line"] == "Halpha" and r["status"] == "fitted":
+                bic, dbic = float(r["main_BIC"]), float(r["main_delta_BIC_null"])
+                out[r["file_id"]] = {
+                    "FWHM_intrinsic_kms": float(r["main_FWHM_intrinsic_kms"]),
+                    "broad_SNR_conditional": float(r["main_broad_conditional_SNR"]),
+                    "delta_BIC_null": dbic,
+                    "BIC": bic,
+                    "null_BIC": bic + dbic,
+                }
+    return out
+
+
+def load_failed_21():
+    return json.loads((WIDTHS / "parent_and_repeat_covariances.json").read_text())["failed_clean_lrd_21"]
+
+
+def load_qso1():
+    """Released A2744-QSO1 fit and the expected location of its spectrum under SPECTRA_DIR."""
+    qso = json.loads((DATA / "qso1" / "qso1_fit.json").read_text())
+    return qso, SPECTRA_DIR / "spectra" / Path(qso["spectrum"]).name
+
+
+def require_spectra(expected):
+    """expected: {path: sha256}. Stop before any fitting if a spectrum is missing or differs from the frozen version."""
+    missing = [p for p in expected if not Path(p).is_file()]
+    if missing:
+        raise SystemExit(f"{len(missing)} of {len(expected)} required spectra missing (first: {missing[0]}); {FETCH_HINT}")
+    changed = [p for p, sha in expected.items() if hashlib.sha256(Path(p).read_bytes()).hexdigest() != sha]
+    if changed:
+        raise SystemExit(f"{len(changed)} spectra differ from the frozen versions (first: {changed[0]}); {FETCH_HINT}")
 
 # Register [O III] lambda5007 vacuum wavelength [um] (NIST ASD: 5008.240 A; 4959 at 4960.295 A)
 OIII_5007_UM = 0.5008240
@@ -39,7 +97,8 @@ FILTER_PASSBANDS_UM = {
     "F290LP": (2.87, 5.35),
 }
 
-# Manuscript Eq. (3) baseline parameters (verified in t1_parent_covariance_audit.py)
+# Manuscript Eq. (3) baseline intercept and slope as used for the stored refits (the full-covariance posterior of
+# analysis/13_parent_and_repeat_checks.py gives a_mean = 3.34587, b = 0.1700390)
 EQ3_A = 3.3458939
 EQ3_B = 0.1700390
 
@@ -264,23 +323,22 @@ def fit_halpha_fixed_wnarrow(d, w_fixed: float, orig_free_null_bic: float = None
     return sel, null
 
 
-def run_self_checks(targets):
-    """Assert exact bit-level reproduction of stored Skyfire-23289 and A2744-QSO1 fits."""
-    # 1. Skyfire-23289 stored working JSON
-    fid_sky = "dcb6120e80ef0dd7"
-    work_sky = json.loads((T2_DIR / "working" / f"{fid_sky}.json").read_text())
-    ha_sky = next(v for v in work_sky["lines"] if v["line"] == "Halpha")
-    case_sky = next(c for c in ha_sky["cases"] if abs(float(c["lsf_FWHM_scale"]) - 1.0) < 1e-6)
-    stored_sky = case_sky["main"]
-    d_sky = core.load_line(T2_DIR / targets[fid_sky]["input_path"], float(targets[fid_sky]["z_fit"]), "Halpha", 1.0)
+SELF_CHECK_FILE_ID = "dcb6120e80ef0dd7"  # Skyfire-23289
+
+
+def run_self_checks(targets, stored):
+    """Assert exact reproduction of the released Skyfire-23289 and A2744-QSO1 fits."""
+    # 1. Skyfire-23289 released main fit (uniform_linefits.tsv)
+    fid_sky = SELF_CHECK_FILE_ID
+    stored_sky = stored[fid_sky]
+    d_sky = core.load_line(SPECTRA_DIR / targets[fid_sky]["input_path"], float(targets[fid_sky]["z_fit"]), "Halpha", 1.0)
     re_sky, _ = fit_halpha_free_pipeline(d_sky)
     assert abs(re_sky["FWHM_intrinsic_kms"] - stored_sky["FWHM_intrinsic_kms"]) < 1e-4
     assert abs(re_sky["broad_SNR_conditional"] - stored_sky["broad_SNR_conditional"]) < 1e-5
     assert abs(re_sky["delta_BIC_null"] - stored_sky["delta_BIC_null"]) < 1e-4
 
-    # 2. A2744-QSO1 stored S4_QSO1_fit.json
-    qso_json = json.loads((DATA_DIR / "task8_20261112_v1" / "S4_QSO1_fit.json").read_text())
-    qso_fits = CODE_DIR / qso_json["spectrum"]
+    # 2. A2744-QSO1 released fit (data/qso1/qso1_fit.json)
+    qso_json, qso_fits = load_qso1()
     d_qso = core.load_line(qso_fits, float(qso_json["z"]), "Halpha", 1.0)
     re_qso, null_qso = fit_halpha_free_pipeline(d_qso)
     assert abs(re_qso["FWHM_intrinsic_kms"] - qso_json["FWHM_kms"]) < 1e-4
@@ -290,13 +348,9 @@ def run_self_checks(targets):
 
 
 def main():
-    HERE.mkdir(parents=True, exist_ok=True)
-    targets = {t["file_id"]: t for t in json.loads((DATA / "jwst" / "targets.json").read_text())}
-    d_qso, qso_json, null_qso_free = run_self_checks(targets)
-
-    
-    t1_out = json.loads((HERE / "t1_output.json").read_text())
-    failed_21 = t1_out["failed_21_audit"]
+    targets = load_targets()
+    stored = stored_halpha_fits()
+    failed_21 = load_failed_21()
     valid_20 = [r for r in failed_21 if r["any_spectrum_in_passband"]]
     assert len(valid_20) == 20
 
@@ -304,6 +358,16 @@ def main():
     targets_by_grp = collections.defaultdict(list)
     for fid, t in targets.items():
         targets_by_grp[t["physical_source_group"]].append(t)
+
+    # Every spectrum that may be read: self-check, the 20 templates, their sibling spectra, and A2744-QSO1
+    qso_json, qso_path = load_qso1()
+    needed = {SELF_CHECK_FILE_ID} | {r["file_id"] for r in valid_20}
+    needed |= {t["file_id"] for r in valid_20 for t in targets_by_grp[r["physical_source_group"]]}
+    expected = {SPECTRA_DIR / targets[f]["input_path"]: targets[f]["sha256"] for f in sorted(needed)}
+    expected[qso_path] = qso_json["sha256"]
+    require_spectra(expected)
+
+    d_qso, qso_json, null_qso_free = run_self_checks(targets, stored)
 
     
     frozen_lrd = [
@@ -322,15 +386,11 @@ def main():
         fid = r["file_id"]
         grp = r["physical_source_group"]
         z_fit = float(r["z_fit"])
-        fits_path = SPECTRA_DIR / targets[fid]["path"]
+        fits_path = SPECTRA_DIR / targets[fid]["input_path"]
         d_ha = core.load_line(fits_path, z_fit, "Halpha", 1.0)
 
-        # Read original stored working JSON
-        work = json.loads((T2_DIR / "working" / f"{fid}.json").read_text())
-        ha_line = next(v for v in work["lines"] if v["line"] == "Halpha")
-        case1 = next(c for c in ha_line["cases"] if abs(float(c["lsf_FWHM_scale"]) - 1.0) < 1e-6)
-        orig_main = case1["main"]
-        orig_null = case1["null"]
+        # Null-model BIC of the released free-W_narrow fit (LSF x1)
+        orig_null = {"BIC": stored[fid]["null_BIC"]}
 
         # Measure [O III] 5007 on same spectrum first, then check sibling grating spectra if needed
         oiii_same = fit_oiii_doublet(fits_path, z_fit)
@@ -340,7 +400,7 @@ def main():
             for t_alt in targets_by_grp[grp]:
                 if t_alt["file_id"] == fid:
                     continue
-                cand_o3 = fit_oiii_doublet(T2_DIR / t_alt["input_path"], z_fit)
+                cand_o3 = fit_oiii_doublet(SPECTRA_DIR / t_alt["input_path"], z_fit)
                 if cand_o3.get("in_passband") and cand_o3.get("SNR_5007", 0.0) >= 3.0 and cand_o3.get("delta_BIC_5007", -99.0) >= 6.0:
                     oiii_used = cand_o3
                     oiii_origin = f"sibling_spectrum:{t_alt['file_id']}"
@@ -448,9 +508,12 @@ def main():
             phys_logL = float(r["literature_log10_LHa_erg_s"])
             phys_L_source = f"published_broad_LHa ({r['paper_primary']})"
         else:
-            # Hviding+2025 objects without tabulated broad Halpha flux: total model narrow+broad flux gives
-            # a strict upper bound; use 0.5 * total target flux (typical broad fraction ~0.5-0.7 in LRDs)
-            # bounded below frozen median if faint
+            # Hviding+2025 objects without a tabulated broad Halpha flux: adopt the full narrow Halpha flux F_narrow
+            # of the fixed-W_narrow no-broad null fit (null_ad, i.e. all Halpha line flux of that model, [N II]
+            # excluded) as a ceiling on the broad flux, with a floor of L = 1e40 erg/s. No broad-fraction factor is
+            # applied and the frozen-29 median luminosity is not used as a floor. (data/jwst/parent49_criteria.json
+            # describes this branch as "total narrow+broad ceiling / empirical LRD draw"; only the ceiling is
+            # implemented, here and in analysis/injection/parent49_recovery.py.)
             tot_flux = float(null_ad["params"][null_ad["names"].index("F_narrow")]) * core.FUNIT
             L_tot = max(tot_flux * 4.0 * math.pi * dl_cm ** 2, 1e40)
             phys_logL = math.log10(L_tot)
@@ -477,7 +540,7 @@ def main():
     # Also refit A2744-QSO1!
     z_qso = float(qso_json["z"])
     mu_qso = float(qso_json["mu"])
-    oiii_qso = fit_oiii_doublet(CODE_DIR / qso_json["spectrum"], z_qso)
+    oiii_qso = fit_oiii_doublet(qso_path, z_qso)
     # In QSO1 G395M, [O III] 5007 has S/N = 2.78 (< 3), so primary rule assigns 150.0 km/s;
     # we report BOTH 150.0 km/s (primary rule) and 30.0 km/s (same-spectrum ML & IFU narrow width <100 km/s)
     qso_fit_30, _ = fit_halpha_fixed_wnarrow(d_qso, 30.0, null_qso_free["BIC"])

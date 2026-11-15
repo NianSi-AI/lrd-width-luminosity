@@ -51,6 +51,9 @@ def build_tree(target_dir, mode="apj_named"):
             elif mode == "apj_anonymous":
                 txt = txt.replace(r"\documentclass[twocolumn,linenumbers]{aastex701}", r"\documentclass[twocolumn,linenumbers,anonymous]{aastex701}")
                 txt = txt.replace(",pdfauthor={Haoyu Wang and Xinmiao Zhao}", "")
+                # The Zenodo record lists the authors, so the DOI would break anonymity.
+                txt, n_doi = re.subn(r"archived at\s*\\dataset\[doi:[^\]]+\]\{[^}]+\}", "archived in a public repository (DOI withheld for review)", txt)
+                assert n_doi == 1 and "zenodo" not in txt.lower(), "Zenodo DOI left in the anonymous build"
         open(os.path.join(target_dir, f), "w", encoding="ascii").write(txt)
     for f in ("refs.bib", "refs_ads_20261113.bib"):
         t = "\n".join(l for l in open(os.path.join(H, f), encoding="utf-8").read().split("\n") if not l.lstrip().startswith("%"))

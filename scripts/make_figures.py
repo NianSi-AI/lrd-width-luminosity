@@ -73,7 +73,19 @@ xq = math.log10(qso['L_delensed_erg_s']); yq = math.log10(qso['FWHM_kms']); eq =
 exq = math.hypot(math.sqrt(qso['log_cov_xy'][0][0]), qso['mu_error']/qso['mu']/math.log(10))
 a1.errorbar(xq, yq, xerr=exq, yerr=eq, fmt='none', ecolor=INK, elinewidth=.7, zorder=6)
 a1.scatter(xq, yq, s=34, marker='D', facecolor='white', edgecolor=INK, linewidth=.9, zorder=7)
+# A2744-QSO1 with the narrow-line FWHM fixed at 150 km/s (narrow_degeneracy_refit.json)
+q1 = [x_ for x_ in json.load(open(RESULTS / 'narrow_degeneracy_refit.json'))['critical_10_plus_QSO1'] if x_['source_id'] == 'A2744-QSO1'][0]['refit_W150_sensitivity']
+xq2 = q1['log10_LHa_delensed_erg_s']; yq2 = math.log10(q1['FWHM_kms']); eq2 = q1['FWHM_err_cond_kms']/q1['FWHM_kms']/math.log(10)
+a1.plot([xq, xq2], [yq, yq2], color=INK, lw=.6, ls=(0, (1.5, 1.5)), zorder=5)
+a1.errorbar(xq2, yq2, xerr=exq, yerr=eq2, fmt='none', ecolor=INK, elinewidth=.7, zorder=6)
+a1.scatter(xq2, yq2, s=30, marker='D', facecolor=INK, edgecolor='white', linewidth=.6, zorder=7)
 a1.annotate('A2744-QSO1', (xq, yq), xytext=(6, 7), textcoords='offset points', fontsize=8, color=INK)
+# label the three most luminous LRDs, which set the slope
+_off = {'RUBIES-EGS-42046': (-3, 6, 'bottom'), 'RUBIES-EGS-55604': (-7, -2, 'top'), 'RUBIES-EGS-49140': (-6, 0, 'center')}
+for t_ in sorted([t for t in G if t['cls'] == 'LRD'], key=lambda t: -t['x'])[:3]:
+    dx_, dy_, va_ = _off.get(t_['source_id'], (-4, 5, 'bottom'))
+    a1.annotate(t_['source_id'].replace('RUBIES-', ''), (t_['x']+43, t_['y']), xytext=(dx_, dy_), textcoords='offset points',
+                fontsize=6.3, color=RED, ha='right', va=va_)
 a1.legend(handles=[Line2D([], [], marker='o', color=RED, mec='white', ms=5.5, lw=1.3, label='LRDs (29)'),
                    Line2D([], [], marker='^', color=BLUE, mec='white', ms=6, lw=1.3, ls=(0, (4, 2)), label='other broad-line sources (15)')],
           loc='lower right', handlelength=2.6, borderaxespad=.6)
@@ -97,7 +109,7 @@ a2.legend(handles=[Line2D([], [], marker='o', color=RED, mec='white', ms=5.5, lw
                    Line2D([], [], marker='^', color=BLUE, mec='white', ms=5.5, lw=1.3, ls=(0, (4, 2)), label='comparison sources (97)'),
                    Line2D([], [], marker='o', color='none', mec=MUTE, mfc='white', ms=5, label='also in our sample')],
           loc='lower right', handlelength=2.6, borderaxespad=.6)
-a2.set_xlim(43.55, 45.35); kms_axis(a2, 540, 7600)
+a2.set_xlim(43.55, 45.35); kms_axis(a2, 640, 5200, (1000, 1500, 2000, 3000, 4000, 5000))
 a2.set_xlabel(r'$\log\,(L_{\rm bol}\,/\,{\rm erg\,s^{-1}})$, from broad H$\alpha$'); a2.set_ylabel(r'broad H$\alpha$ FWHM  (km s$^{-1}$)')
 a2.text(.04, .95, '(b) Baccus & Xu table', transform=a2.transAxes, va='top', fontsize=9.5)
 fig.subplots_adjust(left=.075, right=.99, bottom=.135, top=.975, wspace=.22); save(fig, 'Figure1')
@@ -109,31 +121,58 @@ r2 = json.load(open(RESULTS / 'robustness.json'))
 rows = [('single-Gaussian FWHM', 'W1_single_gaussian'), (r'interquartile width $W_{50}$', 'W1_nonparametric_W50'),
         ('exponential FWHM', 'W1_exponential'), ('Lorentzian FWHM', 'W1_lorentzian'),
         ('nonparametric FWHM', 'W1_nonparametric_FWHM'), ('two-Gaussian FWHM', 'W1_double_gaussian')]
-fig, ax = plt.subplots(figsize=(W1, 3.75)); y = 0; yt = []; yl = []
-def head(t, yy): ax.text(-.03, yy, t, transform=ax.get_yaxis_transform(), ha='right', va='center', fontsize=8.6, fontweight='bold')
-def row(lab, qL, qO):
-    global y
-    for q, col, mk, dy in ((qL, RED, 'o', -.17), (qO, BLUE, '^', .17)):
+rc = json.load(open(RESULTS / 'review_checks.json'))
+RV = {v_['key']: v_ for v_ in rc['variants']}
+S_CONS = rc['variant_extremes']['max_p95_onesided']
+sd = json.load(open(DATA / 'sdss' / 'regression_results.json'))['regressions']['single_gaussian_QC']['sigma_dex']
+fig, (ax, bx) = plt.subplots(1, 2, figsize=(W2, 3.9))
+state = dict(y=0, yt=[], yl=[])
+def head(a_, t, st):
+    a_.text(-.03, st['y'], t, transform=a_.get_yaxis_transform(), ha='right', va='center', fontsize=8.2, fontweight='bold'); st['y'] += 1
+def row(a_, st, lab, qL, qO=None, up=None):
+    y_ = st['y']
+    for q, col, mk, dy in ((qL, RED, 'o', -.17 if qO is not None else 0.), (qO, BLUE, '^', .17)):
         if q is None: continue
-        ax.plot([q[0], q[4]], [y+dy]*2, color=col, lw=.9, solid_capstyle='butt')
-        ax.plot([q[1], q[3]], [y+dy]*2, color=col, lw=2.6, solid_capstyle='butt')
-        ax.plot(q[2], y+dy, marker=mk, color=col, mec='white', mew=.6, ms=5.2 if mk == 'o' else 5.6, zorder=5)
-    yt.append(y); yl.append(lab); y += 1
-head('This work', y); y += 1
-for lab, k in rows: row(lab, r1[k]['LRD']['sigma'], r1[k]['other']['sigma'])
-row(r'LSF width $\times0.5$', r2['frozen_LSFhalf']['LRD']['sigma'], r2['frozen_LSFhalf']['other']['sigma'])
-y += .35; head('Baccus & Xu', y); y += 1
-row('single-Gaussian FWHM', r2['bx_main']['LRD']['sigma'], r2['bx_main']['other']['sigma'])
-sd = [0.112282, None, 0.123240, None, 0.136016]
-ax.axvspan(sd[0], sd[4], color=INK, alpha=.16, lw=0, zorder=0); ax.axvline(sd[2], color=INK, lw=.8, zorder=1)
-ax.text(sd[2]+.008, 8.35, 'SDSS quasars', va='center', ha='left', fontsize=8.3, color=INK)
-ax.axvspan(.05, .08, color=RED, alpha=.07, lw=0, zorder=0)
-ax.set_yticks(yt); ax.set_yticklabels(yl); ax.set_ylim(y-.35, -.7); ax.set_xlim(0, .47); ax.set_xlabel(r'intrinsic scatter $\sigma_{\rm int}$ (dex)')
-ax.tick_params(axis='y', which='both', left=False, right=False)
-ax.legend(handles=[Line2D([], [], marker='o', color=RED, mec='white', ms=5.2, lw=.9, label='LRDs'),
-                   Line2D([], [], marker='^', color=BLUE, mec='white', ms=5.6, lw=.9, label='other broad-line sources')],
+        a_.plot([q[0], q[4]], [y_+dy]*2, color=col, lw=.9, solid_capstyle='butt')
+        a_.plot([q[1], q[3]], [y_+dy]*2, color=col, lw=2.6, solid_capstyle='butt')
+        a_.plot(q[2], y_+dy, marker=mk, color=col, mec='white', mew=.6, ms=5.0 if mk == 'o' else 5.4, zorder=5)
+    if up is not None:
+        a_.plot(up, y_, marker='<', color=RED, mfc='white', mew=.8, ms=4.2, zorder=6)
+    st['yt'].append(y_); st['yl'].append(lab); st['y'] += 1
+def finish(a_, st, xmax, fs=8.0):
+    a_.set_yticks(st['yt']); a_.set_yticklabels(st['yl'], fontsize=fs); a_.set_ylim(st['y']-.35, -.7); a_.set_xlim(0, xmax)
+    a_.set_xlabel(r'intrinsic scatter $\sigma_{\rm int}$ (dex)'); a_.tick_params(axis='y', which='both', left=False, right=False)
+    a_.axvspan(sd[0], sd[4], color=INK, alpha=.16, lw=0, zorder=0); a_.axvline(sd[2], color=INK, lw=.8, zorder=1)
+# (a) width definitions
+head(ax, 'This work', state)
+for lab, k in rows: row(ax, state, lab, r1[k]['LRD']['sigma'], r1[k]['other']['sigma'])
+state['y'] += .35; head(ax, 'Baccus & Xu', state)
+row(ax, state, 'single-Gaussian FWHM', r2['bx_main']['LRD']['sigma'], r2['bx_main']['other']['sigma'])
+finish(ax, state, .47, 8.3)
+ax.text(sd[2]+.008, 0, 'SDSS quasars', va='center', ha='left', fontsize=8.0, color=INK)
+ax.text(.97, .975, '(a)', transform=ax.transAxes, ha='right', va='top', fontsize=9)
+ax.legend(handles=[Line2D([], [], marker='o', color=RED, mec='white', ms=5.0, lw=.9, label='LRDs'),
+                   Line2D([], [], marker='^', color=BLUE, mec='white', ms=5.4, lw=.9, label='other broad-line sources')],
           loc='lower right', bbox_to_anchor=(1.0, 1.0), ncol=2, handlelength=1.8, borderaxespad=.2, columnspacing=1.0)
-fig.subplots_adjust(left=.43, right=.965, top=.935, bottom=.115); save(fig, 'Figure2')
+# (b) analysis variants of the single-Gaussian FWHM (LRDs only)
+st2 = dict(y=0, yt=[], yl=[])
+groups = (('Fit', ('baseline', 'lsf_half', 'win6800_noSII', 'win8000_maskSII', 'lowest_snr', 'swap42232', 'g395m_only')),
+          ('Narrow line', ('reg_frozen_universal_W150_29LRD_15oth', 'reg_frozen_universal_W30_29LRD_15oth',
+                           'reg_frozen_OIII_anchored_29LRD_15oth', 'oiii_qc', 'narrow_lt600')),
+          ('Sample', ('no_top3', 'parent_sn3', 'any_label')),
+          ('Repeat spectra', ('floor_same', 'floor_all', 're_add', 're_mult')))
+for gi, (gname, keys) in enumerate(groups):
+    if gi: st2['y'] += .35
+    head(bx, gname, st2)
+    for k in keys:
+        v_ = RV[k]; row(bx, st2, v_['label'] + (f" ($N$={v_['N']})" if v_['N'] != 29 else ''), v_['sigma_q'], None, v_['sigma_p95_onesided'])
+finish(bx, st2, .175, 7.4)
+bx.axvline(S_CONS, color=RED, lw=.8, ls=(0, (1, 1.5)), zorder=1)
+bx.text(S_CONS-.003, st2['y']-1.0, 'conservative ceiling', fontsize=7.0, color=RED, va='bottom', ha='right', rotation=90)
+bx.text(.97, .975, '(b)', transform=bx.transAxes, ha='right', va='top', fontsize=9)
+bx.legend(handles=[Line2D([], [], marker='<', color=RED, mfc='white', ls='none', ms=4.2, label='one-sided 95% limit')],
+          loc='lower right', bbox_to_anchor=(1.0, 1.0), handlelength=1.0, borderaxespad=.2)
+fig.subplots_adjust(left=.205, right=.99, top=.94, bottom=.11, wspace=.98); save(fig, 'Figure2')
 
 # ------------------------------------------------------------------ Figure 3: orbital scatter budget (unified 95% ceiling)
 rep_cal = json.load(open(RESULTS / 'repeat_calibration.json'))
@@ -144,21 +183,23 @@ ori_edge60 = ori['thin_60_90']
 fig, a = plt.subplots(figsize=(W1, 3.1)); th = np.linspace(0, np.pi/2, 300)
 def ell(s, sr=0.):
     e = math.sqrt(s*s-sr*sr/4); return 2*e*np.cos(th), e*np.sin(th)
-x1, y1 = ell(S1); x0, y0 = ell(S0)
+x1, y1 = ell(S1); x0, y0 = ell(S0); x2, y2 = ell(S_CONS)
 a.fill_between(x1[::-1], 0, y1[::-1], color=RED, alpha=.07, lw=0)
 a.fill_between(x0[::-1], 0, y0[::-1], color=RED, alpha=.15, lw=0)
-a.plot(x0, y0, color=RED, lw=1.5); a.plot(x1, y1, color=RED, lw=1.1, ls=(0, (4, 2)))
+a.plot(x0, y0, color=RED, lw=1.5); a.plot(x1, y1, color=RED, lw=1.1, ls=(0, (4, 2))); a.plot(x2, y2, color=RED, lw=1.0, ls=(0, (1, 1.5)))
 lab = [(r'thin disk, $i<45^\circ$', ori['thin_0_45'], 'bottom', '-'),
        (r'$H/R=0.5$', ori['h0.5_0_60'], 'bottom', (0, (5, 1.5, 1, 1.5))),
        (r'$H/R=0.7$', ori['h0.7_0_60'], 'bottom', (0, (5, 1.5, 1, 1.5))),
-       (r'$H/R=1$', ori['h1_0_60'], 'bottom', (0, (5, 1.5, 1, 1.5))),
+       (r'$H/R=1$', ori['h1_0_60'], 'top', (0, (5, 1.5, 1, 1.5))),
+       (r'thin disk, $45^\circ<i<90^\circ$', ori['thin_45_90'], 'bottom', '-'),
        (r'thin disk, $i>60^\circ$', ori_edge60, 'top', '-')]
 for k, v, va, ls in lab:
     a.axhline(v, color=BLUE, lw=.8, ls=ls)
     a.text(.236, v+(.003 if va == 'bottom' else -.0025), k, color=BLUE, fontsize=8.3, ha='right', va=va)
 a.text(.012, .026, 'allowed', color=RED, fontsize=9, va='center')
 a.legend(handles=[Line2D([], [], color=RED, lw=1.5, label=r'$\sigma_{\rm int}=%.3f$ dex' % S0),
-                  Line2D([], [], color=RED, lw=1.1, ls=(0, (4, 2)), label=r'$%.3f$ dex (95%% upper limit)' % S1)],
+                  Line2D([], [], color=RED, lw=1.1, ls=(0, (4, 2)), label=r'$%.3f$ dex (95%% upper limit)' % S1),
+                  Line2D([], [], color=RED, lw=1.0, ls=(0, (1, 1.5)), label=r'$%.2f$ dex (conservative)' % S_CONS)],
          loc='upper left', bbox_to_anchor=(0, .84), handlelength=2.4, borderaxespad=.7)
 a.set_xlim(0, .24); a.set_ylim(0, .235)
 a.set_xlabel(r'scatter of $\log(M/R)$ at fixed luminosity (dex)'); a.set_ylabel(r'orientation scatter of $\log$ FWHM (dex)')
@@ -239,8 +280,15 @@ for ds_key, col, mk, lab_txt, z_ord in (('Curtis_A_own', RED, 'o', 'A: B&X width
     ry = yy - np.polyval(np.polyfit(xl, yy, 1), xl)
     pc.errorbar(rx, ry, xerr=sx_p, yerr=sy_p, fmt='none', ecolor=col, elinewidth=.55, alpha=.5, zorder=z_ord-1)
     pc.scatter(rx, ry, s=20 if mk == 'o' else 24, marker=mk, facecolor=col, edgecolor='white', linewidth=.45, zorder=z_ord, label=lab_txt)
+    i29 = [r['temperature_id'] for r in ds_rows].index('RUBIES-UDS29813')
+    if ds_key == 'Curtis_B_own':
+        pc.annotate('UDS-29813', (rx[i29], ry[i29]), xytext=(4, -9), textcoords='offset points', fontsize=6.6, color=INK)
 xx_c = np.array([-.56, .34])
 pc.plot(xx_c, .25*xx_c, color=INK, lw=.85, ls=(0, (4, 2)), zorder=1)
+PS = json.load(open(RESULTS / 'photosphere_simulations.json'))
+for k_, col in (('Curtis_A_own', RED), ('Curtis_B_own', BLUE)):
+    sm_ = PS[k_]['sim']['hierarchical_baseline']['Hph_p16_50_84'][1]
+    pc.plot(xx_c, sm_*xx_c, color=col, lw=.75, ls=(0, (5, 1.5, 1, 1.5)), zorder=1, alpha=.85)
 pc.axhline(0, color=INK, lw=.7, ls=(0, (1, 1.6)), zorder=1)
 pc.text(-.50, -.132, 'slope 0.25', fontsize=7.5, rotation=30, ha='left', va='top', color=INK)
 pc.text(-.53, -.008, r'$L_{\rm H\alpha}$ only', fontsize=7.5, ha='left', va='top', color=INK)

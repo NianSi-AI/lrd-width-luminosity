@@ -41,6 +41,14 @@ SIGMA_SB_CGS = 5.670374419e-5
 KAPPA_ES_MS = 0.398
 KAPPA_ES_EXACT = 6.6524587321e-25 / 1.67262192369e-24
 
+# Hand-entered literature notes on the opacities adopted in Section 5.3 (not computed here).
+LITERATURE_OPACITY_CITATIONS = {
+    "Curtis_2026_arXiv_2609_09265v2": "Sec. 3.1 (p. 7: MESA r25.12.1 + AESOPUS molecular opacities); Sec. 5.2 (p. 17, Eq. 13 & Fig. 7: kappa_w/kappa_es = 0.05--5, windless photosphere ~0.02 cm^2/g); Appendix A (p. 20, Figs. A1--A2: surface Rosseland opacity drops to kappa_rad approx 10^-4 cm^2/g at T_eff = 4109 K, and 1.2e-4--4.7e-4 cm^2/g across the 5 matched models).",
+    "Hassan_2026b_arXiv_2611_03819v1": "Sec. 4.2 (p. 13, Table 1 & Fig. 9: at T_eff = 5085 K, log g = -1.94, Gamma_surf approx 110 kappa yields kappa_surf approx 8.7e-3 cm^2/g on the SR branch and ~10^-4 cm^2/g on the non-SR branch).",
+    "Begelman_Dexter_2026_ApJ_996_48": "Sec. 2.2 (p. 3, Eqs. 5--7: marginal-LTE layer at T_LTE = 5950--6100 K has x_LTE = 0.21--0.64, giving kappa_sc = 0.34 x = 0.071--0.218 cm^2/g with H^- bound-free and free-free absorption).",
+    "deGraaff_2026_arXiv_2511_21820": "Empirical modified-blackbody continuum fits; no gas Rosseland opacity specified.",
+}
+
 
 def run_bayes_post2(rows):
     """Evaluate exact 2D grid posterior over (b, sigma_int) with full 2x2 covariance."""
@@ -109,10 +117,32 @@ def fit_29_with_floor(sg_lrd, sy_floor_dex: float):
     }
 
 
-def ranef_fixed_primary_exact(groups, use_cxy: bool = True, nb=161, ns=200, nf=200, f_fixed=None):
+def ranef_fixed_primary_exact(groups, use_cxy: bool = True, nb=161, ns=200, nf=200, f_fixed=None,
+                              error_model: str = "additive", offset=None):
+    """Bivariate random-effects posterior at fixed primary-spectrum luminosity.
+
+    error_model = "additive": each spectrum's width variance is C_yy + f^2 (f uniform on 0-0.2 dex);
+    error_model = "multiplicative": it is f^2 C_yy (f uniform on 1-6), so high-S/N spectra receive
+    proportionally smaller unmodeled variance.
+    offset = (prefix, delta) adds delta to log FWHM of every spectrum whose grating starts with prefix.
+    """
     b_grid = -0.2 + (np.arange(nb) + 0.5) * (0.8 / nb)
     s_grid = (np.arange(ns) + 0.5) * (0.20 / ns)
-    f_grid = np.array([float(f_fixed)], dtype=float) if f_fixed is not None else (np.arange(nf) + 0.5) * (0.20 / nf)
+    if f_fixed is not None:
+        f_grid = np.array([float(f_fixed)], dtype=float)
+    elif error_model == "multiplicative":
+        f_grid = 1.0 + (np.arange(nf) + 0.5) * (5.0 / nf)
+    else:
+        f_grid = (np.arange(nf) + 0.5) * (0.20 / nf)
+
+    def extra(cyy, Fg):
+        return Fg * Fg * cyy if error_model == "multiplicative" else cyy + Fg * Fg
+
+    def yval(sp):
+        y_ = float(sp["y"])
+        if offset is not None and sp["grating"].startswith(offset[0]):
+            y_ += offset[1]
+        return y_
     n_f = len(f_grid)
     B = b_grid[:, None, None]
     Sg = s_grid[None, :, None]
@@ -131,15 +161,15 @@ def ranef_fixed_primary_exact(groups, use_cxy: bool = True, nb=161, ns=200, nf=2
         cyy0 = float(sp0["cov"][1][1])
         x0 = float(sp0["x"])
         if m == 1:
-            V = Sg * Sg + B * B * cxx0 - 2.0 * B * cxy0 + cyy0 + Fg * Fg
-            d = float(sp0["y"]) - B * x0
+            V = Sg * Sg + B * B * cxx0 - 2.0 * B * cxy0 + extra(cyy0, Fg)
+            d = yval(sp0) - B * x0
             w = 1.0 / V
             sw_a += w
             swr_a += w * d
             quad_0 += w * d * d
             logdet += np.log(V)
         else:
-            y_vec = np.array([float(sp["y"]) for sp in specs], dtype=float)
+            y_vec = np.array([yval(sp) for sp in specs], dtype=float)
             cyy_vec = np.array([float(sp["cov"][1][1]) for sp in specs], dtype=float)
             step = 25
             for i0 in range(0, nb, step):
@@ -149,11 +179,12 @@ def ranef_fixed_primary_exact(groups, use_cxy: bool = True, nb=161, ns=200, nf=2
                 nb_sub = i1 - i0
                 base_var = Sg * Sg + B_sub * B_sub * cxx0
                 Sigma = np.broadcast_to(base_var[..., None, None], (nb_sub, ns, n_f, m, m)).copy()
+                # Cov(d_j, d_k) = s^2 + b^2 Cxx0 - b Cxy0 (j or k primary) ; the primary diagonal
+                # receives -2 b Cxy0 from the two subtractions below, as in the single-spectrum branch.
                 Sigma[..., 0, :] -= (B_sub * cxy0)[..., None]
                 Sigma[..., :, 0] -= (B_sub * cxy0)[..., None]
-                Sigma[..., 0, 0] += (B_sub * cxy0)
                 for k in range(m):
-                    Sigma[..., k, k] += cyy_vec[k] + Fg * Fg
+                    Sigma[..., k, k] += extra(cyy_vec[k], Fg)
                 _, ldet = np.linalg.slogdet(Sigma)
                 d_vec = np.broadcast_to((y_vec[None, :] - bs[:, None] * x0)[:, None, None, :, None], (nb_sub, ns, n_f, m, 1))
                 ones = np.ones((nb_sub, ns, n_f, m, 1), dtype=float)
@@ -168,14 +199,18 @@ def ranef_fixed_primary_exact(groups, use_cxy: bool = True, nb=161, ns=200, nf=2
     asd = 1.0 / np.sqrt(sw_a)
     norm = S.ndtr((4.5 - ah) / asd) - S.ndtr((2.0 - ah) / asd)
     lp = -0.5 * (logdet + quad_0 - swr_a * swr_a / sw_a) - 0.5 * np.log(sw_a) + np.log(np.maximum(norm, 1e-300))
-    lp -= lp.max()
+    lp_max = float(lp.max())
+    lp -= lp_max
     p = np.exp(lp)
+    log_ev = lp_max + float(np.log(p.sum()))
     p /= p.sum()
     ps = p.sum((0, 2))
     pb = p.sum((1, 2))
     out = {
+        "error_model": error_model,
         "N_objects": len(groups),
         "N_spectra": int(sum(len(v) for v in groups.values())),
+        "log_evidence_grid": log_ev,
         "sigma_q": [float(v) for v in S.quant(s_grid, ps)],
         "sigma_med": float(S.quant(s_grid, ps, qs=(0.5,))[0]),
         "sigma_p95_onesided": float(S.quant(s_grid, ps, qs=(0.95,))[0]),
@@ -187,7 +222,30 @@ def ranef_fixed_primary_exact(groups, use_cxy: bool = True, nb=161, ns=200, nf=2
         out["f_q"] = fq
         out["f_med"] = fq[2]
         out["f_95_interval"] = [fq[0], fq[4]]
+    if offset is not None:
+        out["_s_grid"], out["_ps"] = s_grid, ps
     return out
+
+
+def ranef_free_offset(groups, prefix="G395H", deltas=None):
+    """Marginalize the random-effects posterior over a free log-width offset of one grating (uniform prior)."""
+    deltas = np.arange(-0.05, 0.2001, 0.0125) if deltas is None else deltas
+    runs = [ranef_fixed_primary_exact(groups, use_cxy=True, nb=81, ns=100, nf=100, offset=(prefix, float(d))) for d in deltas]
+    ev = np.array([r["log_evidence_grid"] for r in runs])
+    pd = np.exp(ev - ev.max())
+    pd /= pd.sum()
+    s_grid = runs[0]["_s_grid"]
+    ps = sum(w * r["_ps"] for w, r in zip(pd, runs))
+    mean = float((pd * deltas).sum())
+    return {
+        "grating_prefix": prefix,
+        "offset_prior": [float(deltas[0]), float(deltas[-1])],
+        "offset_mean_dex": mean,
+        "offset_sd_dex": float(np.sqrt((pd * deltas ** 2).sum() - mean ** 2)),
+        "sigma_q": [float(v) for v in S.quant(s_grid, ps)],
+        "sigma_p95_onesided": float(S.quant(s_grid, ps, qs=(0.95,))[0]),
+        "note": "positive offset means spectra on this grating are narrower; offset added to their log FWHM",
+    }
 
 
 def ranef_per_spectrum_residual_2dcov(groups, nb=161, ns=200, nf=200):
@@ -391,6 +449,9 @@ def main():
     re_39_b1 = ranef_fixed_primary_exact(grps_39, use_cxy=True)
     re_39_b2 = ranef_per_spectrum_residual_2dcov(grps_39)
     re_39_b3 = ranef_fixed_primary_exact(grps_39, use_cxy=False)
+    re_43_mult = ranef_fixed_primary_exact(spec_by_grp, use_cxy=True, error_model="multiplicative")
+    re_39_mult = ranef_fixed_primary_exact(grps_39, use_cxy=True, error_model="multiplicative")
+    re_offset = ranef_free_offset(spec_by_grp, prefix="G395H")
 
     re_loo_primary = {}
     for g_target, v_target in multi_by_grp.items():
@@ -446,7 +507,12 @@ def main():
                 "all_43_spectra": re_43_b3,
                 "42232_primary_only_39_spectra": re_39_b3,
             },
+            "multiplicative_fixed_primary_x": {
+                "all_43_spectra": re_43_mult,
+                "42232_primary_only_39_spectra": re_39_mult,
+            },
         },
+        "grating_offset_model": re_offset,
         "random_effects_reduce_one_object_to_primary_9": re_loo_primary,
         "criterion_evaluation": {
             "min_p95_onesided_dex": float(min(all_p95)),
@@ -550,6 +616,7 @@ def main():
             "T_median_obs_K": T_med_obs,
             "T_max_obs_K": T_max_obs,
         },
+        "literature_opacity_citations": LITERATURE_OPACITY_CITATIONS,
         "opacity_temperature_grid": grid_rows,
         "density_slope_sensitivity_kappa1e3_rout100": alpha_checks,
     }

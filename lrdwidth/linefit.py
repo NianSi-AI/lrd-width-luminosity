@@ -80,7 +80,7 @@ def response(lo, hi, grid, center_um, lsf_scale=1.0, grating="G395M"):
     return csr_matrix(K)
 
 
-def load_line(path, z, line, lsf_scale=1.0):
+def load_line(path, z, line, lsf_scale=1.0, window=None, mask_rest_um=(), mask_halfwidth_kms=0.0):
     with fits.open(path) as h:
         t = h["SPEC1D"]
         a = t.data
@@ -124,8 +124,12 @@ def load_line(path, z, line, lsf_scale=1.0):
     center = REST[line] * (1 + z)
     v = C * (wave / center - 1)
     ve = bin_edges(v)
-    window = 4500.0 if line == "Hbeta" else 5000.0
-    sel = valid & (abs(v) <= window)
+    # Default half-widths are those of the paper; window/mask_rest_um only serve the fit-window sensitivity runs.
+    window = (4500.0 if line == "Hbeta" else 5000.0) if window is None else float(window)
+    masked = np.zeros(len(v), dtype=bool)
+    for rest in mask_rest_um:  # contaminating lines, vacuum rest wavelengths in um
+        masked |= abs(v - C * (rest / REST[line] - 1)) <= mask_halfwidth_kms
+    sel = valid & (abs(v) <= window) & ~masked
     ix = np.flatnonzero(sel)
     center_valid = wave[0] < center < wave[-1] and valid[np.argmin(abs(wave - center))]
     if not (center_valid and len(ix) >= 25 and (v[ix] < -1000).any() and (v[ix] > 1000).any()):
@@ -167,7 +171,7 @@ def load_line(path, z, line, lsf_scale=1.0):
         lsf_scale=lsf_scale,
         R_center=float(resolution(center, grating)),
         grating=grating,
-        valid_fraction=float(sel.sum() / np.sum(abs(v) <= window)),
+        valid_fraction=float(sel.sum() / np.sum((abs(v) <= window) & ~masked)),
         window=window,
         Nvalid=len(ix),
         wavelength_um=wave[ix],

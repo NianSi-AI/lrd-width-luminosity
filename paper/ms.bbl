@@ -6,7 +6,7 @@
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
 % type= article
-\bibitem[{{Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
+\bibitem[{ {Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
   {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
   {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
   {Barbary}, {Muna}, {Ferguson}, {Grollier}, {Parikh}, {Nair}, {Unther},
@@ -19,7 +19,7 @@
   558, A33, \dodoi{10.1051/0004-6361/201322068}
 
 % type= article
-\bibitem[{{Astropy Collaboration} {et~al.}(2018){Astropy Collaboration},
+\bibitem[{ {Astropy Collaboration} {et~al.}(2018){Astropy Collaboration},
   {Price-Whelan}, {Sip{\H{o}}cz}, {G{\"u}nther}, {Lim}, {Crawford}, {Conseil},
   {Shupe}, {Craig}, {Dencheva}, {Ginsburg}, {VanderPlas}, {Bradley},
   {P{\'e}rez-Su{\'a}rez}, {de Val-Borro}, {Aldcroft}, {Cruz}, {Robitaille},
@@ -48,7 +48,7 @@
   \dodoi{10.3847/1538-3881/aabc4f}
 
 % type= article
-\bibitem[{{Astropy Collaboration} {et~al.}(2022){Astropy Collaboration},
+\bibitem[{ {Astropy Collaboration} {et~al.}(2022){Astropy Collaboration},
   {Price-Whelan}, {Lim}, {Earl}, {Starkman}, {Bradley}, {Shupe}, {Patil},
   {Corrales}, {Brasseur}, {N{\"o}the}, {Donath}, {Tollerud}, {Morris},
   {Ginsburg}, {Vaher}, {Weaver}, {Tocknell}, {Jamieson}, {van Kerkwijk},
@@ -172,7 +172,7 @@
   {Scholtz}, {Bennett}, {Bunker}, {Carniani}, {Charlot}, {Cresci},
   {Curtis-Lake}, {Dalla Bont{\`a}}, {Inayoshi}, {Jones}, {Lyu}, {Marconi},
   {Mazzolari}, {Nelson}, {Parlanti}, {Robertson}, {Schneider}, {Simmonds},
-  {Tacchella}, {Venturi}, {Willott}, {Witstok}, \& {Witten}}]{DEugenio2025}
+  {Tacchella}, {Venturi}, {Willott}, {Witstok}, \& {Witten}}]{DEugenio2026}
 {D'Eugenio}, F., {Maiolino}, R., {Perna}, M., {et~al.} 2026,
   \bibinfo{title}{{BlackTHUNDER strikes twice: Balmer-line absorption in an
   overmassive Little Red Dot at z = 7.04},} \mnras, 547, stag401,
@@ -252,7 +252,7 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
 
 % type= article
 \bibitem[{K. {Inayoshi} {et~al.}(2026){Inayoshi}, {Murase}, \&
-  {Kashiyama}}]{Inayoshi2025}
+  {Kashiyama}}]{Inayoshi2026}
 {Inayoshi}, K., {Murase}, K., \& {Kashiyama}, K. 2026,
   \bibinfo{title}{{Spectral Uniformity of Little Red Dots: A Natural Outcome of
   Coevolving Seed Black Holes and Nascent Starbursts},} \apj, 1000, 90,
@@ -283,7 +283,7 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   {Cresci}, {Dayal}, {Egami}, {Fabian}, {Inayoshi}, {Isobe}, {Ivey},
   {Koudmani}, {Laporte}, {Liu}, {Lyu}, {Mazzolari}, {Monty}, {Parlanti},
   {P{\'e}rez-Gonz{\'a}lez}, {Robertson}, {Schneider}, {Sijacki}, {Tacchella},
-  {Trinca}, {Valiante}, {Volonteri}, {Witstok}, \& {Zhang}}]{Juodzbalis2025}
+  {Trinca}, {Valiante}, {Volonteri}, {Witstok}, \& {Zhang}}]{Juodzbalis2026}
 {Juod{\v{z}}balis}, I., {Marconcini}, C., {D'Eugenio}, F., {et~al.} 2026,
   \bibinfo{title}{{A direct black-hole mass measurement in a little red dot at
   high redshift},} \nat, 653, 1017, \dodoi{10.1038/s41586-026-10579-4}
@@ -390,7 +390,7 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   1954J and SN 1961V},} \mnras, 489, 1986, \dodoi{10.1093/mnras/stz2282}
 
 % type= article
-\bibitem[{{Planck Collaboration} {et~al.}(2020){Planck Collaboration},
+\bibitem[{ {Planck Collaboration} {et~al.}(2020){Planck Collaboration},
   {Aghanim}, {Akrami}, {Ashdown}, {Aumont}, {Baccigalupi}, {Ballardini},
   {Banday}, {Barreiro}, {Bartolo}, {Basak}, {Battye}, {Benabed}, {Bernard},
   {Bersanelli}, {Bielewicz}, {Bock}, {Bond}, {Borrill}, {Bouchet}, {Boulanger},

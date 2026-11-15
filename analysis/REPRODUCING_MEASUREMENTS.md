@@ -1,10 +1,13 @@
 # Recomputing measurements and simulations
 
 Run commands from the repository root after `pip install -e .` (or set `PYTHONPATH=.`).
-The existing `make paper` path uses stored results. The commands below expose the
-original spectral and simulation generators. They retain the original likelihoods,
-selection, conditional covariance, grids and seed sequences. Code provenance is in
-`reproduction_provenance.json`; file names there identify the development versions.
+All statistical analyses (`make analysis`, then `make paper`) reproduce from the stored
+per-source measurements in `data/`. The commands below expose the original spectral and
+simulation generators; they need the external DJA spectra (`scripts/fetch_jwst.py`) and
+the msaexp dispersion tables (`scripts/fetch_calibration.sh`, pinned and SHA-256 checked),
+and they retain the original likelihoods, conditional covariance, grids and seed sequences.
+Code provenance is in `reproduction_provenance.json`; file names there identify the
+development versions. Section 6 lists the steps that are not scripted here.
 
 ## Short validation
 
@@ -36,6 +39,33 @@ main width, alternative profiles, phenomenological absorption, no-broad null,
 three LSF scales and nonparametric diagnostics follow the original batch routine.
 The optional development pilot cache was removed, so every requested fit is
 computed directly. Flux is in erg/s/cm^2; intrinsic widths are km/s.
+Quality flags follow Section 2.3: a parameter at a bound rejects a fit only if it is
+the broad width or, with absorption adopted, `tau_abs` or `W_abs` (the development
+batch script flagged any bound; the stored selection already used this rule).
+QC-passing LSF x1 fits get 200 nonparametric bootstrap draws (development script: 80),
+the number of draws behind the stored nonparametric covariances (Section 6).
+
+Sensitivity variants (one output directory each; records store their `fit_settings`):
+
+```sh
+S="--spectra work/jwst_spectra --frozen-only --line Halpha"
+python analysis/jwst/refit_spectra.py $S --lsf-scales 0.5 --out work/jwst_lsf_half
+python analysis/jwst/refit_spectra.py $S --window-kms 6800 --out work/jwst_win6800
+python analysis/jwst/refit_spectra.py $S --window-kms 8000 --mask-sii --out work/jwst_win8000
+python analysis/jwst/make_lsf_half_inputs.py --fits work/jwst_lsf_half --out lsf_half.json
+```
+
+`make_lsf_half_inputs.py` without arguments rebuilds `data/widths/regression_inputs_lsf_half.json`
+(`lsf_half_inputs.json` is an identical copy) byte for byte from `data/widths/source_fits_lsf_half/`.
+The [S II] mask half-width of the stored +-8000 km/s run is not recorded (`--mask-halfwidth-kms`,
+default 500 km/s), and no script aggregates the window runs into `window_and_wing_checks.json`.
+
+The quality audit and the frozen sample (29 LRDs, 15 other sources) follow from the
+released fits in `data/linefits/uniform_linefits.tsv`:
+
+```sh
+python analysis/sample/make_selection_audit.py   # reproduces data/sample/selection_audit.json byte for byte
+```
 
 ## 2. Seeded injection recovery
 
@@ -115,11 +145,45 @@ The original counts can also be rebuilt from the per-source profile BICs (see
 ## 5. Parent-sample narrow-core refits and 49-template injection suite
 
 ```sh
+python scripts/fetch_jwst.py --download --qso1     # 204 spectra plus A2744-QSO1
 export LRDWIDTH_SPECTRA="$PWD/work/jwst_spectra"
 python analysis/jwst/narrow_core_refit.py
 python analysis/jwst/frozen_narrow_core_audit.py
-python analysis/injection/parent49_recovery.py
+python analysis/injection/parent49_recovery.py --smoke-test
+python analysis/injection/parent49_recovery.py --work work/parent49_injection
 ```
 
-These scripts reproduce `narrow_degeneracy_refit.json`, `frozen_fixed_narrow_audit.json`,
-and `parent49_injection.json` in `data/results/` from the external DJA spectra.
+They overwrite `narrow_degeneracy_refit.json`, `narrow_refit_11sources.tsv`,
+`frozen_fixed_narrow_audit.json` and `parent49_injection.json` in `data/results/`, and
+`data/jwst/failed_templates_20valid.json`; run them in this order. Apart from the spectra,
+their inputs are in the repository: released Halpha fits (`data/linefits/uniform_linefits.tsv`),
+main-fit parameters (`data/jwst/injection_parameters.json`), the audit of the 21 QC-failing
+LRDs (`data/widths/parent_and_repeat_covariances.json`) and the A2744-QSO1 fit
+(`data/qso1/qso1_fit.json`). Each script stops before fitting if a spectrum is missing or
+differs from its recorded SHA-256; `narrow_core_refit.py` then checks that it reproduces the
+released Skyfire-23289 and A2744-QSO1 fits, and `parent49_recovery.py` checks its 29-template
+subset against `data/widths/sloped_injection_recovery.json`, whose generating script is not included.
+For failed templates without a published broad Halpha luminosity, the injected luminosity
+is the narrow-only (no-broad) Halpha flux of the fixed-narrow-width refit; no empirical
+LRD draw is made (cf. `data/jwst/parent49_criteria.json`).
+
+## 6. Not scripted in this repository
+
+- Tabulation of the per-spectrum fit records into `data/linefits/uniform_linefits.tsv`,
+  `data/sample/` (except `selection_audit.json`) and `data/widths/` (`source_fits/`,
+  `regression_inputs.json`, `source_widths_six_definitions.tsv`, `profile_bic_sources.tsv`,
+  `parent_and_repeat_covariances.json`, `window_and_wing_checks.json`), and the A2744-QSO1
+  fit `data/qso1/qso1_fit.json`. The 200-draw nonparametric covariances in `source_fits/`
+  use the algorithm of `analysis/injection/measure.py:np_bootstrap`; the run on the observed
+  spectra and its seed are not included.
+- `parent_and_repeat_covariances.json` cannot be rebuilt from stored per-fit data: the
+  flux-width covariance is not stored for 3 of its 43 QC spectra and 11 of the 21 failed
+  spectra, nor the narrow-line widths and in-band error ratios of the failed spectra.
+- The 29-template sloped injection suites (`data/widths/sloped_injection_recovery.json`), and
+  `membership_full_covariance.tsv`, `photometric_labels_grid.json` and `shell_radius_budget.json`
+  in `data/results/`.
+- SDSS refits (`analysis/sdss/refit_spectra.py`) need the 300 DR17 spectra in
+  `data/sdss/spectra/` and the list `data/sdss/download_successes.json`, which are not
+  included (URLs and SHA-256 are in `third_party/external_data.tsv`; each list row is the
+  `input` record of the matching `data/sdss/fits/*.json`). `analysis/sdss/catalog_benchmark.py`
+  needs the Shen et al. (2011) catalogue, which is not redistributed.

@@ -2,7 +2,12 @@
 (29 LRDs and 15 comparison broad-line AGN) plus A2744-QSO1 under three narrow-core rules:
 [O III] lambda5007-anchored, universal FWHM_narrow = 150 km s^-1, and universal 30 km s^-1.
 
-Requires external DJA spectra fetched via `python scripts/fetch_jwst.py --download`.
+Requires external DJA spectra fetched via `python scripts/fetch_jwst.py --download --qso1` (directory
+`LRDWIDTH_SPECTRA`, default `work/jwst_spectra`) and the dispersion tables of `scripts/fetch_calibration.sh`.
+Other inputs are in the repository: data/sample/frozen_sources.tsv, data/jwst/targets.json,
+data/linefits/uniform_linefits.tsv (released null-model BICs), data/jwst/injection_parameters.json (released
+main-fit parameters of the 44 sources), data/qso1/qso1_fit.json, and data/results/narrow_degeneracy_refit.json
+(output of narrow_core_refit.py).
 Writes data/results/frozen_fixed_narrow_audit.json.
 """
 import collections
@@ -15,15 +20,13 @@ from pathlib import Path
 import numpy as np
 from astropy.cosmology import Planck18
 
-import os
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import narrow_core_refit as t2
-from lrdwidth import fit_batch as tfit
 from lrdwidth import linefit as core
 from lrdwidth import stats as S
-from lrdwidth.paths import DATA, RESULTS, ROOT, WIDTHS
+from lrdwidth.paths import DATA, RESULTS
 
-SPECTRA_DIR = Path(os.environ.get("LRDWIDTH_SPECTRA", str(ROOT / "work" / "jwst_spectra")))
+SPECTRA_DIR = t2.SPECTRA_DIR
 
 
 def extract_fit_cov_row(fit_obj, z_fit: float, cls_label: str, source_id: str, mu: float = 1.0, mu_err: float = 0.0):
@@ -91,13 +94,23 @@ def run_pair_regression(lrd_rows, oth_rows=None):
 
 
 def main():
-    targets = {t["file_id"]: t for t in json.loads((DATA / "jwst" / "targets.json").read_text())}
+    targets = t2.load_targets()
     targets_by_grp = collections.defaultdict(list)
     for fid, t in targets.items():
         targets_by_grp[t["physical_source_group"]].append(t)
 
     frozen_rows = list(csv.DictReader((DATA / "sample" / "frozen_sources.tsv").open(), delimiter="\t"))
     assert len(frozen_rows) == 44
+    stored = t2.stored_halpha_fits()
+    # Released main-fit parameters of the 44 sources (same order as frozen_sources.tsv)
+    main_params = {t["source"]["file_id"]: t["parameters"] for t in json.loads((DATA / "jwst" / "injection_parameters.json").read_text())}
+    assert set(main_params) == {r["file_id"] for r in frozen_rows}
+
+    qso_json, qso_path = t2.load_qso1()
+    needed = {t["file_id"] for r in frozen_rows for t in targets_by_grp[r["physical_source_group"]]}
+    expected = {SPECTRA_DIR / targets[f]["input_path"]: targets[f]["sha256"] for f in sorted(needed)}
+    expected[qso_path] = qso_json["sha256"]
+    t2.require_spectra(expected)
 
     audit_44 = []
     rows_oiii_rule = []
@@ -110,14 +123,10 @@ def main():
         grp = r["physical_source_group"]
         cls_label = r["lrd_class_stage2"]
         z_fit = float(r["z_fit"])
-        fits_path = SPECTRA_DIR / targets[fid]["path"]
+        fits_path = SPECTRA_DIR / targets[fid]["input_path"]
 
-        work = json.loads((T2_DIR / "working" / f"{fid}.json").read_text())
-        ha = next(v for v in work["lines"] if v["line"] == "Halpha")
-        case1 = next(c for c in ha["cases"] if abs(float(c["lsf_FWHM_scale"]) - 1.0) < 1e-6)
-        orig_main = case1["main"]
-        orig_null = case1["null"]
-        orig_p = dict(zip(orig_main["names"], orig_main["params"]))
+        orig_null = {"BIC": stored[fid]["null_BIC"]}
+        orig_p = main_params[fid]
 
         # Measure [O III] 5007 on same spectrum first, then sibling grating spectra
         oiii_same = t2.fit_oiii_doublet(fits_path, z_fit)
@@ -127,7 +136,7 @@ def main():
             for t_alt in targets_by_grp[grp]:
                 if t_alt["file_id"] == fid:
                     continue
-                cand = t2.fit_oiii_doublet(T2_DIR / t_alt["input_path"], z_fit)
+                cand = t2.fit_oiii_doublet(SPECTRA_DIR / t_alt["input_path"], z_fit)
                 if cand.get("in_passband") and cand.get("SNR_5007", 0.0) >= 3.0 and cand.get("delta_BIC_5007", -99.0) >= 6.0:
                     oiii_used = cand
                     oiii_origin = f"sibling:{t_alt['file_id']}"
@@ -178,8 +187,7 @@ def main():
         })
 
     # Also build QSO1 regression row under both w_adopted=150 and w=30
-    qso_json = json.loads((DATA_DIR / "task8_20261112_v1" / "S4_QSO1_fit.json").read_text())
-    d_qso = core.load_line(CODE_DIR / qso_json["spectrum"], float(qso_json["z"]), "Halpha", 1.0)
+    d_qso = core.load_line(qso_path, float(qso_json["z"]), "Halpha", 1.0)
     qso_fit_150, _ = t2.fit_halpha_fixed_wnarrow(d_qso, 150.0)
     qso_fit_30, _ = t2.fit_halpha_fixed_wnarrow(d_qso, 30.0)
     qso_row_150 = extract_fit_cov_row(qso_fit_150, float(qso_json["z"]), "LRD", "A2744-QSO1", mu=7.5, mu_err=1.5)

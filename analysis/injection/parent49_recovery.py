@@ -2,8 +2,13 @@
 clean-label LRD spectral noise templates (29 primary templates plus 20 QC-failing
 in-band parent templates), plus paired common-random-number width-offset pass-rate grids.
 
-Requires external DJA spectra fetched via `python scripts/fetch_jwst.py --download`.
-Writes data/results/parent49_injection.json.
+Requires external DJA spectra fetched via `python scripts/fetch_jwst.py --download` (directory
+`LRDWIDTH_SPECTRA`, default `work/jwst_spectra`) and the dispersion tables of `scripts/fetch_calibration.sh`.
+Repository inputs: data/jwst/injection_parameters.json (released main-fit parameters and spectrum/error-array
+hashes of the 29 primary templates, read through templates.py), data/sample/frozen_sources.tsv (gratings),
+data/jwst/failed_templates_20valid.json (written by analysis/jwst/narrow_core_refit.py), data/jwst/targets.json
+(spectrum hashes), data/jwst/parent49_criteria.json, and the stored reference results named below.
+Checkpoints go to --work (default work/parent49_injection). Writes data/results/parent49_injection.json.
 """
 import os
 for _k in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
@@ -12,9 +17,10 @@ for _k in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
 import argparse
 import collections
 import concurrent.futures
+import csv
+import hashlib
 import json
 import math
-import sys
 import time
 from pathlib import Path
 
@@ -26,9 +32,11 @@ from lrdwidth import linefit as c
 from lrdwidth import stats as S
 from lrdwidth.paths import DATA, RESULTS, ROOT, WIDTHS
 
-SPECTRA_DIR = Path(os.environ.get("LRDWIDTH_SPECTRA", str(ROOT / "work" / "jwst_spectra")))
+SPECTRA_DIR = Path(os.environ.setdefault("LRDWIDTH_SPECTRA", str(ROOT / "work" / "jwst_spectra")))
+from templates import TEMPLATES, template  # noqa: E402  (reads LRDWIDTH_SPECTRA, set above)
 r1_ref = json.loads((RESULTS / "width_luminosity.json").read_text())
 r2_ref = json.loads((RESULTS / "robustness.json").read_text())
+# Stored 29-template sloped injection suites; the generating script is not part of this repository.
 stage2_ref = json.loads((WIDTHS / "sloped_injection_recovery.json").read_text())
 prereg = json.loads((DATA / "jwst" / "parent49_criteria.json").read_text())
 assert prereg["frozen_before_simulation"] is True
@@ -56,12 +64,31 @@ assert abs(B_GAUSS - stage2_ref["canonical_relations_29LRD"]["single_gaussian"][
 assert abs(A_EXP - stage2_ref["canonical_relations_29LRD"]["exponential"]["a_mean"]) < 1e-12
 assert abs(B_EXP - stage2_ref["canonical_relations_29LRD"]["exponential"]["b_median"]) < 1e-12
 
-FROZEN_ALL = json.loads((M_DIR / "M1_frozen_sources.json").read_text())
+# The 44 frozen sources in their original (seed-defining) order, as in injection_parameters.json, with the
+# grating from frozen_sources.tsv (same order).
+_FROZEN_TSV = list(csv.DictReader((DATA / "sample" / "frozen_sources.tsv").open(), delimiter="\t"))
+assert [t["source"]["file_id"] for t in TEMPLATES] == [r["file_id"] for r in _FROZEN_TSV]
+FROZEN_ALL = [dict(t["source"], grating=r["grating"]) for t, r in zip(TEMPLATES, _FROZEN_TSV)]
 LRD_INDICES = [i for i, r in enumerate(FROZEN_ALL) if r["lrd_class_stage2"] == "LRD"]
 assert len(LRD_INDICES) == 29
 
 FAILED20_RAW = json.loads((DATA / "jwst" / "failed_templates_20valid.json").read_text())
 assert len(FAILED20_RAW) == 20
+TARGET_SHA256 = {t["file_id"]: t["sha256"] for t in json.loads((DATA / "jwst" / "targets.json").read_text())}
+
+
+def require_spectra():
+    """Stop before any fitting if one of the 49 template spectra is missing or differs from the frozen version."""
+    expected = {SPECTRA_DIR / TEMPLATES[i]["input_path"]: TEMPLATES[i]["input_sha256"] for i in LRD_INDICES}
+    expected.update({SPECTRA_DIR / r["input_path"]: TARGET_SHA256[r["file_id"]] for r in FAILED20_RAW})
+    missing = [p for p in expected if not p.is_file()]
+    hint = ("download them with `python scripts/fetch_jwst.py --download --out work/jwst_spectra` "
+            "or point LRDWIDTH_SPECTRA to an existing copy")
+    if missing:
+        raise SystemExit(f"{len(missing)} of {len(expected)} template spectra missing (first: {missing[0]}); {hint}")
+    changed = [p for p, sha in expected.items() if hashlib.sha256(p.read_bytes()).hexdigest() != sha]
+    if changed:
+        raise SystemExit(f"{len(changed)} template spectra differ from the frozen versions (first: {changed[0]}); {hint}")
 
 # Worker-local cache of loaded 49 spectral templates + noiseless exponential->Gaussian calibration
 _WORKER_TEMPLATES = None
@@ -74,15 +101,11 @@ def build_all_49_templates():
         return _WORKER_TEMPLATES
 
     templates = []
-    # 1. 29 frozen passing LRD templates (exact match to stage2_sloped_injection.py)
+    # 1. 29 frozen passing LRD templates (as in the stored 29-template suites of sloped_injection_recovery.json):
+    #    released LSF x1 main-fit parameters; templates.template() checks the spectrum and error-array hashes.
     for t_id, orig_idx in enumerate(LRD_INDICES):
         r = FROZEN_ALL[orig_idx]
-        work = json.loads((c.D / "working" / f"{r['file_id']}.json").read_text())
-        ha = next(x for x in work["lines"] if x["line"] == "Halpha")
-        f0 = ha["cases"][0]["main"]
-        p = dict(zip(f0["names"], f0["params"]))
-        d = c.load_line(c.D / work["target"]["input_path"], float(r["z_fit"]), "Halpha")
-        assert np.array_equal(d["err"], np.array(ha["data"]["err"]))
+        d, p = template(orig_idx)
         x_phys = float(r["x_logL43"])
         templates.append({
             "template_id": t_id,
@@ -104,7 +127,7 @@ def build_all_49_templates():
         t_id = 29 + j
         seed_idx = 100 + j
         z_fit = float(r20["z_fit"])
-        d = c.load_line(T2_DIR / r20["input_path"], z_fit, "Halpha", 1.0)
+        d = c.load_line(SPECTRA_DIR / r20["input_path"], z_fit, "Halpha", 1.0)
         assert d["status"] == "ready", f"Template not ready: {r20['source_id']}"
         p_raw = dict(zip(r20["baseline_names"], r20["baseline_params"]))
         # For null_refit_narrow_plus_cont (undetected broad line), center broad line on systemic narrow Halpha
@@ -537,7 +560,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke-test", action="store_true", help="Run 1 replicate of 49 templates to verify pipeline.")
     parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--work", type=Path, default=ROOT / "work" / "parent49_injection", help="checkpoint directory")
     args = parser.parse_args()
+    require_spectra()
 
     t_start = time.monotonic()
     # Warm up and verify all 49 templates + noiseless calibration in main process first
@@ -556,8 +581,8 @@ def main():
         print(f"[Smoke Test PASSED] 49 fits in {time.monotonic() - t0:.2f}s | selected: {n_sel_49}/49 (frozen29: {n_sel_29}/29)", flush=True)
         return
 
-    ckpt_dir = HERE / "t3_checkpoints"
-    ckpt_dir.mkdir(exist_ok=True)
+    ckpt_dir = args.work / "checkpoints"
+    ckpt_dir.mkdir(parents=True, exist_ok=True)
 
     primary_scenarios = [
         (11, "gauss_rel_s010", "single_gaussian", A_GAUSS, B_GAUSS, 0.10),
@@ -595,7 +620,7 @@ def main():
                 tmp.write_text(json.dumps({"summary": summary, "rows": rows}, ensure_ascii=False))
                 tmp.rename(ckpt_path)
 
-            # HARD SELF-CHECK against stage2_numbers.json on the 29-frozen subset for sc_id 11 & 13!
+            # HARD SELF-CHECK against data/widths/sloped_injection_recovery.json on the 29-frozen subset for sc_id 11 & 13!
             if name in ("gauss_rel_s010", "exp_matched_s010"):
                 ref_s2 = stage2_ref["sloped_simulations"][name]
                 sub29 = summary["subset_frozen29"]
@@ -608,7 +633,7 @@ def main():
                 assert abs(sub29["bayes_sigma_med_quantiles"][2] - ref_s2["bayes_sigma_med_quantiles"][2]) < 1e-10, (
                     f"Stage2 mismatch in {name} median sigma_int: {sub29['bayes_sigma_med_quantiles'][2]} vs {ref_s2['bayes_sigma_med_quantiles'][2]}"
                 )
-                print(f"  [ASSERT PASSED] {name} 29-frozen subset matches stage2_numbers.json to < 1e-10!", flush=True)
+                print(f"  [ASSERT PASSED] {name} 29-frozen subset matches sloped_injection_recovery.json to < 1e-10!", flush=True)
                 cached_rows_s010[name] = rows
 
             suite_summaries[name] = summary
