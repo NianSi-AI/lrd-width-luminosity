@@ -1,0 +1,38 @@
+{
+  "task": "parent49_injection Pre-registered Decision Criteria",
+  "frozen_timestamp": "2026-11-15T02:02:30+08:00",
+  "frozen_before_simulation": true,
+  "parent_sample_definition": {
+    "N_clean_label_grating_Halpha_LRD": 50,
+    "excluded_out_of_passband_stopband": [
+      "RUBIES-UDS-40579 (z=3.110, lambda_obs=2.698 um < F290LP cut-on 2.87 um)"
+    ],
+    "N_parent_valid": 49,
+    "N_frozen_passing_templates": 29,
+    "N_valid_failed_templates": 20,
+    "luminosity_assignment_primary": "physical (frozen 29: pipeline L_Ha; failed S/N>=3: refitted L_Ha; failed S/N<3: published broad L_Ha where available, else total narrow+broad ceiling / empirical LRD draw)",
+    "luminosity_assignment_sensitivity": "pipeline own-fitted L_Ha across all 49 in-band templates"
+  },
+  "scenarios": [
+    "gauss_rel_s005 (Gaussian, observed Eq. 3 locus, sigma_parent = 0.05 dex, N_trials = 100)",
+    "gauss_rel_s010 (Gaussian, observed Eq. 3 locus, sigma_parent = 0.10 dex, N_trials = 100)",
+    "exp_matched_s005 (Exponential, matched locus, sigma_parent = 0.05 dex, N_trials = 100)",
+    "exp_matched_s010 (Exponential, matched locus, sigma_parent = 0.10 dex, N_trials = 100)"
+  ],
+  "criteria": {
+    "C1_critical_SNR4to7_failed_upward_bias": {
+      "metric": "Fraction of QC-failing fits in recovered broad S/N in [4, 7) with recovered width residual (log10 FWHM_fit - log10 FWHM_inj_equiv) > +0.09 dex",
+      "artifact_regime_min_fraction": 0.40,
+      "artifact_interpretation": "Observed upward offset among critical S/N 4-7 failed fits is reproduced as a low-S/N fitting artifact on these templates.",
+      "truncation_regime_max_fraction": 0.20,
+      "truncation_pass_rate_drop_condition": "pass_rate(+0.10 dex) / pass_rate(0.00 dex) < 0.50",
+      "truncation_action": "Execute selection_adjusted_bound: multiply 29-LRD likelihood by empirical selection probability p(pass | L_Ha, FWHM) and recompute 95% upper limit on sigma_int.",
+      "intermediate_interpretation": "If between 0.20 and 0.40 (or without >50% pass-rate drop at +0.10 dex), report exact simulation fractions and pass-rate curve without claiming a single cause."
+    },
+    "C2_parent_selection_scatter_compression": {
+      "metric": "Number of trials out of 100 at sigma_parent = 0.10 dex (49 valid parent templates passed through full Section 2.3 QC rules) with recovered posterior median sigma_int <= 0.0540301 dex",
+      "pass_max_hits_per_100": 5,
+      "pass_interpretation": "Full quality-filtering pipeline on all 49 valid parent templates cannot fabricate the observed 0.054 dex tightness from a 0.10 dex parent population."
+    }
+  }
+}

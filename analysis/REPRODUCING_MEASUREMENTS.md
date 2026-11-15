@@ -14,7 +14,7 @@ python scripts/check_reproduction.py
 
 This checks a complete frozen recovery replicate against the corrected grid
 posterior, the hierarchical log density against the independent NumPy target,
-measurement-noise covariance, and all 459 macro values/332 manuscript definitions.
+measurement-noise covariance, and all 767 computed macro values and 497 manuscript/table definitions.
 It does not run every production fit or all 24,000 hierarchical datasets.
 
 ## 1. JWST spectra and batch fits
@@ -111,3 +111,15 @@ For new injection runs, copy the regenerated `W2_final_summary_s1.json` and
 This step extracts aggregate measurements; it does not itself rerun spectral fits.
 The original counts can also be rebuilt from the per-source profile BICs (see
 `make_profile_counts.py`).
+
+## 5. Parent-sample narrow-core refits and 49-template injection suite
+
+```sh
+export LRDWIDTH_SPECTRA="$PWD/work/jwst_spectra"
+python analysis/jwst/narrow_core_refit.py
+python analysis/jwst/frozen_narrow_core_audit.py
+python analysis/injection/parent49_recovery.py
+```
+
+These scripts reproduce `narrow_degeneracy_refit.json`, `frozen_fixed_narrow_audit.json`,
+and `parent49_injection.json` in `data/results/` from the external DJA spectra.

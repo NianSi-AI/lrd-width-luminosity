@@ -40,7 +40,7 @@ t1 += [
 ]
 open(os.path.join(T, 'Table1_stub.tex'), 'w').write('\n'.join(t1) + '\n')
 
-# ------------------------------------------------------------------ Table 2: width-luminosity fits + repeat floors
+# ------------------------------------------------------------------ Table 2: width-luminosity fits + variants
 def P(q):
     return f'${q[2]:.3f}$ (${q[0]:.3f}$ to ${q[4]:.3f}$)' if q[0] < 0 else f'${q[2]:.3f}$ (${q[0]:.3f}$--${q[4]:.3f}$)'
 
@@ -87,10 +87,14 @@ for lab, k in (
 t2.append(r'\cutinhead{This work: single-Gaussian FWHM, error-floor and sample variants}')
 t2.append(line(r'Repeat floor, same grating ($+0.044$ dex)\tablenotemark{a}', 29, fl_same['LRD_slope_q'], fl_same['LRD_sigma_q'], 15, fl_same['other_sigma_q'], fl_same['diff_q']))
 t2.append(line(r'Repeat floor, all pairs ($+0.060$ dex)\tablenotemark{a}', 29, fl_all['LRD_slope_q'], fl_all['LRD_sigma_q'], 15, fl_all['other_sigma_q'], fl_all['diff_q']))
-t2.append(line(r'LSF width $\times0.5$', 29, lh['LRD']['slope'], lh['LRD']['sigma'], 15, lh['other']['sigma'], lh['diff']))
+t2.append(line(r'LSF width $\times0.5$\tablenotemark{a}', 29, lh['LRD']['slope'], lh['LRD']['sigma'], 15, lh['other']['sigma'], lh['diff']))
 t2.append(line('Three brightest LRDs removed', 26, n3['LRD']['slope'], n3['LRD']['sigma'], 15, n3['other']['sigma'], n3['diff']))
 assert na['LRD']['N'] == 24 and na['other']['N'] == 15
 t2.append(r'LRDs without Balmer absorption & \NNoAbs{} & $\FbNoAbs{}$ ($\FbNoAbslo{}$--$\FbNoAbshi{}$) & $\FsigNoAbs{}$ ($\FsigNoAbslo{}$--$\FsigNoAbshi{}$) & \NOther{} & $\Fsigo{}$ ($\Fsigolo{}$--$\Fsigohi{}$) & $\FdsigNoAbs{}$ ($\FdsigNoAbslo{}$ to $\FdsigNoAbshi{}$) \\')
+t2.append(r'Narrow-line FWHM $<\wnarHi{}$~\kms{}\,\tablenotemark{a} & \NLRDNarCut{} & $\FbNarCut{}$ ($\FbNarCutlo{}$--$\FbNarCuthi{}$) & $\FsigNarCut{}$ ($\FsigNarCutlo{}$--$\FsigNarCuthi{}$) & \NOther{} & $\Fsigo{}$ ($\Fsigolo{}$--$\Fsigohi{}$) & $\FdsigNarCut{}$ ($\FdsigNarCutlo{}$ to $\FdsigNarCuthi{}$) \\')
+t2.append(r'Narrow-line FWHM fixed to \wnarDef{}~\kms{}\,\tablenotemark{a} & \NLRD{} & $\FbNarFix{}$ ($\FbNarFixlo{}$--$\FbNarFixhi{}$) & $\FsigNarFix{}$ ($\FsigNarFixlo{}$--$\FsigNarFixhi{}$) & \NOther{} & $\FsigoNarFix{}$ ($\FsigoNarFixlo{}$--$\FsigoNarFixhi{}$) & $\FdsigNarFix{}$ ($\FdsigNarFixlo{}$ to $\FdsigNarFixhi{}$) \\')
+t2.append(r'Narrow-line FWHM fixed to [\ion{O}{3}]\tablenotemark{a} & \NLRD{} & $\FbNarOIII{}$ ($\FbNarOIIIlo{}$--$\FbNarOIIIhi{}$) & $\FsigNarOIII{}$ ($\FsigNarOIIIlo{}$--$\FsigNarOIIIhi{}$) & \NOther{} & $\FsigoNarOIII{}$ ($\FsigoNarOIIIlo{}$--$\FsigoNarOIIIhi{}$) & $\FdsigNarOIII{}$ ($\FdsigNarOIIIlo{}$ to $\FdsigNarOIIIhi{}$) \\')
+t2.append(r'In-band parent ${\rm S/N}\geq\cutSNthree{}$ included\tablenotemark{a} & \NLRDSNthree{} & $\FbSNthree{}$ ($\FbSNthreelo{}$--$\FbSNthreehi{}$) & $\FsigSNthree{}$ ($\FsigSNthreelo{}$--$\FsigSNthreehi{}$) & \nodata & \nodata & \nodata \\')
 t2.append(line('Two widest other sources removed', 29, nw['LRD']['slope'], nw['LRD']['sigma'], 13, nw['other']['sigma'], nw['diff']))
 
 t2.append(r'\cutinhead{Table of \citet{BaccusXu2026}}')
@@ -107,7 +111,7 @@ t2.append(f"Single-Gaussian FWHM, refitted\\tablenotemark{{d}} & {ND} & {sdss_bs
 t2 += [
     r'\enddata',
     r'\tablecomments{Posterior medians, with equal-tailed 95\% intervals in parentheses. $b$ is the slope of $\log{\rm FWHM}$ on $\log L$ (shown in the LRDs column for the refitted SDSS row as well), and $\Delta\sigma_{\rm int}$ is the scatter of the LRDs minus that of the other sources. Each width measure is regressed on the luminosity and covariance of its own fit ($L_{\rm H\alpha}$ for our sample and SDSS; $L_{\rm bol}$ for \citealt{BaccusXu2026}).}',
-    r'\tablenotetext{a}{One-sided 95\% upper limits (95th posterior percentiles) on LRD $\sigma_{\rm int}$ are \FsigUp{}~dex under formal errors, \FsigFlrSameUp{}~dex with the $+0.044$~dex same-grating repeat-spectrum floor added in quadrature to $C_{yy}$, and \FsigFlrAllUp{}~dex with the $+0.060$~dex all-pairs floor (Section~\ref{sec:tests}).}',
+    r'\tablenotetext{a}{One-sided 95\% upper limits (95th posterior percentiles) on LRD $\sigma_{\rm int}$ are \FsigUp{}~dex under formal errors, \FsigFlrSameUp{}~dex with the $+\flrDupSameG{}$~dex same-grating repeat-spectrum floor added in quadrature to $C_{yy}$, \FsigFlrAllUp{}~dex with the $+\flrDupAll{}$~dex all-pairs floor, \FsigLsfUp{}~dex for LSF width $\times0.5$, \FsigNarCutUp{}~dex for narrow-line FWHM $<\wnarHi{}$~\kms{}, \FsigNarFixUp{}~dex for narrow-line FWHM fixed to \wnarDef{}~\kms{}, \FsigNarOIIIUp{}~dex when anchored to [\ion{O}{3}]~$\lambda5007$ (\wnarDef{}~\kms{} where unmeasured; [\ion{O}{3}] hits the \wnarLo{}~\kms{} lower bound in \NOIIIUnres{} of the \NLRD{} LRDs, and fixing all \NLRD{} to \wnarLo{}~\kms{} gives $\sigma_{\rm int}=\FsigNarMin{}$~dex, $<\FsigNarMinUp{}$~dex), and \FsigSNthreeUp{}~dex with in-band failed ${\rm S/N}\geq\cutSNthree{}$ parent LRD spectra included (Sections~\ref{sec:relation} and \ref{sec:tests}).}',
     r'\tablenotetext{b}{The \NXLRD{} LRD records correspond to \NXLRDuniq{} unique objects on the sky; deduplicating to one record per object gives $\sigma_{\rm int}=\XsigDedup{}$~dex (\XsigDeduplo{}--\XsigDeduphi{}).}',
     r'\tablenotetext{c}{Pairs matched in grating, redshift ($|\Delta z|<0.5$), and luminosity ($|\Delta\log L|<0.2$). The entry is the difference of the residual standard deviations, with its bootstrap interval.}',
     r'\tablenotetext{d}{A random 300 of the 3755 quasars refitted with the procedure of Section~\ref{sec:fit}; 224 pass the rules of Section~\ref{sec:sample}.}',
@@ -129,9 +133,9 @@ t3 = [
     r'Width scatter at fixed $\LHa$: $\sigint<\FsigUp{}$~dex ($<\FsigCeilRep{}$~dex with repeat floor)'
     r' & $\sigma_{M/R}\leq\sigLamMax{}$~dex; requires $H/R\simeq1$ ($\sigma_{M/R}\leq\sigLamIso{}$~dex) or inclinations near the disk plane ($i>45^\circ$, $\sigma_{M/R}\leq\sigLamEdgeWide{}\text{--}\sigLamEdge{}$~dex), and broad-\Ha{} dust scatter $\sigma_A\leq\sigDustMax{}$~mag at $b=\Fb{}$.'
     r' & $\sigma_{\log\tau_e}\leq\sigTauThree{}\text{--}\sigTauTwo{}$~dex across $\tau_e=2$--3 (\sigTauConvHiLo{}--\sigTauConvHiHi{}~dex with core convolution), or $\sigma_{\log T_e}\leq\sigTeMax{}$~dex; shell-radius budget $\sigma_{\log R}\lesssim\sigRThree{}\text{--}\sigRTwo{}$~dex at fixed geometry. \\[3pt]',
-    r'Width--luminosity slope: $b=\Fb{}$ (\FbNoTop{} without \NBright{} brightest LRDs)'
-    r' & Requires $M/R\propto\LHa^{2b}$ across the population (nearly constant $M/R$ across $42.15<\log\LHa<42.9$ if $b\approx\FbNoTop{}$).'
-    r' & Recombination shell ($\LHa\propto R\,\tau_e^{2}$) predicts ${\rm FWHM}\propto\LHa^{\tauPhLo{}\text{--}\tauFixHi{}}$ across $\tau_e=0.5$--3 depending on $R(\LHa)$, containing $b$. \\[3pt]',
+    r'Width--luminosity slope: $b=\Fb{}$ (\FbNarFix{}--\FbNarOIII{} with narrow-line bounds or \NBright{} brightest LRDs removed)'
+    r' & Requires $M/R\propto\LHa^{2b}=\LHa^{\twoFbLo{}\text{--}\twoFbHi{}}$ across the population.'
+    r' & Recombination shell ($\LHa\propto R\,\tau_e^{2}$) predicts ${\rm FWHM}\propto\LHa^{\tauPhLo{}\text{--}\tauFixHi{}}$ across $\tau_e=0.5$--3 depending on $R(\LHa)$, overlapping $b$. \\[3pt]',
     r'Null $\Lph^{1/4}\Teff$ scaling at fixed $\LHa$ despite $\sigma(\log\Lph/\LHa)=\sdLphHaLo{}\text{--}\sdLphHaHi{}$~dex'
     r' & Line-emitting radius $R$ must track ionizing/recombination luminosity (photoionized BLR) rather than the optical continuum photosphere $\Rph$.'
     r' & Recombination and Thomson scattering occur in the same ionized zone ($\LHa\propto R\,\tau_e^{2}$), coupling $\tau_e$ directly to $\LHa$ rather than $\Rph$. \\[3pt]',
@@ -139,7 +143,7 @@ t3 = [
     r' & Scatters intrinsically by $<\sigMvir{}$~dex (\sigMvirMed{}~dex at formal median) at fixed $\LHa$; enclosed mass is $(\mEddLo{}\text{--}\mEddHi{})\,(R/\Rph)\,M_{\rm Edd}(\Lph)$ if $R\geq\Rph$.'
     r' & Estimator still scatters by $<\sigMvir{}$~dex at fixed $\LHa$ (restating luminosity), while central mass is $\lambda^{-1}M_{\rm Edd}(\Lph)$. \\',
     r'\enddata',
-    r'\tablecomments{All scatter ceilings in columns 2 and 3 are evaluated at the formal-error one-sided 95\% upper limit $\sigint=\FsigUp{}$~dex; adopting the same-grating repeat-spectrum upper limit (\FsigFlrSameUp{}~dex) tightens each bound by a quarter. $M_{\rm Edd}(\Lph)=\kappa_{\rm es}\Lph/(4\pi G c)=8\times10^{5}\,\Msun\,(\Lph/10^{44}\,\ergs)$.}',
+    r'\tablecomments{All scatter ceilings in columns 2 and 3 are evaluated at the formal-error one-sided 95\% upper limit $\sigint=\FsigUp{}$~dex; adopting the same-grating repeat-spectrum upper limit (\FsigFlrSameUp{}~dex) tightens each bound by a quarter, whereas the [\ion{O}{3}]-anchored ceiling (\FsigNarOIIIUp{}~dex) loosens them by \narCeilLoosenPct{}\%. $M_{\rm Edd}(\Lph)=\kappa_{\rm es}\Lph/(4\pi G c)=8\times10^{5}\,\Msun\,(\Lph/10^{44}\,\ergs)$.}',
     r'\end{deluxetable*}',
 ]
 open(os.path.join(T, 'Table3_readings.tex'), 'w').write('\n'.join(t3) + '\n')
@@ -147,7 +151,7 @@ open(os.path.join(T, 'Table3_readings.tex'), 'w').write('\n'.join(t3) + '\n')
 # ------------------------------------------------------------------ Table B1: injection-recovery summary (Appendix B)
 X = json.load(open(RESULTS / 'measurement_summary.json'))['numbers']
 st2 = json.load(open(WIDTHS / 'sloped_injection_recovery.json'))['sloped_simulations']
-v10s = st2
+lor_scen = st2
 
 def w2_entry(sc, inj, meas):
     base = f'W2_final_summary_s{sc}__{sc}_{inj}_M4_Gaussian_QC_{meas}__sigma_median__'
@@ -173,9 +177,8 @@ tb1 = [
     r'\begin{deluxetable*}{llccccc}',
     r'\tabletypesize{\scriptsize}',
     r'\tabcolsep=2.2pt',
-    r'\renewcommand{\arraystretch}{0.92}',
     r'\tablewidth{0pt}',
-    r'\tablecaption{Injection--recovery tests on the 29 LRD noise and LSF templates\label{tab:injections}}',
+    r'\tablecaption{Injection--recovery tests on the LRD noise and LSF templates\label{tab:injections}}',
     r'\tablehead{\colhead{Injected profile \& relation} & \colhead{Width measure} & \colhead{$\sigma_{\rm parent}$} & \colhead{Injected $b$} & \colhead{Recovered $\sigma_{\rm int}$ (dex)} & \colhead{Trials $\leq\Fsig{}$~dex} & \colhead{Recovered $b$}}',
     r'\startdata',
     r'\cutinhead{Cross-profile matrix at fiducial scatter}',
@@ -186,17 +189,17 @@ for lab_i, inj in (('Gaussian, sloped', 'single_gaussian'), ('Exponential, slope
         s_str, h_str = w2_entry(3, inj, meas)
         tb1.append(f'{lab_i} & {lab_m} & $0.05$ & $0.17$ & {s_str} & {h_str} & {ND} \\\\')
 
-s_lg, h_lg = q_entry(v10s['lor_matched_s005'])
-tb1.append(f"Lorentzian, matched locus & Single-Gaussian & $0.05$ & $0.15$ & {s_lg} & {h_lg} & {b_entry(v10s['lor_matched_s005'])} \\\\")
+s_lg, h_lg = q_entry(lor_scen['lor_matched_s005'])
+tb1.append(f"Lorentzian, matched locus & Single-Gaussian & $0.05$ & $0.15$ & {s_lg} & {h_lg} & {b_entry(lor_scen['lor_matched_s005'])} \\\\")
 
 tb1.append(r'\cutinhead{Parent-scatter and truncation tests}')
 for lab_i, d_obj, sp, bi in (
     ('Gaussian, observed locus', st2['gauss_rel_s008'], '0.08', '0.17'),
     ('Exponential, matched locus', st2['exp_matched_s008'], '0.08', '0.18'),
-    ('Lorentzian, matched locus', v10s['lor_matched_s008'], '0.08', '0.15'),
+    ('Lorentzian, matched locus', lor_scen['lor_matched_s008'], '0.08', '0.15'),
     ('Gaussian, observed locus', st2['gauss_rel_s010'], '0.10', '0.17'),
     ('Exponential, matched locus', st2['exp_matched_s010'], '0.10', '0.18'),
-    ('Lorentzian, matched locus', v10s['lor_matched_s010'], '0.10', '0.15'),
+    ('Lorentzian, matched locus', lor_scen['lor_matched_s010'], '0.10', '0.15'),
     (r'Exponential, $+0.32$~dex wider', st2['exp_wide_s010'], '0.10', '0.18'),
 ):
     s_str, h_str = q_entry(d_obj)
@@ -207,14 +210,21 @@ for lab_i, inj in (('Gaussian, lum.-independent', 'single_gaussian'), ('Exponent
     tb1.append(f'{lab_i} & Single-Gaussian & $0.15$ & $0.00$ & {s_str} & {h_str} & {ND} \\\\')
 
 tb1.append(r'\cutinhead{Null-slope tests ($b=0$)}')
-for lab_i, d_obj in (('Exponential, matched width', v10s['exp_null_matched_s005']),
-                     ('Lorentzian, matched width', v10s['lor_null_matched_s005'])):
+for lab_i, d_obj in (('Exponential, matched width', lor_scen['exp_null_matched_s005']),
+                     ('Lorentzian, matched width', lor_scen['lor_null_matched_s005'])):
     s_str, h_str = q_entry(d_obj)
     tb1.append(f'{lab_i} & Single-Gaussian & $0.05$ & $0.00$ & {s_str} & {h_str} & {b_entry(d_obj)} \\\\')
 
+tb1.append(r'\cutinhead{Full in-band parent templates (\NParentInBand{} LRDs)\tablenotemark{a}}')
+tb1.append(r'Gaussian, observed locus & Single-Gaussian & $0.05$ & $0.17$ & $\recParFiveG{}$ ($\recParFiveGlo{}$--$\recParFiveGhi{}$) & \hitParFiveGnum{} & $\bParFiveG{}$ ($\bParFiveGlo{}$--$\bParFiveGhi{}$) \\')
+tb1.append(r'Exponential, matched locus & Single-Gaussian & $0.05$ & $0.18$ & $\recParFiveE{}$ ($\recParFiveElo{}$--$\recParFiveEhi{}$) & \hitParFiveEnum{} & $\bParFiveE{}$ ($\bParFiveElo{}$--$\bParFiveEhi{}$) \\')
+tb1.append(r'Gaussian, observed locus & Single-Gaussian & $0.10$ & $0.17$ & $\recParTenG{}$ ($\recParTenGlo{}$--$\recParTenGhi{}$) & \hitParTenGnum{} & $\bParTenG{}$ ($\bParTenGlo{}$--$\bParTenGhi{}$) \\')
+tb1.append(r'Exponential, matched locus & Single-Gaussian & $0.10$ & $0.18$ & $\recParTenE{}$ ($\recParTenElo{}$--$\recParTenEhi{}$) & \hitParTenEnum{} & $\bParTenE{}$ ($\bParTenElo{}$--$\bParTenEhi{}$) \\')
+
 tb1 += [
     r'\enddata',
-    r'\tablecomments{Each row summarizes 100 simulated 29-source samples generated on the pixel grids, noise vectors, and grating LSFs of the observed LRD spectra, refitted with the pipeline of Section~\ref{sec:fit}, and filtered by the quality rules of Section~\ref{sec:sample}. Recovered $\sigma_{\rm int}$ and $b$ list the median (16th--84th percentiles) of the Bayesian posterior medians across the 100 realizations. In the last two rows, 0/200 realizations yield a posterior-median slope as steep as the observed $b=\Fb{}$.}',
+    r'\tablecomments{Each row summarizes \NReal{} simulated samples generated on the pixel grids, noise vectors, and grating LSFs of the observed LRD spectra (\NLRD{} surviving templates in the first three blocks; all \NParentInBand{} in-band parent templates in the bottom block), refitted with the pipeline of Section~\ref{sec:fit}, and filtered by the quality rules of Section~\ref{sec:sample}. Recovered $\sigma_{\rm int}$ and $b$ list the median (16th--84th percentiles) of the Bayesian posterior medians across the \NReal{} realizations. In the null-slope ($b=0$) rows, \hitSlopeNull{} of \nullDen{} realizations yield a posterior-median slope as steep as $b=\Fb{}$ (97.5th percentile $\leq\bNullHi{}$).}',
+    r'\tablenotetext{a}{Across the \NParentInBand{}-template suites, a median of \NParSelG{} (\NParSelGlo{}--\NParSelGhi{}, Gaussian) and \NParSelE{} (\NParSelElo{}--\NParSelEhi{}, exponential) sources pass Section~\ref{sec:sample} per realization; replacing refitted/published $\LHa$ with pipeline-fitted $\LHa$ on all failed templates yields $\sigma_{\rm int}\leq\Fsig{}$~dex in \hitParOwnTenGnum{} and \hitParOwnTenEnum{} realizations at $\sigma_{\rm parent}=\simA{}$~dex.}',
     r'\end{deluxetable*}',
 ]
 open(os.path.join(T, 'TableB1_injections.tex'), 'w').write('\n'.join(tb1) + '\n')

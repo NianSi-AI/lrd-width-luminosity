@@ -1,0 +1,2286 @@
+{
+  "critical_10_plus_QSO1": [
+    {
+      "source_id": "RUBIES-EGS-37032",
+      "file_id": "96b9c9be92d936a9",
+      "grating": "G395H_F290LP",
+      "z_fit": 3.85,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 96.47973103907032,
+      "orig_W_narrow_bound_side": "interior",
+      "orig_FWHM_kms": 1438.6592921112942,
+      "orig_SNR_broad": 23.474443970058935,
+      "orig_delta_BIC_null": 65.27399976361573,
+      "orig_log10_LHa_erg_s": 41.998746104109294,
+      "orig_residual_Eq3_dex": -0.017663996117338154,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 1309.978597295817,
+        "FWHM_err_cond_kms": 64.35965780380513,
+        "SNR_broad": 24.293207059698286,
+        "delta_BIC_null": 618.9222227073249,
+        "delta_BIC_vs_free_null": 50.160038285735595,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.135566007744159,
+        "bound_parameters": [
+          "F_NII6585",
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 42.00863391529754,
+        "residual_Eq3_dex": -0.06005880220358728
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1113.868179504384,
+        "FWHM_err_cond_kms": 53.9112433523051,
+        "SNR_broad": 28.048408490780385,
+        "delta_BIC_null": 1124.1855785680455,
+        "delta_BIC_vs_free_null": 55.81181671966661,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.0993366588087037,
+        "bound_parameters": [
+          "F_narrow"
+        ],
+        "log10_LHa_erg_s": 42.022023244633296,
+        "residual_Eq3_dex": -0.1327659131046679
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1309.978597295817,
+        "FWHM_err_cond_kms": 64.35965780380513,
+        "SNR_broad": 24.293207059698286,
+        "delta_BIC_null": 618.9222227073249,
+        "delta_BIC_vs_free_null": 50.160038285735595,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.135566007744159,
+        "bound_parameters": [
+          "F_NII6585",
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 42.00863391529754,
+        "residual_Eq3_dex": -0.06005880220358728
+      },
+      "literature_FWHM_kms": 1960.0,
+      "literature_log10_LHa_erg_s": 42.28353719134419,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": 0.0681887908775014
+    },
+    {
+      "source_id": "Skyfire-23289",
+      "file_id": "dcb6120e80ef0dd7",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.9343,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 599.9999999875465,
+      "orig_W_narrow_bound_side": "upper_600",
+      "orig_FWHM_kms": 2444.1941383370613,
+      "orig_SNR_broad": 6.648368670814517,
+      "orig_delta_BIC_null": 113.24106818508173,
+      "orig_log10_LHa_erg_s": 42.6147672491094,
+      "orig_residual_Eq3_dex": 0.10776611348196719,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.4728638632000006,
+        "in_passband": true,
+        "LSF_FWHM_kms": 341.34141447955375,
+        "SNR_5007": 11.490070241956925,
+        "delta_BIC_5007": 162.32990610460337,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 402.69460533317664,
+        "v_OIII_kms": -134.62015300617477,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000004,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=11.5, dBIC=162.3)",
+      "refit_adopted": {
+        "FWHM_kms": 1791.5542917376413,
+        "FWHM_err_cond_kms": 68.21060444578438,
+        "SNR_broad": 27.529148229756384,
+        "delta_BIC_null": 949.4879311681534,
+        "delta_BIC_vs_free_null": 85.6881941040665,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.361866608495854,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.71418538036458,
+        "residual_Eq3_dex": -0.0440642942148024
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1791.5542917376413,
+        "FWHM_err_cond_kms": 68.21060444578438,
+        "SNR_broad": 27.529148229756384,
+        "delta_BIC_null": 949.4879311681534,
+        "delta_BIC_vs_free_null": 85.6881941040665,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.361866608495854,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.71418538036458,
+        "residual_Eq3_dex": -0.0440642942148024
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1842.049281706587,
+        "FWHM_err_cond_kms": 73.15920909822444,
+        "SNR_broad": 25.598557244361665,
+        "delta_BIC_null": 609.6827922535633,
+        "delta_BIC_vs_free_null": 87.82635953847819,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.3344542311316012,
+        "bound_parameters": [
+          "F_NII6585",
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 42.709379850641604,
+        "residual_Eq3_dex": -0.031175895405563647
+      },
+      "literature_FWHM_kms": 2109.0,
+      "literature_log10_LHa_erg_s": 42.59447126200543,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026",
+      "literature_residual_Eq3_dex": 0.047138380819345294
+    },
+    {
+      "source_id": "RUBIES-UDS-967770",
+      "file_id": "e2e8cf3fab5057eb",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.59,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000520497,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 2243.4693581924157,
+      "orig_SNR_broad": 5.322895889826786,
+      "orig_delta_BIC_null": 2.819343745218845,
+      "orig_log10_LHa_erg_s": 42.498773863255586,
+      "orig_residual_Eq3_dex": 0.09027395944463867,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.8012541600000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 311.6341647435405,
+        "SNR_5007": 5.688033955357492e-16,
+        "delta_BIC_5007": -12.912195279612511,
+        "W_OIII_kms": 599.9991789417835,
+        "W_OIII_err_cond_kms": 0.0,
+        "v_OIII_kms": 453.393549947471,
+        "at_bound": "upper_600"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_undetected_SNR=0.0_dBIC=-12.9)",
+      "refit_adopted": {
+        "FWHM_kms": 2253.5688073712963,
+        "FWHM_err_cond_kms": 397.120506226882,
+        "SNR_broad": 5.27573188000399,
+        "delta_BIC_null": 25.90676502132706,
+        "delta_BIC_vs_free_null": 7.094572324496653,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.0480952626825344,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.4971277314089,
+        "residual_Eq3_dex": 0.09248482043894901
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 2243.7882287783705,
+        "FWHM_err_cond_kms": 387.63743380424035,
+        "SNR_broad": 5.418478782733422,
+        "delta_BIC_null": 29.745908959592555,
+        "delta_BIC_vs_free_null": 7.40431165087918,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.0446537146116175,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.49880902533748,
+        "residual_Eq3_dex": 0.09030997746406477
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 2253.5688073712963,
+        "FWHM_err_cond_kms": 397.120506226882,
+        "SNR_broad": 5.27573188000399,
+        "delta_BIC_null": 25.90676502132706,
+        "delta_BIC_vs_free_null": 7.094572324496653,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.0480952626825344,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.4971277314089,
+        "residual_Eq3_dex": 0.09248482043894901
+      },
+      "literature_FWHM_kms": 2329.9684864283345,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.10668413815935551
+    },
+    {
+      "source_id": "RUBIES-UDS-10036",
+      "file_id": "9fa824381825e35b",
+      "grating": "G395M_F290LP",
+      "z_fit": 3.806,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1927.8577937602092,
+      "orig_SNR_broad": 4.548457305600654,
+      "orig_delta_BIC_null": 1.2319733418944452,
+      "orig_log10_LHa_erg_s": 41.88731589750318,
+      "orig_residual_Eq3_dex": 0.12840052772899924,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 2032.8751376837447,
+        "FWHM_err_cond_kms": 384.01467987215284,
+        "SNR_broad": 4.751040426981256,
+        "delta_BIC_null": 19.446961867934817,
+        "delta_BIC_vs_free_null": -3.1855347654373247,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3615650649570028,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.86717081688821,
+        "residual_Eq3_dex": 0.1548419458896073
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1927.860427276951,
+        "FWHM_err_cond_kms": 342.7825880807614,
+        "SNR_broad": 5.27634096580781,
+        "delta_BIC_null": 28.774651906468705,
+        "delta_BIC_vs_free_null": 5.359107726999838,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.203330944726685,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.88731612224669,
+        "residual_Eq3_dex": 0.1283813426585918
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 2032.8751376837447,
+        "FWHM_err_cond_kms": 384.01467987215284,
+        "SNR_broad": 4.751040426981256,
+        "delta_BIC_null": 19.446961867934817,
+        "delta_BIC_vs_free_null": -3.1855347654373247,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3615650649570028,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.86717081688821,
+        "residual_Eq3_dex": 0.1548419458896073
+      },
+      "literature_FWHM_kms": 1234.0,
+      "literature_log10_LHa_erg_s": 41.95717270411981,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": -0.07725742973860639
+    },
+    {
+      "source_id": "RUBIES-UDS-50716",
+      "file_id": "8f34744bf34e1cf6",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.17,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 2516.7097460108034,
+      "orig_SNR_broad": 4.267798715604202,
+      "orig_delta_BIC_null": 0.7746723568746603,
+      "orig_log10_LHa_erg_s": 42.39268925953254,
+      "orig_residual_Eq3_dex": 0.15822547051388103,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.59090808,
+        "in_passband": true,
+        "LSF_FWHM_kms": 330.0411300645854,
+        "SNR_5007": 8.061514453301148,
+        "delta_BIC_5007": 79.39693034369459,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 535.6256020073502,
+        "v_OIII_kms": -117.52290975060407,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000004,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=8.1, dBIC=79.4)",
+      "refit_adopted": {
+        "FWHM_kms": 2516.6206805560223,
+        "FWHM_err_cond_kms": 521.1549951460419,
+        "SNR_broad": 4.3828243685958626,
+        "delta_BIC_null": 19.65024142791492,
+        "delta_BIC_vs_free_null": 5.3072767749883525,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7353733545532771,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.392679906714676,
+        "residual_Eq3_dex": 0.1581919624781989
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 2516.6206805560223,
+        "FWHM_err_cond_kms": 521.1549951460419,
+        "SNR_broad": 4.3828243685958626,
+        "delta_BIC_null": 19.65024142791492,
+        "delta_BIC_vs_free_null": 5.3072767749883525,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7353733545532771,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.392679906714676,
+        "residual_Eq3_dex": 0.1581919624781989
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 2526.2577925408036,
+        "FWHM_err_cond_kms": 537.4380594297437,
+        "SNR_broad": 4.241460758582027,
+        "delta_BIC_null": 16.328748211681727,
+        "delta_BIC_vs_free_null": 4.009350720696617,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7506430728390622,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.38668391094851,
+        "residual_Eq3_dex": 0.16087142062432225
+      },
+      "literature_FWHM_kms": 2250.260701721221,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.10960544678087514
+    },
+    {
+      "source_id": "RUBIES-UDS-19484",
+      "file_id": "cad9d8b36f7a2b31",
+      "grating": "G395M_F290LP",
+      "z_fit": 4.656,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.00000000692987,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1186.0531768782216,
+      "orig_SNR_broad": 4.026693583960688,
+      "orig_delta_BIC_null": 1.282609912026615,
+      "orig_log10_LHa_erg_s": 41.819348958943415,
+      "orig_residual_Eq3_dex": -0.07101327483809294,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 2.832660544,
+        "in_passband": false,
+        "LSF_FWHM_kms": 418.93590017654316,
+        "SNR_5007": 4.353131265308197,
+        "delta_BIC_5007": 20.223184871590185,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 1596.0076312514527,
+        "v_OIII_kms": -10.018801061594969,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_at_2.833um_below_F290LP_2.87um_cuton)",
+      "refit_adopted": {
+        "FWHM_kms": 1297.0152877936807,
+        "FWHM_err_cond_kms": 432.4240301947174,
+        "SNR_broad": 3.9445116064834105,
+        "delta_BIC_null": 8.12008192894882,
+        "delta_BIC_vs_free_null": 4.745102569993563,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6557173858591273,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.77936061012799,
+        "residual_Eq3_dex": -0.02539250368427437
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1186.05475915748,
+        "FWHM_err_cond_kms": 357.64201158659364,
+        "SNR_broad": 4.808595763457981,
+        "delta_BIC_null": 15.925695436310107,
+        "delta_BIC_vs_free_null": 5.573069352712864,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6429794353557533,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.8193490460694,
+        "residual_Eq3_dex": -0.07103245194001806
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1297.0152877936807,
+        "FWHM_err_cond_kms": 432.4240301947174,
+        "SNR_broad": 3.9445116064834105,
+        "delta_BIC_null": 8.12008192894882,
+        "delta_BIC_vs_free_null": 4.745102569993563,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6557173858591273,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.77936061012799,
+        "residual_Eq3_dex": -0.02539250368427437
+      },
+      "literature_FWHM_kms": 1278.0,
+      "literature_log10_LHa_erg_s": 41.67575585391345,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": -0.014189895821207887
+    },
+    {
+      "source_id": "RUBIES-EGS-61496",
+      "file_id": "c5181afecbeace0b",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.08,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 464.78936149359316,
+      "orig_W_narrow_bound_side": "interior",
+      "orig_FWHM_kms": 1748.3864109368712,
+      "orig_SNR_broad": 3.8384696569642003,
+      "orig_delta_BIC_null": 3.9259393135425427,
+      "orig_log10_LHa_erg_s": 42.28188790042179,
+      "orig_residual_Eq3_dex": 0.018870316754536987,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.0450099200000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 389.5990465632132,
+        "SNR_5007": 5.433859409887024,
+        "delta_BIC_5007": 36.07754026236998,
+        "W_OIII_kms": 30.00000000000786,
+        "W_OIII_err_cond_kms": 1134.0768211251652,
+        "v_OIII_kms": -58.224748023499146,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.00000000000786,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=5.4, dBIC=36.1)",
+      "refit_adopted": {
+        "FWHM_kms": 1408.234586192577,
+        "FWHM_err_cond_kms": 132.60780894636122,
+        "SNR_broad": 13.309757781204068,
+        "delta_BIC_null": 231.880362884706,
+        "delta_BIC_vs_free_null": 5.01712811513076,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7430733904998066,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.341653763341725,
+        "residual_Eq3_dex": -0.08527435789423654
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1408.234586192577,
+        "FWHM_err_cond_kms": 132.60780894636122,
+        "SNR_broad": 13.309757781204068,
+        "delta_BIC_null": 231.880362884706,
+        "delta_BIC_vs_free_null": 5.01712811513076,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7430733904998066,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.341653763341725,
+        "residual_Eq3_dex": -0.08527435789423654
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1452.3039099415546,
+        "FWHM_err_cond_kms": 144.31368710153276,
+        "SNR_broad": 12.360743391178916,
+        "delta_BIC_null": 112.61875215490076,
+        "delta_BIC_vs_free_null": 5.625621956640003,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7343806213353886,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.33661233229729,
+        "residual_Eq3_dex": -0.07103461778712594
+      },
+      "literature_FWHM_kms": 1509.3740041613053,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": -0.04498997080230582
+    },
+    {
+      "source_id": "RUBIES-EGS-952625",
+      "file_id": "27e392c4c289fb94",
+      "grating": "G395H_F290LP",
+      "z_fit": 5.11,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.00000000733546,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 932.6312470280725,
+      "orig_SNR_broad": 3.1186597288096976,
+      "orig_delta_BIC_null": -1.812118789213656,
+      "orig_log10_LHa_erg_s": 41.53855467888359,
+      "orig_residual_Eq3_dex": -0.12766148893318796,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395H",
+        "filter": "F290LP",
+        "center_um": 3.0600346400000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 145.35786670338334,
+        "SNR_5007": 12.646438956268454,
+        "delta_BIC_5007": 218.7031014290557,
+        "W_OIII_kms": 30.00000000000001,
+        "W_OIII_err_cond_kms": 72.18066970451638,
+        "v_OIII_kms": -208.05168145849558,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.00000000000001,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=12.6, dBIC=218.7)",
+      "refit_adopted": {
+        "FWHM_kms": 932.7347642109412,
+        "FWHM_err_cond_kms": 358.6863914920558,
+        "SNR_broad": 3.164926275282354,
+        "delta_BIC_null": -1.8121186545483,
+        "delta_BIC_vs_free_null": 3.539739480034143,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.44907845167398786,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.53857700027747,
+        "residual_Eq3_dex": -0.1276368307779805
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 932.7347642109412,
+        "FWHM_err_cond_kms": 358.6863914920558,
+        "SNR_broad": 3.164926275282354,
+        "delta_BIC_null": -1.8121186545483,
+        "delta_BIC_vs_free_null": 3.539739480034143,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.44907845167398786,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.53857700027747,
+        "residual_Eq3_dex": -0.1276368307779805
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 814.3356203280049,
+        "FWHM_err_cond_kms": 366.48082060789693,
+        "SNR_broad": 1.9555341785393525,
+        "delta_BIC_null": -9.203196571561193,
+        "delta_BIC_vs_free_null": -15.073248900715868,
+        "absorption_adopted": true,
+        "reduced_chi2": 0.4686016983507068,
+        "bound_parameters": [
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 41.4488459436521,
+        "residual_Eq3_dex": -0.17133378347680894
+      },
+      "literature_FWHM_kms": 1366.627847550535,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.03825906698126502
+    },
+    {
+      "source_id": "Skyfire-92141",
+      "file_id": "54c1e145a55d1004",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.1365,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1679.2591353516336,
+      "orig_SNR_broad": 3.0180136541525338,
+      "orig_delta_BIC_null": -7.079763988011592,
+      "orig_log10_LHa_erg_s": 41.92780369947224,
+      "orig_residual_Eq3_dex": 0.06155874552291074,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.574130476,
+        "in_passband": true,
+        "LSF_FWHM_kms": 331.6019998596804,
+        "SNR_5007": 2.270192016104661,
+        "delta_BIC_5007": -5.107788325576244,
+        "W_OIII_kms": 30.000000000066734,
+        "W_OIII_err_cond_kms": 1993.1940419027053,
+        "v_OIII_kms": -186.90102444713358,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_undetected_SNR=2.3_dBIC=-5.1)",
+      "refit_adopted": {
+        "FWHM_kms": 1648.3980452273433,
+        "FWHM_err_cond_kms": 616.5917222628441,
+        "SNR_broad": 2.8756283993232428,
+        "delta_BIC_null": -0.8647604924469903,
+        "delta_BIC_vs_free_null": -4.54306754717922,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8632502483441973,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.90533220542115,
+        "residual_Eq3_dex": 0.057304407961911163
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1678.9924943456706,
+        "FWHM_err_cond_kms": 575.2590793179565,
+        "SNR_broad": 3.1034001852736735,
+        "delta_BIC_null": 1.4224021928881,
+        "delta_BIC_vs_free_null": -2.568902003684883,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8394651213141451,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.92781736707204,
+        "residual_Eq3_dex": 0.061467717422188706
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1648.3980452273433,
+        "FWHM_err_cond_kms": 616.5917222628441,
+        "SNR_broad": 2.8756283993232428,
+        "delta_BIC_null": -0.8647604924469903,
+        "delta_BIC_vs_free_null": -4.54306754717922,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8632502483441973,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.90533220542115,
+        "residual_Eq3_dex": 0.057304407961911163
+      },
+      "literature_FWHM_kms": 1897.0,
+      "literature_log10_LHa_erg_s": 41.69501562288436,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026",
+      "literature_residual_Eq3_dex": 0.15407166938902872
+    },
+    {
+      "source_id": "RUBIES-UDS-31747",
+      "file_id": "237866738229981b",
+      "grating": "G395M_F290LP",
+      "z_fit": 4.13,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 599.9999999999748,
+      "orig_W_narrow_bound_side": "upper_600",
+      "orig_FWHM_kms": 1883.5441362778672,
+      "orig_SNR_broad": 2.584684880806602,
+      "orig_delta_BIC_null": 15.904267735634619,
+      "orig_log10_LHa_erg_s": 42.25255283715747,
+      "orig_residual_Eq3_dex": 0.05619680119634207,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 1402.0173181649036,
+        "FWHM_err_cond_kms": 86.18797592358972,
+        "SNR_broad": 18.573823223543158,
+        "delta_BIC_null": 249.17764366865234,
+        "delta_BIC_vs_free_null": 5.656584197740415,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3631607993346602,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.36838776513946,
+        "residual_Eq3_dex": -0.09174180898887485
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1375.9517201029596,
+        "FWHM_err_cond_kms": 82.37846666363399,
+        "SNR_broad": 19.826865344180952,
+        "delta_BIC_null": 477.2080144130136,
+        "delta_BIC_vs_free_null": 4.639134251007732,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3807030397955684,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.37364589057664,
+        "residual_Eq3_dex": -0.10078607810449602
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1402.0173181649036,
+        "FWHM_err_cond_kms": 86.18797592358972,
+        "SNR_broad": 18.573823223543158,
+        "delta_BIC_null": 249.17764366865234,
+        "delta_BIC_vs_free_null": 5.656584197740415,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3631607993346602,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.36838776513946,
+        "residual_Eq3_dex": -0.09174180898887485
+      },
+      "literature_FWHM_kms": 1688.0,
+      "literature_log10_LHa_erg_s": 42.292987131486086,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": 0.0016983034388737828
+    },
+    {
+      "source_id": "A2744-QSO1",
+      "file_id": "abell2744_9214_41_imgB",
+      "grating": "G395M_F290LP",
+      "z_fit": 7.0364,
+      "mu_lensing": 7.5,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 599.9999999999976,
+      "orig_W_narrow_bound_side": "upper_600",
+      "orig_FWHM_kms": 2107.3147654219792,
+      "orig_SNR_broad": 3.3708421179788326,
+      "orig_delta_BIC_null": 12.863700706169865,
+      "orig_log10_LHa_erg_s": 41.84842756741027,
+      "orig_residual_Eq3_dex": 0.17336640921142443,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 4.024821993600001,
+        "in_passband": true,
+        "LSF_FWHM_kms": 294.1657564912581,
+        "SNR_5007": 2.7795981688513636,
+        "delta_BIC_5007": -1.4760831528235059,
+        "W_OIII_kms": 30.00000085102459,
+        "W_OIII_err_cond_kms": 1258.5242299202866,
+        "v_OIII_kms": -17.143772767869024,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_weak_SNR=2.78; W30_also_reported)",
+      "refit_adopted": {
+        "FWHM_kms": 1222.8506809267449,
+        "FWHM_err_cond_kms": 78.58750097492751,
+        "SNR_broad": 20.872990332124434,
+        "delta_BIC_null": 316.54220511849223,
+        "delta_BIC_vs_free_null": -2.572753962612424,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8955628201134149,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_apparent_erg_s": 42.8429705573239,
+        "log10_LHa_delensed_erg_s": 41.9679092939322,
+        "residual_Eq3_apparent_dex": -0.23181934087746603,
+        "residual_Eq3_delensed_dex": -0.08302479871160484
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1184.3679093498272,
+        "FWHM_err_cond_kms": 69.87307951146175,
+        "SNR_broad": 22.384350244605553,
+        "delta_BIC_null": 634.9438809681818,
+        "delta_BIC_vs_free_null": -3.42560816389377,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.9044467180434289,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_apparent_erg_s": 42.84737184716496,
+        "log10_LHa_delensed_erg_s": 41.97231058377326,
+        "residual_Eq3_apparent_dex": -0.24645452992634231,
+        "residual_Eq3_delensed_dex": -0.09765998776048113
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1222.8506809267449,
+        "FWHM_err_cond_kms": 78.58750097492751,
+        "SNR_broad": 20.872990332124434,
+        "delta_BIC_null": 316.54220511849223,
+        "delta_BIC_vs_free_null": -2.572753962612424,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8955628201134149,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_apparent_erg_s": 42.8429705573239,
+        "log10_LHa_delensed_erg_s": 41.9679092939322,
+        "residual_Eq3_apparent_dex": -0.23181934087746603,
+        "residual_Eq3_delensed_dex": -0.08302479871160484
+      },
+      "literature_FWHM_kms": 680.0,
+      "literature_width_definition": "D'Eugenio+2025 summed two-broad-Gaussian FWHM (components 560+/-50 and 2000+200/-100 km/s; IFU narrow <100 km/s)",
+      "paper_primary": "DEugenio2025_Juodzbalis2025",
+      "literature_residual_Eq3_dex": -0.31757276242863863
+    }
+  ],
+  "all_20_valid_failed_refits": [
+    {
+      "source_id": "RUBIES-EGS-37032",
+      "file_id": "96b9c9be92d936a9",
+      "grating": "G395H_F290LP",
+      "z_fit": 3.85,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 96.47973103907032,
+      "orig_W_narrow_bound_side": "interior",
+      "orig_FWHM_kms": 1438.6592921112942,
+      "orig_SNR_broad": 23.474443970058935,
+      "orig_delta_BIC_null": 65.27399976361573,
+      "orig_log10_LHa_erg_s": 41.998746104109294,
+      "orig_residual_Eq3_dex": -0.017663996117338154,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 1309.978597295817,
+        "FWHM_err_cond_kms": 64.35965780380513,
+        "SNR_broad": 24.293207059698286,
+        "delta_BIC_null": 618.9222227073249,
+        "delta_BIC_vs_free_null": 50.160038285735595,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.135566007744159,
+        "bound_parameters": [
+          "F_NII6585",
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 42.00863391529754,
+        "residual_Eq3_dex": -0.06005880220358728
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1113.868179504384,
+        "FWHM_err_cond_kms": 53.9112433523051,
+        "SNR_broad": 28.048408490780385,
+        "delta_BIC_null": 1124.1855785680455,
+        "delta_BIC_vs_free_null": 55.81181671966661,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.0993366588087037,
+        "bound_parameters": [
+          "F_narrow"
+        ],
+        "log10_LHa_erg_s": 42.022023244633296,
+        "residual_Eq3_dex": -0.1327659131046679
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1309.978597295817,
+        "FWHM_err_cond_kms": 64.35965780380513,
+        "SNR_broad": 24.293207059698286,
+        "delta_BIC_null": 618.9222227073249,
+        "delta_BIC_vs_free_null": 50.160038285735595,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.135566007744159,
+        "bound_parameters": [
+          "F_NII6585",
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 42.00863391529754,
+        "residual_Eq3_dex": -0.06005880220358728
+      },
+      "literature_FWHM_kms": 1960.0,
+      "literature_log10_LHa_erg_s": 42.28353719134419,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": 0.0681887908775014
+    },
+    {
+      "source_id": "Skyfire-23289",
+      "file_id": "dcb6120e80ef0dd7",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.9343,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 599.9999999875465,
+      "orig_W_narrow_bound_side": "upper_600",
+      "orig_FWHM_kms": 2444.1941383370613,
+      "orig_SNR_broad": 6.648368670814517,
+      "orig_delta_BIC_null": 113.24106818508173,
+      "orig_log10_LHa_erg_s": 42.6147672491094,
+      "orig_residual_Eq3_dex": 0.10776611348196719,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.4728638632000006,
+        "in_passband": true,
+        "LSF_FWHM_kms": 341.34141447955375,
+        "SNR_5007": 11.490070241956925,
+        "delta_BIC_5007": 162.32990610460337,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 402.69460533317664,
+        "v_OIII_kms": -134.62015300617477,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000004,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=11.5, dBIC=162.3)",
+      "refit_adopted": {
+        "FWHM_kms": 1791.5542917376413,
+        "FWHM_err_cond_kms": 68.21060444578438,
+        "SNR_broad": 27.529148229756384,
+        "delta_BIC_null": 949.4879311681534,
+        "delta_BIC_vs_free_null": 85.6881941040665,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.361866608495854,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.71418538036458,
+        "residual_Eq3_dex": -0.0440642942148024
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1791.5542917376413,
+        "FWHM_err_cond_kms": 68.21060444578438,
+        "SNR_broad": 27.529148229756384,
+        "delta_BIC_null": 949.4879311681534,
+        "delta_BIC_vs_free_null": 85.6881941040665,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.361866608495854,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.71418538036458,
+        "residual_Eq3_dex": -0.0440642942148024
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1842.049281706587,
+        "FWHM_err_cond_kms": 73.15920909822444,
+        "SNR_broad": 25.598557244361665,
+        "delta_BIC_null": 609.6827922535633,
+        "delta_BIC_vs_free_null": 87.82635953847819,
+        "absorption_adopted": true,
+        "reduced_chi2": 1.3344542311316012,
+        "bound_parameters": [
+          "F_NII6585",
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 42.709379850641604,
+        "residual_Eq3_dex": -0.031175895405563647
+      },
+      "literature_FWHM_kms": 2109.0,
+      "literature_log10_LHa_erg_s": 42.59447126200543,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026",
+      "literature_residual_Eq3_dex": 0.047138380819345294
+    },
+    {
+      "source_id": "RUBIES-UDS-967770",
+      "file_id": "e2e8cf3fab5057eb",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.59,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000520497,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 2243.4693581924157,
+      "orig_SNR_broad": 5.322895889826786,
+      "orig_delta_BIC_null": 2.819343745218845,
+      "orig_log10_LHa_erg_s": 42.498773863255586,
+      "orig_residual_Eq3_dex": 0.09027395944463867,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.8012541600000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 311.6341647435405,
+        "SNR_5007": 5.688033955357492e-16,
+        "delta_BIC_5007": -12.912195279612511,
+        "W_OIII_kms": 599.9991789417835,
+        "W_OIII_err_cond_kms": 0.0,
+        "v_OIII_kms": 453.393549947471,
+        "at_bound": "upper_600"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_undetected_SNR=0.0_dBIC=-12.9)",
+      "refit_adopted": {
+        "FWHM_kms": 2253.5688073712963,
+        "FWHM_err_cond_kms": 397.120506226882,
+        "SNR_broad": 5.27573188000399,
+        "delta_BIC_null": 25.90676502132706,
+        "delta_BIC_vs_free_null": 7.094572324496653,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.0480952626825344,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.4971277314089,
+        "residual_Eq3_dex": 0.09248482043894901
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 2243.7882287783705,
+        "FWHM_err_cond_kms": 387.63743380424035,
+        "SNR_broad": 5.418478782733422,
+        "delta_BIC_null": 29.745908959592555,
+        "delta_BIC_vs_free_null": 7.40431165087918,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.0446537146116175,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.49880902533748,
+        "residual_Eq3_dex": 0.09030997746406477
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 2253.5688073712963,
+        "FWHM_err_cond_kms": 397.120506226882,
+        "SNR_broad": 5.27573188000399,
+        "delta_BIC_null": 25.90676502132706,
+        "delta_BIC_vs_free_null": 7.094572324496653,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.0480952626825344,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.4971277314089,
+        "residual_Eq3_dex": 0.09248482043894901
+      },
+      "literature_FWHM_kms": 2329.9684864283345,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.10668413815935551
+    },
+    {
+      "source_id": "RUBIES-UDS-10036",
+      "file_id": "9fa824381825e35b",
+      "grating": "G395M_F290LP",
+      "z_fit": 3.806,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1927.8577937602092,
+      "orig_SNR_broad": 4.548457305600654,
+      "orig_delta_BIC_null": 1.2319733418944452,
+      "orig_log10_LHa_erg_s": 41.88731589750318,
+      "orig_residual_Eq3_dex": 0.12840052772899924,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 2032.8751376837447,
+        "FWHM_err_cond_kms": 384.01467987215284,
+        "SNR_broad": 4.751040426981256,
+        "delta_BIC_null": 19.446961867934817,
+        "delta_BIC_vs_free_null": -3.1855347654373247,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3615650649570028,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.86717081688821,
+        "residual_Eq3_dex": 0.1548419458896073
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1927.860427276951,
+        "FWHM_err_cond_kms": 342.7825880807614,
+        "SNR_broad": 5.27634096580781,
+        "delta_BIC_null": 28.774651906468705,
+        "delta_BIC_vs_free_null": 5.359107726999838,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.203330944726685,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.88731612224669,
+        "residual_Eq3_dex": 0.1283813426585918
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 2032.8751376837447,
+        "FWHM_err_cond_kms": 384.01467987215284,
+        "SNR_broad": 4.751040426981256,
+        "delta_BIC_null": 19.446961867934817,
+        "delta_BIC_vs_free_null": -3.1855347654373247,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3615650649570028,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.86717081688821,
+        "residual_Eq3_dex": 0.1548419458896073
+      },
+      "literature_FWHM_kms": 1234.0,
+      "literature_log10_LHa_erg_s": 41.95717270411981,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": -0.07725742973860639
+    },
+    {
+      "source_id": "RUBIES-UDS-50716",
+      "file_id": "8f34744bf34e1cf6",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.17,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 2516.7097460108034,
+      "orig_SNR_broad": 4.267798715604202,
+      "orig_delta_BIC_null": 0.7746723568746603,
+      "orig_log10_LHa_erg_s": 42.39268925953254,
+      "orig_residual_Eq3_dex": 0.15822547051388103,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.59090808,
+        "in_passband": true,
+        "LSF_FWHM_kms": 330.0411300645854,
+        "SNR_5007": 8.061514453301148,
+        "delta_BIC_5007": 79.39693034369459,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 535.6256020073502,
+        "v_OIII_kms": -117.52290975060407,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000004,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=8.1, dBIC=79.4)",
+      "refit_adopted": {
+        "FWHM_kms": 2516.6206805560223,
+        "FWHM_err_cond_kms": 521.1549951460419,
+        "SNR_broad": 4.3828243685958626,
+        "delta_BIC_null": 19.65024142791492,
+        "delta_BIC_vs_free_null": 5.3072767749883525,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7353733545532771,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.392679906714676,
+        "residual_Eq3_dex": 0.1581919624781989
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 2516.6206805560223,
+        "FWHM_err_cond_kms": 521.1549951460419,
+        "SNR_broad": 4.3828243685958626,
+        "delta_BIC_null": 19.65024142791492,
+        "delta_BIC_vs_free_null": 5.3072767749883525,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7353733545532771,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.392679906714676,
+        "residual_Eq3_dex": 0.1581919624781989
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 2526.2577925408036,
+        "FWHM_err_cond_kms": 537.4380594297437,
+        "SNR_broad": 4.241460758582027,
+        "delta_BIC_null": 16.328748211681727,
+        "delta_BIC_vs_free_null": 4.009350720696617,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7506430728390622,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.38668391094851,
+        "residual_Eq3_dex": 0.16087142062432225
+      },
+      "literature_FWHM_kms": 2250.260701721221,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.10960544678087514
+    },
+    {
+      "source_id": "RUBIES-UDS-19484",
+      "file_id": "cad9d8b36f7a2b31",
+      "grating": "G395M_F290LP",
+      "z_fit": 4.656,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.00000000692987,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1186.0531768782216,
+      "orig_SNR_broad": 4.026693583960688,
+      "orig_delta_BIC_null": 1.282609912026615,
+      "orig_log10_LHa_erg_s": 41.819348958943415,
+      "orig_residual_Eq3_dex": -0.07101327483809294,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 2.832660544,
+        "in_passband": false,
+        "LSF_FWHM_kms": 418.93590017654316,
+        "SNR_5007": 4.353131265308197,
+        "delta_BIC_5007": 20.223184871590185,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 1596.0076312514527,
+        "v_OIII_kms": -10.018801061594969,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_at_2.833um_below_F290LP_2.87um_cuton)",
+      "refit_adopted": {
+        "FWHM_kms": 1297.0152877936807,
+        "FWHM_err_cond_kms": 432.4240301947174,
+        "SNR_broad": 3.9445116064834105,
+        "delta_BIC_null": 8.12008192894882,
+        "delta_BIC_vs_free_null": 4.745102569993563,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6557173858591273,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.77936061012799,
+        "residual_Eq3_dex": -0.02539250368427437
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1186.05475915748,
+        "FWHM_err_cond_kms": 357.64201158659364,
+        "SNR_broad": 4.808595763457981,
+        "delta_BIC_null": 15.925695436310107,
+        "delta_BIC_vs_free_null": 5.573069352712864,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6429794353557533,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.8193490460694,
+        "residual_Eq3_dex": -0.07103245194001806
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1297.0152877936807,
+        "FWHM_err_cond_kms": 432.4240301947174,
+        "SNR_broad": 3.9445116064834105,
+        "delta_BIC_null": 8.12008192894882,
+        "delta_BIC_vs_free_null": 4.745102569993563,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6557173858591273,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.77936061012799,
+        "residual_Eq3_dex": -0.02539250368427437
+      },
+      "literature_FWHM_kms": 1278.0,
+      "literature_log10_LHa_erg_s": 41.67575585391345,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": -0.014189895821207887
+    },
+    {
+      "source_id": "RUBIES-EGS-61496",
+      "file_id": "c5181afecbeace0b",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.08,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 464.78936149359316,
+      "orig_W_narrow_bound_side": "interior",
+      "orig_FWHM_kms": 1748.3864109368712,
+      "orig_SNR_broad": 3.8384696569642003,
+      "orig_delta_BIC_null": 3.9259393135425427,
+      "orig_log10_LHa_erg_s": 42.28188790042179,
+      "orig_residual_Eq3_dex": 0.018870316754536987,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.0450099200000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 389.5990465632132,
+        "SNR_5007": 5.433859409887024,
+        "delta_BIC_5007": 36.07754026236998,
+        "W_OIII_kms": 30.00000000000786,
+        "W_OIII_err_cond_kms": 1134.0768211251652,
+        "v_OIII_kms": -58.224748023499146,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.00000000000786,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=5.4, dBIC=36.1)",
+      "refit_adopted": {
+        "FWHM_kms": 1408.234586192577,
+        "FWHM_err_cond_kms": 132.60780894636122,
+        "SNR_broad": 13.309757781204068,
+        "delta_BIC_null": 231.880362884706,
+        "delta_BIC_vs_free_null": 5.01712811513076,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7430733904998066,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.341653763341725,
+        "residual_Eq3_dex": -0.08527435789423654
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1408.234586192577,
+        "FWHM_err_cond_kms": 132.60780894636122,
+        "SNR_broad": 13.309757781204068,
+        "delta_BIC_null": 231.880362884706,
+        "delta_BIC_vs_free_null": 5.01712811513076,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7430733904998066,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.341653763341725,
+        "residual_Eq3_dex": -0.08527435789423654
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1452.3039099415546,
+        "FWHM_err_cond_kms": 144.31368710153276,
+        "SNR_broad": 12.360743391178916,
+        "delta_BIC_null": 112.61875215490076,
+        "delta_BIC_vs_free_null": 5.625621956640003,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7343806213353886,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.33661233229729,
+        "residual_Eq3_dex": -0.07103461778712594
+      },
+      "literature_FWHM_kms": 1509.3740041613053,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": -0.04498997080230582
+    },
+    {
+      "source_id": "RUBIES-EGS-952625",
+      "file_id": "27e392c4c289fb94",
+      "grating": "G395H_F290LP",
+      "z_fit": 5.11,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.00000000733546,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 932.6312470280725,
+      "orig_SNR_broad": 3.1186597288096976,
+      "orig_delta_BIC_null": -1.812118789213656,
+      "orig_log10_LHa_erg_s": 41.53855467888359,
+      "orig_residual_Eq3_dex": -0.12766148893318796,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395H",
+        "filter": "F290LP",
+        "center_um": 3.0600346400000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 145.35786670338334,
+        "SNR_5007": 12.646438956268454,
+        "delta_BIC_5007": 218.7031014290557,
+        "W_OIII_kms": 30.00000000000001,
+        "W_OIII_err_cond_kms": 72.18066970451638,
+        "v_OIII_kms": -208.05168145849558,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.00000000000001,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=12.6, dBIC=218.7)",
+      "refit_adopted": {
+        "FWHM_kms": 932.7347642109412,
+        "FWHM_err_cond_kms": 358.6863914920558,
+        "SNR_broad": 3.164926275282354,
+        "delta_BIC_null": -1.8121186545483,
+        "delta_BIC_vs_free_null": 3.539739480034143,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.44907845167398786,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.53857700027747,
+        "residual_Eq3_dex": -0.1276368307779805
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 932.7347642109412,
+        "FWHM_err_cond_kms": 358.6863914920558,
+        "SNR_broad": 3.164926275282354,
+        "delta_BIC_null": -1.8121186545483,
+        "delta_BIC_vs_free_null": 3.539739480034143,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.44907845167398786,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.53857700027747,
+        "residual_Eq3_dex": -0.1276368307779805
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 814.3356203280049,
+        "FWHM_err_cond_kms": 366.48082060789693,
+        "SNR_broad": 1.9555341785393525,
+        "delta_BIC_null": -9.203196571561193,
+        "delta_BIC_vs_free_null": -15.073248900715868,
+        "absorption_adopted": true,
+        "reduced_chi2": 0.4686016983507068,
+        "bound_parameters": [
+          "tau_abs"
+        ],
+        "log10_LHa_erg_s": 41.4488459436521,
+        "residual_Eq3_dex": -0.17133378347680894
+      },
+      "literature_FWHM_kms": 1366.627847550535,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.03825906698126502
+    },
+    {
+      "source_id": "Skyfire-92141",
+      "file_id": "54c1e145a55d1004",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.1365,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1679.2591353516336,
+      "orig_SNR_broad": 3.0180136541525338,
+      "orig_delta_BIC_null": -7.079763988011592,
+      "orig_log10_LHa_erg_s": 41.92780369947224,
+      "orig_residual_Eq3_dex": 0.06155874552291074,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.574130476,
+        "in_passband": true,
+        "LSF_FWHM_kms": 331.6019998596804,
+        "SNR_5007": 2.270192016104661,
+        "delta_BIC_5007": -5.107788325576244,
+        "W_OIII_kms": 30.000000000066734,
+        "W_OIII_err_cond_kms": 1993.1940419027053,
+        "v_OIII_kms": -186.90102444713358,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_undetected_SNR=2.3_dBIC=-5.1)",
+      "refit_adopted": {
+        "FWHM_kms": 1648.3980452273433,
+        "FWHM_err_cond_kms": 616.5917222628441,
+        "SNR_broad": 2.8756283993232428,
+        "delta_BIC_null": -0.8647604924469903,
+        "delta_BIC_vs_free_null": -4.54306754717922,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8632502483441973,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.90533220542115,
+        "residual_Eq3_dex": 0.057304407961911163
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1678.9924943456706,
+        "FWHM_err_cond_kms": 575.2590793179565,
+        "SNR_broad": 3.1034001852736735,
+        "delta_BIC_null": 1.4224021928881,
+        "delta_BIC_vs_free_null": -2.568902003684883,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8394651213141451,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.92781736707204,
+        "residual_Eq3_dex": 0.061467717422188706
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1648.3980452273433,
+        "FWHM_err_cond_kms": 616.5917222628441,
+        "SNR_broad": 2.8756283993232428,
+        "delta_BIC_null": -0.8647604924469903,
+        "delta_BIC_vs_free_null": -4.54306754717922,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8632502483441973,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.90533220542115,
+        "residual_Eq3_dex": 0.057304407961911163
+      },
+      "literature_FWHM_kms": 1897.0,
+      "literature_log10_LHa_erg_s": 41.69501562288436,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026",
+      "literature_residual_Eq3_dex": 0.15407166938902872
+    },
+    {
+      "source_id": "RUBIES-UDS-16053",
+      "file_id": "e708fc9971d4717a",
+      "grating": "G395M_F290LP",
+      "z_fit": 3.952,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.000000000001876,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 911.280656811724,
+      "orig_SNR_broad": 2.6947191187156982,
+      "orig_delta_BIC_null": -5.551841801965651,
+      "orig_log10_LHa_erg_s": 41.56988660788009,
+      "orig_residual_Eq3_dex": -0.14304694968543208,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 902.8741641501621,
+        "FWHM_err_cond_kms": 503.92787972587394,
+        "SNR_broad": 4.44042553614433,
+        "delta_BIC_null": 12.241598521756288,
+        "delta_BIC_vs_free_null": -2.3759599493893404,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7318090833297897,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.55754399444109,
+        "residual_Eq3_dex": -0.1449928974571244
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 911.1102010359914,
+        "FWHM_err_cond_kms": 434.5677482688472,
+        "SNR_broad": 4.827756217328286,
+        "delta_BIC_null": 16.04308532894862,
+        "delta_BIC_vs_free_null": -1.408706593115113,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7142226586702582,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.569912375850635,
+        "residual_Eq3_dex": -0.14315232133375266
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 902.8741641501621,
+        "FWHM_err_cond_kms": 503.92787972587394,
+        "SNR_broad": 4.44042553614433,
+        "delta_BIC_null": 12.241598521756288,
+        "delta_BIC_vs_free_null": -2.3759599493893404,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7318090833297897,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.55754399444109,
+        "residual_Eq3_dex": -0.1449928974571244
+      },
+      "literature_FWHM_kms": 1198.0,
+      "literature_log10_LHa_erg_s": 41.976326486789546,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": -0.09337266143391476
+    },
+    {
+      "source_id": "RUBIES-UDS-31747",
+      "file_id": "237866738229981b",
+      "grating": "G395M_F290LP",
+      "z_fit": 4.13,
+      "is_in_10_critical": true,
+      "orig_W_narrow_kms": 599.9999999999748,
+      "orig_W_narrow_bound_side": "upper_600",
+      "orig_FWHM_kms": 1883.5441362778672,
+      "orig_SNR_broad": 2.584684880806602,
+      "orig_delta_BIC_null": 15.904267735634619,
+      "orig_log10_LHa_erg_s": 42.25255283715747,
+      "orig_residual_Eq3_dex": 0.05619680119634207,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 1402.0173181649036,
+        "FWHM_err_cond_kms": 86.18797592358972,
+        "SNR_broad": 18.573823223543158,
+        "delta_BIC_null": 249.17764366865234,
+        "delta_BIC_vs_free_null": 5.656584197740415,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3631607993346602,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.36838776513946,
+        "residual_Eq3_dex": -0.09174180898887485
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1375.9517201029596,
+        "FWHM_err_cond_kms": 82.37846666363399,
+        "SNR_broad": 19.826865344180952,
+        "delta_BIC_null": 477.2080144130136,
+        "delta_BIC_vs_free_null": 4.639134251007732,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3807030397955684,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.37364589057664,
+        "residual_Eq3_dex": -0.10078607810449602
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1402.0173181649036,
+        "FWHM_err_cond_kms": 86.18797592358972,
+        "SNR_broad": 18.573823223543158,
+        "delta_BIC_null": 249.17764366865234,
+        "delta_BIC_vs_free_null": 5.656584197740415,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.3631607993346602,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.36838776513946,
+        "residual_Eq3_dex": -0.09174180898887485
+      },
+      "literature_FWHM_kms": 1688.0,
+      "literature_log10_LHa_erg_s": 42.292987131486086,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025",
+      "literature_residual_Eq3_dex": 0.0016983034388737828
+    },
+    {
+      "source_id": "RUBIES-UDS-33938",
+      "file_id": "51ed8d566f22a556",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.63,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.000000000000004,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 582.3549435212649,
+      "orig_SNR_broad": 1.7940935217245633,
+      "orig_delta_BIC_null": -9.6601444592944,
+      "orig_log10_LHa_erg_s": 41.918813994878576,
+      "orig_residual_Eq3_dex": -0.39684260699695395,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.8212871200000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 309.98612630505886,
+        "SNR_5007": 5.745391939237728,
+        "delta_BIC_5007": 38.38569417119267,
+        "W_OIII_kms": 30.000000000862332,
+        "W_OIII_err_cond_kms": 666.4490287338579,
+        "v_OIII_kms": -41.14700128547891,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000862332,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=5.7, dBIC=38.4)",
+      "refit_adopted": {
+        "FWHM_kms": 582.5757661564484,
+        "FWHM_err_cond_kms": 350.81443608100875,
+        "SNR_broad": 2.239176344852095,
+        "delta_BIC_null": 0.14746576472782635,
+        "delta_BIC_vs_free_null": -5.075179017254925,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7631544640286382,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.91889907181574,
+        "residual_Eq3_dex": -0.3967121642802218
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 582.5757661564484,
+        "FWHM_err_cond_kms": 350.81443608100875,
+        "SNR_broad": 2.239176344852095,
+        "delta_BIC_null": 0.14746576472782635,
+        "delta_BIC_vs_free_null": -5.075179017254925,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7631544640286382,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.91889907181574,
+        "residual_Eq3_dex": -0.3967121642802218
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 567.0429793947325,
+        "FWHM_err_cond_kms": 362.28447175074575,
+        "SNR_broad": 2.1219029461166943,
+        "delta_BIC_null": -0.25270808946272894,
+        "delta_BIC_vs_free_null": -5.334220200216862,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7660326993948819,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.90862151194936,
+        "residual_Eq3_dex": -0.40670101549462956
+      },
+      "literature_FWHM_kms": 1142.560839510142,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": -0.10417077804132102
+    },
+    {
+      "source_id": "RUBIES-UDS-830237",
+      "file_id": "304a3fc05f7f0517",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.12,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.00005497739719,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1087.9978802590906,
+      "orig_SNR_broad": 1.748679318155633,
+      "orig_delta_BIC_null": -7.793170429663547,
+      "orig_log10_LHa_erg_s": 41.47312913848052,
+      "orig_residual_Eq3_dex": -0.049618506781023974,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.0650428800000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 387.040394100631,
+        "SNR_5007": 7.825381229209481,
+        "delta_BIC_5007": 76.26863666261491,
+        "W_OIII_kms": 30.000000000010445,
+        "W_OIII_err_cond_kms": 775.7891637905317,
+        "v_OIII_kms": 184.21901314045002,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000010445,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=7.8, dBIC=76.3)",
+      "refit_adopted": {
+        "FWHM_kms": 1087.997001428428,
+        "FWHM_err_cond_kms": 885.1985026383481,
+        "SNR_broad": 2.0301123396674305,
+        "delta_BIC_null": -7.7538262495902615,
+        "delta_BIC_vs_free_null": -3.4364616223335673,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8717780564455107,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.47313490418677,
+        "residual_Eq3_dex": -0.04963958754548736
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1087.997001428428,
+        "FWHM_err_cond_kms": 885.1985026383481,
+        "SNR_broad": 2.0301123396674305,
+        "delta_BIC_null": -7.7538262495902615,
+        "delta_BIC_vs_free_null": -3.4364616223335673,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8717780564455107,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.47313490418677,
+        "residual_Eq3_dex": -0.04963958754548736
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1098.7665875409355,
+        "FWHM_err_cond_kms": 1136.5575812032453,
+        "SNR_broad": 1.6778046235349926,
+        "delta_BIC_null": -9.074749806594184,
+        "delta_BIC_vs_free_null": -4.8449716204045785,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.891899627846525,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.42424095303764,
+        "residual_Eq3_dex": -0.03704796295119772
+      },
+      "literature_FWHM_kms": 1237.7170605512779,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.006355071670497203
+    },
+    {
+      "source_id": "RUBIES-EGS-53254",
+      "file_id": "6fe7443b1f7b9bf5",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.62,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.000000000023483,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1112.3624509173203,
+      "orig_SNR_broad": 1.675360366623059,
+      "orig_delta_BIC_null": -9.894731234980341,
+      "orig_log10_LHa_erg_s": 41.96271350303367,
+      "orig_residual_Eq3_dex": -0.12324868262138677,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.8162788800000005,
+        "in_passband": true,
+        "LSF_FWHM_kms": 310.39652496777774,
+        "SNR_5007": 15.848353131572736,
+        "delta_BIC_5007": 306.6202795078169,
+        "W_OIII_kms": 30.000000000005922,
+        "W_OIII_err_cond_kms": 250.77735914605756,
+        "v_OIII_kms": 52.79797121763235,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000005922,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=15.8, dBIC=306.6)",
+      "refit_adopted": {
+        "FWHM_kms": 1113.3963396646748,
+        "FWHM_err_cond_kms": 853.2583153738507,
+        "SNR_broad": 1.7691480232414034,
+        "delta_BIC_null": -8.797365067319092,
+        "delta_BIC_vs_free_null": -5.309760868312225,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7056034356510579,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.96283916353725,
+        "residual_Eq3_dex": -0.12288631931605032
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1113.3963396646748,
+        "FWHM_err_cond_kms": 853.2583153738507,
+        "SNR_broad": 1.7691480232414034,
+        "delta_BIC_null": -8.797365067319092,
+        "delta_BIC_vs_free_null": -5.309760868312225,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.7056034356510579,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 41.96283916353725,
+        "residual_Eq3_dex": -0.12288631931605032
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 7426.159363414848,
+        "FWHM_err_cond_kms": 15299.61472903798,
+        "SNR_broad": 0.20142713298520182,
+        "delta_BIC_null": -10.678076120816328,
+        "delta_BIC_vs_free_null": -6.09513283070811,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.71432979078879,
+        "bound_parameters": [
+          "F_NII6585"
+        ],
+        "log10_LHa_erg_s": 42.69832198336289,
+        "residual_Eq3_dex": 0.5761673931057598
+      },
+      "literature_FWHM_kms": 2067.196101983803,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.1458669360443774
+    },
+    {
+      "source_id": "RUBIES-UDS-53692",
+      "file_id": "bccfee42b9fb4867",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.28,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.000000000000515,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1212.3239719869666,
+      "orig_SNR_broad": 1.6089981090597862,
+      "orig_delta_BIC_null": -8.347229505287046,
+      "orig_log10_LHa_erg_s": 41.48401772931676,
+      "orig_residual_Eq3_dex": -0.004479348551328588,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.1451747200000004,
+        "in_passband": true,
+        "LSF_FWHM_kms": 377.13028566126104,
+        "SNR_5007": 5.128424424222768,
+        "delta_BIC_5007": 28.3627701263881,
+        "W_OIII_kms": 30.00000000000013,
+        "W_OIII_err_cond_kms": 1150.672967615013,
+        "v_OIII_kms": -123.09194241782457,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.00000000000013,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=5.1, dBIC=28.4)",
+      "refit_adopted": {
+        "FWHM_kms": 1211.7239846880605,
+        "FWHM_err_cond_kms": 662.6076851390807,
+        "SNR_broad": 1.969271805933631,
+        "delta_BIC_null": -7.614894943446188,
+        "delta_BIC_vs_free_null": -3.952780345825289,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6882098708159511,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.48391076871492,
+        "residual_Eq3_dex": -0.004695898865068937
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1211.7239846880605,
+        "FWHM_err_cond_kms": 662.6076851390807,
+        "SNR_broad": 1.969271805933631,
+        "delta_BIC_null": -7.614894943446188,
+        "delta_BIC_vs_free_null": -3.952780345825289,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6882098708159511,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.48391076871492,
+        "residual_Eq3_dex": -0.004695898865068937
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1213.3676046808794,
+        "FWHM_err_cond_kms": 769.1465102091768,
+        "SNR_broad": 1.6014981380839888,
+        "delta_BIC_null": -9.05209955593915,
+        "delta_BIC_vs_free_null": -4.786589662435944,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6996319162489737,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.41752926049801,
+        "residual_Eq3_dex": 0.007180237745547213
+      },
+      "literature_FWHM_kms": 1725.4957063615639,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.14879609227658275
+    },
+    {
+      "source_id": "RUBIES-EGS-927271",
+      "file_id": "8e46bb59eb346d05",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.78,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.00000010170866,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1678.0900073836845,
+      "orig_SNR_broad": 1.582873909236007,
+      "orig_delta_BIC_null": -8.89167533004806,
+      "orig_log10_LHa_erg_s": 41.86032089884281,
+      "orig_residual_Eq3_dex": 0.07273098669816935,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.8964107200000004,
+        "in_passband": true,
+        "LSF_FWHM_kms": 303.9558747651225,
+        "SNR_5007": 29.751022509676478,
+        "delta_BIC_5007": 1060.3575580929776,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 113.77754819301133,
+        "v_OIII_kms": 208.56724795705458,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000004,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=29.8, dBIC=1060.4)",
+      "refit_adopted": {
+        "FWHM_kms": 1678.3212168128714,
+        "FWHM_err_cond_kms": 960.3888772660001,
+        "SNR_broad": 1.6694829280157963,
+        "delta_BIC_null": -8.891677150588507,
+        "delta_BIC_vs_free_null": -4.286507052995532,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8518927507021651,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.86007785311227,
+        "residual_Eq3_dex": 0.07281240675786105
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1678.3212168128714,
+        "FWHM_err_cond_kms": 960.3888772660001,
+        "SNR_broad": 1.6694829280157963,
+        "delta_BIC_null": -8.891677150588507,
+        "delta_BIC_vs_free_null": -4.286507052995532,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.8518927507021651,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.86007785311227,
+        "residual_Eq3_dex": 0.07281240675786105
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 792.3906652762907,
+        "FWHM_err_cond_kms": 679.9301765495287,
+        "SNR_broad": 1.4612686364497691,
+        "delta_BIC_null": -10.144830024311773,
+        "delta_BIC_vs_free_null": -11.298458087847607,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.9281096097766443,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 41.5310686356677,
+        "residual_Eq3_dex": -0.19717892903087852
+      },
+      "literature_FWHM_kms": 1649.267715965869,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.06518715252731866
+    },
+    {
+      "source_id": "RUBIES-UDS-36171",
+      "file_id": "1b6b8c7fe5925cb5",
+      "grating": "G395M_F290LP",
+      "z_fit": 6.47,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 340.98656325639604,
+      "orig_W_narrow_bound_side": "interior",
+      "orig_FWHM_kms": 1172.6261589349094,
+      "orig_SNR_broad": 1.53815779761115,
+      "orig_delta_BIC_null": -1.006168760552697,
+      "orig_log10_LHa_erg_s": 42.21114116872465,
+      "orig_residual_Eq3_dex": -0.14257782226918225,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.74115528,
+        "in_passband": true,
+        "LSF_FWHM_kms": 316.6834509538883,
+        "SNR_5007": 1.8089032942410737,
+        "delta_BIC_5007": -6.6431526685683195,
+        "W_OIII_kms": 30.00000000000019,
+        "W_OIII_err_cond_kms": 2118.9518931413213,
+        "v_OIII_kms": -185.5249526547988,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_undetected_SNR=1.8_dBIC=-6.6)",
+      "refit_adopted": {
+        "FWHM_kms": 1270.6752280150913,
+        "FWHM_err_cond_kms": 302.5153934322358,
+        "SNR_broad": 4.076058712839786,
+        "delta_BIC_null": 15.975301802624287,
+        "delta_BIC_vs_free_null": 2.7812857996963913,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.5656330866464528,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.293707282580804,
+        "residual_Eq3_dex": -0.12176202924770552
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1288.6272965618116,
+        "FWHM_err_cond_kms": 289.24650865138824,
+        "SNR_broad": 4.426229964983216,
+        "delta_BIC_null": 18.78430317981568,
+        "delta_BIC_vs_free_null": 2.135082462638877,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.5729763063857427,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.31377857959777,
+        "residual_Eq3_dex": -0.11908216927344206
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1270.6752280150913,
+        "FWHM_err_cond_kms": 302.5153934322358,
+        "SNR_broad": 4.076058712839786,
+        "delta_BIC_null": 15.975301802624287,
+        "delta_BIC_vs_free_null": 2.7812857996963913,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.5656330866464528,
+        "bound_parameters": [],
+        "log10_LHa_erg_s": 42.293707282580804,
+        "residual_Eq3_dex": -0.12176202924770552
+      },
+      "literature_FWHM_kms": 2176.6385710959967,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.12602918762542004
+    },
+    {
+      "source_id": "RUBIES-UDS-848745",
+      "file_id": "59c727b95ebab2ca",
+      "grating": "G395M_F290LP",
+      "z_fit": 7.11,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.000000000000153,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 350.00000001632895,
+      "orig_SNR_broad": 1.4182761271909246,
+      "orig_delta_BIC_null": -6.609030742605114,
+      "orig_log10_LHa_erg_s": 41.9414230306169,
+      "orig_residual_Eq3_dex": -0.6218067474520712,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 4.06168264,
+        "in_passband": true,
+        "LSF_FWHM_kms": 291.46899249136993,
+        "SNR_5007": 13.818098850196854,
+        "delta_BIC_5007": 249.76397597732117,
+        "W_OIII_kms": 30.000000000000004,
+        "W_OIII_err_cond_kms": 240.257711173202,
+        "v_OIII_kms": 70.26297226289174,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000004,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=13.8, dBIC=249.8)",
+      "refit_adopted": {
+        "FWHM_kms": 350.00000000000057,
+        "FWHM_err_cond_kms": 334.66116477553913,
+        "SNR_broad": 1.8333329276781218,
+        "delta_BIC_null": -5.8754592264332075,
+        "delta_BIC_vs_free_null": -1.9550703924130346,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6538157725617525,
+        "bound_parameters": [
+          "W_broad1"
+        ],
+        "log10_LHa_erg_s": 41.94142302096365,
+        "residual_Eq3_dex": -0.6218264847113613
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 350.00000000000057,
+        "FWHM_err_cond_kms": 334.66116477553913,
+        "SNR_broad": 1.8333329276781218,
+        "delta_BIC_null": -5.8754592264332075,
+        "delta_BIC_vs_free_null": -1.9550703924130346,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6538157725617525,
+        "bound_parameters": [
+          "W_broad1"
+        ],
+        "log10_LHa_erg_s": 41.94142302096365,
+        "residual_Eq3_dex": -0.6218264847113613
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 350.0000000000002,
+        "FWHM_err_cond_kms": 386.1639059949823,
+        "SNR_broad": 1.570101713177342,
+        "delta_BIC_null": -7.7930868379805815,
+        "delta_BIC_vs_free_null": -3.164890211166835,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.6662881418272555,
+        "bound_parameters": [
+          "W_broad1"
+        ],
+        "log10_LHa_erg_s": 41.882847955933386,
+        "residual_Eq3_dex": -0.611866439228681
+      },
+      "literature_FWHM_kms": 1734.5985755513454,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.07330445470967728
+    },
+    {
+      "source_id": "Skyfire-26079",
+      "file_id": "ad8efd0f7c205c0b",
+      "grating": "G395M_F290LP",
+      "z_fit": 5.0015,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 30.000004704528617,
+      "orig_W_narrow_bound_side": "lower_30",
+      "orig_FWHM_kms": 1397.3395132060368,
+      "orig_SNR_broad": 0.8766641553711084,
+      "orig_delta_BIC_null": -11.814667452035835,
+      "orig_log10_LHa_erg_s": 41.06942765659661,
+      "orig_residual_Eq3_dex": 0.1277003894518507,
+      "OIII5007_measurement": {
+        "status": "fitted",
+        "grating": "G395M",
+        "filter": "F290LP",
+        "center_um": 3.005695236,
+        "in_passband": true,
+        "LSF_FWHM_kms": 394.71911049813315,
+        "SNR_5007": 27.267412408262484,
+        "delta_BIC_5007": 829.1809952349682,
+        "W_OIII_kms": 30.000000000000103,
+        "W_OIII_err_cond_kms": 219.62496870898696,
+        "v_OIII_kms": -183.4933554836022,
+        "at_bound": "lower_30"
+      },
+      "adopted_W_narrow_kms": 30.000000000000103,
+      "adopted_W_narrow_source": "OIII5007_same_spectrum (SNR=27.3, dBIC=829.2)",
+      "refit_adopted": {
+        "FWHM_kms": 1399.615920766107,
+        "FWHM_err_cond_kms": 1745.7567378652602,
+        "SNR_broad": 0.8873056450936453,
+        "delta_BIC_null": -11.814745960537223,
+        "delta_BIC_vs_free_null": -7.470941135735572,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.9515581252635784,
+        "bound_parameters": [
+          "v_broad1"
+        ],
+        "log10_LHa_erg_s": 41.06979417391792,
+        "residual_Eq3_dex": 0.12832524244176113
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 1399.615920766107,
+        "FWHM_err_cond_kms": 1745.7567378652602,
+        "SNR_broad": 0.8873056450936453,
+        "delta_BIC_null": -11.814745960537223,
+        "delta_BIC_vs_free_null": -7.470941135735572,
+        "absorption_adopted": false,
+        "reduced_chi2": 0.9515581252635784,
+        "bound_parameters": [
+          "v_broad1"
+        ],
+        "log10_LHa_erg_s": 41.06979417391792,
+        "residual_Eq3_dex": 0.12832524244176113
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 1307.7707121935855,
+        "FWHM_err_cond_kms": 1647.2761070490922,
+        "SNR_broad": 0.8868711605494422,
+        "delta_BIC_null": -11.854336688264027,
+        "delta_BIC_vs_free_null": -20.270029675105874,
+        "absorption_adopted": false,
+        "reduced_chi2": 1.1370521620660465,
+        "bound_parameters": [
+          "v_broad1"
+        ],
+        "log10_LHa_erg_s": 41.04725823955494,
+        "residual_Eq3_dex": 0.10267996322162665
+      },
+      "literature_FWHM_kms": 2182.0,
+      "literature_log10_LHa_erg_s": 42.53001720938308,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026",
+      "literature_residual_Eq3_dex": 0.07287624998603315
+    },
+    {
+      "source_id": "RUBIES-UDS-167741",
+      "file_id": "9f3c126d97c8fa1a",
+      "grating": "G395M_F290LP",
+      "z_fit": 4.12,
+      "is_in_10_critical": false,
+      "orig_W_narrow_kms": 115.00897266016958,
+      "orig_W_narrow_bound_side": "interior",
+      "orig_FWHM_kms": 8895.790052256663,
+      "orig_SNR_broad": 0.1968793944714706,
+      "orig_delta_BIC_null": -6.073943574196733,
+      "orig_log10_LHa_erg_s": 42.618690840921936,
+      "orig_residual_Eq3_dex": 0.6681477761869297,
+      "OIII5007_measurement": {
+        "status": "not_covered_or_insufficient_valid_pixels",
+        "in_passband": false
+      },
+      "adopted_W_narrow_kms": 150.0,
+      "adopted_W_narrow_source": "fixed_150 (OIII5007_not_covered_in_grating)",
+      "refit_adopted": {
+        "FWHM_kms": 8776.746640457231,
+        "FWHM_err_cond_kms": 17022.096252794632,
+        "SNR_broad": 0.1964808369470162,
+        "delta_BIC_null": -6.424994571328966,
+        "delta_BIC_vs_free_null": -2.238463491700145,
+        "absorption_adopted": false,
+        "reduced_chi2": 16.78912964097051,
+        "bound_parameters": [
+          "v_broad1"
+        ],
+        "log10_LHa_erg_s": 42.581186288114715,
+        "residual_Eq3_dex": 0.6686543264547362
+      },
+      "refit_W30_sensitivity": {
+        "FWHM_kms": 2246.8871794307197,
+        "FWHM_err_cond_kms": 227.6445260216861,
+        "SNR_broad": 2.2684332330997474,
+        "delta_BIC_null": 396.60767296416543,
+        "delta_BIC_vs_free_null": 398.3515442707592,
+        "absorption_adopted": true,
+        "reduced_chi2": 10.192919039777292,
+        "bound_parameters": [
+          "v_broad1",
+          "tau_abs",
+          "W_abs"
+        ],
+        "log10_LHa_erg_s": 43.487944189331515,
+        "residual_Eq3_dex": -0.07728217581259278
+      },
+      "refit_W150_sensitivity": {
+        "FWHM_kms": 8776.746640457231,
+        "FWHM_err_cond_kms": 17022.096252794632,
+        "SNR_broad": 0.1964808369470162,
+        "delta_BIC_null": -6.424994571328966,
+        "delta_BIC_vs_free_null": -2.238463491700145,
+        "absorption_adopted": false,
+        "reduced_chi2": 16.78912964097051,
+        "bound_parameters": [
+          "v_broad1"
+        ],
+        "log10_LHa_erg_s": 42.581186288114715,
+        "residual_Eq3_dex": 0.6686543264547362
+      },
+      "literature_FWHM_kms": 2399.391717341121,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (§3.1.1)",
+      "paper_primary": "Hviding2025",
+      "literature_residual_Eq3_dex": 0.09904468344315687
+    }
+  ],
+  "frozen_29_median_log10_LHa": 42.337845004070786
+}

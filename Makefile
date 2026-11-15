@@ -3,7 +3,7 @@ PY ?= python
 .PHONY: analysis numbers tables figures paper check-reproduction measurement-summary
 
 analysis:
-	for s in analysis/0[1-7]_*.py analysis/09_*.py analysis/11_*.py analysis/10_*.py analysis/12_*.py; do $(PY) $$s || exit 1; done
+	for s in analysis/0[1-7]_*.py analysis/09_*.py analysis/11_*.py analysis/10_*.py analysis/12_*.py analysis/13_*.py; do $(PY) $$s || exit 1; done
 
 numbers:
 	$(PY) scripts/make_numbers.py

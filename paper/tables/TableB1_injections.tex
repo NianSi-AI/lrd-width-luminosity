@@ -1,9 +1,8 @@
 \begin{deluxetable*}{llccccc}
 \tabletypesize{\scriptsize}
 \tabcolsep=2.2pt
-\renewcommand{\arraystretch}{0.92}
 \tablewidth{0pt}
-\tablecaption{Injection--recovery tests on the 29 LRD noise and LSF templates\label{tab:injections}}
+\tablecaption{Injection--recovery tests on the LRD noise and LSF templates\label{tab:injections}}
 \tablehead{\colhead{Injected profile \& relation} & \colhead{Width measure} & \colhead{$\sigma_{\rm parent}$} & \colhead{Injected $b$} & \colhead{Recovered $\sigma_{\rm int}$ (dex)} & \colhead{Trials $\leq\Fsig{}$~dex} & \colhead{Recovered $b$}}
 \startdata
 \cutinhead{Cross-profile matrix at fiducial scatter}
@@ -29,6 +28,12 @@ Exponential, lum.-independent & Single-Gaussian & $0.15$ & $0.00$ & $0.098$ ($0.
 \cutinhead{Null-slope tests ($b=0$)}
 Exponential, matched width & Single-Gaussian & $0.05$ & $0.00$ & $0.059$ ($0.045$--$0.073$) & 41/100 & $0.02$ ($-0.01$ to $0.04$) \\
 Lorentzian, matched width & Single-Gaussian & $0.05$ & $0.00$ & $0.068$ ($0.054$--$0.091$) & 18/100 & $0.02$ ($-0.01$ to $0.04$) \\
+\cutinhead{Full in-band parent templates (\NParentInBand{} LRDs)\tablenotemark{a}}
+Gaussian, observed locus & Single-Gaussian & $0.05$ & $0.17$ & $\recParFiveG{}$ ($\recParFiveGlo{}$--$\recParFiveGhi{}$) & \hitParFiveGnum{} & $\bParFiveG{}$ ($\bParFiveGlo{}$--$\bParFiveGhi{}$) \\
+Exponential, matched locus & Single-Gaussian & $0.05$ & $0.18$ & $\recParFiveE{}$ ($\recParFiveElo{}$--$\recParFiveEhi{}$) & \hitParFiveEnum{} & $\bParFiveE{}$ ($\bParFiveElo{}$--$\bParFiveEhi{}$) \\
+Gaussian, observed locus & Single-Gaussian & $0.10$ & $0.17$ & $\recParTenG{}$ ($\recParTenGlo{}$--$\recParTenGhi{}$) & \hitParTenGnum{} & $\bParTenG{}$ ($\bParTenGlo{}$--$\bParTenGhi{}$) \\
+Exponential, matched locus & Single-Gaussian & $0.10$ & $0.18$ & $\recParTenE{}$ ($\recParTenElo{}$--$\recParTenEhi{}$) & \hitParTenEnum{} & $\bParTenE{}$ ($\bParTenElo{}$--$\bParTenEhi{}$) \\
 \enddata
-\tablecomments{Each row summarizes 100 simulated 29-source samples generated on the pixel grids, noise vectors, and grating LSFs of the observed LRD spectra, refitted with the pipeline of Section~\ref{sec:fit}, and filtered by the quality rules of Section~\ref{sec:sample}. Recovered $\sigma_{\rm int}$ and $b$ list the median (16th--84th percentiles) of the Bayesian posterior medians across the 100 realizations. In the last two rows, 0/200 realizations yield a posterior-median slope as steep as the observed $b=\Fb{}$.}
+\tablecomments{Each row summarizes \NReal{} simulated samples generated on the pixel grids, noise vectors, and grating LSFs of the observed LRD spectra (\NLRD{} surviving templates in the first three blocks; all \NParentInBand{} in-band parent templates in the bottom block), refitted with the pipeline of Section~\ref{sec:fit}, and filtered by the quality rules of Section~\ref{sec:sample}. Recovered $\sigma_{\rm int}$ and $b$ list the median (16th--84th percentiles) of the Bayesian posterior medians across the \NReal{} realizations. In the null-slope ($b=0$) rows, \hitSlopeNull{} of \nullDen{} realizations yield a posterior-median slope as steep as $b=\Fb{}$ (97.5th percentile $\leq\bNullHi{}$).}
+\tablenotetext{a}{Across the \NParentInBand{}-template suites, a median of \NParSelG{} (\NParSelGlo{}--\NParSelGhi{}, Gaussian) and \NParSelE{} (\NParSelElo{}--\NParSelEhi{}, exponential) sources pass Section~\ref{sec:sample} per realization; replacing refitted/published $\LHa$ with pipeline-fitted $\LHa$ on all failed templates yields $\sigma_{\rm int}\leq\Fsig{}$~dex in \hitParOwnTenGnum{} and \hitParOwnTenEnum{} realizations at $\sigma_{\rm parent}=\simA{}$~dex.}
 \end{deluxetable*}

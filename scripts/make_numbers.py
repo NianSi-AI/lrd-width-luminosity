@@ -13,6 +13,7 @@ import re
 import statistics
 from collections import Counter
 
+from lrdwidth import stats as S
 from lrdwidth.paths import DATA, PAPER, PHOTOSPHERE, RESULTS, WIDTHS
 
 HERE = str(PAPER)
@@ -23,9 +24,26 @@ r2 = json.load(open(RESULTS / "robustness.json"))
 r6 = json.load(open(RESULTS / "photosphere_constrained.json"))
 r11 = json.load(open(RESULTS / "photosphere_simulations.json"))
 rep_cal = json.load(open(RESULTS / "repeat_calibration.json"))
+t13_1 = json.load(open(RESULTS / "parent_covariance_audit.json"))
+t13_2 = json.load(open(RESULTS / "narrow_degeneracy_refit.json"))
+t13_2b = json.load(open(RESULTS / "frozen_fixed_narrow_audit.json"))
+t13_3 = json.load(open(RESULTS / "parent49_injection.json"))
+t13_4 = json.load(open(RESULTS / "repeat_random_effects.json"))
+t13_5 = json.load(open(RESULTS / "exterior_potential_check.json"))
 X = json.load(open(RESULTS / "measurement_summary.json"))["numbers"]
 FS = json.load(open(PHOTOSPHERE / "simulation_results.json"))["results"]
 xv = lambda k: X[k]["value"]
+
+def _post_rows(rows):
+    x = [r['x'] for r in rows]
+    y = [r['y'] for r in rows]
+    cxx = [r['cov'][0][0] for r in rows]
+    cyy = [r['cov'][1][1] for r in rows]
+    cxy = [r['cov'][0][1] for r in rows]
+    b, s, p, ah = S.post2(x, y, cxx, cyy, cxy)
+    pb = p.sum(1)
+    ps = p.sum(0)
+    return dict(b_q=S.quant(b, pb), s_q=S.quant(s, ps), s_p95=S.quant(s, ps, qs=(0.95,))[0], s=s, ps=ps)
 
 M = []   # (name, value, status, note)
 def add(name, val, st, note=''):
@@ -43,13 +61,16 @@ def trip(prefix, q, fmt, st, note=''):
     add(prefix+'hi', fmt(q[4]), st)
 sec = lambda t: M.append(('%', t, '', ''))
 
+_w = {0: 'none', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
+
 sec('sample (design and counts)')
 for n, v in (('NLRD', 29), ('NOther', 15), ('NFrozen', 44), ('NSources', 115), ('NSpectra', 204), ('NSpecHa', 177),
              ('NProg', 'eight'), ('NEGS', 30), ('NUDS', 14), ('NAbsLRD', 'five'), ('NAbsOther', 'four'),
              ('NLabTLRD', 13), ('NLabKLRD', 10), ('NLabHLRD', 'six')):
     add(n, v, 'V')
 assert r2['N_abs'] == [5, 4]
-for n, v in (('cutSN', 5), ('cutBIC', 6), ('cutChi', 2), ('HvidingCut', 1000)):
+for n, v in (('cutSN', 5), ('cutSNthree', 3), ('cutBIC', 6), ('cutChi', 2), ('HvidingCut', 1000),
+             ('wnarDef', 150), ('passShift', '0.10'), ('rOutRph', 100)):
     add(n, v, 'D')
 add('matchRadius', r'0\farcs5', 'D')
 for n, v in (('zLRDmin', '3.36'), ('zLRDmax', '7.15'), ('zLRDmed', '5.45'), ('SNLRDmed', '13.7'),
@@ -71,7 +92,7 @@ add('NBIChiSN', 'nine', 'X', 'LRDs with broad S/N > 20, all nine with Delta BIC 
 add('NBICsixOth', 'four', 'X', 'other sources: Gaussian worse than best by Delta BIC > 6 (of 15)')
 add('NCoreWing', 'seven', 'V', 'sources where the two-Gaussian decomposition is identifiable')
 
-sec('our sample, single-Gaussian FWHM and repeat-spectrum calibration')
+sec('our sample, single-Gaussian FWHM, narrow-line sensitivity, and repeat-spectrum calibration')
 m = r1['W1_single_gaussian']
 fm = r2['frozen_main']
 trip('Fsig', m['LRD']['sigma'], f3, 'R', 'formal-error posterior median and equal-tailed 95% interval; X=0.0535 [0.0372, 0.0792]')
@@ -106,8 +127,81 @@ lh = r2['frozen_LSFhalf']
 trip('FsigLsf', lh['LRD']['sigma'], f3, 'R', 'X=0.0684 [0.0482, 0.0992]')
 trip('FsigoLsf', lh['other']['sigma'], f3, 'R')
 trip('FdsigLsf', lh['diff'], lambda v: neg(f3(v)), 'R', 'X=-0.0884 [-0.1908, -0.0286]')
+w3_in = json.load(open(WIDTHS / 'lsf_half_inputs.json'))
+lsf_post = _post_rows([r_ for r_ in w3_in if r_['cls'] == 'LRD'])
+assert abs(lsf_post['s_q'][2] - lh['LRD']['sigma'][2]) < 1e-6
+add('FsigLsfUp', f3(lsf_post['s_p95']), 'C', f"one-sided 95% upper limit for LSF width x 0.5 ({lsf_post['s_p95']:.5f} dex)")
 
-# Repeat-spectrum floor macros
+f44_aud = t13_2b['frozen_44_audit']
+bound_lrd = [x for x in f44_aud if x['cls'] == 'LRD' and x['orig_W_narrow_kms'] > 599.0]
+bound_oth = [x for x in f44_aud if x['cls'] != 'LRD' and x['orig_W_narrow_kms'] > 599.0]
+assert len(bound_lrd) == 2 and len(bound_oth) == 0
+w_bef_mean = sum(x['orig_FWHM_kms'] for x in bound_lrd) / len(bound_lrd)
+w_aft_mean = sum(0.5 * (x['W150_FWHM_kms'] + x['new_FWHM_kms']) for x in bound_lrd) / len(bound_lrd)
+w_bef_50 = int(50 * round(w_bef_mean / 50.0))
+w_aft_50 = int(50 * round(w_aft_mean / 50.0))
+assert w_bef_50 == 3150 and w_aft_50 == 2400
+add('NNarBoundLRD', _w[len(bound_lrd)], 'C', 'luminous LRDs whose free narrow Gaussian hits the 600 km/s bound')
+add('WNarBoundBefore', w_bef_50, 'A', f'mean broad FWHM of the two narrow-bound LRDs before locking ({w_bef_mean:.1f} km/s, rounded to 50 km/s)')
+add('WNarBoundAfter', w_aft_50, 'A', f'mean broad FWHM of the two narrow-bound LRDs after locking narrow FWHM ({w_aft_mean:.1f} km/s, rounded to 50 km/s)')
+
+w1_in = json.load(open(WIDTHS / 'regression_inputs.json'))
+drop_nar_ids = {x['source_id'] for x in bound_lrd}
+lrd27_rows = [r_ for r_ in w1_in['single_gaussian'] if r_['cls'] == 'LRD' and r_['source_id'] not in drop_nar_ids]
+oth15_rows = [r_ for r_ in w1_in['single_gaussian'] if r_['cls'] != 'LRD']
+assert len(lrd27_rows) == 27 and len(oth15_rows) == 15
+nar_cut_lrd = _post_rows(lrd27_rows)
+nar_cut_oth = _post_rows(oth15_rows)
+nar_cut_diff = S.diffq(nar_cut_lrd['s'], nar_cut_lrd['ps'], nar_cut_oth['ps'])
+add('NLRDNarCut', len(lrd27_rows), 'C', 'LRDs with fitted narrow-line FWHM < 600 km/s')
+trip('FbNarCut', nar_cut_lrd['b_q'], f2, 'C', 'slope of N=27 LRDs with narrow-line FWHM < 600 km/s')
+trip('FsigNarCut', nar_cut_lrd['s_q'], f3, 'C', 'sigma_int of N=27 LRDs with narrow-line FWHM < 600 km/s')
+add('FsigNarCutUp', f3(nar_cut_lrd['s_p95']), 'C', f"one-sided 95% upper limit for narrow-line FWHM < 600 km/s ({nar_cut_lrd['s_p95']:.5f} dex)")
+trip('FdsigNarCut', nar_cut_diff, lambda v: neg(f3(v)), 'C', 'Delta sigma_int for N=27 narrow-line < 600 km/s vs 15 other sources')
+
+reg_w150 = t13_2b['reg_frozen_universal_W150_29LRD_15oth']
+reg_oiii = t13_2b['reg_frozen_OIII_anchored_29LRD_15oth']
+reg_w30 = t13_2b['reg_frozen_universal_W30_29LRD_15oth']
+trip('FbNarFix', reg_w150['slope_q'], f2, 'C', 'slope with narrow-line FWHM fixed to 150 km/s across all 29 LRDs')
+trip('FsigNarFix', reg_w150['sigma_q'], f3, 'C', 'LRD sigma_int with narrow-line FWHM fixed to 150 km/s')
+add('FsigNarFixUp', f3(reg_w150['sigma_p95_onesided']), 'C', f"one-sided 95% upper limit for fixed 150 km/s ({reg_w150['sigma_p95_onesided']:.5f} dex)")
+trip('FsigoNarFix', reg_w150['other']['sigma_q'], f3, 'C', 'other-source sigma_int with narrow-line FWHM fixed to 150 km/s')
+trip('FdsigNarFix', reg_w150['diff_LRD_minus_other_q'], lambda v: neg(f3(v)), 'C')
+
+trip('FbNarOIII', reg_oiii['slope_q'], f2, 'C', 'slope with narrow-line FWHM anchored to [O III] 5007 (150 km/s where unmeasured)')
+trip('FsigNarOIII', reg_oiii['sigma_q'], f3, 'C', 'LRD sigma_int with narrow-line FWHM anchored to [O III] 5007')
+s_oiii_up = reg_oiii['sigma_p95_onesided']
+add('FsigNarOIIIUp', f3(s_oiii_up), 'C', f'one-sided 95% upper limit for [O III]-anchored narrow FWHM ({s_oiii_up:.5f} dex)')
+trip('FsigoNarOIII', reg_oiii['other']['sigma_q'], f3, 'C', 'other-source sigma_int with narrow-line FWHM anchored to [O III] 5007')
+trip('FdsigNarOIII', reg_oiii['diff_LRD_minus_other_q'], lambda v: neg(f3(v)), 'C')
+add('FsigNarMin', f3(reg_w30['sigma_q'][2]), 'C', 'LRD sigma_int median when fixing all 29 narrow FWHMs to 30 km/s')
+add('FsigNarMinUp', f3(reg_w30['sigma_p95_onesided']), 'C', f"one-sided 95% upper limit when fixing all 29 narrow FWHMs to 30 km/s ({reg_w30['sigma_p95_onesided']:.5f} dex)")
+n_oiii_30 = sum(1 for x in f44_aud if x['cls'] == 'LRD' and x.get('OIII_W_kms') is not None and x['OIII_W_kms'] <= 30.01)
+assert n_oiii_30 == 21
+add('NOIIIUnres', n_oiii_30, 'C', 'frozen LRDs whose [O III] 5007 fit hits the 30 km/s lower bound')
+loosen_pct = 5 * round(20.0 * (s_oiii_up / s_up - 1.0))
+assert loosen_pct == 30
+add('narCeilLoosenPct', loosen_pct, 'A', f'percentage loosening from formal s_up to [O III]-anchored ceiling (exact: {100*(s_oiii_up/s_up-1):.1f}%, rounded to 5%)')
+
+assert t13_1['N_parent_clean_total'] == 50 and t13_1['N_parent_valid_inband'] == 49
+r38 = t13_1['regressions_full_2x2_covariance']['row4_plus_valid_SNge3_38']
+assert r38['N'] == 38
+add('NParentClean', t13_1['N_parent_clean_total'], 'C', 'consistently labeled parent LRDs with a grating Ha fit')
+add('NParentInBand', t13_1['N_parent_valid_inband'], 'C', 'in-band consistently labeled parent LRDs')
+add('NParentFail', t13_1['N_parent_valid_inband'] - t13_1['N_frozen_LRD'], 'A', 'in-band parent LRDs failing frozen QC (49 - 29 = 20)')
+add('NFailSNthree', _w[r38['N'] - t13_1['N_frozen_LRD']], 'C', 'in-band failed parent LRDs with broad S/N >= 3 (9)')
+add('NLRDSNthree', r38['N'], 'C', '29 frozen + 9 in-band failed S/N >= 3 parent LRDs')
+trip('FbSNthree', r38['slope_q'], f2, 'C', 'slope of N=38 LRDs including in-band S/N >= 3 failed spectra')
+trip('FsigSNthree', r38['sigma_q'], f3, 'C', 'sigma_int of N=38 LRDs including in-band S/N >= 3 failed spectra')
+add('FsigSNthreeUp', f3(r38['sigma_p95_onesided']), 'C', f"one-sided 95% upper limit for N=38 ({r38['sigma_p95_onesided']:.5f} dex)")
+uds_pos = [x for x in t13_2['critical_10_plus_QSO1'] if x['is_in_10_critical'] and 'QSO1' not in x['source_id'] and x['orig_SNR_broad'] >= 3.0 and x['refit_adopted']['residual_Eq3_dex'] > 0.08]
+assert len(uds_pos) == 3 and all('UDS' in x['source_id'] for x in uds_pos)
+add('NFailPosUDS', _w[len(uds_pos)], 'C', 'failed S/N>=3 UDS LRDs sitting above Eq. 3 even with fixed narrow FWHM')
+add('resFailPosLo', f2(min(x['refit_adopted']['residual_Eq3_dex'] for x in uds_pos)), 'C')
+add('resFailPosHi', f2(max(x['refit_adopted']['residual_Eq3_dex'] for x in uds_pos)), 'C')
+add('failPosSNlo', f1(min(x['refit_adopted']['SNR_broad'] for x in uds_pos)), 'C')
+add('failPosSNhi', f1(max(x['refit_adopted']['SNR_broad'] for x in uds_pos)), 'C')
+
 dup_s = rep_cal['duplicate_spectra']
 fl_s = rep_cal['posterior_with_floors']['same_grating_sy_floor']
 fl_a = rep_cal['posterior_with_floors']['all_pairs_sy_floor']
@@ -129,10 +223,21 @@ trip('FsigFlrAll', fl_a['LRD_sigma_q'], f3, 'C', 'LRD sigma_int with +0.060 dex 
 add('FsigFlrAllUp', f3(fl_a['LRD_p95_onesided']), 'C', f"one-sided 95% upper limit with +0.060 dex floor ({fl_a['LRD_p95_onesided']:.5f} dex)")
 trip('FsigoFlrAll', fl_a['other_sigma_q'], f3, 'C')
 trip('FdsigFlrAll', fl_a['diff_q'], lambda v: neg(f3(v)), 'C')
-add('FsigCeilRep', '0.06', 'A', 'conservative two-decimal 95% upper limit once repeat-spectrum variance is included (0.057 same-grating, 0.049 all-pairs)')
+add('FsigCeilRep', '0.06', 'A', 'conservative two-decimal 95% upper limit once repeat-spectrum variance is included (0.056 same-grating, 0.049 all-pairs)')
 add('FdsigFlrTwo', neg(f2(fl_s['diff_q'][2])), 'A', 'median Delta sigma_int with repeat-spectrum floor (-0.12 dex)')
 add('NSNfif', rep_cal['high_snr_LRDs_ge15']['N'], 'C', 'LRDs with broad-line S/N >= 15')
 add('rmsSNfif', f3(rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof2_dex']), 'C', 'raw residual SD (ddof=2) of the 12 S/N>=15 LRDs (%.5f dex; ddof=1 is %.5f)' % (rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof2_dex'], rep_cal['high_snr_LRDs_ge15']['raw_ols_sd_ddof1_dex']))
+add('NPairsBigObj', t13_4['pairwise_slicings_6']['6_drop_RUBIES_EGS_42232_12']['dropped_N_pairs'], 'C', 'pairs among the 22 contributed by RUBIES-EGS-42232 (5 passing spectra)')
+slice_ups = [
+    t13_4['pairwise_slicings_6']['4_top2_one_pair_per_source_9']['sigma_p95_onesided'],
+    t13_4['pairwise_slicings_6']['5_equal_object_weight_9']['sigma_p95_onesided'],
+] + [v_['sigma_p95_onesided'] for v_ in t13_4['pairwise_leave_one_object_out_9'].values()]
+add('flrSliceUpLo', f3(min(slice_ups)), 'C', f'min one-sided 95% upper limit across one-pair/equal-weight/LOO floors ({min(slice_ups):.5f} dex)')
+add('flrSliceUpHi', f3(max(slice_ups)), 'C', f'max one-sided 95% upper limit across one-pair/equal-weight/LOO floors ({max(slice_ups):.5f} dex)')
+re_mod = t13_4['random_effects_models']['exact_2dcov_fixed_primary_x']
+add('NSpecPassLRD', re_mod['all_43_spectra']['N_spectra'], 'C', 'total QC-passing spectra across the 29 LRDs')
+add('reAllUp', f3(re_mod['all_43_spectra']['sigma_p95_onesided']), 'C', f"one-sided 95% upper limit in 43-spectrum joint random-effects model ({re_mod['all_43_spectra']['sigma_p95_onesided']:.5f} dex)")
+add('reDropBigUp', f3(re_mod['42232_primary_only_39_spectra']['sigma_p95_onesided']), 'C', f"one-sided 95% upper limit with RUBIES-EGS-42232 reduced to primary spectrum ({re_mod['42232_primary_only_39_spectra']['sigma_p95_onesided']:.5f} dex)")
 
 sec('six width definitions')
 defs = (('Wf', 'nonparametric_W50'), ('Ex', 'exponential'), ('Lo', 'lorentzian'), ('Np', 'nonparametric_FWHM'), ('Tg', 'double_gaussian'))
@@ -146,7 +251,7 @@ five = [r1['W1_'+k]['LRD']['sigma'][2] for k in ('single_gaussian', 'nonparametr
 add('sigFiveLo', f2(min(five)), 'A')
 add('sigFiveHi', f2(max(five)), 'A')
 
-sec('injection-recovery (Codex W2, Stage 2, and v10 Lorentzian/null-slope checks)')
+sec('injection-recovery (29 surviving templates and 49 full in-band parent templates)')
 g = lambda sc, inj, meas, what: xv(f'W2_final_summary_s{sc}__{sc}_{inj}_M4_Gaussian_QC_{meas}__sigma_median__{what}')
 add('simInj', '0.05', 'D')
 add('simNull', '0.15', 'D')
@@ -168,7 +273,6 @@ add('simB', '0.08', 'D')
 st2 = json.load(open(WIDTHS / 'sloped_injection_recovery.json'))
 st2a = st2['null_scenarios']
 st2b = st2['sloped_simulations']
-_w = {0: 'none', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
 add('recEightG', f3(st2b['gauss_rel_s008']['bayes_sigma_med_quantiles'][2]), 'C')
 add('hitEightG', _w[st2b['gauss_rel_s008']['bayes_hits_le_obs_Fsig']], 'C')
 add('recEightE', f3(st2b['exp_matched_s008']['bayes_sigma_med_quantiles'][2]), 'C')
@@ -183,6 +287,41 @@ add('wideInjShift', f2(st2b['exp_wide_s010']['injected_a0'] - st2b['exp_matched_
 add('recTenWide', f3(st2b['exp_wide_s010']['bayes_sigma_med_quantiles'][2]), 'C')
 add('hitTenWide', _w[st2b['exp_wide_s010']['bayes_hits_le_obs_Fsig']], 'C')
 add('wideSurvShift', f2(st2b['exp_wide_s010']['recovered_a_hat_p16_p50_p84'][1] - fm['LRD']['a']), 'A')
+
+p49 = t13_3['primary_parent49_suites']
+def _trip16_84(prefix, q, fmt, note=''):
+    add(prefix, fmt(q[2]), 'C', note)
+    add(prefix+'lo', fmt(q[1]), 'C')
+    add(prefix+'hi', fmt(q[3]), 'C')
+
+for tag, key in (('FiveG', 'gauss_rel_s005'), ('FiveE', 'exp_matched_s005'),
+                 ('TenG', 'gauss_rel_s010'), ('TenE', 'exp_matched_s010')):
+    sub = p49[key]['parent49']
+    _trip16_84('recPar'+tag, sub['bayes_sigma_med_quantiles'], f3, f'49-template {key} recovered sigma_int median (p16--p84)')
+    _trip16_84('bPar'+tag, sub['bayes_slope_med_quantiles'], f2, f'49-template {key} recovered slope median (p16--p84)')
+    cnt_ = int(sub['bayes_hits_le_obs_Fsig'])
+    add('hitPar'+tag+'num', f'{cnt_}/{int(sub["N_replicates"])}', 'C')
+    if tag in ('TenG', 'TenE'):
+        add('hitPar'+tag, _w[cnt_], 'C')
+
+p_rat_g = t13_3['paired_offset_pass_rate_grids']['offset_grid_gauss']['ratio_plus010_over_zero_all49']
+p_rat_e = t13_3['paired_offset_pass_rate_grids']['offset_grid_exp']['ratio_plus010_over_zero_all49']
+add('passRatLo', f2(min(p_rat_g, p_rat_e)), 'C', 'min pass-fraction ratio (+0.10 vs 0.00 dex) across 49 parent templates')
+add('passRatHi', f2(max(p_rat_g, p_rat_e)), 'C', 'max pass-fraction ratio (+0.10 vs 0.00 dex) across 49 parent templates')
+ng05 = p49['gauss_rel_s005']['parent49']['N_selected_min_p16_p50_p84_max']
+ng10 = p49['gauss_rel_s010']['parent49']['N_selected_min_p16_p50_p84_max']
+ne05 = p49['exp_matched_s005']['parent49']['N_selected_min_p16_p50_p84_max']
+ne10 = p49['exp_matched_s010']['parent49']['N_selected_min_p16_p50_p84_max']
+assert ng05[2] == ng10[2] and ne05[2] == ne10[2]
+add('NParSelG', int(round(ng10[2])), 'C')
+add('NParSelGlo', int(round(min(ng05[1], ng10[1]))), 'C')
+add('NParSelGhi', int(round(max(ng05[3], ng10[3]))), 'C')
+add('NParSelE', int(round(ne10[2])), 'C')
+add('NParSelElo', int(round(min(ne05[1], ne10[1]))), 'C')
+add('NParSelEhi', int(round(max(ne05[3], ne10[3]))), 'C')
+own_s = t13_3['sensitivity_ownL_parent49_suites']
+add('hitParOwnTenGnum', f"{int(own_s['gauss_rel_s010_ownL']['parent49']['bayes_hits_le_obs_Fsig'])}/100", 'C')
+add('hitParOwnTenEnum', f"{int(own_s['exp_matched_s010_ownL']['parent49']['bayes_hits_le_obs_Fsig'])}/100", 'C')
 
 sec('Baccus & Xu table')
 anc_chk = json.load(open(RESULTS / 'ancillary_checks.json'))
@@ -233,6 +372,18 @@ sec('QSO1 diagnostic')
 for n, v in (('QSOsn', '3.4'), ('QSOW', 2107), ('QSOWerr', 302), ('QSOmu', '7.5'), ('QSOmuErr', '1.5'),
              ('QSOresCor', '0.17'), ('QSOresErr', '0.08')):
     add(n, v, 'V')
+add('QSOcompNar', 560, 'L', "D'Eugenio et al. (2025) / Juodzbalis et al. (2025) intermediate broad component FWHM (km/s)")
+add('QSOcompBrd', 2000, 'L', "D'Eugenio et al. (2025) / Juodzbalis et al. (2025) broad wing component FWHM (km/s)")
+qso_t2 = [x for x in t13_2['critical_10_plus_QSO1'] if x['source_id'] == 'A2744-QSO1'][0]
+qso_w150 = qso_t2['refit_W150_sensitivity']
+qso_sig_y = qso_w150['FWHM_err_cond_kms'] / (qso_w150['FWHM_kms'] * math.log(10.0))
+qso_sig_mu = m['LRD']['slope'][2] * (1.5 / (7.5 * math.log(10.0)))
+add('QSOWfix', round(qso_w150['FWHM_kms']), 'C', 'QSO1 broad Gaussian FWHM (km/s) when narrow FWHM is fixed to 150 km/s')
+add('QSOsnFix', f1(qso_w150['SNR_broad']), 'C', 'QSO1 broad-line S/N when narrow FWHM is fixed to 150 km/s')
+add('QSOresFix', neg(f2(qso_w150['residual_Eq3_delensed_dex'])), 'C', 'QSO1 delensed residual (dex) from Eq. 3 with fixed 150 km/s narrow line')
+add('QSOresFixErr', f2(math.hypot(qso_sig_y, qso_sig_mu)), 'A', 'quadrature uncertainty on QSOresFix including mu=7.5+/-1.5')
+add('FsigNarOIIIqso', f3(t13_2b['reg_frozen_plus_QSO1_w150_30LRD']['sigma_q'][2]), 'C', 'sigma_int of 29 [O III]-anchored LRDs plus QSO1 (N=30)')
+add('NLRDqso', t13_2b['reg_frozen_plus_QSO1_w150_30LRD']['N'], 'C')
 
 sec('photosphere: sources with sigma(log L_ph) < 0.3 dex')
 add('vKnorm', 1493, 'R', 'km/s at 1e45 erg/s, 5000 K, lambda=1, kappa=0.398; X=1492.63')
@@ -304,13 +455,33 @@ add('lamRingLo', f2(lam(2, rh)), 'A'); add('lamRingHi', f2(lam(2, rl)), 'A')
 add('mEddLo', f'{(rl/2)**2:.1f}', 'A', '(ratio/k)^2 for k=2')
 add('mEddHi', f'{(rh/.964486)**2:.0f}', 'A', '(ratio/k)^2 for k=0.96')
 add('mEddStdLo', f'{(rl/1.359556)**2:.1f}', 'A', '(ratio/k)^2 min for k=1.36')
-# Symmetric non-gravitational broadening factors (FWHM/v_K)/k across k = 0.96, 1.36, 2
 add('brdVirLo', f1(rl/.964486), 'A', 'min (FWHM/v_K)/k for k=0.96')
 add('brdVirHi', f1(rh/.964486), 'A', 'max (FWHM/v_K)/k for k=0.96')
 add('brdIsoLo', f1(rl/1.359556), 'A', 'min (FWHM/v_K)/k for k=1.36')
 add('brdIsoHi', f1(rh/1.359556), 'A', 'max (FWHM/v_K)/k for k=1.36')
 add('brdRingLo', f2(rl/2.0), 'A', 'min (FWHM/v_K)/k for k=2 (1.25)')
 add('brdRingHi', f1(rh/2.0), 'A', 'max (FWHM/v_K)/k for k=2 (1.5)')
+
+g_k3 = [e for e in t13_5['opacity_temperature_grid'] if abs(e['kappa_cm2_g'] - 1e-3) < 1e-12][0]['by_temperature']
+g_k4 = [e for e in t13_5['opacity_temperature_grid'] if abs(e['kappa_cm2_g'] - 1e-4) < 1e-12][0]['by_temperature']
+del_k3_lo = g_k3['T_sample_max_6381K']['DeltaM_over_MEdd']
+del_k3_hi = g_k3['T_sample_min_3637K']['DeltaM_over_MEdd']
+del_k4_max = g_k4['T_sample_min_3637K']['DeltaM_over_MEdd']
+dv_k3_lo = g_k3['T_sample_max_6381K']['Delta_vesc_pct_at_lambda1']
+dv_k3_hi = g_k3['T_sample_min_3637K']['Delta_vesc_pct_at_lambda1']
+dv_k4_max = g_k4['T_sample_min_3637K']['Delta_vesc_pct_at_lambda1']
+lam_k4_max = g_k4['T_sample_min_3637K']['relaxed_lambda_ceiling_from_1']
+assert abs(dv_k3_lo - 100.0 * (math.sqrt(1.0 + del_k3_lo) - 1.0)) < 1e-10
+assert abs(dv_k3_hi - 100.0 * (math.sqrt(1.0 + del_k3_hi) - 1.0)) < 1e-10
+assert abs(dv_k4_max - 100.0 * (math.sqrt(1.0 + del_k4_max) - 1.0)) < 1e-10
+assert abs(lam_k4_max - 1.0 / (1.0 - del_k4_max)) < 1e-12
+add('deltaKthreeLo', f3(del_k3_lo), 'C', f'min Delta M_eff / M_Edd at kappa=1e-3 across sample T_eff ({del_k3_lo:.5f})')
+add('deltaKthreeHi', f3(del_k3_hi), 'C', f'max Delta M_eff / M_Edd at kappa=1e-3 across sample T_eff ({del_k3_hi:.5f})')
+add('deltaKfourMax', f2(del_k4_max), 'C', f'max Delta M_eff / M_Edd at kappa=1e-4 at T_min=3637 K ({del_k4_max:.5f})')
+add('dvEscKthreeLo', f2(dv_k3_lo), 'C', f'min fractional v_esc increase at kappa=1e-3 across sample T_eff ({dv_k3_lo:.4f}%)')
+add('dvEscKthreeHi', f1(dv_k3_hi), 'C', f'max fractional v_esc increase at kappa=1e-3 across sample T_eff ({dv_k3_hi:.4f}%)')
+add('dvEscKfourMax', round(dv_k4_max), 'C', f'max fractional v_esc increase at kappa=1e-4 at T_min=3637 K ({dv_k4_max:.2f}%)')
+add('lamEscKfourMax', f2(lam_k4_max), 'C', f'exact relaxed escape ceiling 1/(1-delta) at kappa=1e-4, T_min=3637 K ({lam_k4_max:.4f})')
 
 sec('membership and rules')
 inc = json.load(open(RESULTS / 'membership.json'))
@@ -381,6 +552,9 @@ add('hierSig', '0.054', 'X'); add('hierB', '0.17', 'X')
 sec('Section 5 budgets unified on the conservative formal-error 95% upper limit s_up (0.075 dex)')
 s0 = m['LRD']['sigma'][2]
 b0 = m['LRD']['slope'][2]
+b_narfix = reg_w150['slope_q'][2]
+add('twoFbLo', f2(2.0 * round(b_narfix, 2)), 'A', f'2 * FbNarFix (exact 2*b = {2*b_narfix:.4f})')
+add('twoFbHi', f2(2.0 * round(b0, 2)), 'A', f'2 * Fb (exact 2*b = {2*b0:.4f})')
 s_noTop_up = rep_cal['posterior_with_floors']['noTop3_formal_p95_onesided']
 b_noTop = n3['LRD']['slope'][2]
 o = r2['orient']
@@ -408,7 +582,7 @@ add('sigMvir', f'{math.ceil(2.06*s_up*100)/100:.2f}', 'A', f'2.06 * s_up ceiling
 add('sigMvirMed', f2(2.06*s0), 'A', '2.06 * Fsig (formal-error median: %.4f dex)' % (2.06*s0))
 add('sigMvirRep', f2(2.06*fl_s['LRD_p95_onesided']), 'A', '2.06 * s_95(same-grating floor) = %.4f dex' % (2.06*fl_s['LRD_p95_onesided']))
 
-sec('scattering (unified on s_up, with tauFixHi corrected to tau_e = 3)')
+sec('scattering (unified on s_up, across tau_e = 0.5--3)')
 add('rusA', 428, 'V'); add('rusB', 370, 'V')
 D_ = lambda t: 428*t/(428*t+370)
 add('DHalf', f2(D_(.5)), 'A'); add('DOne', f2(D_(1)), 'A'); add('DTwo', f2(D_(2)), 'A'); add('DThree', f2(D_(3)), 'A')
@@ -418,7 +592,7 @@ add('sigTeMax', f2(2*s_up), 'A', '2 * s_up')
 for nm_, t_ in (('sigRHalf', .5), ('sigROne', 1), ('sigRTwo', 2), ('sigRThree', 3)):
     add(nm_, f2(2*s_up/D_(t_)), 'A', 'shell-radius scatter ceiling 2 s_up / D(tau_e=%g) = %.4f dex' % (t_, 2*s_up/D_(t_)))
 add('tauFixLo', f2(.5*D_(.5)), 'A', '0.5 * D(0.5)')
-add('tauFixHi', f2(.5*D_(3)), 'A', '0.5 * D(3) = 0.3881 across tau_e = 0.5--3 (corrected from D(2)=0.35)')
+add('tauFixHi', f2(.5*D_(3)), 'A', '0.5 * D(3) = 0.3881 across tau_e = 0.5--3')
 add('tauPhLo', f2(.25*D_(.5)), 'A', '0.25 * D(0.5)')
 add('tauPhHi', f2(.25*D_(3)), 'A', '0.25 * D(3)')
 
@@ -441,8 +615,7 @@ add('sigRConvHiHi', f2(2*s_up/c23['D_eff_min']), 'C', '2 s_up / DconvHiLo')
 add('rtHalfBoostMax', round(100.0*r05['max_fractional_boost_over_core']), 'C')
 add('DrtHiLo', f2(r23['D_eff_min']), 'C'); add('DrtHiHi', f2(r23['D_eff_max']), 'C')
 
-sec('pipeline constants and v10 checks')
-
+sec('pipeline constants and ancillary checks')
 try:
     from astropy.cosmology import Planck18, FlatLambdaCDM
     c70 = FlatLambdaCDM(H0=70.0, Om0=0.3)
@@ -463,12 +636,11 @@ for n_, v_ in (('fitWin', 5000), ('errFloor', 2), ('wnarLo', 30), ('wnarHi', 600
                ('wbroadHi', '12{,}000'), ('tauMax', 10), ('wabsLo', 50), ('wabsHi', 1500), ('nBootNp', 80), ('winWide', 6800)):
     add(n_, v_, 'D')
 
-v10s = st2b
+lor_scen = st2b
 chk1 = anc_chk
 chk2 = anc_chk['residuals_and_outliers']
 chk3 = anc_chk['window_sensitivity']
 chk4 = anc_chk['repeatability_and_bx26']
-w1_in = json.load(open(WIDTHS / 'regression_inputs.json'))
 g_map = {r_['source_id']: r_['y'] for r_ in w1_in['single_gaussian'] if r_['cls'] == 'LRD'}
 e_map = {r_['source_id']: r_['y'] for r_ in w1_in['exponential'] if r_['cls'] == 'LRD'}
 d_ge_med = statistics.median(g_map[s_] - e_map[s_] for s_ in g_map)
@@ -499,18 +671,21 @@ o_sdss = json.load(open(DATA / 'sdss' / 'regression_results.json'))['regressions
 trip('Ssgb', o_sdss['slope'], f2, 'X')
 inf_esc = [100.0 * v for v in anc_chk['bic_best_infinite_escape_fraction_median'].values()]
 add('fEscInfLo', f'{min(inf_esc):.0f}', 'X'); add('fEscInfHi', f'{max(inf_esc):.0f}', 'X')
-add('recLG', f3(v10s['lor_matched_s005']['bayes_sigma_med_quantiles'][2]), 'C')
-add('recEightL', f3(v10s['lor_matched_s008']['bayes_sigma_med_quantiles'][2]), 'C')
-add('hitEightL', _w[v10s['lor_matched_s008']['bayes_hits_le_obs_Fsig']], 'C')
-add('recTenL', f3(v10s['lor_matched_s010']['bayes_sigma_med_quantiles'][2]), 'C')
-add('hitTenL', _w[v10s['lor_matched_s010']['bayes_hits_le_obs_Fsig']], 'C')
-tot10_all = tot10 + v10s['lor_matched_s010']['bayes_hits_le_obs_Fsig']
+add('recLG', f3(lor_scen['lor_matched_s005']['bayes_sigma_med_quantiles'][2]), 'C')
+add('recEightL', f3(lor_scen['lor_matched_s008']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitEightL', _w[lor_scen['lor_matched_s008']['bayes_hits_le_obs_Fsig']], 'C')
+add('recTenL', f3(lor_scen['lor_matched_s010']['bayes_sigma_med_quantiles'][2]), 'C')
+add('hitTenL', _w[lor_scen['lor_matched_s010']['bayes_hits_le_obs_Fsig']], 'C')
+tot10_all = tot10 + lor_scen['lor_matched_s010']['bayes_hits_le_obs_Fsig']
 add('hitTenAll', _w[tot10_all], 'A')
 add('nullDenThree', 300, 'A')
-b_null_e = v10s['exp_null_matched_s005']['bayes_slope_med_quantiles'][2]
-b_null_l = v10s['lor_null_matched_s005']['bayes_slope_med_quantiles'][2]
-hits_b0 = v10s['exp_null_matched_s005']['slope_hits_ge_obs_Fb'] + v10s['lor_null_matched_s005']['slope_hits_ge_obs_Fb']
+b_null_e = lor_scen['exp_null_matched_s005']['bayes_slope_med_quantiles'][2]
+b_null_l = lor_scen['lor_null_matched_s005']['bayes_slope_med_quantiles'][2]
+b_null_hi = max(lor_scen['exp_null_matched_s005']['bayes_slope_med_quantiles'][4],
+                lor_scen['lor_null_matched_s005']['bayes_slope_med_quantiles'][4])
+hits_b0 = lor_scen['exp_null_matched_s005']['slope_hits_ge_obs_Fb'] + lor_scen['lor_null_matched_s005']['slope_hits_ge_obs_Fb']
 add('bNullMed', f2(b_null_e), 'C')
+add('bNullHi', f2(b_null_hi), 'C', f'max 97.5th percentile slope across null-slope rows ({b_null_hi:.4f})')
 add('hitSlopeNull', _w[hits_b0], 'C')
 k_iso_exp = math.sqrt(2.0)*math.log(2.0)/math.sqrt(3.0)
 rex_all = [wr[g_]['exponential']['ratio_median'] for g_ in ('main_E', 'Curtis_B_own', 'Curtis_A_own')]
@@ -520,7 +695,7 @@ add('kIsoExp', f2(k_iso_exp), 'A')
 add('lamIsoExpLo', f2(lam_iso_exp[0]), 'A'); add('lamIsoExpHi', f2(lam_iso_exp[1]), 'A')
 add('lamVirExpLo', f2(lam_vir_exp[0]), 'A'); add('lamVirExpHi', f2(lam_vir_exp[1]), 'A')
 
-M = [(n_, v_, 'C' if st_ == 'N' else st_, nt_) for n_, v_, st_, nt_ in M]
+M = [(n_, v_, 'C' if st_ == 'N' else st_, '') for n_, v_, st_, nt_ in M]
 # Scan ms.tex plus any tables/*.tex files so macros used in generated tables are also included in numbers.tex.
 tex_sources = []
 ms_path = os.path.join(HERE, 'ms.tex')
@@ -533,9 +708,10 @@ if os.path.isdir(tab_dir):
             tex_sources.append(open(os.path.join(tab_dir, fn_), encoding='utf-8').read())
 SRC = re.sub(r'(?<!\\)%.*', '', '\n'.join(tex_sources))
 USED = {n_ for n_, *_ in M if n_ != '%' and re.search(r'\\%s(?![A-Za-z])' % n_, SRC)} if SRC else {n_ for n_, *_ in M if n_ != '%'}
+USED |= {'dvEscKthreeLo', 'dvEscKthreeHi', 'dvEscKfourMax'}
 M_all = M
 M = [m_ for i, m_ in enumerate(M) if (m_[0] in USED) or (m_[0] == '%' and any(x[0] in USED for x in M[i+1:next((j for j in range(i+1, len(M)) if M[j][0] == '%'), len(M))]))]
-lines = ['%% numbers.tex -- generated by make_numbers.py (v11, 2026-11-14); do not edit by hand.',
+lines = ['%% numbers.tex -- generated by make_numbers.py; do not edit by hand.',
          '%% Write every macro as \\name{} in running text so that TeX does not swallow the following space.', '']
 for n, v, st, note in M:
     if n == '%':

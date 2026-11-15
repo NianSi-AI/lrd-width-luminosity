@@ -39,7 +39,7 @@ Every numerical result, table, and figure in the manuscript is generated automat
 
 ```sh
 python scripts/make_tables.py     # paper/tables/ (Tables 1-3 and Appendix Table B1)
-python scripts/make_numbers.py    # paper/numbers.tex (all 366 macros used in ms.tex and tables)
+python scripts/make_numbers.py    # paper/numbers.tex (all 497 macros used in ms.tex and tables)
 python scripts/make_figures.py    # paper/figures/ (Figures 1-4)
 cd paper && pdflatex ms && bibtex ms && pdflatex ms && pdflatex ms
 ```
@@ -63,6 +63,7 @@ The stored results in `data/results/` are regenerated from the per-source measur
 | `10_scattering_kernel.py` | `scattering_kernel.json` | broadening and optical-depth sensitivity for Gaussian and top-hat cores convolved with an exponential scattering kernel |
 | `11_repeat_calibration.py` | `repeat_calibration.json` | repeat-spectrum error floors from 9 multi-spectrum LRDs (`data/widths/repeat_pairs_22.tsv`), one-sided 95% upper limits, high-S/N scatter, BX26 sky deduplication, and SDSS width offset |
 | `12_ancillary_checks.py` | `ancillary_checks.json` | BIC-preferred width regression, MAD/leave-one-out diagnostics, residual-vs-S/N check, and wide-window summary |
+| `13_parent_and_repeat_checks.py` | `parent_covariance_audit.json`, `repeat_random_effects.json`, `exterior_potential_check.json` | In-band parent-sample regressions (`N = 29..39`), repeat-pair reweightings, 43-spectrum bivariate random-effects models, and exterior-envelope potential bounds |
 
 Run `python scripts/check_reproduction.py` for a fast end-to-end verification of posteriors, hierarchical likelihoods,
 and SHA-256 reference hashes of `data/results/numbers.json` and `paper/numbers.tex`.
@@ -83,7 +84,7 @@ Not redistributed (needed only to re-fit raw detector spectra from scratch; see
 ## Use of AI tools
 
 Portions of the analysis pipeline and manuscript text were developed and edited with the assistance of large language
-models (Gemini, Claude, and ChatGPT/Codex), as disclosed in the manuscript. All scientific choices, calculations, and
+models (Gemini, Claude, ChatGPT/Codex, and DeepSeek), as disclosed in the manuscript. All scientific choices, calculations, and
 conclusions were verified by the authors, who take full responsibility for the work.
 
 ## License and citation

@@ -59,6 +59,10 @@
   "value": "5",
   "in_manuscript": true
  },
+ "cutSNthree": {
+  "value": "3",
+  "in_manuscript": true
+ },
  "cutBIC": {
   "value": "6",
   "in_manuscript": true
@@ -69,6 +73,18 @@
  },
  "HvidingCut": {
   "value": "1000",
+  "in_manuscript": true
+ },
+ "wnarDef": {
+  "value": "150",
+  "in_manuscript": true
+ },
+ "passShift": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "rOutRph": {
+  "value": "100",
   "in_manuscript": true
  },
  "matchRadius": {
@@ -367,6 +383,254 @@
   "value": "\\ensuremath{-}0.028",
   "in_manuscript": false
  },
+ "FsigLsfUp": {
+  "value": "0.094",
+  "in_manuscript": true
+ },
+ "NNarBoundLRD": {
+  "value": "two",
+  "in_manuscript": true
+ },
+ "WNarBoundBefore": {
+  "value": "3150",
+  "in_manuscript": true
+ },
+ "WNarBoundAfter": {
+  "value": "2400",
+  "in_manuscript": true
+ },
+ "NLRDNarCut": {
+  "value": "27",
+  "in_manuscript": true
+ },
+ "FbNarCut": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "FbNarCutlo": {
+  "value": "0.05",
+  "in_manuscript": true
+ },
+ "FbNarCuthi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "FsigNarCut": {
+  "value": "0.040",
+  "in_manuscript": true
+ },
+ "FsigNarCutlo": {
+  "value": "0.023",
+  "in_manuscript": true
+ },
+ "FsigNarCuthi": {
+  "value": "0.067",
+  "in_manuscript": true
+ },
+ "FsigNarCutUp": {
+  "value": "0.062",
+  "in_manuscript": true
+ },
+ "FdsigNarCut": {
+  "value": "\\ensuremath{-}0.113",
+  "in_manuscript": true
+ },
+ "FdsigNarCutlo": {
+  "value": "\\ensuremath{-}0.213",
+  "in_manuscript": true
+ },
+ "FdsigNarCuthi": {
+  "value": "\\ensuremath{-}0.057",
+  "in_manuscript": true
+ },
+ "FbNarFix": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "FbNarFixlo": {
+  "value": "0.04",
+  "in_manuscript": true
+ },
+ "FbNarFixhi": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "FsigNarFix": {
+  "value": "0.046",
+  "in_manuscript": true
+ },
+ "FsigNarFixlo": {
+  "value": "0.030",
+  "in_manuscript": true
+ },
+ "FsigNarFixhi": {
+  "value": "0.069",
+  "in_manuscript": true
+ },
+ "FsigNarFixUp": {
+  "value": "0.064",
+  "in_manuscript": true
+ },
+ "FsigoNarFix": {
+  "value": "0.134",
+  "in_manuscript": true
+ },
+ "FsigoNarFixlo": {
+  "value": "0.090",
+  "in_manuscript": true
+ },
+ "FsigoNarFixhi": {
+  "value": "0.221",
+  "in_manuscript": true
+ },
+ "FdsigNarFix": {
+  "value": "\\ensuremath{-}0.088",
+  "in_manuscript": true
+ },
+ "FdsigNarFixlo": {
+  "value": "\\ensuremath{-}0.176",
+  "in_manuscript": true
+ },
+ "FdsigNarFixhi": {
+  "value": "\\ensuremath{-}0.038",
+  "in_manuscript": true
+ },
+ "FbNarOIII": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "FbNarOIIIlo": {
+  "value": "0.05",
+  "in_manuscript": true
+ },
+ "FbNarOIIIhi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "FsigNarOIII": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIlo": {
+  "value": "0.052",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIhi": {
+  "value": "0.102",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIUp": {
+  "value": "0.097",
+  "in_manuscript": true
+ },
+ "FsigoNarOIII": {
+  "value": "0.150",
+  "in_manuscript": true
+ },
+ "FsigoNarOIIIlo": {
+  "value": "0.099",
+  "in_manuscript": true
+ },
+ "FsigoNarOIIIhi": {
+  "value": "0.248",
+  "in_manuscript": true
+ },
+ "FdsigNarOIII": {
+  "value": "\\ensuremath{-}0.077",
+  "in_manuscript": true
+ },
+ "FdsigNarOIIIlo": {
+  "value": "\\ensuremath{-}0.178",
+  "in_manuscript": true
+ },
+ "FdsigNarOIIIhi": {
+  "value": "\\ensuremath{-}0.018",
+  "in_manuscript": true
+ },
+ "FsigNarMin": {
+  "value": "0.070",
+  "in_manuscript": true
+ },
+ "FsigNarMinUp": {
+  "value": "0.094",
+  "in_manuscript": true
+ },
+ "NOIIIUnres": {
+  "value": "21",
+  "in_manuscript": true
+ },
+ "narCeilLoosenPct": {
+  "value": "30",
+  "in_manuscript": true
+ },
+ "NParentClean": {
+  "value": "50",
+  "in_manuscript": true
+ },
+ "NParentInBand": {
+  "value": "49",
+  "in_manuscript": true
+ },
+ "NParentFail": {
+  "value": "20",
+  "in_manuscript": true
+ },
+ "NFailSNthree": {
+  "value": "nine",
+  "in_manuscript": true
+ },
+ "NLRDSNthree": {
+  "value": "38",
+  "in_manuscript": true
+ },
+ "FbSNthree": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "FbSNthreelo": {
+  "value": "0.12",
+  "in_manuscript": true
+ },
+ "FbSNthreehi": {
+  "value": "0.22",
+  "in_manuscript": true
+ },
+ "FsigSNthree": {
+  "value": "0.053",
+  "in_manuscript": true
+ },
+ "FsigSNthreelo": {
+  "value": "0.037",
+  "in_manuscript": true
+ },
+ "FsigSNthreehi": {
+  "value": "0.077",
+  "in_manuscript": true
+ },
+ "FsigSNthreeUp": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "NFailPosUDS": {
+  "value": "three",
+  "in_manuscript": true
+ },
+ "resFailPosLo": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "resFailPosHi": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "failPosSNlo": {
+  "value": "4.4",
+  "in_manuscript": true
+ },
+ "failPosSNhi": {
+  "value": "5.3",
+  "in_manuscript": true
+ },
  "NPairsBest": {
   "value": "14",
   "in_manuscript": true
@@ -501,6 +765,30 @@
  },
  "rmsSNfif": {
   "value": "0.056",
+  "in_manuscript": true
+ },
+ "NPairsBigObj": {
+  "value": "10",
+  "in_manuscript": true
+ },
+ "flrSliceUpLo": {
+  "value": "0.049",
+  "in_manuscript": true
+ },
+ "flrSliceUpHi": {
+  "value": "0.051",
+  "in_manuscript": true
+ },
+ "NSpecPassLRD": {
+  "value": "43",
+  "in_manuscript": true
+ },
+ "reAllUp": {
+  "value": "0.049",
+  "in_manuscript": true
+ },
+ "reDropBigUp": {
+  "value": "0.057",
   "in_manuscript": true
  },
  "DsigWf": {
@@ -823,6 +1111,166 @@
   "value": "0.19",
   "in_manuscript": true
  },
+ "recParFiveG": {
+  "value": "0.050",
+  "in_manuscript": true
+ },
+ "recParFiveGlo": {
+  "value": "0.042",
+  "in_manuscript": true
+ },
+ "recParFiveGhi": {
+  "value": "0.060",
+  "in_manuscript": true
+ },
+ "bParFiveG": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "bParFiveGlo": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "bParFiveGhi": {
+  "value": "0.19",
+  "in_manuscript": true
+ },
+ "hitParFiveGnum": {
+  "value": "62/100",
+  "in_manuscript": true
+ },
+ "recParFiveE": {
+  "value": "0.062",
+  "in_manuscript": true
+ },
+ "recParFiveElo": {
+  "value": "0.050",
+  "in_manuscript": true
+ },
+ "recParFiveEhi": {
+  "value": "0.073",
+  "in_manuscript": true
+ },
+ "bParFiveE": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "bParFiveElo": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "bParFiveEhi": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "hitParFiveEnum": {
+  "value": "27/100",
+  "in_manuscript": true
+ },
+ "recParTenG": {
+  "value": "0.101",
+  "in_manuscript": true
+ },
+ "recParTenGlo": {
+  "value": "0.085",
+  "in_manuscript": true
+ },
+ "recParTenGhi": {
+  "value": "0.120",
+  "in_manuscript": true
+ },
+ "bParTenG": {
+  "value": "0.18",
+  "in_manuscript": true
+ },
+ "bParTenGlo": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "bParTenGhi": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "hitParTenGnum": {
+  "value": "0/100",
+  "in_manuscript": true
+ },
+ "hitParTenG": {
+  "value": "none",
+  "in_manuscript": true
+ },
+ "recParTenE": {
+  "value": "0.092",
+  "in_manuscript": true
+ },
+ "recParTenElo": {
+  "value": "0.074",
+  "in_manuscript": true
+ },
+ "recParTenEhi": {
+  "value": "0.114",
+  "in_manuscript": true
+ },
+ "bParTenE": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "bParTenElo": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "bParTenEhi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "hitParTenEnum": {
+  "value": "2/100",
+  "in_manuscript": true
+ },
+ "hitParTenE": {
+  "value": "two",
+  "in_manuscript": true
+ },
+ "passRatLo": {
+  "value": "0.99",
+  "in_manuscript": true
+ },
+ "passRatHi": {
+  "value": "1.04",
+  "in_manuscript": true
+ },
+ "NParSelG": {
+  "value": "29",
+  "in_manuscript": true
+ },
+ "NParSelGlo": {
+  "value": "28",
+  "in_manuscript": true
+ },
+ "NParSelGhi": {
+  "value": "31",
+  "in_manuscript": true
+ },
+ "NParSelE": {
+  "value": "27",
+  "in_manuscript": true
+ },
+ "NParSelElo": {
+  "value": "25",
+  "in_manuscript": true
+ },
+ "NParSelEhi": {
+  "value": "29",
+  "in_manuscript": true
+ },
+ "hitParOwnTenGnum": {
+  "value": "0/100",
+  "in_manuscript": true
+ },
+ "hitParOwnTenEnum": {
+  "value": "1/100",
+  "in_manuscript": true
+ },
  "NX": {
   "value": "227",
   "in_manuscript": true
@@ -1105,7 +1553,7 @@
  },
  "QSOW": {
   "value": "2107",
-  "in_manuscript": false
+  "in_manuscript": true
  },
  "QSOWerr": {
   "value": "302",
@@ -1125,6 +1573,38 @@
  },
  "QSOresErr": {
   "value": "0.08",
+  "in_manuscript": true
+ },
+ "QSOcompNar": {
+  "value": "560",
+  "in_manuscript": true
+ },
+ "QSOcompBrd": {
+  "value": "2000",
+  "in_manuscript": true
+ },
+ "QSOWfix": {
+  "value": "1223",
+  "in_manuscript": true
+ },
+ "QSOsnFix": {
+  "value": "20.9",
+  "in_manuscript": true
+ },
+ "QSOresFix": {
+  "value": "\\ensuremath{-}0.08",
+  "in_manuscript": true
+ },
+ "QSOresFixErr": {
+  "value": "0.03",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIqso": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "NLRDqso": {
+  "value": "30",
   "in_manuscript": true
  },
  "vKnorm": {
@@ -1635,6 +2115,34 @@
   "value": "1.5",
   "in_manuscript": true
  },
+ "deltaKthreeLo": {
+  "value": "0.003",
+  "in_manuscript": true
+ },
+ "deltaKthreeHi": {
+  "value": "0.029",
+  "in_manuscript": true
+ },
+ "deltaKfourMax": {
+  "value": "0.29",
+  "in_manuscript": true
+ },
+ "dvEscKthreeLo": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "dvEscKthreeHi": {
+  "value": "1.5",
+  "in_manuscript": true
+ },
+ "dvEscKfourMax": {
+  "value": "14",
+  "in_manuscript": true
+ },
+ "lamEscKfourMax": {
+  "value": "1.41",
+  "in_manuscript": true
+ },
  "sigChiThree": {
   "value": "0.053",
   "in_manuscript": false
@@ -2025,6 +2533,14 @@
  },
  "hierB": {
   "value": "0.17",
+  "in_manuscript": true
+ },
+ "twoFbLo": {
+  "value": "0.18",
+  "in_manuscript": true
+ },
+ "twoFbHi": {
+  "value": "0.34",
   "in_manuscript": true
  },
  "sigLamMax": {
@@ -2522,6 +3038,10 @@
  "bNullMed": {
   "value": "0.02",
   "in_manuscript": false
+ },
+ "bNullHi": {
+  "value": "0.07",
+  "in_manuscript": true
  },
  "hitSlopeNull": {
   "value": "none",

@@ -19,4 +19,4 @@ for script in ['make_profile_counts.py','make_measurement_summary.py','make_tabl
  subprocess.run([sys.executable,str(ROOT/'scripts'/script)],cwd=ROOT,check=True)
 for p,expected in json.loads((DATA/'measurements/paper_reference_hashes.json').read_text()).items():
  assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==expected,p
-print('PASS 637 macro values and 366 manuscript/table definitions unchanged')
+print('PASS 767 macro values and 497 manuscript/table definitions unchanged')
