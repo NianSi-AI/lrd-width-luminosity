@@ -1,0 +1,515 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+% type= article
+\bibitem[{ {Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
+  {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
+  {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
+  {Barbary}, {Muna}, {Ferguson}, {Grollier}, {Parikh}, {Nair}, {Unther},
+  {Deil}, {Woillez}, {Conseil}, {Kramer}, {Turner}, {Singer}, {Fox}, {Weaver},
+  {Zabalza}, {Edwards}, {Azalee Bostroem}, {Burke}, {Casey}, {Crawford},
+  {Dencheva}, {Ely}, {Jenness}, {Labrie}, {Lim}, {Pierfederici}, {Pontzen},
+  {Ptak}, {Refsdal}, {Servillat}, \& {Streicher}}]{astropy:2013}
+{Astropy Collaboration}, {Robitaille}, T.~P., {Tollerud}, E.~J., {et~al.} 2013,
+  \bibinfo{title}{{Astropy: A community Python package for astronomy},} \aap,
+  558, A33, \dodoi{10.1051/0004-6361/201322068}
+
+% type= article
+\bibitem[{ {Astropy Collaboration} {et~al.}(2018){Astropy Collaboration},
+  {Price-Whelan}, {Sip{\H{o}}cz}, {G{\"u}nther}, {Lim}, {Crawford}, {Conseil},
+  {Shupe}, {Craig}, {Dencheva}, {Ginsburg}, {VanderPlas}, {Bradley},
+  {P{\'e}rez-Su{\'a}rez}, {de Val-Borro}, {Aldcroft}, {Cruz}, {Robitaille},
+  {Tollerud}, {Ardelean}, {Babej}, {Bach}, {Bachetti}, {Bakanov}, {Bamford},
+  {Barentsen}, {Barmby}, {Baumbach}, {Berry}, {Biscani}, {Boquien}, {Bostroem},
+  {Bouma}, {Brammer}, {Bray}, {Breytenbach}, {Buddelmeijer}, {Burke},
+  {Calderone}, {Cano Rodr{\'\i}guez}, {Cara}, {Cardoso}, {Cheedella}, {Copin},
+  {Corrales}, {Crichton}, {D'Avella}, {Deil}, {Depagne}, {Dietrich}, {Donath},
+  {Droettboom}, {Earl}, {Erben}, {Fabbro}, {Ferreira}, {Finethy}, {Fox},
+  {Garrison}, {Gibbons}, {Goldstein}, {Gommers}, {Greco}, {Greenfield},
+  {Groener}, {Grollier}, {Hagen}, {Hirst}, {Homeier}, {Horton}, {Hosseinzadeh},
+  {Hu}, {Hunkeler}, {Ivezi{\'c}}, {Jain}, {Jenness}, {Kanarek}, {Kendrew},
+  {Kern}, {Kerzendorf}, {Khvalko}, {King}, {Kirkby}, {Kulkarni}, {Kumar},
+  {Lee}, {Lenz}, {Littlefair}, {Ma}, {Macleod}, {Mastropietro}, {McCully},
+  {Montagnac}, {Morris}, {Mueller}, {Mumford}, {Muna}, {Murphy}, {Nelson},
+  {Nguyen}, {Ninan}, {N{\"o}the}, {Ogaz}, {Oh}, {Parejko}, {Parley}, {Pascual},
+  {Patil}, {Patil}, {Plunkett}, {Prochaska}, {Rastogi}, {Reddy Janga},
+  {Sabater}, {Sakurikar}, {Seifert}, {Sherbert}, {Sherwood-Taylor}, {Shih},
+  {Sick}, {Silbiger}, {Singanamalla}, {Singer}, {Sladen}, {Sooley},
+  {Sornarajah}, {Streicher}, {Teuben}, {Thomas}, {Tremblay}, {Turner},
+  {Terr{\'o}n}, {van Kerkwijk}, {de la Vega}, {Watkins}, {Weaver}, {Whitmore},
+  {Woillez}, {Zabalza}, \& {Astropy Contributors}}]{astropy:2018}
+{Astropy Collaboration}, {Price-Whelan}, A.~M., {Sip{\H{o}}cz}, B.~M., {et~al.}
+  2018, \bibinfo{title}{{The Astropy Project: Building an Open-science Project
+  and Status of the v2.0 Core Package},} \aj, 156, 123,
+  \dodoi{10.3847/1538-3881/aabc4f}
+
+% type= article
+\bibitem[{ {Astropy Collaboration} {et~al.}(2022){Astropy Collaboration},
+  {Price-Whelan}, {Lim}, {Earl}, {Starkman}, {Bradley}, {Shupe}, {Patil},
+  {Corrales}, {Brasseur}, {N{\"o}the}, {Donath}, {Tollerud}, {Morris},
+  {Ginsburg}, {Vaher}, {Weaver}, {Tocknell}, {Jamieson}, {van Kerkwijk},
+  {Robitaille}, {Merry}, {Bachetti}, {G{\"u}nther}, {Aldcroft},
+  {Alvarado-Montes}, {Archibald}, {B{\'o}di}, {Bapat}, {Barentsen},
+  {Baz{\'a}n}, {Biswas}, {Boquien}, {Burke}, {Cara}, {Cara}, {Conroy},
+  {Conseil}, {Craig}, {Cross}, {Cruz}, {D'Eugenio}, {Dencheva}, {Devillepoix},
+  {Dietrich}, {Eigenbrot}, {Erben}, {Ferreira}, {Foreman-Mackey}, {Fox},
+  {Freij}, {Garg}, {Geda}, {Glattly}, {Gondhalekar}, {Gordon}, {Grant},
+  {Greenfield}, {Groener}, {Guest}, {Gurovich}, {Handberg}, {Hart},
+  {Hatfield-Dodds}, {Homeier}, {Hosseinzadeh}, {Jenness}, {Jones}, {Joseph},
+  {Kalmbach}, {Karamehmetoglu}, {Ka{\l}uszy{\'n}ski}, {Kelley}, {Kern},
+  {Kerzendorf}, {Koch}, {Kulumani}, {Lee}, {Ly}, {Ma}, {MacBride}, {Maljaars},
+  {Muna}, {Murphy}, {Norman}, {O'Steen}, {Oman}, {Pacifici}, {Pascual},
+  {Pascual-Granado}, {Patil}, {Perren}, {Pickering}, {Rastogi}, {Roulston},
+  {Ryan}, {Rykoff}, {Sabater}, {Sakurikar}, {Salgado}, {Sanghi}, {Saunders},
+  {Savchenko}, {Schwardt}, {Seifert-Eckert}, {Shih}, {Jain}, {Shukla}, {Sick},
+  {Simpson}, {Singanamalla}, {Singer}, {Singhal}, {Sinha}, {Sip{\H{o}}cz},
+  {Spitler}, {Stansby}, {Streicher}, {{\v{S}}umak}, {Swinbank}, {Taranu},
+  {Tewary}, {Tremblay}, {de Val-Borro}, {Van Kooten}, {Vasovi{\'c}}, {Verma},
+  {de Miranda Cardoso}, {Williams}, {Wilson}, {Winkel}, {Wood-Vasey}, {Xue},
+  {Yoachim}, {Zhang}, {Zonca}, \& {Astropy Project
+  Contributors}}]{astropy:2022}
+{Astropy Collaboration}, {Price-Whelan}, A.~M., {Lim}, P.~L., {et~al.} 2022,
+  \bibinfo{title}{{The Astropy Project: Sustaining and Growing a
+  Community-oriented Open-source Project and the Latest Major Release (v5.0) of
+  the Core Package},} \apj, 935, 167, \dodoi{10.3847/1538-4357/ac7c74}
+
+% type= article
+\bibitem[{C.~J. {Baccus} \& X. {Xu}(2026){Baccus} \& {Xu}}]{BaccusXu2026}
+{Baccus}, C.~J., \& {Xu}, X. 2026, \bibinfo{title}{{A Comprehensive
+  JWST/NIRSpec Census of Broad-line Active Galactic Nuclei: Faint, Low-mass
+  Accretors and a Population of Little Red Dots},} \apj, 1006, 165,
+  \dodoi{10.3847/1538-4357/ae7de7}
+
+% type= article
+\bibitem[{M.~C. {Begelman} \& J. {Dexter}(2026){Begelman} \&
+  {Dexter}}]{BegelmanDexter2025}
+{Begelman}, M.~C., \& {Dexter}, J. 2026, \bibinfo{title}{{Little Red Dots as
+  Late-stage Quasi-stars},} \apj, 996, 48, \dodoi{10.3847/1538-4357/ae274a}
+
+% type= article
+\bibitem[{M.~C. {Bentz} {et~al.}(2013){Bentz}, {Denney}, {Grier}, {Barth},
+  {Peterson}, {Vestergaard}, {Bennert}, {Canalizo}, {De Rosa}, {Filippenko},
+  {Gates}, {Greene}, {Li}, {Malkan}, {Pogge}, {Stern}, {Treu}, \&
+  {Woo}}]{Bentz2013}
+{Bentz}, M.~C., {Denney}, K.~D., {Grier}, C.~J., {et~al.} 2013,
+  \bibinfo{title}{{The Low-luminosity End of the Radius-Luminosity Relationship
+  for Active Galactic Nuclei},} \apj, 767, 149,
+  \dodoi{10.1088/0004-637X/767/2/149}
+
+% type=
+\bibitem[{G. {Brammer}(2023){Brammer}}]{msaexp}
+{Brammer}, G. 2023, {msaexp: NIRSpec analyis tools}, 0.6.17 Zenodo,
+  \dodoi{10.5281/zenodo.7299500}
+
+% type= article
+\bibitem[{C.~J. {Burke} {et~al.}(2026){Burke}, {Stone}, {Shen}, \&
+  {Jiang}}]{Burke2025}
+{Burke}, C.~J., {Stone}, Z., {Shen}, Y., \& {Jiang}, Y.-F. 2026,
+  \bibinfo{title}{{Too Quiet for Comfort: Local Little Red Dots Lack
+  Variability over Decades},} \apj, 1004, 16, \dodoi{10.3847/1538-4357/ae6b89}
+
+% type= article
+\bibitem[{S.-J. {Chang} {et~al.}(2026){Chang}, {Gronke}, {Matthee}, \&
+  {Mason}}]{Chang2025}
+{Chang}, S.-J., {Gronke}, M., {Matthee}, J., \& {Mason}, C. 2026,
+  \bibinfo{title}{{Impact of resonance, Raman, and Thomson scattering on
+  hydrogen line formation in Little Red Dots},} \mnras, 545, staf2131,
+  \dodoi{10.1093/mnras/staf2131}
+
+% type= article
+\bibitem[{S.~M. {Croom}(2011){Croom}}]{Croom2011}
+{Croom}, S.~M. 2011, \bibinfo{title}{{Do Quasar Broad-line Velocity Widths Add
+  Any Information to Virial Black Hole Mass Estimates?},} \apj, 736, 161,
+  \dodoi{10.1088/0004-637X/736/2/161}
+
+% type= article
+\bibitem[{O. {Curtis} {et~al.}(2026){Curtis}, {Cleri}, {Helton}, {Leja}, \&
+  {Wright}}]{Curtis2026}
+{Curtis}, O., {Cleri}, N.~J., {Helton}, J.~M., {Leja}, J., \& {Wright}, J.~T.
+  2026, \bibinfo{title}{{A Spectral Framework for Testing the Quasi-Star
+  Hypothesis in Little Red Dots I: Weighing LRDs by Their Super-Eddington
+  Luminosity Ratios---No Signs of Overmassive Black Holes},} arXiv e-prints,
+  arXiv:2609.09265, \dodoi{10.48550/arXiv.2609.09265}
+
+% type= article
+\bibitem[{A. {de Graaff} {et~al.}(2025){de Graaff}, {Brammer}, {Weibel},
+  {Lewis}, {Maseda}, {Oesch}, {Bezanson}, {Boogaard}, {Cleri}, {Cooper},
+  {Gottumukkala}, {Greene}, {Hirschmann}, {Hviding}, {Katz}, {Labb{\'e}},
+  {Leja}, {Matthee}, {McConachie}, {Miller}, {Naidu}, {Price}, {Rix}, {Setton},
+  {Suess}, {Wang}, {Whitaker}, \& {Williams}}]{DJAdeGraaff2024}
+{de Graaff}, A., {Brammer}, G., {Weibel}, A., {et~al.} 2025,
+  \bibinfo{title}{{RUBIES: A complete census of the bright and red distant
+  Universe with JWST/NIRSpec},} \aap, 697, A189,
+  \dodoi{10.1051/0004-6361/202452186}
+
+% type= article
+\bibitem[{A. {de Graaff} {et~al.}(2026){de Graaff}, {Hviding}, {Naidu},
+  {Greene}, {Miller}, {Leja}, {Matthee}, {Brammer}, {Katz}, {Bezanson},
+  {Boogaard}, {Bose}, {Chisholm}, {Cleri}, {Dayal}, {Feldmann}, {Fudamoto},
+  {Fujimoto}, {Furtak}, {Glazebrook}, {Gottumukkala}, {Heintz}, {Kokorev},
+  {Labbe}, {Maseda}, {McConachie}, {Nanayakkara}, {Nelson}, {Nowaczyk},
+  {Oesch}, {Rix}, {Setton}, {Torralba}, {Walter}, {Wang}, {Weibel}, \& {van der
+  Wel}}]{deGraaff2026}
+{de Graaff}, A., {Hviding}, R.~E., {Naidu}, R.~P., {et~al.} 2026,
+  \bibinfo{title}{{Little red dots host black hole stars: a unified family of
+  gas-reddened AGN revealed by JWST/NIRSpec spectroscopy},} \mnras, 551,
+  stag1567, \dodoi{10.1093/mnras/stag1567}
+
+% type= article
+\bibitem[{R. {Decarli} {et~al.}(2011){Decarli}, {Dotti}, \&
+  {Treves}}]{Decarli2011}
+{Decarli}, R., {Dotti}, M., \& {Treves}, A. 2011, \bibinfo{title}{{Geometry and
+  inclination of the broad-line region in blazars},} \mnras, 413, 39,
+  \dodoi{10.1111/j.1365-2966.2010.18102.x}
+
+% type= article
+\bibitem[{F. {D'Eugenio} {et~al.}(2026){D'Eugenio}, {Maiolino}, {Perna},
+  {{\"U}bler}, {Ji}, {McClymont}, {Koudmani}, {Sijacki}, {Juod{\v{z}}balis},
+  {Scholtz}, {Bennett}, {Bunker}, {Carniani}, {Charlot}, {Cresci},
+  {Curtis-Lake}, {Dalla Bont{\`a}}, {Inayoshi}, {Jones}, {Lyu}, {Marconi},
+  {Mazzolari}, {Nelson}, {Parlanti}, {Robertson}, {Schneider}, {Simmonds},
+  {Tacchella}, {Venturi}, {Willott}, {Witstok}, \& {Witten}}]{DEugenio2026}
+{D'Eugenio}, F., {Maiolino}, R., {Perna}, M., {et~al.} 2026,
+  \bibinfo{title}{{BlackTHUNDER strikes twice: Balmer-line absorption in an
+  overmassive Little Red Dot at z = 7.04},} \mnras, 547, stag401,
+  \dodoi{10.1093/mnras/stag401}
+
+% type= article
+\bibitem[{S. {Fine} {et~al.}(2008){Fine}, {Croom}, {Hopkins}, {Hernquist},
+  {Bland-Hawthorn}, {Colless}, {Hall}, {Miller}, {Myers}, {Nichol}, {Pimbblet},
+  {Ross}, {Schneider}, {Shanks}, \& {Sharp}}]{Fine2008}
+{Fine}, S., {Croom}, S.~M., {Hopkins}, P.~F., {et~al.} 2008,
+  \bibinfo{title}{{Constraining the quasar population with the broad-line width
+  distribution},} \mnras, 390, 1413, \dodoi{10.1111/j.1365-2966.2008.13691.x}
+
+% type= article
+\bibitem[{L.~J. {Furtak} {et~al.}(2025){Furtak}, {Secunda}, {Greene}, {Zitrin},
+  {Labb{\'e}}, {Golubchik}, {Bezanson}, {Kokorev}, {Atek}, {Brammer},
+  {Chemerynska}, {Cutler}, {Dayal}, {Feldmann}, {Fujimoto}, {Glazebrook},
+  {Leja}, {Ma}, {Matthee}, {Naidu}, {Nelson}, {Oesch}, {Pan}, {Price}, {Suess},
+  {Wang}, {Weaver}, \& {Whitaker}}]{Furtak2025}
+{Furtak}, L.~J., {Secunda}, A.~R., {Greene}, J.~E., {et~al.} 2025,
+  \bibinfo{title}{{Investigating photometric and spectroscopic variability in
+  the multiply imaged little red dot A2744-QSO1},} \aap, 698, A227,
+  \dodoi{10.1051/0004-6361/202554110}
+
+% type= article
+\bibitem[{J.~E. {Greene} {et~al.}(2024){Greene}, {Labbe}, {Goulding}, {Furtak},
+  {Chemerynska}, {Kokorev}, {Dayal}, {Volonteri}, {Williams}, {Wang}, {Setton},
+  {Burgasser}, {Bezanson}, {Atek}, {Brammer}, {Cutler}, {Feldmann}, {Fujimoto},
+  {Glazebrook}, {de Graaff}, {Khullar}, {Leja}, {Marchesini}, {Maseda},
+  {Matthee}, {Miller}, {Naidu}, {Nanayakkara}, {Oesch}, {Pan}, {Papovich},
+  {Price}, {van Dokkum}, {Weaver}, {Whitaker}, \& {Zitrin}}]{Greene2024}
+{Greene}, J.~E., {Labbe}, I., {Goulding}, A.~D., {et~al.} 2024,
+  \bibinfo{title}{{UNCOVER Spectroscopy Confirms the Surprising Ubiquity of
+  Active Galactic Nuclei in Red Sources at z > 5},} \apj, 964, 39,
+  \dodoi{10.3847/1538-4357/ad1e5f}
+
+% type= article
+\bibitem[{C.~R. Harris {et~al.}(2020)Harris, Millman, van~der Walt, Gommers,
+  Virtanen, Cournapeau, Wieser, Taylor, Berg, Smith, Kern, Picus, Hoyer, van
+  Kerkwijk, Brett, Haldane, del R{\'{i}}o, Wiebe, Peterson,
+  G{\'{e}}rard-Marchant, Sheppard, Reddy, Weckesser, Abbasi, Gohlke, \&
+  Oliphant}]{harris2020array}
+Harris, C.~R., Millman, K.~J., van~der Walt, S.~J., {et~al.} 2020,
+  \bibinfo{title}{Array programming with {NumPy},} Nature, 585, 357,
+  \dodoi{10.1038/s41586-020-2649-2}
+
+% type= article
+\bibitem[{K.~E. {Heintz} {et~al.}(2024){Heintz}, {Watson}, {Brammer},
+  {Vejlgaard}, {Hutter}, {Strait}, {Matthee}, {Oesch}, {Jakobsson}, {Tanvir},
+  {Laursen}, {Naidu}, {Mason}, {Killi}, {Jung}, {Hsiao}, {Abdurro'uf}, {Coe},
+  {Arrabal Haro}, {Finkelstein}, \& {Toft}}]{DJAHeintz2023}
+{Heintz}, K.~E., {Watson}, D., {Brammer}, G., {et~al.} 2024,
+  \bibinfo{title}{{Strong damped Lyman-{\ensuremath{\alpha}} absorption in
+  young star-forming galaxies at redshifts 9 to 11},} Science, 384, 890,
+  \dodoi{10.1126/science.adj0343}
+
+% type= article
+\bibitem[{J.~D. Hunter(2007)Hunter}]{Hunter:2007}
+Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
+  Computing in Science \& Engineering, 9, 90, \dodoi{10.1109/MCSE.2007.55}
+
+% type= article
+\bibitem[{R.~E. {Hviding} {et~al.}(2025){Hviding}, {de Graaff}, {Miller},
+  {Setton}, {Greene}, {Labb{\'e}}, {Brammer}, {Bezanson}, {Boogaard}, {Cleri},
+  {Leja}, {Maseda}, {McConachie}, {Matthee}, {Naidu}, {Oesch}, {Wang},
+  {Whitaker}, \& {Williams}}]{Hviding2025}
+{Hviding}, R.~E., {de Graaff}, A., {Miller}, T.~B., {et~al.} 2025,
+  \bibinfo{title}{{RUBIES: A spectroscopic census of little red dots: All point
+  sources with v-shaped continua have broad lines},} \aap, 702, A57,
+  \dodoi{10.1051/0004-6361/202555816}
+
+% type= article
+\bibitem[{K. {Inayoshi} \& L.~C. {Ho}(2026){Inayoshi} \& {Ho}}]{InayoshiHo}
+{Inayoshi}, K., \& {Ho}, L.~C. 2026, \bibinfo{title}{{A critical evaluation of
+  the physical nature of the little red dots},} Nature Astronomy, 10, 1261,
+  \dodoi{10.1038/s41550-026-02934-2}
+
+% type= article
+\bibitem[{K. {Inayoshi} {et~al.}(2026){Inayoshi}, {Murase}, \&
+  {Kashiyama}}]{Inayoshi2026}
+{Inayoshi}, K., {Murase}, K., \& {Kashiyama}, K. 2026,
+  \bibinfo{title}{{Spectral Uniformity of Little Red Dots: A Natural Outcome of
+  Coevolving Seed Black Holes and Nascent Starbursts},} \apj, 1000, 90,
+  \dodoi{10.3847/1538-4357/ae42ce}
+
+% type= article
+\bibitem[{P. {Jakobsen} {et~al.}(2022){Jakobsen}, {Ferruit}, {Alves de
+  Oliveira}, {Arribas}, {Bagnasco}, {Barho}, {Beck}, {Birkmann}, {B{\"o}ker},
+  {Bunker}, {Charlot}, {de Jong}, {de Marchi}, {Ehrenwinkler}, {Falcolini},
+  {Fels}, {Franx}, {Franz}, {Funke}, {Giardino}, {Gnata}, {Holota}, {Honnen},
+  {Jensen}, {Jentsch}, {Johnson}, {Jollet}, {Karl}, {Kling}, {K{\"o}hler},
+  {Kolm}, {Kumari}, {Lander}, {Lemke}, {L{\'o}pez-Caniego}, {L{\"u}tzgendorf},
+  {Maiolino}, {Manjavacas}, {Marston}, {Maschmann}, {Maurer}, {Messerschmidt},
+  {Moseley}, {Mosner}, {Mott}, {Muzerolle}, {Pirzkal}, {Pittet}, {Plitzke},
+  {Posselt}, {Rapp}, {Rauscher}, {Rawle}, {Rix}, {R{\"o}del}, {Rumler},
+  {Sabbi}, {Salvignol}, {Schmid}, {Sirianni}, {Smith}, {Strada}, {te Plate},
+  {Valenti}, {Wettemann}, {Wiehe}, {Wiesmayer}, {Willott}, {Wright}, {Zeidler},
+  \& {Zincke}}]{Jakobsen2022}
+{Jakobsen}, P., {Ferruit}, P., {Alves de Oliveira}, C., {et~al.} 2022,
+  \bibinfo{title}{{The Near-Infrared Spectrograph (NIRSpec) on the James Webb
+  Space Telescope. I. Overview of the instrument and its capabilities},} \aap,
+  661, A80, \dodoi{10.1051/0004-6361/202142663}
+
+% type= article
+\bibitem[{I. {Juod{\v{z}}balis} {et~al.}(2026){Juod{\v{z}}balis}, {Marconcini},
+  {D'Eugenio}, {Maiolino}, {Marconi}, {{\"U}bler}, {Scholtz}, {Ji}, {Jones},
+  {Perna}, {Arribas}, {Bennett}, {Bromm}, {Bunker}, {Carniani}, {Charlot},
+  {Cresci}, {Dayal}, {Egami}, {Fabian}, {Inayoshi}, {Isobe}, {Ivey},
+  {Koudmani}, {Laporte}, {Liu}, {Lyu}, {Mazzolari}, {Monty}, {Parlanti},
+  {P{\'e}rez-Gonz{\'a}lez}, {Robertson}, {Schneider}, {Sijacki}, {Tacchella},
+  {Trinca}, {Valiante}, {Volonteri}, {Witstok}, \& {Zhang}}]{Juodzbalis2026}
+{Juod{\v{z}}balis}, I., {Marconcini}, C., {D'Eugenio}, F., {et~al.} 2026,
+  \bibinfo{title}{{A direct black-hole mass measurement in a little red dot at
+  high redshift},} \nat, 653, 1017, \dodoi{10.1038/s41586-026-10579-4}
+
+% type= article
+\bibitem[{D. {Kido} {et~al.}(2025){Kido}, {Ioka}, {Hotokezaka}, {Inayoshi}, \&
+  {Irwin}}]{Kido2025}
+{Kido}, D., {Ioka}, K., {Hotokezaka}, K., {Inayoshi}, K., \& {Irwin}, C.~M.
+  2025, \bibinfo{title}{{Black hole envelopes in Little Red Dots},} \mnras,
+  544, 3407, \dodoi{10.1093/mnras/staf1898}
+
+% type= article
+\bibitem[{D.~D. {Kocevski} {et~al.}(2025){Kocevski}, {Finkelstein}, {Barro},
+  {Taylor}, {Calabr{\`o}}, {Laloux}, {Buchner}, {Trump}, {Leung}, {Yang},
+  {Dickinson}, {P{\'e}rez-Gonz{\'a}lez}, {Pacucci}, {Inayoshi}, {Somerville},
+  {McGrath}, {Akins}, {Bagley}, {Bowler}, {Bisigello}, {Carnall}, {Casey},
+  {Cheng}, {Cleri}, {Costantin}, {Cullen}, {Davis}, {Donnan}, {Dunlop},
+  {Ellis}, {Ferguson}, {Fujimoto}, {Fontana}, {Giavalisco}, {Grazian},
+  {Grogin}, {Hathi}, {Hirschmann}, {Huertas-Company}, {Holwerda},
+  {Illingworth}, {Juneau}, {Kartaltepe}, {Koekemoer}, {Li}, {Lucas}, {Magee},
+  {Mason}, {McLeod}, {McLure}, {Napolitano}, {Papovich}, {Pirzkal},
+  {Rodighiero}, {Santini}, {Wilkins}, \& {Yung}}]{Kocevski2025}
+{Kocevski}, D.~D., {Finkelstein}, S.~L., {Barro}, G., {et~al.} 2025,
+  \bibinfo{title}{{The Rise of Faint, Red Active Galactic Nuclei at z > 4: A
+  Sample of Little Red Dots in the JWST Extragalactic Legacy Fields},} \apj,
+  986, 126, \dodoi{10.3847/1538-4357/adbc7d}
+
+% type= article
+\bibitem[{D.~D. {Kocevski} {et~al.}(2026){Kocevski}, {Taylor}, {Onoue},
+  {Inayoshi}, {Finkelstein}, {Barro}, {Guo}, {Arrabal Haro}, {Trump}, {Larson},
+  {Dickinson}, {Papovich}, {Pacucci}, {Perez-Gonzalez}, {Hirschmann},
+  {McGrath}, {Jones}, {Cleri}, {Davis}, {Giavalisco}, {Grogin}, {Hutchison},
+  {Kartaltepe}, {Kirkpatrick}, {Leung}, {Somerville}, \&
+  {Wilkins}}]{Kocevski2026}
+{Kocevski}, D.~D., {Taylor}, A.~J., {Onoue}, M., {et~al.} 2026,
+  \bibinfo{title}{{Skyfire: A Spectroscopic Census of Little Red Dots and
+  Broad-Line AGN in the CEERS Field},} arXiv e-prints, arXiv:2609.00112,
+  \dodoi{10.48550/arXiv.2609.00112}
+
+% type= article
+\bibitem[{X. {Lin} {et~al.}(2026){Lin}, {Fan}, {Cai}, {Bian}, {Liu}, {Sun},
+  {Ma}, {Greene}, {Strauss}, {Green}, {Lyu}, {Champagne}, {Goulding},
+  {Inayoshi}, {Jin}, {Leung}, {Li}, {Liu}, {Liu}, {Mao}, {Pudoka}, {Tee},
+  {Wang}, {Wang}, {Wu}, {Yang}, {Zhang}, \& {Zhu}}]{Lin2025}
+{Lin}, X., {Fan}, X., {Cai}, Z., {et~al.} 2026, \bibinfo{title}{{The Discovery
+  of Little Red Dots in the Local Universe: Signatures of Cool Gas Envelopes},}
+  \apj, 997, 364, \dodoi{10.3847/1538-4357/ae2bdf}
+
+% type= article
+\bibitem[{J.-R. {Liu} {et~al.}(2026){Liu}, {Feng}, \& {Ho}}]{LiuFengHo2026}
+{Liu}, J.-R., {Feng}, H., \& {Ho}, L.~C. 2026, \bibinfo{title}{{Optically Thick
+  Outflow Driven by Supercritical Accretion May Explain Little Red Dots},}
+  \apjl, 1007, L13, \dodoi{10.3847/2041-8213/ae8dba}
+
+% type= article
+\bibitem[{P. {Madau} \& R. {Maiolino}(2026{\natexlab{a}}){Madau} \&
+  {Maiolino}}]{Madau2026a}
+{Madau}, P., \& {Maiolino}, R. 2026{\natexlab{a}}, \bibinfo{title}{{Little red
+  dots as obscured little blue dots: A super-Eddington unification model},}
+  \aap, 714, A276, \dodoi{10.1051/0004-6361/202659606}
+
+% type= article
+\bibitem[{P. {Madau} \& R. {Maiolino}(2026{\natexlab{b}}){Madau} \&
+  {Maiolino}}]{Madau2026c}
+{Madau}, P., \& {Maiolino}, R. 2026{\natexlab{b}}, \bibinfo{title}{{Little red
+  dots as obscured little blue dots: Relative abundances, luminosities, and
+  black hole masses},} \aap, 715, A15, \dodoi{10.1051/0004-6361/202660815}
+
+% type= article
+\bibitem[{P. {Madau} {et~al.}(2026){Madau}, {Maiolino}, {Scholtz}, \&
+  {D'Eugenio}}]{Madau2026b}
+{Madau}, P., {Maiolino}, R., {Scholtz}, J., \& {D'Eugenio}, F. 2026,
+  \bibinfo{title}{{Wings of little dots: Exponential broad lines from a
+  stratified broad-line region},} \aap, 714, A186,
+  \dodoi{10.1051/0004-6361/202660251}
+
+% type= article
+\bibitem[{J. {Matthee} {et~al.}(2024){Matthee}, {Naidu}, {Brammer}, {Chisholm},
+  {Eilers}, {Goulding}, {Greene}, {Kashino}, {Labbe}, {Lilly}, {Mackenzie},
+  {Oesch}, {Weibel}, {Wuyts}, {Xiao}, {Bordoloi}, {Bouwens}, {van Dokkum},
+  {Illingworth}, {Kramarenko}, {Maseda}, {Mason}, {Meyer}, {Nelson}, {Reddy},
+  {Shivaei}, {Simcoe}, \& {Yue}}]{Matthee2024}
+{Matthee}, J., {Naidu}, R.~P., {Brammer}, G., {et~al.} 2024,
+  \bibinfo{title}{{Little Red Dots: An Abundant Population of Faint Active
+  Galactic Nuclei at z {\ensuremath{\sim}} 5 Revealed by the EIGER and FRESCO
+  JWST Surveys},} \apj, 963, 129, \dodoi{10.3847/1538-4357/ad2345}
+
+% type= article
+\bibitem[{R.~P. {Naidu} {et~al.}(2026){Naidu}, {Matthee}, {de Graaff},
+  {Torralba}, {Ashall}, {Katz}, {Chisholm}, {Brammer}, {Dessart}, {Eilers},
+  {Hviding}, {Jones}, {Kokorev}, {Leja}, {Liu}, {Liu}, {Nandal}, {Oesch},
+  {Ransome}, {Simcoe}, {Sun}, {Weibel}, \& {Xiao}}]{Naidu2026}
+{Naidu}, R.~P., {Matthee}, J., {de Graaff}, A., {et~al.} 2026,
+  \bibinfo{title}{{Little Red Dots as Intermediate Mass, Super-Eddington
+  Engines: Insights from Type IIn Supernovae and The 1837-1856 Great Eruption
+  of $η$ Carinae},} arXiv e-prints, arXiv:2606.30711,
+  \dodoi{10.48550/arXiv.2606.30711}
+
+% type= article
+\bibitem[{ {Planck Collaboration} {et~al.}(2020){Planck Collaboration},
+  {Aghanim}, {Akrami}, {Ashdown}, {Aumont}, {Baccigalupi}, {Ballardini},
+  {Banday}, {Barreiro}, {Bartolo}, {Basak}, {Battye}, {Benabed}, {Bernard},
+  {Bersanelli}, {Bielewicz}, {Bock}, {Bond}, {Borrill}, {Bouchet}, {Boulanger},
+  {Bucher}, {Burigana}, {Butler}, {Calabrese}, {Cardoso}, {Carron},
+  {Challinor}, {Chiang}, {Chluba}, {Colombo}, {Combet}, {Contreras}, {Crill},
+  {Cuttaia}, {de Bernardis}, {de Zotti}, {Delabrouille}, {Delouis}, {Di
+  Valentino}, {Diego}, {Dor{\'e}}, {Douspis}, {Ducout}, {Dupac}, {Dusini},
+  {Efstathiou}, {Elsner}, {En{\ss}lin}, {Eriksen}, {Fantaye}, {Farhang},
+  {Fergusson}, {Fernandez-Cobos}, {Finelli}, {Forastieri}, {Frailis},
+  {Fraisse}, {Franceschi}, {Frolov}, {Galeotta}, {Galli}, {Ganga},
+  {G{\'e}nova-Santos}, {Gerbino}, {Ghosh}, {Gonz{\'a}lez-Nuevo}, {G{\'o}rski},
+  {Gratton}, {Gruppuso}, {Gudmundsson}, {Hamann}, {Handley}, {Hansen},
+  {Herranz}, {Hildebrandt}, {Hivon}, {Huang}, {Jaffe}, {Jones}, {Karakci},
+  {Keih{\"a}nen}, {Keskitalo}, {Kiiveri}, {Kim}, {Kisner}, {Knox},
+  {Krachmalnicoff}, {Kunz}, {Kurki-Suonio}, {Lagache}, {Lamarre}, {Lasenby},
+  {Lattanzi}, {Lawrence}, {Le Jeune}, {Lemos}, {Lesgourgues}, {Levrier},
+  {Lewis}, {Liguori}, {Lilje}, {Lilley}, {Lindholm}, {L{\'o}pez-Caniego},
+  {Lubin}, {Ma}, {Mac{\'\i}as-P{\'e}rez}, {Maggio}, {Maino}, {Mandolesi},
+  {Mangilli}, {Marcos-Caballero}, {Maris}, {Martin}, {Martinelli},
+  {Mart{\'\i}nez-Gonz{\'a}lez}, {Matarrese}, {Mauri}, {McEwen}, {Meinhold},
+  {Melchiorri}, {Mennella}, {Migliaccio}, {Millea}, {Mitra},
+  {Miville-Desch{\^e}nes}, {Molinari}, {Montier}, {Morgante}, {Moss}, {Natoli},
+  {N{\o}rgaard-Nielsen}, {Pagano}, {Paoletti}, {Partridge}, {Patanchon},
+  {Peiris}, {Perrotta}, {Pettorino}, {Piacentini}, {Polastri}, {Polenta},
+  {Puget}, {Rachen}, {Reinecke}, {Remazeilles}, {Renzi}, {Rocha}, {Rosset},
+  {Roudier}, {Rubi{\~n}o-Mart{\'\i}n}, {Ruiz-Granados}, {Salvati}, {Sandri},
+  {Savelainen}, {Scott}, {Shellard}, {Sirignano}, {Sirri}, {Spencer},
+  {Sunyaev}, {Suur-Uski}, {Tauber}, {Tavagnacco}, {Tenti}, {Toffolatti},
+  {Tomasi}, {Trombetti}, {Valenziano}, {Valiviita}, {Van Tent}, {Vibert},
+  {Vielva}, {Villa}, {Vittorio}, {Wandelt}, {Wehus}, {White}, {White},
+  {Zacchei}, \& {Zonca}}]{Planck2020}
+{Planck Collaboration}, {Aghanim}, N., {Akrami}, Y., {et~al.} 2020,
+  \bibinfo{title}{{Planck 2018 results. VI. Cosmological parameters},} \aap,
+  641, A6, \dodoi{10.1051/0004-6361/201833910}
+
+% type= article
+\bibitem[{A.~E. {Reines} {et~al.}(2013){Reines}, {Greene}, \&
+  {Geha}}]{Reines2013}
+{Reines}, A.~E., {Greene}, J.~E., \& {Geha}, M. 2013, \bibinfo{title}{{Dwarf
+  Galaxies with Optical Signatures of Active Massive Black Holes},} \apj, 775,
+  116, \dodoi{10.1088/0004-637X/775/2/116}
+
+% type= article
+\bibitem[{A.~E. {Reines} \& M. {Volonteri}(2015){Reines} \&
+  {Volonteri}}]{ReinesVolonteri2015}
+{Reines}, A.~E., \& {Volonteri}, M. 2015, \bibinfo{title}{{Relations between
+  Central Black Hole Mass and Total Galaxy Stellar Mass in the Local
+  Universe},} \apj, 813, 82, \dodoi{10.1088/0004-637X/813/2/82}
+
+% type= article
+\bibitem[{V. {Rusakov} {et~al.}(2026){Rusakov}, {Watson}, {Nikopoulos},
+  {Brammer}, {Gottumukkala}, {Harvey}, {Heintz}, {Damgaard}, {Sim}, {Sneppen},
+  {Vijayan}, {Adams}, {Austin}, {Conselice}, {Goolsby}, {Toft}, \&
+  {Witstok}}]{Rusakov2026}
+{Rusakov}, V., {Watson}, D., {Nikopoulos}, G.~P., {et~al.} 2026,
+  \bibinfo{title}{{Little red dots as young supermassive black holes in dense
+  ionized cocoons},} \nat, 649, 574, \dodoi{10.1038/s41586-025-09900-4}
+
+% type= article
+\bibitem[{J. {Scholtz} {et~al.}(2026){Scholtz}, {D'Eugenio}, {Maiolino},
+  {Brazzini}, {{\"U}bler}, {Ji}, {Perna}, {Sun}, {Brocchi}, {Carniani},
+  {Cresci}, {Ivey}, {Juod{\v{z}}balis}, {Marconi}, {Mazzolari}, {Risaliti}, \&
+  {Trefoloni}}]{Scholtz2026}
+{Scholtz}, J., {D'Eugenio}, F., {Maiolino}, R., {et~al.} 2026,
+  \bibinfo{title}{{Little Red and Blue Dots: simply stratified Broad Line
+  Regions},} arXiv e-prints, arXiv:2603.22277,
+  \dodoi{10.48550/arXiv.2603.22277}
+
+% type= article
+\bibitem[{Y. {Shen} {et~al.}(2011){Shen}, {Richards}, {Strauss}, {Hall},
+  {Schneider}, {Snedden}, {Bizyaev}, {Brewington}, {Malanushenko},
+  {Malanushenko}, {Oravetz}, {Pan}, \& {Simmons}}]{Shen2011}
+{Shen}, Y., {Richards}, G.~T., {Strauss}, M.~A., {et~al.} 2011,
+  \bibinfo{title}{{A Catalog of Quasar Properties from Sloan Digital Sky Survey
+  Data Release 7},} \apjs, 194, 45, \dodoi{10.1088/0067-0049/194/2/45}
+
+% type= article
+\bibitem[{A. {Sneppen} {et~al.}(2026){Sneppen}, {Watson}, {Matthews},
+  {Nikopoulos}, {Allen}, {Brammer}, {Damgaard}, {Heintz}, {Knigge}, {Long},
+  {Rusakov}, {Sim}, \& {Witstok}}]{Sneppen2026}
+{Sneppen}, A., {Watson}, D., {Matthews}, J.~H., {et~al.} 2026,
+  \bibinfo{title}{{Inside the cocoon: a comprehensive explanation of the
+  spectra of Little Red Dots},} arXiv e-prints, arXiv:2601.18864,
+  \dodoi{10.48550/arXiv.2601.18864}
+
+% type= article
+\bibitem[{W.~Q. {Sun} {et~al.}(2026){Sun}, {Naidu}, {Liu}, {de Graaff},
+  {Greene}, {Matthee}, {Ashall}, {Chisholm}, {Eilers}, {Fei}, {Heintz},
+  {Hiramatsu}, {Kokorev}, {Leja}, {Liu}, {Natarajan}, {Oesch}, {Simcoe},
+  {Torralba}, \& {Weibel}}]{Sun2026}
+{Sun}, W.~Q., {Naidu}, R.~P., {Liu}, H., {et~al.} 2026,
+  \bibinfo{title}{{Overmassive No More: The Case for Little Red Dots Hosting
+  Black Hole Seeds as Massive as Single Supermassive Stars},} arXiv e-prints,
+  arXiv:2609.09274, \dodoi{10.48550/arXiv.2609.09274}
+
+% type= article
+\bibitem[{S. {Takasao} \& K. {Inayoshi}(2026){Takasao} \&
+  {Inayoshi}}]{TakasaoInayoshi2026}
+{Takasao}, S., \& {Inayoshi}, K. 2026, \bibinfo{title}{{A Magnetized Black Hole
+  Envelope Model for Little Red Dots},} arXiv e-prints, arXiv:2605.21589,
+  \dodoi{10.48550/arXiv.2605.21589}
+
+% type= article
+\bibitem[{A.~J. {Taylor} {et~al.}(2025){Taylor}, {Finkelstein}, {Kocevski},
+  {Jeon}, {Bromm}, {Amor{\'\i}n}, {Arrabal Haro}, {Backhaus}, {Bagley},
+  {Banados}, {Bhatawdekar}, {Brooks}, {Calabr{\`o}}, {Ch{\'a}vez Ortiz},
+  {Cheng}, {Cleri}, {Cole}, {Davis}, {Dickinson}, {Donnan}, {Dunlop}, {Ellis},
+  {Fern{\'a}ndez}, {Fontana}, {Fujimoto}, {Giavalisco}, {Grazian}, {Guo},
+  {Hathi}, {Holwerda}, {Hirschmann}, {Inayoshi}, {Kartaltepe}, {Khusanova},
+  {Koekemoer}, {Kokorev}, {Larson}, {Leung}, {Lucas}, {McLeod}, {Napolitano},
+  {Onoue}, {Pacucci}, {Papovich}, {P{\'e}rez-Gonz{\'a}lez}, {Pirzkal},
+  {Somerville}, {Trump}, {Wilkins}, {Yung}, \& {Zhang}}]{Taylor2025}
+{Taylor}, A.~J., {Finkelstein}, S.~L., {Kocevski}, D.~D., {et~al.} 2025,
+  \bibinfo{title}{{Broad-line AGNs at 3.5 < z < 6: The Black Hole Mass Function
+  and a Connection with Little Red Dots},} \apj, 986, 165,
+  \dodoi{10.3847/1538-4357/add15b}
+
+% type= article
+\bibitem[{P. Virtanen {et~al.}(2020)Virtanen, Gommers, Oliphant, Haberland,
+  Reddy, Cournapeau, Burovski, Peterson, Weckesser, Bright, {van der Walt},
+  Brett, Wilson, Millman, Mayorov, Nelson, Jones, Kern, Larson, Carey, Polat,
+  Feng, Moore, {VanderPlas}, Laxalde, Perktold, Cimrman, Henriksen, Quintero,
+  Harris, Archibald, Ribeiro, Pedregosa, {van Mulbregt}, \& {SciPy 1.0
+  Contributors}}]{2020SciPy-NMeth}
+Virtanen, P., Gommers, R., Oliphant, T.~E., {et~al.} 2020,
+  \bibinfo{title}{{{SciPy} 1.0: Fundamental Algorithms for Scientific Computing
+  in Python},} Nature Methods, 17, 261, \dodoi{10.1038/s41592-019-0686-2}
+
+\end{thebibliography}

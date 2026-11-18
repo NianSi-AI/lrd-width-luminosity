@@ -1,0 +1,2702 @@
+[
+ {
+  "parent_index": 8,
+  "source_id": "000943.14-090839.2",
+  "z": 0.2096,
+  "plate": 651,
+  "mjd": 52141,
+  "fiber": 535,
+  "catalog_z": 0.2096
+ },
+ {
+  "parent_index": 45,
+  "source_id": "005550.75-101905.7",
+  "z": 0.3091,
+  "plate": 657,
+  "mjd": 52177,
+  "fiber": 66,
+  "catalog_z": 0.3091
+ },
+ {
+  "parent_index": 58,
+  "source_id": "011238.88-083502.0",
+  "z": 0.3572,
+  "plate": 659,
+  "mjd": 52199,
+  "fiber": 605,
+  "catalog_z": 0.3572
+ },
+ {
+  "parent_index": 64,
+  "source_id": "011946.75+135649.1",
+  "z": 0.2581,
+  "plate": 424,
+  "mjd": 51893,
+  "fiber": 274,
+  "catalog_z": 0.2581
+ },
+ {
+  "parent_index": 75,
+  "source_id": "013023.51+000551.7",
+  "z": 0.3453,
+  "plate": 399,
+  "mjd": 51817,
+  "fiber": 638,
+  "catalog_z": 0.3453
+ },
+ {
+  "parent_index": 79,
+  "source_id": "013419.11-084714.6",
+  "z": 0.3659,
+  "plate": 662,
+  "mjd": 52147,
+  "fiber": 540,
+  "catalog_z": 0.3659
+ },
+ {
+  "parent_index": 86,
+  "source_id": "014411.28-081301.3",
+  "z": 0.2389,
+  "plate": 664,
+  "mjd": 52174,
+  "fiber": 327,
+  "catalog_z": 0.2389
+ },
+ {
+  "parent_index": 106,
+  "source_id": "020115.53+003135.0",
+  "z": 0.3625,
+  "plate": 404,
+  "mjd": 51812,
+  "fiber": 344,
+  "catalog_z": 0.3625
+ },
+ {
+  "parent_index": 113,
+  "source_id": "021359.79+004226.7",
+  "z": 0.1823,
+  "plate": 405,
+  "mjd": 51816,
+  "fiber": 458,
+  "catalog_z": 0.1823
+ },
+ {
+  "parent_index": 118,
+  "source_id": "022113.14+010102.9",
+  "z": 0.3537,
+  "plate": 406,
+  "mjd": 51869,
+  "fiber": 374,
+  "catalog_z": 0.3537
+ },
+ {
+  "parent_index": 122,
+  "source_id": "022429.10-091851.7",
+  "z": 0.3571,
+  "plate": 454,
+  "mjd": 51908,
+  "fiber": 296,
+  "catalog_z": 0.3571
+ },
+ {
+  "parent_index": 130,
+  "source_id": "024204.76+000814.5",
+  "z": 0.3822,
+  "plate": 707,
+  "mjd": 52177,
+  "fiber": 391,
+  "catalog_z": 0.3822
+ },
+ {
+  "parent_index": 135,
+  "source_id": "024703.24-071421.6",
+  "z": 0.3334,
+  "plate": 456,
+  "mjd": 51910,
+  "fiber": 540,
+  "catalog_z": 0.3334
+ },
+ {
+  "parent_index": 159,
+  "source_id": "031715.87+425150.6",
+  "z": 0.2355,
+  "plate": 1665,
+  "mjd": 52976,
+  "fiber": 377,
+  "catalog_z": 0.2355
+ },
+ {
+  "parent_index": 168,
+  "source_id": "033016.22-065141.0",
+  "z": 0.3668,
+  "plate": 461,
+  "mjd": 51910,
+  "fiber": 187,
+  "catalog_z": 0.3668
+ },
+ {
+  "parent_index": 187,
+  "source_id": "035206.93-064415.6",
+  "z": 0.1725,
+  "plate": 463,
+  "mjd": 51908,
+  "fiber": 107,
+  "catalog_z": 0.1725
+ },
+ {
+  "parent_index": 189,
+  "source_id": "035529.31+000807.1",
+  "z": 0.3292,
+  "plate": 1529,
+  "mjd": 52930,
+  "fiber": 620,
+  "catalog_z": 0.3292
+ },
+ {
+  "parent_index": 194,
+  "source_id": "072937.05+375435.0",
+  "z": 0.2037,
+  "plate": 1733,
+  "mjd": 53047,
+  "fiber": 12,
+  "catalog_z": 0.2037
+ },
+ {
+  "parent_index": 199,
+  "source_id": "073413.90+321722.8",
+  "z": 0.334,
+  "plate": 541,
+  "mjd": 51959,
+  "fiber": 225,
+  "catalog_z": 0.334
+ },
+ {
+  "parent_index": 209,
+  "source_id": "073955.14+331236.8",
+  "z": 0.3207,
+  "plate": 541,
+  "mjd": 51959,
+  "fiber": 501,
+  "catalog_z": 0.3207
+ },
+ {
+  "parent_index": 219,
+  "source_id": "074439.97+225551.0",
+  "z": 0.2187,
+  "plate": 927,
+  "mjd": 52577,
+  "fiber": 115,
+  "catalog_z": 0.2187
+ },
+ {
+  "parent_index": 236,
+  "source_id": "074819.04+335310.9",
+  "z": 0.2805,
+  "plate": 756,
+  "mjd": 52577,
+  "fiber": 225,
+  "catalog_z": 0.2805
+ },
+ {
+  "parent_index": 249,
+  "source_id": "075053.50+473344.9",
+  "z": 0.3387,
+  "plate": 1737,
+  "mjd": 53055,
+  "fiber": 460,
+  "catalog_z": 0.3387
+ },
+ {
+  "parent_index": 250,
+  "source_id": "075057.26+353037.6",
+  "z": 0.1759,
+  "plate": 542,
+  "mjd": 51993,
+  "fiber": 581,
+  "catalog_z": 0.1759
+ },
+ {
+  "parent_index": 251,
+  "source_id": "075101.42+291419.1",
+  "z": 0.1208,
+  "plate": 1060,
+  "mjd": 52636,
+  "fiber": 293,
+  "catalog_z": 0.1208
+ },
+ {
+  "parent_index": 261,
+  "source_id": "075314.81+305736.6",
+  "z": 0.2765,
+  "plate": 890,
+  "mjd": 52583,
+  "fiber": 48,
+  "catalog_z": 0.2765
+ },
+ {
+  "parent_index": 266,
+  "source_id": "075437.80+181240.7",
+  "z": 0.2978,
+  "plate": 1920,
+  "mjd": 53314,
+  "fiber": 545,
+  "catalog_z": 0.2978
+ },
+ {
+  "parent_index": 291,
+  "source_id": "080120.97+194803.9",
+  "z": 0.179,
+  "plate": 1922,
+  "mjd": 53315,
+  "fiber": 461,
+  "catalog_z": 0.179
+ },
+ {
+  "parent_index": 316,
+  "source_id": "080504.05+120540.3",
+  "z": 0.3208,
+  "plate": 2418,
+  "mjd": 53794,
+  "fiber": 536,
+  "catalog_z": 0.3208
+ },
+ {
+  "parent_index": 331,
+  "source_id": "080710.87+245105.9",
+  "z": 0.3287,
+  "plate": 1265,
+  "mjd": 52705,
+  "fiber": 441,
+  "catalog_z": 0.3287
+ },
+ {
+  "parent_index": 335,
+  "source_id": "080718.74+272947.1",
+  "z": 0.3408,
+  "plate": 929,
+  "mjd": 52581,
+  "fiber": 625,
+  "catalog_z": 0.3408
+ },
+ {
+  "parent_index": 351,
+  "source_id": "081059.78+300405.4",
+  "z": 0.162,
+  "plate": 930,
+  "mjd": 52618,
+  "fiber": 401,
+  "catalog_z": 0.162
+ },
+ {
+  "parent_index": 370,
+  "source_id": "081429.25+265241.7",
+  "z": 0.2846,
+  "plate": 1206,
+  "mjd": 52670,
+  "fiber": 7,
+  "catalog_z": 0.2846
+ },
+ {
+  "parent_index": 371,
+  "source_id": "081438.27+290619.9",
+  "z": 0.2258,
+  "plate": 930,
+  "mjd": 52618,
+  "fiber": 35,
+  "catalog_z": 0.2258
+ },
+ {
+  "parent_index": 374,
+  "source_id": "081446.26+223645.5",
+  "z": 0.326,
+  "plate": 1926,
+  "mjd": 53317,
+  "fiber": 301,
+  "catalog_z": 0.326
+ },
+ {
+  "parent_index": 375,
+  "source_id": "081456.09+532533.5",
+  "z": 0.1197,
+  "plate": 1781,
+  "mjd": 53297,
+  "fiber": 444,
+  "catalog_z": 0.1197
+ },
+ {
+  "parent_index": 408,
+  "source_id": "082140.74+371518.7",
+  "z": 0.3142,
+  "plate": 893,
+  "mjd": 52589,
+  "fiber": 19,
+  "catalog_z": 0.3142
+ },
+ {
+  "parent_index": 418,
+  "source_id": "082405.19+445246.0",
+  "z": 0.2196,
+  "plate": 548,
+  "mjd": 51986,
+  "fiber": 208,
+  "catalog_z": 0.2196
+ },
+ {
+  "parent_index": 422,
+  "source_id": "082445.62+034905.2",
+  "z": 0.3476,
+  "plate": 1185,
+  "mjd": 52642,
+  "fiber": 180,
+  "catalog_z": 0.3476
+ },
+ {
+  "parent_index": 423,
+  "source_id": "082451.13+473221.4",
+  "z": 0.2849,
+  "plate": 441,
+  "mjd": 51868,
+  "fiber": 621,
+  "catalog_z": 0.2849
+ },
+ {
+  "parent_index": 427,
+  "source_id": "082547.35+094007.4",
+  "z": 0.3193,
+  "plate": 2572,
+  "mjd": 54056,
+  "fiber": 254,
+  "catalog_z": 0.3193
+ },
+ {
+  "parent_index": 433,
+  "source_id": "082708.53+425017.8",
+  "z": 0.3329,
+  "plate": 761,
+  "mjd": 52266,
+  "fiber": 436,
+  "catalog_z": 0.3329
+ },
+ {
+  "parent_index": 439,
+  "source_id": "082800.60+401135.1",
+  "z": 0.221,
+  "plate": 894,
+  "mjd": 52615,
+  "fiber": 444,
+  "catalog_z": 0.221
+ },
+ {
+  "parent_index": 440,
+  "source_id": "082811.55+123359.3",
+  "z": 0.3621,
+  "plate": 2424,
+  "mjd": 54448,
+  "fiber": 419,
+  "catalog_z": 0.3621
+ },
+ {
+  "parent_index": 442,
+  "source_id": "082854.96+240300.4",
+  "z": 0.3046,
+  "plate": 1928,
+  "mjd": 53327,
+  "fiber": 194,
+  "catalog_z": 0.3046
+ },
+ {
+  "parent_index": 450,
+  "source_id": "083027.92+543026.1",
+  "z": 0.2832,
+  "plate": 1783,
+  "mjd": 53386,
+  "fiber": 128,
+  "catalog_z": 0.2832
+ },
+ {
+  "parent_index": 458,
+  "source_id": "083137.26+381520.4",
+  "z": 0.3238,
+  "plate": 827,
+  "mjd": 52312,
+  "fiber": 522,
+  "catalog_z": 0.3238
+ },
+ {
+  "parent_index": 460,
+  "source_id": "083152.04+172245.2",
+  "z": 0.328,
+  "plate": 2276,
+  "mjd": 53712,
+  "fiber": 372,
+  "catalog_z": 0.328
+ },
+ {
+  "parent_index": 461,
+  "source_id": "083222.38+245649.6",
+  "z": 0.3289,
+  "plate": 1928,
+  "mjd": 53327,
+  "fiber": 460,
+  "catalog_z": 0.3289
+ },
+ {
+  "parent_index": 466,
+  "source_id": "083236.28+044505.9",
+  "z": 0.2916,
+  "plate": 1186,
+  "mjd": 52646,
+  "fiber": 432,
+  "catalog_z": 0.2916
+ },
+ {
+  "parent_index": 473,
+  "source_id": "083413.36+590301.4",
+  "z": 0.308,
+  "plate": 1874,
+  "mjd": 54452,
+  "fiber": 91,
+  "catalog_z": 0.308
+ },
+ {
+  "parent_index": 490,
+  "source_id": "083703.29+250815.2",
+  "z": 0.2749,
+  "plate": 1930,
+  "mjd": 53347,
+  "fiber": 240,
+  "catalog_z": 0.2749
+ },
+ {
+  "parent_index": 505,
+  "source_id": "083852.91+264120.8",
+  "z": 0.2977,
+  "plate": 1587,
+  "mjd": 52964,
+  "fiber": 39,
+  "catalog_z": 0.2977
+ },
+ {
+  "parent_index": 514,
+  "source_id": "084001.29+502944.9",
+  "z": 0.2768,
+  "plate": 445,
+  "mjd": 51873,
+  "fiber": 151,
+  "catalog_z": 0.2768
+ },
+ {
+  "parent_index": 518,
+  "source_id": "084110.88+022952.1",
+  "z": 0.3323,
+  "plate": 564,
+  "mjd": 52224,
+  "fiber": 278,
+  "catalog_z": 0.3323
+ },
+ {
+  "parent_index": 529,
+  "source_id": "084325.94+234803.4",
+  "z": 0.3315,
+  "plate": 1931,
+  "mjd": 53358,
+  "fiber": 170,
+  "catalog_z": 0.3315
+ },
+ {
+  "parent_index": 534,
+  "source_id": "084419.29+503152.1",
+  "z": 0.3229,
+  "plate": 445,
+  "mjd": 51873,
+  "fiber": 75,
+  "catalog_z": 0.3229
+ },
+ {
+  "parent_index": 546,
+  "source_id": "084723.55+202417.8",
+  "z": 0.3286,
+  "plate": 2280,
+  "mjd": 53680,
+  "fiber": 183,
+  "catalog_z": 0.3286
+ },
+ {
+  "parent_index": 549,
+  "source_id": "084751.53+124032.0",
+  "z": 0.308,
+  "plate": 2428,
+  "mjd": 53801,
+  "fiber": 112,
+  "catalog_z": 0.308
+ },
+ {
+  "parent_index": 565,
+  "source_id": "084957.78+274729.0",
+  "z": 0.299,
+  "plate": 1932,
+  "mjd": 53350,
+  "fiber": 420,
+  "catalog_z": 0.299
+ },
+ {
+  "parent_index": 592,
+  "source_id": "085520.76+151902.1",
+  "z": 0.3175,
+  "plate": 2432,
+  "mjd": 54052,
+  "fiber": 220,
+  "catalog_z": 0.3175
+ },
+ {
+  "parent_index": 595,
+  "source_id": "085550.64+271824.0",
+  "z": 0.3027,
+  "plate": 1932,
+  "mjd": 53350,
+  "fiber": 640,
+  "catalog_z": 0.3027
+ },
+ {
+  "parent_index": 612,
+  "source_id": "085823.37+350204.0",
+  "z": 0.182,
+  "plate": 1211,
+  "mjd": 52964,
+  "fiber": 496,
+  "catalog_z": 0.182
+ },
+ {
+  "parent_index": 631,
+  "source_id": "090100.87+353808.8",
+  "z": 0.3022,
+  "plate": 1211,
+  "mjd": 52964,
+  "fiber": 578,
+  "catalog_z": 0.3022
+ },
+ {
+  "parent_index": 635,
+  "source_id": "090137.99+532051.2",
+  "z": 0.1616,
+  "plate": 449,
+  "mjd": 51900,
+  "fiber": 62,
+  "catalog_z": 0.1616
+ },
+ {
+  "parent_index": 645,
+  "source_id": "090239.68+241355.6",
+  "z": 0.3248,
+  "plate": 2086,
+  "mjd": 53401,
+  "fiber": 181,
+  "catalog_z": 0.3248
+ },
+ {
+  "parent_index": 661,
+  "source_id": "090514.48+415153.5",
+  "z": 0.177,
+  "plate": 1200,
+  "mjd": 52668,
+  "fiber": 338,
+  "catalog_z": 0.177
+ },
+ {
+  "parent_index": 675,
+  "source_id": "090820.56+083513.3",
+  "z": 0.3576,
+  "plate": 1300,
+  "mjd": 52973,
+  "fiber": 585,
+  "catalog_z": 0.3576
+ },
+ {
+  "parent_index": 684,
+  "source_id": "090924.66+274402.7",
+  "z": 0.3343,
+  "plate": 1935,
+  "mjd": 53387,
+  "fiber": 509,
+  "catalog_z": 0.3343
+ },
+ {
+  "parent_index": 692,
+  "source_id": "091017.07+060238.6",
+  "z": 0.3,
+  "plate": 1193,
+  "mjd": 52652,
+  "fiber": 427,
+  "catalog_z": 0.3
+ },
+ {
+  "parent_index": 714,
+  "source_id": "091414.08+112048.3",
+  "z": 0.3437,
+  "plate": 1739,
+  "mjd": 53050,
+  "fiber": 447,
+  "catalog_z": 0.3437
+ },
+ {
+  "parent_index": 725,
+  "source_id": "091514.59+173102.0",
+  "z": 0.2394,
+  "plate": 2439,
+  "mjd": 53795,
+  "fiber": 273,
+  "catalog_z": 0.2394
+ },
+ {
+  "parent_index": 738,
+  "source_id": "091702.11+212337.5",
+  "z": 0.2023,
+  "plate": 2288,
+  "mjd": 53699,
+  "fiber": 528,
+  "catalog_z": 0.2023
+ },
+ {
+  "parent_index": 744,
+  "source_id": "091810.38+323739.4",
+  "z": 0.258,
+  "plate": 1592,
+  "mjd": 52990,
+  "fiber": 169,
+  "catalog_z": 0.258
+ },
+ {
+  "parent_index": 753,
+  "source_id": "091928.69+143202.6",
+  "z": 0.2072,
+  "plate": 2438,
+  "mjd": 54056,
+  "fiber": 116,
+  "catalog_z": 0.2072
+ },
+ {
+  "parent_index": 761,
+  "source_id": "092119.80+644137.0",
+  "z": 0.2227,
+  "plate": 1877,
+  "mjd": 54464,
+  "fiber": 113,
+  "catalog_z": 0.2227
+ },
+ {
+  "parent_index": 773,
+  "source_id": "092245.11+303258.3",
+  "z": 0.2873,
+  "plate": 1938,
+  "mjd": 53379,
+  "fiber": 79,
+  "catalog_z": 0.2873
+ },
+ {
+  "parent_index": 785,
+  "source_id": "092400.12+074405.3",
+  "z": 0.3556,
+  "plate": 1195,
+  "mjd": 52724,
+  "fiber": 495,
+  "catalog_z": 0.3556
+ },
+ {
+  "parent_index": 787,
+  "source_id": "092420.57+143622.4",
+  "z": 0.2958,
+  "plate": 2440,
+  "mjd": 53818,
+  "fiber": 107,
+  "catalog_z": 0.2958
+ },
+ {
+  "parent_index": 788,
+  "source_id": "092430.42+075017.4",
+  "z": 0.269,
+  "plate": 1195,
+  "mjd": 52724,
+  "fiber": 410,
+  "catalog_z": 0.269
+ },
+ {
+  "parent_index": 808,
+  "source_id": "092758.15+220007.7",
+  "z": 0.1573,
+  "plate": 2293,
+  "mjd": 53730,
+  "fiber": 287,
+  "catalog_z": 0.1573
+ },
+ {
+  "parent_index": 810,
+  "source_id": "092813.05+042339.7",
+  "z": 0.2419,
+  "plate": 568,
+  "mjd": 52254,
+  "fiber": 565,
+  "catalog_z": 0.2419
+ },
+ {
+  "parent_index": 824,
+  "source_id": "093034.47+075503.6",
+  "z": 0.2154,
+  "plate": 1196,
+  "mjd": 52733,
+  "fiber": 421,
+  "catalog_z": 0.2154
+ },
+ {
+  "parent_index": 837,
+  "source_id": "093302.68+385228.0",
+  "z": 0.177,
+  "plate": 1215,
+  "mjd": 52725,
+  "fiber": 318,
+  "catalog_z": 0.177
+ },
+ {
+  "parent_index": 842,
+  "source_id": "093347.90+113529.5",
+  "z": 0.2173,
+  "plate": 1741,
+  "mjd": 53052,
+  "fiber": 486,
+  "catalog_z": 0.2173
+ },
+ {
+  "parent_index": 847,
+  "source_id": "093433.95+030645.1",
+  "z": 0.2973,
+  "plate": 569,
+  "mjd": 52264,
+  "fiber": 134,
+  "catalog_z": 0.2973
+ },
+ {
+  "parent_index": 853,
+  "source_id": "093530.54+314758.5",
+  "z": 0.2431,
+  "plate": 1941,
+  "mjd": 53386,
+  "fiber": 638,
+  "catalog_z": 0.2431
+ },
+ {
+  "parent_index": 857,
+  "source_id": "093554.46+394650.3",
+  "z": 0.3379,
+  "plate": 1215,
+  "mjd": 52725,
+  "fiber": 412,
+  "catalog_z": 0.3379
+ },
+ {
+  "parent_index": 869,
+  "source_id": "093728.57+324548.3",
+  "z": 0.1272,
+  "plate": 1943,
+  "mjd": 53386,
+  "fiber": 466,
+  "catalog_z": 0.1272
+ },
+ {
+  "parent_index": 875,
+  "source_id": "093757.35+515609.8",
+  "z": 0.3415,
+  "plate": 768,
+  "mjd": 52281,
+  "fiber": 201,
+  "catalog_z": 0.3415
+ },
+ {
+  "parent_index": 896,
+  "source_id": "094118.38+245356.2",
+  "z": 0.3691,
+  "plate": 2296,
+  "mjd": 53735,
+  "fiber": 455,
+  "catalog_z": 0.3691
+ },
+ {
+  "parent_index": 897,
+  "source_id": "094127.12+064111.6",
+  "z": 0.348,
+  "plate": 993,
+  "mjd": 52710,
+  "fiber": 408,
+  "catalog_z": 0.348
+ },
+ {
+  "parent_index": 907,
+  "source_id": "094305.88+535048.4",
+  "z": 0.3181,
+  "plate": 768,
+  "mjd": 52281,
+  "fiber": 572,
+  "catalog_z": 0.3181
+ },
+ {
+  "parent_index": 912,
+  "source_id": "094342.06+000255.7",
+  "z": 0.2886,
+  "plate": 266,
+  "mjd": 51630,
+  "fiber": 200,
+  "catalog_z": 0.2886
+ },
+ {
+  "parent_index": 934,
+  "source_id": "094636.42+205610.9",
+  "z": 0.2795,
+  "plate": 2295,
+  "mjd": 53734,
+  "fiber": 248,
+  "catalog_z": 0.2795
+ },
+ {
+  "parent_index": 939,
+  "source_id": "094659.59+293251.1",
+  "z": 0.387,
+  "plate": 1947,
+  "mjd": 53431,
+  "fiber": 472,
+  "catalog_z": 0.387
+ },
+ {
+  "parent_index": 943,
+  "source_id": "094733.11+235140.7",
+  "z": 0.3466,
+  "plate": 2341,
+  "mjd": 53738,
+  "fiber": 290,
+  "catalog_z": 0.3466
+ },
+ {
+  "parent_index": 953,
+  "source_id": "094834.90+363558.2",
+  "z": 0.3426,
+  "plate": 1595,
+  "mjd": 52999,
+  "fiber": 369,
+  "catalog_z": 0.3426
+ },
+ {
+  "parent_index": 963,
+  "source_id": "095037.14+693631.1",
+  "z": 0.3289,
+  "plate": 1879,
+  "mjd": 54478,
+  "fiber": 370,
+  "catalog_z": 0.3289
+ },
+ {
+  "parent_index": 978,
+  "source_id": "095309.03+475113.0",
+  "z": 0.2015,
+  "plate": 1005,
+  "mjd": 52703,
+  "fiber": 104,
+  "catalog_z": 0.2015
+ },
+ {
+  "parent_index": 1017,
+  "source_id": "100027.44+025951.2",
+  "z": 0.339,
+  "plate": 500,
+  "mjd": 51994,
+  "fiber": 612,
+  "catalog_z": 0.339
+ },
+ {
+  "parent_index": 1021,
+  "source_id": "100100.17+055417.5",
+  "z": 0.3501,
+  "plate": 995,
+  "mjd": 52731,
+  "fiber": 167,
+  "catalog_z": 0.3501
+ },
+ {
+  "parent_index": 1034,
+  "source_id": "100305.10+054235.9",
+  "z": 0.2692,
+  "plate": 995,
+  "mjd": 52731,
+  "fiber": 101,
+  "catalog_z": 0.2692
+ },
+ {
+  "parent_index": 1039,
+  "source_id": "100337.62+174729.9",
+  "z": 0.3442,
+  "plate": 2585,
+  "mjd": 54097,
+  "fiber": 525,
+  "catalog_z": 0.3442
+ },
+ {
+  "parent_index": 1060,
+  "source_id": "100657.74+621133.2",
+  "z": 0.3505,
+  "plate": 771,
+  "mjd": 52370,
+  "fiber": 323,
+  "catalog_z": 0.3505
+ },
+ {
+  "parent_index": 1080,
+  "source_id": "101051.80+052952.8",
+  "z": 0.3677,
+  "plate": 996,
+  "mjd": 52641,
+  "fiber": 43,
+  "catalog_z": 0.3677
+ },
+ {
+  "parent_index": 1088,
+  "source_id": "101317.22-011056.2",
+  "z": 0.2004,
+  "plate": 270,
+  "mjd": 51909,
+  "fiber": 83,
+  "catalog_z": 0.2004
+ },
+ {
+  "parent_index": 1097,
+  "source_id": "101419.20+080202.4",
+  "z": 0.3077,
+  "plate": 1237,
+  "mjd": 52762,
+  "fiber": 163,
+  "catalog_z": 0.3077
+ },
+ {
+  "parent_index": 1108,
+  "source_id": "101641.90+081848.8",
+  "z": 0.2926,
+  "plate": 1238,
+  "mjd": 52761,
+  "fiber": 316,
+  "catalog_z": 0.2926
+ },
+ {
+  "parent_index": 1112,
+  "source_id": "101704.98+030623.3",
+  "z": 0.2598,
+  "plate": 503,
+  "mjd": 51999,
+  "fiber": 377,
+  "catalog_z": 0.2598
+ },
+ {
+  "parent_index": 1119,
+  "source_id": "101740.28+103741.6",
+  "z": 0.2694,
+  "plate": 1597,
+  "mjd": 52999,
+  "fiber": 112,
+  "catalog_z": 0.2694
+ },
+ {
+  "parent_index": 1129,
+  "source_id": "101941.31+644116.4",
+  "z": 0.2407,
+  "plate": 488,
+  "mjd": 51914,
+  "fiber": 547,
+  "catalog_z": 0.2407
+ },
+ {
+  "parent_index": 1144,
+  "source_id": "102152.34+464515.6",
+  "z": 0.2043,
+  "plate": 944,
+  "mjd": 52614,
+  "fiber": 603,
+  "catalog_z": 0.2043
+ },
+ {
+  "parent_index": 1153,
+  "source_id": "102311.11+470616.9",
+  "z": 0.2219,
+  "plate": 961,
+  "mjd": 52615,
+  "fiber": 347,
+  "catalog_z": 0.2219
+ },
+ {
+  "parent_index": 1158,
+  "source_id": "102418.52+095031.0",
+  "z": 0.3172,
+  "plate": 1238,
+  "mjd": 52761,
+  "fiber": 564,
+  "catalog_z": 0.3172
+ },
+ {
+  "parent_index": 1194,
+  "source_id": "102920.70-004747.6",
+  "z": 0.2587,
+  "plate": 273,
+  "mjd": 51957,
+  "fiber": 255,
+  "catalog_z": 0.2587
+ },
+ {
+  "parent_index": 1204,
+  "source_id": "103059.09+310255.7",
+  "z": 0.1781,
+  "plate": 1959,
+  "mjd": 53440,
+  "fiber": 66,
+  "catalog_z": 0.1781
+ },
+ {
+  "parent_index": 1210,
+  "source_id": "103216.13+505119.6",
+  "z": 0.1731,
+  "plate": 1009,
+  "mjd": 52644,
+  "fiber": 215,
+  "catalog_z": 0.1731
+ },
+ {
+  "parent_index": 1214,
+  "source_id": "103329.33+173823.8",
+  "z": 0.2924,
+  "plate": 2593,
+  "mjd": 54175,
+  "fiber": 296,
+  "catalog_z": 0.2924
+ },
+ {
+  "parent_index": 1219,
+  "source_id": "103415.39+300708.6",
+  "z": 0.3138,
+  "plate": 2354,
+  "mjd": 53799,
+  "fiber": 553,
+  "catalog_z": 0.3138
+ },
+ {
+  "parent_index": 1244,
+  "source_id": "103848.92+533757.1",
+  "z": 0.351,
+  "plate": 905,
+  "mjd": 52643,
+  "fiber": 10,
+  "catalog_z": 0.351
+ },
+ {
+  "parent_index": 1270,
+  "source_id": "104229.36+182433.9",
+  "z": 0.2399,
+  "plate": 2479,
+  "mjd": 54174,
+  "fiber": 396,
+  "catalog_z": 0.2399
+ },
+ {
+  "parent_index": 1283,
+  "source_id": "104512.22+460219.7",
+  "z": 0.2411,
+  "plate": 1434,
+  "mjd": 53053,
+  "fiber": 322,
+  "catalog_z": 0.2411
+ },
+ {
+  "parent_index": 1285,
+  "source_id": "104535.08+034123.1",
+  "z": 0.3541,
+  "plate": 578,
+  "mjd": 52339,
+  "fiber": 44,
+  "catalog_z": 0.3541
+ },
+ {
+  "parent_index": 1290,
+  "source_id": "104703.37+351520.8",
+  "z": 0.372,
+  "plate": 2025,
+  "mjd": 53431,
+  "fiber": 457,
+  "catalog_z": 0.372
+ },
+ {
+  "parent_index": 1302,
+  "source_id": "104845.91+135455.3",
+  "z": 0.2895,
+  "plate": 1749,
+  "mjd": 53357,
+  "fiber": 553,
+  "catalog_z": 0.2895
+ },
+ {
+  "parent_index": 1328,
+  "source_id": "105224.07+373004.5",
+  "z": 0.3739,
+  "plate": 2090,
+  "mjd": 53463,
+  "fiber": 536,
+  "catalog_z": 0.3739
+ },
+ {
+  "parent_index": 1348,
+  "source_id": "105539.44+113235.1",
+  "z": 0.3214,
+  "plate": 1602,
+  "mjd": 53117,
+  "fiber": 151,
+  "catalog_z": 0.3214
+ },
+ {
+  "parent_index": 1367,
+  "source_id": "105710.82+214455.3",
+  "z": 0.3651,
+  "plate": 2488,
+  "mjd": 54149,
+  "fiber": 356,
+  "catalog_z": 0.3651
+ },
+ {
+  "parent_index": 1378,
+  "source_id": "105927.61+425719.4",
+  "z": 0.2558,
+  "plate": 1362,
+  "mjd": 53050,
+  "fiber": 55,
+  "catalog_z": 0.2558
+ },
+ {
+  "parent_index": 1393,
+  "source_id": "110109.14+614754.2",
+  "z": 0.3517,
+  "plate": 774,
+  "mjd": 52286,
+  "fiber": 462,
+  "catalog_z": 0.3517
+ },
+ {
+  "parent_index": 1398,
+  "source_id": "110212.31+085502.6",
+  "z": 0.3542,
+  "plate": 1220,
+  "mjd": 52723,
+  "fiber": 102,
+  "catalog_z": 0.3542
+ },
+ {
+  "parent_index": 1416,
+  "source_id": "110522.54+510727.1",
+  "z": 0.3071,
+  "plate": 877,
+  "mjd": 52353,
+  "fiber": 503,
+  "catalog_z": 0.3071
+ },
+ {
+  "parent_index": 1486,
+  "source_id": "111458.83+104827.5",
+  "z": 0.3821,
+  "plate": 1222,
+  "mjd": 52763,
+  "fiber": 378,
+  "catalog_z": 0.3821
+ },
+ {
+  "parent_index": 1489,
+  "source_id": "111516.22+252337.6",
+  "z": 0.2918,
+  "plate": 2214,
+  "mjd": 53794,
+  "fiber": 98,
+  "catalog_z": 0.2918
+ },
+ {
+  "parent_index": 1494,
+  "source_id": "111612.14+390048.0",
+  "z": 0.2492,
+  "plate": 1980,
+  "mjd": 53433,
+  "fiber": 131,
+  "catalog_z": 0.2492
+ },
+ {
+  "parent_index": 1505,
+  "source_id": "111839.83+341430.2",
+  "z": 0.2277,
+  "plate": 2107,
+  "mjd": 53786,
+  "fiber": 564,
+  "catalog_z": 0.2277
+ },
+ {
+  "parent_index": 1527,
+  "source_id": "112304.91+125748.0",
+  "z": 0.3159,
+  "plate": 1606,
+  "mjd": 53055,
+  "fiber": 323,
+  "catalog_z": 0.3159
+ },
+ {
+  "parent_index": 1539,
+  "source_id": "112513.37+024918.8",
+  "z": 0.3763,
+  "plate": 512,
+  "mjd": 51992,
+  "fiber": 397,
+  "catalog_z": 0.3763
+ },
+ {
+  "parent_index": 1545,
+  "source_id": "112536.63+043526.3",
+  "z": 0.2813,
+  "plate": 836,
+  "mjd": 52376,
+  "fiber": 112,
+  "catalog_z": 0.2813
+ },
+ {
+  "parent_index": 1551,
+  "source_id": "112616.95+040945.1",
+  "z": 0.2762,
+  "plate": 836,
+  "mjd": 52376,
+  "fiber": 69,
+  "catalog_z": 0.2762
+ },
+ {
+  "parent_index": 1561,
+  "source_id": "112751.96+675042.6",
+  "z": 0.1938,
+  "plate": 491,
+  "mjd": 51942,
+  "fiber": 561,
+  "catalog_z": 0.1938
+ },
+ {
+  "parent_index": 1567,
+  "source_id": "112837.89+123643.5",
+  "z": 0.3216,
+  "plate": 1606,
+  "mjd": 53055,
+  "fiber": 488,
+  "catalog_z": 0.3216
+ },
+ {
+  "parent_index": 1577,
+  "source_id": "112952.99+221520.0",
+  "z": 0.2914,
+  "plate": 2504,
+  "mjd": 54179,
+  "fiber": 342,
+  "catalog_z": 0.2914
+ },
+ {
+  "parent_index": 1621,
+  "source_id": "113524.05+074502.5",
+  "z": 0.333,
+  "plate": 1619,
+  "mjd": 53084,
+  "fiber": 487,
+  "catalog_z": 0.333
+ },
+ {
+  "parent_index": 1640,
+  "source_id": "113738.04+103930.1",
+  "z": 0.1745,
+  "plate": 1224,
+  "mjd": 52765,
+  "fiber": 412,
+  "catalog_z": 0.1745
+ },
+ {
+  "parent_index": 1647,
+  "source_id": "113904.66+161408.7",
+  "z": 0.2825,
+  "plate": 2503,
+  "mjd": 53856,
+  "fiber": 11,
+  "catalog_z": 0.2825
+ },
+ {
+  "parent_index": 1694,
+  "source_id": "114609.26+352427.3",
+  "z": 0.3221,
+  "plate": 2035,
+  "mjd": 53436,
+  "fiber": 291,
+  "catalog_z": 0.3221
+ },
+ {
+  "parent_index": 1735,
+  "source_id": "115336.81+162205.1",
+  "z": 0.2568,
+  "plate": 2512,
+  "mjd": 53877,
+  "fiber": 214,
+  "catalog_z": 0.2568
+ },
+ {
+  "parent_index": 1737,
+  "source_id": "115341.16+101754.0",
+  "z": 0.1606,
+  "plate": 1227,
+  "mjd": 52733,
+  "fiber": 435,
+  "catalog_z": 0.1606
+ },
+ {
+  "parent_index": 1768,
+  "source_id": "115653.48+333146.9",
+  "z": 0.2214,
+  "plate": 2099,
+  "mjd": 53469,
+  "fiber": 186,
+  "catalog_z": 0.2214
+ },
+ {
+  "parent_index": 1770,
+  "source_id": "115712.46+181739.8",
+  "z": 0.3161,
+  "plate": 2512,
+  "mjd": 53877,
+  "fiber": 607,
+  "catalog_z": 0.3161
+ },
+ {
+  "parent_index": 1771,
+  "source_id": "115714.25+073202.4",
+  "z": 0.2011,
+  "plate": 1622,
+  "mjd": 53385,
+  "fiber": 120,
+  "catalog_z": 0.2011
+ },
+ {
+  "parent_index": 1790,
+  "source_id": "115855.74+322222.0",
+  "z": 0.2147,
+  "plate": 1991,
+  "mjd": 53446,
+  "fiber": 626,
+  "catalog_z": 0.2147
+ },
+ {
+  "parent_index": 1795,
+  "source_id": "115941.26+545005.5",
+  "z": 0.3469,
+  "plate": 1018,
+  "mjd": 52672,
+  "fiber": 276,
+  "catalog_z": 0.3469
+ },
+ {
+  "parent_index": 1861,
+  "source_id": "120941.12+651218.7",
+  "z": 0.3105,
+  "plate": 599,
+  "mjd": 52317,
+  "fiber": 468,
+  "catalog_z": 0.3105
+ },
+ {
+  "parent_index": 1884,
+  "source_id": "121217.24+280349.9",
+  "z": 0.1676,
+  "plate": 2229,
+  "mjd": 53823,
+  "fiber": 484,
+  "catalog_z": 0.1676
+ },
+ {
+  "parent_index": 1893,
+  "source_id": "121407.36+655228.7",
+  "z": 0.2355,
+  "plate": 599,
+  "mjd": 52317,
+  "fiber": 442,
+  "catalog_z": 0.2355
+ },
+ {
+  "parent_index": 1903,
+  "source_id": "121522.77+414620.9",
+  "z": 0.1961,
+  "plate": 1450,
+  "mjd": 53120,
+  "fiber": 141,
+  "catalog_z": 0.1961
+ },
+ {
+  "parent_index": 1905,
+  "source_id": "121549.43+544223.9",
+  "z": 0.15,
+  "plate": 1018,
+  "mjd": 52672,
+  "fiber": 23,
+  "catalog_z": 0.15
+ },
+ {
+  "parent_index": 1910,
+  "source_id": "121609.60+415928.3",
+  "z": 0.242,
+  "plate": 1450,
+  "mjd": 53120,
+  "fiber": 130,
+  "catalog_z": 0.242
+ },
+ {
+  "parent_index": 1913,
+  "source_id": "121704.76+642822.3",
+  "z": 0.2778,
+  "plate": 599,
+  "mjd": 52317,
+  "fiber": 158,
+  "catalog_z": 0.2778
+ },
+ {
+  "parent_index": 1922,
+  "source_id": "121800.46+180246.0",
+  "z": 0.3719,
+  "plate": 2597,
+  "mjd": 54231,
+  "fiber": 382,
+  "catalog_z": 0.3719
+ },
+ {
+  "parent_index": 1927,
+  "source_id": "121832.68+352255.8",
+  "z": 0.2398,
+  "plate": 2105,
+  "mjd": 53472,
+  "fiber": 8,
+  "catalog_z": 0.2398
+ },
+ {
+  "parent_index": 1944,
+  "source_id": "122032.94+572401.7",
+  "z": 0.3121,
+  "plate": 1315,
+  "mjd": 52791,
+  "fiber": 158,
+  "catalog_z": 0.3121
+ },
+ {
+  "parent_index": 1950,
+  "source_id": "122116.44+115507.3",
+  "z": 0.2734,
+  "plate": 1614,
+  "mjd": 53120,
+  "fiber": 269,
+  "catalog_z": 0.2734
+ },
+ {
+  "parent_index": 1974,
+  "source_id": "122549.29+472343.7",
+  "z": 0.3189,
+  "plate": 1453,
+  "mjd": 53084,
+  "fiber": 272,
+  "catalog_z": 0.3189
+ },
+ {
+  "parent_index": 1984,
+  "source_id": "122710.61+240947.0",
+  "z": 0.3802,
+  "plate": 2658,
+  "mjd": 54502,
+  "fiber": 11,
+  "catalog_z": 0.3802
+ },
+ {
+  "parent_index": 1992,
+  "source_id": "122753.10+024215.8",
+  "z": 0.3118,
+  "plate": 519,
+  "mjd": 52283,
+  "fiber": 636,
+  "catalog_z": 0.3118
+ },
+ {
+  "parent_index": 2004,
+  "source_id": "122950.61+024652.7",
+  "z": 0.3361,
+  "plate": 520,
+  "mjd": 52288,
+  "fiber": 397,
+  "catalog_z": 0.3361
+ },
+ {
+  "parent_index": 2006,
+  "source_id": "123014.11+465126.5",
+  "z": 0.2909,
+  "plate": 1453,
+  "mjd": 53084,
+  "fiber": 218,
+  "catalog_z": 0.2909
+ },
+ {
+  "parent_index": 2007,
+  "source_id": "123015.52+030254.6",
+  "z": 0.1377,
+  "plate": 520,
+  "mjd": 52288,
+  "fiber": 429,
+  "catalog_z": 0.1377
+ },
+ {
+  "parent_index": 2014,
+  "source_id": "123115.20+590707.1",
+  "z": 0.3262,
+  "plate": 956,
+  "mjd": 52401,
+  "fiber": 252,
+  "catalog_z": 0.3262
+ },
+ {
+  "parent_index": 2019,
+  "source_id": "123215.16+132032.7",
+  "z": 0.286,
+  "plate": 1615,
+  "mjd": 53166,
+  "fiber": 568,
+  "catalog_z": 0.286
+ },
+ {
+  "parent_index": 2030,
+  "source_id": "123359.12+084211.5",
+  "z": 0.2549,
+  "plate": 1628,
+  "mjd": 53474,
+  "fiber": 328,
+  "catalog_z": 0.2549
+ },
+ {
+  "parent_index": 2047,
+  "source_id": "123632.10+494851.0",
+  "z": 0.388,
+  "plate": 1278,
+  "mjd": 52735,
+  "fiber": 234,
+  "catalog_z": 0.388
+ },
+ {
+  "parent_index": 2060,
+  "source_id": "123905.25+412644.2",
+  "z": 0.1785,
+  "plate": 1984,
+  "mjd": 53433,
+  "fiber": 609,
+  "catalog_z": 0.1785
+ },
+ {
+  "parent_index": 2077,
+  "source_id": "124238.37+045616.5",
+  "z": 0.2338,
+  "plate": 846,
+  "mjd": 52407,
+  "fiber": 119,
+  "catalog_z": 0.2338
+ },
+ {
+  "parent_index": 2084,
+  "source_id": "124411.04+043057.2",
+  "z": 0.2282,
+  "plate": 846,
+  "mjd": 52407,
+  "fiber": 32,
+  "catalog_z": 0.2282
+ },
+ {
+  "parent_index": 2089,
+  "source_id": "124440.08+060534.6",
+  "z": 0.3601,
+  "plate": 847,
+  "mjd": 52426,
+  "fiber": 322,
+  "catalog_z": 0.3601
+ },
+ {
+  "parent_index": 2095,
+  "source_id": "124533.87+534838.3",
+  "z": 0.3267,
+  "plate": 1038,
+  "mjd": 52673,
+  "fiber": 216,
+  "catalog_z": 0.3267
+ },
+ {
+  "parent_index": 2097,
+  "source_id": "124551.03+032128.3",
+  "z": 0.2268,
+  "plate": 522,
+  "mjd": 52024,
+  "fiber": 408,
+  "catalog_z": 0.2268
+ },
+ {
+  "parent_index": 2109,
+  "source_id": "124805.11+651421.8",
+  "z": 0.3104,
+  "plate": 601,
+  "mjd": 52316,
+  "fiber": 500,
+  "catalog_z": 0.3104
+ },
+ {
+  "parent_index": 2170,
+  "source_id": "125904.33+504852.5",
+  "z": 0.2361,
+  "plate": 1280,
+  "mjd": 52738,
+  "fiber": 361,
+  "catalog_z": 0.2361
+ },
+ {
+  "parent_index": 2177,
+  "source_id": "130001.05+534745.9",
+  "z": 0.3434,
+  "plate": 1039,
+  "mjd": 52707,
+  "fiber": 211,
+  "catalog_z": 0.3434
+ },
+ {
+  "parent_index": 2213,
+  "source_id": "130456.91+395111.4",
+  "z": 0.271,
+  "plate": 2021,
+  "mjd": 53475,
+  "fiber": 595,
+  "catalog_z": 0.271
+ },
+ {
+  "parent_index": 2214,
+  "source_id": "130456.91+132846.1",
+  "z": 0.2981,
+  "plate": 1696,
+  "mjd": 53116,
+  "fiber": 445,
+  "catalog_z": 0.2981
+ },
+ {
+  "parent_index": 2215,
+  "source_id": "130501.41+604204.9",
+  "z": 0.3812,
+  "plate": 958,
+  "mjd": 52410,
+  "fiber": 326,
+  "catalog_z": 0.3812
+ },
+ {
+  "parent_index": 2220,
+  "source_id": "130531.15+065226.2",
+  "z": 0.2844,
+  "plate": 1795,
+  "mjd": 54507,
+  "fiber": 302,
+  "catalog_z": 0.2844
+ },
+ {
+  "parent_index": 2239,
+  "source_id": "130742.09+524016.1",
+  "z": 0.3393,
+  "plate": 887,
+  "mjd": 52376,
+  "fiber": 537,
+  "catalog_z": 0.3393
+ },
+ {
+  "parent_index": 2246,
+  "source_id": "130823.42+635931.6",
+  "z": 0.3291,
+  "plate": 602,
+  "mjd": 52072,
+  "fiber": 155,
+  "catalog_z": 0.3291
+ },
+ {
+  "parent_index": 2283,
+  "source_id": "131327.47-023232.8",
+  "z": 0.1741,
+  "plate": 340,
+  "mjd": 51990,
+  "fiber": 174,
+  "catalog_z": 0.1741
+ },
+ {
+  "parent_index": 2294,
+  "source_id": "131537.76+604506.2",
+  "z": 0.2512,
+  "plate": 784,
+  "mjd": 52327,
+  "fiber": 253,
+  "catalog_z": 0.2512
+ },
+ {
+  "parent_index": 2315,
+  "source_id": "131953.15+033335.9",
+  "z": 0.2089,
+  "plate": 526,
+  "mjd": 52312,
+  "fiber": 410,
+  "catalog_z": 0.2089
+ },
+ {
+  "parent_index": 2323,
+  "source_id": "132059.41+295728.1",
+  "z": 0.2063,
+  "plate": 2002,
+  "mjd": 53471,
+  "fiber": 538,
+  "catalog_z": 0.2063
+ },
+ {
+  "parent_index": 2324,
+  "source_id": "132100.83+454104.4",
+  "z": 0.2974,
+  "plate": 1461,
+  "mjd": 53062,
+  "fiber": 15,
+  "catalog_z": 0.2974
+ },
+ {
+  "parent_index": 2359,
+  "source_id": "132515.57+050156.4",
+  "z": 0.3509,
+  "plate": 852,
+  "mjd": 52375,
+  "fiber": 439,
+  "catalog_z": 0.3509
+ },
+ {
+  "parent_index": 2396,
+  "source_id": "133115.63+145849.7",
+  "z": 0.2313,
+  "plate": 1774,
+  "mjd": 53759,
+  "fiber": 602,
+  "catalog_z": 0.2313
+ },
+ {
+  "parent_index": 2399,
+  "source_id": "133151.90+050345.6",
+  "z": 0.1738,
+  "plate": 852,
+  "mjd": 52375,
+  "fiber": 625,
+  "catalog_z": 0.1738
+ },
+ {
+  "parent_index": 2405,
+  "source_id": "133247.65+663843.3",
+  "z": 0.339,
+  "plate": 497,
+  "mjd": 51989,
+  "fiber": 359,
+  "catalog_z": 0.339
+ },
+ {
+  "parent_index": 2414,
+  "source_id": "133414.84+114221.5",
+  "z": 0.3658,
+  "plate": 1700,
+  "mjd": 53502,
+  "fiber": 278,
+  "catalog_z": 0.3658
+ },
+ {
+  "parent_index": 2433,
+  "source_id": "133715.92+030936.5",
+  "z": 0.192,
+  "plate": 528,
+  "mjd": 52022,
+  "fiber": 522,
+  "catalog_z": 0.192
+ },
+ {
+  "parent_index": 2441,
+  "source_id": "133826.68+170436.1",
+  "z": 0.2086,
+  "plate": 2607,
+  "mjd": 54184,
+  "fiber": 477,
+  "catalog_z": 0.2086
+ },
+ {
+  "parent_index": 2442,
+  "source_id": "133836.72+441442.4",
+  "z": 0.258,
+  "plate": 1344,
+  "mjd": 52792,
+  "fiber": 615,
+  "catalog_z": 0.258
+ },
+ {
+  "parent_index": 2445,
+  "source_id": "133912.37+535527.3",
+  "z": 0.2933,
+  "plate": 1042,
+  "mjd": 52725,
+  "fiber": 499,
+  "catalog_z": 0.2933
+ },
+ {
+  "parent_index": 2450,
+  "source_id": "133952.36+062528.2",
+  "z": 0.3345,
+  "plate": 1801,
+  "mjd": 54156,
+  "fiber": 8,
+  "catalog_z": 0.3345
+ },
+ {
+  "parent_index": 2452,
+  "source_id": "133957.99+613933.5",
+  "z": 0.3721,
+  "plate": 785,
+  "mjd": 52339,
+  "fiber": 591,
+  "catalog_z": 0.3721
+ },
+ {
+  "parent_index": 2468,
+  "source_id": "134206.56+050523.8",
+  "z": 0.266,
+  "plate": 854,
+  "mjd": 52373,
+  "fiber": 398,
+  "catalog_z": 0.266
+ },
+ {
+  "parent_index": 2469,
+  "source_id": "134216.17+015518.6",
+  "z": 0.2727,
+  "plate": 529,
+  "mjd": 52025,
+  "fiber": 195,
+  "catalog_z": 0.2727
+ },
+ {
+  "parent_index": 2492,
+  "source_id": "134516.52+540925.4",
+  "z": 0.2214,
+  "plate": 1042,
+  "mjd": 52725,
+  "fiber": 609,
+  "catalog_z": 0.2214
+ },
+ {
+  "parent_index": 2494,
+  "source_id": "134532.82+091239.4",
+  "z": 0.2355,
+  "plate": 1804,
+  "mjd": 53886,
+  "fiber": 121,
+  "catalog_z": 0.2355
+ },
+ {
+  "parent_index": 2526,
+  "source_id": "134924.25+391249.9",
+  "z": 0.3344,
+  "plate": 1378,
+  "mjd": 53061,
+  "fiber": 315,
+  "catalog_z": 0.3344
+ },
+ {
+  "parent_index": 2533,
+  "source_id": "135043.81+113857.8",
+  "z": 0.3248,
+  "plate": 1702,
+  "mjd": 53144,
+  "fiber": 353,
+  "catalog_z": 0.3248
+ },
+ {
+  "parent_index": 2535,
+  "source_id": "135053.05+252330.1",
+  "z": 0.2991,
+  "plate": 2115,
+  "mjd": 53535,
+  "fiber": 556,
+  "catalog_z": 0.2991
+ },
+ {
+  "parent_index": 2548,
+  "source_id": "135426.08+144151.4",
+  "z": 0.2143,
+  "plate": 1777,
+  "mjd": 53857,
+  "fiber": 612,
+  "catalog_z": 0.2143
+ },
+ {
+  "parent_index": 2560,
+  "source_id": "135601.19+371546.5",
+  "z": 0.3442,
+  "plate": 2033,
+  "mjd": 53476,
+  "fiber": 620,
+  "catalog_z": 0.3442
+ },
+ {
+  "parent_index": 2567,
+  "source_id": "135719.47+394045.3",
+  "z": 0.2651,
+  "plate": 1378,
+  "mjd": 53061,
+  "fiber": 158,
+  "catalog_z": 0.2651
+ },
+ {
+  "parent_index": 2569,
+  "source_id": "135756.53+655902.9",
+  "z": 0.197,
+  "plate": 498,
+  "mjd": 51984,
+  "fiber": 321,
+  "catalog_z": 0.197
+ },
+ {
+  "parent_index": 2608,
+  "source_id": "140208.86+462414.4",
+  "z": 0.2369,
+  "plate": 1285,
+  "mjd": 52723,
+  "fiber": 60,
+  "catalog_z": 0.2369
+ },
+ {
+  "parent_index": 2639,
+  "source_id": "140757.71+323209.3",
+  "z": 0.2576,
+  "plate": 2121,
+  "mjd": 54180,
+  "fiber": 631,
+  "catalog_z": 0.2576
+ },
+ {
+  "parent_index": 2654,
+  "source_id": "141053.43+091026.9",
+  "z": 0.1779,
+  "plate": 1809,
+  "mjd": 53792,
+  "fiber": 602,
+  "catalog_z": 0.1779
+ },
+ {
+  "parent_index": 2708,
+  "source_id": "141959.55+284703.0",
+  "z": 0.293,
+  "plate": 2130,
+  "mjd": 53881,
+  "fiber": 427,
+  "catalog_z": 0.293
+ },
+ {
+  "parent_index": 2713,
+  "source_id": "142127.85+473011.6",
+  "z": 0.3717,
+  "plate": 1673,
+  "mjd": 53462,
+  "fiber": 311,
+  "catalog_z": 0.3717
+ },
+ {
+  "parent_index": 2730,
+  "source_id": "142310.36-003244.2",
+  "z": 0.366,
+  "plate": 304,
+  "mjd": 51957,
+  "fiber": 26,
+  "catalog_z": 0.366
+ },
+ {
+  "parent_index": 2736,
+  "source_id": "142424.20+595300.5",
+  "z": 0.1349,
+  "plate": 789,
+  "mjd": 52342,
+  "fiber": 507,
+  "catalog_z": 0.1349
+ },
+ {
+  "parent_index": 2756,
+  "source_id": "142734.80+352543.4",
+  "z": 0.3404,
+  "plate": 1644,
+  "mjd": 53144,
+  "fiber": 73,
+  "catalog_z": 0.3404
+ },
+ {
+  "parent_index": 2767,
+  "source_id": "142934.17+444748.9",
+  "z": 0.2074,
+  "plate": 1288,
+  "mjd": 52731,
+  "fiber": 236,
+  "catalog_z": 0.2074
+ },
+ {
+  "parent_index": 2794,
+  "source_id": "143348.21+012937.6",
+  "z": 0.211,
+  "plate": 536,
+  "mjd": 52024,
+  "fiber": 308,
+  "catalog_z": 0.211
+ },
+ {
+  "parent_index": 2824,
+  "source_id": "143835.70+240904.0",
+  "z": 0.3535,
+  "plate": 2136,
+  "mjd": 53494,
+  "fiber": 616,
+  "catalog_z": 0.3535
+ },
+ {
+  "parent_index": 2825,
+  "source_id": "143848.83+283556.1",
+  "z": 0.1995,
+  "plate": 2137,
+  "mjd": 54206,
+  "fiber": 533,
+  "catalog_z": 0.1995
+ },
+ {
+  "parent_index": 2836,
+  "source_id": "144038.33+084035.1",
+  "z": 0.2569,
+  "plate": 1813,
+  "mjd": 53903,
+  "fiber": 471,
+  "catalog_z": 0.2569
+ },
+ {
+  "parent_index": 2845,
+  "source_id": "144231.82+014353.4",
+  "z": 0.2805,
+  "plate": 536,
+  "mjd": 52024,
+  "fiber": 72,
+  "catalog_z": 0.2805
+ },
+ {
+  "parent_index": 2860,
+  "source_id": "144446.72+591047.4",
+  "z": 0.2767,
+  "plate": 608,
+  "mjd": 52081,
+  "fiber": 168,
+  "catalog_z": 0.2767
+ },
+ {
+  "parent_index": 2862,
+  "source_id": "144505.07+524341.9",
+  "z": 0.3245,
+  "plate": 1327,
+  "mjd": 52781,
+  "fiber": 628,
+  "catalog_z": 0.3245
+ },
+ {
+  "parent_index": 2881,
+  "source_id": "144719.75+492459.0",
+  "z": 0.2448,
+  "plate": 1048,
+  "mjd": 52736,
+  "fiber": 325,
+  "catalog_z": 0.2448
+ },
+ {
+  "parent_index": 2894,
+  "source_id": "144927.24+431644.0",
+  "z": 0.3393,
+  "plate": 1289,
+  "mjd": 52734,
+  "fiber": 20,
+  "catalog_z": 0.3393
+ },
+ {
+  "parent_index": 2903,
+  "source_id": "145031.36+232114.1",
+  "z": 0.3343,
+  "plate": 2144,
+  "mjd": 53770,
+  "fiber": 492,
+  "catalog_z": 0.3343
+ },
+ {
+  "parent_index": 2919,
+  "source_id": "145307.63+380319.6",
+  "z": 0.2619,
+  "plate": 1351,
+  "mjd": 52790,
+  "fiber": 424,
+  "catalog_z": 0.2619
+ },
+ {
+  "parent_index": 2945,
+  "source_id": "145802.32+234713.0",
+  "z": 0.3379,
+  "plate": 2149,
+  "mjd": 54509,
+  "fiber": 215,
+  "catalog_z": 0.3379
+ },
+ {
+  "parent_index": 2959,
+  "source_id": "150026.19-005428.3",
+  "z": 0.281,
+  "plate": 310,
+  "mjd": 51990,
+  "fiber": 284,
+  "catalog_z": 0.281
+ },
+ {
+  "parent_index": 2997,
+  "source_id": "150912.86+532823.5",
+  "z": 0.2024,
+  "plate": 793,
+  "mjd": 52370,
+  "fiber": 127,
+  "catalog_z": 0.2024
+ },
+ {
+  "parent_index": 2998,
+  "source_id": "150913.79+175710.0",
+  "z": 0.1706,
+  "plate": 2792,
+  "mjd": 54556,
+  "fiber": 89,
+  "catalog_z": 0.1706
+ },
+ {
+  "parent_index": 3026,
+  "source_id": "151325.91+465408.0",
+  "z": 0.1989,
+  "plate": 1050,
+  "mjd": 52721,
+  "fiber": 458,
+  "catalog_z": 0.1989
+ },
+ {
+  "parent_index": 3027,
+  "source_id": "151337.07+201133.6",
+  "z": 0.2705,
+  "plate": 2156,
+  "mjd": 54525,
+  "fiber": 193,
+  "catalog_z": 0.2705
+ },
+ {
+  "parent_index": 3035,
+  "source_id": "151439.00+430211.7",
+  "z": 0.3439,
+  "plate": 1677,
+  "mjd": 53148,
+  "fiber": 69,
+  "catalog_z": 0.3439
+ },
+ {
+  "parent_index": 3060,
+  "source_id": "152008.53+020225.9",
+  "z": 0.3133,
+  "plate": 2952,
+  "mjd": 54559,
+  "fiber": 543,
+  "catalog_z": 0.3133
+ },
+ {
+  "parent_index": 3072,
+  "source_id": "152203.76+001128.3",
+  "z": 0.2401,
+  "plate": 312,
+  "mjd": 51689,
+  "fiber": 639,
+  "catalog_z": 0.2401
+ },
+ {
+  "parent_index": 3082,
+  "source_id": "152422.14+264223.6",
+  "z": 0.2365,
+  "plate": 2160,
+  "mjd": 53885,
+  "fiber": 444,
+  "catalog_z": 0.2365
+ },
+ {
+  "parent_index": 3091,
+  "source_id": "152504.63+464006.2",
+  "z": 0.2962,
+  "plate": 1331,
+  "mjd": 52766,
+  "fiber": 81,
+  "catalog_z": 0.2962
+ },
+ {
+  "parent_index": 3116,
+  "source_id": "152911.55+155655.4",
+  "z": 0.2187,
+  "plate": 2781,
+  "mjd": 54266,
+  "fiber": 28,
+  "catalog_z": 0.2187
+ },
+ {
+  "parent_index": 3128,
+  "source_id": "153047.83+514329.2",
+  "z": 0.291,
+  "plate": 795,
+  "mjd": 52378,
+  "fiber": 170,
+  "catalog_z": 0.291
+ },
+ {
+  "parent_index": 3133,
+  "source_id": "153149.92+211958.8",
+  "z": 0.3685,
+  "plate": 2162,
+  "mjd": 54207,
+  "fiber": 161,
+  "catalog_z": 0.3685
+ },
+ {
+  "parent_index": 3151,
+  "source_id": "153451.21+124833.4",
+  "z": 0.3258,
+  "plate": 2754,
+  "mjd": 54240,
+  "fiber": 572,
+  "catalog_z": 0.3258
+ },
+ {
+  "parent_index": 3163,
+  "source_id": "153705.95+005522.8",
+  "z": 0.1364,
+  "plate": 2955,
+  "mjd": 54562,
+  "fiber": 289,
+  "catalog_z": 0.1364
+ },
+ {
+  "parent_index": 3193,
+  "source_id": "154316.41+540526.0",
+  "z": 0.2452,
+  "plate": 616,
+  "mjd": 52374,
+  "fiber": 533,
+  "catalog_z": 0.2452
+ },
+ {
+  "parent_index": 3199,
+  "source_id": "154426.06+000923.5",
+  "z": 0.2806,
+  "plate": 342,
+  "mjd": 51691,
+  "fiber": 391,
+  "catalog_z": 0.2806
+ },
+ {
+  "parent_index": 3219,
+  "source_id": "154656.62+005719.6",
+  "z": 0.211,
+  "plate": 2955,
+  "mjd": 54562,
+  "fiber": 38,
+  "catalog_z": 0.211
+ },
+ {
+  "parent_index": 3230,
+  "source_id": "154853.39+483435.0",
+  "z": 0.2454,
+  "plate": 812,
+  "mjd": 52352,
+  "fiber": 278,
+  "catalog_z": 0.2454
+ },
+ {
+  "parent_index": 3236,
+  "source_id": "155050.02+032515.3",
+  "z": 0.3425,
+  "plate": 594,
+  "mjd": 52045,
+  "fiber": 610,
+  "catalog_z": 0.3425
+ },
+ {
+  "parent_index": 3240,
+  "source_id": "155159.43+361621.2",
+  "z": 0.3632,
+  "plate": 1417,
+  "mjd": 53141,
+  "fiber": 374,
+  "catalog_z": 0.3632
+ },
+ {
+  "parent_index": 3260,
+  "source_id": "155507.28+141817.9",
+  "z": 0.3646,
+  "plate": 2519,
+  "mjd": 54570,
+  "fiber": 601,
+  "catalog_z": 0.3646
+ },
+ {
+  "parent_index": 3270,
+  "source_id": "155654.47+253233.6",
+  "z": 0.1644,
+  "plate": 1655,
+  "mjd": 53523,
+  "fiber": 204,
+  "catalog_z": 0.1644
+ },
+ {
+  "parent_index": 3272,
+  "source_id": "155722.59+445854.4",
+  "z": 0.3504,
+  "plate": 1169,
+  "mjd": 52753,
+  "fiber": 235,
+  "catalog_z": 0.3504
+ },
+ {
+  "parent_index": 3293,
+  "source_id": "160110.34+210658.7",
+  "z": 0.2639,
+  "plate": 2173,
+  "mjd": 53874,
+  "fiber": 478,
+  "catalog_z": 0.2639
+ },
+ {
+  "parent_index": 3302,
+  "source_id": "160309.18+092019.3",
+  "z": 0.3441,
+  "plate": 2526,
+  "mjd": 54582,
+  "fiber": 294,
+  "catalog_z": 0.3441
+ },
+ {
+  "parent_index": 3318,
+  "source_id": "160700.93+245056.6",
+  "z": 0.1831,
+  "plate": 1656,
+  "mjd": 53533,
+  "fiber": 148,
+  "catalog_z": 0.1831
+ },
+ {
+  "parent_index": 3372,
+  "source_id": "161650.29+221449.5",
+  "z": 0.2668,
+  "plate": 1853,
+  "mjd": 53566,
+  "fiber": 444,
+  "catalog_z": 0.2668
+ },
+ {
+  "parent_index": 3374,
+  "source_id": "161700.81+124332.2",
+  "z": 0.3539,
+  "plate": 2527,
+  "mjd": 54569,
+  "fiber": 5,
+  "catalog_z": 0.3539
+ },
+ {
+  "parent_index": 3385,
+  "source_id": "161812.85+294416.6",
+  "z": 0.3124,
+  "plate": 1407,
+  "mjd": 52886,
+  "fiber": 536,
+  "catalog_z": 0.3124
+ },
+ {
+  "parent_index": 3393,
+  "source_id": "162045.87+150615.4",
+  "z": 0.3072,
+  "plate": 2198,
+  "mjd": 53918,
+  "fiber": 17,
+  "catalog_z": 0.3072
+ },
+ {
+  "parent_index": 3415,
+  "source_id": "162612.16+143029.0",
+  "z": 0.2619,
+  "plate": 2202,
+  "mjd": 53566,
+  "fiber": 552,
+  "catalog_z": 0.2619
+ },
+ {
+  "parent_index": 3417,
+  "source_id": "162703.05+285334.3",
+  "z": 0.3017,
+  "plate": 1421,
+  "mjd": 53149,
+  "fiber": 167,
+  "catalog_z": 0.3017
+ },
+ {
+  "parent_index": 3439,
+  "source_id": "163159.72+170502.2",
+  "z": 0.3548,
+  "plate": 2207,
+  "mjd": 53558,
+  "fiber": 480,
+  "catalog_z": 0.3548
+ },
+ {
+  "parent_index": 3454,
+  "source_id": "163606.11+172653.3",
+  "z": 0.3552,
+  "plate": 2207,
+  "mjd": 53558,
+  "fiber": 583,
+  "catalog_z": 0.3552
+ },
+ {
+  "parent_index": 3472,
+  "source_id": "164729.85+354605.8",
+  "z": 0.2597,
+  "plate": 819,
+  "mjd": 52409,
+  "fiber": 282,
+  "catalog_z": 0.2597
+ },
+ {
+  "parent_index": 3475,
+  "source_id": "164805.75+245455.6",
+  "z": 0.2467,
+  "plate": 1423,
+  "mjd": 53167,
+  "fiber": 12,
+  "catalog_z": 0.2467
+ },
+ {
+  "parent_index": 3478,
+  "source_id": "164953.85+401651.3",
+  "z": 0.3481,
+  "plate": 630,
+  "mjd": 52050,
+  "fiber": 519,
+  "catalog_z": 0.3481
+ },
+ {
+  "parent_index": 3488,
+  "source_id": "165307.23+430455.8",
+  "z": 0.3318,
+  "plate": 631,
+  "mjd": 52079,
+  "fiber": 535,
+  "catalog_z": 0.3318
+ },
+ {
+  "parent_index": 3489,
+  "source_id": "165309.80+421937.1",
+  "z": 0.3082,
+  "plate": 631,
+  "mjd": 52079,
+  "fiber": 490,
+  "catalog_z": 0.3082
+ },
+ {
+  "parent_index": 3494,
+  "source_id": "165427.14+203350.5",
+  "z": 0.2786,
+  "plate": 1568,
+  "mjd": 53169,
+  "fiber": 536,
+  "catalog_z": 0.2786
+ },
+ {
+  "parent_index": 3496,
+  "source_id": "165435.83+330251.4",
+  "z": 0.1222,
+  "plate": 1175,
+  "mjd": 52791,
+  "fiber": 31,
+  "catalog_z": 0.1222
+ },
+ {
+  "parent_index": 3502,
+  "source_id": "165905.45+633923.6",
+  "z": 0.3676,
+  "plate": 349,
+  "mjd": 51699,
+  "fiber": 511,
+  "catalog_z": 0.3676
+ },
+ {
+  "parent_index": 3522,
+  "source_id": "170804.21+380325.2",
+  "z": 0.3113,
+  "plate": 2971,
+  "mjd": 54590,
+  "fiber": 576,
+  "catalog_z": 0.3113
+ },
+ {
+  "parent_index": 3550,
+  "source_id": "171750.60+581514.0",
+  "z": 0.3101,
+  "plate": 355,
+  "mjd": 51788,
+  "fiber": 528,
+  "catalog_z": 0.3101
+ },
+ {
+  "parent_index": 3573,
+  "source_id": "173311.07+535457.1",
+  "z": 0.3073,
+  "plate": 359,
+  "mjd": 51821,
+  "fiber": 586,
+  "catalog_z": 0.3073
+ },
+ {
+  "parent_index": 3574,
+  "source_id": "173721.15+550321.7",
+  "z": 0.3332,
+  "plate": 360,
+  "mjd": 51816,
+  "fiber": 518,
+  "catalog_z": 0.3332
+ },
+ {
+  "parent_index": 3583,
+  "source_id": "204910.96+001557.2",
+  "z": 0.3629,
+  "plate": 983,
+  "mjd": 52443,
+  "fiber": 348,
+  "catalog_z": 0.3629
+ },
+ {
+  "parent_index": 3600,
+  "source_id": "210714.73-073225.7",
+  "z": 0.2124,
+  "plate": 638,
+  "mjd": 52081,
+  "fiber": 259,
+  "catalog_z": 0.2124
+ },
+ {
+  "parent_index": 3605,
+  "source_id": "211832.75+004500.8",
+  "z": 0.2332,
+  "plate": 986,
+  "mjd": 52443,
+  "fiber": 632,
+  "catalog_z": 0.2332
+ },
+ {
+  "parent_index": 3612,
+  "source_id": "212203.82+001119.2",
+  "z": 0.2289,
+  "plate": 987,
+  "mjd": 52523,
+  "fiber": 131,
+  "catalog_z": 0.2289
+ },
+ {
+  "parent_index": 3624,
+  "source_id": "213558.12-065912.4",
+  "z": 0.2423,
+  "plate": 641,
+  "mjd": 52199,
+  "fiber": 546,
+  "catalog_z": 0.2423
+ },
+ {
+  "parent_index": 3629,
+  "source_id": "214359.63+103705.3",
+  "z": 0.2069,
+  "plate": 732,
+  "mjd": 52221,
+  "fiber": 23,
+  "catalog_z": 0.2069
+ },
+ {
+  "parent_index": 3633,
+  "source_id": "215010.52-001000.6",
+  "z": 0.3348,
+  "plate": 371,
+  "mjd": 52078,
+  "fiber": 232,
+  "catalog_z": 0.3348
+ },
+ {
+  "parent_index": 3643,
+  "source_id": "215930.15-085552.6",
+  "z": 0.3491,
+  "plate": 716,
+  "mjd": 52203,
+  "fiber": 11,
+  "catalog_z": 0.3491
+ },
+ {
+  "parent_index": 3648,
+  "source_id": "220408.40+113603.9",
+  "z": 0.3307,
+  "plate": 735,
+  "mjd": 52519,
+  "fiber": 288,
+  "catalog_z": 0.3307
+ },
+ {
+  "parent_index": 3653,
+  "source_id": "220851.96-010603.7",
+  "z": 0.3518,
+  "plate": 373,
+  "mjd": 51788,
+  "fiber": 43,
+  "catalog_z": 0.3518
+ },
+ {
+  "parent_index": 3659,
+  "source_id": "222053.80-083552.9",
+  "z": 0.1919,
+  "plate": 719,
+  "mjd": 52203,
+  "fiber": 631,
+  "catalog_z": 0.1919
+ },
+ {
+  "parent_index": 3682,
+  "source_id": "224923.89-002525.7",
+  "z": 0.3749,
+  "plate": 378,
+  "mjd": 52146,
+  "fiber": 65,
+  "catalog_z": 0.3749
+ },
+ {
+  "parent_index": 3693,
+  "source_id": "230248.88+134553.4",
+  "z": 0.3818,
+  "plate": 742,
+  "mjd": 52263,
+  "fiber": 109,
+  "catalog_z": 0.3818
+ },
+ {
+  "parent_index": 3748,
+  "source_id": "235533.74-103155.9",
+  "z": 0.306,
+  "plate": 650,
+  "mjd": 52143,
+  "fiber": 319,
+  "catalog_z": 0.306
+ }
+]

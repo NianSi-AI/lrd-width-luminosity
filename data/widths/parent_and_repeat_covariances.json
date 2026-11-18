@@ -1,0 +1,1837 @@
+{
+  "qc_spectra_by_group_29_43": {
+    "source-0001": [
+      {
+        "source_id": "Skyfire-299",
+        "file_id": "7d9465a45c199a6b",
+        "grating": "G395M_F290LP",
+        "snr": 19.45168555524809,
+        "x": -0.7135431198827291,
+        "y": 3.298609604579522,
+        "sy_cond": 0.015681498692612608,
+        "cov": [
+          [
+            0.0004984873500105665,
+            -4.521031366448973e-05
+          ],
+          [
+            -4.5210313664477654e-05,
+            0.000245909401246411
+          ]
+        ]
+      },
+      {
+        "source_id": "Skyfire-299",
+        "file_id": "cc46bb18749b75d9",
+        "grating": "G395M_F290LP",
+        "snr": 12.966572275452359,
+        "x": -0.5656917169820375,
+        "y": 3.2802871342153814,
+        "sy_cond": 0.02252429540658489,
+        "cov": [
+          [
+            0.0011218072755592712,
+            -0.00010549702198140461
+          ],
+          [
+            -0.00010549702198140102,
+            0.0005073438835631012
+          ]
+        ]
+      }
+    ],
+    "source-0002": [
+      {
+        "source_id": "Skyfire-1090",
+        "file_id": "16bc1f805862de56",
+        "grating": "G395M_F290LP",
+        "snr": 10.857048724643741,
+        "x": -0.7816102506096811,
+        "y": 3.085809987589844,
+        "sy_cond": 0.05874120170085742,
+        "cov": [
+          [
+            0.001600092349946387,
+            0.0006361871845512709
+          ],
+          [
+            0.0006361871845514953,
+            0.0034505287772608143
+          ]
+        ]
+      }
+    ],
+    "source-0003": [
+      {
+        "source_id": "Skyfire-1867",
+        "file_id": "42f7c64715200787",
+        "grating": "G395M_F290LP",
+        "snr": 9.51231292338846,
+        "x": -1.023718469025006,
+        "y": 3.0920690238806743,
+        "sy_cond": 0.06761751514059132,
+        "cov": [
+          [
+            0.0020844734372915128,
+            0.000573933044798709
+          ],
+          [
+            0.0005739330447985515,
+            0.004572128353788094
+          ]
+        ]
+      }
+    ],
+    "source-0004": [
+      {
+        "source_id": "Skyfire-2086",
+        "file_id": "d880a784e77deb49",
+        "grating": "G395M_F290LP",
+        "snr": 17.286729430090137,
+        "x": -0.5742269499861976,
+        "y": 3.276548551249155,
+        "sy_cond": 0.022302379211305554,
+        "cov": [
+          [
+            0.0006311650663073395,
+            8.430408728402166e-05
+          ],
+          [
+            8.430408728402157e-05,
+            0.0004973961184848742
+          ]
+        ]
+      }
+    ],
+    "source-0005": [
+      {
+        "source_id": "Skyfire-3519",
+        "file_id": "28fbec94a24aa68f",
+        "grating": "G395M_F290LP",
+        "snr": 13.366421423949028,
+        "x": -0.7894882646510979,
+        "y": 3.2935328105559236,
+        "sy_cond": 0.032357166187698745,
+        "cov": [
+          [
+            0.001055694656262273,
+            0.00040408245172414724
+          ],
+          [
+            0.0004040824517244337,
+            0.0010469862036983548
+          ]
+        ]
+      }
+    ],
+    "source-0006": [
+      {
+        "source_id": "Skyfire-7761",
+        "file_id": "42783bfcbaa29892",
+        "grating": "G395M_F290LP",
+        "snr": 26.404000918273443,
+        "x": -0.6732672601750451,
+        "y": 3.262215052590028,
+        "sy_cond": 0.012284215311149411,
+        "cov": [
+          [
+            0.00027053854141420683,
+            -2.554918804598906e-05
+          ],
+          [
+            -2.554918804598646e-05,
+            0.00015090194581067758
+          ]
+        ]
+      }
+    ],
+    "source-0010": [
+      {
+        "source_id": "Skyfire-20952",
+        "file_id": "7510458fdcefe88f",
+        "grating": "G395M_F290LP",
+        "snr": 13.664194165193884,
+        "x": -0.7314184938197386,
+        "y": 3.20488620844503,
+        "sy_cond": 0.033410348113280045,
+        "cov": [
+          [
+            0.0010101842042119385,
+            0.00038392796727527864
+          ],
+          [
+            0.00038392796727523473,
+            0.0011162513610505555
+          ]
+        ]
+      }
+    ],
+    "source-0017": [
+      {
+        "source_id": "Skyfire-25941",
+        "file_id": "fdce8ce1816f4209",
+        "grating": "G395H_F290LP",
+        "snr": 6.669194395795441,
+        "x": -0.9830450438316802,
+        "y": 3.165062093887519,
+        "sy_cond": 0.07041934349568185,
+        "cov": [
+          [
+            0.004240546886966109,
+            0.0026715802746436813
+          ],
+          [
+            0.00267158027464365,
+            0.004958883938362831
+          ]
+        ]
+      }
+    ],
+    "source-0020": [
+      {
+        "source_id": "Skyfire-44039",
+        "file_id": "a13890484aaacf71",
+        "grating": "G395M_F290LP",
+        "snr": 5.595600438699492,
+        "x": -1.102992825733601,
+        "y": 3.2423182850910814,
+        "sy_cond": 0.08070966525552785,
+        "cov": [
+          [
+            0.0060238650153997255,
+            0.002854350375701731
+          ],
+          [
+            0.0028543503757009567,
+            0.006514050065659359
+          ]
+        ]
+      }
+    ],
+    "source-0021": [
+      {
+        "source_id": "Skyfire-83652",
+        "file_id": "b00fbb92c385ed3d",
+        "grating": "G395M_F290LP",
+        "snr": 6.0471524043932074,
+        "x": -1.175302831204398,
+        "y": 3.1307939940034744,
+        "sy_cond": 0.09307182292236735,
+        "cov": [
+          [
+            0.005157827274199529,
+            0.0023955465169587693
+          ],
+          [
+            0.0023955465169563993,
+            0.008662364222092503
+          ]
+        ]
+      }
+    ],
+    "source-0059": [
+      {
+        "source_id": "RUBIES-UDS-119957",
+        "file_id": "c168c15be2ca5364",
+        "grating": "G395M_F290LP",
+        "snr": 14.141842714974263,
+        "x": -0.8018603302431515,
+        "y": 3.2579733096583867,
+        "sy_cond": 0.027127424093624064,
+        "cov": [
+          [
+            0.0009430975511054829,
+            0.00015567665908521608
+          ],
+          [
+            0.0001556766590851964,
+            0.0007358971379553351
+          ]
+        ]
+      }
+    ],
+    "source-0066": [
+      {
+        "source_id": "RUBIES-EGS-29489",
+        "file_id": "7fa2a8a8027e5c29",
+        "grating": "G395H_F290LP",
+        "snr": 47.65816502116726,
+        "x": -0.39654974244462693,
+        "y": 3.2484111282881556,
+        "sy_cond": 0.008298790595375007,
+        "cov": [
+          [
+            8.304127127577423e-05,
+            1.6409951949496988e-05
+          ],
+          [
+            1.6409951949496236e-05,
+            6.886992534588467e-05
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-29489",
+        "file_id": "6360145de0a3d70f",
+        "grating": "G395M_F290LP",
+        "snr": 13.68721793222491,
+        "x": -0.6424264813047174,
+        "y": 3.256487995817377,
+        "sy_cond": 0.03131159044950511,
+        "cov": [
+          [
+            0.0010067885274395285,
+            0.00032033319482227204
+          ],
+          [
+            0.0003203331948221364,
+            0.0009804156964775398
+          ]
+        ]
+      }
+    ],
+    "source-0071": [
+      {
+        "source_id": "RUBIES-EGS-42232",
+        "file_id": "57956d39bc802bdf",
+        "grating": "G235M_F170LP",
+        "snr": 27.738968039874482,
+        "x": -0.25861519134205935,
+        "y": 3.228132931689424,
+        "sy_cond": 0.016429584194962446,
+        "cov": [
+          [
+            0.0002451252345549861,
+            0.0001349050568468509
+          ],
+          [
+            0.0001349050568468512,
+            0.0002699312368193598
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-42232",
+        "file_id": "13d48867c7939662",
+        "grating": "G395H_F290LP",
+        "snr": 14.046248053143698,
+        "x": -0.49122147257303794,
+        "y": 3.3248644678616563,
+        "sy_cond": 0.020369931032087278,
+        "cov": [
+          [
+            0.0009559781261515168,
+            -0.00019743685217300723
+          ],
+          [
+            -0.00019743685217302136,
+            0.0004149340902519923
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-42232",
+        "file_id": "d0ea84d0ad1662d0",
+        "grating": "G395M_F290LP",
+        "snr": 13.149061734645745,
+        "x": -0.17772769305326364,
+        "y": 3.273549967147772,
+        "sy_cond": 0.023182917513605968,
+        "cov": [
+          [
+            0.0010908853107631227,
+            -5.7112306014656606e-05
+          ],
+          [
+            -5.711230601468233e-05,
+            0.0005374476644426583
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-42232",
+        "file_id": "6ec88dacc6c989bf",
+        "grating": "G395M_F290LP",
+        "snr": 12.506433668920232,
+        "x": -0.3150125462458391,
+        "y": 3.3907058488041897,
+        "sy_cond": 0.022853002553857592,
+        "cov": [
+          [
+            0.0012058732311665042,
+            -0.0004272667127678061
+          ],
+          [
+            -0.00042726671276777393,
+            0.0005222597257266216
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-42232",
+        "file_id": "48be028a0da33d2d",
+        "grating": "G395M_F290LP",
+        "snr": 7.450851264722284,
+        "x": -0.3327186738323391,
+        "y": 3.3414148129754992,
+        "sy_cond": 0.03558760478265598,
+        "cov": [
+          [
+            0.0033974794189352182,
+            -0.001297428565553333
+          ],
+          [
+            -0.0012974285655533142,
+            0.0012664776141665182
+          ]
+        ]
+      }
+    ],
+    "source-0076": [
+      {
+        "source_id": "RUBIES-EGS-42046",
+        "file_id": "ba90f715dd7e754f",
+        "grating": "G395H_F290LP",
+        "snr": 71.30825025913983,
+        "x": 0.5505151317311459,
+        "y": 3.5031371988847253,
+        "sy_cond": 0.006560253106121987,
+        "cov": [
+          [
+            3.7092752576840774e-05,
+            -1.4535866331975422e-05
+          ],
+          [
+            -1.4535866331975998e-05,
+            4.303692081638318e-05
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-42046",
+        "file_id": "ec799f94788a5de5",
+        "grating": "G395M_F290LP",
+        "snr": 37.509111897230916,
+        "x": 0.41557841777932936,
+        "y": 3.5197652995148925,
+        "sy_cond": 0.012188908841590159,
+        "cov": [
+          [
+            0.00013405871728857014,
+            -4.7596503859006224e-05
+          ],
+          [
+            -4.759650385904403e-05,
+            0.00014856949874859479
+          ]
+        ]
+      }
+    ],
+    "source-0077": [
+      {
+        "source_id": "RUBIES-UDS-970351",
+        "file_id": "1183cac89b0eac7a",
+        "grating": "G395M_F290LP",
+        "snr": 7.804171638113103,
+        "x": -0.6867539894535213,
+        "y": 3.3278850074614215,
+        "sy_cond": 0.05314815533886878,
+        "cov": [
+          [
+            0.0030968131179235085,
+            0.0014097425899812454
+          ],
+          [
+            0.0014097425899825947,
+            0.0028247264159245262
+          ]
+        ]
+      }
+    ],
+    "source-0078": [
+      {
+        "source_id": "RUBIES-EGS-926125",
+        "file_id": "56fe48bcdfa81af2",
+        "grating": "G395M_F290LP",
+        "snr": 18.99753413706179,
+        "x": -0.48216749908530687,
+        "y": 3.232311426102335,
+        "sy_cond": 0.021981783730554084,
+        "cov": [
+          [
+            0.0005226057159236444,
+            0.00013765939651307928
+          ],
+          [
+            0.00013765939651305074,
+            0.00048319881597685233
+          ]
+        ]
+      }
+    ],
+    "source-0079": [
+      {
+        "source_id": "RUBIES-EGS-60935",
+        "file_id": "04d7c1df88c268a8",
+        "grating": "G395M_F290LP",
+        "snr": 21.194254777263975,
+        "x": -0.2765507566056371,
+        "y": 3.3153904214573,
+        "sy_cond": 0.017331321282080592,
+        "cov": [
+          [
+            0.0004198868959745315,
+            2.0104722543831447e-05
+          ],
+          [
+            2.010472254383886e-05,
+            0.0003003746973826996
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-60935",
+        "file_id": "e5504c53abdfc011",
+        "grating": "G395H_F290LP",
+        "snr": 12.250456641254223,
+        "x": -0.3292559494075675,
+        "y": 3.1554754209291787,
+        "sy_cond": 0.03974096289095963,
+        "cov": [
+          [
+            0.0012567939098897894,
+            0.0007782694920061193
+          ],
+          [
+            0.0007782694920061057,
+            0.0015793441315006297
+          ]
+        ]
+      }
+    ],
+    "source-0080": [
+      {
+        "source_id": "RUBIES-UDS-29813",
+        "file_id": "9f904ae341694838",
+        "grating": "G395M_F290LP",
+        "snr": 12.627267664387379,
+        "x": -0.45031624831778316,
+        "y": 3.3061839999708242,
+        "sy_cond": 0.0332799292796987,
+        "cov": [
+          [
+            0.0011829049514994838,
+            0.00044551944061573586
+          ],
+          [
+            0.00044551944061583534,
+            0.001107553692861747
+          ]
+        ]
+      }
+    ],
+    "source-0081": [
+      {
+        "source_id": "RUBIES-UDS-172350",
+        "file_id": "8b40abf4c094773e",
+        "grating": "G395M_F290LP",
+        "snr": 26.837736757021606,
+        "x": -0.13698541751358562,
+        "y": 3.2611379624222163,
+        "sy_cond": 0.014065724616535916,
+        "cov": [
+          [
+            0.0002618646317133869,
+            3.556735843760956e-05
+          ],
+          [
+            3.5567358437597806e-05,
+            0.00019784460898822443
+          ]
+        ]
+      }
+    ],
+    "source-0082": [
+      {
+        "source_id": "CEERS-746",
+        "file_id": "eeb99969088636d9",
+        "grating": "G395M_F290LP",
+        "snr": 38.05196670475655,
+        "x": -0.7325676684369782,
+        "y": 3.2497831896883644,
+        "sy_cond": 0.011014365506699805,
+        "cov": [
+          [
+            0.00013026099957334965,
+            3.4050731347889e-05
+          ],
+          [
+            3.405073134786514e-05,
+            0.00012131624751517845
+          ]
+        ]
+      },
+      {
+        "source_id": "CEERS-746",
+        "file_id": "9b78c6e861026c0a",
+        "grating": "G395H_F290LP",
+        "snr": 16.10082314912533,
+        "x": -0.7120036164205601,
+        "y": 3.1861904609508493,
+        "sy_cond": 0.027199620849440102,
+        "cov": [
+          [
+            0.0007275661127520282,
+            0.00048567109261330675
+          ],
+          [
+            0.0004856710926133144,
+            0.0007398193743532967
+          ]
+        ]
+      },
+      {
+        "source_id": "CEERS-746",
+        "file_id": "3ee00aa1435d5589",
+        "grating": "G395M_F290LP",
+        "snr": 9.022633215113999,
+        "x": -0.7379613305668329,
+        "y": 3.2486995145652204,
+        "sy_cond": 0.048956822651383874,
+        "cov": [
+          [
+            0.002316871870313888,
+            0.0008261628483156791
+          ],
+          [
+            0.0008261628483155268,
+            0.002396770484119053
+          ]
+        ]
+      }
+    ],
+    "source-0083": [
+      {
+        "source_id": "CEERS-672",
+        "file_id": "939b41bf1c95f312",
+        "grating": "G395H_F290LP",
+        "snr": 7.191124745291256,
+        "x": -1.1483598576731922,
+        "y": 2.975226063592639,
+        "sy_cond": 0.07243668025233034,
+        "cov": [
+          [
+            0.0036473293166534525,
+            0.0018590974257426238
+          ],
+          [
+            0.0018590974257425177,
+            0.005247072645978344
+          ]
+        ]
+      },
+      {
+        "source_id": "CEERS-672",
+        "file_id": "68605368f311d5b5",
+        "grating": "G395H_F290LP",
+        "snr": 5.690813808531699,
+        "x": -1.127654024040595,
+        "y": 3.16170737250908,
+        "sy_cond": 0.08533583356879612,
+        "cov": [
+          [
+            0.005823979925151171,
+            0.0038361859930772487
+          ],
+          [
+            0.0038361859930775176,
+            0.00728220449088127
+          ]
+        ]
+      }
+    ],
+    "source-0086": [
+      {
+        "source_id": "RUBIES-EGS-37124",
+        "file_id": "6f048da439a805e4",
+        "grating": "G395H_F290LP",
+        "snr": 14.716308530136489,
+        "x": -0.44015141093056087,
+        "y": 3.236410474297266,
+        "sy_cond": 0.024387431283513544,
+        "cov": [
+          [
+            0.0008709051404800399,
+            8.681272302074121e-05
+          ],
+          [
+            8.68127230207749e-05,
+            0.0005947468046080949
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-37124",
+        "file_id": "8ef65bde51b17065",
+        "grating": "G395M_F290LP",
+        "snr": 12.662533761033421,
+        "x": -0.43718224391678717,
+        "y": 3.361881858584535,
+        "sy_cond": 0.023298226742871884,
+        "cov": [
+          [
+            0.0011763251706377613,
+            -0.0003924737718278675
+          ],
+          [
+            -0.0003924737718279001,
+            0.0005428073693622707
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-37124",
+        "file_id": "a6521eee1eba12f9",
+        "grating": "G395M_F290LP",
+        "snr": 5.047154780431183,
+        "x": -0.6433855294824511,
+        "y": 3.4436154027907935,
+        "sy_cond": 0.05700989424328573,
+        "cov": [
+          [
+            0.007404152852578778,
+            0.0005775570932576559
+          ],
+          [
+            0.0005775570932577346,
+            0.0032501280416306236
+          ]
+        ]
+      }
+    ],
+    "source-0090": [
+      {
+        "source_id": "RUBIES-EGS-49140",
+        "file_id": "fddf811a57d7fb5f",
+        "grating": "G395H_F290LP",
+        "snr": 56.97745563033276,
+        "x": 0.5304864630823687,
+        "y": 3.376200560785476,
+        "sy_cond": 0.00772513401910268,
+        "cov": [
+          [
+            5.8098178879952346e-05,
+            2.7420791203112418e-05
+          ],
+          [
+            2.7420791203110077e-05,
+            5.967769561309753e-05
+          ]
+        ]
+      },
+      {
+        "source_id": "RUBIES-EGS-49140",
+        "file_id": "cf8f5ede836f90dc",
+        "grating": "G395M_F290LP",
+        "snr": 9.511995491977636,
+        "x": 0.2364979800012179,
+        "y": 3.445052038652077,
+        "sy_cond": 0.030659331865404725,
+        "cov": [
+          [
+            0.002084612564435807,
+            0.0004811415589081319
+          ],
+          [
+            0.0004811415589080467,
+            0.0009399946304330216
+          ]
+        ]
+      }
+    ],
+    "source-0162": [
+      {
+        "source_id": "RUBIES-UDS-144195",
+        "file_id": "0e78910436f891b8",
+        "grating": "G395M_F290LP",
+        "snr": 12.872738523828703,
+        "x": -0.6621549959292139,
+        "y": 3.230553928443815,
+        "sy_cond": 0.029522171587629674,
+        "cov": [
+          [
+            0.0011382213486494657,
+            5.333197832043436e-05
+          ],
+          [
+            5.3331978320473496e-05,
+            0.0008715586152494486
+          ]
+        ]
+      }
+    ],
+    "source-0164": [
+      {
+        "source_id": "RUBIES-UDS-23438",
+        "file_id": "bf49538bb7ed0566",
+        "grating": "G395M_F290LP",
+        "snr": 8.395888018552924,
+        "x": -0.7978192278439238,
+        "y": 3.259096971986761,
+        "sy_cond": 0.04785864750258501,
+        "cov": [
+          [
+            0.002675687240529187,
+            0.0006820517788887869
+          ],
+          [
+            0.0006820517788894773,
+            0.002290450140776687
+          ]
+        ]
+      }
+    ],
+    "source-0174": [
+      {
+        "source_id": "RUBIES-UDS-149298",
+        "file_id": "c8ba85bdae73bb1d",
+        "grating": "G395M_F290LP",
+        "snr": 7.522366371451122,
+        "x": -0.6468511303921787,
+        "y": 3.232140022318456,
+        "sy_cond": 0.05437864692536248,
+        "cov": [
+          [
+            0.0033331868469799377,
+            0.000912171136514958
+          ],
+          [
+            0.0009121711365144309,
+            0.002957037241433234
+          ]
+        ]
+      }
+    ],
+    "source-0196": [
+      {
+        "source_id": "RUBIES-EGS-948917",
+        "file_id": "30ac8bc724c2552b",
+        "grating": "G395M_F290LP",
+        "snr": 11.9928954747516,
+        "x": -0.20901433399055946,
+        "y": 3.2108234622616174,
+        "sy_cond": 0.03858641598585635,
+        "cov": [
+          [
+            0.0013113557518266768,
+            8.434241578803845e-05
+          ],
+          [
+            8.434241577912577e-05,
+            0.0014889114986335501
+          ]
+        ]
+      }
+    ],
+    "source-0202": [
+      {
+        "source_id": "RUBIES-EGS-55604",
+        "file_id": "e20c53ece0b031b4",
+        "grating": "G395M_F290LP",
+        "snr": 34.93504098457594,
+        "x": 0.5189081176562524,
+        "y": 3.497782144824449,
+        "sy_cond": 0.012789364893551123,
+        "cov": [
+          [
+            0.00015454185056919912,
+            -4.774175783201311e-05
+          ],
+          [
+            -4.774175783200909e-05,
+            0.00016356785438039796
+          ]
+        ]
+      }
+    ],
+    "source-0207": [
+      {
+        "source_id": "RUBIES-EGS-42803",
+        "file_id": "e7f48c2a828419df",
+        "grating": "G395M_F290LP",
+        "snr": 6.627339068218005,
+        "x": -0.2610924558037411,
+        "y": 3.2867157890222836,
+        "sy_cond": 0.06432339193042588,
+        "cov": [
+          [
+            0.004294278844711097,
+            0.002725710991321189
+          ],
+          [
+            0.0027257109913206507,
+            0.004137498749435177
+          ]
+        ]
+      }
+    ]
+  },
+  "failed_clean_lrd_21": [
+    {
+      "source_id": "RUBIES-EGS-37032",
+      "physical_source_group": "source-0049",
+      "file_id": "96b9c9be92d936a9",
+      "n_grating_Ha_spectra": 2,
+      "grating": "G395H_F290LP",
+      "filter": "F290LP",
+      "z_fit": 3.85,
+      "lambda_Ha_obs_um": 3.1839,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.58,
+      "SNR_broad": 23.474443970058935,
+      "delta_BIC_null": 65.27399976361573,
+      "FWHM_kms": 1438.6592921112942,
+      "FWHM_err_cond_kms": 70.5537063309612,
+      "log10_LHa_erg_s": 41.998746104109294,
+      "x": -1.0012538958907058,
+      "y": 3.1579579551070727,
+      "cov": [
+        [
+          0.0003422772187754031,
+          0.00010971704995977134
+        ],
+        [
+          0.00010971704995925037,
+          0.0004536201924774387
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.017663996117338154,
+      "W_narrow_kms": 96.47973103907032,
+      "W_narrow_bound_side": "interior",
+      "bound_parameters": [
+        "F_narrow",
+        "F_NII6585",
+        "tau_abs"
+      ],
+      "M1_failure_reasons": [
+        "adopted_absorption_parameters_not_at_bounds"
+      ],
+      "literature_FWHM_kms": 1960.0,
+      "literature_log10_LHa_erg_s": 42.28353719134419,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025"
+    },
+    {
+      "source_id": "Skyfire-23289",
+      "physical_source_group": "source-0014",
+      "file_id": "dcb6120e80ef0dd7",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 5.9343,
+      "lambda_Ha_obs_um": 4.5522,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.49,
+      "SNR_broad": 6.648368670814517,
+      "delta_BIC_null": 113.24106818508173,
+      "FWHM_kms": 2444.1941383370613,
+      "FWHM_err_cond_kms": 264.80427947344947,
+      "log10_LHa_erg_s": 42.6147672491094,
+      "x": -0.3852327508906015,
+      "y": 3.3881356982399082,
+      "cov": [
+        [
+          0.004267155152869053,
+          -0.0023421868125194415
+        ],
+        [
+          -0.0023421868125194536,
+          0.0022138450713724317
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.10776611348196719,
+      "W_narrow_kms": 599.9999999875465,
+      "W_narrow_bound_side": "upper_600",
+      "bound_parameters": [
+        "W_narrow",
+        "tau_abs"
+      ],
+      "M1_failure_reasons": [
+        "adopted_absorption_parameters_not_at_bounds"
+      ],
+      "literature_FWHM_kms": 2109.0,
+      "literature_log10_LHa_erg_s": 42.59447126200543,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026"
+    },
+    {
+      "source_id": "RUBIES-UDS-967770",
+      "physical_source_group": "source-0193",
+      "file_id": "e2e8cf3fab5057eb",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.59,
+      "lambda_Ha_obs_um": 4.9826,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 2.62,
+      "SNR_broad": 5.322895889826786,
+      "delta_BIC_null": 2.819343745218845,
+      "FWHM_kms": 2243.4693581924157,
+      "FWHM_err_cond_kms": 403.0862488907314,
+      "log10_LHa_erg_s": 42.498773863255586,
+      "x": -0.501226136744414,
+      "y": 3.350920142218178,
+      "cov": [
+        [
+          0.006656909897937056,
+          0.0030843736017644218
+        ],
+        [
+          0.0030843736017680565,
+          0.00608869617612167
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.09027395944463867,
+      "W_narrow_kms": 30.000000000520497,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 2329.9684864283345,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-10036",
+      "physical_source_group": "source-0048",
+      "file_id": "9fa824381825e35b",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 3.806,
+      "lambda_Ha_obs_um": 3.155,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.75,
+      "SNR_broad": 4.548457305600654,
+      "delta_BIC_null": 1.2319733418944452,
+      "FWHM_kms": 1927.8577937602092,
+      "FWHM_err_cond_kms": 373.98325253623136,
+      "log10_LHa_erg_s": 41.88731589750318,
+      "x": -1.1126841024968215,
+      "y": 3.285074995509248,
+      "cov": [
+        [
+          0.009116756965621538,
+          0.0014001527597512545
+        ],
+        [
+          0.0014001527597525603,
+          0.007097786640178786
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.12840052772899924,
+      "W_narrow_kms": 30.000000000000004,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1234.0,
+      "literature_log10_LHa_erg_s": 41.95717270411981,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-50716",
+      "physical_source_group": "source-0188",
+      "file_id": "8f34744bf34e1cf6",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.17,
+      "lambda_Ha_obs_um": 4.7069,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.5,
+      "SNR_broad": 4.267798715604202,
+      "delta_BIC_null": 0.7746723568746603,
+      "FWHM_kms": 2516.7097460108034,
+      "FWHM_err_cond_kms": 542.5781445773985,
+      "log10_LHa_erg_s": 42.39268925953254,
+      "x": -0.6073107404674616,
+      "y": 3.40083313093389,
+      "cov": [
+        [
+          0.010355254234614223,
+          0.005110594513204684
+        ],
+        [
+          0.005110594513208295,
+          0.008766514448527529
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.15822547051388103,
+      "W_narrow_kms": 30.000000000000004,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 2250.260701721221,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-19484",
+      "physical_source_group": "source-0067",
+      "file_id": "cad9d8b36f7a2b31",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 4.656,
+      "lambda_Ha_obs_um": 3.713,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.85,
+      "SNR_broad": 4.026693583960688,
+      "delta_BIC_null": 1.282609912026615,
+      "FWHM_kms": 1186.0531768782216,
+      "FWHM_err_cond_kms": 421.54065130633194,
+      "log10_LHa_erg_s": 41.819348958943415,
+      "x": -1.180651041056585,
+      "y": 3.0741041611252484,
+      "cov": [
+        [
+          0.011632457036606493,
+          -7.246024430812971e-05
+        ],
+        [
+          -7.246024430037668e-05,
+          0.023825346462183518
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.07101327483809294,
+      "W_narrow_kms": 30.00000000692987,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1278.0,
+      "literature_log10_LHa_erg_s": 41.67575585391345,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025"
+    },
+    {
+      "source_id": "RUBIES-EGS-61496",
+      "physical_source_group": "source-0171",
+      "file_id": "c5181afecbeace0b",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 5.08,
+      "lambda_Ha_obs_um": 3.9913,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.07,
+      "SNR_broad": 3.8384696569642003,
+      "delta_BIC_null": 3.9259393135425427,
+      "FWHM_kms": 1748.3864109368712,
+      "FWHM_err_cond_kms": 249.420592696872,
+      "log10_LHa_erg_s": 42.28188790042179,
+      "x": -0.7181120995782067,
+      "y": 3.2426374223440013,
+      "cov": [
+        [
+          0.012801250581301818,
+          -0.001867573242101877
+        ],
+        [
+          -0.001867573242100333,
+          0.0038384721304151456
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.018870316754536987,
+      "W_narrow_kms": 464.78936149359316,
+      "W_narrow_bound_side": "interior",
+      "bound_parameters": [
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1509.3740041613053,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-EGS-952625",
+      "physical_source_group": "source-0172",
+      "file_id": "27e392c4c289fb94",
+      "n_grating_Ha_spectra": 2,
+      "grating": "G395H_F290LP",
+      "filter": "F290LP",
+      "z_fit": 5.11,
+      "lambda_Ha_obs_um": 4.011,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.07,
+      "SNR_broad": 3.1186597288096976,
+      "delta_BIC_null": -1.812118789213656,
+      "FWHM_kms": 932.6312470280725,
+      "FWHM_err_cond_kms": 379.3433084435088,
+      "log10_LHa_erg_s": 41.53855467888359,
+      "x": -1.4614453211164076,
+      "y": 2.969709962034764,
+      "cov": [
+        [
+          0.019392448110514566,
+          0.01107193322133598
+        ],
+        [
+          0.01107193322130597,
+          0.031204235989215037
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.12766148893318796,
+      "W_narrow_kms": 30.00000000733546,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1366.627847550535,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "Skyfire-92141",
+      "physical_source_group": "source-0022",
+      "file_id": "54c1e145a55d1004",
+      "n_grating_Ha_spectra": 3,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.1365,
+      "lambda_Ha_obs_um": 4.6849,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.7,
+      "SNR_broad": 3.0180136541525338,
+      "delta_BIC_null": -7.079763988011592,
+      "FWHM_kms": 1679.2591353516336,
+      "FWHM_err_cond_kms": 603.8545717774186,
+      "log10_LHa_erg_s": 41.92780369947224,
+      "x": -1.0721963005277573,
+      "y": 3.2251177195861915,
+      "cov": [
+        [
+          0.02070743095815441,
+          0.010862599293917252
+        ],
+        [
+          0.010862599293890902,
+          0.024389219415416667
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.06155874552291074,
+      "W_narrow_kms": 30.000000000000004,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1897.0,
+      "literature_log10_LHa_erg_s": 41.69501562288436,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026"
+    },
+    {
+      "source_id": "RUBIES-UDS-16053",
+      "physical_source_group": "source-0052",
+      "file_id": "e708fc9971d4717a",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 3.952,
+      "lambda_Ha_obs_um": 3.2508,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.74,
+      "SNR_broad": 2.6947191187156982,
+      "delta_BIC_null": -5.551841801965651,
+      "FWHM_kms": 911.280656811724,
+      "FWHM_err_cond_kms": 594.2883338747656,
+      "log10_LHa_erg_s": 41.56988660788009,
+      "x": -1.4301133921199067,
+      "y": 2.959652151872214,
+      "cov": [
+        [
+          0.025974166212358683,
+          -0.02340414191100055
+        ],
+        [
+          -0.02340414191147916,
+          0.08021558014032205
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.14304694968543208,
+      "W_narrow_kms": 30.000000000001876,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1198.0,
+      "literature_log10_LHa_erg_s": 41.976326486789546,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-31747",
+      "physical_source_group": "source-0058",
+      "file_id": "237866738229981b",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 4.13,
+      "lambda_Ha_obs_um": 3.3677,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.53,
+      "SNR_broad": 2.584684880806602,
+      "delta_BIC_null": 15.904267735634619,
+      "FWHM_kms": 1883.5441362778672,
+      "FWHM_err_cond_kms": 269.2296363972131,
+      "log10_LHa_erg_s": 42.25255283715747,
+      "x": -0.7474471628425334,
+      "y": 3.274975801293918,
+      "cov": [
+        [
+          0.028232765295375765,
+          -0.008275999238979835
+        ],
+        [
+          -0.008275999238979398,
+          0.003853565536948354
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.05619680119634207,
+      "W_narrow_kms": 599.9999999999748,
+      "W_narrow_bound_side": "upper_600",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5"
+      ],
+      "literature_FWHM_kms": 1688.0,
+      "literature_log10_LHa_erg_s": 42.292987131486086,
+      "literature_width_definition": "broad Gaussian in narrow+broad Halpha model; [NII] fitted; shared line center",
+      "paper_primary": "Taylor2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-33938",
+      "physical_source_group": "source-0195",
+      "file_id": "51ed8d566f22a556",
+      "n_grating_Ha_spectra": 2,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.63,
+      "lambda_Ha_obs_um": 5.0089,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.92,
+      "SNR_broad": 1.7940935217245633,
+      "delta_BIC_null": -9.6601444592944,
+      "FWHM_kms": 582.3549435212649,
+      "FWHM_err_cond_kms": 424.2837212237694,
+      "log10_LHa_erg_s": 41.918813994878576,
+      "x": -1.081186005121424,
+      "y": 2.765187766481761,
+      "cov": [
+        [
+          0.05859741619456676,
+          0.0654558678744632
+        ],
+        [
+          0.06545586787442652,
+          0.10011653907339911
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.39684260699695395,
+      "W_narrow_kms": 30.000000000000004,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1142.560839510142,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-830237",
+      "physical_source_group": "source-0173",
+      "file_id": "304a3fc05f7f0517",
+      "n_grating_Ha_spectra": 2,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 5.12,
+      "lambda_Ha_obs_um": 4.0176,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.03,
+      "SNR_broad": 1.748679318155633,
+      "delta_BIC_null": -7.793170429663547,
+      "FWHM_kms": 1087.9978802590906,
+      "FWHM_err_cond_kms": 1079.505219267766,
+      "log10_LHa_erg_s": 41.47312913848052,
+      "x": -1.5268708615194768,
+      "y": 3.036628049229186,
+      "cov": [
+        [
+          0.061680555360656246,
+          -0.0008701614587275638
+        ],
+        [
+          -0.0008701614588193483,
+          0.18567867015502051
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.049618506781023974,
+      "W_narrow_kms": 30.00005497739719,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1237.7170605512779,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-EGS-53254",
+      "physical_source_group": "source-0194",
+      "file_id": "6fe7443b1f7b9bf5",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.62,
+      "lambda_Ha_obs_um": 5.0023,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 2.06,
+      "SNR_broad": 1.675360366623059,
+      "delta_BIC_null": -9.894731234980341,
+      "FWHM_kms": 1112.3624509173203,
+      "FWHM_err_cond_kms": 950.086593385798,
+      "log10_LHa_erg_s": 41.96271350303367,
+      "x": -1.0372864969663311,
+      "y": 3.046246320326388,
+      "cov": [
+        [
+          0.06719735023382657,
+          0.03231422051284014
+        ],
+        [
+          0.03231422051282199,
+          0.13759490781956882
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.12324868262138677,
+      "W_narrow_kms": 30.000000000023483,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 2067.196101983803,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-53692",
+      "physical_source_group": "source-0179",
+      "file_id": "bccfee42b9fb4867",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 5.28,
+      "lambda_Ha_obs_um": 4.1226,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.99,
+      "SNR_broad": 1.6089981090597862,
+      "delta_BIC_null": -8.347229505287046,
+      "FWHM_kms": 1212.3239719869666,
+      "FWHM_err_cond_kms": 663.3016291508626,
+      "log10_LHa_erg_s": 41.48401772931676,
+      "x": -1.5159822706832387,
+      "y": 3.0836186928045843,
+      "cov": [
+        [
+          0.07285469681128882,
+          0.025864250159971465
+        ],
+        [
+          0.025864250160011013,
+          0.05646162392125076
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.004479348551328588,
+      "W_narrow_kms": 30.000000000000515,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1725.4957063615639,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-EGS-927271",
+      "physical_source_group": "source-0197",
+      "file_id": "8e46bb59eb346d05",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.78,
+      "lambda_Ha_obs_um": 5.1073,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 2.18,
+      "SNR_broad": 1.582873909236007,
+      "delta_BIC_null": -8.89167533004806,
+      "FWHM_kms": 1678.0900073836845,
+      "FWHM_err_cond_kms": 962.2534030129123,
+      "log10_LHa_erg_s": 41.86032089884281,
+      "x": -1.139679101157192,
+      "y": 3.2248152512851265,
+      "cov": [
+        [
+          0.07527937095078362,
+          0.038320014617831
+        ],
+        [
+          0.03832001461783114,
+          0.06201789641799455
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.07273098669816935,
+      "W_narrow_kms": 30.00000010170866,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 1649.267715965869,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-36171",
+      "physical_source_group": "source-0192",
+      "file_id": "1b6b8c7fe5925cb5",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 6.47,
+      "lambda_Ha_obs_um": 4.9038,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 1.84,
+      "SNR_broad": 1.53815779761115,
+      "delta_BIC_null": -1.006168760552697,
+      "FWHM_kms": 1172.6261589349094,
+      "FWHM_err_cond_kms": 575.0766202311903,
+      "log10_LHa_erg_s": 42.21114116872465,
+      "x": -0.7888588312753484,
+      "y": 3.0691595781946472,
+      "cov": [
+        [
+          0.07971991733411597,
+          0.05316048566771334
+        ],
+        [
+          0.05316048566763537,
+          0.04536290823699498
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.14257782226918225,
+      "W_narrow_kms": 340.98656325639604,
+      "W_narrow_bound_side": "interior",
+      "bound_parameters": [],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 2176.6385710959967,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-848745",
+      "physical_source_group": "source-0206",
+      "file_id": "59c727b95ebab2ca",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 7.11,
+      "lambda_Ha_obs_um": 5.324,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 3.61,
+      "SNR_broad": 1.4182761271909246,
+      "delta_BIC_null": -6.609030742605114,
+      "FWHM_kms": 350.00000001632895,
+      "FWHM_err_cond_kms": 408.24775599690474,
+      "log10_LHa_erg_s": 41.9414230306169,
+      "x": -1.0585769693830969,
+      "y": 2.5440680443705372,
+      "cov": [
+        [
+          0.09376635566956233,
+          0.1313528279850591
+        ],
+        [
+          0.13135282798505726,
+          0.25661388182895906
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": -0.6218067474520712,
+      "W_narrow_kms": 30.000000000000153,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "W_broad1"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6",
+        "broad_width_not_at_bound"
+      ],
+      "literature_FWHM_kms": 1734.5985755513454,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "Skyfire-26079",
+      "physical_source_group": "source-0018",
+      "file_id": "ad8efd0f7c205c0b",
+      "n_grating_Ha_spectra": 2,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 5.0015,
+      "lambda_Ha_obs_um": 3.9398,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.99,
+      "SNR_broad": 0.8766641553711084,
+      "delta_BIC_null": -11.814667452035835,
+      "FWHM_kms": 1397.3395132060368,
+      "FWHM_err_cond_kms": 1804.6690042699115,
+      "log10_LHa_erg_s": 41.06942765659661,
+      "x": -1.9305723434033908,
+      "y": 3.1453019399707114,
+      "cov": [
+        [
+          0.24541557612209303,
+          0.16815490582470785
+        ],
+        [
+          0.1681549058247015,
+          0.31460082790544863
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.1277003894518507,
+      "W_narrow_kms": 30.000004704528617,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow",
+        "v_broad1"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 2182.0,
+      "literature_log10_LHa_erg_s": 42.53001720938308,
+      "literature_width_definition": "broad Gaussian in narrow+broad fit; independent centroids; absorption where needed",
+      "paper_primary": "Kocevski2026"
+    },
+    {
+      "source_id": "RUBIES-UDS-40579",
+      "physical_source_group": "source-0160",
+      "file_id": "f11cd90b6fea1530",
+      "n_grating_Ha_spectra": 2,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 3.11,
+      "lambda_Ha_obs_um": 2.6981,
+      "in_passband": false,
+      "any_spectrum_in_passband": false,
+      "err_Ha_over_inband_median": 30.2,
+      "SNR_broad": 0.45934857757102,
+      "delta_BIC_null": -8.499123840164515,
+      "FWHM_kms": 2519.328974940928,
+      "FWHM_err_cond_kms": 2732.1740948286647,
+      "log10_LHa_erg_s": 43.09199372810154,
+      "x": 0.09199372810154216,
+      "y": 3.4012848815405836,
+      "cov": [
+        [
+          0.8938895719632797,
+          0.3864265644273547
+        ],
+        [
+          0.38642656442735945,
+          0.221827608941957
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.039768172630016974,
+      "W_narrow_kms": 30.00000000000002,
+      "W_narrow_bound_side": "lower_30",
+      "bound_parameters": [
+        "W_narrow"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6"
+      ],
+      "literature_FWHM_kms": 2466.463111372908,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    },
+    {
+      "source_id": "RUBIES-UDS-167741",
+      "physical_source_group": "source-0168",
+      "file_id": "9f3c126d97c8fa1a",
+      "n_grating_Ha_spectra": 1,
+      "grating": "G395M_F290LP",
+      "filter": "F290LP",
+      "z_fit": 4.12,
+      "lambda_Ha_obs_um": 3.3611,
+      "in_passband": true,
+      "any_spectrum_in_passband": true,
+      "err_Ha_over_inband_median": 0.81,
+      "SNR_broad": 0.1968793944714706,
+      "delta_BIC_null": -6.073943574196733,
+      "FWHM_kms": 8895.790052256663,
+      "FWHM_err_cond_kms": 17186.90687004943,
+      "log10_LHa_erg_s": 42.618690840921936,
+      "x": -0.3813091590780644,
+      "y": 3.949184524662627,
+      "cov": [
+        [
+          4.865955049051421,
+          1.841294272600532
+        ],
+        [
+          1.8412942726005512,
+          0.7040362493689823
+        ]
+      ],
+      "cov_posdef": true,
+      "residual_Eq3_dex": 0.6681477761869297,
+      "W_narrow_kms": 115.00897266016958,
+      "W_narrow_bound_side": "interior",
+      "bound_parameters": [
+        "v_broad1",
+        "F_NII6585"
+      ],
+      "M1_failure_reasons": [
+        "broad_SNR_ge5",
+        "delta_BIC_null_ge6",
+        "reduced_chi2_below_threshold"
+      ],
+      "literature_FWHM_kms": 2399.391717341121,
+      "literature_log10_LHa_erg_s": null,
+      "literature_width_definition": "shared broad-Balmer Gaussian FWHM; joint PRISM+G395M fit; narrow+broad model (\u00a73.1.1)",
+      "paper_primary": "Hviding2025"
+    }
+  ]
+}

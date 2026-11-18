@@ -1,0 +1,16 @@
+{
+  "N_by_old_Nbootstrap": {
+    "0": 35,
+    "80": 9
+  },
+  "new_bootstrap_per_source": 200,
+  "main_count": 44,
+  "core_checks": {
+    "gaussian_metrics": "passed",
+    "response_flux_and_variance": "passed",
+    "unit_conversion": "passed",
+    "OI_vacuum_um": 0.844868034992407
+  },
+  "definitions_source": "T2_full_core_20261111_v1.py profile,widths,nonparametric; T2_full_fit_20261111_v1.py metrics",
+  "commonX_covariance": "cross-model covariance unavailable; explicitly set to zero including Gaussian diagnostic baseline"
+}

@@ -1,0 +1,851 @@
+{
+  "description": "100-realization injection-recovery suites across Gaussian, exponential, and Lorentzian line profiles along positive-slope (b > 0) and null-slope (b = 0) parent relations, evaluated with the full-covariance Bayesian posterior of Section 3.",
+  "thresholds": {
+    "observed_bayes_sigma_int_median_dex": 0.05402680260367583,
+    "observed_ols_residual_sd_dex": 0.06679855205888618
+  },
+  "canonical_relations_29LRD": {
+    "single_gaussian": {
+      "a_mean": 3.3458741852784244,
+      "b_median": 0.1700390228220376,
+      "sigma_median": 0.05402680260367584
+    },
+    "exponential": {
+      "a_mean": 3.037091652297351,
+      "b_median": 0.13680038367173653,
+      "sigma_median": 0.051315170800072044
+    },
+    "lorentzian": {
+      "a_mean": 3.1680723209636943,
+      "b_median": 0.162938392614022,
+      "sigma_median": 0.062323439881735006
+    }
+  },
+  "null_scenarios": {
+    "M4_single_gaussian_null_0.10": {
+      "profile": "single_gaussian",
+      "m4_scenario": 0,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        23.0,
+        25.0,
+        26.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 320,
+        "broadSNR": 222,
+        "widthBoundary": 1
+      },
+      "bayes_sigma_med_quantiles": [
+        0.06881361576644869,
+        0.08445897498299507,
+        0.10055760606136985,
+        0.11541881471459318,
+        0.13659568576145437
+      ],
+      "bayes_hits_le_obs_Fsig": 0,
+      "ols_sd_quantiles": [
+        0.07680733584651918,
+        0.0867894128301235,
+        0.10390002129443929,
+        0.11648292495699822,
+        0.134413115577055
+      ],
+      "ols_hits_le_obs_Frms": 0,
+      "bayes_slope_med_p16_p50_p84": [
+        -0.047967357054600514,
+        -0.0004783352339626273,
+        0.05275355159789657
+      ],
+      "recovered_a_hat_median": 3.253414968328187
+    },
+    "M4_single_gaussian_null_0.15": {
+      "profile": "single_gaussian",
+      "m4_scenario": 1,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        22.0,
+        24.0,
+        26.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 278,
+        "deltaBIC": 357,
+        "widthBoundary": 1
+      },
+      "bayes_sigma_med_quantiles": [
+        0.10832288838472137,
+        0.12459951935170069,
+        0.14529251488036649,
+        0.16964454422961467,
+        0.20275483831756563
+      ],
+      "bayes_hits_le_obs_Fsig": 0,
+      "ols_sd_quantiles": [
+        0.10867965014005905,
+        0.12566981559090037,
+        0.14253367156853658,
+        0.16294559746913553,
+        0.19127587311019298
+      ],
+      "ols_hits_le_obs_Frms": 0,
+      "bayes_slope_med_p16_p50_p84": [
+        -0.041379488610673865,
+        0.0058062536061823785,
+        0.06421197321328627
+      ],
+      "recovered_a_hat_median": 3.2569839305889383
+    },
+    "M4_single_gaussian_null_0.20": {
+      "profile": "single_gaussian",
+      "m4_scenario": 2,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        21.0,
+        23.0,
+        25.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 386,
+        "deltaBIC": 399,
+        "widthBoundary": 13
+      },
+      "bayes_sigma_med_quantiles": [
+        0.12442915129247574,
+        0.15787775677691415,
+        0.18441776292198894,
+        0.2085533579500432,
+        0.2280943041817622
+      ],
+      "bayes_hits_le_obs_Fsig": 0,
+      "ols_sd_quantiles": [
+        0.12159971625729095,
+        0.15490682865796643,
+        0.17699018246701445,
+        0.20024560533820013,
+        0.21929145066724326
+      ],
+      "ols_hits_le_obs_Frms": 0,
+      "bayes_slope_med_p16_p50_p84": [
+        -0.041620688093342295,
+        0.028715927665291553,
+        0.11896782436997
+      ],
+      "recovered_a_hat_median": 3.27684541806076
+    },
+    "M4_single_gaussian_rel_b0.19_s0.05": {
+      "profile": "single_gaussian",
+      "m4_scenario": 3,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        24.0,
+        25.0,
+        26.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 342,
+        "broadSNR": 111
+      },
+      "bayes_sigma_med_quantiles": [
+        0.03544156276384944,
+        0.03962113631634579,
+        0.051931963285880976,
+        0.06141451610542611,
+        0.07017807358875816
+      ],
+      "bayes_hits_le_obs_Fsig": 62,
+      "ols_sd_quantiles": [
+        0.044467792844796246,
+        0.049901690250916564,
+        0.05967483139058295,
+        0.06970878681328689,
+        0.0829743436392413
+      ],
+      "ols_hits_le_obs_Frms": 78,
+      "bayes_slope_med_p16_p50_p84": [
+        0.1554668825332535,
+        0.1852214260516259,
+        0.2118597010969717
+      ],
+      "recovered_a_hat_median": 3.3535642663510634
+    },
+    "M4_exponential_null_0.10": {
+      "profile": "exponential",
+      "m4_scenario": 0,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        18.0,
+        19.0,
+        21.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 915,
+        "deltaBIC": 517,
+        "absBoundary": 19,
+        "widthBoundary": 22
+      },
+      "bayes_sigma_med_quantiles": [
+        0.047201391921760344,
+        0.06433380701397429,
+        0.07531973032409084,
+        0.09607032117987083,
+        0.10537311400814232
+      ],
+      "bayes_hits_le_obs_Fsig": 6,
+      "ols_sd_quantiles": [
+        0.05834619070803191,
+        0.06709796774412224,
+        0.08031171905150646,
+        0.09791869285575863,
+        0.11559250037764109
+      ],
+      "ols_hits_le_obs_Frms": 16,
+      "bayes_slope_med_p16_p50_p84": [
+        -0.006270276196136567,
+        0.036423078864373036,
+        0.07320409536029225
+      ],
+      "recovered_a_hat_median": 3.470826893109937
+    },
+    "M4_exponential_null_0.15": {
+      "profile": "exponential",
+      "m4_scenario": 1,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        18.0,
+        19.0,
+        21.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 931,
+        "deltaBIC": 575,
+        "absBoundary": 15,
+        "widthBoundary": 23
+      },
+      "bayes_sigma_med_quantiles": [
+        0.06397618042219452,
+        0.07983792583993929,
+        0.09761709468067185,
+        0.12136136408756901,
+        0.14287878380583624
+      ],
+      "bayes_hits_le_obs_Fsig": 0,
+      "ols_sd_quantiles": [
+        0.07237368838430548,
+        0.0825504278932746,
+        0.0982016253798897,
+        0.11810599649963849,
+        0.14039852868019037
+      ],
+      "ols_hits_le_obs_Frms": 0,
+      "bayes_slope_med_p16_p50_p84": [
+        -0.007116963754677081,
+        0.03941758800906879,
+        0.09731864680450455
+      ],
+      "recovered_a_hat_median": 3.4602559604688805
+    },
+    "M4_exponential_null_0.20": {
+      "profile": "exponential",
+      "m4_scenario": 2,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        16.0,
+        19.0,
+        20.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 993,
+        "deltaBIC": 610,
+        "widthBoundary": 30,
+        "absBoundary": 12,
+        "widthLSF": 1
+      },
+      "bayes_sigma_med_quantiles": [
+        0.07450243565189334,
+        0.09687228049647524,
+        0.12125949568232886,
+        0.14394948080930725,
+        0.18919849350048634
+      ],
+      "bayes_hits_le_obs_Fsig": 0,
+      "ols_sd_quantiles": [
+        0.07579171128409244,
+        0.09949320235292977,
+        0.11842114486465666,
+        0.14314079328039825,
+        0.18025124151549565
+      ],
+      "ols_hits_le_obs_Frms": 0,
+      "bayes_slope_med_p16_p50_p84": [
+        -0.033730924009206,
+        0.03622705581792664,
+        0.09117499769117186
+      ],
+      "recovered_a_hat_median": 3.437288847475966
+    },
+    "M4_exponential_rel_b0.19_s0.05": {
+      "profile": "exponential",
+      "m4_scenario": 3,
+      "N_replicates": 100,
+      "N_selected_p16_p50_p84": [
+        19.0,
+        21.0,
+        22.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 784,
+        "deltaBIC": 412,
+        "absBoundary": 11,
+        "widthBoundary": 7
+      },
+      "bayes_sigma_med_quantiles": [
+        0.028474716288368146,
+        0.04349984828781997,
+        0.05495139442818622,
+        0.06959343311896547,
+        0.08492357982848271
+      ],
+      "bayes_hits_le_obs_Fsig": 44,
+      "ols_sd_quantiles": [
+        0.045879121271765924,
+        0.05411113443094943,
+        0.06557121925316081,
+        0.08493325010783155,
+        0.10742217159837604
+      ],
+      "ols_hits_le_obs_Frms": 53,
+      "bayes_slope_med_p16_p50_p84": [
+        0.11452602818882684,
+        0.13813530637000088,
+        0.16128141383823622
+      ],
+      "recovered_a_hat_median": 3.5419688077291474
+    }
+  },
+  "sloped_simulations": {
+    "gauss_rel_s008": {
+      "scenario_id": 10,
+      "name": "gauss_rel_s008",
+      "profile": "single_gaussian",
+      "injected_a0": 3.3458741852784244,
+      "injected_b0": 0.1700390228220376,
+      "injected_sigma_parent_dex": 0.08,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2495,
+      "N_selected_min_p16_p50_p84_max": [
+        21.0,
+        23.0,
+        25.0,
+        27.0,
+        28.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 339,
+        "broadSNR": 123
+      },
+      "bayes_sigma_med_quantiles": [
+        0.05516218155547643,
+        0.06665311428943524,
+        0.08296330665446144,
+        0.09487817369303463,
+        0.10935235590184406
+      ],
+      "bayes_hits_le_obs_Fsig": 3,
+      "ols_sd_quantiles": [
+        0.06325307277643127,
+        0.07231055986922928,
+        0.08501104059275652,
+        0.09850068575532349,
+        0.11187953038543107
+      ],
+      "ols_hits_le_obs_Frms": 7,
+      "bayes_slope_med_quantiles": [
+        0.08291393290375172,
+        0.12426413746440972,
+        0.16550262354414805,
+        0.20058614534624325,
+        0.23910918810459936
+      ],
+      "recovered_a_hat_p16_p50_p84": [
+        3.321511657631974,
+        3.349771610166969,
+        3.369934776072847
+      ]
+    },
+    "gauss_rel_s010": {
+      "scenario_id": 11,
+      "name": "gauss_rel_s010",
+      "profile": "single_gaussian",
+      "injected_a0": 3.3458741852784244,
+      "injected_b0": 0.1700390228220376,
+      "injected_sigma_parent_dex": 0.1,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2474,
+      "N_selected_min_p16_p50_p84_max": [
+        21.0,
+        23.84,
+        25.0,
+        26.0,
+        28.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 342,
+        "broadSNR": 154
+      },
+      "bayes_sigma_med_quantiles": [
+        0.06865326927866441,
+        0.0850998561638538,
+        0.10204627693899233,
+        0.11949760515053413,
+        0.13441710258344242
+      ],
+      "bayes_hits_le_obs_Fsig": 0,
+      "ols_sd_quantiles": [
+        0.07423075998185401,
+        0.08977063885109438,
+        0.10328810707125677,
+        0.12023500119262714,
+        0.1337857798789362
+      ],
+      "ols_hits_le_obs_Frms": 0,
+      "bayes_slope_med_quantiles": [
+        0.09955748291639925,
+        0.12837371838018133,
+        0.17903688301943882,
+        0.21664040961092615,
+        0.25102928407391156
+      ],
+      "recovered_a_hat_p16_p50_p84": [
+        3.324643949432911,
+        3.3454235683634854,
+        3.37810071370091
+      ]
+    },
+    "exp_matched_s008": {
+      "scenario_id": 12,
+      "name": "exp_matched_s008",
+      "profile": "exponential",
+      "injected_a0": 3.037091652297351,
+      "injected_b0": 0.13680038367173653,
+      "injected_sigma_parent_dex": 0.08,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2273,
+      "N_selected_min_p16_p50_p84_max": [
+        19.0,
+        21.0,
+        23.0,
+        24.0,
+        26.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 344,
+        "deltaBIC": 435,
+        "absBoundary": 38,
+        "widthBoundary": 1
+      },
+      "bayes_sigma_med_quantiles": [
+        0.0507612914668158,
+        0.06282534339438314,
+        0.07717732493579522,
+        0.09954659260110969,
+        0.11872672348311444
+      ],
+      "bayes_hits_le_obs_Fsig": 4,
+      "ols_sd_quantiles": [
+        0.0644548983270086,
+        0.07452368235559098,
+        0.09216222268510521,
+        0.1122279175424078,
+        0.13308465684456108
+      ],
+      "ols_hits_le_obs_Frms": 8,
+      "bayes_slope_med_quantiles": [
+        0.04389712130624249,
+        0.08838178244563359,
+        0.12686265340240913,
+        0.1665659947830908,
+        0.2052953804848958
+      ],
+      "recovered_a_hat_p16_p50_p84": [
+        3.3196655536055806,
+        3.3434942410846236,
+        3.3673503432247287
+      ]
+    },
+    "exp_matched_s010": {
+      "scenario_id": 13,
+      "name": "exp_matched_s010",
+      "profile": "exponential",
+      "injected_a0": 3.037091652297351,
+      "injected_b0": 0.13680038367173653,
+      "injected_sigma_parent_dex": 0.1,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2282,
+      "N_selected_min_p16_p50_p84_max": [
+        19.0,
+        21.0,
+        23.0,
+        24.0,
+        27.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 428,
+        "broadSNR": 350,
+        "absBoundary": 33,
+        "widthBoundary": 3
+      },
+      "bayes_sigma_med_quantiles": [
+        0.05862409841402787,
+        0.07232491151924854,
+        0.09436839769076902,
+        0.11778178517199861,
+        0.12933323464029645
+      ],
+      "bayes_hits_le_obs_Fsig": 1,
+      "ols_sd_quantiles": [
+        0.07052508223037071,
+        0.08154962677732626,
+        0.10186873871276912,
+        0.12413867337850426,
+        0.13679488872323653
+      ],
+      "ols_hits_le_obs_Frms": 1,
+      "bayes_slope_med_quantiles": [
+        0.04936651642539186,
+        0.08565916772408477,
+        0.12254875184022863,
+        0.17422519711213275,
+        0.20552126280375013
+      ],
+      "recovered_a_hat_p16_p50_p84": [
+        3.3147706223749465,
+        3.3422300133928493,
+        3.3679697567734594
+      ]
+    },
+    "exp_wide_s010": {
+      "scenario_id": 14,
+      "name": "exp_wide_s010",
+      "profile": "exponential",
+      "injected_a0": 3.3521825181113627,
+      "injected_b0": 0.19,
+      "injected_sigma_parent_dex": 0.1,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2057,
+      "N_selected_min_p16_p50_p84_max": [
+        16.0,
+        19.0,
+        21.0,
+        22.0,
+        25.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 413,
+        "broadSNR": 806,
+        "widthBoundary": 10,
+        "absBoundary": 3
+      },
+      "bayes_sigma_med_quantiles": [
+        0.04780772306528576,
+        0.060344086350307045,
+        0.07362877400801557,
+        0.09536670528347128,
+        0.12225230308698032
+      ],
+      "bayes_hits_le_obs_Fsig": 6,
+      "ols_sd_quantiles": [
+        0.060410429731674445,
+        0.06878736233948754,
+        0.08275813220012762,
+        0.103203329376562,
+        0.12995395765649145
+      ],
+      "ols_hits_le_obs_Frms": 12,
+      "bayes_slope_med_quantiles": [
+        0.07814812650977351,
+        0.09921126784561189,
+        0.13711862258619106,
+        0.17837611772863632,
+        0.22699824726527162
+      ],
+      "recovered_a_hat_p16_p50_p84": [
+        3.5171267396034125,
+        3.5381873675375477,
+        3.558004473008551
+      ]
+    },
+    "lor_matched_s005": {
+      "scenario_id": 20,
+      "name": "lor_matched_s005",
+      "profile": "lorentzian",
+      "injected_a0": 3.1680723209636943,
+      "injected_b0": 0.162938392614022,
+      "injected_sigma_parent_dex": 0.05,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2031,
+      "N_selected_min_p16_p50_p84_max": [
+        17.0,
+        18.84,
+        20.0,
+        22.0,
+        24.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 596,
+        "deltaBIC": 612,
+        "absBoundary": 34,
+        "widthBoundary": 2
+      },
+      "bayes_sigma_med_quantiles": [
+        0.03873799274781712,
+        0.05534592792803089,
+        0.0713529971075389,
+        0.09715555610899188,
+        0.11985486234312491
+      ],
+      "bayes_hits_le_obs_Fsig": 14,
+      "ols_sd_quantiles": [
+        0.054447613427097065,
+        0.06613336111796699,
+        0.08645876702096343,
+        0.11091347570827328,
+        0.13590181327601378
+      ],
+      "ols_hits_le_obs_Frms": 17,
+      "bayes_slope_med_quantiles": [
+        0.04478799485041014,
+        0.07962226941554887,
+        0.11259376479610099,
+        0.15159835086073833,
+        0.20123260743276566
+      ],
+      "slope_hits_ge_obs_Fb": 7,
+      "recovered_a_hat_p16_p50_p84": [
+        3.3127894671845275,
+        3.335257172867612,
+        3.362773312258793
+      ]
+    },
+    "lor_matched_s008": {
+      "scenario_id": 21,
+      "name": "lor_matched_s008",
+      "profile": "lorentzian",
+      "injected_a0": 3.1680723209636943,
+      "injected_b0": 0.162938392614022,
+      "injected_sigma_parent_dex": 0.08,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2030,
+      "N_selected_min_p16_p50_p84_max": [
+        15.0,
+        18.0,
+        20.0,
+        22.0,
+        25.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 598,
+        "deltaBIC": 628,
+        "absBoundary": 22,
+        "widthBoundary": 7,
+        "widthLSF": 2
+      },
+      "bayes_sigma_med_quantiles": [
+        0.05560737116535231,
+        0.06901371720351439,
+        0.08756561105991723,
+        0.10883577100321679,
+        0.12578547584654304
+      ],
+      "bayes_hits_le_obs_Fsig": 2,
+      "ols_sd_quantiles": [
+        0.06290798909141841,
+        0.07929049430283192,
+        0.09952428261442815,
+        0.12113036829869991,
+        0.138622383536038
+      ],
+      "ols_hits_le_obs_Frms": 5,
+      "bayes_slope_med_quantiles": [
+        0.026363404867684334,
+        0.06171838381544504,
+        0.10708618698798006,
+        0.13990788395735368,
+        0.2141465096858861
+      ],
+      "slope_hits_ge_obs_Fb": 7,
+      "recovered_a_hat_p16_p50_p84": [
+        3.306603342837998,
+        3.330956704040562,
+        3.3562225689865683
+      ]
+    },
+    "lor_matched_s010": {
+      "scenario_id": 22,
+      "name": "lor_matched_s010",
+      "profile": "lorentzian",
+      "injected_a0": 3.1680723209636943,
+      "injected_b0": 0.162938392614022,
+      "injected_sigma_parent_dex": 0.1,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2035,
+      "N_selected_min_p16_p50_p84_max": [
+        16.0,
+        18.0,
+        20.0,
+        22.0,
+        24.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 611,
+        "deltaBIC": 610,
+        "absBoundary": 17,
+        "widthBoundary": 5,
+        "chi2": 1
+      },
+      "bayes_sigma_med_quantiles": [
+        0.061534178059180974,
+        0.07536893138938451,
+        0.09322066591803355,
+        0.1150753491933138,
+        0.13488505951719718
+      ],
+      "bayes_hits_le_obs_Fsig": 2,
+      "ols_sd_quantiles": [
+        0.0689181339102247,
+        0.08655386461578964,
+        0.10352400880120108,
+        0.13011009272229146,
+        0.1432580730935397
+      ],
+      "ols_hits_le_obs_Frms": 2,
+      "bayes_slope_med_quantiles": [
+        0.0352937034551098,
+        0.07149189510610177,
+        0.11511012120198705,
+        0.16474183923574365,
+        0.19034675825537145
+      ],
+      "slope_hits_ge_obs_Fb": 13,
+      "recovered_a_hat_p16_p50_p84": [
+        3.3158583216110826,
+        3.3378658879932184,
+        3.369729680757862
+      ]
+    },
+    "exp_null_matched_s005": {
+      "scenario_id": 23,
+      "name": "exp_null_matched_s005",
+      "profile": "exponential",
+      "injected_a0": 2.9647454106917346,
+      "injected_b0": 0.0,
+      "injected_sigma_parent_dex": 0.05,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 2315,
+      "N_selected_min_p16_p50_p84_max": [
+        20.0,
+        22.0,
+        23.0,
+        25.0,
+        26.0
+      ],
+      "quality_rejections_of_2900": {
+        "deltaBIC": 377,
+        "broadSNR": 371,
+        "absBoundary": 21,
+        "widthBoundary": 1
+      },
+      "bayes_sigma_med_quantiles": [
+        0.03157165115333902,
+        0.04460473023985381,
+        0.05870154700841872,
+        0.07276535753528028,
+        0.08875493440214817
+      ],
+      "bayes_hits_le_obs_Fsig": 41,
+      "ols_sd_quantiles": [
+        0.050112165551821075,
+        0.06354575425739287,
+        0.07785790287074251,
+        0.09452711530375986,
+        0.10986690459085238
+      ],
+      "ols_hits_le_obs_Frms": 25,
+      "bayes_slope_med_quantiles": [
+        -0.03546039240503296,
+        -0.009956842149411236,
+        0.017873894117163395,
+        0.04209124784488868,
+        0.06873033024488784
+      ],
+      "slope_hits_ge_obs_Fb": 0,
+      "recovered_a_hat_p16_p50_p84": [
+        3.2629280894680592,
+        3.27642094146313,
+        3.292924948399736
+      ]
+    },
+    "lor_null_matched_s005": {
+      "scenario_id": 24,
+      "name": "lor_null_matched_s005",
+      "profile": "lorentzian",
+      "injected_a0": 3.0819031158599204,
+      "injected_b0": 0.0,
+      "injected_sigma_parent_dex": 0.05,
+      "N_replicates": 100,
+      "total_attempts": 2900,
+      "total_selected": 1984,
+      "N_selected_min_p16_p50_p84_max": [
+        16.0,
+        18.0,
+        20.0,
+        22.0,
+        23.0
+      ],
+      "quality_rejections_of_2900": {
+        "broadSNR": 656,
+        "deltaBIC": 630,
+        "absBoundary": 35,
+        "widthBoundary": 7
+      },
+      "bayes_sigma_med_quantiles": [
+        0.04287562412055543,
+        0.053690306373909986,
+        0.0677931449567302,
+        0.09076346771410128,
+        0.11376952955530933
+      ],
+      "bayes_hits_le_obs_Fsig": 18,
+      "ols_sd_quantiles": [
+        0.057524050871860445,
+        0.06953393521213463,
+        0.08269114511014719,
+        0.11189645118591615,
+        0.124770006579038
+      ],
+      "ols_hits_le_obs_Frms": 12,
+      "bayes_slope_med_quantiles": [
+        -0.0245155691201991,
+        -0.005171726169286441,
+        0.015461707003803508,
+        0.04146646703618702,
+        0.06032689550356818
+      ],
+      "slope_hits_ge_obs_Fb": 0,
+      "recovered_a_hat_p16_p50_p84": [
+        3.255883384228982,
+        3.2669866911969714,
+        3.2856907103079056
+      ]
+    }
+  }
+}

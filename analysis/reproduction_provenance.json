@@ -1,0 +1,85 @@
+{
+  "scope": "Original scientific algorithms with public paths and CLI entry points; no likelihood, prior or seed changes. Quality flags follow the Section 2.3 rule that defined the stored selection.",
+  "sources": [
+    {
+      "original": "T2_full_fit_20261111_v1.py",
+      "destination": "lrdwidth/fit_batch.py",
+      "changes": "public paths; omit optional pilot-cache reuse; unchanged likelihood, bounds, seeds and width metrics. Quality flags: bounds reject only the broad width and adopted tau_abs/W_abs (paper Section 2.3, as in data/sample/selection_audit.json); the development script rejected any parameter at a bound. Nonparametric bootstrap: 200 draws (development script: 80), the number used for the stored nonparametric covariances. Optional LSF-scale, fit-window and [S II]-mask settings for the sensitivity runs."
+    },
+    {
+      "original": "data/task10_20261112_v1/scripts/common.py",
+      "destination": "analysis/injection/common.py",
+      "original_sha256": "9d766faab93bd32b8cb23a3f9a2e637a68498ae6a3d79e4fd955d66148b51c00"
+    },
+    {
+      "original": "data/task10_20261112_v1/scripts/measure.py",
+      "destination": "analysis/injection/measure.py",
+      "original_sha256": "c4f5cee2e3e6a8c3730b217bbe7c439b0408676c6d053037fc0fc5b599db6b9b"
+    },
+    {
+      "original": "data/task10_20261112_v1/scripts/W2_finalize_by_definition.py",
+      "destination": "analysis/injection/finalize.py",
+      "original_sha256": "a9384f19ded71b2ae8ccec9d5a889f7e980f52640f5b141dd72d0ba629ce5a66"
+    },
+    {
+      "original": "data/task11a_20261112_v1/hierarchical/model.py",
+      "destination": "analysis/hierarchical/model.py",
+      "original_sha256": "37bfe3aed87dd106f799ea07e8255076f4b086ca3ed20456d1f56ef99e25bc00"
+    },
+    {
+      "original": "data/task11a_20261112_v1/hierarchical/diagnostics_v2.py",
+      "destination": "analysis/hierarchical/diagnostics_v2.py",
+      "original_sha256": "465a3fa528846ec8ba935503649bfbea482cfe4a117c14274f825d8791952b0f"
+    },
+    {
+      "original": "data/task11a_20261112_v1/hierarchical/importance_v2.py",
+      "destination": "analysis/hierarchical/importance_v2.py",
+      "original_sha256": "891fa0453dc24be2e64921fd02cd4eff6839a86929b2d0402683f7dc0783ec5e"
+    },
+    {
+      "original": "data/task11a_20261112_v1/hierarchical/numba_sampler.py",
+      "destination": "analysis/hierarchical/numba_sampler.py",
+      "original_sha256": "6b091d71d60e7e5d0b84cd6d15beaddf863e30b0739e0033b25f52112e80d04a"
+    },
+    {
+      "original": "data/task11a_20261112_v1/hierarchical/robust_fit_v3.py",
+      "destination": "analysis/hierarchical/robust_fit_v3.py",
+      "original_sha256": "5314fdba76a03efc1b226373eb31258bfb8d7e162c45371339f0679985fe5d05"
+    },
+    {
+      "original": "data/task11a_20261112_v1/F_simulations/run_simulations_v3.py",
+      "destination": "analysis/hierarchical/run_simulations.py",
+      "original_sha256": "6ea7f4f10e04df3fe25dbb933fffce9ba2a6f8accfb76c0bb9107e887d21a4de"
+    },
+    {
+      "original": "data/task11a_20261112_v1/A_numeric/a_numeric.py",
+      "destination": "analysis/injection/common.py",
+      "changes": "Final cell-boundary CDF correction replaces superseded midpoint-CDF quantiles."
+    },
+    {
+      "original": "narrow-core refit and frozen-44 fixed-narrow audit scripts (development task directory)",
+      "destination": "analysis/jwst/narrow_core_refit.py, analysis/jwst/frozen_narrow_core_audit.py",
+      "changes": "development paths replaced by repository files: t1_output.json[failed_21_audit] -> data/widths/parent_and_repeat_covariances.json[failed_clean_lrd_21]; S4_QSO1_fit.json -> data/qso1/qso1_fit.json; working/<file_id>.json Halpha LSF x1 main and null BIC -> data/linefits/uniform_linefits.tsv and data/jwst/injection_parameters.json; spectra under LRDWIDTH_SPECTRA with SHA-256 checks; fitting unchanged"
+    },
+    {
+      "original": "49-template parent injection script (development task directory)",
+      "destination": "analysis/injection/parent49_recovery.py",
+      "changes": "M1_frozen_sources.json and working/ templates -> data/jwst/injection_parameters.json via analysis/injection/templates.py (spectrum and error-array hashes checked); checkpoints under --work; seeds, fits and criteria unchanged"
+    },
+    {
+      "original": "(new)",
+      "destination": "analysis/sample/make_selection_audit.py",
+      "changes": "rebuilds data/sample/selection_audit.json byte for byte from data/linefits/uniform_linefits.tsv"
+    },
+    {
+      "original": "(new)",
+      "destination": "analysis/jwst/make_lsf_half_inputs.py",
+      "changes": "rebuilds data/widths/regression_inputs_lsf_half.json byte for byte from data/widths/source_fits_lsf_half/"
+    },
+    {
+      "original": "scripts/fetch_calibration.sh (msaexp main branch)",
+      "destination": "scripts/fetch_calibration.sh",
+      "changes": "pinned to msaexp commit 9d342cd85f2dae2435f14c5201733a5e98d8d9a5, whose tables match the SHA-256 in third_party/external_data.tsv; downloads are verified"
+    }
+  ]
+}

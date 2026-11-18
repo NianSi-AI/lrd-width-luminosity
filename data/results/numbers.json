@@ -1,0 +1,3334 @@
+{
+ "NLRD": {
+  "value": "29",
+  "in_manuscript": true
+ },
+ "NOther": {
+  "value": "15",
+  "in_manuscript": true
+ },
+ "NFrozen": {
+  "value": "44",
+  "in_manuscript": true
+ },
+ "NSources": {
+  "value": "115",
+  "in_manuscript": true
+ },
+ "NSpectra": {
+  "value": "204",
+  "in_manuscript": true
+ },
+ "NSpecHa": {
+  "value": "177",
+  "in_manuscript": true
+ },
+ "NProg": {
+  "value": "eight",
+  "in_manuscript": false
+ },
+ "NEGS": {
+  "value": "30",
+  "in_manuscript": false
+ },
+ "NUDS": {
+  "value": "14",
+  "in_manuscript": false
+ },
+ "NAbsLRD": {
+  "value": "five",
+  "in_manuscript": true
+ },
+ "NAbsOther": {
+  "value": "four",
+  "in_manuscript": true
+ },
+ "NLabTLRD": {
+  "value": "13",
+  "in_manuscript": false
+ },
+ "NLabKLRD": {
+  "value": "10",
+  "in_manuscript": false
+ },
+ "NLabHLRD": {
+  "value": "six",
+  "in_manuscript": false
+ },
+ "cutSN": {
+  "value": "5",
+  "in_manuscript": true
+ },
+ "cutSNthree": {
+  "value": "3",
+  "in_manuscript": true
+ },
+ "cutBIC": {
+  "value": "6",
+  "in_manuscript": true
+ },
+ "cutChi": {
+  "value": "2",
+  "in_manuscript": true
+ },
+ "HvidingCut": {
+  "value": "1000",
+  "in_manuscript": true
+ },
+ "wnarDef": {
+  "value": "150",
+  "in_manuscript": true
+ },
+ "passShift": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "rOutRph": {
+  "value": "100",
+  "in_manuscript": true
+ },
+ "matchRadius": {
+  "value": "0\\farcs5",
+  "in_manuscript": true
+ },
+ "zLRDmin": {
+  "value": "3.36",
+  "in_manuscript": true
+ },
+ "zLRDmax": {
+  "value": "7.15",
+  "in_manuscript": true
+ },
+ "zLRDmed": {
+  "value": "5.45",
+  "in_manuscript": false
+ },
+ "SNLRDmed": {
+  "value": "13.7",
+  "in_manuscript": true
+ },
+ "SNOthmed": {
+  "value": "8.2",
+  "in_manuscript": true
+ },
+ "zOthmin": {
+  "value": "3.60",
+  "in_manuscript": true
+ },
+ "zOthmax": {
+  "value": "6.04",
+  "in_manuscript": true
+ },
+ "LLRDmin": {
+  "value": "41.82",
+  "in_manuscript": true
+ },
+ "LLRDmed": {
+  "value": "42.34",
+  "in_manuscript": true
+ },
+ "LLRDmax": {
+  "value": "43.55",
+  "in_manuscript": true
+ },
+ "WLRDmin": {
+  "value": "945",
+  "in_manuscript": true
+ },
+ "WLRDmax": {
+  "value": "3185",
+  "in_manuscript": true
+ },
+ "WLRDmed": {
+  "value": "1777",
+  "in_manuscript": true
+ },
+ "NBICwing": {
+  "value": "25",
+  "in_manuscript": true
+ },
+ "NBICsix": {
+  "value": "16",
+  "in_manuscript": true
+ },
+ "NBIChiSN": {
+  "value": "nine",
+  "in_manuscript": true
+ },
+ "NBICsixOth": {
+  "value": "four",
+  "in_manuscript": true
+ },
+ "NCoreWing": {
+  "value": "seven",
+  "in_manuscript": true
+ },
+ "Fsig": {
+  "value": "0.054",
+  "in_manuscript": true
+ },
+ "Fsiglo": {
+  "value": "0.038",
+  "in_manuscript": true
+ },
+ "Fsighi": {
+  "value": "0.080",
+  "in_manuscript": true
+ },
+ "FsigUp": {
+  "value": "0.075",
+  "in_manuscript": true
+ },
+ "FsigUpTwo": {
+  "value": "0.07",
+  "in_manuscript": false
+ },
+ "Fb": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "Fblo": {
+  "value": "0.12",
+  "in_manuscript": true
+ },
+ "Fbhi": {
+  "value": "0.22",
+  "in_manuscript": true
+ },
+ "Fa": {
+  "value": "3.346",
+  "in_manuscript": true
+ },
+ "FWnorm": {
+  "value": "2220",
+  "in_manuscript": false
+ },
+ "Fsigo": {
+  "value": "0.154",
+  "in_manuscript": true
+ },
+ "Fsigolo": {
+  "value": "0.104",
+  "in_manuscript": true
+ },
+ "Fsigohi": {
+  "value": "0.252",
+  "in_manuscript": true
+ },
+ "Fdsig": {
+  "value": "\\ensuremath{-}0.099",
+  "in_manuscript": true
+ },
+ "Fdsiglo": {
+  "value": "\\ensuremath{-}0.199",
+  "in_manuscript": false
+ },
+ "Fdsighi": {
+  "value": "\\ensuremath{-}0.043",
+  "in_manuscript": false
+ },
+ "Frms": {
+  "value": "0.067",
+  "in_manuscript": true
+ },
+ "Frmso": {
+  "value": "0.142",
+  "in_manuscript": false
+ },
+ "NNoTop": {
+  "value": "26",
+  "in_manuscript": true
+ },
+ "FbNoTop": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "FbNoToplo": {
+  "value": "0.01",
+  "in_manuscript": true
+ },
+ "FbNoTophi": {
+  "value": "0.19",
+  "in_manuscript": true
+ },
+ "FsigNoTop": {
+  "value": "0.040",
+  "in_manuscript": true
+ },
+ "FsigNoToplo": {
+  "value": "0.020",
+  "in_manuscript": true
+ },
+ "FsigNoTophi": {
+  "value": "0.069",
+  "in_manuscript": true
+ },
+ "NBright": {
+  "value": "three",
+  "in_manuscript": true
+ },
+ "LBright": {
+  "value": "43.5",
+  "in_manuscript": true
+ },
+ "LRestMax": {
+  "value": "42.9",
+  "in_manuscript": true
+ },
+ "NNoAbs": {
+  "value": "24",
+  "in_manuscript": true
+ },
+ "FsigNoAbs": {
+  "value": "0.043",
+  "in_manuscript": true
+ },
+ "FsigNoAbslo": {
+  "value": "0.022",
+  "in_manuscript": true
+ },
+ "FsigNoAbshi": {
+  "value": "0.074",
+  "in_manuscript": true
+ },
+ "FbNoAbs": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "FbNoAbslo": {
+  "value": "0.02",
+  "in_manuscript": true
+ },
+ "FbNoAbshi": {
+  "value": "0.22",
+  "in_manuscript": true
+ },
+ "FdsigNoAbs": {
+  "value": "\\ensuremath{-}0.111",
+  "in_manuscript": true
+ },
+ "FdsigNoAbslo": {
+  "value": "\\ensuremath{-}0.211",
+  "in_manuscript": true
+ },
+ "FdsigNoAbshi": {
+  "value": "\\ensuremath{-}0.051",
+  "in_manuscript": true
+ },
+ "FsigoDrop": {
+  "value": "0.097",
+  "in_manuscript": false
+ },
+ "FsigoDroplo": {
+  "value": "0.061",
+  "in_manuscript": false
+ },
+ "FsigoDrophi": {
+  "value": "0.172",
+  "in_manuscript": false
+ },
+ "FdsigDrop": {
+  "value": "\\ensuremath{-}0.043",
+  "in_manuscript": false
+ },
+ "FdsigDroplo": {
+  "value": "\\ensuremath{-}0.119",
+  "in_manuscript": true
+ },
+ "FdsigDrophi": {
+  "value": "0.002",
+  "in_manuscript": true
+ },
+ "WOutA": {
+  "value": "3612",
+  "in_manuscript": true
+ },
+ "WOutB": {
+  "value": "2915",
+  "in_manuscript": true
+ },
+ "FsigLsf": {
+  "value": "0.069",
+  "in_manuscript": true
+ },
+ "FsigLsflo": {
+  "value": "0.049",
+  "in_manuscript": false
+ },
+ "FsigLsfhi": {
+  "value": "0.100",
+  "in_manuscript": false
+ },
+ "FsigoLsf": {
+  "value": "0.157",
+  "in_manuscript": false
+ },
+ "FsigoLsflo": {
+  "value": "0.106",
+  "in_manuscript": false
+ },
+ "FsigoLsfhi": {
+  "value": "0.258",
+  "in_manuscript": false
+ },
+ "FdsigLsf": {
+  "value": "\\ensuremath{-}0.088",
+  "in_manuscript": false
+ },
+ "FdsigLsflo": {
+  "value": "\\ensuremath{-}0.190",
+  "in_manuscript": false
+ },
+ "FdsigLsfhi": {
+  "value": "\\ensuremath{-}0.028",
+  "in_manuscript": false
+ },
+ "FsigLsfUp": {
+  "value": "0.094",
+  "in_manuscript": true
+ },
+ "NNarBoundLRD": {
+  "value": "two",
+  "in_manuscript": true
+ },
+ "WNarBoundBefore": {
+  "value": "3150",
+  "in_manuscript": true
+ },
+ "WNarBoundAfter": {
+  "value": "2400",
+  "in_manuscript": true
+ },
+ "NLRDNarCut": {
+  "value": "27",
+  "in_manuscript": true
+ },
+ "FbNarCut": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "FbNarCutlo": {
+  "value": "0.05",
+  "in_manuscript": true
+ },
+ "FbNarCuthi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "FsigNarCut": {
+  "value": "0.040",
+  "in_manuscript": true
+ },
+ "FsigNarCutlo": {
+  "value": "0.023",
+  "in_manuscript": true
+ },
+ "FsigNarCuthi": {
+  "value": "0.067",
+  "in_manuscript": true
+ },
+ "FsigNarCutUp": {
+  "value": "0.062",
+  "in_manuscript": true
+ },
+ "FdsigNarCut": {
+  "value": "\\ensuremath{-}0.113",
+  "in_manuscript": true
+ },
+ "FdsigNarCutlo": {
+  "value": "\\ensuremath{-}0.213",
+  "in_manuscript": true
+ },
+ "FdsigNarCuthi": {
+  "value": "\\ensuremath{-}0.057",
+  "in_manuscript": true
+ },
+ "FbNarFix": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "FbNarFixlo": {
+  "value": "0.04",
+  "in_manuscript": true
+ },
+ "FbNarFixhi": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "FsigNarFix": {
+  "value": "0.046",
+  "in_manuscript": true
+ },
+ "FsigNarFixlo": {
+  "value": "0.030",
+  "in_manuscript": true
+ },
+ "FsigNarFixhi": {
+  "value": "0.069",
+  "in_manuscript": true
+ },
+ "FsigNarFixUp": {
+  "value": "0.064",
+  "in_manuscript": true
+ },
+ "FsigoNarFix": {
+  "value": "0.134",
+  "in_manuscript": true
+ },
+ "FsigoNarFixlo": {
+  "value": "0.090",
+  "in_manuscript": true
+ },
+ "FsigoNarFixhi": {
+  "value": "0.221",
+  "in_manuscript": true
+ },
+ "FdsigNarFix": {
+  "value": "\\ensuremath{-}0.088",
+  "in_manuscript": true
+ },
+ "FdsigNarFixlo": {
+  "value": "\\ensuremath{-}0.176",
+  "in_manuscript": true
+ },
+ "FdsigNarFixhi": {
+  "value": "\\ensuremath{-}0.038",
+  "in_manuscript": true
+ },
+ "FbNarOIII": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "FbNarOIIIlo": {
+  "value": "0.05",
+  "in_manuscript": true
+ },
+ "FbNarOIIIhi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "FsigNarOIII": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIlo": {
+  "value": "0.052",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIhi": {
+  "value": "0.102",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIUp": {
+  "value": "0.097",
+  "in_manuscript": true
+ },
+ "FsigoNarOIII": {
+  "value": "0.150",
+  "in_manuscript": true
+ },
+ "FsigoNarOIIIlo": {
+  "value": "0.099",
+  "in_manuscript": true
+ },
+ "FsigoNarOIIIhi": {
+  "value": "0.248",
+  "in_manuscript": true
+ },
+ "FdsigNarOIII": {
+  "value": "\\ensuremath{-}0.077",
+  "in_manuscript": true
+ },
+ "FdsigNarOIIIlo": {
+  "value": "\\ensuremath{-}0.178",
+  "in_manuscript": true
+ },
+ "FdsigNarOIIIhi": {
+  "value": "\\ensuremath{-}0.018",
+  "in_manuscript": true
+ },
+ "FsigNarMin": {
+  "value": "0.070",
+  "in_manuscript": true
+ },
+ "FsigNarMinUp": {
+  "value": "0.094",
+  "in_manuscript": true
+ },
+ "NOIIIUnres": {
+  "value": "21",
+  "in_manuscript": true
+ },
+ "FsigCons": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "narCeilLoosenPct": {
+  "value": "35",
+  "in_manuscript": true
+ },
+ "FsigOIIIqc": {
+  "value": "0.075",
+  "in_manuscript": true
+ },
+ "FsigOIIIqcUp": {
+  "value": "0.102",
+  "in_manuscript": true
+ },
+ "NOIIIqc": {
+  "value": "27",
+  "in_manuscript": true
+ },
+ "FsigWinWide": {
+  "value": "0.083",
+  "in_manuscript": true
+ },
+ "FsigWinWidelo": {
+  "value": "0.059",
+  "in_manuscript": true
+ },
+ "FsigWinWidehi": {
+  "value": "0.119",
+  "in_manuscript": true
+ },
+ "winWider": {
+  "value": "8000",
+  "in_manuscript": true
+ },
+ "NNarThirty": {
+  "value": "17",
+  "in_manuscript": true
+ },
+ "NOIIIMeas": {
+  "value": "23",
+  "in_manuscript": true
+ },
+ "dWNarRms": {
+  "value": "0.06",
+  "in_manuscript": true
+ },
+ "dWNarMax": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "NFailSNthreeWeak": {
+  "value": "seven",
+  "in_manuscript": true
+ },
+ "FsigConst": {
+  "value": "0.035",
+  "in_manuscript": true
+ },
+ "FsigConstlo": {
+  "value": "0.015",
+  "in_manuscript": true
+ },
+ "FsigConsthi": {
+  "value": "0.067",
+  "in_manuscript": true
+ },
+ "WConstMed": {
+  "value": "1760",
+  "in_manuscript": true
+ },
+ "LConstMin": {
+  "value": "41.8",
+  "in_manuscript": true
+ },
+ "LConstMax": {
+  "value": "42.9",
+  "in_manuscript": true
+ },
+ "bpJAdrop": {
+  "value": "0.02",
+  "in_manuscript": true
+ },
+ "bpJAdroplo": {
+  "value": "\\ensuremath{-}0.16",
+  "in_manuscript": true
+ },
+ "bpJAdrophi": {
+  "value": "0.22",
+  "in_manuscript": true
+ },
+ "bpJBdrop": {
+  "value": "\\ensuremath{-}0.04",
+  "in_manuscript": true
+ },
+ "bpJBdroplo": {
+  "value": "\\ensuremath{-}0.33",
+  "in_manuscript": true
+ },
+ "bpJBdrophi": {
+  "value": "0.24",
+  "in_manuscript": true
+ },
+ "dLphOut": {
+  "value": "0.5",
+  "in_manuscript": true
+ },
+ "dsigInflLo": {
+  "value": "\\ensuremath{-}0.12",
+  "in_manuscript": true
+ },
+ "dsigInflHi": {
+  "value": "\\ensuremath{-}0.08",
+  "in_manuscript": true
+ },
+ "inflLo": {
+  "value": "1.5",
+  "in_manuscript": true
+ },
+ "inflHi": {
+  "value": "2.8",
+  "in_manuscript": true
+ },
+ "inflFlrLo": {
+  "value": "0.044",
+  "in_manuscript": true
+ },
+ "inflFlrHi": {
+  "value": "0.08",
+  "in_manuscript": true
+ },
+ "NGHobj": {
+  "value": "seven",
+  "in_manuscript": true
+ },
+ "dWGH": {
+  "value": "\\ensuremath{-}0.06",
+  "in_manuscript": true
+ },
+ "offGH": {
+  "value": "0.054",
+  "in_manuscript": true
+ },
+ "offGHerr": {
+  "value": "0.022",
+  "in_manuscript": true
+ },
+ "dWPrim": {
+  "value": "\\ensuremath{-}0.056",
+  "in_manuscript": true
+ },
+ "NGM": {
+  "value": "22",
+  "in_manuscript": true
+ },
+ "FsigGM": {
+  "value": "0.048",
+  "in_manuscript": true
+ },
+ "FsigGMlo": {
+  "value": "0.030",
+  "in_manuscript": false
+ },
+ "FsigGMhi": {
+  "value": "0.078",
+  "in_manuscript": false
+ },
+ "FsigGMUp": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "FsigSwap": {
+  "value": "0.052",
+  "in_manuscript": true
+ },
+ "FsigSwaplo": {
+  "value": "0.036",
+  "in_manuscript": false
+ },
+ "FsigSwaphi": {
+  "value": "0.077",
+  "in_manuscript": false
+ },
+ "FsigSwapUp": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "FsigLowSNUp": {
+  "value": "0.083",
+  "in_manuscript": true
+ },
+ "SsgNoChi": {
+  "value": "0.126",
+  "in_manuscript": true
+ },
+ "SsgNoChilo": {
+  "value": "0.116",
+  "in_manuscript": false
+ },
+ "SsgNoChihi": {
+  "value": "0.138",
+  "in_manuscript": false
+ },
+ "NSsgChi": {
+  "value": "31",
+  "in_manuscript": true
+ },
+ "WSdssSNfail": {
+  "value": "7090",
+  "in_manuscript": true
+ },
+ "NSdssCap": {
+  "value": "four",
+  "in_manuscript": false
+ },
+ "shellSlopeLo": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "shellSlopeHi": {
+  "value": "0.39",
+  "in_manuscript": true
+ },
+ "shellPureLo": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "shellConvHi": {
+  "value": "0.37",
+  "in_manuscript": true
+ },
+ "sepPair": {
+  "value": "35",
+  "in_manuscript": true
+ },
+ "QSOdBICfree": {
+  "value": "\\ensuremath{-}2.6",
+  "in_manuscript": true
+ },
+ "reMultUp": {
+  "value": "0.062",
+  "in_manuscript": true
+ },
+ "reMultScale": {
+  "value": "2.0",
+  "in_manuscript": true
+ },
+ "reAddFloor": {
+  "value": "0.053",
+  "in_manuscript": true
+ },
+ "NParentClean": {
+  "value": "50",
+  "in_manuscript": true
+ },
+ "NParentInBand": {
+  "value": "49",
+  "in_manuscript": true
+ },
+ "NParentFail": {
+  "value": "20",
+  "in_manuscript": true
+ },
+ "NFailSNthree": {
+  "value": "nine",
+  "in_manuscript": true
+ },
+ "NLRDSNthree": {
+  "value": "38",
+  "in_manuscript": true
+ },
+ "FbSNthree": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "FbSNthreelo": {
+  "value": "0.12",
+  "in_manuscript": true
+ },
+ "FbSNthreehi": {
+  "value": "0.22",
+  "in_manuscript": true
+ },
+ "FsigSNthree": {
+  "value": "0.053",
+  "in_manuscript": true
+ },
+ "FsigSNthreelo": {
+  "value": "0.037",
+  "in_manuscript": true
+ },
+ "FsigSNthreehi": {
+  "value": "0.077",
+  "in_manuscript": true
+ },
+ "FsigSNthreeUp": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "NFailPosUDS": {
+  "value": "three",
+  "in_manuscript": true
+ },
+ "resFailPosLo": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "resFailPosHi": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "failPosSNlo": {
+  "value": "4.4",
+  "in_manuscript": true
+ },
+ "failPosSNhi": {
+  "value": "5.3",
+  "in_manuscript": true
+ },
+ "NPairsBest": {
+  "value": "14",
+  "in_manuscript": true
+ },
+ "NPairsAll": {
+  "value": "22",
+  "in_manuscript": true
+ },
+ "NPairsSameG": {
+  "value": "seven",
+  "in_manuscript": true
+ },
+ "NPairsCrossG": {
+  "value": "15",
+  "in_manuscript": false
+ },
+ "rmsDupBest": {
+  "value": "2.81",
+  "in_manuscript": true
+ },
+ "rmsDupAll": {
+  "value": "2.51",
+  "in_manuscript": true
+ },
+ "rmsDupSameG": {
+  "value": "1.77",
+  "in_manuscript": true
+ },
+ "flrDupBest": {
+  "value": "0.070",
+  "in_manuscript": false
+ },
+ "flrDupAll": {
+  "value": "0.060",
+  "in_manuscript": true
+ },
+ "flrDupSameG": {
+  "value": "0.044",
+  "in_manuscript": true
+ },
+ "FsigFlrSame": {
+  "value": "0.027",
+  "in_manuscript": true
+ },
+ "FsigFlrSamelo": {
+  "value": "0.002",
+  "in_manuscript": false
+ },
+ "FsigFlrSamehi": {
+  "value": "0.063",
+  "in_manuscript": false
+ },
+ "FsigFlrSameUp": {
+  "value": "0.057",
+  "in_manuscript": true
+ },
+ "FsigoFlrSame": {
+  "value": "0.147",
+  "in_manuscript": false
+ },
+ "FsigoFlrSamelo": {
+  "value": "0.093",
+  "in_manuscript": false
+ },
+ "FsigoFlrSamehi": {
+  "value": "0.248",
+  "in_manuscript": false
+ },
+ "FdsigFlrSame": {
+  "value": "\\ensuremath{-}0.120",
+  "in_manuscript": false
+ },
+ "FdsigFlrSamelo": {
+  "value": "\\ensuremath{-}0.224",
+  "in_manuscript": false
+ },
+ "FdsigFlrSamehi": {
+  "value": "\\ensuremath{-}0.054",
+  "in_manuscript": false
+ },
+ "FsigFlrAll": {
+  "value": "0.018",
+  "in_manuscript": true
+ },
+ "FsigFlrAlllo": {
+  "value": "0.001",
+  "in_manuscript": false
+ },
+ "FsigFlrAllhi": {
+  "value": "0.056",
+  "in_manuscript": false
+ },
+ "FsigFlrAllUp": {
+  "value": "0.049",
+  "in_manuscript": true
+ },
+ "FsigoFlrAll": {
+  "value": "0.140",
+  "in_manuscript": false
+ },
+ "FsigoFlrAlllo": {
+  "value": "0.083",
+  "in_manuscript": false
+ },
+ "FsigoFlrAllhi": {
+  "value": "0.243",
+  "in_manuscript": false
+ },
+ "FdsigFlrAll": {
+  "value": "\\ensuremath{-}0.121",
+  "in_manuscript": false
+ },
+ "FdsigFlrAlllo": {
+  "value": "\\ensuremath{-}0.226",
+  "in_manuscript": false
+ },
+ "FdsigFlrAllhi": {
+  "value": "\\ensuremath{-}0.053",
+  "in_manuscript": false
+ },
+ "FdsigFlrTwo": {
+  "value": "\\ensuremath{-}0.12",
+  "in_manuscript": false
+ },
+ "NSNfif": {
+  "value": "12",
+  "in_manuscript": true
+ },
+ "rmsSNfif": {
+  "value": "0.056",
+  "in_manuscript": true
+ },
+ "NPairsBigObj": {
+  "value": "10",
+  "in_manuscript": true
+ },
+ "flrSliceUpLo": {
+  "value": "0.049",
+  "in_manuscript": true
+ },
+ "flrSliceUpHi": {
+  "value": "0.051",
+  "in_manuscript": true
+ },
+ "NSpecPassLRD": {
+  "value": "43",
+  "in_manuscript": true
+ },
+ "reAllUp": {
+  "value": "0.049",
+  "in_manuscript": true
+ },
+ "reDropBigUp": {
+  "value": "0.057",
+  "in_manuscript": true
+ },
+ "DsigWf": {
+  "value": "0.051",
+  "in_manuscript": false
+ },
+ "DsigWflo": {
+  "value": "0.037",
+  "in_manuscript": false
+ },
+ "DsigWfhi": {
+  "value": "0.073",
+  "in_manuscript": false
+ },
+ "DsigoWf": {
+  "value": "0.147",
+  "in_manuscript": false
+ },
+ "DsigoWflo": {
+  "value": "0.101",
+  "in_manuscript": false
+ },
+ "DsigoWfhi": {
+  "value": "0.238",
+  "in_manuscript": false
+ },
+ "DdsigWf": {
+  "value": "\\ensuremath{-}0.095",
+  "in_manuscript": false
+ },
+ "DdsigWflo": {
+  "value": "\\ensuremath{-}0.187",
+  "in_manuscript": false
+ },
+ "DdsigWfhi": {
+  "value": "\\ensuremath{-}0.045",
+  "in_manuscript": false
+ },
+ "DbWf": {
+  "value": "0.13",
+  "in_manuscript": false
+ },
+ "DsigEx": {
+  "value": "0.051",
+  "in_manuscript": false
+ },
+ "DsigExlo": {
+  "value": "0.029",
+  "in_manuscript": false
+ },
+ "DsigExhi": {
+  "value": "0.085",
+  "in_manuscript": false
+ },
+ "DsigoEx": {
+  "value": "0.169",
+  "in_manuscript": false
+ },
+ "DsigoExlo": {
+  "value": "0.102",
+  "in_manuscript": false
+ },
+ "DsigoExhi": {
+  "value": "0.296",
+  "in_manuscript": false
+ },
+ "DdsigEx": {
+  "value": "\\ensuremath{-}0.117",
+  "in_manuscript": false
+ },
+ "DdsigExlo": {
+  "value": "\\ensuremath{-}0.245",
+  "in_manuscript": false
+ },
+ "DdsigExhi": {
+  "value": "\\ensuremath{-}0.042",
+  "in_manuscript": false
+ },
+ "DbEx": {
+  "value": "0.14",
+  "in_manuscript": false
+ },
+ "DsigLo": {
+  "value": "0.062",
+  "in_manuscript": false
+ },
+ "DsigLolo": {
+  "value": "0.039",
+  "in_manuscript": false
+ },
+ "DsigLohi": {
+  "value": "0.099",
+  "in_manuscript": false
+ },
+ "DsigoLo": {
+  "value": "0.271",
+  "in_manuscript": false
+ },
+ "DsigoLolo": {
+  "value": "0.173",
+  "in_manuscript": false
+ },
+ "DsigoLohi": {
+  "value": "0.456",
+  "in_manuscript": false
+ },
+ "DdsigLo": {
+  "value": "\\ensuremath{-}0.207",
+  "in_manuscript": false
+ },
+ "DdsigLolo": {
+  "value": "\\ensuremath{-}0.394",
+  "in_manuscript": false
+ },
+ "DdsigLohi": {
+  "value": "\\ensuremath{-}0.104",
+  "in_manuscript": false
+ },
+ "DbLo": {
+  "value": "0.16",
+  "in_manuscript": false
+ },
+ "DsigNp": {
+  "value": "0.076",
+  "in_manuscript": false
+ },
+ "DsigNplo": {
+  "value": "0.056",
+  "in_manuscript": false
+ },
+ "DsigNphi": {
+  "value": "0.109",
+  "in_manuscript": false
+ },
+ "DsigoNp": {
+  "value": "0.155",
+  "in_manuscript": false
+ },
+ "DsigoNplo": {
+  "value": "0.106",
+  "in_manuscript": false
+ },
+ "DsigoNphi": {
+  "value": "0.250",
+  "in_manuscript": false
+ },
+ "DdsigNp": {
+  "value": "\\ensuremath{-}0.078",
+  "in_manuscript": false
+ },
+ "DdsigNplo": {
+  "value": "\\ensuremath{-}0.175",
+  "in_manuscript": false
+ },
+ "DdsigNphi": {
+  "value": "\\ensuremath{-}0.020",
+  "in_manuscript": false
+ },
+ "DbNp": {
+  "value": "0.15",
+  "in_manuscript": false
+ },
+ "DsigTg": {
+  "value": "0.118",
+  "in_manuscript": true
+ },
+ "DsigTglo": {
+  "value": "0.082",
+  "in_manuscript": true
+ },
+ "DsigTghi": {
+  "value": "0.176",
+  "in_manuscript": true
+ },
+ "DsigoTg": {
+  "value": "0.214",
+  "in_manuscript": false
+ },
+ "DsigoTglo": {
+  "value": "0.123",
+  "in_manuscript": false
+ },
+ "DsigoTghi": {
+  "value": "0.402",
+  "in_manuscript": false
+ },
+ "DdsigTg": {
+  "value": "\\ensuremath{-}0.095",
+  "in_manuscript": false
+ },
+ "DdsigTglo": {
+  "value": "\\ensuremath{-}0.285",
+  "in_manuscript": false
+ },
+ "DdsigTghi": {
+  "value": "0.013",
+  "in_manuscript": false
+ },
+ "DbTg": {
+  "value": "0.09",
+  "in_manuscript": false
+ },
+ "sigFiveLo": {
+  "value": "0.051",
+  "in_manuscript": true
+ },
+ "sigFiveHi": {
+  "value": "0.076",
+  "in_manuscript": true
+ },
+ "simInj": {
+  "value": "0.05",
+  "in_manuscript": true
+ },
+ "simNull": {
+  "value": "0.15",
+  "in_manuscript": false
+ },
+ "NReal": {
+  "value": "100",
+  "in_manuscript": true
+ },
+ "recGG": {
+  "value": "0.052",
+  "in_manuscript": true
+ },
+ "recEG": {
+  "value": "0.055",
+  "in_manuscript": true
+ },
+ "recGW": {
+  "value": "0.056",
+  "in_manuscript": false
+ },
+ "recEW": {
+  "value": "0.057",
+  "in_manuscript": false
+ },
+ "recGL": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "recGE": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "nullGG": {
+  "value": "0.145",
+  "in_manuscript": false
+ },
+ "nullEG": {
+  "value": "0.098",
+  "in_manuscript": false
+ },
+ "nullHits": {
+  "value": "none",
+  "in_manuscript": false
+ },
+ "nullDen": {
+  "value": "200",
+  "in_manuscript": true
+ },
+ "simA": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "simB": {
+  "value": "0.08",
+  "in_manuscript": false
+ },
+ "recEightG": {
+  "value": "0.083",
+  "in_manuscript": false
+ },
+ "hitEightG": {
+  "value": "three",
+  "in_manuscript": false
+ },
+ "recEightE": {
+  "value": "0.077",
+  "in_manuscript": false
+ },
+ "hitEightE": {
+  "value": "four",
+  "in_manuscript": false
+ },
+ "recTenG": {
+  "value": "0.102",
+  "in_manuscript": false
+ },
+ "hitTenG": {
+  "value": "none",
+  "in_manuscript": false
+ },
+ "recTenE": {
+  "value": "0.094",
+  "in_manuscript": true
+ },
+ "hitTenE": {
+  "value": "one",
+  "in_manuscript": false
+ },
+ "hitTenTot": {
+  "value": "one",
+  "in_manuscript": false
+ },
+ "wideInjShift": {
+  "value": "0.32",
+  "in_manuscript": true
+ },
+ "recTenWide": {
+  "value": "0.074",
+  "in_manuscript": true
+ },
+ "hitTenWide": {
+  "value": "six",
+  "in_manuscript": true
+ },
+ "wideSurvShift": {
+  "value": "0.19",
+  "in_manuscript": true
+ },
+ "recParFiveG": {
+  "value": "0.050",
+  "in_manuscript": true
+ },
+ "recParFiveGlo": {
+  "value": "0.042",
+  "in_manuscript": true
+ },
+ "recParFiveGhi": {
+  "value": "0.060",
+  "in_manuscript": true
+ },
+ "bParFiveG": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "bParFiveGlo": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "bParFiveGhi": {
+  "value": "0.19",
+  "in_manuscript": true
+ },
+ "hitParFiveGnum": {
+  "value": "62/100",
+  "in_manuscript": true
+ },
+ "recParFiveE": {
+  "value": "0.062",
+  "in_manuscript": true
+ },
+ "recParFiveElo": {
+  "value": "0.050",
+  "in_manuscript": true
+ },
+ "recParFiveEhi": {
+  "value": "0.073",
+  "in_manuscript": true
+ },
+ "bParFiveE": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "bParFiveElo": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "bParFiveEhi": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "hitParFiveEnum": {
+  "value": "27/100",
+  "in_manuscript": true
+ },
+ "recParTenG": {
+  "value": "0.101",
+  "in_manuscript": true
+ },
+ "recParTenGlo": {
+  "value": "0.085",
+  "in_manuscript": true
+ },
+ "recParTenGhi": {
+  "value": "0.120",
+  "in_manuscript": true
+ },
+ "bParTenG": {
+  "value": "0.18",
+  "in_manuscript": true
+ },
+ "bParTenGlo": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "bParTenGhi": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "hitParTenGnum": {
+  "value": "0/100",
+  "in_manuscript": true
+ },
+ "hitParTenG": {
+  "value": "none",
+  "in_manuscript": true
+ },
+ "recParTenE": {
+  "value": "0.092",
+  "in_manuscript": true
+ },
+ "recParTenElo": {
+  "value": "0.074",
+  "in_manuscript": true
+ },
+ "recParTenEhi": {
+  "value": "0.114",
+  "in_manuscript": true
+ },
+ "bParTenE": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "bParTenElo": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "bParTenEhi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "hitParTenEnum": {
+  "value": "2/100",
+  "in_manuscript": true
+ },
+ "hitParTenE": {
+  "value": "two",
+  "in_manuscript": true
+ },
+ "passRatLo": {
+  "value": "0.99",
+  "in_manuscript": true
+ },
+ "passRatHi": {
+  "value": "1.04",
+  "in_manuscript": true
+ },
+ "NParSelG": {
+  "value": "29",
+  "in_manuscript": true
+ },
+ "NParSelGlo": {
+  "value": "28",
+  "in_manuscript": true
+ },
+ "NParSelGhi": {
+  "value": "31",
+  "in_manuscript": true
+ },
+ "NParSelE": {
+  "value": "27",
+  "in_manuscript": true
+ },
+ "NParSelElo": {
+  "value": "25",
+  "in_manuscript": true
+ },
+ "NParSelEhi": {
+  "value": "29",
+  "in_manuscript": true
+ },
+ "hitParOwnTenGnum": {
+  "value": "0/100",
+  "in_manuscript": true
+ },
+ "hitParOwnTenEnum": {
+  "value": "1/100",
+  "in_manuscript": true
+ },
+ "NX": {
+  "value": "227",
+  "in_manuscript": true
+ },
+ "NXLRD": {
+  "value": "48",
+  "in_manuscript": true
+ },
+ "NXCtrl": {
+  "value": "97",
+  "in_manuscript": true
+ },
+ "NXOvRec": {
+  "value": "29",
+  "in_manuscript": true
+ },
+ "NXOvSrc": {
+  "value": "25",
+  "in_manuscript": false
+ },
+ "NXLabDiff": {
+  "value": "six",
+  "in_manuscript": false
+ },
+ "XWcut": {
+  "value": "1000",
+  "in_manuscript": true
+ },
+ "XSNcut": {
+  "value": "5",
+  "in_manuscript": false
+ },
+ "XkLRD": {
+  "value": "5.4",
+  "in_manuscript": false
+ },
+ "XkOth": {
+  "value": "9.8",
+  "in_manuscript": false
+ },
+ "XzCut": {
+  "value": "3",
+  "in_manuscript": true
+ },
+ "XLmin": {
+  "value": "43.7",
+  "in_manuscript": true
+ },
+ "XLmax": {
+  "value": "45.2",
+  "in_manuscript": true
+ },
+ "NXHbCand": {
+  "value": "13",
+  "in_manuscript": false
+ },
+ "NXHbLRD": {
+  "value": "three",
+  "in_manuscript": false
+ },
+ "NXLRDuniq": {
+  "value": "45",
+  "in_manuscript": true
+ },
+ "XsigDedup": {
+  "value": "0.060",
+  "in_manuscript": true
+ },
+ "XsigDeduplo": {
+  "value": "0.046",
+  "in_manuscript": true
+ },
+ "XsigDeduphi": {
+  "value": "0.080",
+  "in_manuscript": true
+ },
+ "XovSD": {
+  "value": "0.082",
+  "in_manuscript": false
+ },
+ "XovLRDSD": {
+  "value": "0.063",
+  "in_manuscript": false
+ },
+ "Xsig": {
+  "value": "0.058",
+  "in_manuscript": true
+ },
+ "Xsiglo": {
+  "value": "0.045",
+  "in_manuscript": true
+ },
+ "Xsighi": {
+  "value": "0.077",
+  "in_manuscript": true
+ },
+ "Xb": {
+  "value": "0.25",
+  "in_manuscript": true
+ },
+ "Xblo": {
+  "value": "0.20",
+  "in_manuscript": true
+ },
+ "Xbhi": {
+  "value": "0.31",
+  "in_manuscript": true
+ },
+ "Xsigo": {
+  "value": "0.144",
+  "in_manuscript": true
+ },
+ "Xsigolo": {
+  "value": "0.122",
+  "in_manuscript": true
+ },
+ "Xsigohi": {
+  "value": "0.172",
+  "in_manuscript": true
+ },
+ "Xdsig": {
+  "value": "\\ensuremath{-}0.085",
+  "in_manuscript": true
+ },
+ "Xdsiglo": {
+  "value": "\\ensuremath{-}0.117",
+  "in_manuscript": false
+ },
+ "Xdsighi": {
+  "value": "\\ensuremath{-}0.057",
+  "in_manuscript": false
+ },
+ "NXNoOv": {
+  "value": "28",
+  "in_manuscript": true
+ },
+ "NXNoOvCtrl": {
+  "value": "88",
+  "in_manuscript": false
+ },
+ "XsigNoOv": {
+  "value": "0.075",
+  "in_manuscript": true
+ },
+ "XsigNoOvlo": {
+  "value": "0.054",
+  "in_manuscript": false
+ },
+ "XsigNoOvhi": {
+  "value": "0.109",
+  "in_manuscript": false
+ },
+ "XsigoNoOv": {
+  "value": "0.139",
+  "in_manuscript": false
+ },
+ "XsigoNoOvlo": {
+  "value": "0.117",
+  "in_manuscript": false
+ },
+ "XsigoNoOvhi": {
+  "value": "0.168",
+  "in_manuscript": false
+ },
+ "XdsigNoOv": {
+  "value": "\\ensuremath{-}0.064",
+  "in_manuscript": false
+ },
+ "XdsigNoOvlo": {
+  "value": "\\ensuremath{-}0.100",
+  "in_manuscript": false
+ },
+ "XdsigNoOvhi": {
+  "value": "\\ensuremath{-}0.024",
+  "in_manuscript": false
+ },
+ "NXPairs": {
+  "value": "36",
+  "in_manuscript": true
+ },
+ "XdMatch": {
+  "value": "\\ensuremath{-}0.065",
+  "in_manuscript": true
+ },
+ "XdMatchlo": {
+  "value": "\\ensuremath{-}0.105",
+  "in_manuscript": false
+ },
+ "XdMatchhi": {
+  "value": "\\ensuremath{-}0.024",
+  "in_manuscript": false
+ },
+ "NPermHits": {
+  "value": "eight",
+  "in_manuscript": false
+ },
+ "NPermTrials": {
+  "value": "10^{6}",
+  "in_manuscript": false
+ },
+ "NXLeave": {
+  "value": "87",
+  "in_manuscript": false
+ },
+ "matchDz": {
+  "value": "0.5",
+  "in_manuscript": false
+ },
+ "matchDL": {
+  "value": "0.2",
+  "in_manuscript": false
+ },
+ "XresM": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "XresMo": {
+  "value": "0.42",
+  "in_manuscript": true
+ },
+ "NSDSS": {
+  "value": "3755",
+  "in_manuscript": true
+ },
+ "Ssig": {
+  "value": "0.208",
+  "in_manuscript": true
+ },
+ "Ssiglo": {
+  "value": "0.203",
+  "in_manuscript": false
+ },
+ "Ssighi": {
+  "value": "0.213",
+  "in_manuscript": false
+ },
+ "Sb": {
+  "value": "0.07",
+  "in_manuscript": false
+ },
+ "zSDSSmin": {
+  "value": "0.06",
+  "in_manuscript": true
+ },
+ "zSDSSmax": {
+  "value": "0.39",
+  "in_manuscript": true
+ },
+ "SsigTwo": {
+  "value": "0.21",
+  "in_manuscript": false
+ },
+ "FsigoTwo": {
+  "value": "0.15",
+  "in_manuscript": false
+ },
+ "sigTwoLo": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "sigTwoHi": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "sdssWoff": {
+  "value": "0.26",
+  "in_manuscript": true
+ },
+ "WsdssMedL": {
+  "value": "3150",
+  "in_manuscript": true
+ },
+ "WlrdMedL": {
+  "value": "1710",
+  "in_manuscript": true
+ },
+ "QSOsn": {
+  "value": "3.4",
+  "in_manuscript": true
+ },
+ "QSOW": {
+  "value": "2107",
+  "in_manuscript": true
+ },
+ "QSOWerr": {
+  "value": "302",
+  "in_manuscript": false
+ },
+ "QSOmu": {
+  "value": "7.5",
+  "in_manuscript": true
+ },
+ "QSOmuErr": {
+  "value": "1.5",
+  "in_manuscript": true
+ },
+ "QSOresCor": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "QSOresErr": {
+  "value": "0.08",
+  "in_manuscript": true
+ },
+ "QSOcompNar": {
+  "value": "560",
+  "in_manuscript": true
+ },
+ "QSOcompBrd": {
+  "value": "2000",
+  "in_manuscript": true
+ },
+ "QSOWfix": {
+  "value": "1223",
+  "in_manuscript": true
+ },
+ "QSOsnFix": {
+  "value": "20.9",
+  "in_manuscript": true
+ },
+ "QSOresFix": {
+  "value": "\\ensuremath{-}0.08",
+  "in_manuscript": true
+ },
+ "QSOresFixErr": {
+  "value": "0.03",
+  "in_manuscript": true
+ },
+ "FsigNarOIIIqso": {
+  "value": "0.072",
+  "in_manuscript": true
+ },
+ "NLRDqso": {
+  "value": "30",
+  "in_manuscript": true
+ },
+ "vKnorm": {
+  "value": "1493",
+  "in_manuscript": true
+ },
+ "kappaES": {
+  "value": "0.398",
+  "in_manuscript": true
+ },
+ "NPA": {
+  "value": "18",
+  "in_manuscript": true
+ },
+ "ratPA": {
+  "value": "2.99",
+  "in_manuscript": false
+ },
+ "bPA": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "bPAlo": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "bPAhi": {
+  "value": "0.31",
+  "in_manuscript": true
+ },
+ "cPA": {
+  "value": "0.34",
+  "in_manuscript": true
+ },
+ "cPAlo": {
+  "value": "\\ensuremath{-}0.55",
+  "in_manuscript": true
+ },
+ "cPAhi": {
+  "value": "1.28",
+  "in_manuscript": true
+ },
+ "hpdPA": {
+  "value": "83",
+  "in_manuscript": true
+ },
+ "sqPA": {
+  "value": "0.073",
+  "in_manuscript": true
+ },
+ "sqPAlo": {
+  "value": "0.048",
+  "in_manuscript": false
+ },
+ "sqPAhi": {
+  "value": "0.117",
+  "in_manuscript": false
+ },
+ "NPB": {
+  "value": "15",
+  "in_manuscript": true
+ },
+ "ratPB": {
+  "value": "2.61",
+  "in_manuscript": false
+ },
+ "bPB": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "bPBlo": {
+  "value": "0.02",
+  "in_manuscript": true
+ },
+ "bPBhi": {
+  "value": "0.26",
+  "in_manuscript": true
+ },
+ "cPB": {
+  "value": "0.57",
+  "in_manuscript": true
+ },
+ "cPBlo": {
+  "value": "\\ensuremath{-}0.59",
+  "in_manuscript": true
+ },
+ "cPBhi": {
+  "value": "1.73",
+  "in_manuscript": true
+ },
+ "hpdPB": {
+  "value": "90",
+  "in_manuscript": false
+ },
+ "sqPB": {
+  "value": "0.081",
+  "in_manuscript": true
+ },
+ "sqPBlo": {
+  "value": "0.051",
+  "in_manuscript": false
+ },
+ "sqPBhi": {
+  "value": "0.137",
+  "in_manuscript": false
+ },
+ "NPC": {
+  "value": "nine",
+  "in_manuscript": true
+ },
+ "ratPC": {
+  "value": "2.75",
+  "in_manuscript": false
+ },
+ "bPC": {
+  "value": "0.40",
+  "in_manuscript": true
+ },
+ "bPClo": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "bPChi": {
+  "value": "0.57",
+  "in_manuscript": true
+ },
+ "cPC": {
+  "value": "\\ensuremath{-}0.10",
+  "in_manuscript": true
+ },
+ "cPClo": {
+  "value": "\\ensuremath{-}0.69",
+  "in_manuscript": true
+ },
+ "cPChi": {
+  "value": "0.53",
+  "in_manuscript": true
+ },
+ "hpdPC": {
+  "value": "98",
+  "in_manuscript": true
+ },
+ "sqPC": {
+  "value": "0.115",
+  "in_manuscript": true
+ },
+ "sqPClo": {
+  "value": "0.067",
+  "in_manuscript": false
+ },
+ "sqPChi": {
+  "value": "0.231",
+  "in_manuscript": false
+ },
+ "NPdrop": {
+  "value": "five",
+  "in_manuscript": true
+ },
+ "NPAall": {
+  "value": "23",
+  "in_manuscript": true
+ },
+ "NPBall": {
+  "value": "18",
+  "in_manuscript": true
+ },
+ "sxCut": {
+  "value": "0.3",
+  "in_manuscript": false
+ },
+ "sxDropMin": {
+  "value": "0.4",
+  "in_manuscript": true
+ },
+ "sxDropMax": {
+  "value": "2.0",
+  "in_manuscript": true
+ },
+ "sxKeepMax": {
+  "value": "0.18",
+  "in_manuscript": true
+ },
+ "hierDb": {
+  "value": "0.01",
+  "in_manuscript": true
+ },
+ "NPE": {
+  "value": "five",
+  "in_manuscript": true
+ },
+ "ratPE": {
+  "value": "2.50",
+  "in_manuscript": false
+ },
+ "sqPE": {
+  "value": "0.098",
+  "in_manuscript": false
+ },
+ "sqPElo": {
+  "value": "0.019",
+  "in_manuscript": true
+ },
+ "sqPEhi": {
+  "value": "0.346",
+  "in_manuscript": true
+ },
+ "NPCbx": {
+  "value": "four",
+  "in_manuscript": true
+ },
+ "NdGall": {
+  "value": "146",
+  "in_manuscript": true
+ },
+ "NdGbb": {
+  "value": "47",
+  "in_manuscript": true
+ },
+ "NdGfit": {
+  "value": "14",
+  "in_manuscript": true
+ },
+ "ratLo": {
+  "value": "2.5",
+  "in_manuscript": true
+ },
+ "ratHi": {
+  "value": "3.0",
+  "in_manuscript": true
+ },
+ "sqLo": {
+  "value": "0.07",
+  "in_manuscript": true
+ },
+ "sqHi": {
+  "value": "0.08",
+  "in_manuscript": true
+ },
+ "sigLamRLo": {
+  "value": "0.15",
+  "in_manuscript": false
+ },
+ "sigLamRHi": {
+  "value": "0.16",
+  "in_manuscript": false
+ },
+ "TminP": {
+  "value": "3600",
+  "in_manuscript": true
+ },
+ "TmaxP": {
+  "value": "6400",
+  "in_manuscript": true
+ },
+ "LphMin": {
+  "value": "43.3",
+  "in_manuscript": true
+ },
+ "LphMax": {
+  "value": "44.7",
+  "in_manuscript": true
+ },
+ "sdLphHaLo": {
+  "value": "0.22",
+  "in_manuscript": true
+ },
+ "sdLphHaHi": {
+  "value": "0.23",
+  "in_manuscript": true
+ },
+ "lineB": {
+  "value": "0.2",
+  "in_manuscript": true
+ },
+ "lineCLo": {
+  "value": "0.2",
+  "in_manuscript": true
+ },
+ "lineCHi": {
+  "value": "0.7",
+  "in_manuscript": true
+ },
+ "NJE": {
+  "value": "five",
+  "in_manuscript": true
+ },
+ "bpJE": {
+  "value": "\\ensuremath{-}0.01",
+  "in_manuscript": true
+ },
+ "bpJElo": {
+  "value": "\\ensuremath{-}0.64",
+  "in_manuscript": true
+ },
+ "bpJEhi": {
+  "value": "0.60",
+  "in_manuscript": true
+ },
+ "simPctJE": {
+  "value": "5",
+  "in_manuscript": false
+ },
+ "simMedJE": {
+  "value": "0.4",
+  "in_manuscript": true
+ },
+ "slJE": {
+  "value": "0.027",
+  "in_manuscript": false
+ },
+ "slJElo": {
+  "value": "0.001",
+  "in_manuscript": false
+ },
+ "slJEhi": {
+  "value": "0.182",
+  "in_manuscript": false
+ },
+ "soJE": {
+  "value": "0.098",
+  "in_manuscript": false
+ },
+ "soJElo": {
+  "value": "0.019",
+  "in_manuscript": false
+ },
+ "soJEhi": {
+  "value": "0.346",
+  "in_manuscript": false
+ },
+ "NJA": {
+  "value": "13",
+  "in_manuscript": true
+ },
+ "bpJA": {
+  "value": "\\ensuremath{-}0.01",
+  "in_manuscript": true
+ },
+ "bpJAlo": {
+  "value": "\\ensuremath{-}0.16",
+  "in_manuscript": true
+ },
+ "bpJAhi": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "simPctJA": {
+  "value": "4",
+  "in_manuscript": true
+ },
+ "simMedJA": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "slJA": {
+  "value": "0.031",
+  "in_manuscript": true
+ },
+ "slJAlo": {
+  "value": "0.016",
+  "in_manuscript": false
+ },
+ "slJAhi": {
+  "value": "0.063",
+  "in_manuscript": false
+ },
+ "soJA": {
+  "value": "0.040",
+  "in_manuscript": true
+ },
+ "soJAlo": {
+  "value": "0.020",
+  "in_manuscript": false
+ },
+ "soJAhi": {
+  "value": "0.080",
+  "in_manuscript": false
+ },
+ "NJB": {
+  "value": "15",
+  "in_manuscript": true
+ },
+ "bpJB": {
+  "value": "\\ensuremath{-}0.05",
+  "in_manuscript": true
+ },
+ "bpJBlo": {
+  "value": "\\ensuremath{-}0.25",
+  "in_manuscript": true
+ },
+ "bpJBhi": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "simPctJB": {
+  "value": "1",
+  "in_manuscript": true
+ },
+ "simMedJB": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "slJB": {
+  "value": "0.057",
+  "in_manuscript": true
+ },
+ "slJBlo": {
+  "value": "0.036",
+  "in_manuscript": false
+ },
+ "slJBhi": {
+  "value": "0.098",
+  "in_manuscript": false
+ },
+ "soJB": {
+  "value": "0.081",
+  "in_manuscript": true
+ },
+ "soJBlo": {
+  "value": "0.051",
+  "in_manuscript": false
+ },
+ "soJBhi": {
+  "value": "0.137",
+  "in_manuscript": false
+ },
+ "powTen": {
+  "value": "20",
+  "in_manuscript": true
+ },
+ "powLo": {
+  "value": "70",
+  "in_manuscript": true
+ },
+ "powHi": {
+  "value": "80",
+  "in_manuscript": true
+ },
+ "kRing": {
+  "value": "2",
+  "in_manuscript": true
+ },
+ "kIso": {
+  "value": "1.36",
+  "in_manuscript": true
+ },
+ "kVir": {
+  "value": "0.96",
+  "in_manuscript": true
+ },
+ "lamVirLo": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "lamVirHi": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "lamIsoLo": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "lamIsoHi": {
+  "value": "0.30",
+  "in_manuscript": true
+ },
+ "lamRingLo": {
+  "value": "0.45",
+  "in_manuscript": true
+ },
+ "lamRingHi": {
+  "value": "0.64",
+  "in_manuscript": true
+ },
+ "mEddLo": {
+  "value": "1.6",
+  "in_manuscript": true
+ },
+ "mEddHi": {
+  "value": "10",
+  "in_manuscript": true
+ },
+ "mEddStdLo": {
+  "value": "3.4",
+  "in_manuscript": true
+ },
+ "brdVirLo": {
+  "value": "2.6",
+  "in_manuscript": true
+ },
+ "brdVirHi": {
+  "value": "3.1",
+  "in_manuscript": true
+ },
+ "brdIsoLo": {
+  "value": "1.8",
+  "in_manuscript": true
+ },
+ "brdIsoHi": {
+  "value": "2.2",
+  "in_manuscript": true
+ },
+ "brdRingLo": {
+  "value": "1.25",
+  "in_manuscript": true
+ },
+ "brdRingHi": {
+  "value": "1.5",
+  "in_manuscript": true
+ },
+ "deltaKthreeLo": {
+  "value": "0.003",
+  "in_manuscript": true
+ },
+ "deltaKthreeHi": {
+  "value": "0.030",
+  "in_manuscript": true
+ },
+ "deltaKfourMax": {
+  "value": "0.30",
+  "in_manuscript": true
+ },
+ "dvEscKthreeLo": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "dvEscKthreeHi": {
+  "value": "1.5",
+  "in_manuscript": true
+ },
+ "dvEscKfourMax": {
+  "value": "14",
+  "in_manuscript": true
+ },
+ "lamEscKfourMax": {
+  "value": "1.42",
+  "in_manuscript": true
+ },
+ "sigChiThree": {
+  "value": "0.053",
+  "in_manuscript": false
+ },
+ "NIncA": {
+  "value": "31",
+  "in_manuscript": false
+ },
+ "sigIncA": {
+  "value": "0.053",
+  "in_manuscript": true
+ },
+ "sigIncAlo": {
+  "value": "0.037",
+  "in_manuscript": false
+ },
+ "sigIncAhi": {
+  "value": "0.078",
+  "in_manuscript": false
+ },
+ "bIncA": {
+  "value": "0.17",
+  "in_manuscript": false
+ },
+ "bIncAlo": {
+  "value": "0.12",
+  "in_manuscript": false
+ },
+ "bIncAhi": {
+  "value": "0.22",
+  "in_manuscript": false
+ },
+ "NIncB": {
+  "value": "35",
+  "in_manuscript": true
+ },
+ "sigIncB": {
+  "value": "0.059",
+  "in_manuscript": true
+ },
+ "sigIncBlo": {
+  "value": "0.043",
+  "in_manuscript": false
+ },
+ "sigIncBhi": {
+  "value": "0.083",
+  "in_manuscript": false
+ },
+ "bIncB": {
+  "value": "0.16",
+  "in_manuscript": false
+ },
+ "bIncBlo": {
+  "value": "0.11",
+  "in_manuscript": false
+ },
+ "bIncBhi": {
+  "value": "0.22",
+  "in_manuscript": false
+ },
+ "NIncC": {
+  "value": "40",
+  "in_manuscript": false
+ },
+ "sigIncC": {
+  "value": "0.054",
+  "in_manuscript": false
+ },
+ "sigIncClo": {
+  "value": "0.040",
+  "in_manuscript": false
+ },
+ "sigIncChi": {
+  "value": "0.075",
+  "in_manuscript": false
+ },
+ "bIncC": {
+  "value": "0.17",
+  "in_manuscript": false
+ },
+ "bIncClo": {
+  "value": "0.12",
+  "in_manuscript": false
+ },
+ "bIncChi": {
+  "value": "0.22",
+  "in_manuscript": false
+ },
+ "NIncD": {
+  "value": "42",
+  "in_manuscript": true
+ },
+ "sigIncD": {
+  "value": "0.069",
+  "in_manuscript": true
+ },
+ "sigIncDlo": {
+  "value": "0.054",
+  "in_manuscript": false
+ },
+ "sigIncDhi": {
+  "value": "0.091",
+  "in_manuscript": false
+ },
+ "bIncD": {
+  "value": "0.20",
+  "in_manuscript": false
+ },
+ "bIncDlo": {
+  "value": "0.14",
+  "in_manuscript": false
+ },
+ "bIncDhi": {
+  "value": "0.25",
+  "in_manuscript": false
+ },
+ "chiHiA": {
+  "value": "3.0",
+  "in_manuscript": false
+ },
+ "chiHiB": {
+  "value": "66",
+  "in_manuscript": true
+ },
+ "NIncRules": {
+  "value": "two",
+  "in_manuscript": false
+ },
+ "DsigTgTwo": {
+  "value": "0.12",
+  "in_manuscript": false
+ },
+ "ratNpB": {
+  "value": "2.55",
+  "in_manuscript": true
+ },
+ "sqNpB": {
+  "value": "0.097",
+  "in_manuscript": false
+ },
+ "sqNpBlo": {
+  "value": "0.064",
+  "in_manuscript": false
+ },
+ "sqNpBhi": {
+  "value": "0.158",
+  "in_manuscript": false
+ },
+ "ratTgB": {
+  "value": "2.00",
+  "in_manuscript": false
+ },
+ "sqTgB": {
+  "value": "0.144",
+  "in_manuscript": false
+ },
+ "sqTgBlo": {
+  "value": "0.091",
+  "in_manuscript": false
+ },
+ "sqTgBhi": {
+  "value": "0.244",
+  "in_manuscript": false
+ },
+ "ratLoB": {
+  "value": "1.77",
+  "in_manuscript": false
+ },
+ "sqLoB": {
+  "value": "0.069",
+  "in_manuscript": false
+ },
+ "sqLoBlo": {
+  "value": "0.026",
+  "in_manuscript": false
+ },
+ "sqLoBhi": {
+  "value": "0.143",
+  "in_manuscript": false
+ },
+ "ratExB": {
+  "value": "1.40",
+  "in_manuscript": false
+ },
+ "sqExB": {
+  "value": "0.080",
+  "in_manuscript": false
+ },
+ "sqExBlo": {
+  "value": "0.039",
+  "in_manuscript": false
+ },
+ "sqExBhi": {
+  "value": "0.151",
+  "in_manuscript": false
+ },
+ "ratNpE": {
+  "value": "2.57",
+  "in_manuscript": true
+ },
+ "ratTgE": {
+  "value": "2.46",
+  "in_manuscript": false
+ },
+ "ratLoE": {
+  "value": "2.01",
+  "in_manuscript": false
+ },
+ "ratExE": {
+  "value": "1.38",
+  "in_manuscript": false
+ },
+ "sqMeasLo": {
+  "value": "0.07",
+  "in_manuscript": true
+ },
+ "sqMeasHi": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "ratExLo": {
+  "value": "1.4",
+  "in_manuscript": true
+ },
+ "ratWingHi": {
+  "value": "2.0",
+  "in_manuscript": true
+ },
+ "ratNpLo": {
+  "value": "2.6",
+  "in_manuscript": false
+ },
+ "ratNpHi": {
+  "value": "2.6",
+  "in_manuscript": false
+ },
+ "fKepLo": {
+  "value": "35",
+  "in_manuscript": false
+ },
+ "fKepHi": {
+  "value": "43",
+  "in_manuscript": false
+ },
+ "fEscLo": {
+  "value": "18",
+  "in_manuscript": false
+ },
+ "fEscHi": {
+  "value": "27",
+  "in_manuscript": false
+ },
+ "fKepEx": {
+  "value": "37",
+  "in_manuscript": false
+ },
+ "fEscEx": {
+  "value": "25",
+  "in_manuscript": false
+ },
+ "NSNten": {
+  "value": "20",
+  "in_manuscript": false
+ },
+ "sigSNten": {
+  "value": "0.056",
+  "in_manuscript": false
+ },
+ "sigSNtenlo": {
+  "value": "0.038",
+  "in_manuscript": false
+ },
+ "sigSNtenhi": {
+  "value": "0.086",
+  "in_manuscript": false
+ },
+ "NSNtwenty": {
+  "value": "nine",
+  "in_manuscript": true
+ },
+ "sigSNtwenty": {
+  "value": "0.065",
+  "in_manuscript": true
+ },
+ "sigSNtwentylo": {
+  "value": "0.038",
+  "in_manuscript": false
+ },
+ "sigSNtwentyhi": {
+  "value": "0.137",
+  "in_manuscript": false
+ },
+ "floorDex": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "floorSig": {
+  "value": "2.7",
+  "in_manuscript": false
+ },
+ "NTay": {
+  "value": "13",
+  "in_manuscript": false
+ },
+ "FsigTay": {
+  "value": "0.062",
+  "in_manuscript": false
+ },
+ "FsigTaylo": {
+  "value": "0.037",
+  "in_manuscript": false
+ },
+ "FsigTayhi": {
+  "value": "0.115",
+  "in_manuscript": false
+ },
+ "FsigoTay": {
+  "value": "0.149",
+  "in_manuscript": false
+ },
+ "kappaSolar": {
+  "value": "0.34",
+  "in_manuscript": true
+ },
+ "vKdrop": {
+  "value": "8",
+  "in_manuscript": true
+ },
+ "NSsgDraw": {
+  "value": "300",
+  "in_manuscript": true
+ },
+ "NSsg": {
+  "value": "224",
+  "in_manuscript": true
+ },
+ "Ssg": {
+  "value": "0.123",
+  "in_manuscript": true
+ },
+ "Ssglo": {
+  "value": "0.112",
+  "in_manuscript": true
+ },
+ "Ssghi": {
+  "value": "0.136",
+  "in_manuscript": true
+ },
+ "SsgTwo": {
+  "value": "0.12",
+  "in_manuscript": true
+ },
+ "SsgCat": {
+  "value": "0.185",
+  "in_manuscript": true
+ },
+ "sdssRatSame": {
+  "value": "2.3",
+  "in_manuscript": true
+ },
+ "fKepNpLo": {
+  "value": "38",
+  "in_manuscript": true
+ },
+ "fKepNpHi": {
+  "value": "44",
+  "in_manuscript": true
+ },
+ "fEscNpLo": {
+  "value": "23",
+  "in_manuscript": true
+ },
+ "fEscNpHi": {
+  "value": "28",
+  "in_manuscript": true
+ },
+ "fEscBicLo": {
+  "value": "24",
+  "in_manuscript": false
+ },
+ "fEscBicHi": {
+  "value": "28",
+  "in_manuscript": false
+ },
+ "hierSig": {
+  "value": "0.054",
+  "in_manuscript": true
+ },
+ "hierB": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "twoFbLo": {
+  "value": "0.18",
+  "in_manuscript": true
+ },
+ "twoFbHi": {
+  "value": "0.34",
+  "in_manuscript": true
+ },
+ "sigLamMax": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "sigLamMed": {
+  "value": "0.11",
+  "in_manuscript": false
+ },
+ "sigLamRep": {
+  "value": "0.11",
+  "in_manuscript": false
+ },
+ "oriThin": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "oriHalf": {
+  "value": "0.081",
+  "in_manuscript": true
+ },
+ "oriSeven": {
+  "value": "0.056",
+  "in_manuscript": true
+ },
+ "oriOne": {
+  "value": "0.035",
+  "in_manuscript": true
+ },
+ "oriThinRatio": {
+  "value": "2.8",
+  "in_manuscript": true
+ },
+ "rhoThin": {
+  "value": "0.93",
+  "in_manuscript": true
+ },
+ "sigLamIso": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "oriEdgeWide": {
+  "value": "0.042",
+  "in_manuscript": true
+ },
+ "oriEdge": {
+  "value": "0.018",
+  "in_manuscript": true
+ },
+ "sigLamEdgeWide": {
+  "value": "0.12",
+  "in_manuscript": true
+ },
+ "sigLamEdge": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "sigDustMax": {
+  "value": "1.1",
+  "in_manuscript": true
+ },
+ "sigDustNoTop": {
+  "value": "1.8",
+  "in_manuscript": true
+ },
+ "RLlo": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "RLhi": {
+  "value": "0.19",
+  "in_manuscript": true
+ },
+ "RLtermLo": {
+  "value": "0.065",
+  "in_manuscript": true
+ },
+ "RLtermHi": {
+  "value": "0.095",
+  "in_manuscript": true
+ },
+ "virW": {
+  "value": "2.06",
+  "in_manuscript": true
+ },
+ "virL": {
+  "value": "0.47",
+  "in_manuscript": true
+ },
+ "sigMvir": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "sigMvirMed": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "sigMvirRep": {
+  "value": "0.12",
+  "in_manuscript": true
+ },
+ "sigMvirCons": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "sigLamCons": {
+  "value": "0.20",
+  "in_manuscript": false
+ },
+ "oriThinRatioCons": {
+  "value": "2.1",
+  "in_manuscript": false
+ },
+ "rusA": {
+  "value": "428",
+  "in_manuscript": true
+ },
+ "rusB": {
+  "value": "370",
+  "in_manuscript": true
+ },
+ "DHalf": {
+  "value": "0.37",
+  "in_manuscript": true
+ },
+ "DOne": {
+  "value": "0.54",
+  "in_manuscript": true
+ },
+ "DTwo": {
+  "value": "0.70",
+  "in_manuscript": true
+ },
+ "DThree": {
+  "value": "0.78",
+  "in_manuscript": true
+ },
+ "sigTauHalf": {
+  "value": "0.20",
+  "in_manuscript": true
+ },
+ "sigTauOne": {
+  "value": "0.14",
+  "in_manuscript": true
+ },
+ "sigTauTwo": {
+  "value": "0.11",
+  "in_manuscript": true
+ },
+ "sigTauThree": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "sigTeMax": {
+  "value": "0.15",
+  "in_manuscript": true
+ },
+ "sigRHalf": {
+  "value": "0.41",
+  "in_manuscript": true
+ },
+ "sigROne": {
+  "value": "0.28",
+  "in_manuscript": true
+ },
+ "sigRTwo": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "sigRThree": {
+  "value": "0.19",
+  "in_manuscript": true
+ },
+ "tauFixLo": {
+  "value": "0.18",
+  "in_manuscript": false
+ },
+ "tauFixHi": {
+  "value": "0.39",
+  "in_manuscript": false
+ },
+ "tauPhLo": {
+  "value": "0.09",
+  "in_manuscript": true
+ },
+ "tauPhHi": {
+  "value": "0.19",
+  "in_manuscript": false
+ },
+ "gravMaxPct": {
+  "value": "40",
+  "in_manuscript": false
+ },
+ "coreLo": {
+  "value": "500",
+  "in_manuscript": true
+ },
+ "coreHi": {
+  "value": "1000",
+  "in_manuscript": true
+ },
+ "DconvHalfLo": {
+  "value": "0.21",
+  "in_manuscript": true
+ },
+ "DconvHalfHi": {
+  "value": "0.29",
+  "in_manuscript": true
+ },
+ "sigTauConvHalfLo": {
+  "value": "0.26",
+  "in_manuscript": true
+ },
+ "sigTauConvHalfHi": {
+  "value": "0.35",
+  "in_manuscript": true
+ },
+ "DconvHiLo": {
+  "value": "0.56",
+  "in_manuscript": true
+ },
+ "DconvHiHi": {
+  "value": "0.75",
+  "in_manuscript": true
+ },
+ "sigTauConvHiLo": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "sigTauConvHiHi": {
+  "value": "0.13",
+  "in_manuscript": true
+ },
+ "sigRConvHiLo": {
+  "value": "0.20",
+  "in_manuscript": true
+ },
+ "sigRConvHiHi": {
+  "value": "0.26",
+  "in_manuscript": true
+ },
+ "rtHalfBoostMax": {
+  "value": "20",
+  "in_manuscript": true
+ },
+ "DrtHiLo": {
+  "value": "0.94",
+  "in_manuscript": true
+ },
+ "DrtHiHi": {
+  "value": "1.61",
+  "in_manuscript": true
+ },
+ "Hnot": {
+  "value": "67.7",
+  "in_manuscript": true
+ },
+ "OmM": {
+  "value": "0.310",
+  "in_manuscript": true
+ },
+ "Hcat": {
+  "value": "70",
+  "in_manuscript": true
+ },
+ "OmCat": {
+  "value": "0.3",
+  "in_manuscript": true
+ },
+ "dCosmoL": {
+  "value": "0.02",
+  "in_manuscript": true
+ },
+ "dCosmoVK": {
+  "value": "0.005",
+  "in_manuscript": true
+ },
+ "fitWin": {
+  "value": "5000",
+  "in_manuscript": true
+ },
+ "errFloor": {
+  "value": "2",
+  "in_manuscript": true
+ },
+ "wnarLo": {
+  "value": "30",
+  "in_manuscript": true
+ },
+ "wnarHi": {
+  "value": "600",
+  "in_manuscript": true
+ },
+ "wbroadLo": {
+  "value": "350",
+  "in_manuscript": true
+ },
+ "wbroadHi": {
+  "value": "12{,}000",
+  "in_manuscript": true
+ },
+ "tauMax": {
+  "value": "10",
+  "in_manuscript": true
+ },
+ "wabsLo": {
+  "value": "50",
+  "in_manuscript": true
+ },
+ "wabsHi": {
+  "value": "1500",
+  "in_manuscript": true
+ },
+ "nBootNp": {
+  "value": "200",
+  "in_manuscript": true
+ },
+ "winWide": {
+  "value": "6800",
+  "in_manuscript": true
+ },
+ "NBICgauss": {
+  "value": "four",
+  "in_manuscript": true
+ },
+ "NBIClor": {
+  "value": "16",
+  "in_manuscript": true
+ },
+ "NBICexp": {
+  "value": "nine",
+  "in_manuscript": true
+ },
+ "dWge": {
+  "value": "0.264",
+  "in_manuscript": true
+ },
+ "DsigBic": {
+  "value": "0.111",
+  "in_manuscript": true
+ },
+ "DsigBiclo": {
+  "value": "0.080",
+  "in_manuscript": false
+ },
+ "DsigBichi": {
+  "value": "0.159",
+  "in_manuscript": false
+ },
+ "Fmad": {
+  "value": "0.077",
+  "in_manuscript": false
+ },
+ "FlooLo": {
+  "value": "0.051",
+  "in_manuscript": false
+ },
+ "FlooHi": {
+  "value": "0.056",
+  "in_manuscript": false
+ },
+ "FblooLo": {
+  "value": "0.15",
+  "in_manuscript": false
+ },
+ "FblooHi": {
+  "value": "0.19",
+  "in_manuscript": false
+ },
+ "rResSN": {
+  "value": "0.08",
+  "in_manuscript": true
+ },
+ "pResSN": {
+  "value": "0.69",
+  "in_manuscript": true
+ },
+ "ratHiTwoLo": {
+  "value": "4.4",
+  "in_manuscript": false
+ },
+ "ratHiTwoHi": {
+  "value": "4.9",
+  "in_manuscript": false
+ },
+ "dWinMed": {
+  "value": "0.014",
+  "in_manuscript": false
+ },
+ "FsigWin": {
+  "value": "0.062",
+  "in_manuscript": true
+ },
+ "FsigWinlo": {
+  "value": "0.043",
+  "in_manuscript": false
+ },
+ "FsigWinhi": {
+  "value": "0.090",
+  "in_manuscript": false
+ },
+ "NMultiLRD": {
+  "value": "nine",
+  "in_manuscript": false
+ },
+ "NPairsDup": {
+  "value": "14",
+  "in_manuscript": false
+ },
+ "dLDupMed": {
+  "value": "0.08",
+  "in_manuscript": false
+ },
+ "dWDupMed": {
+  "value": "0.08",
+  "in_manuscript": false
+ },
+ "FsigLowSN": {
+  "value": "0.059",
+  "in_manuscript": true
+ },
+ "FsigLowSNlo": {
+  "value": "0.039",
+  "in_manuscript": false
+ },
+ "FsigLowSNhi": {
+  "value": "0.088",
+  "in_manuscript": false
+ },
+ "XsigSxZero": {
+  "value": "0.058",
+  "in_manuscript": false
+ },
+ "XsigoSxZero": {
+  "value": "0.140",
+  "in_manuscript": false
+ },
+ "NXNoCutLRD": {
+  "value": "45",
+  "in_manuscript": false
+ },
+ "XsigNoCut": {
+  "value": "0.060",
+  "in_manuscript": false
+ },
+ "XsigNoCutlo": {
+  "value": "0.046",
+  "in_manuscript": false
+ },
+ "XsigNoCuthi": {
+  "value": "0.080",
+  "in_manuscript": false
+ },
+ "XdsigNoCut": {
+  "value": "\\ensuremath{-}0.081",
+  "in_manuscript": false
+ },
+ "Ssgb": {
+  "value": "0.10",
+  "in_manuscript": true
+ },
+ "Ssgblo": {
+  "value": "0.05",
+  "in_manuscript": false
+ },
+ "Ssgbhi": {
+  "value": "0.15",
+  "in_manuscript": false
+ },
+ "fEscInfLo": {
+  "value": "24",
+  "in_manuscript": true
+ },
+ "fEscInfHi": {
+  "value": "32",
+  "in_manuscript": true
+ },
+ "recLG": {
+  "value": "0.071",
+  "in_manuscript": true
+ },
+ "recEightL": {
+  "value": "0.088",
+  "in_manuscript": false
+ },
+ "hitEightL": {
+  "value": "two",
+  "in_manuscript": false
+ },
+ "recTenL": {
+  "value": "0.093",
+  "in_manuscript": false
+ },
+ "hitTenL": {
+  "value": "two",
+  "in_manuscript": false
+ },
+ "hitTenAll": {
+  "value": "three",
+  "in_manuscript": true
+ },
+ "nullDenThree": {
+  "value": "300",
+  "in_manuscript": true
+ },
+ "bNullMed": {
+  "value": "0.02",
+  "in_manuscript": false
+ },
+ "bNullHi": {
+  "value": "0.07",
+  "in_manuscript": true
+ },
+ "hitSlopeNull": {
+  "value": "none",
+  "in_manuscript": true
+ },
+ "kIsoExp": {
+  "value": "0.57",
+  "in_manuscript": true
+ },
+ "lamIsoExpLo": {
+  "value": "0.16",
+  "in_manuscript": true
+ },
+ "lamIsoExpHi": {
+  "value": "0.17",
+  "in_manuscript": true
+ },
+ "lamVirExpLo": {
+  "value": "0.47",
+  "in_manuscript": false
+ },
+ "lamVirExpHi": {
+  "value": "0.48",
+  "in_manuscript": false
+ },
+ "ratTightLo": {
+  "value": "1.3",
+  "in_manuscript": true
+ },
+ "ratTightHi": {
+  "value": "1.4",
+  "in_manuscript": true
+ }
+}

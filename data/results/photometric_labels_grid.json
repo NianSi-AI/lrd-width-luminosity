@@ -1,0 +1,16 @@
+{
+ "medians": {
+  "FsigTay": {
+   "finer_stored": 0.06154876661789192
+  },
+  "FsigoTay": {
+   "finer_stored": 0.14904413609256476
+  }
+ },
+ "LRD_interval": {
+  "upstream_finer": [
+   0.036802333894934605,
+   0.11462265285460817
+  ]
+ }
+}

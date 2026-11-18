@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this repository together with the accompanying paper."
+type: software
+title: "A Tight Broad-line Width–Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses: data and code"
+authors:
+  - family-names: Wang
+    given-names: Haoyu
+    orcid: "https://orcid.org/0009-0005-9117-0842"
+    affiliation: "Independent Researcher"
+url: "https://github.com/NianSi-AI/lrd-width-luminosity"
+license:
+  - MIT
+  - CC-BY-4.0

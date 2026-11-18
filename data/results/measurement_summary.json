@@ -1,0 +1,3553 @@
+{
+ "quantile_convention": "Uniform midpoint cell mass; CDF at true cell boundaries with leading zero; empirical sample/replicate quantiles remain NumPy linear. Difference distributions retain original discrete convolution.",
+ "numbers": {
+  "W1_BIC_counts__LRD_all__N": {
+   "value": 29,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__best_counts__single_gaussian": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__best_counts__lorentzian": {
+   "value": 16,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__best_counts__exponential": {
+   "value": 9,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__best_counts__double_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__Gaussian_deltaBIC_gt6": {
+   "value": 16,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__Gaussian_deltaBIC_gt10": {
+   "value": 12,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_all__three_single_within6": {
+   "value": 12,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__N": {
+   "value": 9,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__best_counts__single_gaussian": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__best_counts__lorentzian": {
+   "value": 7,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__best_counts__exponential": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__best_counts__double_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__Gaussian_deltaBIC_gt6": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__Gaussian_deltaBIC_gt10": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__10__three_single_within6": {
+   "value": 8,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__N": {
+   "value": 11,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__best_counts__single_gaussian": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__best_counts__lorentzian": {
+   "value": 5,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__best_counts__exponential": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__best_counts__double_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__Gaussian_deltaBIC_gt6": {
+   "value": 6,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__Gaussian_deltaBIC_gt10": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD_10_20__three_single_within6": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__N": {
+   "value": 9,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__best_counts__single_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__best_counts__lorentzian": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__best_counts__exponential": {
+   "value": 5,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__best_counts__double_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__Gaussian_deltaBIC_gt6": {
+   "value": 9,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__Gaussian_deltaBIC_gt10": {
+   "value": 9,
+   "unit": "count"
+  },
+  "W1_BIC_counts__LRD__20__three_single_within6": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__N": {
+   "value": 15,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__best_counts__single_gaussian": {
+   "value": 5,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__best_counts__lorentzian": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__best_counts__exponential": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__best_counts__double_gaussian": {
+   "value": 2,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__Gaussian_deltaBIC_gt6": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__Gaussian_deltaBIC_gt10": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_all__three_single_within6": {
+   "value": 7,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__N": {
+   "value": 11,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__best_counts__single_gaussian": {
+   "value": 5,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__best_counts__lorentzian": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__best_counts__exponential": {
+   "value": 2,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__best_counts__double_gaussian": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__Gaussian_deltaBIC_gt6": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__Gaussian_deltaBIC_gt10": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__10__three_single_within6": {
+   "value": 7,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__N": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__best_counts__single_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__best_counts__lorentzian": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__best_counts__exponential": {
+   "value": 2,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__best_counts__double_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__Gaussian_deltaBIC_gt6": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__Gaussian_deltaBIC_gt10": {
+   "value": 2,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD_10_20__three_single_within6": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__N": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__best_counts__single_gaussian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__best_counts__lorentzian": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__best_counts__exponential": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__best_counts__double_gaussian": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__Gaussian_deltaBIC_gt6": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__Gaussian_deltaBIC_gt10": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W1_BIC_counts__non_LRD__20__three_single_within6": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.03962113631634494,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05193196328587604,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06141451610542827,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__median_minus_injected": {
+   "value": 0.00193196328587604,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__count_le_observed": {
+   "value": 62,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.0499016902509164,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.05967483139058287,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.06970878681328686,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": 0.009674831390582866,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 78,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 25.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.09873608582060163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.1353826217273706,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.1766869974565264,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__median_minus_injected": {
+   "value": 0.08538262172737059,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__count_le_observed": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.1807565097132619,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.20476218550567082,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.23306315179960377,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.15476218550567084,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 25.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.0870975368313938,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.10180579866444964,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.1278446861319017,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__median_minus_injected": {
+   "value": 0.051805798664449634,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.11689949567146755,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.13646681735996563,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.15890003378720988,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.08646681735996563,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 25.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.04750673806871865,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05600337336304388,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06798553261349492,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": 0.006003373363043879,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 29,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.05200345485323665,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.060701749542453165,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.07173409212834322,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": 0.010701749542453162,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 42,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 25.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__Nvalid": {
+   "value": 72,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__Nincomplete": {
+   "value": 28,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.04946066666529184,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05850524598409404,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.07170622513030651,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": 0.008505245984094037,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 66,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 72,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.05314657098020961,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.0633977309988697,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.07599344756926744,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": 0.013397730998869692,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 72,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 72,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 25.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.040404371833513815,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05037004189965316,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06014700918962659,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__median_minus_injected": {
+   "value": 0.00037004189965315903,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__count_le_observed": {
+   "value": 61,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.05561864118635574,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.06323443849408544,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.07442843585484364,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": 0.01323443849408544,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 68,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.09705613344759743,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.1307965425128693,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.16725144114016158,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__median_minus_injected": {
+   "value": 0.08079654251286929,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__count_le_observed": {
+   "value": 2,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.1748259185431622,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.2006138324360101,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.22724951600693027,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.15061383243601012,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.08291864351224568,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.09797128453663749,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.12105712246501919,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__median_minus_injected": {
+   "value": 0.04797128453663749,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.11894877560898952,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.141100366888686,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.16222007959981685,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.09110036688868599,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.04836411805532788,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05738136849546013,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06870922067662236,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": 0.0073813684954601305,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 24,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.05648521236841193,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.06706544317880007,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.0762569254677132,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": 0.01706544317880007,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 18,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__Nvalid": {
+   "value": 44,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__Nincomplete": {
+   "value": 56,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.05037905657826872,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05952835353896449,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.07048242607066282,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": 0.009528353538964487,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 42,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 44,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.055734865982299764,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.0670218642460062,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.08361900011617972,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": 0.0170218642460062,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 43,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 44,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_single_gaussian_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.04349984828781225,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.054951394428183524,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06959343311896606,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__median_minus_injected": {
+   "value": 0.004951394428183521,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__count_le_observed": {
+   "value": 44,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.05411113443094955,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.06557121925316081,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.08493325010783158,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": 0.015571219253160809,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 53,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.030250489559927794,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.04718125043616826,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06837303499462498,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__median_minus_injected": {
+   "value": -0.0028187495638317406,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__count_le_observed": {
+   "value": 70,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.06788020686212817,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.08140473328170736,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.10214821291291483,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.031404733281707356,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__count_le_observed": {
+   "value": 67,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.02376516962443012,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.039233669880020944,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.05811751680897033,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__median_minus_injected": {
+   "value": -0.010766330119979059,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__count_le_observed": {
+   "value": 68,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.07073156142307377,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.08996797225404918,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.10963283525916015,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.039967972254049175,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__count_le_observed": {
+   "value": 34,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.04793647599594381,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.05736168211993489,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.0686463554272814,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": 0.00736168211993489,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 22,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.04975062563912703,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.0598770657501114,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.07090056240640887,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": 0.009877065750111394,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 39,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__Nvalid": {
+   "value": 88,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__Nincomplete": {
+   "value": 12,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.061364201572375265,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.07270335574319942,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.08838509153882164,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": 0.022703355743199413,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 51,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 88,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.06650794369563687,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.07727335568155055,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.09080748818053407,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": 0.02727335568155055,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 78,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 88,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.04789425401202476,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.059229401098833186,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.07606135969066517,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__median_minus_injected": {
+   "value": 0.009229401098833183,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__count_le_observed": {
+   "value": 31,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.09057003460068544,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.10455021855147617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.12702870822116136,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": 0.05455021855147617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.03163911720714482,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.049455812468121786,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.07037188585878587,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__median_minus_injected": {
+   "value": -0.0005441875318782166,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__count_le_observed": {
+   "value": 67,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.11006608100295663,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.1298799496402942,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.15685483033032147,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.0798799496402942,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__count_le_observed": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.02460580319022974,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.04388624923916139,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.06355876429791336,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__median_minus_injected": {
+   "value": -0.0061137507608386155,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__count_le_observed": {
+   "value": 63,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.11356632735017838,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14572014862485344,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.17536141695647586,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.09572014862485344,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__count_le_observed": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.05656293776134873,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.07142989690500726,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.08676838130835332,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": 0.021429896905007254,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 6,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.07041051586254592,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.0819171219964133,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.09841611204236847,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": 0.03191712199641329,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__scenario": {
+   "value": 3,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__Nvalid": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__Nincomplete": {
+   "value": 97,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.06503446887103606,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.08325049587859067,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.0874238102472518,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": 0.03325049587859066,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.09073110655134277,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.09975868278762498,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.11138492259314649,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": 0.04975868278762498,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 3,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s3__3_exponential_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.12459951935170095,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.14529251488036676,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.16964454422961472,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__median_minus_injected": {
+   "value": -0.004707485119633231,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.12566981559090032,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14253367156853652,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.1629455974691355,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": -0.00746632843146347,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.22080145720463737,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.2608441815724091,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.2997298104349355,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__median_minus_injected": {
+   "value": 0.11084418157240908,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.25433827766353967,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.2909598738378639,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.3229728641116561,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.14095987383786393,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.17131426198170935,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.1990201969286238,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.23977121022245246,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__median_minus_injected": {
+   "value": 0.049020196928623805,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.18090613757376237,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.21439315893358013,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.2486712882767332,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.06439315893358014,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.11761818082113597,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.14174876174501855,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.1634812078238053,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": -0.008251238254981447,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.11400186993209527,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.13421012375588143,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.1538976137783867,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": -0.015789876244118567,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__Nvalid": {
+   "value": 70,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__Nincomplete": {
+   "value": 30,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.12723032887662744,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.14750885527509194,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.1722619503028055,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": -0.002491144724908051,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 70,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.12151571267619368,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14110196675725278,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.16372459350847288,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": -0.00889803324274721,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 70,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 22.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 24.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 26.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.12621713872208604,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.15262000447253005,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.17033907333469783,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__median_minus_injected": {
+   "value": 0.002620004472530052,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.13455131237924264,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.1579995459223238,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.1811537515706609,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": 0.007999545922323797,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.2233621948022392,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.25704579711584485,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.3002002301347898,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__median_minus_injected": {
+   "value": 0.10704579711584486,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.26613111245525484,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.29846659646856083,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.3400874089503485,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.14846659646856084,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.16879648454941668,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.19712361761714767,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.23377849513882312,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__median_minus_injected": {
+   "value": 0.04712361761714767,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.20571063648199545,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.24465000723910463,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.30819493701638934,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.09465000723910463,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.12809836406383338,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.15006223287617382,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.17179479037664894,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": 6.223287617382334e-05,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.1254073391025418,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14671292906268996,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.16713900853837163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": -0.003287070937310038,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__Nvalid": {
+   "value": 25,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__Nincomplete": {
+   "value": 75,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.13164417959050093,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.15156238727726445,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.17169773910071226,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": 0.0015623872772644598,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 25,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.12949980828077107,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14637904786076691,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.16942694539470673,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": -0.00362095213923308,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 25,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_single_gaussian_all29_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.0798379258399394,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.09761709468067246,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.12136136408756892,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__median_minus_injected": {
+   "value": -0.05238290531932753,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.08255042789327462,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.09820162537988969,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.11810599649963853,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": -0.051798374620110305,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 18.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.09895823100384733,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.1287478998155291,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.16948729163507179,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__median_minus_injected": {
+   "value": -0.021252100184470907,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.12145024398774576,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14040905482473431,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.17193029810053562,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__median_minus_injected": {
+   "value": -0.00959094517526568,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 18.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.09995483135887658,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.13081482515423581,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.15941765976265798,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__median_minus_injected": {
+   "value": -0.01918517484576418,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.1307856761349284,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.14930571895787614,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.17522895198368285,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__median_minus_injected": {
+   "value": -0.000694281042123851,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 18.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.07657799100374277,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.0913381807651995,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.110920340916262,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": -0.05866181923480049,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.07422054240056773,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.08769808408256949,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.10404678364832082,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": -0.062301915917430506,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 1,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 18.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__Nvalid": {
+   "value": 93,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__Nincomplete": {
+   "value": 7,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p16": {
+   "value": 0.08886751761473445,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p50": {
+   "value": 0.10318975247748383,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__p16_p50_p84__p84": {
+   "value": 0.12816712226750343,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__median_minus_injected": {
+   "value": -0.04681024752251617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__observed_W1": {
+   "value": 0.07613361198125916,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__count_le_observed": {
+   "value": 4,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__sigma_median__denominator": {
+   "value": 93,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.08622481302637912,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.10163809949926733,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.12209948720458166,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__median_minus_injected": {
+   "value": -0.04836190050073266,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__observed_W1": {
+   "value": 0.09574170080253985,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__count_le_observed": {
+   "value": 37,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__OLS_SD__denominator": {
+   "value": 93,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p16": {
+   "value": 18.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p50": {
+   "value": 19.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_M4_Gaussian_QC_nonparametric_FWHM__N_selected_p16_p50_p84__p84": {
+   "value": 21.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.08512953319122019,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.10511253196005324,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.12774409582087234,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__median_minus_injected": {
+   "value": -0.044887468039946754,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__observed_W1": {
+   "value": 0.054026802603674075,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.12094392978362054,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.15552794204688944,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.18710438452677797,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__median_minus_injected": {
+   "value": 0.005527942046889445,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__observed_W1": {
+   "value": 0.06679855205888617,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_single_gaussian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__p16_p50_p84__p16": {
+   "value": 0.10472951987572947,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__p16_p50_p84__p50": {
+   "value": 0.13614813552658966,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__p16_p50_p84__p84": {
+   "value": 0.17197666137965625,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__median_minus_injected": {
+   "value": -0.01385186447341033,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__observed_W1": {
+   "value": 0.062323439881734354,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.1653031844867173,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.20271251727876777,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.24004249448575818,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__median_minus_injected": {
+   "value": 0.05271251727876777,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__observed_W1": {
+   "value": 0.09094457990122466,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_lorentzian__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__p16_p50_p84__p16": {
+   "value": 0.10939175092516848,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__p16_p50_p84__p50": {
+   "value": 0.14044856597026673,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__p16_p50_p84__p84": {
+   "value": 0.24075505495110172,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__median_minus_injected": {
+   "value": -0.009551434029733269,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__observed_W1": {
+   "value": 0.051315170800076006,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.18534953047114014,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.23449906668680104,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.2752288428358756,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__median_minus_injected": {
+   "value": 0.08449906668680104,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__observed_W1": {
+   "value": 0.08305635742317163,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_exponential__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__Nvalid": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__Nincomplete": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__p16_p50_p84__p16": {
+   "value": 0.08755525980468735,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__p16_p50_p84__p50": {
+   "value": 0.11415851717120368,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__p16_p50_p84__p84": {
+   "value": 0.13518601303408762,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__median_minus_injected": {
+   "value": -0.03584148282879632,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__observed_W1": {
+   "value": 0.050750217461597504,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__sigma_median__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p16": {
+   "value": 0.0960941844211589,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p50": {
+   "value": 0.11709576628074053,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__p16_p50_p84__p84": {
+   "value": 0.135290369660855,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__median_minus_injected": {
+   "value": -0.03290423371925946,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__observed_W1": {
+   "value": 0.05784474978891073,
+   "unit": "dex"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__count_le_observed": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__OLS_SD__denominator": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__N_selected_p16_p50_p84__p16": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__N_selected_p16_p50_p84__p50": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_W50__N_selected_p16_p50_p84__p84": {
+   "value": 29.0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_FWHM__scenario": {
+   "value": 1,
+   "unit": "dimensionless"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_FWHM__Nrequested": {
+   "value": 100,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_FWHM__Nvalid": {
+   "value": 0,
+   "unit": "count"
+  },
+  "W2_final_summary_s1__1_exponential_all29_nonparametric_FWHM__Nincomplete": {
+   "value": 100,
+   "unit": "count"
+  }
+ }
+}

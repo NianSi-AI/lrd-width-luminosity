@@ -1,0 +1,44 @@
+{
+ "candidate": {
+  "dg_row_index": 46,
+  "spectrum_path": "valentino-egs-v4_g235m-f170lp_3567_41318.spec.fits",
+  "file": "valentino-egs-v4_g235m-f170lp_3567_41318.spec.fits",
+  "file_id": "d5d8bd31841e390c",
+  "grating": "G235M",
+  "ra_deg": 214.89247921596,
+  "dec_deg": 52.85689091242,
+  "match_sep_arcsec": 0.0010407765202571425,
+  "z_fit": 6.73,
+  "z_origin": "Hviding2025 literature",
+  "dg_zspec": 6.7285585,
+  "dz_over_1pz": 0.0001865160236543875,
+  "existing_working_path": "d5d8bd31841e390c.json",
+  "existing_t2_row_index": 972,
+  "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/valentino-egs-v4/valentino-egs-v4_g235m-f170lp_3567_41318.spec.fits",
+  "current_version": 4,
+  "selection_order": 972,
+  "existing_quality_pass": false
+ },
+ "fit_origin": "existing_T2_fit_reused",
+ "working_path": "d5d8bd31841e390c.json",
+ "status": "not_covered_or_insufficient_valid_pixels",
+ "input_sha256": "d8be21ce49aa7cd269da8fc286df9753fb18303d708450c7577d614d1aab37ae",
+ "fit_z": 6.73,
+ "quality_tests": {},
+ "quality_failures": [
+  "not_fitted:not_covered_or_insufficient_valid_pixels"
+ ],
+ "quality_pass": false,
+ "old_classification": "LRD",
+ "old_classification_disagreement": false,
+ "old_redshift_conflict": false,
+ "coverage_or_error": {
+  "status": "not_covered_or_insufficient_valid_pixels",
+  "line": "Halpha",
+  "z": 6.73,
+  "center_um": 5.074510781000001,
+  "Nvalid": 0,
+  "center_valid": false
+ },
+ "elapsed_s": 0.002680291887372732
+}

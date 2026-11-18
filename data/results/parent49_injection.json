@@ -1,0 +1,4487 @@
+{
+  "thresholds": {
+    "observed_bayes_sigma_int_median_dex": 0.05402680260367583,
+    "observed_ols_residual_sd_dex": 0.06679855205888618
+  },
+  "primary_parent49_suites": {
+    "gauss_rel_s010": {
+      "name": "gauss_rel_s010",
+      "profile": "single_gaussian",
+      "injected_a0": 3.3458741852784244,
+      "injected_b0": 0.1700390228220376,
+      "injected_sigma_parent_dex": 0.1,
+      "parent49": {
+        "N_replicates": 100,
+        "total_attempts": 4900,
+        "total_selected": 2940,
+        "N_selected_min_p16_p50_p84_max": [
+          24.0,
+          28.0,
+          29.0,
+          31.0,
+          34.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 1794,
+          "broadSNR": 1473,
+          "widthBoundary": 103,
+          "widthLSF": 15
+        },
+        "bayes_sigma_med_quantiles": [
+          0.07072540237680479,
+          0.08478679600919757,
+          0.10148384233027541,
+          0.11968989843624239,
+          0.12905194212601617
+        ],
+        "bayes_sigma_p95_median": 0.13272728628291108,
+        "bayes_hits_le_obs_Fsig": 0,
+        "bayes_hits_le_00540301": 0,
+        "ols_sd_quantiles": [
+          0.07680975993329302,
+          0.09045783020968767,
+          0.10350838869280615,
+          0.12076989153644689,
+          0.1308269649508447
+        ],
+        "ols_hits_le_obs_Frms": 0,
+        "bayes_slope_med_quantiles": [
+          0.09482511178969,
+          0.1329738891342879,
+          0.182300506756347,
+          0.21034740668856658,
+          0.24226701922735028
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.3266690271858086,
+          3.3484084344688636,
+          3.3821736357833343
+        ]
+      },
+      "subset_frozen29": {
+        "N_replicates": 100,
+        "total_attempts": 2900,
+        "total_selected": 2474,
+        "N_selected_min_p16_p50_p84_max": [
+          21.0,
+          23.84,
+          25.0,
+          26.0,
+          28.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 342,
+          "broadSNR": 154
+        },
+        "bayes_sigma_med_quantiles": [
+          0.06865326927866441,
+          0.0850998561638538,
+          0.10204627693899233,
+          0.11949760515053413,
+          0.13441710258344242
+        ],
+        "bayes_sigma_p95_median": 0.13805218132264996,
+        "bayes_hits_le_obs_Fsig": 0,
+        "bayes_hits_le_00540301": 0,
+        "ols_sd_quantiles": [
+          0.07423075998185401,
+          0.08977063885109438,
+          0.10328810707125677,
+          0.12023500119262714,
+          0.1337857798789362
+        ],
+        "ols_hits_le_obs_Frms": 0,
+        "bayes_slope_med_quantiles": [
+          0.09955748291639925,
+          0.12837371838018133,
+          0.17903688301943882,
+          0.21664040961092615,
+          0.25102928407391156
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.324643949432911,
+          3.3454235683634854,
+          3.37810071370091
+        ]
+      },
+      "failed_fits_SNR_bins_all49": {
+        "SNR_lt_2": {
+          "N": 544,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.47592857479035106,
+            -0.02291461761124869,
+            0.3624706060981268
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.36213235294117646,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.45883950930344847,
+            0.017323196357156512,
+            0.36177522009776375
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.41911764705882354,
+          "frac_W_narrow_hit_600": 0.04779411764705882
+        },
+        "SNR_2_to_3": {
+          "N": 348,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.2357613001490831,
+            -0.036156643313126846,
+            0.1350144414983626
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.22701149425287356,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.23888780510863566,
+            -0.006858612986934798,
+            0.17334673954067278
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.2959770114942529,
+          "frac_W_narrow_hit_600": 0.031609195402298854
+        },
+        "SNR_3_to_4": {
+          "N": 320,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1461125905863502,
+            -0.018617526835078335,
+            0.09953465056708378
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.178125,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1766420444614161,
+            -0.010923487443243118,
+            0.1481870072117349
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.284375,
+          "frac_W_narrow_hit_600": 0.003125
+        },
+        "SNR_4_to_7": {
+          "N": 498,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.09692667727057777,
+            -0.00957221140954223,
+            0.05798598737212966
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.08634538152610442,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.13083342933157366,
+            -0.021096270112060056,
+            0.08597050859791174
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.15461847389558234,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_ge_7": {
+          "N": 250,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.051473738368788005,
+            -0.014434957483294264,
+            0.018250047502069256
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.004,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15697363579221954,
+            -0.08597718604993809,
+            -0.010594186202578038
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "failed_fits_SNR_bins_failed20_only": {
+        "SNR_lt_2": {
+          "N": 540,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.4814042038693356,
+            -0.024932254985993163,
+            0.36584596958994375
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.3611111111111111,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.46021702886751176,
+            0.016911457971926058,
+            0.36104503152478656
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.4185185185185185,
+          "frac_W_narrow_hit_600": 0.044444444444444446
+        },
+        "SNR_2_to_3": {
+          "N": 336,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.23895865547124256,
+            -0.03863903695243032,
+            0.13170386842537796
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.21726190476190477,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.24098160482199749,
+            -0.015166868938707001,
+            0.16136819200398506
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.27976190476190477,
+          "frac_W_narrow_hit_600": 0.02976190476190476
+        },
+        "SNR_3_to_4": {
+          "N": 288,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1468068985467292,
+            -0.019729742854446952,
+            0.10419472354442862
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.18055555555555555,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.18055611456338785,
+            -0.03094638021169871,
+            0.13439014369472913
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.25,
+          "frac_W_narrow_hit_600": 0.003472222222222222
+        },
+        "SNR_4_to_7": {
+          "N": 285,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.10427611090052306,
+            -0.011215360049825929,
+            0.05726500757329145
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.07719298245614035,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.14761207045314764,
+            -0.03605717531236685,
+            0.0575455051706169
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0912280701754386,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_ge_7": {
+          "N": 85,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.04818809072246321,
+            -0.01108850986628962,
+            0.020030281249367426
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.011764705882352941,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15798102459926577,
+            -0.08645286239966943,
+            -0.019698469873406024
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "continuous_offset_pass_rates": {
+        "minus_0p10_bin": {
+          "N_all49": 1226,
+          "pass_rate_all49": 0.5603588907014682,
+          "N_failed20": 486,
+          "pass_rate_failed20": 0.16872427983539096
+        },
+        "zero_0p00_bin": {
+          "N_all49": 1854,
+          "pass_rate_all49": 0.6014023732470335,
+          "N_failed20": 772,
+          "pass_rate_failed20": 0.23834196891191708
+        },
+        "plus_0p10_bin": {
+          "N_all49": 1186,
+          "pass_rate_all49": 0.6247892074198989,
+          "N_failed20": 495,
+          "pass_rate_failed20": 0.2585858585858586
+        }
+      },
+      "per_template_pass_rates": [
+        {
+          "template_id": 0,
+          "source_id": "Skyfire-299",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7135431198827291,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 1,
+          "source_id": "Skyfire-1090",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7816102506096811,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 2,
+          "source_id": "Skyfire-1867",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.023718469025006,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 3,
+          "source_id": "Skyfire-2086",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5742269499861976,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 4,
+          "source_id": "Skyfire-3519",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7894882646510979,
+          "pass_rate": 0.83
+        },
+        {
+          "template_id": 5,
+          "source_id": "Skyfire-7761",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6732672601750451,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 6,
+          "source_id": "Skyfire-20952",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7314184938197386,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 7,
+          "source_id": "Skyfire-25941",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.9830450438316802,
+          "pass_rate": 0.88
+        },
+        {
+          "template_id": 8,
+          "source_id": "Skyfire-44039",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.102992825733601,
+          "pass_rate": 0.52
+        },
+        {
+          "template_id": 9,
+          "source_id": "Skyfire-83652",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.175302831204398,
+          "pass_rate": 0.23
+        },
+        {
+          "template_id": 10,
+          "source_id": "RUBIES-UDS-119957",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.8018603302431515,
+          "pass_rate": 0.78
+        },
+        {
+          "template_id": 11,
+          "source_id": "RUBIES-EGS-29489",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.39654974244462693,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 12,
+          "source_id": "RUBIES-EGS-42232",
+          "template_group": "frozen29",
+          "grating": "G235M_F170LP",
+          "x_logL43": -0.25861519134205935,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 13,
+          "source_id": "RUBIES-EGS-42046",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5505151317311459,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 14,
+          "source_id": "RUBIES-UDS-970351",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6867539894535213,
+          "pass_rate": 0.48
+        },
+        {
+          "template_id": 15,
+          "source_id": "RUBIES-EGS-926125",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.48216749908530687,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 16,
+          "source_id": "RUBIES-EGS-60935",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2765507566056371,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 17,
+          "source_id": "RUBIES-UDS-29813",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.45031624831778316,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 18,
+          "source_id": "RUBIES-UDS-172350",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.13698541751358562,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 19,
+          "source_id": "CEERS-746",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7325676684369782,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 20,
+          "source_id": "CEERS-672",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.1483598576731922,
+          "pass_rate": 0.7
+        },
+        {
+          "template_id": 21,
+          "source_id": "RUBIES-EGS-37124",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.44015141093056087,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 22,
+          "source_id": "RUBIES-EGS-49140",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5304864630823687,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 23,
+          "source_id": "RUBIES-UDS-144195",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6621549959292139,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 24,
+          "source_id": "RUBIES-UDS-23438",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7978192278439238,
+          "pass_rate": 0.5
+        },
+        {
+          "template_id": 25,
+          "source_id": "RUBIES-UDS-149298",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6468511303921787,
+          "pass_rate": 0.83
+        },
+        {
+          "template_id": 26,
+          "source_id": "RUBIES-EGS-948917",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.20901433399055946,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 27,
+          "source_id": "RUBIES-EGS-55604",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": 0.5189081176562524,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 28,
+          "source_id": "RUBIES-EGS-42803",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2610924558037411,
+          "pass_rate": 0.32
+        },
+        {
+          "template_id": 29,
+          "source_id": "RUBIES-EGS-37032",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.991366084702463,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 30,
+          "source_id": "Skyfire-23289",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.285814619635417,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 31,
+          "source_id": "RUBIES-UDS-967770",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5028722685910978,
+          "pass_rate": 0.06
+        },
+        {
+          "template_id": 32,
+          "source_id": "RUBIES-UDS-10036",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.132829183111788,
+          "pass_rate": 0.02
+        },
+        {
+          "template_id": 33,
+          "source_id": "RUBIES-UDS-50716",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.607320093285324,
+          "pass_rate": 0.04
+        },
+        {
+          "template_id": 34,
+          "source_id": "RUBIES-UDS-19484",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.2206393898720123,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 35,
+          "source_id": "RUBIES-EGS-61496",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6583462366582751,
+          "pass_rate": 0.54
+        },
+        {
+          "template_id": 36,
+          "source_id": "RUBIES-EGS-952625",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.4614229997225294,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 37,
+          "source_id": "Skyfire-92141",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.0946677945788466,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 38,
+          "source_id": "RUBIES-UDS-16053",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.4424560055589097,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 39,
+          "source_id": "RUBIES-UDS-31747",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6316122348605404,
+          "pass_rate": 0.71
+        },
+        {
+          "template_id": 40,
+          "source_id": "RUBIES-UDS-33938",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.310488158046489,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 41,
+          "source_id": "RUBIES-UDS-830237",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3360574309395759,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 42,
+          "source_id": "RUBIES-EGS-53254",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7526618769695403,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 43,
+          "source_id": "RUBIES-UDS-53692",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3939921109033264,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 44,
+          "source_id": "RUBIES-EGS-927271",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7374937561242447,
+          "pass_rate": 0.05
+        },
+        {
+          "template_id": 45,
+          "source_id": "RUBIES-UDS-36171",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7062927174191955,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 46,
+          "source_id": "RUBIES-UDS-848745",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7212109802708966,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 47,
+          "source_id": "Skyfire-26079",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.4699827906169176,
+          "pass_rate": 0.95
+        },
+        {
+          "template_id": 48,
+          "source_id": "RUBIES-UDS-167741",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7046805679992119,
+          "pass_rate": 0.27
+        }
+      ]
+    },
+    "exp_matched_s010": {
+      "name": "exp_matched_s010",
+      "profile": "exponential",
+      "injected_a0": 3.037091652297351,
+      "injected_b0": 0.13680038367173653,
+      "injected_sigma_parent_dex": 0.1,
+      "parent49": {
+        "N_replicates": 100,
+        "total_attempts": 4900,
+        "total_selected": 2697,
+        "N_selected_min_p16_p50_p84_max": [
+          23.0,
+          25.0,
+          27.0,
+          29.0,
+          31.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 1917,
+          "broadSNR": 1805,
+          "widthLSF": 15,
+          "widthBoundary": 187,
+          "absBoundary": 34
+        },
+        "bayes_sigma_med_quantiles": [
+          0.061770456219249266,
+          0.07427048843830268,
+          0.09194366114538552,
+          0.11382488384900717,
+          0.12757487223370487
+        ],
+        "bayes_sigma_p95_median": 0.12408638616015646,
+        "bayes_hits_le_obs_Fsig": 2,
+        "bayes_hits_le_00540301": 2,
+        "ols_sd_quantiles": [
+          0.07210085506271852,
+          0.0854569899019369,
+          0.09990009200070199,
+          0.11953320741020343,
+          0.13289073939514492
+        ],
+        "ols_hits_le_obs_Frms": 0,
+        "bayes_slope_med_quantiles": [
+          0.044731336630109884,
+          0.09054677223837156,
+          0.12711938026167197,
+          0.1676829250987674,
+          0.20840322813321868
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.3173038662028214,
+          3.3443517039402124,
+          3.3677219654049515
+        ]
+      },
+      "subset_frozen29": {
+        "N_replicates": 100,
+        "total_attempts": 2900,
+        "total_selected": 2282,
+        "N_selected_min_p16_p50_p84_max": [
+          19.0,
+          21.0,
+          23.0,
+          24.0,
+          27.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 428,
+          "broadSNR": 350,
+          "absBoundary": 33,
+          "widthBoundary": 3
+        },
+        "bayes_sigma_med_quantiles": [
+          0.05862409841402787,
+          0.07232491151924854,
+          0.09436839769076902,
+          0.11778178517199861,
+          0.12933323464029645
+        ],
+        "bayes_sigma_p95_median": 0.13085473206380316,
+        "bayes_hits_le_obs_Fsig": 1,
+        "bayes_hits_le_00540301": 1,
+        "ols_sd_quantiles": [
+          0.07052508223037071,
+          0.08154962677732626,
+          0.10186873871276912,
+          0.12413867337850426,
+          0.13679488872323653
+        ],
+        "ols_hits_le_obs_Frms": 1,
+        "bayes_slope_med_quantiles": [
+          0.04936651642539186,
+          0.08565916772408477,
+          0.12254875184022863,
+          0.17422519711213275,
+          0.20552126280375013
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.3147706223749465,
+          3.3422300133928493,
+          3.3679697567734594
+        ]
+      },
+      "failed_fits_SNR_bins_all49": {
+        "SNR_lt_2": {
+          "N": 737,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5225616140583862,
+            -0.02460581645599369,
+            0.4405598736759457
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.41383989145183175,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.46406527871740444,
+            0.03135196849186572,
+            0.46031693643939164
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.44776119402985076,
+          "frac_W_narrow_hit_600": 0.052917232021709636
+        },
+        "SNR_2_to_3": {
+          "N": 380,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.32782123450826045,
+            -0.028168054767102824,
+            0.18815066753795792
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2736842105263158,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.31129454561562325,
+            -0.000666238727460744,
+            0.22087217043410104
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.35789473684210527,
+          "frac_W_narrow_hit_600": 0.013157894736842105
+        },
+        "SNR_3_to_4": {
+          "N": 335,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1692876129131362,
+            -0.01329383729476108,
+            0.14180463805698174
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.29253731343283584,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.17140829950264994,
+            0.03790808616074637,
+            0.16984694719333393
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3492537313432836,
+          "frac_W_narrow_hit_600": 0.011940298507462687
+        },
+        "SNR_4_to_7": {
+          "N": 578,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.13075775357219602,
+            -0.0041840058354361,
+            0.09802980096562422
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.17993079584775087,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.14737646526237802,
+            -0.004164037681211541,
+            0.11414094133047906
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.21972318339100347,
+          "frac_W_narrow_hit_600": 0.010380622837370242
+        },
+        "SNR_ge_7": {
+          "N": 173,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1388488354369323,
+            -0.04713282690386844,
+            0.05254480095372683
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.05202312138728324,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.18323180337560957,
+            -0.06767288069699795,
+            0.018833202629359072
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.046242774566473986,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "failed_fits_SNR_bins_failed20_only": {
+        "SNR_lt_2": {
+          "N": 713,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5289904601326315,
+            -0.028452692897116716,
+            0.43548568838264634
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.40813464235624125,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.46734192575259376,
+            0.029341142965034983,
+            0.4477857186229811
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.4431977559607293,
+          "frac_W_narrow_hit_600": 0.051893408134642355
+        },
+        "SNR_2_to_3": {
+          "N": 350,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.3395515540982431,
+            -0.032029597380770936,
+            0.17171473572388093
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.26285714285714284,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.32879433416919124,
+            -0.010130889837717483,
+            0.20426009412984397
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.34285714285714286,
+          "frac_W_narrow_hit_600": 0.014285714285714285
+        },
+        "SNR_3_to_4": {
+          "N": 249,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.17339851734741207,
+            -0.02256415506941334,
+            0.13222293565522786
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.26506024096385544,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1875971772762682,
+            0.02433722489785728,
+            0.16552252706539566
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3172690763052209,
+          "frac_W_narrow_hit_600": 0.01606425702811245
+        },
+        "SNR_4_to_7": {
+          "N": 229,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1377557054319891,
+            -0.009689919445280637,
+            0.08498179838745218
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.15283842794759825,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.14918189371294327,
+            -0.005793185843945281,
+            0.11300019934549109
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.22270742358078602,
+          "frac_W_narrow_hit_600": 0.017467248908296942
+        },
+        "SNR_ge_7": {
+          "N": 44,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.15993118739188086,
+            -0.09845769306218921,
+            -0.02797697816400166
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.022727272727272728,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.19596996557962734,
+            -0.0548879327467402,
+            0.003197349697428351
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.022727272727272728,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "continuous_offset_pass_rates": {
+        "minus_0p10_bin": {
+          "N_all49": 1136,
+          "pass_rate_all49": 0.5334507042253521,
+          "N_failed20": 437,
+          "pass_rate_failed20": 0.17848970251716248
+        },
+        "zero_0p00_bin": {
+          "N_all49": 1911,
+          "pass_rate_all49": 0.5672422815279958,
+          "N_failed20": 775,
+          "pass_rate_failed20": 0.21419354838709678
+        },
+        "plus_0p10_bin": {
+          "N_all49": 1190,
+          "pass_rate_all49": 0.5554621848739496,
+          "N_failed20": 517,
+          "pass_rate_failed20": 0.22823984526112184
+        }
+      },
+      "per_template_pass_rates": [
+        {
+          "template_id": 0,
+          "source_id": "Skyfire-299",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7135431198827291,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 1,
+          "source_id": "Skyfire-1090",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7816102506096811,
+          "pass_rate": 0.89
+        },
+        {
+          "template_id": 2,
+          "source_id": "Skyfire-1867",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.023718469025006,
+          "pass_rate": 0.85
+        },
+        {
+          "template_id": 3,
+          "source_id": "Skyfire-2086",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5742269499861976,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 4,
+          "source_id": "Skyfire-3519",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7894882646510979,
+          "pass_rate": 0.78
+        },
+        {
+          "template_id": 5,
+          "source_id": "Skyfire-7761",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6732672601750451,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 6,
+          "source_id": "Skyfire-20952",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7314184938197386,
+          "pass_rate": 0.92
+        },
+        {
+          "template_id": 7,
+          "source_id": "Skyfire-25941",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.9830450438316802,
+          "pass_rate": 0.79
+        },
+        {
+          "template_id": 8,
+          "source_id": "Skyfire-44039",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.102992825733601,
+          "pass_rate": 0.28
+        },
+        {
+          "template_id": 9,
+          "source_id": "Skyfire-83652",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.175302831204398,
+          "pass_rate": 0.09
+        },
+        {
+          "template_id": 10,
+          "source_id": "RUBIES-UDS-119957",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.8018603302431515,
+          "pass_rate": 0.92
+        },
+        {
+          "template_id": 11,
+          "source_id": "RUBIES-EGS-29489",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.39654974244462693,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 12,
+          "source_id": "RUBIES-EGS-42232",
+          "template_group": "frozen29",
+          "grating": "G235M_F170LP",
+          "x_logL43": -0.25861519134205935,
+          "pass_rate": 0.93
+        },
+        {
+          "template_id": 13,
+          "source_id": "RUBIES-EGS-42046",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5505151317311459,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 14,
+          "source_id": "RUBIES-UDS-970351",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6867539894535213,
+          "pass_rate": 0.33
+        },
+        {
+          "template_id": 15,
+          "source_id": "RUBIES-EGS-926125",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.48216749908530687,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 16,
+          "source_id": "RUBIES-EGS-60935",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2765507566056371,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 17,
+          "source_id": "RUBIES-UDS-29813",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.45031624831778316,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 18,
+          "source_id": "RUBIES-UDS-172350",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.13698541751358562,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 19,
+          "source_id": "CEERS-746",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7325676684369782,
+          "pass_rate": 0.97
+        },
+        {
+          "template_id": 20,
+          "source_id": "CEERS-672",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.1483598576731922,
+          "pass_rate": 0.52
+        },
+        {
+          "template_id": 21,
+          "source_id": "RUBIES-EGS-37124",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.44015141093056087,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 22,
+          "source_id": "RUBIES-EGS-49140",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5304864630823687,
+          "pass_rate": 0.81
+        },
+        {
+          "template_id": 23,
+          "source_id": "RUBIES-UDS-144195",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6621549959292139,
+          "pass_rate": 0.85
+        },
+        {
+          "template_id": 24,
+          "source_id": "RUBIES-UDS-23438",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7978192278439238,
+          "pass_rate": 0.36
+        },
+        {
+          "template_id": 25,
+          "source_id": "RUBIES-UDS-149298",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6468511303921787,
+          "pass_rate": 0.5
+        },
+        {
+          "template_id": 26,
+          "source_id": "RUBIES-EGS-948917",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.20901433399055946,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 27,
+          "source_id": "RUBIES-EGS-55604",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": 0.5189081176562524,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 28,
+          "source_id": "RUBIES-EGS-42803",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2610924558037411,
+          "pass_rate": 0.19
+        },
+        {
+          "template_id": 29,
+          "source_id": "RUBIES-EGS-37032",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.991366084702463,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 30,
+          "source_id": "Skyfire-23289",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.285814619635417,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 31,
+          "source_id": "RUBIES-UDS-967770",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5028722685910978,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 32,
+          "source_id": "RUBIES-UDS-10036",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.132829183111788,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 33,
+          "source_id": "RUBIES-UDS-50716",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.607320093285324,
+          "pass_rate": 0.02
+        },
+        {
+          "template_id": 34,
+          "source_id": "RUBIES-UDS-19484",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.2206393898720123,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 35,
+          "source_id": "RUBIES-EGS-61496",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6583462366582751,
+          "pass_rate": 0.34
+        },
+        {
+          "template_id": 36,
+          "source_id": "RUBIES-EGS-952625",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.4614229997225294,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 37,
+          "source_id": "Skyfire-92141",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.0946677945788466,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 38,
+          "source_id": "RUBIES-UDS-16053",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.4424560055589097,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 39,
+          "source_id": "RUBIES-UDS-31747",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6316122348605404,
+          "pass_rate": 0.67
+        },
+        {
+          "template_id": 40,
+          "source_id": "RUBIES-UDS-33938",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.310488158046489,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 41,
+          "source_id": "RUBIES-UDS-830237",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3360574309395759,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 42,
+          "source_id": "RUBIES-EGS-53254",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7526618769695403,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 43,
+          "source_id": "RUBIES-UDS-53692",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3939921109033264,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 44,
+          "source_id": "RUBIES-EGS-927271",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7374937561242447,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 45,
+          "source_id": "RUBIES-UDS-36171",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7062927174191955,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 46,
+          "source_id": "RUBIES-UDS-848745",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7212109802708966,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 47,
+          "source_id": "Skyfire-26079",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.4699827906169176,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 48,
+          "source_id": "RUBIES-UDS-167741",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7046805679992119,
+          "pass_rate": 0.17
+        }
+      ]
+    },
+    "gauss_rel_s005": {
+      "name": "gauss_rel_s005",
+      "profile": "single_gaussian",
+      "injected_a0": 3.3458741852784244,
+      "injected_b0": 0.1700390228220376,
+      "injected_sigma_parent_dex": 0.05,
+      "parent49": {
+        "N_replicates": 100,
+        "total_attempts": 4900,
+        "total_selected": 2962,
+        "N_selected_min_p16_p50_p84_max": [
+          25.0,
+          28.0,
+          29.0,
+          31.0,
+          34.0
+        ],
+        "quality_rejections": {
+          "broadSNR": 1420,
+          "deltaBIC": 1791,
+          "widthLSF": 17,
+          "widthBoundary": 114
+        },
+        "bayes_sigma_med_quantiles": [
+          0.031217310412460605,
+          0.04170636428049317,
+          0.05006433567063035,
+          0.06043823334206957,
+          0.0669875761741576
+        ],
+        "bayes_sigma_p95_median": 0.06914129176017608,
+        "bayes_hits_le_obs_Fsig": 62,
+        "bayes_hits_le_00540301": 62,
+        "ols_sd_quantiles": [
+          0.04500675997616462,
+          0.05089804723834951,
+          0.059534798024151084,
+          0.06848017038636811,
+          0.07702671197350737
+        ],
+        "ols_hits_le_obs_Frms": 81,
+        "bayes_slope_med_quantiles": [
+          0.12293836264739202,
+          0.14485834898250372,
+          0.1677033107181221,
+          0.19353590786978608,
+          0.2153333700557882
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.334852250551736,
+          3.3511127484148404,
+          3.3650223472435443
+        ]
+      },
+      "subset_frozen29": {
+        "N_replicates": 100,
+        "total_attempts": 2900,
+        "total_selected": 2490,
+        "N_selected_min_p16_p50_p84_max": [
+          21.0,
+          24.0,
+          25.0,
+          26.0,
+          29.0
+        ],
+        "quality_rejections": {
+          "broadSNR": 104,
+          "deltaBIC": 350
+        },
+        "bayes_sigma_med_quantiles": [
+          0.03190106240684004,
+          0.04051660769408256,
+          0.05051872020581067,
+          0.06026325863864456,
+          0.06709910968771322
+        ],
+        "bayes_sigma_p95_median": 0.07146832671528361,
+        "bayes_hits_le_obs_Fsig": 61,
+        "bayes_hits_le_00540301": 61,
+        "ols_sd_quantiles": [
+          0.04498434843841782,
+          0.050150259001743726,
+          0.05824598891421051,
+          0.06795983306359837,
+          0.07930258259482292
+        ],
+        "ols_hits_le_obs_Frms": 80,
+        "bayes_slope_med_quantiles": [
+          0.12142795266153712,
+          0.14735912072497623,
+          0.17092097011336937,
+          0.19023913371045695,
+          0.218533399683444
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.332970250991411,
+          3.349793461818005,
+          3.3633961179849408
+        ]
+      },
+      "failed_fits_SNR_bins_all49": {
+        "SNR_lt_2": {
+          "N": 511,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5155108692675434,
+            -0.03953565828719796,
+            0.4094196621745862
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.3542074363992172,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.46691870641250854,
+            -0.01097611428423928,
+            0.3883397141658313
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3835616438356164,
+          "frac_W_narrow_hit_600": 0.09001956947162426
+        },
+        "SNR_2_to_3": {
+          "N": 374,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.24795050815359024,
+            -0.025640399137426773,
+            0.137801836963221
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.23529411764705882,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.22962157676641767,
+            -0.024625584561390523,
+            0.1358524501042194
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.24331550802139038,
+          "frac_W_narrow_hit_600": 0.016042780748663103
+        },
+        "SNR_3_to_4": {
+          "N": 308,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1374572424741531,
+            -0.0016905639495339297,
+            0.10942610221371811
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2077922077922078,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.151019453585273,
+            -0.004670067863933314,
+            0.1166975251414984
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.19155844155844157,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_4_to_7": {
+          "N": 469,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.09460417079919692,
+            -0.009535419748893936,
+            0.06634571355677481
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.10021321961620469,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1046081276485424,
+            -0.011468177392235823,
+            0.07316979686198702
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.12366737739872068,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_ge_7": {
+          "N": 276,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.06394997297739069,
+            -0.01979845280729653,
+            0.018289720022028888
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.0,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.10489378735850119,
+            -0.04560410261847303,
+            -0.003572169162378902
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "failed_fits_SNR_bins_failed20_only": {
+        "SNR_lt_2": {
+          "N": 509,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5162492811099667,
+            -0.03702126120053428,
+            0.4104736200716973
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.3555992141453831,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.46578126863118396,
+            -0.010948348189995016,
+            0.3895572168970053
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3850687622789784,
+          "frac_W_narrow_hit_600": 0.08840864440078586
+        },
+        "SNR_2_to_3": {
+          "N": 372,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.24797177456940353,
+            -0.02670979409414076,
+            0.1383453572595319
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.23387096774193547,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.2306261693036295,
+            -0.026231066987533636,
+            0.13640205667900868
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.24193548387096775,
+          "frac_W_narrow_hit_600": 0.016129032258064516
+        },
+        "SNR_3_to_4": {
+          "N": 283,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.14023379533792557,
+            -0.0004084583999297564,
+            0.1092897274205209
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.20848056537102475,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15638021213401573,
+            -0.010740824607867072,
+            0.10955149341219339
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.18021201413427562,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_4_to_7": {
+          "N": 282,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.09862469452132386,
+            -0.006466143093311949,
+            0.06539720184894127
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.10283687943262411,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.11526628759408634,
+            -0.017537018661626158,
+            0.06441010531434223
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.09219858156028368,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_ge_7": {
+          "N": 82,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.06188364295038432,
+            -0.018607645965801778,
+            0.014020164058018713
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.0,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.10367632139316832,
+            -0.044058045879396435,
+            -0.0033738338567709447
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "continuous_offset_pass_rates": {
+        "minus_0p10_bin": {
+          "N_all49": 795,
+          "pass_rate_all49": 0.5509433962264151,
+          "N_failed20": 320,
+          "pass_rate_failed20": 0.196875
+        },
+        "zero_0p00_bin": {
+          "N_all49": 3374,
+          "pass_rate_all49": 0.6090693538826318,
+          "N_failed20": 1381,
+          "pass_rate_failed20": 0.23171614771904417
+        },
+        "plus_0p10_bin": {
+          "N_all49": 723,
+          "pass_rate_all49": 0.6445366528354081,
+          "N_failed20": 295,
+          "pass_rate_failed20": 0.2983050847457627
+        }
+      },
+      "per_template_pass_rates": [
+        {
+          "template_id": 0,
+          "source_id": "Skyfire-299",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7135431198827291,
+          "pass_rate": 0.95
+        },
+        {
+          "template_id": 1,
+          "source_id": "Skyfire-1090",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7816102506096811,
+          "pass_rate": 0.93
+        },
+        {
+          "template_id": 2,
+          "source_id": "Skyfire-1867",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.023718469025006,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 3,
+          "source_id": "Skyfire-2086",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5742269499861976,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 4,
+          "source_id": "Skyfire-3519",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7894882646510979,
+          "pass_rate": 0.72
+        },
+        {
+          "template_id": 5,
+          "source_id": "Skyfire-7761",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6732672601750451,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 6,
+          "source_id": "Skyfire-20952",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7314184938197386,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 7,
+          "source_id": "Skyfire-25941",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.9830450438316802,
+          "pass_rate": 0.95
+        },
+        {
+          "template_id": 8,
+          "source_id": "Skyfire-44039",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.102992825733601,
+          "pass_rate": 0.59
+        },
+        {
+          "template_id": 9,
+          "source_id": "Skyfire-83652",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.175302831204398,
+          "pass_rate": 0.28
+        },
+        {
+          "template_id": 10,
+          "source_id": "RUBIES-UDS-119957",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.8018603302431515,
+          "pass_rate": 0.87
+        },
+        {
+          "template_id": 11,
+          "source_id": "RUBIES-EGS-29489",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.39654974244462693,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 12,
+          "source_id": "RUBIES-EGS-42232",
+          "template_group": "frozen29",
+          "grating": "G235M_F170LP",
+          "x_logL43": -0.25861519134205935,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 13,
+          "source_id": "RUBIES-EGS-42046",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5505151317311459,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 14,
+          "source_id": "RUBIES-UDS-970351",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6867539894535213,
+          "pass_rate": 0.41
+        },
+        {
+          "template_id": 15,
+          "source_id": "RUBIES-EGS-926125",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.48216749908530687,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 16,
+          "source_id": "RUBIES-EGS-60935",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2765507566056371,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 17,
+          "source_id": "RUBIES-UDS-29813",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.45031624831778316,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 18,
+          "source_id": "RUBIES-UDS-172350",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.13698541751358562,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 19,
+          "source_id": "CEERS-746",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7325676684369782,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 20,
+          "source_id": "CEERS-672",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.1483598576731922,
+          "pass_rate": 0.64
+        },
+        {
+          "template_id": 21,
+          "source_id": "RUBIES-EGS-37124",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.44015141093056087,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 22,
+          "source_id": "RUBIES-EGS-49140",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5304864630823687,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 23,
+          "source_id": "RUBIES-UDS-144195",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6621549959292139,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 24,
+          "source_id": "RUBIES-UDS-23438",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7978192278439238,
+          "pass_rate": 0.48
+        },
+        {
+          "template_id": 25,
+          "source_id": "RUBIES-UDS-149298",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6468511303921787,
+          "pass_rate": 0.82
+        },
+        {
+          "template_id": 26,
+          "source_id": "RUBIES-EGS-948917",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.20901433399055946,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 27,
+          "source_id": "RUBIES-EGS-55604",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": 0.5189081176562524,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 28,
+          "source_id": "RUBIES-EGS-42803",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2610924558037411,
+          "pass_rate": 0.46
+        },
+        {
+          "template_id": 29,
+          "source_id": "RUBIES-EGS-37032",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.991366084702463,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 30,
+          "source_id": "Skyfire-23289",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.285814619635417,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 31,
+          "source_id": "RUBIES-UDS-967770",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5028722685910978,
+          "pass_rate": 0.08
+        },
+        {
+          "template_id": 32,
+          "source_id": "RUBIES-UDS-10036",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.132829183111788,
+          "pass_rate": 0.04
+        },
+        {
+          "template_id": 33,
+          "source_id": "RUBIES-UDS-50716",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.607320093285324,
+          "pass_rate": 0.05
+        },
+        {
+          "template_id": 34,
+          "source_id": "RUBIES-UDS-19484",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.2206393898720123,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 35,
+          "source_id": "RUBIES-EGS-61496",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6583462366582751,
+          "pass_rate": 0.41
+        },
+        {
+          "template_id": 36,
+          "source_id": "RUBIES-EGS-952625",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.4614229997225294,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 37,
+          "source_id": "Skyfire-92141",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.0946677945788466,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 38,
+          "source_id": "RUBIES-UDS-16053",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.4424560055589097,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 39,
+          "source_id": "RUBIES-UDS-31747",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6316122348605404,
+          "pass_rate": 0.77
+        },
+        {
+          "template_id": 40,
+          "source_id": "RUBIES-UDS-33938",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.310488158046489,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 41,
+          "source_id": "RUBIES-UDS-830237",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3360574309395759,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 42,
+          "source_id": "RUBIES-EGS-53254",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7526618769695403,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 43,
+          "source_id": "RUBIES-UDS-53692",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3939921109033264,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 44,
+          "source_id": "RUBIES-EGS-927271",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7374937561242447,
+          "pass_rate": 0.04
+        },
+        {
+          "template_id": 45,
+          "source_id": "RUBIES-UDS-36171",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7062927174191955,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 46,
+          "source_id": "RUBIES-UDS-848745",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7212109802708966,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 47,
+          "source_id": "Skyfire-26079",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.4699827906169176,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 48,
+          "source_id": "RUBIES-UDS-167741",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7046805679992119,
+          "pass_rate": 0.34
+        }
+      ]
+    },
+    "exp_matched_s005": {
+      "name": "exp_matched_s005",
+      "profile": "exponential",
+      "injected_a0": 3.037091652297351,
+      "injected_b0": 0.13680038367173653,
+      "injected_sigma_parent_dex": 0.05,
+      "parent49": {
+        "N_replicates": 100,
+        "total_attempts": 4900,
+        "total_selected": 2736,
+        "N_selected_min_p16_p50_p84_max": [
+          24.0,
+          26.0,
+          27.0,
+          29.0,
+          32.0
+        ],
+        "quality_rejections": {
+          "broadSNR": 1802,
+          "deltaBIC": 1884,
+          "widthBoundary": 159,
+          "absBoundary": 38,
+          "widthLSF": 15
+        },
+        "bayes_sigma_med_quantiles": [
+          0.03761125632529093,
+          0.0504398320890587,
+          0.06184210244205442,
+          0.07314627493258846,
+          0.09677501299994612
+        ],
+        "bayes_sigma_p95_median": 0.08651501574159401,
+        "bayes_hits_le_obs_Fsig": 27,
+        "bayes_hits_le_00540301": 27,
+        "ols_sd_quantiles": [
+          0.0491129174100411,
+          0.0638926077817742,
+          0.07570124874275277,
+          0.09225546419637612,
+          0.11243148862782913
+        ],
+        "ols_hits_le_obs_Frms": 29,
+        "bayes_slope_med_quantiles": [
+          0.07383727462679698,
+          0.10421622456283176,
+          0.13014580471725481,
+          0.15949722875414293,
+          0.19658376558156096
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.326475973097703,
+          3.347485377005248,
+          3.3656198314090586
+        ]
+      },
+      "subset_frozen29": {
+        "N_replicates": 100,
+        "total_attempts": 2900,
+        "total_selected": 2295,
+        "N_selected_min_p16_p50_p84_max": [
+          19.0,
+          21.0,
+          23.0,
+          25.0,
+          27.0
+        ],
+        "quality_rejections": {
+          "broadSNR": 346,
+          "deltaBIC": 422,
+          "absBoundary": 38,
+          "widthBoundary": 3
+        },
+        "bayes_sigma_med_quantiles": [
+          0.0360326334529105,
+          0.04620601544080186,
+          0.059684735349819926,
+          0.07794275502439976,
+          0.10660142911747017
+        ],
+        "bayes_sigma_p95_median": 0.08798518439616401,
+        "bayes_hits_le_obs_Fsig": 32,
+        "bayes_hits_le_00540301": 32,
+        "ols_sd_quantiles": [
+          0.048951179828784205,
+          0.06093031052563324,
+          0.07515355140080421,
+          0.09084652893292189,
+          0.12120722781633608
+        ],
+        "ols_hits_le_obs_Frms": 25,
+        "bayes_slope_med_quantiles": [
+          0.06882010356313065,
+          0.09553526238636102,
+          0.12482640180594855,
+          0.16311077206524957,
+          0.1968485445465157
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.3255459481260683,
+          3.3458391054874106,
+          3.368706662973603
+        ]
+      },
+      "failed_fits_SNR_bins_all49": {
+        "SNR_lt_2": {
+          "N": 700,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5389570009930639,
+            0.024649476359272837,
+            0.47745006456493694
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.4357142857142857,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.46121349343658485,
+            0.06906974031298696,
+            0.47323280381026694
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.4785714285714286,
+          "frac_W_narrow_hit_600": 0.05
+        },
+        "SNR_2_to_3": {
+          "N": 414,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.2611823378083657,
+            -0.012385863817062193,
+            0.19953735072374312
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2971014492753623,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.2461798270054836,
+            0.027628954437413533,
+            0.20713365981683543
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3502415458937198,
+          "frac_W_narrow_hit_600": 0.016908212560386472
+        },
+        "SNR_3_to_4": {
+          "N": 345,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.16806504313869627,
+            0.011969090929140336,
+            0.14821837440313695
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.28695652173913044,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15696468792234708,
+            0.025432341142430204,
+            0.16631541926964455
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3507246376811594,
+          "frac_W_narrow_hit_600": 0.011594202898550725
+        },
+        "SNR_4_to_7": {
+          "N": 554,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.12995684610234295,
+            -0.02210014351216527,
+            0.08496869170308326
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.15342960288808663,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1235178130590055,
+            -0.0034404255382793902,
+            0.10057219079389773
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.18231046931407943,
+          "frac_W_narrow_hit_600": 0.0036101083032490976
+        },
+        "SNR_ge_7": {
+          "N": 151,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.1157792587709312,
+            -0.04479132230447069,
+            0.06783375826217242
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.046357615894039736,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.10366012269094371,
+            -0.049366056751970255,
+            0.02293876024552155
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.052980132450331126,
+          "frac_W_narrow_hit_600": 0.013245033112582781
+        }
+      },
+      "failed_fits_SNR_bins_failed20_only": {
+        "SNR_lt_2": {
+          "N": 681,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5426918468236311,
+            0.021138004892176987,
+            0.47533428202637096
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.43171806167400884,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.4661219438124801,
+            0.061414468868490335,
+            0.469317877646401
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.47430249632892807,
+          "frac_W_narrow_hit_600": 0.04698972099853157
+        },
+        "SNR_2_to_3": {
+          "N": 378,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.2648473006171786,
+            -0.023902272714706907,
+            0.18195190057526262
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2751322751322751,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.25378739551031454,
+            0.013692521971882199,
+            0.18485879397849614
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3253968253968254,
+          "frac_W_narrow_hit_600": 0.018518518518518517
+        },
+        "SNR_3_to_4": {
+          "N": 254,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.20199234610580222,
+            -0.017898785705898312,
+            0.13640078366689873
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2283464566929134,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1854258623103163,
+            -0.008755406796287613,
+            0.13682461041253577
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.2755905511811024,
+          "frac_W_narrow_hit_600": 0.015748031496062992
+        },
+        "SNR_4_to_7": {
+          "N": 221,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.16551967050379293,
+            -0.03607975153676701,
+            0.06307942460846518
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.12669683257918551,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.13661951517454937,
+            -0.010873925183631172,
+            0.08837130962328178
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.1493212669683258,
+          "frac_W_narrow_hit_600": 0.00904977375565611
+        },
+        "SNR_ge_7": {
+          "N": 25,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.11519410518873174,
+            -0.0618249825549384,
+            0.004565881610255878
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.0,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.08273612417769771,
+            -0.03255223742621549,
+            0.014986055751932013
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.04,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "continuous_offset_pass_rates": {
+        "minus_0p10_bin": {
+          "N_all49": 804,
+          "pass_rate_all49": 0.513681592039801,
+          "N_failed20": 345,
+          "pass_rate_failed20": 0.1681159420289855
+        },
+        "zero_0p00_bin": {
+          "N_all49": 3356,
+          "pass_rate_all49": 0.5604886769964244,
+          "N_failed20": 1367,
+          "pass_rate_failed20": 0.22970007315288954
+        },
+        "plus_0p10_bin": {
+          "N_all49": 721,
+          "pass_rate_all49": 0.6019417475728155,
+          "N_failed20": 278,
+          "pass_rate_failed20": 0.23381294964028776
+        }
+      },
+      "per_template_pass_rates": [
+        {
+          "template_id": 0,
+          "source_id": "Skyfire-299",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7135431198827291,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 1,
+          "source_id": "Skyfire-1090",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7816102506096811,
+          "pass_rate": 0.88
+        },
+        {
+          "template_id": 2,
+          "source_id": "Skyfire-1867",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.023718469025006,
+          "pass_rate": 0.86
+        },
+        {
+          "template_id": 3,
+          "source_id": "Skyfire-2086",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5742269499861976,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 4,
+          "source_id": "Skyfire-3519",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7894882646510979,
+          "pass_rate": 0.77
+        },
+        {
+          "template_id": 5,
+          "source_id": "Skyfire-7761",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6732672601750451,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 6,
+          "source_id": "Skyfire-20952",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7314184938197386,
+          "pass_rate": 0.97
+        },
+        {
+          "template_id": 7,
+          "source_id": "Skyfire-25941",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.9830450438316802,
+          "pass_rate": 0.87
+        },
+        {
+          "template_id": 8,
+          "source_id": "Skyfire-44039",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.102992825733601,
+          "pass_rate": 0.25
+        },
+        {
+          "template_id": 9,
+          "source_id": "Skyfire-83652",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.175302831204398,
+          "pass_rate": 0.11
+        },
+        {
+          "template_id": 10,
+          "source_id": "RUBIES-UDS-119957",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.8018603302431515,
+          "pass_rate": 0.93
+        },
+        {
+          "template_id": 11,
+          "source_id": "RUBIES-EGS-29489",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.39654974244462693,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 12,
+          "source_id": "RUBIES-EGS-42232",
+          "template_group": "frozen29",
+          "grating": "G235M_F170LP",
+          "x_logL43": -0.25861519134205935,
+          "pass_rate": 0.97
+        },
+        {
+          "template_id": 13,
+          "source_id": "RUBIES-EGS-42046",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5505151317311459,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 14,
+          "source_id": "RUBIES-UDS-970351",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6867539894535213,
+          "pass_rate": 0.3
+        },
+        {
+          "template_id": 15,
+          "source_id": "RUBIES-EGS-926125",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.48216749908530687,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 16,
+          "source_id": "RUBIES-EGS-60935",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2765507566056371,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 17,
+          "source_id": "RUBIES-UDS-29813",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.45031624831778316,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 18,
+          "source_id": "RUBIES-UDS-172350",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.13698541751358562,
+          "pass_rate": 0.97
+        },
+        {
+          "template_id": 19,
+          "source_id": "CEERS-746",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7325676684369782,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 20,
+          "source_id": "CEERS-672",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.1483598576731922,
+          "pass_rate": 0.49
+        },
+        {
+          "template_id": 21,
+          "source_id": "RUBIES-EGS-37124",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.44015141093056087,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 22,
+          "source_id": "RUBIES-EGS-49140",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5304864630823687,
+          "pass_rate": 0.78
+        },
+        {
+          "template_id": 23,
+          "source_id": "RUBIES-UDS-144195",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6621549959292139,
+          "pass_rate": 0.78
+        },
+        {
+          "template_id": 24,
+          "source_id": "RUBIES-UDS-23438",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7978192278439238,
+          "pass_rate": 0.35
+        },
+        {
+          "template_id": 25,
+          "source_id": "RUBIES-UDS-149298",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6468511303921787,
+          "pass_rate": 0.6
+        },
+        {
+          "template_id": 26,
+          "source_id": "RUBIES-EGS-948917",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.20901433399055946,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 27,
+          "source_id": "RUBIES-EGS-55604",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": 0.5189081176562524,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 28,
+          "source_id": "RUBIES-EGS-42803",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2610924558037411,
+          "pass_rate": 0.2
+        },
+        {
+          "template_id": 29,
+          "source_id": "RUBIES-EGS-37032",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.991366084702463,
+          "pass_rate": 0.97
+        },
+        {
+          "template_id": 30,
+          "source_id": "Skyfire-23289",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.285814619635417,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 31,
+          "source_id": "RUBIES-UDS-967770",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5028722685910978,
+          "pass_rate": 0.02
+        },
+        {
+          "template_id": 32,
+          "source_id": "RUBIES-UDS-10036",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.132829183111788,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 33,
+          "source_id": "RUBIES-UDS-50716",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.607320093285324,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 34,
+          "source_id": "RUBIES-UDS-19484",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.2206393898720123,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 35,
+          "source_id": "RUBIES-EGS-61496",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6583462366582751,
+          "pass_rate": 0.46
+        },
+        {
+          "template_id": 36,
+          "source_id": "RUBIES-EGS-952625",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.4614229997225294,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 37,
+          "source_id": "Skyfire-92141",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.0946677945788466,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 38,
+          "source_id": "RUBIES-UDS-16053",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.4424560055589097,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 39,
+          "source_id": "RUBIES-UDS-31747",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6316122348605404,
+          "pass_rate": 0.73
+        },
+        {
+          "template_id": 40,
+          "source_id": "RUBIES-UDS-33938",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.310488158046489,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 41,
+          "source_id": "RUBIES-UDS-830237",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3360574309395759,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 42,
+          "source_id": "RUBIES-EGS-53254",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7526618769695403,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 43,
+          "source_id": "RUBIES-UDS-53692",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3939921109033264,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 44,
+          "source_id": "RUBIES-EGS-927271",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7374937561242447,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 45,
+          "source_id": "RUBIES-UDS-36171",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7062927174191955,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 46,
+          "source_id": "RUBIES-UDS-848745",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7212109802708966,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 47,
+          "source_id": "Skyfire-26079",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.4699827906169176,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 48,
+          "source_id": "RUBIES-UDS-167741",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7046805679992119,
+          "pass_rate": 0.22
+        }
+      ]
+    }
+  },
+  "sensitivity_ownL_parent49_suites": {
+    "gauss_rel_s010_ownL": {
+      "name": "gauss_rel_s010_ownL",
+      "profile": "single_gaussian",
+      "injected_a0": 3.3458741852784244,
+      "injected_b0": 0.1700390228220376,
+      "injected_sigma_parent_dex": 0.1,
+      "parent49": {
+        "N_replicates": 100,
+        "total_attempts": 4900,
+        "total_selected": 2866,
+        "N_selected_min_p16_p50_p84_max": [
+          24.0,
+          27.0,
+          29.0,
+          30.0,
+          33.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 1895,
+          "broadSNR": 1569,
+          "widthBoundary": 233,
+          "widthLSF": 12
+        },
+        "bayes_sigma_med_quantiles": [
+          0.06702817707284565,
+          0.08587797903132299,
+          0.10284397488073388,
+          0.12144049497108246,
+          0.13331970232217005
+        ],
+        "bayes_sigma_p95_median": 0.13420991243840447,
+        "bayes_hits_le_obs_Fsig": 0,
+        "bayes_hits_le_00540301": 0,
+        "ols_sd_quantiles": [
+          0.07444621943289978,
+          0.09027422778215434,
+          0.10419843278235011,
+          0.12164188747915006,
+          0.13376525959446314
+        ],
+        "ols_hits_le_obs_Frms": 0,
+        "bayes_slope_med_quantiles": [
+          0.09430616519545412,
+          0.13186711885406985,
+          0.17890317759774937,
+          0.21037175373160968,
+          0.2422790349948914
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.3266134821137814,
+          3.3475607697499337,
+          3.3774148017041368
+        ]
+      },
+      "subset_frozen29": {
+        "N_replicates": 100,
+        "total_attempts": 2900,
+        "total_selected": 2474,
+        "N_selected_min_p16_p50_p84_max": [
+          21.0,
+          23.84,
+          25.0,
+          26.0,
+          28.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 342,
+          "broadSNR": 154
+        },
+        "bayes_sigma_med_quantiles": [
+          0.06865326927866441,
+          0.0850998561638538,
+          0.10204627693899233,
+          0.11949760515053413,
+          0.13441710258344242
+        ],
+        "bayes_sigma_p95_median": 0.13805218132264996,
+        "bayes_hits_le_obs_Fsig": 0,
+        "bayes_hits_le_00540301": 0,
+        "ols_sd_quantiles": [
+          0.07423075998185401,
+          0.08977063885109438,
+          0.10328810707125677,
+          0.12023500119262714,
+          0.1337857798789362
+        ],
+        "ols_hits_le_obs_Frms": 0,
+        "bayes_slope_med_quantiles": [
+          0.09955748291639925,
+          0.12837371838018133,
+          0.17903688301943882,
+          0.21664040961092615,
+          0.25102928407391156
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.324643949432911,
+          3.3454235683634854,
+          3.37810071370091
+        ]
+      },
+      "failed_fits_SNR_bins_all49": {
+        "SNR_lt_2": {
+          "N": 795,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5325419044299238,
+            -0.09585060033535875,
+            0.4229996211373753
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.32578616352201256,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.4945529933572726,
+            -0.07897724925630234,
+            0.40856577458837
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3534591194968553,
+          "frac_W_narrow_hit_600": 0.0389937106918239
+        },
+        "SNR_2_to_3": {
+          "N": 313,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.3085783144662888,
+            -0.016437400240447708,
+            0.16323514139985928
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2747603833865815,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.3030568050261043,
+            -0.017264097851923843,
+            0.18530838948824271
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.33226837060702874,
+          "frac_W_narrow_hit_600": 0.02875399361022364
+        },
+        "SNR_3_to_4": {
+          "N": 232,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.13241784585569763,
+            -0.009924636360318928,
+            0.10349118140320035
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.1896551724137931,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15731647175876273,
+            0.00816387268229346,
+            0.16631425731911365
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.34913793103448276,
+          "frac_W_narrow_hit_600": 0.008620689655172414
+        },
+        "SNR_4_to_7": {
+          "N": 436,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.10042988323054791,
+            -0.012530015837057817,
+            0.05575725419635304
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.09174311926605505,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.12978816777807614,
+            -0.01288898172191022,
+            0.09672007471797439
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.16972477064220184,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_ge_7": {
+          "N": 258,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.0504190232249983,
+            -0.012809666835867262,
+            0.017486100888958196
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.0,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1547710519905165,
+            -0.07983838571484303,
+            -0.006456335992133141
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "failed_fits_SNR_bins_failed20_only": {
+        "SNR_lt_2": {
+          "N": 791,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.533234127926796,
+            -0.09674854680463252,
+            0.42317727104523506
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.324905183312263,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.4946561743607707,
+            -0.07923126908413325,
+            0.40674779448526643
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3527180783817952,
+          "frac_W_narrow_hit_600": 0.03666245259165613
+        },
+        "SNR_2_to_3": {
+          "N": 301,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.32864330025815436,
+            -0.025360096824878386,
+            0.15817030805021037
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.26578073089701,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.30746899030975916,
+            -0.023031480375105495,
+            0.173415062033627
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.31561461794019935,
+          "frac_W_narrow_hit_600": 0.026578073089700997
+        },
+        "SNR_3_to_4": {
+          "N": 200,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.13278221352454764,
+            -0.01245355406092341,
+            0.10980892192613098
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.195,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1778770856220679,
+            -0.0018047984872120448,
+            0.16398377719244606
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.31,
+          "frac_W_narrow_hit_600": 0.01
+        },
+        "SNR_4_to_7": {
+          "N": 223,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.10902385358074822,
+            -0.02001861874545252,
+            0.055284629285032236
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.08520179372197309,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1515472189272089,
+            -0.03345415938981233,
+            0.058185534987641986
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.1031390134529148,
+          "frac_W_narrow_hit_600": 0.0
+        },
+        "SNR_ge_7": {
+          "N": 93,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.040172946874843886,
+            -0.008911621368335343,
+            0.016496841634998954
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.0,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1557547875320195,
+            -0.07203809020486673,
+            -0.005311425011595727
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.0,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "continuous_offset_pass_rates": {
+        "minus_0p10_bin": {
+          "N_all49": 1226,
+          "pass_rate_all49": 0.5456769983686787,
+          "N_failed20": 486,
+          "pass_rate_failed20": 0.13168724279835392
+        },
+        "zero_0p00_bin": {
+          "N_all49": 1854,
+          "pass_rate_all49": 0.5911542610571737,
+          "N_failed20": 772,
+          "pass_rate_failed20": 0.21373056994818654
+        },
+        "plus_0p10_bin": {
+          "N_all49": 1186,
+          "pass_rate_all49": 0.6053962900505903,
+          "N_failed20": 495,
+          "pass_rate_failed20": 0.21212121212121213
+        }
+      },
+      "per_template_pass_rates": [
+        {
+          "template_id": 0,
+          "source_id": "Skyfire-299",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7135431198827291,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 1,
+          "source_id": "Skyfire-1090",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7816102506096811,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 2,
+          "source_id": "Skyfire-1867",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.023718469025006,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 3,
+          "source_id": "Skyfire-2086",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5742269499861976,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 4,
+          "source_id": "Skyfire-3519",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7894882646510979,
+          "pass_rate": 0.83
+        },
+        {
+          "template_id": 5,
+          "source_id": "Skyfire-7761",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6732672601750451,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 6,
+          "source_id": "Skyfire-20952",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7314184938197386,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 7,
+          "source_id": "Skyfire-25941",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.9830450438316802,
+          "pass_rate": 0.88
+        },
+        {
+          "template_id": 8,
+          "source_id": "Skyfire-44039",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.102992825733601,
+          "pass_rate": 0.52
+        },
+        {
+          "template_id": 9,
+          "source_id": "Skyfire-83652",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.175302831204398,
+          "pass_rate": 0.23
+        },
+        {
+          "template_id": 10,
+          "source_id": "RUBIES-UDS-119957",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.8018603302431515,
+          "pass_rate": 0.78
+        },
+        {
+          "template_id": 11,
+          "source_id": "RUBIES-EGS-29489",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.39654974244462693,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 12,
+          "source_id": "RUBIES-EGS-42232",
+          "template_group": "frozen29",
+          "grating": "G235M_F170LP",
+          "x_logL43": -0.25861519134205935,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 13,
+          "source_id": "RUBIES-EGS-42046",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5505151317311459,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 14,
+          "source_id": "RUBIES-UDS-970351",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6867539894535213,
+          "pass_rate": 0.48
+        },
+        {
+          "template_id": 15,
+          "source_id": "RUBIES-EGS-926125",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.48216749908530687,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 16,
+          "source_id": "RUBIES-EGS-60935",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2765507566056371,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 17,
+          "source_id": "RUBIES-UDS-29813",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.45031624831778316,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 18,
+          "source_id": "RUBIES-UDS-172350",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.13698541751358562,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 19,
+          "source_id": "CEERS-746",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7325676684369782,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 20,
+          "source_id": "CEERS-672",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.1483598576731922,
+          "pass_rate": 0.7
+        },
+        {
+          "template_id": 21,
+          "source_id": "RUBIES-EGS-37124",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.44015141093056087,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 22,
+          "source_id": "RUBIES-EGS-49140",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5304864630823687,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 23,
+          "source_id": "RUBIES-UDS-144195",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6621549959292139,
+          "pass_rate": 0.94
+        },
+        {
+          "template_id": 24,
+          "source_id": "RUBIES-UDS-23438",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7978192278439238,
+          "pass_rate": 0.5
+        },
+        {
+          "template_id": 25,
+          "source_id": "RUBIES-UDS-149298",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6468511303921787,
+          "pass_rate": 0.83
+        },
+        {
+          "template_id": 26,
+          "source_id": "RUBIES-EGS-948917",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.20901433399055946,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 27,
+          "source_id": "RUBIES-EGS-55604",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": 0.5189081176562524,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 28,
+          "source_id": "RUBIES-EGS-42803",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2610924558037411,
+          "pass_rate": 0.32
+        },
+        {
+          "template_id": 29,
+          "source_id": "RUBIES-EGS-37032",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.991366084702463,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 30,
+          "source_id": "Skyfire-23289",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.285814619635417,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 31,
+          "source_id": "RUBIES-UDS-967770",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5028722685910978,
+          "pass_rate": 0.06
+        },
+        {
+          "template_id": 32,
+          "source_id": "RUBIES-UDS-10036",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.132829183111788,
+          "pass_rate": 0.02
+        },
+        {
+          "template_id": 33,
+          "source_id": "RUBIES-UDS-50716",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.607320093285324,
+          "pass_rate": 0.04
+        },
+        {
+          "template_id": 34,
+          "source_id": "RUBIES-UDS-19484",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.2206393898720123,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 35,
+          "source_id": "RUBIES-EGS-61496",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6583462366582751,
+          "pass_rate": 0.4
+        },
+        {
+          "template_id": 36,
+          "source_id": "RUBIES-EGS-952625",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.4614229997225294,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 37,
+          "source_id": "Skyfire-92141",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.0946677945788466,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 38,
+          "source_id": "RUBIES-UDS-16053",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.4424560055589097,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 39,
+          "source_id": "RUBIES-UDS-31747",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6316122348605404,
+          "pass_rate": 0.53
+        },
+        {
+          "template_id": 40,
+          "source_id": "RUBIES-UDS-33938",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.310488158046489,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 41,
+          "source_id": "RUBIES-UDS-830237",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3360574309395759,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 42,
+          "source_id": "RUBIES-EGS-53254",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7526618769695403,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 43,
+          "source_id": "RUBIES-UDS-53692",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3939921109033264,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 44,
+          "source_id": "RUBIES-EGS-927271",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7374937561242447,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 45,
+          "source_id": "RUBIES-UDS-36171",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7062927174191955,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 46,
+          "source_id": "RUBIES-UDS-848745",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7212109802708966,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 47,
+          "source_id": "Skyfire-26079",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.4699827906169176,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 48,
+          "source_id": "RUBIES-UDS-167741",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7046805679992119,
+          "pass_rate": 0.86
+        }
+      ]
+    },
+    "exp_matched_s010_ownL": {
+      "name": "exp_matched_s010_ownL",
+      "profile": "exponential",
+      "injected_a0": 3.037091652297351,
+      "injected_b0": 0.13680038367173653,
+      "injected_sigma_parent_dex": 0.1,
+      "parent49": {
+        "N_replicates": 100,
+        "total_attempts": 4900,
+        "total_selected": 2643,
+        "N_selected_min_p16_p50_p84_max": [
+          22.0,
+          24.84,
+          26.0,
+          28.0,
+          31.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 2010,
+          "broadSNR": 1869,
+          "absBoundary": 34,
+          "widthBoundary": 283,
+          "widthLSF": 15
+        },
+        "bayes_sigma_med_quantiles": [
+          0.060378676920728555,
+          0.07533263098876065,
+          0.09361892137751196,
+          0.11327850222873011,
+          0.12846844312085137
+        ],
+        "bayes_sigma_p95_median": 0.12692495424580458,
+        "bayes_hits_le_obs_Fsig": 1,
+        "bayes_hits_le_00540301": 1,
+        "ols_sd_quantiles": [
+          0.07187781858434313,
+          0.08476328194399428,
+          0.10271984130766532,
+          0.12132593943779237,
+          0.13397525955197986
+        ],
+        "ols_hits_le_obs_Frms": 0,
+        "bayes_slope_med_quantiles": [
+          0.045639677977502194,
+          0.0889088920423918,
+          0.12628576187236445,
+          0.17194907490017508,
+          0.21163428778727064
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.31579985983367,
+          3.3450238261427203,
+          3.366756816263174
+        ]
+      },
+      "subset_frozen29": {
+        "N_replicates": 100,
+        "total_attempts": 2900,
+        "total_selected": 2282,
+        "N_selected_min_p16_p50_p84_max": [
+          19.0,
+          21.0,
+          23.0,
+          24.0,
+          27.0
+        ],
+        "quality_rejections": {
+          "deltaBIC": 428,
+          "broadSNR": 350,
+          "absBoundary": 33,
+          "widthBoundary": 3
+        },
+        "bayes_sigma_med_quantiles": [
+          0.05862409841402787,
+          0.07232491151924854,
+          0.09436839769076902,
+          0.11778178517199861,
+          0.12933323464029645
+        ],
+        "bayes_sigma_p95_median": 0.13085473206380316,
+        "bayes_hits_le_obs_Fsig": 1,
+        "bayes_hits_le_00540301": 1,
+        "ols_sd_quantiles": [
+          0.07052508223037071,
+          0.08154962677732626,
+          0.10186873871276912,
+          0.12413867337850426,
+          0.13679488872323653
+        ],
+        "ols_hits_le_obs_Frms": 1,
+        "bayes_slope_med_quantiles": [
+          0.04936651642539186,
+          0.08565916772408477,
+          0.12254875184022863,
+          0.17422519711213275,
+          0.20552126280375013
+        ],
+        "recovered_a_hat_p16_p50_p84": [
+          3.3147706223749465,
+          3.3422300133928493,
+          3.3679697567734594
+        ]
+      },
+      "failed_fits_SNR_bins_all49": {
+        "SNR_lt_2": {
+          "N": 958,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5632507758128006,
+            -0.0569001589614615,
+            0.46125135847507986
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.3872651356993737,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.4802986959012079,
+            -0.019427785644576367,
+            0.458936510021962
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.4175365344467641,
+          "frac_W_narrow_hit_600": 0.04175365344467641
+        },
+        "SNR_2_to_3": {
+          "N": 334,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.3527522063615047,
+            -0.028140331021257348,
+            0.18951450399730715
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2994011976047904,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.37589375600780073,
+            0.00170520244451966,
+            0.22166566164543505
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.37425149700598803,
+          "frac_W_narrow_hit_600": 0.017964071856287425
+        },
+        "SNR_3_to_4": {
+          "N": 273,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.17762975457154384,
+            -0.01166308574018382,
+            0.14830622263728865
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.28205128205128205,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.1624372060712852,
+            0.048882781050298085,
+            0.20143663741755155
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.39194139194139194,
+          "frac_W_narrow_hit_600": 0.014652014652014652
+        },
+        "SNR_4_to_7": {
+          "N": 518,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.13686115296766851,
+            -0.007301993449166488,
+            0.09678934233020552
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.17567567567567569,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15645396869141273,
+            -0.0033481227902203425,
+            0.11114728378355802
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.21814671814671815,
+          "frac_W_narrow_hit_600": 0.007722007722007722
+        },
+        "SNR_ge_7": {
+          "N": 174,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.12490081886003158,
+            -0.03845161916810169,
+            0.05268249131762108
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.05172413793103448,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.169782336013893,
+            -0.06725958902518192,
+            0.012349792332486008
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.05172413793103448,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "failed_fits_SNR_bins_failed20_only": {
+        "SNR_lt_2": {
+          "N": 934,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.5682683778701192,
+            -0.06655199694040248,
+            0.4450854854523174
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.3822269807280514,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.48259909713137,
+            -0.022863509860172826,
+            0.44732457146091104
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.4132762312633833,
+          "frac_W_narrow_hit_600": 0.04068522483940043
+        },
+        "SNR_2_to_3": {
+          "N": 304,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.3884586129568581,
+            -0.03658799380996336,
+            0.17365662336561483
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.2894736842105263,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.3858924692384094,
+            -0.009801997128968676,
+            0.21278054294035495
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.35855263157894735,
+          "frac_W_narrow_hit_600": 0.019736842105263157
+        },
+        "SNR_3_to_4": {
+          "N": 187,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.19897858684825337,
+            -0.023469692711611145,
+            0.14497453256918708
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.24064171122994651,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.18701864590544245,
+            0.039136265866560827,
+            0.1965711192245087
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.3689839572192513,
+          "frac_W_narrow_hit_600": 0.0213903743315508
+        },
+        "SNR_4_to_7": {
+          "N": 169,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.16706205025962118,
+            -0.026023956217927413,
+            0.07078072041467244
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.1301775147928994,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.17572634842192328,
+            -0.006166287015975325,
+            0.10635939643175588
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.21893491124260356,
+          "frac_W_narrow_hit_600": 0.011834319526627219
+        },
+        "SNR_ge_7": {
+          "N": 45,
+          "bias_vs_inj_equiv_p16_p50_p84": [
+            -0.13306158896759518,
+            -0.05747923457747239,
+            -0.007687835154772989
+          ],
+          "frac_bias_vs_inj_equiv_gt_0p09": 0.022222222222222223,
+          "resid_vs_Eq3_p16_p50_p84": [
+            -0.15064253550017906,
+            -0.06017580301234249,
+            -0.014033216097886391
+          ],
+          "frac_resid_vs_Eq3_gt_0p09": 0.044444444444444446,
+          "frac_W_narrow_hit_600": 0.0
+        }
+      },
+      "continuous_offset_pass_rates": {
+        "minus_0p10_bin": {
+          "N_all49": 1136,
+          "pass_rate_all49": 0.522887323943662,
+          "N_failed20": 437,
+          "pass_rate_failed20": 0.15102974828375287
+        },
+        "zero_0p00_bin": {
+          "N_all49": 1911,
+          "pass_rate_all49": 0.5578231292517006,
+          "N_failed20": 775,
+          "pass_rate_failed20": 0.19096774193548388
+        },
+        "plus_0p10_bin": {
+          "N_all49": 1190,
+          "pass_rate_all49": 0.5394957983193277,
+          "N_failed20": 517,
+          "pass_rate_failed20": 0.19148936170212766
+        }
+      },
+      "per_template_pass_rates": [
+        {
+          "template_id": 0,
+          "source_id": "Skyfire-299",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7135431198827291,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 1,
+          "source_id": "Skyfire-1090",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7816102506096811,
+          "pass_rate": 0.89
+        },
+        {
+          "template_id": 2,
+          "source_id": "Skyfire-1867",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.023718469025006,
+          "pass_rate": 0.85
+        },
+        {
+          "template_id": 3,
+          "source_id": "Skyfire-2086",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5742269499861976,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 4,
+          "source_id": "Skyfire-3519",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7894882646510979,
+          "pass_rate": 0.78
+        },
+        {
+          "template_id": 5,
+          "source_id": "Skyfire-7761",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6732672601750451,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 6,
+          "source_id": "Skyfire-20952",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7314184938197386,
+          "pass_rate": 0.92
+        },
+        {
+          "template_id": 7,
+          "source_id": "Skyfire-25941",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.9830450438316802,
+          "pass_rate": 0.79
+        },
+        {
+          "template_id": 8,
+          "source_id": "Skyfire-44039",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.102992825733601,
+          "pass_rate": 0.28
+        },
+        {
+          "template_id": 9,
+          "source_id": "Skyfire-83652",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.175302831204398,
+          "pass_rate": 0.09
+        },
+        {
+          "template_id": 10,
+          "source_id": "RUBIES-UDS-119957",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.8018603302431515,
+          "pass_rate": 0.92
+        },
+        {
+          "template_id": 11,
+          "source_id": "RUBIES-EGS-29489",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.39654974244462693,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 12,
+          "source_id": "RUBIES-EGS-42232",
+          "template_group": "frozen29",
+          "grating": "G235M_F170LP",
+          "x_logL43": -0.25861519134205935,
+          "pass_rate": 0.93
+        },
+        {
+          "template_id": 13,
+          "source_id": "RUBIES-EGS-42046",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5505151317311459,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 14,
+          "source_id": "RUBIES-UDS-970351",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6867539894535213,
+          "pass_rate": 0.33
+        },
+        {
+          "template_id": 15,
+          "source_id": "RUBIES-EGS-926125",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.48216749908530687,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 16,
+          "source_id": "RUBIES-EGS-60935",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2765507566056371,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 17,
+          "source_id": "RUBIES-UDS-29813",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.45031624831778316,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 18,
+          "source_id": "RUBIES-UDS-172350",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.13698541751358562,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 19,
+          "source_id": "CEERS-746",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7325676684369782,
+          "pass_rate": 0.97
+        },
+        {
+          "template_id": 20,
+          "source_id": "CEERS-672",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.1483598576731922,
+          "pass_rate": 0.52
+        },
+        {
+          "template_id": 21,
+          "source_id": "RUBIES-EGS-37124",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.44015141093056087,
+          "pass_rate": 0.96
+        },
+        {
+          "template_id": 22,
+          "source_id": "RUBIES-EGS-49140",
+          "template_group": "frozen29",
+          "grating": "G395H_F290LP",
+          "x_logL43": 0.5304864630823687,
+          "pass_rate": 0.81
+        },
+        {
+          "template_id": 23,
+          "source_id": "RUBIES-UDS-144195",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6621549959292139,
+          "pass_rate": 0.85
+        },
+        {
+          "template_id": 24,
+          "source_id": "RUBIES-UDS-23438",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7978192278439238,
+          "pass_rate": 0.36
+        },
+        {
+          "template_id": 25,
+          "source_id": "RUBIES-UDS-149298",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6468511303921787,
+          "pass_rate": 0.5
+        },
+        {
+          "template_id": 26,
+          "source_id": "RUBIES-EGS-948917",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.20901433399055946,
+          "pass_rate": 1.0
+        },
+        {
+          "template_id": 27,
+          "source_id": "RUBIES-EGS-55604",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": 0.5189081176562524,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 28,
+          "source_id": "RUBIES-EGS-42803",
+          "template_group": "frozen29",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.2610924558037411,
+          "pass_rate": 0.19
+        },
+        {
+          "template_id": 29,
+          "source_id": "RUBIES-EGS-37032",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -0.991366084702463,
+          "pass_rate": 0.99
+        },
+        {
+          "template_id": 30,
+          "source_id": "Skyfire-23289",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.285814619635417,
+          "pass_rate": 0.98
+        },
+        {
+          "template_id": 31,
+          "source_id": "RUBIES-UDS-967770",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.5028722685910978,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 32,
+          "source_id": "RUBIES-UDS-10036",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.132829183111788,
+          "pass_rate": 0.01
+        },
+        {
+          "template_id": 33,
+          "source_id": "RUBIES-UDS-50716",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.607320093285324,
+          "pass_rate": 0.02
+        },
+        {
+          "template_id": 34,
+          "source_id": "RUBIES-UDS-19484",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.2206393898720123,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 35,
+          "source_id": "RUBIES-EGS-61496",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6583462366582751,
+          "pass_rate": 0.29
+        },
+        {
+          "template_id": 36,
+          "source_id": "RUBIES-EGS-952625",
+          "template_group": "failed20",
+          "grating": "G395H_F290LP",
+          "x_logL43": -1.4614229997225294,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 37,
+          "source_id": "Skyfire-92141",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.0946677945788466,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 38,
+          "source_id": "RUBIES-UDS-16053",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.4424560055589097,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 39,
+          "source_id": "RUBIES-UDS-31747",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.6316122348605404,
+          "pass_rate": 0.47
+        },
+        {
+          "template_id": 40,
+          "source_id": "RUBIES-UDS-33938",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.310488158046489,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 41,
+          "source_id": "RUBIES-UDS-830237",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3360574309395759,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 42,
+          "source_id": "RUBIES-EGS-53254",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7526618769695403,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 43,
+          "source_id": "RUBIES-UDS-53692",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -1.3939921109033264,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 44,
+          "source_id": "RUBIES-EGS-927271",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7374937561242447,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 45,
+          "source_id": "RUBIES-UDS-36171",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7062927174191955,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 46,
+          "source_id": "RUBIES-UDS-848745",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7212109802708966,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 47,
+          "source_id": "Skyfire-26079",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.4699827906169176,
+          "pass_rate": 0.0
+        },
+        {
+          "template_id": 48,
+          "source_id": "RUBIES-UDS-167741",
+          "template_group": "failed20",
+          "grating": "G395M_F290LP",
+          "x_logL43": -0.7046805679992119,
+          "pass_rate": 0.85
+        }
+      ]
+    }
+  },
+  "paired_offset_pass_rate_grids": {
+    "offset_grid_gauss": {
+      "dy_-0.10": {
+        "pass_rate_all49": 0.5357142857142857,
+        "pass_rate_frozen29": 0.7844827586206896,
+        "pass_rate_failed20": 0.175,
+        "per_template_pass_rate": {
+          "Skyfire-299": 0.75,
+          "Skyfire-1090": 0.9166666666666666,
+          "Skyfire-1867": 1.0,
+          "Skyfire-2086": 1.0,
+          "Skyfire-3519": 0.5833333333333334,
+          "Skyfire-7761": 1.0,
+          "Skyfire-20952": 0.8333333333333334,
+          "Skyfire-25941": 1.0,
+          "Skyfire-44039": 0.75,
+          "Skyfire-83652": 0.16666666666666666,
+          "RUBIES-UDS-119957": 0.5,
+          "RUBIES-EGS-29489": 1.0,
+          "RUBIES-EGS-42232": 1.0,
+          "RUBIES-EGS-42046": 1.0,
+          "RUBIES-UDS-970351": 0.16666666666666666,
+          "RUBIES-EGS-926125": 1.0,
+          "RUBIES-EGS-60935": 1.0,
+          "RUBIES-UDS-29813": 0.9166666666666666,
+          "RUBIES-UDS-172350": 1.0,
+          "CEERS-746": 1.0,
+          "CEERS-672": 0.9166666666666666,
+          "RUBIES-EGS-37124": 0.5,
+          "RUBIES-EGS-49140": 1.0,
+          "RUBIES-UDS-144195": 1.0,
+          "RUBIES-UDS-23438": 0.08333333333333333,
+          "RUBIES-UDS-149298": 0.4166666666666667,
+          "RUBIES-EGS-948917": 1.0,
+          "RUBIES-EGS-55604": 1.0,
+          "RUBIES-EGS-42803": 0.25,
+          "RUBIES-EGS-37032": 1.0,
+          "Skyfire-23289": 1.0,
+          "RUBIES-UDS-967770": 0.0,
+          "RUBIES-UDS-10036": 0.0,
+          "RUBIES-UDS-50716": 0.16666666666666666,
+          "RUBIES-UDS-19484": 0.0,
+          "RUBIES-EGS-61496": 0.08333333333333333,
+          "RUBIES-EGS-952625": 0.0,
+          "Skyfire-92141": 0.0,
+          "RUBIES-UDS-16053": 0.0,
+          "RUBIES-UDS-31747": 0.25,
+          "RUBIES-UDS-33938": 0.0,
+          "RUBIES-UDS-830237": 0.0,
+          "RUBIES-EGS-53254": 0.0,
+          "RUBIES-UDS-53692": 0.0,
+          "RUBIES-EGS-927271": 0.16666666666666666,
+          "RUBIES-UDS-36171": 0.0,
+          "RUBIES-UDS-848745": 0.0,
+          "Skyfire-26079": 0.8333333333333334,
+          "RUBIES-UDS-167741": 0.0
+        }
+      },
+      "dy_+0.00": {
+        "pass_rate_all49": 0.6122448979591837,
+        "pass_rate_frozen29": 0.8620689655172413,
+        "pass_rate_failed20": 0.25,
+        "per_template_pass_rate": {
+          "Skyfire-299": 1.0,
+          "Skyfire-1090": 1.0,
+          "Skyfire-1867": 1.0,
+          "Skyfire-2086": 1.0,
+          "Skyfire-3519": 0.75,
+          "Skyfire-7761": 1.0,
+          "Skyfire-20952": 0.9166666666666666,
+          "Skyfire-25941": 0.9166666666666666,
+          "Skyfire-44039": 0.6666666666666666,
+          "Skyfire-83652": 0.16666666666666666,
+          "RUBIES-UDS-119957": 0.8333333333333334,
+          "RUBIES-EGS-29489": 1.0,
+          "RUBIES-EGS-42232": 1.0,
+          "RUBIES-EGS-42046": 1.0,
+          "RUBIES-UDS-970351": 0.5833333333333334,
+          "RUBIES-EGS-926125": 1.0,
+          "RUBIES-EGS-60935": 1.0,
+          "RUBIES-UDS-29813": 1.0,
+          "RUBIES-UDS-172350": 1.0,
+          "CEERS-746": 1.0,
+          "CEERS-672": 0.5,
+          "RUBIES-EGS-37124": 1.0,
+          "RUBIES-EGS-49140": 1.0,
+          "RUBIES-UDS-144195": 1.0,
+          "RUBIES-UDS-23438": 0.6666666666666666,
+          "RUBIES-UDS-149298": 0.6666666666666666,
+          "RUBIES-EGS-948917": 1.0,
+          "RUBIES-EGS-55604": 1.0,
+          "RUBIES-EGS-42803": 0.3333333333333333,
+          "RUBIES-EGS-37032": 1.0,
+          "Skyfire-23289": 1.0,
+          "RUBIES-UDS-967770": 0.0,
+          "RUBIES-UDS-10036": 0.0,
+          "RUBIES-UDS-50716": 0.08333333333333333,
+          "RUBIES-UDS-19484": 0.0,
+          "RUBIES-EGS-61496": 0.4166666666666667,
+          "RUBIES-EGS-952625": 0.0,
+          "Skyfire-92141": 0.0,
+          "RUBIES-UDS-16053": 0.0,
+          "RUBIES-UDS-31747": 1.0,
+          "RUBIES-UDS-33938": 0.0,
+          "RUBIES-UDS-830237": 0.0,
+          "RUBIES-EGS-53254": 0.0,
+          "RUBIES-UDS-53692": 0.0,
+          "RUBIES-EGS-927271": 0.16666666666666666,
+          "RUBIES-UDS-36171": 0.0,
+          "RUBIES-UDS-848745": 0.0,
+          "Skyfire-26079": 1.0,
+          "RUBIES-UDS-167741": 0.3333333333333333
+        }
+      },
+      "dy_+0.10": {
+        "pass_rate_all49": 0.6394557823129252,
+        "pass_rate_frozen29": 0.8908045977011494,
+        "pass_rate_failed20": 0.275,
+        "per_template_pass_rate": {
+          "Skyfire-299": 1.0,
+          "Skyfire-1090": 1.0,
+          "Skyfire-1867": 1.0,
+          "Skyfire-2086": 1.0,
+          "Skyfire-3519": 1.0,
+          "Skyfire-7761": 1.0,
+          "Skyfire-20952": 1.0,
+          "Skyfire-25941": 0.6666666666666666,
+          "Skyfire-44039": 0.6666666666666666,
+          "Skyfire-83652": 0.16666666666666666,
+          "RUBIES-UDS-119957": 1.0,
+          "RUBIES-EGS-29489": 1.0,
+          "RUBIES-EGS-42232": 1.0,
+          "RUBIES-EGS-42046": 1.0,
+          "RUBIES-UDS-970351": 0.8333333333333334,
+          "RUBIES-EGS-926125": 1.0,
+          "RUBIES-EGS-60935": 1.0,
+          "RUBIES-UDS-29813": 1.0,
+          "RUBIES-UDS-172350": 1.0,
+          "CEERS-746": 1.0,
+          "CEERS-672": 0.3333333333333333,
+          "RUBIES-EGS-37124": 1.0,
+          "RUBIES-EGS-49140": 1.0,
+          "RUBIES-UDS-144195": 1.0,
+          "RUBIES-UDS-23438": 1.0,
+          "RUBIES-UDS-149298": 1.0,
+          "RUBIES-EGS-948917": 1.0,
+          "RUBIES-EGS-55604": 1.0,
+          "RUBIES-EGS-42803": 0.16666666666666666,
+          "RUBIES-EGS-37032": 1.0,
+          "Skyfire-23289": 1.0,
+          "RUBIES-UDS-967770": 0.08333333333333333,
+          "RUBIES-UDS-10036": 0.0,
+          "RUBIES-UDS-50716": 0.08333333333333333,
+          "RUBIES-UDS-19484": 0.0,
+          "RUBIES-EGS-61496": 0.8333333333333334,
+          "RUBIES-EGS-952625": 0.0,
+          "Skyfire-92141": 0.0,
+          "RUBIES-UDS-16053": 0.0,
+          "RUBIES-UDS-31747": 1.0,
+          "RUBIES-UDS-33938": 0.0,
+          "RUBIES-UDS-830237": 0.0,
+          "RUBIES-EGS-53254": 0.0,
+          "RUBIES-UDS-53692": 0.0,
+          "RUBIES-EGS-927271": 0.0,
+          "RUBIES-UDS-36171": 0.0,
+          "RUBIES-UDS-848745": 0.0,
+          "Skyfire-26079": 1.0,
+          "RUBIES-UDS-167741": 0.5
+        }
+      },
+      "ratio_plus010_over_zero_all49": 1.0444444444444445,
+      "ratio_plus010_over_zero_failed20": 1.1
+    },
+    "offset_grid_exp": {
+      "dy_-0.10": {
+        "pass_rate_all49": 0.5544217687074829,
+        "pass_rate_frozen29": 0.8074712643678161,
+        "pass_rate_failed20": 0.1875,
+        "per_template_pass_rate": {
+          "Skyfire-299": 1.0,
+          "Skyfire-1090": 0.9166666666666666,
+          "Skyfire-1867": 0.9166666666666666,
+          "Skyfire-2086": 1.0,
+          "Skyfire-3519": 0.75,
+          "Skyfire-7761": 1.0,
+          "Skyfire-20952": 0.8333333333333334,
+          "Skyfire-25941": 1.0,
+          "Skyfire-44039": 0.5,
+          "Skyfire-83652": 0.25,
+          "RUBIES-UDS-119957": 0.6666666666666666,
+          "RUBIES-EGS-29489": 1.0,
+          "RUBIES-EGS-42232": 1.0,
+          "RUBIES-EGS-42046": 1.0,
+          "RUBIES-UDS-970351": 0.25,
+          "RUBIES-EGS-926125": 1.0,
+          "RUBIES-EGS-60935": 1.0,
+          "RUBIES-UDS-29813": 1.0,
+          "RUBIES-UDS-172350": 1.0,
+          "CEERS-746": 0.9166666666666666,
+          "CEERS-672": 0.9166666666666666,
+          "RUBIES-EGS-37124": 1.0,
+          "RUBIES-EGS-49140": 0.8333333333333334,
+          "RUBIES-UDS-144195": 0.8333333333333334,
+          "RUBIES-UDS-23438": 0.25,
+          "RUBIES-UDS-149298": 0.5,
+          "RUBIES-EGS-948917": 1.0,
+          "RUBIES-EGS-55604": 1.0,
+          "RUBIES-EGS-42803": 0.08333333333333333,
+          "RUBIES-EGS-37032": 1.0,
+          "Skyfire-23289": 0.8333333333333334,
+          "RUBIES-UDS-967770": 0.0,
+          "RUBIES-UDS-10036": 0.0,
+          "RUBIES-UDS-50716": 0.08333333333333333,
+          "RUBIES-UDS-19484": 0.0,
+          "RUBIES-EGS-61496": 0.3333333333333333,
+          "RUBIES-EGS-952625": 0.0,
+          "Skyfire-92141": 0.0,
+          "RUBIES-UDS-16053": 0.0,
+          "RUBIES-UDS-31747": 0.5833333333333334,
+          "RUBIES-UDS-33938": 0.0,
+          "RUBIES-UDS-830237": 0.0,
+          "RUBIES-EGS-53254": 0.0,
+          "RUBIES-UDS-53692": 0.0,
+          "RUBIES-EGS-927271": 0.0,
+          "RUBIES-UDS-36171": 0.0,
+          "RUBIES-UDS-848745": 0.0,
+          "Skyfire-26079": 0.9166666666666666,
+          "RUBIES-UDS-167741": 0.0
+        }
+      },
+      "dy_+0.00": {
+        "pass_rate_all49": 0.5782312925170068,
+        "pass_rate_frozen29": 0.8304597701149425,
+        "pass_rate_failed20": 0.2125,
+        "per_template_pass_rate": {
+          "Skyfire-299": 1.0,
+          "Skyfire-1090": 1.0,
+          "Skyfire-1867": 0.9166666666666666,
+          "Skyfire-2086": 1.0,
+          "Skyfire-3519": 0.8333333333333334,
+          "Skyfire-7761": 1.0,
+          "Skyfire-20952": 1.0,
+          "Skyfire-25941": 0.75,
+          "Skyfire-44039": 0.4166666666666667,
+          "Skyfire-83652": 0.16666666666666666,
+          "RUBIES-UDS-119957": 1.0,
+          "RUBIES-EGS-29489": 1.0,
+          "RUBIES-EGS-42232": 1.0,
+          "RUBIES-EGS-42046": 1.0,
+          "RUBIES-UDS-970351": 0.4166666666666667,
+          "RUBIES-EGS-926125": 1.0,
+          "RUBIES-EGS-60935": 1.0,
+          "RUBIES-UDS-29813": 1.0,
+          "RUBIES-UDS-172350": 1.0,
+          "CEERS-746": 0.9166666666666666,
+          "CEERS-672": 0.6666666666666666,
+          "RUBIES-EGS-37124": 1.0,
+          "RUBIES-EGS-49140": 0.8333333333333334,
+          "RUBIES-UDS-144195": 0.9166666666666666,
+          "RUBIES-UDS-23438": 0.4166666666666667,
+          "RUBIES-UDS-149298": 0.6666666666666666,
+          "RUBIES-EGS-948917": 1.0,
+          "RUBIES-EGS-55604": 1.0,
+          "RUBIES-EGS-42803": 0.16666666666666666,
+          "RUBIES-EGS-37032": 1.0,
+          "Skyfire-23289": 0.8333333333333334,
+          "RUBIES-UDS-967770": 0.08333333333333333,
+          "RUBIES-UDS-10036": 0.0,
+          "RUBIES-UDS-50716": 0.0,
+          "RUBIES-UDS-19484": 0.0,
+          "RUBIES-EGS-61496": 0.4166666666666667,
+          "RUBIES-EGS-952625": 0.0,
+          "Skyfire-92141": 0.0,
+          "RUBIES-UDS-16053": 0.0,
+          "RUBIES-UDS-31747": 0.75,
+          "RUBIES-UDS-33938": 0.0,
+          "RUBIES-UDS-830237": 0.0,
+          "RUBIES-EGS-53254": 0.0,
+          "RUBIES-UDS-53692": 0.0,
+          "RUBIES-EGS-927271": 0.0,
+          "RUBIES-UDS-36171": 0.0,
+          "RUBIES-UDS-848745": 0.0,
+          "Skyfire-26079": 1.0,
+          "RUBIES-UDS-167741": 0.16666666666666666
+        }
+      },
+      "dy_+0.10": {
+        "pass_rate_all49": 0.5731292517006803,
+        "pass_rate_frozen29": 0.8074712643678161,
+        "pass_rate_failed20": 0.23333333333333334,
+        "per_template_pass_rate": {
+          "Skyfire-299": 1.0,
+          "Skyfire-1090": 1.0,
+          "Skyfire-1867": 1.0,
+          "Skyfire-2086": 1.0,
+          "Skyfire-3519": 0.9166666666666666,
+          "Skyfire-7761": 1.0,
+          "Skyfire-20952": 1.0,
+          "Skyfire-25941": 0.25,
+          "Skyfire-44039": 0.3333333333333333,
+          "Skyfire-83652": 0.08333333333333333,
+          "RUBIES-UDS-119957": 1.0,
+          "RUBIES-EGS-29489": 1.0,
+          "RUBIES-EGS-42232": 1.0,
+          "RUBIES-EGS-42046": 1.0,
+          "RUBIES-UDS-970351": 0.5833333333333334,
+          "RUBIES-EGS-926125": 1.0,
+          "RUBIES-EGS-60935": 1.0,
+          "RUBIES-UDS-29813": 1.0,
+          "RUBIES-UDS-172350": 1.0,
+          "CEERS-746": 0.8333333333333334,
+          "CEERS-672": 0.4166666666666667,
+          "RUBIES-EGS-37124": 1.0,
+          "RUBIES-EGS-49140": 0.6666666666666666,
+          "RUBIES-UDS-144195": 1.0,
+          "RUBIES-UDS-23438": 0.5,
+          "RUBIES-UDS-149298": 0.6666666666666666,
+          "RUBIES-EGS-948917": 1.0,
+          "RUBIES-EGS-55604": 1.0,
+          "RUBIES-EGS-42803": 0.16666666666666666,
+          "RUBIES-EGS-37032": 1.0,
+          "Skyfire-23289": 0.8333333333333334,
+          "RUBIES-UDS-967770": 0.08333333333333333,
+          "RUBIES-UDS-10036": 0.0,
+          "RUBIES-UDS-50716": 0.0,
+          "RUBIES-UDS-19484": 0.0,
+          "RUBIES-EGS-61496": 0.5,
+          "RUBIES-EGS-952625": 0.0,
+          "Skyfire-92141": 0.0,
+          "RUBIES-UDS-16053": 0.0,
+          "RUBIES-UDS-31747": 1.0,
+          "RUBIES-UDS-33938": 0.0,
+          "RUBIES-UDS-830237": 0.0,
+          "RUBIES-EGS-53254": 0.0,
+          "RUBIES-UDS-53692": 0.0,
+          "RUBIES-EGS-927271": 0.0,
+          "RUBIES-UDS-36171": 0.0,
+          "RUBIES-UDS-848745": 0.0,
+          "Skyfire-26079": 1.0,
+          "RUBIES-UDS-167741": 0.25
+        }
+      },
+      "ratio_plus010_over_zero_all49": 0.9911764705882353,
+      "ratio_plus010_over_zero_failed20": 1.0980392156862746
+    }
+  },
+  "preregistered_evaluation": {
+    "C1_SNR4to7_evaluation": {
+      "gauss_rel_s005": {
+        "N_failed_SNR4to7_all49": 469,
+        "frac_bias_vs_inj_equiv_gt_0p09": 0.10021321961620469,
+        "frac_resid_vs_Eq3_gt_0p09": 0.12366737739872068,
+        "pass_rate_ratio_plus010_over_zero_all49": 1.0444444444444445,
+        "pass_rate_ratio_plus010_over_zero_failed20": 1.1,
+        "regime": "intermediate_regime (report exact numbers without single-cause claim)"
+      },
+      "gauss_rel_s010": {
+        "N_failed_SNR4to7_all49": 498,
+        "frac_bias_vs_inj_equiv_gt_0p09": 0.08634538152610442,
+        "frac_resid_vs_Eq3_gt_0p09": 0.15461847389558234,
+        "pass_rate_ratio_plus010_over_zero_all49": 1.0444444444444445,
+        "pass_rate_ratio_plus010_over_zero_failed20": 1.1,
+        "regime": "intermediate_regime (report exact numbers without single-cause claim)"
+      },
+      "exp_matched_s005": {
+        "N_failed_SNR4to7_all49": 554,
+        "frac_bias_vs_inj_equiv_gt_0p09": 0.15342960288808663,
+        "frac_resid_vs_Eq3_gt_0p09": 0.18231046931407943,
+        "pass_rate_ratio_plus010_over_zero_all49": 0.9911764705882353,
+        "pass_rate_ratio_plus010_over_zero_failed20": 1.0980392156862746,
+        "regime": "intermediate_regime (report exact numbers without single-cause claim)"
+      },
+      "exp_matched_s010": {
+        "N_failed_SNR4to7_all49": 578,
+        "frac_bias_vs_inj_equiv_gt_0p09": 0.17993079584775087,
+        "frac_resid_vs_Eq3_gt_0p09": 0.21972318339100347,
+        "pass_rate_ratio_plus010_over_zero_all49": 0.9911764705882353,
+        "pass_rate_ratio_plus010_over_zero_failed20": 1.0980392156862746,
+        "regime": "intermediate_regime (report exact numbers without single-cause claim)"
+      }
+    },
+    "C2_scatter_compression_hits_le_0054": {
+      "gauss_s010_physL_hits": 0,
+      "exp_s010_physL_hits": 2,
+      "gauss_s010_ownL_hits": 0,
+      "exp_s010_ownL_hits": 1
+    },
+    "C2_passed_all_le_5_of_100": true
+  },
+  "todo_3b_selection_corrected_posterior": {
+    "triggered": false,
+    "reason": "Pre-registered C1 truncation condition not met."
+  },
+  "elapsed_total_s": 5012.16
+}

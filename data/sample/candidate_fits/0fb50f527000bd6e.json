@@ -1,0 +1,44 @@
+{
+ "candidate": {
+  "dg_row_index": 70,
+  "spectrum_path": "jades-gdn2-v4_g395m-f290lp_1181_28074.spec.fits",
+  "file": "jades-gdn2-v4_g395m-f290lp_1181_28074.spec.fits",
+  "file_id": "0fb50f527000bd6e",
+  "grating": "G395M",
+  "ra_deg": 189.0645893,
+  "dec_deg": 62.2738154,
+  "match_sep_arcsec": 0.0,
+  "z_fit": 2.2734878,
+  "z_origin": "deGraaff preferred table row",
+  "dg_zspec": 2.2734878,
+  "dz_over_1pz": 0.0,
+  "existing_working_path": "0fb50f527000bd6e.json",
+  "existing_t2_row_index": 1146,
+  "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/jades-gdn2-v4/jades-gdn2-v4_g395m-f290lp_1181_28074.spec.fits",
+  "current_version": 4,
+  "selection_order": 1146,
+  "existing_quality_pass": false
+ },
+ "fit_origin": "existing_T2_fit_reused",
+ "working_path": "0fb50f527000bd6e.json",
+ "status": "not_covered_or_insufficient_valid_pixels",
+ "input_sha256": "07b533d0f087b2d71ec09d5a299a7e1189b0d33a3e3c6a8ad09687151e393d08",
+ "fit_z": 2.2734878,
+ "quality_tests": {},
+ "quality_failures": [
+  "not_fitted:not_covered_or_insufficient_valid_pixels"
+ ],
+ "quality_pass": false,
+ "old_classification": null,
+ "old_classification_disagreement": false,
+ "old_redshift_conflict": false,
+ "coverage_or_error": {
+  "status": "not_covered_or_insufficient_valid_pixels",
+  "line": "Halpha",
+  "z": 2.2734878,
+  "center_um": 2.1489455540196603,
+  "Nvalid": 0,
+  "center_valid": false
+ },
+ "elapsed_s": 0.017223249655216932
+}

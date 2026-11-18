@@ -1,0 +1,543 @@
+{
+  "constants_cgs": {
+    "G": 6.6743e-08,
+    "c": 29979245800.0,
+    "sigma_SB": 5.670374419e-05,
+    "kappa_es_ms": 0.398,
+    "kappa_es_exact": 0.3977263862130837,
+    "prefactor_5000K_cm2_g": 1.7826310407194006e-06
+  },
+  "self_check_benchmark": {
+    "T_eff_K": 5000.0,
+    "kappa_cm2_g": 0.001,
+    "r_out_over_Rph": 100.0,
+    "DeltaM_over_MEdd": 0.008209319321337906,
+    "Delta_vesc_pct": 0.409626994693002
+  },
+  "sample_temperature_summary_K": {
+    "N_total_kept_fits_ABC": 42,
+    "T_min_obs_K": 3636.88,
+    "T_median_obs_K": 4632.07,
+    "T_max_obs_K": 6380.552734375
+  },
+  "literature_opacity_citations": {
+    "Curtis_2026_arXiv_2609_09265v2": "Sec. 3.1 (p. 7: MESA r25.12.1 + AESOPUS molecular opacities); Sec. 5.2 (p. 17, Eq. 13 & Fig. 7: kappa_w/kappa_es = 0.05--5, windless photosphere ~0.02 cm^2/g); Appendix A (p. 20, Figs. A1--A2: surface Rosseland opacity drops to kappa_rad approx 10^-4 cm^2/g at T_eff = 4109 K, and 1.2e-4--4.7e-4 cm^2/g across the 5 matched models).",
+    "Hassan_2026b_arXiv_2611_03819v1": "Sec. 4.2 (p. 13, Table 1 & Fig. 9: at T_eff = 5085 K, log g = -1.94, Gamma_surf approx 110 kappa yields kappa_surf approx 8.7e-3 cm^2/g on the SR branch and ~10^-4 cm^2/g on the non-SR branch).",
+    "Begelman_Dexter_2026_ApJ_996_48": "Sec. 2.2 (p. 3, Eqs. 5--7: marginal-LTE layer at T_LTE = 5950--6100 K has x_LTE = 0.21--0.64, giving kappa_sc = 0.34 x = 0.071--0.218 cm^2/g with H^- bound-free and free-free absorption).",
+    "deGraaff_2026_arXiv_2511_21820": "Empirical modified-blackbody continuum fits; no gas Rosseland opacity specified."
+  },
+  "opacity_temperature_grid": [
+    {
+      "kappa_cm2_g": 0.1,
+      "by_temperature": {
+        "T_nominal_min_3600K": {
+          "T_K": 3600.0,
+          "DeltaM_over_MEdd": 0.00030547604784880543,
+          "DeltaM_over_MEdd_finite_rout100": 0.00030856166449374286,
+          "Delta_vesc_pct_at_lambda1": 0.015272636125374106,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.015426893279513187,
+          "Delta_vesc_pct_at_lambda0p29": 0.0044293046001175895,
+          "relaxed_lambda_ceiling_from_1": 1.0003055693919791,
+          "relaxed_lambda_ceiling_finite_rout100": 1.000308656904182
+        },
+        "T_sample_min_3637K": {
+          "T_K": 3636.88,
+          "DeltaM_over_MEdd": 0.00029327245847308466,
+          "DeltaM_over_MEdd_finite_rout100": 0.00029623480653846935,
+          "Delta_vesc_pct_at_lambda1": 0.014662547972088547,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.014810643551110836,
+          "Delta_vesc_pct_at_lambda0p29": 0.004252360235024177,
+          "relaxed_lambda_ceiling_from_1": 1.0002933584924394,
+          "relaxed_lambda_ceiling_finite_rout100": 1.000296322587603
+        },
+        "T_Curtis_AppA_4109K": {
+          "T_K": 4109.0,
+          "DeltaM_over_MEdd": 0.00017998760630662025,
+          "DeltaM_over_MEdd_finite_rout100": 0.00018180566293598006,
+          "Delta_vesc_pct_at_lambda1": 0.008998975407537024,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.00908987001810857,
+          "Delta_vesc_pct_at_lambda0p29": 0.0026097862365181967,
+          "relaxed_lambda_ceiling_from_1": 1.000180020007677,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0001818387222454
+        },
+        "T_sample_median_4604K": {
+          "T_K": 4632.07,
+          "DeltaM_over_MEdd": 0.00011145170350004144,
+          "DeltaM_over_MEdd_finite_rout100": 0.00011257747828287014,
+          "Delta_vesc_pct_at_lambda1": 0.0055724299151238554,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.005628715501959647,
+          "Delta_vesc_pct_at_lambda0p29": 0.0016160366428819017,
+          "relaxed_lambda_ceiling_from_1": 1.0001114641263669,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0001125901533985
+        },
+        "T_fiducial_5000K": {
+          "T_K": 5000.0,
+          "DeltaM_over_MEdd": 8.209319321337907e-05,
+          "DeltaM_over_MEdd_finite_rout100": 8.292241738725158e-05,
+          "Delta_vesc_pct_at_lambda1": 0.004104575422969603,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.00414603492133736,
+          "Delta_vesc_pct_at_lambda0p29": 0.0011903442169947098,
+          "relaxed_lambda_ceiling_from_1": 1.000082099933059,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0000829292940847
+        },
+        "T_sample_max_6381K": {
+          "T_K": 6380.552734375,
+          "DeltaM_over_MEdd": 3.095664997510587e-05,
+          "DeltaM_over_MEdd_finite_rout100": 3.126934340919785e-05,
+          "Delta_vesc_pct_at_lambda1": 0.0015478205200203377,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.001563454948505516,
+          "Delta_vesc_pct_at_lambda0p29": 0.0004488704172134206,
+          "relaxed_lambda_ceiling_from_1": 1.0000309576083188,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0000312703212118
+        },
+        "T_nominal_max_6400K": {
+          "T_K": 6400.0,
+          "DeltaM_over_MEdd": 3.058209762475605e-05,
+          "DeltaM_over_MEdd_finite_rout100": 3.089100770177379e-05,
+          "Delta_vesc_pct_at_lambda1": 0.001529093190599795,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.0015445384570877962,
+          "Delta_vesc_pct_at_lambda0p29": 0.0004434394323515889,
+          "relaxed_lambda_ceiling_from_1": 1.0000305830329181,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0000308919619856
+        }
+      },
+      "sample_ABC_42fits_dv_pct_p16_p50_p84_max": [
+        0.003543623454691947,
+        0.005579097600516558,
+        0.00841589638807605,
+        0.014662547972088547
+      ]
+    },
+    {
+      "kappa_cm2_g": 0.02,
+      "by_temperature": {
+        "T_nominal_min_3600K": {
+          "T_K": 3600.0,
+          "DeltaM_over_MEdd": 0.0015273802392440272,
+          "DeltaM_over_MEdd_finite_rout100": 0.0015428083224687144,
+          "Delta_vesc_pct_at_lambda1": 0.07633987308108825,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.07711068583409197,
+          "Delta_vesc_pct_at_lambda0p29": 0.02214456156099942,
+          "relaxed_lambda_ceiling_from_1": 1.0015297166983006,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0015451922579441
+        },
+        "T_sample_min_3637K": {
+          "T_K": 3636.88,
+          "DeltaM_over_MEdd": 0.0014663622923654237,
+          "DeltaM_over_MEdd_finite_rout100": 0.0014811740326923471,
+          "Delta_vesc_pct_at_lambda1": 0.073291256576824,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.07403129846885736,
+          "Delta_vesc_pct_at_lambda0p29": 0.021259993302713553,
+          "relaxed_lambda_ceiling_from_1": 1.0014685156683671,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0014833711635407
+        },
+        "T_Curtis_AppA_4109K": {
+          "T_K": 4109.0,
+          "DeltaM_over_MEdd": 0.0008999380315331012,
+          "DeltaM_over_MEdd_finite_rout100": 0.0009090283146799002,
+          "Delta_vesc_pct_at_lambda1": 0.044986782523648294,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.04544109127011531,
+          "Delta_vesc_pct_at_lambda0p29": 0.013048250173075537,
+          "relaxed_lambda_ceiling_from_1": 1.0009007486494996,
+          "relaxed_lambda_ceiling_finite_rout100": 1.000909855399
+        },
+        "T_sample_median_4604K": {
+          "T_K": 4632.07,
+          "DeltaM_over_MEdd": 0.0005572585175002072,
+          "DeltaM_over_MEdd_finite_rout100": 0.0005628873914143508,
+          "Delta_vesc_pct_at_lambda1": 0.027859045243006086,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.02814041015730684,
+          "Delta_vesc_pct_at_lambda0p29": 0.008079922078052526,
+          "relaxed_lambda_ceiling_from_1": 1.0005575692277013,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0005632044120767
+        },
+        "T_fiducial_5000K": {
+          "T_K": 5000.0,
+          "DeltaM_over_MEdd": 0.00041046596606689537,
+          "DeltaM_over_MEdd_finite_rout100": 0.00041461208693625796,
+          "Delta_vesc_pct_at_lambda1": 0.020521192706590696,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.020728456002361284,
+          "Delta_vesc_pct_at_lambda0p29": 0.005951579401486384,
+          "relaxed_lambda_ceiling_from_1": 1.0004106345175607,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0004147840614217
+        },
+        "T_sample_max_6381K": {
+          "T_K": 6380.552734375,
+          "DeltaM_over_MEdd": 0.00015478324987552934,
+          "DeltaM_over_MEdd_finite_rout100": 0.00015634671704598923,
+          "Delta_vesc_pct_at_lambda1": 0.00773886304377136,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.007817030322487817,
+          "Delta_vesc_pct_at_lambda0p29": 0.002244331938072719,
+          "relaxed_lambda_ceiling_from_1": 1.0001548072114388,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0001563711651644
+        },
+        "T_nominal_max_6400K": {
+          "T_K": 6400.0,
+          "DeltaM_over_MEdd": 0.00015291048812378024,
+          "DeltaM_over_MEdd_finite_rout100": 0.00015445503850886893,
+          "Delta_vesc_pct_at_lambda1": 0.00764523215830426,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.007722453743985724,
+          "Delta_vesc_pct_at_lambda0p29": 0.0022171774984203196,
+          "relaxed_lambda_ceiling_from_1": 1.000152933873317,
+          "relaxed_lambda_ceiling_finite_rout100": 1.000154478898553
+        }
+      },
+      "sample_ABC_42fits_dv_pct_p16_p50_p84_max": [
+        0.017716849466239637,
+        0.027892370292992297,
+        0.042072400540162924,
+        0.073291256576824
+      ]
+    },
+    {
+      "kappa_cm2_g": 0.0087,
+      "by_temperature": {
+        "T_nominal_min_3600K": {
+          "T_K": 3600.0,
+          "DeltaM_over_MEdd": 0.003511218940790868,
+          "DeltaM_over_MEdd_finite_rout100": 0.0035466857987786547,
+          "Delta_vesc_pct_at_lambda1": 0.1754071087705089,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.17717733090600873,
+          "Delta_vesc_pct_at_lambda0p29": 0.05089972073362148,
+          "relaxed_lambda_ceiling_from_1": 1.0035235910403915,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0035593095514181
+        },
+        "T_sample_min_3637K": {
+          "T_K": 3636.88,
+          "DeltaM_over_MEdd": 0.003370947798541204,
+          "DeltaM_over_MEdd_finite_rout100": 0.0034049977763042465,
+          "Delta_vesc_pct_at_lambda1": 0.16840558771720193,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.17010520990303757,
+          "Delta_vesc_pct_at_lambda0p29": 0.048866803256553126,
+          "relaxed_lambda_ceiling_from_1": 1.003382349522217,
+          "relaxed_lambda_ceiling_finite_rout100": 1.003416631398619
+        },
+        "T_Curtis_AppA_4109K": {
+          "T_K": 4109.0,
+          "DeltaM_over_MEdd": 0.002068823060995635,
+          "DeltaM_over_MEdd_finite_rout100": 0.0020897202636319546,
+          "Delta_vesc_pct_at_lambda1": 0.10338770795899066,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.1044314835078497,
+          "Delta_vesc_pct_at_lambda0p29": 0.029993436353326075,
+          "relaxed_lambda_ceiling_from_1": 1.0020731119628323,
+          "relaxed_lambda_ceiling_finite_rout100": 1.002094096339186
+        },
+        "T_sample_median_4604K": {
+          "T_K": 4632.07,
+          "DeltaM_over_MEdd": 0.0012810540632188672,
+          "DeltaM_over_MEdd_finite_rout100": 0.001293994003251381,
+          "Delta_vesc_pct_at_lambda1": 0.06403220254613817,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.06467878343743294,
+          "Delta_vesc_pct_at_lambda0p29": 0.01857355903120972,
+          "relaxed_lambda_ceiling_from_1": 1.0012826972677655,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0012956705932292
+        },
+        "T_fiducial_5000K": {
+          "T_K": 5000.0,
+          "DeltaM_over_MEdd": 0.000943599921992863,
+          "DeltaM_over_MEdd_finite_rout100": 0.0009531312343362252,
+          "Delta_vesc_pct_at_lambda1": 0.047168871587399686,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.047645211385982655,
+          "Delta_vesc_pct_at_lambda0p29": 0.013681262984110987,
+          "relaxed_lambda_ceiling_from_1": 1.0009444911437624,
+          "relaxed_lambda_ceiling_finite_rout100": 1.000954040560193
+        },
+        "T_sample_max_6381K": {
+          "T_K": 6380.552734375,
+          "DeltaM_over_MEdd": 0.00035582356293225134,
+          "DeltaM_over_MEdd_finite_rout100": 0.00035941774033560744,
+          "Delta_vesc_pct_at_lambda1": 0.017789595798012314,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.017969272543005843,
+          "Delta_vesc_pct_at_lambda0p29": 0.005159308570190646,
+          "relaxed_lambda_ceiling_from_1": 1.0003559502184072,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0003595469678943
+        },
+        "T_nominal_max_6400K": {
+          "T_K": 6400.0,
+          "DeltaM_over_MEdd": 0.0003515183635029432,
+          "DeltaM_over_MEdd_finite_rout100": 0.00035506905404337694,
+          "Delta_vesc_pct_at_lambda1": 0.017574373882056626,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.01775187705648218,
+          "Delta_vesc_pct_at_lambda0p29": 0.005096886379529764,
+          "relaxed_lambda_ceiling_from_1": 1.0003516419721135,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0003551951728573
+        }
+      },
+      "sample_ABC_42fits_dv_pct_p16_p50_p84_max": [
+        0.04072365949604074,
+        0.06410876199246518,
+        0.09669175536775665,
+        0.16840558771720193
+      ]
+    },
+    {
+      "kappa_cm2_g": 0.001,
+      "by_temperature": {
+        "T_nominal_min_3600K": {
+          "T_K": 3600.0,
+          "DeltaM_over_MEdd": 0.03054760478488055,
+          "DeltaM_over_MEdd_finite_rout100": 0.030856166449374292,
+          "Delta_vesc_pct_at_lambda1": 1.5158906174240538,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 1.531087182664126,
+          "Delta_vesc_pct_at_lambda0p29": 0.4419636102169777,
+          "relaxed_lambda_ceiling_from_1": 1.0315101648473435,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0318385830680337
+        },
+        "T_sample_min_3637K": {
+          "T_K": 3636.88,
+          "DeltaM_over_MEdd": 0.02932724584730847,
+          "DeltaM_over_MEdd_finite_rout100": 0.029623480653846943,
+          "Delta_vesc_pct_at_lambda1": 1.4557660188571298,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 1.4703641786037336,
+          "Delta_vesc_pct_at_lambda0p29": 0.4243447225681152,
+          "relaxed_lambda_ceiling_from_1": 1.0302133192899892,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0305278209676874
+        },
+        "T_Curtis_AppA_4109K": {
+          "T_K": 4109.0,
+          "DeltaM_over_MEdd": 0.017998760630662025,
+          "DeltaM_over_MEdd_finite_rout100": 0.018180566293598006,
+          "Delta_vesc_pct_at_lambda1": 0.8959246268481325,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.9049337888687337,
+          "Delta_vesc_pct_at_lambda0p29": 0.2606423569534,
+          "relaxed_lambda_ceiling_from_1": 1.0183286536809477,
+          "relaxed_lambda_ceiling_finite_rout100": 1.018517219836407
+        },
+        "T_sample_median_4604K": {
+          "T_K": 4632.07,
+          "DeltaM_over_MEdd": 0.011145170350004145,
+          "DeltaM_over_MEdd_finite_rout100": 0.011257747828287016,
+          "Delta_vesc_pct_at_lambda1": 0.5557144248900414,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.5613120354088785,
+          "Delta_vesc_pct_at_lambda0p29": 0.1614745998430811,
+          "relaxed_lambda_ceiling_from_1": 1.0112707851707101,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0113859277314792
+        },
+        "T_fiducial_5000K": {
+          "T_K": 5000.0,
+          "DeltaM_over_MEdd": 0.008209319321337906,
+          "DeltaM_over_MEdd_finite_rout100": 0.008292241738725158,
+          "Delta_vesc_pct_at_lambda1": 0.409626994693002,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.4137561163173098,
+          "Delta_vesc_pct_at_lambda0p29": 0.11896436755565176,
+          "relaxed_lambda_ceiling_from_1": 1.0082772700744884,
+          "relaxed_lambda_ceiling_finite_rout100": 1.008361577964524
+        },
+        "T_sample_max_6381K": {
+          "T_K": 6380.552734375,
+          "DeltaM_over_MEdd": 0.0030956649975105864,
+          "DeltaM_over_MEdd_finite_rout100": 0.003126934340919784,
+          "Delta_vesc_pct_at_lambda1": 0.15466364565908108,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.1562246862829575,
+          "Delta_vesc_pct_at_lambda0p29": 0.044877072705618026,
+          "relaxed_lambda_ceiling_from_1": 1.0031052778976057,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0031367427294793
+        },
+        "T_nominal_max_6400K": {
+          "T_K": 6400.0,
+          "DeltaM_over_MEdd": 0.0030582097624756053,
+          "DeltaM_over_MEdd_finite_rout100": 0.0030891007701773793,
+          "Delta_vesc_pct_at_lambda1": 0.15279375846066756,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.15433594059608424,
+          "Delta_vesc_pct_at_lambda0p29": 0.044334213943275635,
+          "relaxed_lambda_ceiling_from_1": 1.0030675910995235,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0030986728829667
+        }
+      },
+      "sample_ABC_42fits_dv_pct_p16_p50_p84_max": [
+        0.3537369242475395,
+        0.5563746469466446,
+        0.8381120899128128,
+        1.4557660188571298
+      ]
+    },
+    {
+      "kappa_cm2_g": 0.0003,
+      "by_temperature": {
+        "T_nominal_min_3600K": {
+          "T_K": 3600.0,
+          "DeltaM_over_MEdd": 0.10182534928293516,
+          "DeltaM_over_MEdd_finite_rout100": 0.10285388816458096,
+          "Delta_vesc_pct_at_lambda1": 4.967868859138758,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 5.016850465274425,
+          "Delta_vesc_pct_at_lambda0p29": 1.465725803940865,
+          "relaxed_lambda_ceiling_from_1": 1.1133692085405016,
+          "relaxed_lambda_ceiling_finite_rout100": 1.114645637770372
+        },
+        "T_sample_min_3637K": {
+          "T_K": 3636.88,
+          "DeltaM_over_MEdd": 0.09775748615769492,
+          "DeltaM_over_MEdd_finite_rout100": 0.09874493551282315,
+          "Delta_vesc_pct_at_lambda1": 4.773922621885962,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 4.8210348886531085,
+          "Delta_vesc_pct_at_lambda0p29": 1.407577181674724,
+          "relaxed_lambda_ceiling_from_1": 1.1083494566681227,
+          "relaxed_lambda_ceiling_finite_rout100": 1.109563806522419
+        },
+        "T_Curtis_AppA_4109K": {
+          "T_K": 4109.0,
+          "DeltaM_over_MEdd": 0.05999586876887342,
+          "DeltaM_over_MEdd_finite_rout100": 0.06060188764532668,
+          "Delta_vesc_pct_at_lambda1": 2.956100779355153,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 2.985527509710151,
+          "Delta_vesc_pct_at_lambda0p29": 0.866188682976099,
+          "relaxed_lambda_ceiling_from_1": 1.0638251118006221,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0645114002767404
+        },
+        "T_sample_median_4604K": {
+          "T_K": 4632.07,
+          "DeltaM_over_MEdd": 0.03715056783334716,
+          "DeltaM_over_MEdd_finite_rout100": 0.03752582609429006,
+          "Delta_vesc_pct_at_lambda1": 1.8405895423503127,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 1.859011682535483,
+          "Delta_vesc_pct_at_lambda0p29": 0.5372400989638537,
+          "relaxed_lambda_ceiling_from_1": 1.0385839847770892,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0389889174293485
+        },
+        "T_fiducial_5000K": {
+          "T_K": 5000.0,
+          "DeltaM_over_MEdd": 0.027364397737793027,
+          "DeltaM_over_MEdd_finite_rout100": 0.027640805795750532,
+          "Delta_vesc_pct_at_lambda1": 1.3589856765443997,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 1.3726198633413178,
+          "Delta_vesc_pct_at_lambda0p29": 0.3959996884318029,
+          "relaxed_lambda_ceiling_from_1": 1.028134275235399,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0284265382180822
+        },
+        "T_sample_max_6381K": {
+          "T_K": 6380.552734375,
+          "DeltaM_over_MEdd": 0.01031888332503529,
+          "DeltaM_over_MEdd_finite_rout100": 0.010423114469732616,
+          "Delta_vesc_pct_at_lambda1": 0.5146199975424093,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.5198047386549831,
+          "Delta_vesc_pct_at_lambda0p29": 0.1495120389640281,
+          "relaxed_lambda_ceiling_from_1": 1.0104264728821983,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0105329000931014
+        },
+        "T_nominal_max_6400K": {
+          "T_K": 6400.0,
+          "DeltaM_over_MEdd": 0.010194032541585352,
+          "DeltaM_over_MEdd_finite_rout100": 0.010297002567257931,
+          "Delta_vesc_pct_at_lambda1": 0.5084092273669016,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 0.5135315550726105,
+          "Delta_vesc_pct_at_lambda0p29": 0.14770438892044435,
+          "relaxed_lambda_ceiling_from_1": 1.010299021097803,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0104041339613683
+        }
+      },
+      "sample_ABC_42fits_dv_pct_p16_p50_p84_max": [
+        1.1742675995425165,
+        1.8427408362552633,
+        2.767123331444517,
+        4.773922621885962
+      ]
+    },
+    {
+      "kappa_cm2_g": 0.0001,
+      "by_temperature": {
+        "T_nominal_min_3600K": {
+          "T_K": 3600.0,
+          "DeltaM_over_MEdd": 0.30547604784880544,
+          "DeltaM_over_MEdd_finite_rout100": 0.3085616644937429,
+          "Delta_vesc_pct_at_lambda1": 14.25743073642105,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 14.392380187394593,
+          "Delta_vesc_pct_at_lambda0p29": 4.335423221270052,
+          "relaxed_lambda_ceiling_from_1": 1.4398351516929466,
+          "relaxed_lambda_ceiling_finite_rout100": 1.4462605682223568
+        },
+        "T_sample_min_3637K": {
+          "T_K": 3636.88,
+          "DeltaM_over_MEdd": 0.2932724584730847,
+          "DeltaM_over_MEdd_finite_rout100": 0.2962348065384694,
+          "Delta_vesc_pct_at_lambda1": 13.722137619422403,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 13.852308124976954,
+          "Delta_vesc_pct_at_lambda0p29": 4.165685950662024,
+          "relaxed_lambda_ceiling_from_1": 1.4149724487027304,
+          "relaxed_lambda_ceiling_finite_rout100": 1.4209284705903296
+        },
+        "T_Curtis_AppA_4109K": {
+          "T_K": 4109.0,
+          "DeltaM_over_MEdd": 0.17998760630662022,
+          "DeltaM_over_MEdd_finite_rout100": 0.18180566293598002,
+          "Delta_vesc_pct_at_lambda1": 8.627234444526843,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 8.71088551456014,
+          "Delta_vesc_pct_at_lambda0p29": 2.5766253017187157,
+          "relaxed_lambda_ceiling_from_1": 1.2194937633758758,
+          "relaxed_lambda_ceiling_finite_rout100": 1.2222035214621076
+        },
+        "T_sample_median_4604K": {
+          "T_K": 4632.07,
+          "DeltaM_over_MEdd": 0.11145170350004145,
+          "DeltaM_over_MEdd_finite_rout100": 0.11257747828287015,
+          "Delta_vesc_pct_at_lambda1": 5.425409816611171,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 5.478788307548843,
+          "Delta_vesc_pct_at_lambda0p29": 1.6031984740151772,
+          "relaxed_lambda_ceiling_from_1": 1.125431227474135,
+          "relaxed_lambda_ceiling_finite_rout100": 1.126858937572417
+        },
+        "T_fiducial_5000K": {
+          "T_K": 5000.0,
+          "DeltaM_over_MEdd": 0.08209319321337906,
+          "DeltaM_over_MEdd_finite_rout100": 0.08292241738725158,
+          "Delta_vesc_pct_at_lambda1": 4.023708509809398,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 4.063558337549256,
+          "Delta_vesc_pct_at_lambda0p29": 1.1833497188089792,
+          "relaxed_lambda_ceiling_from_1": 1.089435215651977,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0904202860907428
+        },
+        "T_sample_max_6381K": {
+          "T_K": 6380.552734375,
+          "DeltaM_over_MEdd": 0.030956649975105863,
+          "DeltaM_over_MEdd_finite_rout100": 0.03126934340919784,
+          "Delta_vesc_pct_at_lambda1": 1.5360354738703563,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 1.5514324571149318,
+          "Delta_vesc_pct_at_lambda0p29": 0.44786849370077597,
+          "relaxed_lambda_ceiling_from_1": 1.0319455780531497,
+          "relaxed_lambda_ceiling_finite_rout100": 1.032278676427194
+        },
+        "T_nominal_max_6400K": {
+          "T_K": 6400.0,
+          "DeltaM_over_MEdd": 0.030582097624756048,
+          "DeltaM_over_MEdd_finite_rout100": 0.030891007701773786,
+          "Delta_vesc_pct_at_lambda1": 1.5175894919080557,
+          "Delta_vesc_pct_at_lambda1_finite_rout100": 1.5328029605099491,
+          "Delta_vesc_pct_at_lambda0p29": 0.44246155442324575,
+          "relaxed_lambda_ceiling_from_1": 1.0315468669908245,
+          "relaxed_lambda_ceiling_finite_rout100": 1.0318756795647064
+        }
+      },
+      "sample_ABC_42fits_dv_pct_p16_p50_p84_max": [
+        3.482473508029981,
+        5.431480955743639,
+        8.08901887124974,
+        13.722137619422403
+      ]
+    }
+  ],
+  "density_slope_sensitivity_kappa1e3_rout100": {
+    "alpha_1.5": {
+      "T5000_DeltaM_over_MEdd": 0.017826310407194002,
+      "T5000_Delta_vesc_pct": 0.8873783189549567,
+      "Tmin_DeltaM_over_MEdd": 0.06368330520453062,
+      "Tmin_Delta_vesc_pct": 3.135023401584136
+    },
+    "alpha_2.0": {
+      "T5000_DeltaM_over_MEdd": 0.008292241738725158,
+      "T5000_Delta_vesc_pct": 0.4137561163173098,
+      "Tmin_DeltaM_over_MEdd": 0.029623480653846943,
+      "Tmin_Delta_vesc_pct": 1.4703641786037336
+    },
+    "alpha_2.5": {
+      "T5000_DeltaM_over_MEdd": 0.004817921731674055,
+      "T5000_Delta_vesc_pct": 0.24060662883449435,
+      "Tmin_DeltaM_over_MEdd": 0.017211704109332603,
+      "Tmin_Delta_vesc_pct": 0.8569137000202343
+    },
+    "alpha_3.0": {
+      "T5000_DeltaM_over_MEdd": 0.0035299624568700997,
+      "T5000_Delta_vesc_pct": 0.17634263921149085,
+      "Tmin_DeltaM_over_MEdd": 0.012610555486045668,
+      "Tmin_Delta_vesc_pct": 0.6285523838063467
+    }
+  }
+}

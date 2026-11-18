@@ -1,0 +1,24 @@
+__pycache__/
+*.egg-info/
+.venv/
+.DS_Store
+
+# downloaded on demand (scripts/fetch_calibration.sh, SDSS spectra)
+data/calibration/
+data/sdss/spectra/
+data/sdss/download_successes.json
+data/sdss/selfcheck.json
+
+# LaTeX build products
+paper/*.aux
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/figures/*.png
+paper/submission_source/
+.ruff_cache/
+
+# Regenerated long-running experiment products
+work/
+paper/submission_source_arxiv/
+paper/submission_source_apj_anonymous/

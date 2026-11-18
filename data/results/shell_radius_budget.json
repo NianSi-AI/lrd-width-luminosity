@@ -1,0 +1,79 @@
+{
+  "sigma_int_dex": 0.05403,
+  "local_delta_method": true,
+  "rows": [
+    {
+      "tau_e": 0.5,
+      "D": 0.3664383561643836,
+      "sigma_logtau_local": 0.14744635514018692,
+      "sigma_logR_local": 0.29489271028037384,
+      "rounded_3dec": "0.295",
+      "rounded_2dec": "0.29",
+      "sigma_logR_gaussian_diagnostic": 0.2892551348043462,
+      "local_minus_gaussian": 0.005637575476027612,
+      "radius_budget_at_sigma_97p5": 0.4351633864265974
+    },
+    {
+      "tau_e": 1,
+      "D": 0.5363408521303258,
+      "sigma_logtau_local": 0.10073817757009347,
+      "sigma_logR_local": 0.20147635514018694,
+      "rounded_3dec": "0.201",
+      "rounded_2dec": "0.20",
+      "sigma_logR_gaussian_diagnostic": 0.20108905672720384,
+      "local_minus_gaussian": 0.0003872984129831003,
+      "radius_budget_at_sigma_97p5": 0.29731197120584313
+    },
+    {
+      "tau_e": 2,
+      "D": 0.6982055464926591,
+      "sigma_logtau_local": 0.07738408878504673,
+      "sigma_logR_local": 0.15476817757009345,
+      "rounded_3dec": "0.155",
+      "rounded_2dec": "0.15",
+      "sigma_logR_gaussian_diagnostic": 0.1549479146827524,
+      "local_minus_gaussian": -0.00017973711265895087,
+      "radius_budget_at_sigma_97p5": 0.22838626359546593
+    },
+    {
+      "tau_e": 3,
+      "D": 0.7762998790810157,
+      "sigma_logtau_local": 0.06959939252336449,
+      "sigma_logR_local": 0.13919878504672897,
+      "rounded_3dec": "0.139",
+      "rounded_2dec": "0.14",
+      "sigma_logR_gaussian_diagnostic": 0.139374027947473,
+      "local_minus_gaussian": -0.00017524290074402704,
+      "radius_budget_at_sigma_97p5": 0.20541102772534023
+    }
+  ],
+  "orbital_logM_over_R_limit": 0.10806,
+  "Bentz_not_same_variable": true,
+  "counterexample": {
+    "r_dex": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "k_dex": [
+      1.0,
+      -0.0,
+      -1.0
+    ],
+    "t_dex": [
+      -0.0,
+      -0.0,
+      -0.0
+    ]
+  },
+  "tau_critical_for_0p19": 1.1400580319768967,
+  "tau_critical_for_0p13": 4.257810170473423,
+  "frozen_sigma_int_quantiles_025_16_50_84_975": [
+    0.037725522082536954,
+    0.044879496113523425,
+    0.05402680260367583,
+    0.0655512503407321,
+    0.0797302779925444
+  ],
+  "orbital_budget_at_sigma_97p5": 0.1594605559850888
+}
