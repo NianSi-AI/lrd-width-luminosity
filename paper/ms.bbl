@@ -6,6 +6,35 @@
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
 % type= article
+\bibitem[{H.~B. {Akins} {et~al.}(2025){Akins}, {Casey}, {Lambrides}, {Allen},
+  {Andika}, {Brinch}, {Champagne}, {Cooper}, {Ding}, {Drakos}, {Faisst},
+  {Finkelstein}, {Franco}, {Fujimoto}, {Gentile}, {Gillman}, {Gozaliasl},
+  {Harish}, {Hayward}, {Hirschmann}, {Ilbert}, {Kartaltepe}, {Kocevski},
+  {Koekemoer}, {Kokorev}, {Liu}, {Long}, {McCracken}, {McKinney}, {Onoue},
+  {Paquereau}, {Renzini}, {Rhodes}, {Robertson}, {Shuntov}, {Silverman},
+  {Tanaka}, {Toft}, {Trakhtenbrot}, {Valentino}, \& {Zavala}}]{Akins2025}
+{Akins}, H.~B., {Casey}, C.~M., {Lambrides}, E., {et~al.} 2025,
+  \bibinfo{title}{{COSMOS-Web: The over-abundance and physical nature of
+  "little red dots"--Implications for early galaxy and SMBH assembly},} \apj,
+  991, 37, \dodoi{10.3847/1538-4357/ade984}
+
+% type= article
+\bibitem[{T.~T. {Ananna} {et~al.}(2024){Ananna}, {Bogd{\'a}n}, {Kov{\'a}cs},
+  {Natarajan}, \& {Hickox}}]{Ananna2024}
+{Ananna}, T.~T., {Bogd{\'a}n}, {\'A}., {Kov{\'a}cs}, O.~E., {Natarajan}, P., \&
+  {Hickox}, R.~C. 2024, \bibinfo{title}{{X-ray View of Little Red Dots: Do They
+  Host Supermassive Black Holes?},} \apjl, 969, L18,
+  \dodoi{10.3847/2041-8213/ad5669}
+
+% type= article
+\bibitem[{R.~J. {Assef} {et~al.}(2012){Assef}, {Frank}, {Grier}, {Kochanek},
+  {Denney}, \& {Peterson}}]{Assef2012}
+{Assef}, R.~J., {Frank}, S., {Grier}, C.~J., {et~al.} 2012,
+  \bibinfo{title}{{The Importance of Broad Emission Line Widths in Single-epoch
+  Black Hole Mass Estimates},} \apjl, 753, L2,
+  \dodoi{10.1088/2041-8205/753/1/L2}
+
+% type= article
 \bibitem[{ {Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
   {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
   {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
@@ -85,10 +114,25 @@
   \dodoi{10.3847/1538-4357/ae7de7}
 
 % type= article
+\bibitem[{J.~F.~W. {Baggen} {et~al.}(2024){Baggen}, {van Dokkum}, {Brammer},
+  {de Graaff}, {Franx}, {Greene}, {Labb{\'e}}, {Leja}, {Maseda}, {Nelson},
+  {Rix}, {Wang}, \& {Weibel}}]{Baggen2024}
+{Baggen}, J. F.~W., {van Dokkum}, P., {Brammer}, G., {et~al.} 2024,
+  \bibinfo{title}{{The Small Sizes and High Implied Densities of `Little Red
+  Dots' with Balmer Breaks Could Explain Their Broad Emission Lines Without an
+  AGN},} \apjl, 977, L13, \dodoi{10.3847/2041-8213/ad90b8}
+
+% type= article
 \bibitem[{M.~C. {Begelman} \& J. {Dexter}(2026){Begelman} \&
   {Dexter}}]{BegelmanDexter2025}
 {Begelman}, M.~C., \& {Dexter}, J. 2026, \bibinfo{title}{{Little Red Dots as
   Late-stage Quasi-stars},} \apj, 996, 48, \dodoi{10.3847/1538-4357/ae274a}
+
+% type= article
+\bibitem[{J. {Bellovary}(2025){Bellovary}}]{Bellovary2025}
+{Bellovary}, J. 2025, \bibinfo{title}{{Little Red Dots are Tidal Disruption
+  Events in Runaway-Collapsing Clusters},} \apjl, 984, L55,
+  \dodoi{10.3847/2041-8213/adce6c}
 
 % type= article
 \bibitem[{M.~C. {Bentz} {et~al.}(2013){Bentz}, {Denney}, {Grier}, {Barth},
@@ -106,6 +150,14 @@
   \dodoi{10.5281/zenodo.7299500}
 
 % type= article
+\bibitem[{M. {Brazzini} {et~al.}(2025){Brazzini}, {D'Eugenio}, {Maiolino},
+  {Juod{\v{z}}balis}, {Ji}, \& {Scholtz}}]{Brazzini2025}
+{Brazzini}, M., {D'Eugenio}, F., {Maiolino}, R., {et~al.} 2025,
+  \bibinfo{title}{{Ruling out dominant electron scattering in Little Red Dots'
+  Rosetta Stone using multiple hydrogen lines},} \mnras, 544, L167,
+  \dodoi{10.1093/mnrasl/slaf116}
+
+% type= article
 \bibitem[{C.~J. {Burke} {et~al.}(2026){Burke}, {Stone}, {Shen}, \&
   {Jiang}}]{Burke2025}
 {Burke}, C.~J., {Stone}, Z., {Shen}, Y., \& {Jiang}, Y.-F. 2026,
@@ -119,6 +171,22 @@
   \bibinfo{title}{{Impact of resonance, Raman, and Thomson scattering on
   hydrogen line formation in Little Red Dots},} \mnras, 545, staf2131,
   \dodoi{10.1093/mnras/staf2131}
+
+% type= article
+\bibitem[{C.-H. {Chen} {et~al.}(2026){Chen}, {Shangguan}, {Ho}, {Zhang},
+  {Inayoshi}, \& {Li}}]{ChenCH2026}
+{Chen}, C.-H., {Shangguan}, J., {Ho}, L.~C., {et~al.} 2026,
+  \bibinfo{title}{{ABCD: The Nuclear Structure of the Little Red Dots Revealed
+  through Absorption, Break, Continuum, and Decrement},} arXiv e-prints,
+  arXiv:2606.04711, \dodoi{10.48550/arXiv.2606.04711}
+
+% type= article
+\bibitem[{Y.-X. {Chen} {et~al.}(2026){Chen}, {Liu}, {Li}, {Wang}, {Ma},
+  {Jiang}, {Greene}, {Quataert}, \& {Goodman}}]{ChenYX2026}
+{Chen}, Y.-X., {Liu}, H., {Li}, R., {et~al.} 2026, \bibinfo{title}{{Spectral
+  Appearance of Self-gravitating Disks Powered by Stellar Objects: Universal
+  Effective Temperature in the Optical Continuum and Application to Little Red
+  Dots},} \apjl, 1003, L46, \dodoi{10.3847/2041-8213/ae6b69}
 
 % type= article
 \bibitem[{S.~M. {Croom}(2011){Croom}}]{Croom2011}
@@ -136,12 +204,25 @@
   arXiv:2609.09265, \dodoi{10.48550/arXiv.2609.09265}
 
 % type= article
-\bibitem[{A. {de Graaff} {et~al.}(2025){de Graaff}, {Brammer}, {Weibel},
-  {Lewis}, {Maseda}, {Oesch}, {Bezanson}, {Boogaard}, {Cleri}, {Cooper},
-  {Gottumukkala}, {Greene}, {Hirschmann}, {Hviding}, {Katz}, {Labb{\'e}},
-  {Leja}, {Matthee}, {McConachie}, {Miller}, {Naidu}, {Price}, {Rix}, {Setton},
-  {Suess}, {Wang}, {Whitaker}, \& {Williams}}]{DJAdeGraaff2024}
-{de Graaff}, A., {Brammer}, G., {Weibel}, A., {et~al.} 2025,
+\bibitem[{A. {de Graaff} {et~al.}(2025{\natexlab{a}}){de Graaff}, {Rix},
+  {Naidu}, {Labbe}, {Wang}, {Leja}, {Matthee}, {Katz}, {Greene}, {Hviding},
+  {Baggen}, {Bezanson}, {Boogaard}, {Brammer}, {Dayal}, {van Dokkum},
+  {Goulding}, {Hirschmann}, {Maseda}, {McConachie}, {Miller}, {Nelson},
+  {Oesch}, {Setton}, {Shivaei}, {Weibel}, {Whitaker}, \&
+  {Williams}}]{deGraaffRuby2025}
+{de Graaff}, A., {Rix}, H.-W., {Naidu}, R.~P., {et~al.} 2025{\natexlab{a}},
+  \bibinfo{title}{{A remarkable Ruby: Absorption in dense gas, rather than
+  evolved stars, drives the extreme Balmer break of a Little Red Dot at
+  $z=3.5$},} \aap, 701, A168, \dodoi{10.1051/0004-6361/202554681}
+
+% type= article
+\bibitem[{A. {de Graaff} {et~al.}(2025{\natexlab{b}}){de Graaff}, {Brammer},
+  {Weibel}, {Lewis}, {Maseda}, {Oesch}, {Bezanson}, {Boogaard}, {Cleri},
+  {Cooper}, {Gottumukkala}, {Greene}, {Hirschmann}, {Hviding}, {Katz},
+  {Labb{\'e}}, {Leja}, {Matthee}, {McConachie}, {Miller}, {Naidu}, {Price},
+  {Rix}, {Setton}, {Suess}, {Wang}, {Whitaker}, \&
+  {Williams}}]{DJAdeGraaff2024}
+{de Graaff}, A., {Brammer}, G., {Weibel}, A., {et~al.} 2025{\natexlab{b}},
   \bibinfo{title}{{RUBIES: A complete census of the bright and red distant
   Universe with JWST/NIRSpec},} \aap, 697, A189,
   \dodoi{10.1051/0004-6361/202452186}
@@ -210,6 +291,25 @@
   \dodoi{10.3847/1538-4357/ad1e5f}
 
 % type= article
+\bibitem[{J.~E. {Greene} {et~al.}(2026){Greene}, {Setton}, {Furtak}, {Naidu},
+  {Volonteri}, {Dayal}, {Labbe}, {van Dokkum}, {Bezanson}, {Brammer}, {Cutler},
+  {Glazebrook}, {de Graaff}, {Hirschmann}, {Hviding}, {Kokorev}, {Leja}, {Liu},
+  {Ma}, {Matthee}, {Nanayakkara}, {Oesch}, {Pan}, {Price}, {Spilker}, {Wang},
+  {Weaver}, {Whitaker}, {Williams}, \& {Zitrin}}]{Greene2026}
+{Greene}, J.~E., {Setton}, D.~J., {Furtak}, L.~J., {et~al.} 2026,
+  \bibinfo{title}{{What you see is what you get: empirically measured
+  bolometric luminosities of Little Red Dots},} \apj, 996, 129,
+  \dodoi{10.3847/1538-4357/ae1836}
+
+% type= article
+\bibitem[{H.-P. {Gu} {et~al.}(2026){Gu}, {Jiang}, {Chen}, {Li}, \&
+  {Jia}}]{Gu2026}
+{Gu}, H.-P., {Jiang}, F., {Chen}, X., {Li}, R., \& {Jia}, Z.-X. 2026,
+  \bibinfo{title}{{A Dark-matter Origin of Little Red Dots: Early Seeding and
+  Super-Bondi Accretion},} arXiv e-prints, arXiv:2609.16122,
+  \dodoi{10.48550/arXiv.2609.16122}
+
+% type= article
 \bibitem[{C.~R. Harris {et~al.}(2020)Harris, Millman, van~der Walt, Gommers,
   Virtanen, Cournapeau, Wieser, Taylor, Berg, Smith, Kern, Picus, Hoyer, van
   Kerkwijk, Brett, Haldane, del R{\'{i}}o, Wiebe, Peterson,
@@ -245,18 +345,56 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   \dodoi{10.1051/0004-6361/202555816}
 
 % type= article
+\bibitem[{E. {Iani} {et~al.}(2026){Iani}, {Rinaldi}, {Torralba}, {Matthee},
+  {D'Eugenio}, {Gupta}, {Mascia}, {Di Cesare}, {Oestlin}, {Kotiwale}, {Catone},
+  \& {Rodighiero}}]{Iani2026}
+{Iani}, E., {Rinaldi}, P., {Torralba}, A., {et~al.} 2026,
+  \bibinfo{title}{{Where the red rise stops: JWST/MIRI reveals a near-infrared
+  turnover in the Little Red Dot Abell2744-QSO1},} arXiv e-prints,
+  arXiv:2611.09397, \dodoi{10.48550/arXiv.2611.09397}
+
+% type= article
+\bibitem[{K. {Inayoshi}(2025){Inayoshi}}]{Inayoshi2025}
+{Inayoshi}, K. 2025, \bibinfo{title}{{Little Red Dots as the Very First
+  Activity of Black Hole Growth},} \apjl, 988, L22,
+  \dodoi{10.3847/2041-8213/adea66}
+
+% type= article
 \bibitem[{K. {Inayoshi} \& L.~C. {Ho}(2026){Inayoshi} \& {Ho}}]{InayoshiHo}
 {Inayoshi}, K., \& {Ho}, L.~C. 2026, \bibinfo{title}{{A critical evaluation of
   the physical nature of the little red dots},} Nature Astronomy, 10, 1261,
   \dodoi{10.1038/s41550-026-02934-2}
 
 % type= article
-\bibitem[{K. {Inayoshi} {et~al.}(2026){Inayoshi}, {Murase}, \&
+\bibitem[{K. {Inayoshi} \& K. {Ichikawa}(2024){Inayoshi} \&
+  {Ichikawa}}]{InayoshiIchikawa2024}
+{Inayoshi}, K., \& {Ichikawa}, K. 2024, \bibinfo{title}{{Birth of Rapidly
+  Spinning, Overmassive Black Holes in the Early Universe},} \apjl, 973, L49,
+  \dodoi{10.3847/2041-8213/ad74e2}
+
+% type= article
+\bibitem[{K. {Inayoshi} \& R. {Maiolino}(2025){Inayoshi} \&
+  {Maiolino}}]{InayoshiMaiolino2025}
+{Inayoshi}, K., \& {Maiolino}, R. 2025, \bibinfo{title}{{Extremely Dense Gas
+  around Little Red Dots and High-redshift Active Galactic Nuclei: A
+  Non-stellar Origin of the Balmer Break and Absorption Features},} \apjl, 980,
+  L27, \dodoi{10.3847/2041-8213/adaebd}
+
+% type= article
+\bibitem[{K. {Inayoshi} {et~al.}(2026{\natexlab{a}}){Inayoshi}, {Murase}, \&
   {Kashiyama}}]{Inayoshi2026}
-{Inayoshi}, K., {Murase}, K., \& {Kashiyama}, K. 2026,
+{Inayoshi}, K., {Murase}, K., \& {Kashiyama}, K. 2026{\natexlab{a}},
   \bibinfo{title}{{Spectral Uniformity of Little Red Dots: A Natural Outcome of
   Coevolving Seed Black Holes and Nascent Starbursts},} \apj, 1000, 90,
   \dodoi{10.3847/1538-4357/ae42ce}
+
+% type= article
+\bibitem[{K. {Inayoshi} {et~al.}(2026{\natexlab{b}}){Inayoshi}, {Shangguan},
+  {Chen}, {Ho}, \& {Haiman}}]{InayoshiChen2026}
+{Inayoshi}, K., {Shangguan}, J., {Chen}, X., {Ho}, L.~C., \& {Haiman}, Z.
+  2026{\natexlab{b}}, \bibinfo{title}{{The Emergence of Little Red Dots from
+  Binary Massive Black Holes},} \apj, 1002, 25,
+  \dodoi{10.3847/1538-4357/ae548d}
 
 % type= article
 \bibitem[{P. {Jakobsen} {et~al.}(2022){Jakobsen}, {Ferruit}, {Alves de
@@ -324,6 +462,22 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   \dodoi{10.48550/arXiv.2609.00112}
 
 % type= article
+\bibitem[{M. {Kokubo} \& Y. {Harikane}(2025){Kokubo} \&
+  {Harikane}}]{Kokubo2025}
+{Kokubo}, M., \& {Harikane}, Y. 2025, \bibinfo{title}{{Challenging the AGN
+  scenario for JWST/NIRSpec LRD and non-LRD broad H${\ensuremath{\alpha}}$
+  emitters in light of non-detection of NIRCam photometric variability and
+  X-ray},} \apj, 995, 24, \dodoi{10.3847/1538-4357/ae119e}
+
+% type= article
+\bibitem[{J.~A. {Kollmeier} {et~al.}(2006){Kollmeier}, {Onken}, {Kochanek},
+  {Gould}, {Weinberg}, {Dietrich}, {Cool}, {Dey}, {Eisenstein}, {Jannuzi}, {Le
+  Floc'h}, \& {Stern}}]{Kollmeier2006}
+{Kollmeier}, J.~A., {Onken}, C.~A., {Kochanek}, C.~S., {et~al.} 2006,
+  \bibinfo{title}{{Black Hole Masses and Eddington Ratios at 0.3 < z < 4},}
+  \apj, 648, 128, \dodoi{10.1086/505646}
+
+% type= article
 \bibitem[{X. {Lin} {et~al.}(2026){Lin}, {Fan}, {Cai}, {Bian}, {Liu}, {Sun},
   {Ma}, {Greene}, {Strauss}, {Green}, {Lyu}, {Champagne}, {Goulding},
   {Inayoshi}, {Jin}, {Leung}, {Li}, {Liu}, {Liu}, {Mao}, {Pudoka}, {Tee},
@@ -331,6 +485,14 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
 {Lin}, X., {Fan}, X., {Cai}, Z., {et~al.} 2026, \bibinfo{title}{{The Discovery
   of Little Red Dots in the Local Universe: Signatures of Cool Gas Envelopes},}
   \apj, 997, 364, \dodoi{10.3847/1538-4357/ae2bdf}
+
+% type= article
+\bibitem[{H. {Liu} {et~al.}(2025){Liu}, {Jiang}, {Quataert}, {Greene}, \&
+  {Ma}}]{LiuHP2025}
+{Liu}, H., {Jiang}, Y.-F., {Quataert}, E., {Greene}, J.~E., \& {Ma}, Y. 2025,
+  \bibinfo{title}{{The Balmer Break and Optical Continuum of Little Red Dots
+  from Super-Eddington Accretion},} \apj, 994, 113,
+  \dodoi{10.3847/1538-4357/ae0c19}
 
 % type= article
 \bibitem[{J.-R. {Liu} {et~al.}(2026){Liu}, {Feng}, \& {Ho}}]{LiuFengHo2026}
@@ -372,15 +534,47 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   JWST Surveys},} \apj, 963, 129, \dodoi{10.3847/1538-4357/ad2345}
 
 % type= article
-\bibitem[{R.~P. {Naidu} {et~al.}(2026){Naidu}, {Matthee}, {de Graaff},
-  {Torralba}, {Ashall}, {Katz}, {Chisholm}, {Brammer}, {Dessart}, {Eilers},
-  {Hviding}, {Jones}, {Kokorev}, {Leja}, {Liu}, {Liu}, {Nandal}, {Oesch},
-  {Ransome}, {Simcoe}, {Sun}, {Weibel}, \& {Xiao}}]{Naidu2026}
-{Naidu}, R.~P., {Matthee}, J., {de Graaff}, A., {et~al.} 2026,
+\bibitem[{J. {Matthee} {et~al.}(2026){Matthee}, {Torralba}, {Pezzulli},
+  {Naidu}, {Chisholm}, {Mascia}, {Greene}, {Ishikawa}, {Gronke}, {Wuyts},
+  {Bordoloi}, {Brammer}, {Chang}, {Eilers}, {de Graaff}, {Hviding}, {Iani},
+  {Illingworth}, {Kashino}, {Labbe}, {Ma}, {Maseda}, {Meyer}, {Nelson},
+  {Oesch}, \& {Xiao}}]{Matthee2026}
+{Matthee}, J., {Torralba}, A., {Pezzulli}, G., {et~al.} 2026,
+  \bibinfo{title}{{The Engine and its Flows: Little Red Dot spectra are shaped
+  by the column densities of their gas envelopes},} arXiv e-prints,
+  arXiv:2603.17667, \dodoi{10.48550/arXiv.2603.17667}
+
+% type= article
+\bibitem[{R.~P. {Naidu} {et~al.}(2026{\natexlab{a}}){Naidu}, {Matthee}, {Katz},
+  {de Graaff}, {Oesch}, {Smith}, {Greene}, {Brammer}, {Weibel}, {Hviding},
+  {Chisholm}, {Labb{\'e}}, {Simcoe}, {Witten}, {Atek}, {Baggen}, {Belli},
+  {Bezanson}, {Boogaard}, {Bose}, {Covelo-Paz}, {Dayal}, {Fudamoto}, {Furtak},
+  {Giovinazzo}, {Goulding}, {Gronke}, {Heintz}, {Hirschmann}, {Illingworth},
+  {Inoue}, {Johnson}, {Leja}, {Leonova}, {McConachie}, {Maseda}, {Natarajan},
+  {Nelson}, {Setton}, {Shivaei}, {Sobral}, {Stefanon}, {Tacchella}, {Toft},
+  {Torralba}, {van Dokkum}, {van der Wel}, {Volonteri}, {Walter}, {Wang}, \&
+  {Watson}}]{NaiduBHStar2026}
+{Naidu}, R.~P., {Matthee}, J., {Katz}, H., {et~al.} 2026{\natexlab{a}},
+  \bibinfo{title}{{A "Black Hole Star" Reveals the Remarkable Gas-Enshrouded
+  Hearts of the Little Red Dots},} \nat, 656, 329,
+  \dodoi{10.1038/s41586-026-10846-4}
+
+% type= article
+\bibitem[{R.~P. {Naidu} {et~al.}(2026{\natexlab{b}}){Naidu}, {Matthee}, {de
+  Graaff}, {Torralba}, {Ashall}, {Katz}, {Chisholm}, {Brammer}, {Dessart},
+  {Eilers}, {Hviding}, {Jones}, {Kokorev}, {Leja}, {Liu}, {Liu}, {Nandal},
+  {Oesch}, {Ransome}, {Simcoe}, {Sun}, {Weibel}, \& {Xiao}}]{Naidu2026}
+{Naidu}, R.~P., {Matthee}, J., {de Graaff}, A., {et~al.} 2026{\natexlab{b}},
   \bibinfo{title}{{Little Red Dots as Intermediate Mass, Super-Eddington
   Engines: Insights from Type IIn Supernovae and The 1837-1856 Great Eruption
   of $η$ Carinae},} arXiv e-prints, arXiv:2606.30711,
   \dodoi{10.48550/arXiv.2606.30711}
+
+% type= article
+\bibitem[{D. {Nandal} \& A. {Loeb}(2026){Nandal} \& {Loeb}}]{NandalLoeb2026}
+{Nandal}, D., \& {Loeb}, A. 2026, \bibinfo{title}{{Supermassive Stars Match the
+  Spectral Signatures of JWST's Little Red Dots},} \apj, 998, 124,
+  \dodoi{10.3847/1538-4357/ae32f3}
 
 % type= article
 \bibitem[{ {Planck Collaboration} {et~al.}(2020){Planck Collaboration},
@@ -453,6 +647,43 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   \dodoi{10.48550/arXiv.2603.22277}
 
 % type= article
+\bibitem[{D.~J. {Setton} {et~al.}(2025{\natexlab{a}}){Setton}, {Greene}, {de
+  Graaff}, {Ma}, {Leja}, {Matthee}, {Bezanson}, {Boogaard}, {Cleri}, {Katz},
+  {Labbe}, {Maseda}, {McConachie}, {Miller}, {Price}, {Suess}, {van Dokkum},
+  {Wang}, {Weibel}, {Whitaker}, \& {Williams}}]{Setton2025Vshape}
+{Setton}, D.~J., {Greene}, J.~E., {de Graaff}, A., {et~al.} 2025{\natexlab{a}},
+  \bibinfo{title}{{Little Red Dots at an Inflection Point: Ubiquitous
+  "V-Shaped" Turnover Consistently Occurs at the Balmer Limit},} \apj, 995,
+  118, \dodoi{10.3847/1538-4357/ae1500}
+
+% type= article
+\bibitem[{D.~J. {Setton} {et~al.}(2025{\natexlab{b}}){Setton}, {Greene},
+  {Spilker}, {Williams}, {Labbe}, {Ma}, {Wang}, {Whitaker}, {Leja}, {de
+  Graaff}, {Alberts}, {Bezanson}, {Boogaard}, {Brammer}, {Cutler}, {Cleri},
+  {Cooper}, {Dayal}, {Fujimoto}, {Furtak}, {Goulding}, {Hirschmann}, {Kokorev},
+  {Maseda}, {McConachie}, {Matthee}, {Miller}, {Naidu}, {Oesch}, {Pan},
+  {Price}, {Suess}, {Weaver}, {Xiao}, {Zhang}, \& {Zitrin}}]{Setton2025IR}
+{Setton}, D.~J., {Greene}, J.~E., {Spilker}, J.~S., {et~al.}
+  2025{\natexlab{b}}, \bibinfo{title}{{A confirmed deficit of hot and cold dust
+  emission in the most luminous Little Red Dots},} \apjl, 991, L10,
+  \dodoi{10.3847/2041-8213/ade78b}
+
+% type= article
+\bibitem[{J. {Shangguan} {et~al.}(2026){Shangguan}, {Chen}, {Ho}, {Liao},
+  {Liu}, {Wu}, {Li}, {Inayoshi}, \& {Jiang}}]{Shangguan2026}
+{Shangguan}, J., {Chen}, C.-H., {Ho}, L.~C., {et~al.} 2026,
+  \bibinfo{title}{{The Extreme Rarity and Physical Properties of Low-redshift
+  AGNs with Balmer Absorption},} arXiv e-prints, arXiv:2606.04712,
+  \dodoi{10.48550/arXiv.2606.04712}
+
+% type= article
+\bibitem[{Y. {Shen} {et~al.}(2008){Shen}, {Greene}, {Strauss}, {Richards}, \&
+  {Schneider}}]{Shen2008}
+{Shen}, Y., {Greene}, J.~E., {Strauss}, M.~A., {Richards}, G.~T., \&
+  {Schneider}, D.~P. 2008, \bibinfo{title}{{Biases in Virial Black Hole Masses:
+  An SDSS Perspective},} \apj, 680, 169, \dodoi{10.1086/587475}
+
+% type= article
 \bibitem[{Y. {Shen} {et~al.}(2011){Shen}, {Richards}, {Strauss}, {Hall},
   {Schneider}, {Snedden}, {Bizyaev}, {Brewington}, {Malanushenko},
   {Malanushenko}, {Oravetz}, {Pan}, \& {Simmons}}]{Shen2011}
@@ -468,6 +699,11 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
   \bibinfo{title}{{Inside the cocoon: a comprehensive explanation of the
   spectra of Little Red Dots},} arXiv e-prints, arXiv:2601.18864,
   \dodoi{10.48550/arXiv.2601.18864}
+
+% type= article
+\bibitem[{A. {So{\l}tan}(1982){So{\l}tan}}]{Soltan1982}
+{So{\l}tan}, A. 1982, \bibinfo{title}{{Masses of quasars},} \mnras, 200, 115,
+  \dodoi{10.1093/mnras/200.1.115}
 
 % type= article
 \bibitem[{W.~Q. {Sun} {et~al.}(2026){Sun}, {Naidu}, {Liu}, {de Graaff},
@@ -511,5 +747,41 @@ Hunter, J.~D. 2007, \bibinfo{title}{Matplotlib: A 2D graphics environment,}
 Virtanen, P., Gommers, R., Oliphant, T.~E., {et~al.} 2020,
   \bibinfo{title}{{{SciPy} 1.0: Fundamental Algorithms for Scientific Computing
   in Python},} Nature Methods, 17, 261, \dodoi{10.1038/s41592-019-0686-2}
+
+% type= article
+\bibitem[{C.~C. {Williams} {et~al.}(2024){Williams}, {Alberts}, {Ji},
+  {Hainline}, {Lyu}, {Rieke}, {Endsley}, {Suess}, {Johnson}, {Florian},
+  {Shivaei}, {Rujopakarn}, {Baker}, {Bhatawdekar}, {Boyett}, {Bunker},
+  {Carniani}, {Charlot}, {Curtis-Lake}, {DeCoursey}, {de Graaff}, {Egami},
+  {Eisenstein}, {Gibson}, {Hausen}, {Helton}, {Maiolino}, {Maseda}, {Nelson},
+  {Perez-Gonzalez}, {Rieke}, {Robertson}, {Sun}, {Tacchella}, {Willmer}, \&
+  {Willott}}]{Williams2024}
+{Williams}, C.~C., {Alberts}, S., {Ji}, Z., {et~al.} 2024, \bibinfo{title}{{The
+  galaxies missed by Hubble and ALMA: the contribution of extremely red
+  galaxies to the cosmic census at 3<z<8},} \apj, 968, 34,
+  \dodoi{10.3847/1538-4357/ad3f17}
+
+% type= article
+\bibitem[{M. {Yue} {et~al.}(2024){Yue}, {Eilers}, {Ananna}, {Panagiotou},
+  {Kara}, \& {Miyaji}}]{Yue2024}
+{Yue}, M., {Eilers}, A.-C., {Ananna}, T.~T., {et~al.} 2024,
+  \bibinfo{title}{{Stacking X-ray Observations of "Little Red Dots":
+  Implications for their AGN Properties},} \apjl, 974, L26,
+  \dodoi{10.3847/2041-8213/ad7eba}
+
+% type= article
+\bibitem[{C. {Zhang} {et~al.}(2026){Zhang}, {Wu}, {Fan}, {Ho}, {Wu}, {Zhang},
+  {Lyu}, {Cao}, \& {Wang}}]{ZhangCX2026}
+{Zhang}, C., {Wu}, Q., {Fan}, X., {et~al.} 2026, \bibinfo{title}{{Composite
+  spectrum of Little Red Dot from a standard inner disk and an unstable outer
+  disk},} Nature Astronomy, 10, 753, \dodoi{10.1038/s41550-026-02785-x}
+
+% type= article
+\bibitem[{Z. {Zhang} {et~al.}(2025){Zhang}, {Jiang}, {Liu}, \&
+  {Ho}}]{Zhang2025}
+{Zhang}, Z., {Jiang}, L., {Liu}, W., \& {Ho}, L.~C. 2025,
+  \bibinfo{title}{{Analysis of Multi-epoch JWST Images of $\sim 300$ Little Red
+  Dots: Tentative Detection of Variability in a Minority of Sources},} \apj,
+  985, 119, \dodoi{10.3847/1538-4357/adcb3e}
 
 \end{thebibliography}

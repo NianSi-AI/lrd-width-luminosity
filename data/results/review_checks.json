@@ -259,7 +259,7 @@
   },
   {
    "key": "any_label",
-   "label": "Any LRD label, all rules",
+   "label": "Any LRD label, no $\\chi^2$/abs.",
    "group": "sample",
    "N": 42,
    "sigma_q": [

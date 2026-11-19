@@ -157,7 +157,7 @@ def main():
         rep["posterior_with_floors"]["noTop3_formal_p95_onesided"], 26, "robustness.json")
     r38 = par["regressions_full_2x2_covariance"]["row4_plus_valid_SNge3_38"]
     add("parent_sn3", r"+9 failed, S/N$\geq3$", "sample", r38["sigma_q"], r38["sigma_p95_onesided"], 38, "parent_covariance_audit.json")
-    add("any_label", "Any LRD label, all rules", "sample", mem["any_label_all"]["sigma"], None, mem["any_label_all"]["N"], "membership.json (quantiles only)")
+    add("any_label", r"Any LRD label, no $\chi^2$/abs.", "sample", mem["any_label_all"]["sigma"], None, mem["any_label_all"]["N"], "membership.json (quantiles only)")
     fl = rep["posterior_with_floors"]
     add("floor_same", "Same-grating floor", "repeat", fl["same_grating_sy_floor"]["LRD_sigma_q"], fl["same_grating_sy_floor"]["LRD_p95_onesided"], 29, "repeat_calibration.json")
     add("floor_all", "All-pairs floor", "repeat", fl["all_pairs_sy_floor"]["LRD_sigma_q"], fl["all_pairs_sy_floor"]["LRD_p95_onesided"], 29, "repeat_calibration.json")

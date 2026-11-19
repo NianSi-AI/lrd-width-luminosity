@@ -110,7 +110,7 @@ t2.append(r'Matched pairs\tablenotemark{c} & 36 & \nodata & \nodata & 36 & \noda
 t2.append(r'\cutinhead{SDSS DR7 quasars \citep{Shen2011}}')
 t2.append(f"Multi-Gaussian FWHM (catalog) & {ND} & {ND} & {ND} & {w6['N']} & {P(w6['sigma'])} & {ND} \\\\")
 sdss_b = o_sdss['slope']
-sdss_bs = f"${sdss_b[2]:.2f}$ (${sdss_b[0]:.2f}$--${sdss_b[4]:.2f}$)"
+sdss_bs = f"$b={sdss_b[2]:.2f}$ (${sdss_b[0]:.2f}$--${sdss_b[4]:.2f}$)"
 t2.append(f"Single-Gaussian FWHM, refitted\\tablenotemark{{d}} & {ND} & {ND} & {ND} & 224 & $0.123$ ($0.112$--$0.136$) & {ND} \\\\")
 
 t2 += [
@@ -119,7 +119,7 @@ t2 += [
     r'\tablenotetext{a}{One-sided 95\% upper limits (95th posterior percentiles) on LRD $\sigma_{\rm int}$ are \FsigUp{}~dex under formal errors, \FsigFlrSameUp{}~dex with the $+\flrDupSameG{}$~dex same-grating repeat-spectrum floor added in quadrature to $C_{yy}$, \FsigFlrAllUp{}~dex with the $+\flrDupAll{}$~dex all-pairs floor, \FsigLsfUp{}~dex for LSF width $\times0.5$, \FsigNarCutUp{}~dex for narrow-line FWHM $<\wnarHi{}$~\kms{}, \FsigNarFixUp{}~dex for narrow-line FWHM fixed to \wnarDef{}~\kms{}, \FsigNarOIIIUp{}~dex when anchored to [\ion{O}{3}]~$\lambda5007$ (\wnarDef{}~\kms{} where unmeasured; [\ion{O}{3}] hits the \wnarLo{}~\kms{} lower bound in \NOIIIUnres{} of the \NOIIIMeas{} LRDs where it is measured, and fixing all \NLRD{} to \wnarLo{}~\kms{} gives $\sigma_{\rm int}=\FsigNarMin{}$~dex, $<\FsigNarMinUp{}$~dex), \FsigOIIIqcUp{}~dex when the absorption-bound rule is re-applied to the [\ion{O}{3}]-anchored fits, \FsigLowSNUp{}~dex for the lowest-S/N passing spectra, and \FsigSNthreeUp{}~dex with in-band failed ${\rm S/N}\geq\cutSNthree{}$ pre-cut LRD spectra included (Sections~\ref{sec:relation} and \ref{sec:tests}). Random-effects fits to all repeat spectra give \reAllUp{}~dex (additive floor) and \reMultUp{}~dex (multiplicative).}',
     r'\tablenotetext{b}{The \NXLRD{} LRD records correspond to \NXLRDuniq{} unique objects on the sky; deduplicating to one record per object gives $\sigma_{\rm int}=\XsigDedup{}$~dex (\XsigDeduplo{}--\XsigDeduphi{}).}',
     r'\tablenotetext{c}{Pairs matched in grating, redshift ($|\Delta z|<0.5$), and luminosity ($|\Delta\log L|<0.2$). The entry is the difference of the residual standard deviations, with its bootstrap interval.}',
-    f'\\tablenotetext{{d}}{{A random 300 of the 3755 quasars refitted with the procedure of Section~\\ref{{sec:fit}}; 224 pass the rules of Section~\\ref{{sec:sample}}, giving slope $b={sdss_bs}$.}}',
+    f'\\tablenotetext{{d}}{{A random 300 of the 3755 quasars refitted with the procedure of Section~\\ref{{sec:fit}}; 224 pass the rules of Section~\\ref{{sec:sample}}, giving slope {sdss_bs}.}}',
     r'\tablenotetext{e}{Two LRDs whose absorption optical depth reaches its bound in the [\ion{O}{3}]-anchored refit are removed; the shift from the 29-object row is evaluated with the baseline measurement covariances.}',
     r'\end{deluxetable*}',
 ]
@@ -149,7 +149,7 @@ t3 = [
     r' & \parbox[t]{0.335\textwidth}{\raggedright $\sigma_{\Mvir}<\sigMvir{}$~dex ($<\sigMvirCons{}$~dex conservative); $M({<}R)=(\mEddStdLo{}\text{--}\mEddHi{})\,(R/\Rph)\,M_{\rm Edd}(\Lph)$ ($\mEddLo{}\times$ for $f_{\rm vir}=0.25$)\strut}'
     r' & \parbox[t]{0.335\textwidth}{\raggedright $\sigma_{\Mvir}<\sigMvir{}$~dex ($<\sigMvirCons{}$~dex conservative); $M_{\rm BH}=\lambda^{-1}M_{\rm Edd}(\Lph)$\strut} \\',
     r'\enddata',
-    r'\tablecomments{Ceilings in columns 2--3 use the baseline 95\% limit $\sigint=\FsigUp{}$~dex (loosened by \narCeilLoosenPct{}\% at the conservative \FsigCons{}~dex ceiling, tightened by 25\% with the same-grating repeat floor). $M_{\rm Edd}(\Lph)=\kappa_{\rm es}\Lph/(4\pi G c)=8\times10^{5}\,\Msun\,(\Lph/10^{44}\,\ergs)$.}',
+    r'\tablecomments{Ceilings in columns 2--3 use the baseline 95\% limit $\sigint=\FsigUp{}$~dex (loosened by \narCeilLoosenPct{}\% at the conservative \FsigCons{}~dex ceiling, tightened by 25\% with the same-grating repeat floor), with empirical reference radius $\Rph\equiv(\Lph/4\pi\sigma_{\rm SB}\Teff^{4})^{1/2}$ and $M_{\rm Edd}(\Lph)=\kappa_{\rm es}\Lph/(4\pi G c)=8\times10^{5}\,\Msun\,(\Lph/10^{44}\,\ergs)$. In column~2, rows~2--3 hold for any bound virial BLR under the Section~\ref{sec:budget} independence assumptions, row~4 lists natural physical couplings for the flat $\Lph$ residuals, and $M({<}R)/M_{\rm Edd}(\Lph)\propto R/\Rph$ (row~5) holds generally; only the $R\geq\Rph$ occultation bound enforcing $\lambda\leq\lamVirLo{}\text{--}\lamIsoHi{}$ (row~1) assumes a spherical photosphere; flattened disks avoid spherical-envelope tension either at $\lambda\ll1$ with $R\simeq(\lamVirLo{}\text{--}\lamIsoHi{})\,\lambda^{-1}\Rph\gtrsim\Rph$ or by exposing $R<\Rph$ to lift the $\lambda$ ceiling (Section~\ref{sec:alternatives}). Column~3 rows~2--4 assume the isothermal-shell wing calibration and cospatial $\LHa=K R\,\tau_e^{2}$ without parameter covariance (Section~\ref{sec:readings}).}',
     r'\end{deluxetable*}',
 ]
 open(os.path.join(T, 'Table3_readings.tex'), 'w').write('\n'.join(t3) + '\n')
